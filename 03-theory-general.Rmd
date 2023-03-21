@@ -1,0 +1,87 @@
+# Theoretical framework: Complexity and Fractals
+
+## Very short introduction to Complexity Theory / Dynamical Systems Theory
+
+Lit. use @daems2021 and @bentley2007.
+
+For Dynamical Systems, use @awrejcewicz2020 and @devaney2020, but don't go into detail.
+
+Describe complexity, dynamical systems, chaos, feedback loops, criticality, emergence.
+
+Mention the most common applications in Archaeology: ABMs, **and what**? check in literature.
+
+## Very short introduction to Fractals and Fractal Analysis
+
+Lit. use @mandelbrot1982, @falconer2013 (general), also @brown2010, @brown2005 and @diachenko2018 (for Archaeology)
+
+Two sentences on history of fractals? Mandelbrot. Maybe cut?
+
+Fractals as irregular patterns/structures
+
+Fractals as hierarchy
+
+Self-similarity and scale invariance
+
+Processes/mechanisms that produce fractals:
+
+-   Cascading bifurcations and confluences (splitting or merging - tree structure/arborescence/branching, and relation to size. Terminology borrowed from biology and fluid dynamics (including turbulence/turbulent flow)
+
+The role of randomness - tidy and messy fractals (romanesco broccolis are not more fractal than regular broccolis, only more regular.
+
+The relationship with criticality and chaos: deterministic *and* unpredictable
+
+Fractals embedded in
+
+-   Space (hence "fractal geometry"): geomorphology, plants, ocean and wind currents, galaxies
+
+-   Time series: earthquakes, finance
+
+-   Networks: hierarchical organisations, income distributions, word counts, www. etc.
+
+-   Pure mathematics: Julia and Mandelbrot sets, strange attractors (don't go into details!)
+
+-   Other: 1/f or pink noise
+
+No, not everything is fractal: e.g. Central Limit Theorem
+
+Fractal analysis for studying irregular phenomena (methods described in more detail in \@ref(Distributions) and \@ref(Settlement), and thus as a tool for quantitative empirical research.
+
+## Very short introduction to micro-macro approaches in social theory
+
+-   Lévi-Strauss and Structuralism
+
+-   Giddens and Structuration Theory
+
+-   Delanda and Assemblage Theory
+
+-   Latour and Actor-Network Theory
+
+What these approaches all have in common, is that they are entirely qualitative (**check**).
+
+-   That's not a problem in itself.
+
+-   Quant approach is both possible for the stated purpose, and desirable for reasons of comparative analysis.
+
+-   Data deluge (refer to chap. on geomagn data). The goal here is to establish a quantitative framework for studying social complexity and hierarchy. Further articulating fractal analysis with existing theoretical approaches is not the primary goal here, as it could constitute a separate research project. In the present thesis, bla bla.
+
+END chapter.
+
+Math can be added in body using usual syntax like this
+
+$p$ is unknown but expected to be around 1/3. Standard error will be approximated
+
+$$
+SE = \sqrt(\frac{p(1-p)}{n}) \approx \sqrt{\frac{1/3 (1 - 1/3)} {300}} = 0.027
+$$
+
+You can also use math in footnotes like this[^03-theory-general-1].
+
+[^03-theory-general-1]: where we mention $p = \frac{a}{b}$
+
+We will approximate standard error to 0.027[^03-theory-general-2]
+
+[^03-theory-general-2]: $p$ is unknown but expected to be around 1/3. Standard error will be approximated
+
+    $$
+    SE = \sqrt(\frac{p(1-p)}{n}) \approx \sqrt{\frac{1/3 (1 - 1/3)} {300}} = 0.027
+    $$

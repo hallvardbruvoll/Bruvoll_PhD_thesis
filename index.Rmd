@@ -30,11 +30,13 @@ fontsize: 12pt
 linestretch: 1.5
 toc: yes
 toc-depth: 1
-lof: yes
-lot: yes
+#lof: yes
+#lot: yes
 ---
 
-# Prerequisites
+# Preface {-}
+
+Thanks to everyone.
 
 fdfasdf add citation @arponen2016.
 

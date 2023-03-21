@@ -138,7 +138,7 @@
 \makeatother
 \subtitle{with case studies from the Linear Pottery and Trypillia cultures (5.500 - 3.500 cal. BCE)}
 \author{Hallvard Bruvoll \and Department of Archaeology, Conservation and History \and University of Oslo}
-\date{2023-03-17}
+\date{2023-03-21}
 
 \begin{document}
 \maketitle
@@ -147,11 +147,12 @@
 \setcounter{tocdepth}{1}
 \tableofcontents
 }
-\listoffigures
-\listoftables
 \setstretch{1.5}
-\hypertarget{prerequisites}{%
-\chapter{Prerequisites}\label{prerequisites}}
+\hypertarget{preface}{%
+\chapter*{Preface}\label{preface}}
+\addcontentsline{toc}{chapter}{Preface}
+
+Thanks to everyone.
 
 fdfasdf add citation \citet{arponen2016}.
 
@@ -171,11 +172,61 @@ Remember each Rmd file contains one and only one chapter, and a chapter is defin
 
 To compile this example to PDF, you need XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): \url{https://yihui.name/tinytex/}.
 
-\hypertarget{intro}{%
-\chapter{Introduction}\label{intro}}
+\hypertarget{part-frameworks}{%
+\part{Frameworks}\label{part-frameworks}}
 
-fdsasdfasdf
-You can label chapter and section titles using \texttt{\{\#label\}} after them, e.g., we can reference Chapter \ref{intro}. If you do not manually label them, there will be automatic labels anyway, e.g., Chapter \ref{methods}.
+\hypertarget{introduction}{%
+\chapter{Introduction}\label{introduction}}
+
+\hypertarget{background-of-the-project}{%
+\section{Background of the project}\label{background-of-the-project}}
+
+\hypertarget{research-question-and-objectives}{%
+\section{Research question and objectives}\label{research-question-and-objectives}}
+
+What are my goals for this project?
+
+Two approaches: house-size distributions and settlement layouts
+
+\hypertarget{some-definitions}{%
+\section{Some definitions}\label{some-definitions}}
+
+Hierarchy
+
+Inequality
+
+Scale
+
+\hypertarget{main-findings-here}{%
+\section{Main findings here?}\label{main-findings-here}}
+
+\hypertarget{research-ethics}{%
+\section{Research ethics}\label{research-ethics}}
+
+\begin{itemize}
+\item
+  Open science and open-source scripts
+\item
+  Terminology and spelling (British English for text. For geographical place names, Slovak special characters are kept as far as possible, even though it can be a pain in the xxx to render in Rmarkdown on Windows OS, and the 2010 Ukranian National transliteration system with only ASCII characters and no soft sign)
+\item
+  Abstracts in Slovak and Ukranian (and not only in Norwegian)
+\end{itemize}
+
+\hypertarget{structure-of-the-thesis}{%
+\section{Structure of the thesis}\label{structure-of-the-thesis}}
+
+Interdisciplinary subject and no single history of research chapter.
+
+Accessibility, non-specialised readers: technical details are, as far as possible, limited to the dedicated chapters (\ref{part2}).
+
+Describe the parts (including this one).
+
+Text
+
+Here I skipped a line.\\
+Here I added a backslash.
+
+fdsasdfasdf You can label chapter and section titles using \texttt{\{\#label\}} after them, e.g., we can reference Chapter \ref{intro}. If you do not manually label them, there will be automatic labels anyway, e.g., Chapter \ref{methods}.
 
 Figures and tables with captions will be placed in \texttt{figure} and \texttt{table} environments, respectively.
 
@@ -243,20 +294,148 @@ Sepal.Length & Sepal.Width & Petal.Length & Petal.Width & Species\\
 
 You can write citations, too. For example, we are using the \textbf{bookdown} package \citep{R-bookdown} in this sample book, which was built on top of R Markdown and \textbf{knitr} \citep{xie2015}.
 
-\hypertarget{literature}{%
-\chapter{Literature}\label{literature}}
+\hypertarget{material-and-data-social-complexity-in-the-european-neolithic}{%
+\chapter{Material and data: social complexity in the European Neolithic}\label{material-and-data-social-complexity-in-the-european-neolithic}}
 
-Here is a review of existing methods.
+\hypertarget{studying-social-complexity-in-archaeology-and-prehistory.}{%
+\section{Studying social complexity in Archaeology and Prehistory.}\label{studying-social-complexity-in-archaeology-and-prehistory.}}
 
-\hypertarget{methods}{%
-\chapter{Methods}\label{methods}}
+\begin{itemize}
+\item
+  Grave goods
+\item
+  Burial monuments
+\item
+  The denominator problem
+\item
+  The use of ethnography
+\item
+  Other approaches (osteological, isotopes \textbf{refs})
+\item
+  This project: house-size distributions and settlement layouts (details in subsequent chapters), just very short argumentation
+\end{itemize}
 
-We describe our methods in this chapter.
+\hypertarget{the-linear-pottery-culture-complex}{%
+\section{The Linear Pottery culture complex}\label{the-linear-pottery-culture-complex}}
+
+\begin{itemize}
+\item
+  General intro to the culture
+\item
+  The Žitava valley and research project
+\item
+  Organisation of Linear Pottery society: egalitarian or hierarchic?
+\end{itemize}
+
+\hypertarget{the-cucutenuxed-trypillia-culture-complex}{%
+\section{The Cucutení-Trypillia culture complex}\label{the-cucutenuxed-trypillia-culture-complex}}
+
+\begin{itemize}
+\item
+  General intro to the culture
+\item
+  The B2/C1 and the mega-sites of the Southern Bugh - Dnipro interfluve
+\end{itemize}
+
+\hypertarget{reading-site-plans-from-geomagnetic-imagery}{%
+\section{Reading site plans from geomagnetic imagery}\label{reading-site-plans-from-geomagnetic-imagery}}
+
+\hypertarget{synthetic-data}{%
+\section{Synthetic data}\label{synthetic-data}}
+
+\begin{itemize}
+\item
+  And why I'm not (yet) relying on ethnographic data.
+\item
+  Don't go into technicalities here, just the reasoning.
+\end{itemize}
+
+\hypertarget{theoretical-framework-complexity-and-fractals}{%
+\chapter{Theoretical framework: Complexity and Fractals}\label{theoretical-framework-complexity-and-fractals}}
+
+\hypertarget{very-short-introduction-to-complexity-theory-dynamical-systems-theory}{%
+\section{Very short introduction to Complexity Theory / Dynamical Systems Theory}\label{very-short-introduction-to-complexity-theory-dynamical-systems-theory}}
+
+Lit. use \citet{daems2021} and \citet{bentley2007}.
+
+For Dynamical Systems, use \citet{awrejcewicz2020} and \citet{devaney2020}, but don't go into detail.
+
+Describe complexity, dynamical systems, chaos, feedback loops, criticality, emergence.
+
+Mention the most common applications in Archaeology: ABMs, \textbf{and what}? check in literature.
+
+\hypertarget{very-short-introduction-to-fractals-and-fractal-analysis}{%
+\section{Very short introduction to Fractals and Fractal Analysis}\label{very-short-introduction-to-fractals-and-fractal-analysis}}
+
+Lit. use \citet{mandelbrot1982}, \citet{falconer2013} (general), also \citet{brown2010}, \citet{brown2005} and \citet{diachenko2018} (for Archaeology)
+
+Two sentences on history of fractals? Mandelbrot. Maybe cut?
+
+Fractals as irregular patterns/structures
+
+Fractals as hierarchy
+
+Self-similarity and scale invariance
+
+Processes/mechanisms that produce fractals:
+
+\begin{itemize}
+\tightlist
+\item
+  Cascading bifurcations and confluences (splitting or merging - tree structure/arborescence/branching, and relation to size. Terminology borrowed from biology and fluid dynamics (including turbulence/turbulent flow)
+\end{itemize}
+
+The role of randomness - tidy and messy fractals (romanesco broccolis are not more fractal than regular broccolis, only more regular.
+
+The relationship with criticality and chaos: deterministic \emph{and} unpredictable
+
+Fractals embedded in
+
+\begin{itemize}
+\item
+  Space (hence ``fractal geometry''): geomorphology, plants, ocean and wind currents, galaxies
+\item
+  Time series: earthquakes, finance
+\item
+  Networks: hierarchical organisations, income distributions, word counts, www. etc.
+\item
+  Pure mathematics: Julia and Mandelbrot sets, strange attractors (don't go into details!)
+\item
+  Other: 1/f or pink noise
+\end{itemize}
+
+No, not everything is fractal: e.g.~Central Limit Theorem
+
+Fractal analysis for studying irregular phenomena (methods described in more detail in \ref{Distributions} and \ref{Settlement}, and thus as a tool for quantitative empirical research.
+
+\hypertarget{very-short-introduction-to-micro-macro-approaches-in-social-theory}{%
+\section{Very short introduction to micro-macro approaches in social theory}\label{very-short-introduction-to-micro-macro-approaches-in-social-theory}}
+
+\begin{itemize}
+\item
+  Lévi-Strauss and Structuralism
+\item
+  Giddens and Structuration Theory
+\item
+  Delanda and Assemblage Theory
+\item
+  Latour and Actor-Network Theory
+\end{itemize}
+
+What these approaches all have in common, is that they are entirely qualitative (\textbf{check}).
+
+\begin{itemize}
+\item
+  That's not a problem in itself.
+\item
+  Quant approach is both possible for the stated purpose, and desirable for reasons of comparative analysis.
+\item
+  Data deluge (refer to chap.~on geomagn data). The goal here is to establish a quantitative framework for studying social complexity and hierarchy. Further articulating fractal analysis with existing theoretical approaches is not the primary goal here, as it could constitute a separate research project. In the present thesis, bla bla.
+\end{itemize}
+
+END chapter.
 
 Math can be added in body using usual syntax like this
-
-\hypertarget{math-example}{%
-\section{math example}\label{math-example}}
 
 \(p\) is unknown but expected to be around 1/3. Standard error will be approximated
 
@@ -287,6 +466,24 @@ Some \emph{significant} applications are demonstrated in this chapter.
 \chapter{Final Words}\label{final-words}}
 
 We have finished a nice book.
+
+\hypertarget{references}{%
+\chapter*{References}\label{references}}
+\addcontentsline{toc}{chapter}{References}
+
+\hypertarget{appendix-appendix}{%
+\appendix}
+
+
+\hypertarget{this-is-my-first-appendix}{%
+\chapter{This is my first appendix}\label{this-is-my-first-appendix}}
+
+Jada jada jada
+
+\hypertarget{this-is-my-second-one}{%
+\chapter{This is my second one}\label{this-is-my-second-one}}
+
+Bla bla bla
 
   \bibliography{book.bib,packages.bib}
 
