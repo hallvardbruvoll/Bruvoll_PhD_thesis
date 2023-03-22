@@ -2,7 +2,7 @@
 
 # Introduction
 
-## Background of the project
+## Background of the study
 
 ## Research question and objectives
 
@@ -12,11 +12,15 @@ Two approaches: house-size distributions and settlement layouts
 
 ## Some definitions
 
-Hierarchy
+Just the minimum required to present the thesis in general terms.
 
-Inequality
+-   Hierarchy
 
-Scale
+-   Inequality
+
+-   Social complexity
+
+-   Scale
 
 ## Main findings here?
 

@@ -1,0 +1,18 @@
+# Conclusion and Outlook
+
+## Things I would like to have done, but that didn't fit into this study
+-   Ethnoarchaeology: Measure house sizes and settlement layouts in contemporary settings, and relate to social organisation (largely overlooked by ethnographers)
+-   Test distributions and settlement layout analysis on other settings: Lake dwellings, later/historic periods, other materials (e.g. megaliths)... Add more complex distribution models, add observation windows on images. Try on remote sensing imagery.
+-   Settlement Scaling on Neolithic settings
+-   Time series: Hurst exponent and scale invariance in temporal development of e.g. regional settlement or population
+-   Integrate -- bridge the gap -- between opposite theoretical (nat. and soc./hum.) approaches to the same phenomena
+-   Chaos and strange attractors in Archaeology
+-   More?
+
+## Concluding remarks
+
+END Thesis
+
+::: {#refs}
+# References {.unnumbered}
+:::

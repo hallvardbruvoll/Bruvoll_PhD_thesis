@@ -26,12 +26,14 @@
 
 -   General intro to the culture
 
--   The B2/C1 and the mega-sites of the Southern Bugh - Dnipro interfluve
+-   The B2/C1 and the mega-sites of the Southern Bugh -- Dnipro interfluve
 
 ## Reading site plans from geomagnetic imagery
 
+-   Caveats: fill in here.
+
 ## Synthetic data
 
--   And why I'm not (yet) relying on ethnographic data.
+-   And why I'm not (this time) relying on ethnographic data.
 
 -   Don't go into technicalities here, just the reasoning.

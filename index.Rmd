@@ -18,7 +18,8 @@ output:
       in_header: preamble.tex
     keep_tex: yes
     latex_engine: xelatex
-    citation_package: natbib
+    toc_appendix: yes
+#    citation_package: natbib
 documentclass: book
 bibliography: [book.bib, packages.bib]
 biblio-style: apalike

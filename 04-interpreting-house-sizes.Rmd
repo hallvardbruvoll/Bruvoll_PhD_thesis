@@ -1,0 +1,51 @@
+# (PART) Size distributions {.unnumbered}
+
+# House sizes and social meaning
+
+## What is social hierarchy?
+
+-   Political assumptions -- all hierarchical social structures are not despotic top-down rule. Democracies can also be very hierarchical. Matter of scale rather than political system @graeber2021. But, tendencies?
+
+-   Nested and non-nested social hierarchies, hierarchical hunter-gatherers? @hamilton2007, @whitridge2016
+
+-   Biologically defined thresholds to group size? Dunbar's number and controversies, @dunbar2022, @west2023 (add published papers). Scalar stress @johnson1982, @alberti2014, @zhou2005
+
+## Social typologies and their critique
+
+-   Tools for classifying societies, or evolutionary model? Discussion of @johnson1987, @testart2005, @service1971
+
+-   Critique in @yoffee1993, @yoffee2005, @graeber2021 ++
+
+## Possible reasons for house-size difference
+
+Often underlying assumptions: household wealth or size? Or both?
+
+-   Kinship and households: who lives in a house? @sahlins2013, @ensor2013, @ensor2017
+
+-   Do clan leaders have bigger houses?
+
+Discuss some archaeo references
+
+Functional difference:
+
+-   Ethnography of initiation houses, communal/assembly houses, ritual houses, including @barley2011, @godelier1986, @wilk1983, @fraser1968
+
+-   Caveats: building materials and constraints
+
+## Interpreting distribution types and their underlying mechanisms
+
+-   Power-law distributions, hierarchy and scale invariance.
+
+-   Normal distributions and the Central Limit Theorem.
+
+-   Exponential distributions and growth rates.
+
+-   Combinations: Log-normal, stretched exponential, parabolic fractal
+
+## Usage in Archaeology
+
+Lit. use @strawinska-zanko2018, @crabtree2017, @maschner2003, @grove2011 ++
+
+Settlement scaling and Zipf law (here, or in next chapter?)
+
+END chapter

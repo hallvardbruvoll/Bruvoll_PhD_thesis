@@ -104,6 +104,29 @@
 \providecommand{\tightlist}{%
   \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
 \setcounter{secnumdepth}{5}
+\newlength{\cslhangindent}
+\setlength{\cslhangindent}{1.5em}
+\newlength{\csllabelwidth}
+\setlength{\csllabelwidth}{3em}
+\newlength{\cslentryspacingunit} % times entry-spacing
+\setlength{\cslentryspacingunit}{\parskip}
+\newenvironment{CSLReferences}[2] % #1 hanging-ident, #2 entry spacing
+ {% don't indent paragraphs
+  \setlength{\parindent}{0pt}
+  % turn on hanging indent if param 1 is 1
+  \ifodd #1
+  \let\oldpar\par
+  \def\par{\hangindent=\cslhangindent\oldpar}
+  \fi
+  % set entry spacing
+  \setlength{\parskip}{#2\cslentryspacingunit}
+ }%
+ {}
+\usepackage{calc}
+\newcommand{\CSLBlock}[1]{#1\hfill\break}
+\newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
+\newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}\break}
+\newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
 \usepackage{booktabs}
 \usepackage{amsthm}
 \makeatletter
@@ -118,8 +141,6 @@
 \ifLuaTeX
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
-\usepackage[]{natbib}
-\bibliographystyle{apalike}
 \IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same} % disable monospaced font for URLs
@@ -138,7 +159,7 @@
 \makeatother
 \subtitle{with case studies from the Linear Pottery and Trypillia cultures (5.500 - 3.500 cal. BCE)}
 \author{Hallvard Bruvoll \and Department of Archaeology, Conservation and History \and University of Oslo}
-\date{2023-03-21}
+\date{2023-03-22}
 
 \begin{document}
 \maketitle
@@ -154,7 +175,7 @@
 
 Thanks to everyone.
 
-fdfasdf add citation \citet{arponen2016}.
+fdfasdf add citation Arponen et al. (2016).
 
 This is a \emph{sample} book written in \textbf{Markdown}. You can use anything that Pandoc's Markdown supports, e.g., a math equation \(a^2 + b^2 = c^2\).
 
@@ -178,8 +199,8 @@ To compile this example to PDF, you need XeLaTeX. You are recommended to install
 \hypertarget{introduction}{%
 \chapter{Introduction}\label{introduction}}
 
-\hypertarget{background-of-the-project}{%
-\section{Background of the project}\label{background-of-the-project}}
+\hypertarget{background-of-the-study}{%
+\section{Background of the study}\label{background-of-the-study}}
 
 \hypertarget{research-question-and-objectives}{%
 \section{Research question and objectives}\label{research-question-and-objectives}}
@@ -191,11 +212,18 @@ Two approaches: house-size distributions and settlement layouts
 \hypertarget{some-definitions}{%
 \section{Some definitions}\label{some-definitions}}
 
-Hierarchy
+Just the minimum required to present the thesis in general terms.
 
-Inequality
-
-Scale
+\begin{itemize}
+\item
+  Hierarchy
+\item
+  Inequality
+\item
+  Social complexity
+\item
+  Scale
+\end{itemize}
 
 \hypertarget{main-findings-here}{%
 \section{Main findings here?}\label{main-findings-here}}
@@ -292,7 +320,106 @@ Sepal.Length & Sepal.Width & Petal.Length & Petal.Width & Species\\
 \end{tabular}
 \end{table}
 
-You can write citations, too. For example, we are using the \textbf{bookdown} package \citep{R-bookdown} in this sample book, which was built on top of R Markdown and \textbf{knitr} \citep{xie2015}.
+You can write citations, too. For example, we are using the \textbf{bookdown} package (Xie 2022) in this sample book, which was built on top of R Markdown and \textbf{knitr} (Xie 2015).
+
+\hypertarget{theoretical-framework-complexity-and-fractals}{%
+\chapter{Theoretical framework: Complexity and Fractals}\label{theoretical-framework-complexity-and-fractals}}
+
+\hypertarget{very-short-introduction-to-complexity-theory-dynamical-systems-theory}{%
+\section{Very short introduction to Complexity Theory / Dynamical Systems Theory}\label{very-short-introduction-to-complexity-theory-dynamical-systems-theory}}
+
+Lit. use Daems (2021) and Bentley and Maschner (2007).
+
+For Dynamical Systems, use Awrejcewicz and Grzelczyk (2020) and Devaney (2020), but don't go into detail.
+
+Describe complexity, dynamical systems, chaos, feedback loops, criticality, emergence.
+
+Mention the most common applications in Archaeology: ABMs, \textbf{and what}? check in literature.
+
+\hypertarget{very-short-introduction-to-fractals-and-fractal-analysis}{%
+\section{Very short introduction to Fractals and Fractal Analysis}\label{very-short-introduction-to-fractals-and-fractal-analysis}}
+
+Lit. use Mandelbrot (1982), Falconer and Falconer (2013) (general), also C. Brown and Liebovitch (2010), C. T. Brown, Witschey, and Liebovitch (2005) and Diachenko (2018) (for Archaeology)
+
+Two sentences on history of fractals? Mandelbrot. Maybe cut?
+
+Fractals as irregular patterns/structures
+
+Fractals as hierarchy
+
+Self-similarity and scale invariance
+
+Processes/mechanisms that produce fractals:
+
+\begin{itemize}
+\tightlist
+\item
+  Cascading bifurcations and confluences (splitting or merging - tree structure/arborescence/branching, and relation to size. Terminology borrowed from biology and fluid dynamics (including turbulence/turbulent flow)
+\end{itemize}
+
+The role of randomness - tidy and messy fractals (romanesco broccolis are not more fractal than regular broccolis, only more regular.
+
+The relationship with criticality and chaos: deterministic \emph{and} unpredictable
+
+Fractals embedded in
+
+\begin{itemize}
+\item
+  Space (hence ``fractal geometry''): geomorphology, plants, ocean and wind currents, galaxies, also human constructed features (see Chapter xx for details)
+\item
+  Time series: earthquakes, finance (not applied in this study, though should be done later)
+\item
+  Networks/abstract: hierarchical organisations, income distributions, word counts, 1/f or pink noise, www. etc. (see Chapter xxx for details)
+\item
+  Pure mathematics: Julia and Mandelbrot sets, strange attractors (don't go into details!)
+\end{itemize}
+
+No, not everything is fractal: e.g.~Central Limit Theorem
+
+Fractal analysis for studying irregular phenomena (methods described in more detail Chapters xxx), and thus as a tool for quantitative empirical research.
+
+\hypertarget{very-short-introduction-to-micro-macro-approaches-in-social-theory}{%
+\section{Very short introduction to micro-macro approaches in social theory}\label{very-short-introduction-to-micro-macro-approaches-in-social-theory}}
+
+\begin{itemize}
+\item
+  Lévi-Strauss and Structuralism
+\item
+  Giddens and Structuration Theory
+\item
+  Delanda and Assemblage Theory
+\item
+  Latour and Actor-Network Theory
+\end{itemize}
+
+What these approaches all have in common, is that they are entirely qualitative (\textbf{check}).
+
+\begin{itemize}
+\item
+  That's not a problem in itself.
+\item
+  Quant approach is both possible for the stated purpose, and desirable for reasons of comparative analysis.
+\item
+  Data deluge (refer to chap.~on geomagn data). The goal here is to establish a quantitative framework for studying social complexity and hierarchy in archaeological/prehistoric settings. Further articulating fractal analysis with existing social theoretical approaches is not the primary goal here, as it could constitute a separate research project. In the present thesis, bla bla.
+\end{itemize}
+
+END chapter.
+
+Math can be added in body using usual syntax like this
+
+\(p\) is unknown but expected to be around 1/3. Standard error will be approximated
+
+\[
+SE = \sqrt(\frac{p(1-p)}{n}) \approx \sqrt{\frac{1/3 (1 - 1/3)} {300}} = 0.027
+\]
+
+You can also use math in footnotes like this\footnote{where we mention \(p = \frac{a}{b}\)}.
+
+We will approximate standard error to 0.027\footnote{\(p\) is unknown but expected to be around 1/3. Standard error will be approximated
+
+  \[
+  SE = \sqrt(\frac{p(1-p)}{n}) \approx \sqrt{\frac{1/3 (1 - 1/3)} {300}} = 0.027
+  \]}
 
 \hypertarget{material-and-data-social-complexity-in-the-european-neolithic}{%
 \chapter{Material and data: social complexity in the European Neolithic}\label{material-and-data-social-complexity-in-the-european-neolithic}}
@@ -334,145 +461,359 @@ You can write citations, too. For example, we are using the \textbf{bookdown} pa
 \item
   General intro to the culture
 \item
-  The B2/C1 and the mega-sites of the Southern Bugh - Dnipro interfluve
+  The B2/C1 and the mega-sites of the Southern Bugh -- Dnipro interfluve
 \end{itemize}
 
 \hypertarget{reading-site-plans-from-geomagnetic-imagery}{%
 \section{Reading site plans from geomagnetic imagery}\label{reading-site-plans-from-geomagnetic-imagery}}
+
+\begin{itemize}
+\tightlist
+\item
+  Caveats: fill in here.
+\end{itemize}
 
 \hypertarget{synthetic-data}{%
 \section{Synthetic data}\label{synthetic-data}}
 
 \begin{itemize}
 \item
-  And why I'm not (yet) relying on ethnographic data.
+  And why I'm not (this time) relying on ethnographic data.
 \item
   Don't go into technicalities here, just the reasoning.
 \end{itemize}
 
-\hypertarget{theoretical-framework-complexity-and-fractals}{%
-\chapter{Theoretical framework: Complexity and Fractals}\label{theoretical-framework-complexity-and-fractals}}
+\hypertarget{part-size-distributions}{%
+\part{Size distributions}\label{part-size-distributions}}
 
-\hypertarget{very-short-introduction-to-complexity-theory-dynamical-systems-theory}{%
-\section{Very short introduction to Complexity Theory / Dynamical Systems Theory}\label{very-short-introduction-to-complexity-theory-dynamical-systems-theory}}
+\hypertarget{house-sizes-and-social-meaning}{%
+\chapter{House sizes and social meaning}\label{house-sizes-and-social-meaning}}
 
-Lit. use \citet{daems2021} and \citet{bentley2007}.
+\hypertarget{what-is-social-hierarchy}{%
+\section{What is social hierarchy?}\label{what-is-social-hierarchy}}
 
-For Dynamical Systems, use \citet{awrejcewicz2020} and \citet{devaney2020}, but don't go into detail.
+\begin{itemize}
+\item
+  Political assumptions -- all hierarchical social structures are not despotic top-down rule. Democracies can also be very hierarchical. Matter of scale rather than political system Graeber and Wengrow (2021). But, tendencies?
+\item
+  Nested and non-nested social hierarchies, hierarchical hunter-gatherers? Hamilton et al. (2007), Whitridge (2016)
+\item
+  Biologically defined thresholds to group size? Dunbar's number and controversies, Dunbar (2022), West et al. (2023) (add published papers). Scalar stress G. A. Johnson (1982), Alberti (2014), Zhou et al. (2005)
+\end{itemize}
 
-Describe complexity, dynamical systems, chaos, feedback loops, criticality, emergence.
+\hypertarget{social-typologies-and-their-critique}{%
+\section{Social typologies and their critique}\label{social-typologies-and-their-critique}}
 
-Mention the most common applications in Archaeology: ABMs, \textbf{and what}? check in literature.
+\begin{itemize}
+\item
+  Tools for classifying societies, or evolutionary model? Discussion of A. Johnson and Earle (1987), Testart (2005), Service (1971)
+\item
+  Critique in Yoffee (1993), Yoffee (2005), Graeber and Wengrow (2021) ++
+\end{itemize}
 
-\hypertarget{very-short-introduction-to-fractals-and-fractal-analysis}{%
-\section{Very short introduction to Fractals and Fractal Analysis}\label{very-short-introduction-to-fractals-and-fractal-analysis}}
+\hypertarget{possible-reasons-for-house-size-difference}{%
+\section{Possible reasons for house-size difference}\label{possible-reasons-for-house-size-difference}}
 
-Lit. use \citet{mandelbrot1982}, \citet{falconer2013} (general), also \citet{brown2010}, \citet{brown2005} and \citet{diachenko2018} (for Archaeology)
+Often underlying assumptions: household wealth or size? Or both?
 
-Two sentences on history of fractals? Mandelbrot. Maybe cut?
+\begin{itemize}
+\item
+  Kinship and households: who lives in a house? Sahlins (2013), Ensor (2013), Ensor, Irish, and Keegan (2017)
+\item
+  Do clan leaders have bigger houses?
+\end{itemize}
 
-Fractals as irregular patterns/structures
+Discuss some archaeo references
 
-Fractals as hierarchy
+Functional difference:
 
-Self-similarity and scale invariance
+\begin{itemize}
+\item
+  Ethnography of initiation houses, communal/assembly houses, ritual houses, including Barley (2011), Godelier (1986), Wilk (1983), Fraser (1968)
+\item
+  Caveats: building materials and constraints
+\end{itemize}
 
-Processes/mechanisms that produce fractals:
+\hypertarget{interpreting-distribution-types-and-their-underlying-mechanisms}{%
+\section{Interpreting distribution types and their underlying mechanisms}\label{interpreting-distribution-types-and-their-underlying-mechanisms}}
+
+\begin{itemize}
+\item
+  Power-law distributions, hierarchy and scale invariance.
+\item
+  Normal distributions and the Central Limit Theorem.
+\item
+  Exponential distributions and growth rates.
+\item
+  Combinations: Log-normal, stretched exponential, parabolic fractal
+\end{itemize}
+
+\hypertarget{usage-in-archaeology}{%
+\section{Usage in Archaeology}\label{usage-in-archaeology}}
+
+Lit. use Strawinska-Zanko et al. (2018), Crabtree et al. (2017), Maschner and Bentley (2003), Grove (2011) ++
+
+Settlement scaling and Zipf law (here, or in next chapter?)
+
+END chapter
+
+\hypertarget{methods-distribution-fitting}{%
+\chapter{Methods: Distribution fitting}\label{methods-distribution-fitting}}
+
+\hypertarget{heavy-tailed-distributions-testing-for-power-laws}{%
+\section{Heavy-tailed distributions, testing for power laws}\label{heavy-tailed-distributions-testing-for-power-laws}}
+
+\begin{itemize}
+\item
+  Technical characteristics of power laws, Newman (2005), do I need more?
+\item
+  Old style distribution fitting (which is used in C. Brown and Liebovitch (2010) and C. T. Brown, Witschey, and Liebovitch (2005) and check.
+\item
+  New style presented in Clauset, Shalizi, and Newman (2009), implemented in R with the poweRlaw package Gillespie (2015), and used in Strawinska-Zanko et al. (2018) and Crabtree et al. (2017). More recent?
+\end{itemize}
+
+\hypertarget{methodological-procedure}{%
+\section{Methodological procedure}\label{methodological-procedure}}
+
+\begin{itemize}
+\item
+  Synthetic data genaration
+\item
+  Parameter settings: dist. types, xmin, testing the pl hypothesis etc. Minimal house-count cutoff (min. sample size). Isolating top house.
+\item
+  Phasing of Vráble
+\item
+\end{itemize}
+
+\hypertarget{notes-on-terminology-power-law-pareto-and-zipf}{%
+\section{Notes on terminology: Power law, Pareto and Zipf}\label{notes-on-terminology-power-law-pareto-and-zipf}}
 
 \begin{itemize}
 \tightlist
 \item
-  Cascading bifurcations and confluences (splitting or merging - tree structure/arborescence/branching, and relation to size. Terminology borrowed from biology and fluid dynamics (including turbulence/turbulent flow)
+  A law (distribution) is not a law (of nature), see Grove (2011) for review of the long-lasting confusion in Archaeology (e.g. Hodder (1979)), also rank-size '' rule''
+\item
+  Zipf law and Settlement Scaling theory, Bettencourt (2021), Gomez-Lievano, Youn, and Bettencourt (2012), Lobo et al. (2020) (possibly move this to preceding chapter). Why I'm not doing settlement scaling in this study.
 \end{itemize}
 
-The role of randomness - tidy and messy fractals (romanesco broccolis are not more fractal than regular broccolis, only more regular.
+END chapter
 
-The relationship with criticality and chaos: deterministic \emph{and} unpredictable
+\hypertarget{results-distribution-fitting}{%
+\chapter{Results: Distribution fitting}\label{results-distribution-fitting}}
 
-Fractals embedded in
+fdsasdfas
+
+END Chapter
+
+\hypertarget{part-settlement-plans}{%
+\part{Settlement Plans}\label{part-settlement-plans}}
+
+\hypertarget{village-planning-in-prehistory}{%
+\chapter{Village planning in Prehistory}\label{village-planning-in-prehistory}}
+
+fdsasdf
+
+END Chapter
+
+\hypertarget{methods-fractal-image-analysis}{%
+\chapter{Methods: Fractal image analysis}\label{methods-fractal-image-analysis}}
+
+fdasdf
+
+END Chapter
+
+\hypertarget{results-image-analysis}{%
+\chapter{Results: Image analysis}\label{results-image-analysis}}
+
+fdsasdf
+
+END Chapter
+
+\hypertarget{part-synthesis}{%
+\part{Synthesis}\label{part-synthesis}}
+
+\hypertarget{discussion-social-complexity-in-linear-pottery-and-trypillia-settlements}{%
+\chapter{Discussion: Social complexity in Linear Pottery and Trypillia settlements}\label{discussion-social-complexity-in-linear-pottery-and-trypillia-settlements}}
+
+fdsasdf
+
+END Chapter
+
+\hypertarget{discussion-fractal-analysis-and-archaeological-data}{%
+\chapter{Discussion: Fractal Analysis and Archaeological data}\label{discussion-fractal-analysis-and-archaeological-data}}
+
+fdsasdf
+
+END Chapter
+
+\hypertarget{conclusion-and-outlook}{%
+\chapter{Conclusion and Outlook}\label{conclusion-and-outlook}}
+
+\hypertarget{things-i-would-like-to-have-done-but-that-didnt-fit-into-this-study}{%
+\section{Things I would like to have done, but that didn't fit into this study}\label{things-i-would-like-to-have-done-but-that-didnt-fit-into-this-study}}
 
 \begin{itemize}
+\tightlist
 \item
-  Space (hence ``fractal geometry''): geomorphology, plants, ocean and wind currents, galaxies
+  Ethnoarchaeology: Measure house sizes and settlement layouts in contemporary settings, and relate to social organisation (largely overlooked by ethnographers)
 \item
-  Time series: earthquakes, finance
+  Test distributions and settlement layout analysis on other settings: Lake dwellings, later/historic periods, other materials (e.g.~megaliths)\ldots{} Add more complex distribution models, add observation windows on images. Try on remote sensing imagery.
 \item
-  Networks: hierarchical organisations, income distributions, word counts, www. etc.
+  Settlement Scaling on Neolithic settings
 \item
-  Pure mathematics: Julia and Mandelbrot sets, strange attractors (don't go into details!)
+  Time series: Hurst exponent and scale invariance in temporal development of e.g.~regional settlement or population
 \item
-  Other: 1/f or pink noise
+  Integrate -- bridge the gap -- between opposite theoretical (nat. and soc./hum.) approaches to the same phenomena
+\item
+  Chaos and strange attractors in Archaeology
+\item
+  More?
 \end{itemize}
 
-No, not everything is fractal: e.g.~Central Limit Theorem
+\hypertarget{concluding-remarks}{%
+\section{Concluding remarks}\label{concluding-remarks}}
 
-Fractal analysis for studying irregular phenomena (methods described in more detail in \ref{Distributions} and \ref{Settlement}, and thus as a tool for quantitative empirical research.
+END Thesis
 
-\hypertarget{very-short-introduction-to-micro-macro-approaches-in-social-theory}{%
-\section{Very short introduction to micro-macro approaches in social theory}\label{very-short-introduction-to-micro-macro-approaches-in-social-theory}}
-
-\begin{itemize}
-\item
-  Lévi-Strauss and Structuralism
-\item
-  Giddens and Structuration Theory
-\item
-  Delanda and Assemblage Theory
-\item
-  Latour and Actor-Network Theory
-\end{itemize}
-
-What these approaches all have in common, is that they are entirely qualitative (\textbf{check}).
-
-\begin{itemize}
-\item
-  That's not a problem in itself.
-\item
-  Quant approach is both possible for the stated purpose, and desirable for reasons of comparative analysis.
-\item
-  Data deluge (refer to chap.~on geomagn data). The goal here is to establish a quantitative framework for studying social complexity and hierarchy. Further articulating fractal analysis with existing theoretical approaches is not the primary goal here, as it could constitute a separate research project. In the present thesis, bla bla.
-\end{itemize}
-
-END chapter.
-
-Math can be added in body using usual syntax like this
-
-\(p\) is unknown but expected to be around 1/3. Standard error will be approximated
-
-\[
-SE = \sqrt(\frac{p(1-p)}{n}) \approx \sqrt{\frac{1/3 (1 - 1/3)} {300}} = 0.027
-\]
-
-You can also use math in footnotes like this\footnote{where we mention \(p = \frac{a}{b}\)}.
-
-We will approximate standard error to 0.027\footnote{\(p\) is unknown but expected to be around 1/3. Standard error will be approximated
-
-  \[
-  SE = \sqrt(\frac{p(1-p)}{n}) \approx \sqrt{\frac{1/3 (1 - 1/3)} {300}} = 0.027
-  \]}
-
-\hypertarget{applications}{%
-\chapter{Applications}\label{applications}}
-
-Some \emph{significant} applications are demonstrated in this chapter.
-
-\hypertarget{example-one}{%
-\section{Example one}\label{example-one}}
-
-\hypertarget{example-two}{%
-\section{Example two}\label{example-two}}
-
-\hypertarget{final-words}{%
-\chapter{Final Words}\label{final-words}}
-
-We have finished a nice book.
-
+\hypertarget{refs}{}
+\begin{CSLReferences}{1}{0}
 \hypertarget{references}{%
 \chapter*{References}\label{references}}
 \addcontentsline{toc}{chapter}{References}
 
+\leavevmode\vadjust pre{\hypertarget{ref-alberti2014}{}}%
+Alberti, Gianmarco. 2014. {``Modeling Group Size and Scalar Stress by Logistic Regression from an Archaeological Perspective.''} \emph{PLOS ONE} 9 (3): e91510. \url{https://doi.org/10.1371/journal.pone.0091510}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-arponen2016}{}}%
+Arponen, V. P. J., Johannes Müller, Robert Hofmann, Martin Furholt, Artur Ribeiro, Christian Horn, and Martin Hinz. 2016. {``Using the Capability Approach to Conceptualise Inequality in Archaeology: The Case of the Late Neolithic Bosnian Site Okoli{š}te c. 5200-4600 BCE.''} \emph{Journal of Archaeological Method and Theory} 23: 541--60. \url{https://doi.org/10.1007/s10816-015-9252-0}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-awrejcewicz2020}{}}%
+Awrejcewicz, Jan, and Dariusz Grzelczyk. 2020. \emph{Dynamical Systems Theory}. \url{https://doi.org/10.5772/intechopen.83328}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-barley2011}{}}%
+Barley, Nigel. 2011. \emph{The Innocent Anthropologist: Notes from a Mud Hut}. Eland.
+
+\leavevmode\vadjust pre{\hypertarget{ref-bentley2007}{}}%
+Bentley, R. Alexander, and Herbert D. G. Maschner. 2007. {``Complexity Theory.''} \emph{Handbook of Archaeological Theories}, 245--70. \url{https://research-information.bris.ac.uk/en/publications/complexity-theory}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-bettencourt2021}{}}%
+Bettencourt, Luís M. A. 2021. \emph{Introduction to Urban Science: Evidence and Theory of Cities as Complex Systems}. Cambridge, MA, USA: MIT Press.
+
+\leavevmode\vadjust pre{\hypertarget{ref-brown2005}{}}%
+Brown, Clifford T., Walter RT Witschey, and Larry S. Liebovitch. 2005. {``The Broken past: Fractals in Archaeology.''} \emph{Journal of archaeological method and theory} 12 (1): 3778. \url{https://doi.org/10.1007/s10816-005-2396-6}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-brown2010}{}}%
+Brown, Clifford, and Larry Liebovitch. 2010. \emph{Fractal Analysis}. 2455 Teller Road,~Thousand Oaks~California~91320~United States of America: SAGE Publications, Inc. \url{https://doi.org/10.4135/9781412993876}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-clauset2009}{}}%
+Clauset, Aaron, Cosma Rohilla Shalizi, and M. E. J. Newman. 2009. {``Power-Law Distributions in Empirical Data.''} \emph{Society for Industrial and Applied Mathematics Review} 51 (4): 661--703.
+
+\leavevmode\vadjust pre{\hypertarget{ref-crabtree2017}{}}%
+Crabtree, Stefani A., R. Kyle Bocinsky, Paul L. Hooper, Susan C. Ryan, and Timothy A. Kohler. 2017. {``How to Make a Polity (in the Central Mesa Verde Region).''} \emph{American Antiquity} 82 (1): 71--95. \url{https://doi.org/10.1017/aaq.2016.18}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-daems2021}{}}%
+Daems, Dries. 2021. \emph{Social complexity and complex systems in archaeology}. London, New York: Routledge.
+
+\leavevmode\vadjust pre{\hypertarget{ref-devaney2020}{}}%
+Devaney, Robert L. 2020. \emph{A First Course In Chaotic Dynamical Systems: Theory And Experiment}. Milton: CRC Press.
+
+\leavevmode\vadjust pre{\hypertarget{ref-diachenko2018}{}}%
+Diachenko, Alexandr. 2018. {``Fractal Models.''} Edited by Sandra López Varela. Hoboken: John Wiley \& Sons.
+
+\leavevmode\vadjust pre{\hypertarget{ref-dunbar2022}{}}%
+Dunbar, Robin. 2022. \emph{Annales Academiciae Scientarum Fennicae {[}Forthcoming{]} Reconstructing Dunbar's Number: A Guide for the Perplexed to Some Pitfalls, Indiscretions and Fallacies}. \url{https://doi.org/10.13140/RG.2.2.34145.58727}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-ensor2013}{}}%
+Ensor, Bradley E. 2013. \emph{The Archaeology of Kinship: Advancing Interpretation and Contributions to Theory}. University of Arizona Press. \url{https://www.jstor.org/stable/j.ctt183pcj3}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-ensor2017}{}}%
+Ensor, Bradley E., Joel D. Irish, and William F. Keegan. 2017. {``The Bioarchaeology of Kinship: Proposed Revisions to Assumptions Guiding Interpretation.''} \emph{Current Anthropology} 58 (6): 739--61. \url{https://doi.org/10.1086/694584}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-falconer2013}{}}%
+Falconer, Kenneth, and Kenneth Falconer. 2013. \emph{Fractals: A Very Short Introduction}. Very Short Introductions. Oxford, New York: Oxford University Press.
+
+\leavevmode\vadjust pre{\hypertarget{ref-fraser1968}{}}%
+Fraser, Douglas. 1968. \emph{Village Planning in the Primitive World}. Planning and Cities. New York: George Braziller. \url{http://archive.org/details/VillagePlanningInThePrimitiveWorld}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-gillespie2015}{}}%
+Gillespie, Colin S. 2015. {``Fitting Heavy Tailed Distributions: The poweRlaw Package.''} \emph{Journal of Statistical Software} 64 (2).
+
+\leavevmode\vadjust pre{\hypertarget{ref-godelier1986}{}}%
+Godelier, Maurice. 1986. \emph{The making of great men: male domination and power among the New Guinea Baruya}. Vol. 56. Cambridge studies in social anthropology. Cambridge: University Press.
+
+\leavevmode\vadjust pre{\hypertarget{ref-gomez-lievano2012}{}}%
+Gomez-Lievano, Andres, Hyejin Youn, and Luís Bettencourt. 2012. {``The Statistics of Urban Scaling and Their Connection to Zipf{'}s Law.''} \emph{PloS One} 7 (July): e40393. \url{https://doi.org/10.1371/journal.pone.0040393}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-graeber2021}{}}%
+Graeber, David, and David Wengrow. 2021. \emph{The dawn of everything: a new history of humanity}. New York: Farrar, Straus; Giroux.
+
+\leavevmode\vadjust pre{\hypertarget{ref-grove2011}{}}%
+Grove, Matt. 2011. {``An Archaeological Signature of Multi-Level Social Systems: The Case of the Irish Bronze Age.''} \emph{Journal of Anthropological Archaeology} 30 (1): 44--61. \url{https://doi.org/10.1016/j.jaa.2010.12.002}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-hamilton2007}{}}%
+Hamilton, Marcus, Bruce Milne, Robert Walker, Oskar Burger, and James Brown. 2007. {``The Complex Structure of Hunter-Gatherer Social Networks.''} \emph{Proceedings of the Royal Society B} 274: 2195--2202.
+
+\leavevmode\vadjust pre{\hypertarget{ref-hodder1979}{}}%
+Hodder, Ian. 1979. {``Simulating the Growth of Hierarchies.''} In, edited by Colin Renfrew and Kenneth L. Cooke, 117--44. New York: Academic Press. \url{https://doi.org/10.1016/B978-0-12-586050-5.50015-4}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-johnson1987}{}}%
+Johnson, Allen, and Timothy Earle. 1987. \emph{The Evolution of Human Societies : From Foraging Group to Agrarian State}. Stanford: Stanford University Press.
+
+\leavevmode\vadjust pre{\hypertarget{ref-johnson1982}{}}%
+Johnson, Gregory A. 1982. {``Organizational Structure and Scalar Stress.''} In, edited by Colin Renfrew, Mark J. Rowlands, and Barbara A. Segraves, 389--421. New York: Academic Press.
+
+\leavevmode\vadjust pre{\hypertarget{ref-lobo2020}{}}%
+Lobo, Jose, Luis MA Bettencourt, Michael E Smith, and Scott Ortman. 2020. {``Settlement Scaling Theory: Bridging the Study of Ancient and Contemporary Urban Systems.''} \emph{Urban Studies} 57 (4): 731--47. \url{https://doi.org/10.1177/0042098019873796}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-mandelbrot1982}{}}%
+Mandelbrot, Benoit B. 1982. \emph{The fractal geometry of nature}. San Francisco: Freeman.
+
+\leavevmode\vadjust pre{\hypertarget{ref-maschner2003}{}}%
+Maschner, Herbert, and Alexander Bentley. 2003. {``The Power Law of Rank and Household on the North Pacific.''} In, edited by Alexander Bentley and Herbert Maschner, 47--143. Salt Lake City: The University of Utah Press.
+
+\leavevmode\vadjust pre{\hypertarget{ref-newman2005}{}}%
+Newman, M. E. J. 2005. {``Power Laws, Pareto Distributions and Zipf's Law.''} \emph{Contemporary Physics} 46 (5): 325--51. \url{https://doi.org/10.1080/00107510500052444}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-sahlins2013}{}}%
+Sahlins, Marshall. 2013. \emph{What kinship is - and is not}. Chicago: University of Chicago Press.
+
+\leavevmode\vadjust pre{\hypertarget{ref-service1971}{}}%
+Service, Elman. 1971. \emph{Primitive Social Organization : An Evolutionary Perspective}. 2nd ed. New York: Random House.
+
+\leavevmode\vadjust pre{\hypertarget{ref-strawinska-zanko2018}{}}%
+Strawinska-Zanko, Urszula, Larry Liebovitch, April Watson, and Clifford Brown. 2018. {``Capital in the~First Century: The Evolution of Inequality in Ancient Maya Society.''} In, edited by Urszula Strawinska-Zanko and Larry Liebovitch, 161--92. Computational Social Sciences. Cham: Springer International Publishing. \url{https://doi.org/10.1007/978-3-319-76765-9_9}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-testart2005}{}}%
+Testart, Alain. 2005. \emph{Eléments de Classification Des Sociétés}. Paris, France: Éditions Errance : ill. en noir, tabl., cartes, schémas, couv. ill. en coul.
+
+\leavevmode\vadjust pre{\hypertarget{ref-west2023}{}}%
+West, Bruce, Robin Dunbar, Culbreth Garland, and Paolo Grigolini. 2023. \emph{Fractal Structure of Human and Primate Social Networks Optimizes Information Flow}. \url{https://doi.org/10.1101/2023.02.23.529431}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-whitridge2016}{}}%
+Whitridge, Peter. 2016. {``Fractal Worlds: An Archaeology of Nested Spatial Scales.''} \emph{ARCTIC} 69 (5): 1--10. \url{https://doi.org/10.14430/arctic4659}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-wilk1983}{}}%
+Wilk, Richard R. 1983. {``Little house in the jungle: The causes of variation in house size among modern Kekchi Maya.''} \emph{Journal of anthropological archaeology} 2 (2): 99116. \url{https://doi.org/10.1016/0278-4165(83)90009-0}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-xie2015}{}}%
+Xie, Yihui. 2015. \emph{Dynamic Documents with {R} and Knitr}. 2nd ed. Boca Raton, Florida: Chapman; Hall/CRC. \url{http://yihui.name/knitr/}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-R-bookdown}{}}%
+---------. 2022. \emph{Bookdown: Authoring Books and Technical Documents with r Markdown}. \url{https://CRAN.R-project.org/package=bookdown}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-yoffee1993}{}}%
+Yoffee, Norman. 1993. {``Too Many Chiefs? (Or, Safe Texts for the '90s).''} In, edited by Norman Yoffee and Andrew Sherratt, 1st ed., 60--78. Cambridge University Press. \url{https://doi.org/10.1017/CBO9780511720277.007}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-yoffee2005}{}}%
+---------. 2005. \emph{Myths of the Archaic State : Evolution of the Earliest Cities, States, and Civilizations}. Cambridge: Cambridge University Press.
+
+\leavevmode\vadjust pre{\hypertarget{ref-zhou2005}{}}%
+Zhou, W.-X., D. Sornette, R. A. Hill, and R. I. M. Dunbar. 2005. {``Discrete Hierarchical Organization of Social Group Sizes.''} \emph{Proceedings of the Royal Society B: Biological Sciences} 272 (1561): 439--44. \url{https://doi.org/10.1098/rspb.2004.2970}.
+
+\end{CSLReferences}
+
 \hypertarget{appendix-appendix}{%
-\appendix}
+\appendix \addcontentsline{toc}{chapter}{\appendixname}}
 
 
 \hypertarget{this-is-my-first-appendix}{%
@@ -484,7 +825,5 @@ Jada jada jada
 \chapter{This is my second one}\label{this-is-my-second-one}}
 
 Bla bla bla
-
-  \bibliography{book.bib,packages.bib}
 
 \end{document}

@@ -32,19 +32,17 @@ The relationship with criticality and chaos: deterministic *and* unpredictable
 
 Fractals embedded in
 
--   Space (hence "fractal geometry"): geomorphology, plants, ocean and wind currents, galaxies
+-   Space (hence "fractal geometry"): geomorphology, plants, ocean and wind currents, galaxies, also human constructed features (see Chapter xx for details)
 
--   Time series: earthquakes, finance
+-   Time series: earthquakes, finance (not applied in this study, though should be done later)
 
--   Networks: hierarchical organisations, income distributions, word counts, www. etc.
+-   Networks/abstract: hierarchical organisations, income distributions, word counts, 1/f or pink noise, www. etc. (see Chapter xxx for details)
 
 -   Pure mathematics: Julia and Mandelbrot sets, strange attractors (don't go into details!)
 
--   Other: 1/f or pink noise
-
 No, not everything is fractal: e.g. Central Limit Theorem
 
-Fractal analysis for studying irregular phenomena (methods described in more detail in \@ref(Distributions) and \@ref(Settlement), and thus as a tool for quantitative empirical research.
+Fractal analysis for studying irregular phenomena (methods described in more detail Chapters xxx), and thus as a tool for quantitative empirical research.
 
 ## Very short introduction to micro-macro approaches in social theory
 
@@ -62,7 +60,7 @@ What these approaches all have in common, is that they are entirely qualitative 
 
 -   Quant approach is both possible for the stated purpose, and desirable for reasons of comparative analysis.
 
--   Data deluge (refer to chap. on geomagn data). The goal here is to establish a quantitative framework for studying social complexity and hierarchy. Further articulating fractal analysis with existing theoretical approaches is not the primary goal here, as it could constitute a separate research project. In the present thesis, bla bla.
+-   Data deluge (refer to chap. on geomagn data). The goal here is to establish a quantitative framework for studying social complexity and hierarchy in archaeological/prehistoric settings. Further articulating fractal analysis with existing social theoretical approaches is not the primary goal here, as it could constitute a separate research project. In the present thesis, bla bla.
 
 END chapter.
 
