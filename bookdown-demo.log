@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2023.3.16)  22 MAR 2023 17:16
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2023.3.16)  23 MAR 2023 17:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -933,20 +933,20 @@ LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 ] [9] [10]
 Chapter 1.
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/n' will be
-(Font)              scaled to size 17.28pt on input line 203.
+(Font)              scaled to size 17.28pt on input line 189.
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/b/n' will be
-(Font)              scaled to size 17.28pt on input line 203.
+(Font)              scaled to size 17.28pt on input line 189.
 [11
 
 ]
 
-LaTeX Warning: Reference `part2' on page 12 undefined on input line 248.
+LaTeX Warning: Reference `part2' on page 12 undefined on input line 234.
 
 
-LaTeX Warning: Reference `intro' on page 12 undefined on input line 257.
+LaTeX Warning: Reference `intro' on page 12 undefined on input line 243.
 
 
-LaTeX Warning: Reference `methods' on page 12 undefined on input line 257.
+LaTeX Warning: Reference `methods' on page 12 undefined on input line 243.
 
 [12]
 File: bookdown-demo_files/figure-latex/nice-fig-1.pdf Graphic file (type pdf)
@@ -956,23 +956,23 @@ Chapter 2.
 [15
 
 ]
-Overfull \hbox (46.61923pt too wide) in paragraph at lines 357--358
+Overfull \hbox (46.61923pt too wide) in paragraph at lines 347--348
 []\TU/TimesNewRoman(0)/m/n/12 Cascading bifurcations and confluences (splitting or merging - tree structure/arborescence/branching,
  []
 
 [16]
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/n' will be
-(Font)              scaled to size 8.4pt on input line 416.
+(Font)              scaled to size 8.4pt on input line 406.
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 416.
+(Font)              scaled to size 10.0pt on input line 406.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 5.18867pt on input line 416.
+(Font)              scaled to size 5.18867pt on input line 406.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.18921pt on input line 416.
+(Font)              scaled to size 5.18921pt on input line 406.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 5.18814pt on input line 416.
+(Font)              scaled to size 5.18814pt on input line 406.
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 416.
+(Font)              scaled to size 7.0pt on input line 406.
 
 Overfull \hbox (15.68422pt too wide) has occurred while \output is active
 \TU/TimesNewRoman(0)/m/it/12 2.3.  VERY SHORT INTRODUCTION TO MICRO-MACRO APPROACHES IN SOCIAL THEORY \TU/TimesNewRoman(0)/m/n/12 17
@@ -996,7 +996,7 @@ Chapter 4.
 [23
 
 ]
-Underfull \hbox (badness 4872) in paragraph at lines 538--538
+Underfull \hbox (badness 4872) in paragraph at lines 528--528
 []\TU/TimesNewRoman(0)/b/n/17.28 Interpreting distribution types and their underlying
  []
 
@@ -1004,25 +1004,28 @@ Underfull \hbox (badness 4872) in paragraph at lines 538--538
 
 ]
 Chapter 5.
-[27] [28]
+[27]
+LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/n' will be
+(Font)              scaled to size 15.60004pt on input line 598.
+[28]
 Chapter 6.
 [29
 
-] [30
+] [30] [31
 
-] [31] [32]
+] [32]
 Chapter 7.
 [33
 
-] [34
-
-]
+] [34]
 Chapter 8.
-[35] [36
+[35
 
-]
+] [36]
 Chapter 9.
-[37] [38
+[37
+
+] [38
 
 ] [39] [40]
 Chapter 10.
@@ -1045,6 +1048,11 @@ Chapter 12.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [45] [46]
+Underfull \hbox (badness 1259) in paragraph at lines 792--794
+\TU/TimesNewRoman(0)/m/n/12 from an Archaeological Perspective.” \TU/TimesNewRoman(0)/m/it/12 PLOS ONE \TU/TimesNewRoman(0)/m/n/12 9(3):e91510. doi: []10.1371/jour-
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [47
@@ -1055,28 +1063,49 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 [48]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[49] [50]
-Appendix A.
-[51
+[49]
+Underfull \hbox (badness 1430) in paragraph at lines 912--914
+[]\TU/TimesNewRoman(0)/m/n/12 Li, Jian, Qian Du, and Caixin Sun. 2009. “An Improved Box-Counting Method for
+ []
 
-] [52
+
+Underfull \hbox (badness 2922) in paragraph at lines 912--914
+\TU/TimesNewRoman(0)/m/n/12 Image Fractal Dimension Estimation.” \TU/TimesNewRoman(0)/m/it/12 Pattern Recognition \TU/TimesNewRoman(0)/m/n/12 42(11):2460–69. doi:
+ []
+
+
+Overfull \hbox (31.4721pt too wide) in paragraph at lines 933--935
+\TU/TimesNewRoman(0)/m/n/12 normal Distributions.” \TU/TimesNewRoman(0)/m/it/12 Internet Mathematics \TU/TimesNewRoman(0)/m/n/12 1(2):226–51. doi: []10.1080/15427951.2004.10129088[]. 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[50]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[51] [52]
+Appendix A.
+[53
+
+] [54
 
 ]
 Appendix B.
-[53] (./bookdown-demo.aux)
+[55] (./bookdown-demo.aux)
 
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `bookdown-demo.out' has not changed.
-(rerunfilecheck)             Checksum: BC5B6D293218E246541E47A8D5A1BEBC;10200.
+(rerunfilecheck)             Checksum: 2BC167AC4F1B6AEB3B8CB4EAB7F18211;12133.
  ) 
 Here is how much of TeX's memory you used:
- 17916 strings out of 478683
- 334561 string characters out of 5847152
- 1857012 words of memory out of 5000000
- 37760 multiletter control sequences out of 15000+600000
+ 17928 strings out of 478683
+ 334931 string characters out of 5847152
+ 1853012 words of memory out of 5000000
+ 37773 multiletter control sequences out of 15000+600000
  519811 words of font info for 105 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 86i,8n,122p,490b,414s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 86i,8n,122p,490b,551s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on bookdown-demo.pdf (53 pages).
+Output written on bookdown-demo.pdf (55 pages).

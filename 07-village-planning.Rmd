@@ -1,7 +1,37 @@
-# (PART) Settlement Plans {-}
+# (PART) Settlement Plans {.unnumbered}
 
 # Village planning in Prehistory
 
-fdsasdf
+## Settlement layout and social structure
+
+Or the social organisation of village layout. Research background:
+
+Lit. use @furholt2016, @fraser1968, @ensor2017 (not the correct reference, I should ask him!)
+
+Use the Trypillia volumes. Also @müller-scheeßel2019, @trebsche2010
+
+Factors affecting village layout:
+
+-   Political structure (but, as with hierarchy, an organised layout does not necessarily equate top-down despotic decision making).
+
+-   Kinship, matrimonial and locality structures
+
+-   Cosmology (e.g. Linear Pottery house orientations)
+
+-   Economic and ritual functions of village elements (constructed and non-constructed)
+
+-   Local landscape setting (to be factored out)
+
+## The geometries of conscious planning vs. emergent behaviour
+
+-   I need to find some references here!
+
+-   Euclid: grids, lines, circles -- how humans think in shapes. Social settings: architect/planner, strong common institutions/ideals (examples?)
+
+-   Mandelbrot: irregular, self-similar, scale independent (i.e. fractal) shapes -- emergent, not consciously preconceived. Self-organisation. Does the "no pattern" case exist? Emergence from repetitive sequences of simple choices/mechanisms. Examples.
+
+-   Binary or continuum? Needs to be studied empirically.
+
+## Fractal image analysis in archaeology
 
 END Chapter

@@ -2,4 +2,22 @@
 
 fdasdf
 
+## Fractal dimension and lacunarity
+
+-   Box-counting, lit. @mancuso2021, @li2009, @klinkenberg1994
+
+-   Gliding-box algorithmsc, @allain1991, @hingee2019, @cheng1997, @plotnick1996
+
+-   Caveats:
+
+    -   Fractional box-counting dimension does not equal self-similarity in a simple way
+
+    -   My summary *L* is not equal to the one used in *FracLac* and thus by @farías-pelayo2017
+
+## Image preparation
+
+-   Procedure for archaeological samples, same as in article
+
+-   Procedure for synthetic sample
+
 END Chapter

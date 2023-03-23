@@ -14,13 +14,13 @@ Two approaches: house-size distributions and settlement layouts
 
 Just the minimum required to present the thesis in general terms.
 
--   Hierarchy
+-   Hierarchy @pumain2006
 
--   Inequality
+-   Inequality @kohler2018, @midlarsky1999
 
--   Social complexity
+-   Social complexity @daems2021
 
--   Scale
+-   Scale @west2017
 
 ## Main findings here?
 
@@ -64,3 +64,7 @@ knitr::kable(
 ```
 
 You can write citations, too. For example, we are using the **bookdown** package [@R-bookdown] in this sample book, which was built on top of R Markdown and **knitr** [@xie2015].
+
+Test: @morgan1965.
+
+Test: @mandelbrot2021. jløkj fdsasdfadfasdfadf new text

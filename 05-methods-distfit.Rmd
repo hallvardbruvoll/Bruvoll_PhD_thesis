@@ -4,23 +4,30 @@
 
 -   Technical characteristics of power laws, @newman2005, do I need more?
 
--   Old style distribution fitting (which is used in @brown2010 and @brown2005 and check.
+-   Old style distribution fitting (which is used in @brown2010 and @brown2005 and check. @mitzenmacher2004, @harrison1981
 
--   New style presented in @clauset2009, implemented in R with the poweRlaw package @gillespie2015, and used in @strawinska-zanko2018 and @crabtree2017. More recent?
+-   New style presented in @clauset2009, @stumpf2012, implemented in R with the poweRlaw package @gillespie2015, and used in @strawinska-zanko2018 and @crabtree2017. More recent?
 
 ## Methodological procedure
 
--   Synthetic data genaration
+-   Reminder of main goal for this part of the study: identify power-law structures in the house-size distributions of the Linear Pottery and Trypillia samples.
+
+-   Synthetic data genaration:
+
+    -   Why?
+
+        1.  Process: how long/much does in take for a normal distribution to become power-law? And reverse sense?
+
+        2.  Temporal resolution issue: does the temporal palimpsest of several phases with e.g. log-normal distributions produce false power-law signals?
+
+    -   How?
+
+        -   Random number generation and iterated multiplicative (1.) or additive (2.) sequences, with K-S testing [@gillespie2015] at each stage. Report when the distributions become power laws.
+
+-   Present data set with categories (settlements, quarters/neighbourhoods, time samples for Vráble)
 
 -   Parameter settings: dist. types, xmin, testing the pl hypothesis etc. Minimal house-count cutoff (min. sample size). Isolating top house.
 
--   Phasing of Vráble
-
--   
-
-## Notes on terminology: Power law, Pareto and Zipf
-
--   A law (distribution) is not a law (of nature), see @grove2011 for review of the long-lasting confusion in Archaeology (e.g. @hodder1979), also rank-size " rule"
--   Zipf law and Settlement Scaling theory, @bettencourt2021, @gomez-lievano2012, @lobo2020 (possibly move this to preceding chapter). Why I'm not doing settlement scaling in this study.
+## 
 
 END chapter

@@ -1,5 +1,25 @@
 # Results: Distribution fitting
 
-fdsasdfas
+## Synthetic distributions
+
+Fill in analysis for
+
+1.  Multiplicative process
+
+2.  Additive process
+
+## Settlements
+
+House-size distributions of whole settlements (both Linear Pottery and Trypillia)
+
+## Quarters/neighbourhoods
+
+House-size distributions of separate quarters (Nebelivka) and neighbourhoods (Vráble). Can I include separate Nebelivka neighbourhoods as well? (prob. too small, but check)
+
+## Temporal samples (Vráble)
+
+If time, I can add more Žitava sitesre, but not necessary. I can also analyse temporal samples of Vráble neighbourhoods separately.
+
+## Summary of findings
 
 END Chapter

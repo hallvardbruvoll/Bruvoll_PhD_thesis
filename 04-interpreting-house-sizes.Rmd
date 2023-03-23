@@ -4,7 +4,7 @@
 
 ## What is social hierarchy?
 
--   Political assumptions -- all hierarchical social structures are not despotic top-down rule. Democracies can also be very hierarchical. Matter of scale rather than political system @graeber2021. But, tendencies?
+-   Political assumptions -- all hierarchical social structures are not despotic top-down rule. Democracies can also be very hierarchical. Matter of scale rather than political system @graeber2021. But, tendencies? Use @pumain2006, also furholt2020b.
 
 -   Nested and non-nested social hierarchies, hierarchical hunter-gatherers? @hamilton2007, @whitridge2016
 
@@ -14,7 +14,7 @@
 
 -   Tools for classifying societies, or evolutionary model? Discussion of @johnson1987, @testart2005, @service1971
 
--   Critique in @yoffee1993, @yoffee2005, @graeber2021 ++
+-   Anti-evolution critique in @yoffee1993, @yoffee2005, @graeber2021. Anarchistic critique: @crumley1995, @haude2019,
 
 ## Possible reasons for house-size difference
 
@@ -22,13 +22,13 @@ Often underlying assumptions: household wealth or size? Or both?
 
 -   Kinship and households: who lives in a house? @sahlins2013, @ensor2013, @ensor2017
 
--   Do clan leaders have bigger houses?
+-   Do clan leaders have bigger houses? check @haude2019
 
 Discuss some archaeo references
 
 Functional difference:
 
--   Ethnography of initiation houses, communal/assembly houses, ritual houses, including @barley2011, @godelier1986, @wilk1983, @fraser1968
+-   Ethnography of initiation houses, communal/assembly houses, ritual houses, including @barley2011, @godelier1986, @wilk1983, @fraser1968, @haude2019
 
 -   Caveats: building materials and constraints
 
@@ -42,10 +42,14 @@ Functional difference:
 
 -   Combinations: Log-normal, stretched exponential, parabolic fractal
 
-## Usage in Archaeology
+-   Notes on terminology: Power law, Pareto and Zipf, @newman2005
 
-Lit. use @strawinska-zanko2018, @crabtree2017, @maschner2003, @grove2011 ++
+-   A law (distribution) is not a law (of nature), see @grove2011 for review of the long-lasting confusion in Archaeology (e.g. @hodder1979), also "rank-size rule"
 
-Settlement scaling and Zipf law (here, or in next chapter?)
+## Fitting heavy-tailed distributions in Archaeology
+
+-   Lit. use @strawinska-zanko2018, @crabtree2017, @maschner2003, @grove2011 ++
+
+-   Zipf law and Settlement Scaling theory, @bettencourt2021, @gomez-lievano2012, @lobo2020. Connection with Central Place Theory, e.g. @müller-scheeßel2007, @chen2011. Why I'm not doing settlement scaling in this study.
 
 END chapter
