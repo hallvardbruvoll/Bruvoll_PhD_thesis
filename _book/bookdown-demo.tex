@@ -188,6 +188,23 @@ Furholt, Grier, et al. (2020), Furholt, Müller, et al. (2020), Furholt, Müller
 \hypertarget{background-of-the-study}{%
 \section{Background of the study}\label{background-of-the-study}}
 
+\begin{itemize}
+\item
+  Studying social hierarchy in Prehistory through fractal analysis of settlement plans
+\item
+  In Europe, the Neolithic is the long and messy transition period between mobile hunter-gatherer groups in the Palaeo- and Mesolithic, and the first city states in the Bronze (Aegean) and Iron Ages (Mediterranean and Central Europe)
+\item
+  Early farming economy, influence from the Near East.
+\item
+  Large variety in scale and content of archaeologically defined culture groups. Single farmsteads and small hamlets in many phases -- some with hardly any settlement evidence at all \textbf{examples mid-neo, use} Shennan (2018). Other phases include exceptionally large settlements, probably hosting populations of several thousand inhabitants, like at Maidanetske in central Ukraine around 3.800 BCE (see \ref{trypillia}). While in some settings, like in Linear Pottery society in much of continental Europe north of the Alps towards 5.100 BCE (see \ref{lbk}), the dead were buried in simple pit graves, with very little distinction in treatment between individuals, in other phases some individuals were buried with tremendous amounts of precious goods like in Varna, Romania, or under colossal burial mounds like in Carnac, France, both in the mid-5th millennium (Shennan 2018)\textbf{check ref}.
+\item
+  Seen at a very large scale -- across the continent and through the Holocene -- this development of society from small scale and relatively egalitarian towards large scale and more hierarchical seems evident (though not to everyone, see Graeber and Wengrow 2021 and Section \ref{soc-typ}). When we look more closely however, this evolution is anything but linear, as both population sizes and levels of hierarchical organisation seem to fluctuate considerably, sometimes over short time spans as from the Trypillia \textbf{C2 to D1??, check this}, when the so-called mega-sites are abandoned and their former inhabitants regroup into much smaller settlements during a transition of maybe only \textbf{check and ref} years.
+\item
+  In many cases, the level of social hierarchisation and complexity in a given Prehistoric society is very hard for researchers to evaluate, since many indicators of such structures are either lost from the archaeological record, or were never included in the first place {[}Perreault (2019); Section \ref{complexity-archaeo}{]}. Archaeological traces that are often interpreted as signs of social complexity and hierarchy may furthermore be deceiving. Seemingly monumental structures were in many cases built through small additions over centuries, rather than in one colossal construction campaign {[}\textbf{example, Carnac alignments? Danish megaliths?}{]}. In many megalithic burial contexts, it may be impossible to know how large a segment of the society that had access to such inhumations (\textbf{rephrase}).
+\item
+  New methods for investigating hierarchy: fractal analysis. Borrowed from other disciplines, not much tested in Archaeology.
+\end{itemize}
+
 \hypertarget{research-question-and-objectives}{%
 \section{Research question and objectives}\label{research-question-and-objectives}}
 
@@ -219,6 +236,8 @@ Just the minimum required to present the thesis in general terms.
 
 \begin{itemize}
 \item
+  Social complexity and evolution. Are less complex societies simple? Is that a bad thing?
+\item
   Open science and open-source scripts
 \item
   Terminology and spelling (British English for text. For geographical place names, Slovak special characters are kept as far as possible, even though it can be a pain in the xxx to render in Rmarkdown on Windows OS, and the 2010 Ukranian National transliteration system with only ASCII characters and no soft sign)
@@ -229,7 +248,7 @@ Just the minimum required to present the thesis in general terms.
 \hypertarget{structure-of-the-thesis}{%
 \section{Structure of the thesis}\label{structure-of-the-thesis}}
 
-This thesis is structured as a monograph in four parts. In the first part the overall framework of the study is exposed, with the general introduction above, the overarching theoretical framework in Chapter \ref{theory}, and the background of the study material in Chapter \ref{material}. Parts two and three are devoted to each their methodological approach to the material: Part II to the study of hierarchy in size distributions, and Part III to the quantification of image textures. Each of these parts consists of three chapters, the firsts of which -- Chapters \ref{house-sizes-theory} and \ref{images-theory} -- expose the theoretical and interpretative background of the applied methods and their relevance to Archaeology. The second chapters -- Chapters \ref{methods-distfit} and \ref{images-methods} -- detail the technical specifics of the two approaches and their implementation in this study, and the third chapters -- Chapters \ref{results-distfit} and \ref{images-results} -- provide the actual analyses and summaries of results. In Part IV, the findings are summarised and further discussed. Chapter \ref{disc-results} gives an attempt of interpreting the results in the context of the culture-historical setting of the European Neolithic, while Chapter \ref{disc-methods} reviews the possibilities and limitations of the fractal analysis framework in Archaeology. Concluding remarks and suggestions for further study are given in Chapter \ref{conclusion}.
+This thesis is structured as a monograph in four parts. In the first part the overall framework of the study is exposed, with the general introduction above, the overarching theoretical framework in Chapter \ref{theory}, and the background of the study material in Chapter \ref{material}. Parts II and III are devoted to each their methodological approach to the material: Part II to the study of hierarchy in size distributions, and Part III to the quantification of image textures. Each of these parts consists of three chapters, the firsts of which -- Chapters \ref{house-sizes-theory} and \ref{images-theory} -- expose the theoretical and interpretative background of the applied methods and their relevance to Archaeology. The following chapters -- Chapters \ref{methods-distfit} and \ref{images-methods} -- detail the technical specifics of the two approaches and their implementation in this study, and the last chapters within these parts -- Chapters \ref{results-distfit} and \ref{images-results} -- provide the actual analyses and summaries of results. In Part IV, the findings are summarised and further discussed. Chapter \ref{disc-results} gives an attempt of interpreting the results in the context of the culture-historical setting of the European Neolithic, while Chapter \ref{disc-methods} reviews the possibilities and limitations of the fractal analysis framework in Archaeology. Concluding remarks and suggestions for further study are given in Chapter \ref{conclusion}.
 
 Some readers might react to an apparent deviation from the academic tradition of devoting a separate chapter to research history. This is a deliberate choice, not to suggest that historiography is unimportant, but rather as a result of the fundamentally interdisciplinary scope of the study. In fact, there is very little extant history of applying fractal analysis in Archaeology -- the few studies that, to my knowledge, have been done in this direction are discussed primarily in Sections \ref{distfit-archaeo} and \ref{image-archaeo}. Fractal analysis itself holds a research history of its own (see Section \ref{fractals}), and so does the study of Linear Pottery (Section \ref{lbk}) and Trypillia societies (Section \ref{trypillia}), not to mention the general study of social complexity in Prehistory (mainly Section \ref{complexity-archaeo}). In short, instead of trying to shoehorn these parallel histories into a clearly delimited but rather hybrid chapter, I have opted for what I believe to be a more useful approach, namely to fit them in more seamlessly where they belong, in the various associated theory and methods chapters.
 
@@ -239,8 +258,6 @@ END Chapter
 
 Here I skipped a line.\\
 Here I added a backslash.
-
-fdsasdfasdf You can label chapter and section titles using \texttt{\{\#label\}} after them, e.g., we can reference Chapter \ref{intro}. If you do not manually label them, there will be automatic labels anyway, e.g., Chapter \ref{methods}.
 
 Figures and tables with captions will be placed in \texttt{figure} and \texttt{table} environments, respectively.
 
@@ -491,8 +508,8 @@ We will approximate standard error to 0.027\footnote{\(p\) is unknown but expect
   Biologically defined thresholds to group size? Dunbar's number and controversies, Dunbar (2022), West et al. (2023) (add published papers). Scalar stress Johnson (1982), Alberti (2014), Zhou et al. (2005)
 \end{itemize}
 
-\hypertarget{social-typologies-and-their-critique}{%
-\section{Social typologies and their critique}\label{social-typologies-and-their-critique}}
+\hypertarget{soc-typ}{%
+\section{Social typologies and their critique}\label{soc-typ}}
 
 \begin{itemize}
 \item
@@ -733,7 +750,20 @@ END Chapter
 \hypertarget{images-results}{%
 \chapter{Results: Image analysis}\label{images-results}}
 
-fdsasdf
+\hypertarget{synthetic-settlement-plans}{%
+\section{Synthetic settlement plans}\label{synthetic-settlement-plans}}
+
+\hypertarget{settlements-1}{%
+\section{Settlements}\label{settlements-1}}
+
+\hypertarget{quartersneighbourhoods-1}{%
+\section{Quarters/neighbourhoods}\label{quartersneighbourhoods-1}}
+
+\hypertarget{temporal-samples-vruxe1ble-1}{%
+\section{Temporal samples (Vráble)}\label{temporal-samples-vruxe1ble-1}}
+
+\hypertarget{summary-of-findings-1}{%
+\section{Summary of findings}\label{summary-of-findings-1}}
 
 END Chapter
 
@@ -945,6 +975,9 @@ Müller-Scheeßel, Nils. 2019. {``A New Approach to the Temporal Significance of
 \leavevmode\vadjust pre{\hypertarget{ref-newman2005}{}}%
 Newman, M. E. J. 2005. {``Power Laws, Pareto Distributions and Zipf's Law.''} \emph{Contemporary Physics} 46(5):325--51. doi: \href{https://doi.org/10.1080/00107510500052444}{10.1080/00107510500052444}.
 
+\leavevmode\vadjust pre{\hypertarget{ref-perreault2019}{}}%
+Perreault, Charles. 2019. \emph{The quality of the archaeological record}. Chicago: The University of Chicago Press.
+
 \leavevmode\vadjust pre{\hypertarget{ref-plotnick1996}{}}%
 Plotnick, Roy E., Robert H. Gardner, William W. Hargrove, Karen Prestegaard, and Martin Perlmutter. 1996. {``Lacunarity Analysis: A General Technique for the Analysis of Spatial Patterns.''} \emph{Physical Review E} 53(5):5461--68. doi: \href{https://doi.org/10.1103/PhysRevE.53.5461}{10.1103/PhysRevE.53.5461}.
 
@@ -956,6 +989,9 @@ Sahlins, Marshall. 2013. \emph{What kinship is - and is not}. Chicago: Universit
 
 \leavevmode\vadjust pre{\hypertarget{ref-service1971}{}}%
 Service, Elman. 1971. \emph{Primitive Social Organization : An Evolutionary Perspective}. 2nd ed. New York: Random House.
+
+\leavevmode\vadjust pre{\hypertarget{ref-shennan2018}{}}%
+Shennan, Stephen. 2018. \emph{The first farmers of Europe: an evolutionary perspective}. Cambridge: University Press.
 
 \leavevmode\vadjust pre{\hypertarget{ref-strawinska-zanko2018}{}}%
 Strawinska-Zanko, Urszula, Larry Liebovitch, April Watson, and Clifford Brown. 2018. {``\href{https://doi.org/10.1007/978-3-319-76765-9_9}{Capital in the~First Century: The Evolution of Inequality in Ancient Maya Society}.''} Pp. 161--92 in, \emph{Computational Social Sciences}, edited by U. Strawinska-Zanko and L. Liebovitch. Cham: Springer International Publishing.
