@@ -1,6 +1,6 @@
 # (PART) Size distributions {.unnumbered}
 
-# House sizes and social meaning
+# House sizes and social meaning {#house-sizes-theory}
 
 ## What is social hierarchy?
 
@@ -10,7 +10,7 @@
 
 -   Biologically defined thresholds to group size? Dunbar's number and controversies, @dunbar2022, @west2023 (add published papers). Scalar stress @johnson1982, @alberti2014, @zhou2005
 
-## Social typologies and their critique
+## Social typologies and their critique {#soc-typ}
 
 -   Tools for classifying societies, or evolutionary model? Discussion of @johnson1987, @testart2005, @service1971
 
@@ -46,7 +46,7 @@ Functional difference:
 
 -   A law (distribution) is not a law (of nature), see @grove2011 for review of the long-lasting confusion in Archaeology (e.g. @hodder1979), also "rank-size rule"
 
-## Fitting heavy-tailed distributions in Archaeology
+## Fitting heavy-tailed distributions in Archaeology {#distfit-archaeo}
 
 -   Lit. use @strawinska-zanko2018, @crabtree2017, @maschner2003, @grove2011 ++
 

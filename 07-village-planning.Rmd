@@ -1,6 +1,6 @@
 # (PART) Settlement Plans {.unnumbered}
 
-# Village planning in Prehistory
+# Village planning in Prehistory {#images-theory}
 
 ## Settlement layout and social structure
 
@@ -32,6 +32,6 @@ Factors affecting village layout:
 
 -   Binary or continuum? Needs to be studied empirically.
 
-## Fractal image analysis in archaeology
+## Fractal image analysis in archaeology {#image-archaeo}
 
 END Chapter

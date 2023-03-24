@@ -159,7 +159,7 @@
 \makeatother
 \subtitle{with case studies from the Linear Pottery and Trypillia cultures (5.500 - 3.500 cal. BCE)}
 \author{Hallvard Bruvoll \and Department of Archaeology, Conservation and History \and University of Oslo}
-\date{2023-03-23}
+\date{2023-03-24}
 
 \begin{document}
 \maketitle
@@ -182,8 +182,8 @@ Furholt, Grier, et al. (2020), Furholt, Müller, et al. (2020), Furholt, Müller
 \hypertarget{part-frameworks}{%
 \part{Frameworks}\label{part-frameworks}}
 
-\hypertarget{introduction}{%
-\chapter{Introduction}\label{introduction}}
+\hypertarget{intro}{%
+\chapter{Introduction}\label{intro}}
 
 \hypertarget{background-of-the-study}{%
 \section{Background of the study}\label{background-of-the-study}}
@@ -229,13 +229,13 @@ Just the minimum required to present the thesis in general terms.
 \hypertarget{structure-of-the-thesis}{%
 \section{Structure of the thesis}\label{structure-of-the-thesis}}
 
-Interdisciplinary subject and no single history of research chapter.
+This thesis is structured as a monograph in four parts. In the first part the overall framework of the study is exposed, with the general introduction above, the overarching theoretical framework in Chapter \ref{theory}, and the background of the study material in Chapter \ref{material}. Parts two and three are devoted to each their methodological approach to the material: Part II to the study of hierarchy in size distributions, and Part III to the quantification of image textures. Each of these parts consists of three chapters, the firsts of which -- Chapters \ref{house-sizes-theory} and \ref{images-theory} -- expose the theoretical and interpretative background of the applied methods and their relevance to Archaeology. The second chapters -- Chapters \ref{methods-distfit} and \ref{images-methods} -- detail the technical specifics of the two approaches and their implementation in this study, and the third chapters -- Chapters \ref{results-distfit} and \ref{images-results} -- provide the actual analyses and summaries of results. In Part IV, the findings are summarised and further discussed. Chapter \ref{disc-results} gives an attempt of interpreting the results in the context of the culture-historical setting of the European Neolithic, while Chapter \ref{disc-methods} reviews the possibilities and limitations of the fractal analysis framework in Archaeology. Concluding remarks and suggestions for further study are given in Chapter \ref{conclusion}.
 
-Accessibility, non-specialised readers: technical details are, as far as possible, limited to the dedicated chapters (\ref{part2}).
+Some readers might react to an apparent deviation from the academic tradition of devoting a separate chapter to research history. This is a deliberate choice, not to suggest that historiography is unimportant, but rather as a result of the fundamentally interdisciplinary scope of the study. In fact, there is very little extant history of applying fractal analysis in Archaeology -- the few studies that, to my knowledge, have been done in this direction are discussed primarily in Sections \ref{distfit-archaeo} and \ref{image-archaeo}. Fractal analysis itself holds a research history of its own (see Section \ref{fractals}), and so does the study of Linear Pottery (Section \ref{lbk}) and Trypillia societies (Section \ref{trypillia}), not to mention the general study of social complexity in Prehistory (mainly Section \ref{complexity-archaeo}). In short, instead of trying to shoehorn these parallel histories into a clearly delimited but rather hybrid chapter, I have opted for what I believe to be a more useful approach, namely to fit them in more seamlessly where they belong, in the various associated theory and methods chapters.
 
-Describe the parts (including this one).
+An additional note should be made here regarding the writing style of the different parts and chapters. It is my belief that a major obstacle for fractal analysis methods to become more integrated into the standard tool kits of archaeological research, is the excessively technical nature of much of the associated literature. Archaeology as a discipline remains profoundly rooted in the Humanities, as seen in the inbuilt structure of teaching, research and funding institutions in most (at least European) countries. Fractal analysis is derived from pure mathematics, and most applications so far have been developed within the natural sciences (\textbf{ref necessary?}). Archaeologists who are trained within a humanistic scholarly tradition cannot be expected to hold a skill level of mathematics more advanced than what is achieved in high school, and code programming is hardly taught at all within the walls of Humanities faculties. Technical details regarding the methods and analyses applied in this thesis are therefore -- as much as possible -- limited to the devoted Chapters \ref{methods-distfit} and \ref{images-methods}, and readers who are interested in these may also refer to the online code repository for more details and reproducibility \textbf{cite repository}. In the rest of the thesis I have opted for a more narrative approach, in an attempt to invite a somewhat larger audience of archaeologists into the fascinating complexities of fractals.
 
-Text
+END Chapter
 
 Here I skipped a line.\\
 Here I added a backslash.
@@ -312,8 +312,8 @@ Test: Morgan (1965).
 
 Test: Mandelbrot (2021). jløkj fdsasdfadfasdfadf new text
 
-\hypertarget{theoretical-framework-complexity-and-fractals}{%
-\chapter{Theoretical framework: Complexity and Fractals}\label{theoretical-framework-complexity-and-fractals}}
+\hypertarget{theory}{%
+\chapter{Theoretical framework: Complexity and Fractals}\label{theory}}
 
 \hypertarget{very-short-introduction-to-complexity-theory-dynamical-systems-theory}{%
 \section{Very short introduction to Complexity Theory / Dynamical Systems Theory}\label{very-short-introduction-to-complexity-theory-dynamical-systems-theory}}
@@ -326,8 +326,8 @@ Describe complexity, dynamical systems, chaos, feedback loops, criticality, emer
 
 Mention the most common applications in Archaeology: ABMs, \textbf{and what}? check in literature.
 
-\hypertarget{very-short-introduction-to-fractals-and-fractal-analysis}{%
-\section{Very short introduction to Fractals and Fractal Analysis}\label{very-short-introduction-to-fractals-and-fractal-analysis}}
+\hypertarget{fractals}{%
+\section{Very short introduction to Fractals and Fractal Analysis}\label{fractals}}
 
 Lit. use Mandelbrot (1982), Falconer and Falconer (2013) (general), also Brown and Liebovitch (2010), Brown, Witschey, and Liebovitch (2005) and Diachenko (2018) (for Archaeology)
 
@@ -411,11 +411,11 @@ We will approximate standard error to 0.027\footnote{\(p\) is unknown but expect
   SE = \sqrt(\frac{p(1-p)}{n}) \approx \sqrt{\frac{1/3 (1 - 1/3)} {300}} = 0.027
   \]}
 
-\hypertarget{material-and-data-social-complexity-in-the-european-neolithic}{%
-\chapter{Material and data: social complexity in the European Neolithic}\label{material-and-data-social-complexity-in-the-european-neolithic}}
+\hypertarget{material}{%
+\chapter{Material and data: social complexity in the European Neolithic}\label{material}}
 
-\hypertarget{studying-social-complexity-in-archaeology-and-prehistory.}{%
-\section{Studying social complexity in Archaeology and Prehistory.}\label{studying-social-complexity-in-archaeology-and-prehistory.}}
+\hypertarget{complexity-archaeo}{%
+\section{Studying social complexity in Archaeology and Prehistory.}\label{complexity-archaeo}}
 
 \begin{itemize}
 \item
@@ -432,8 +432,8 @@ We will approximate standard error to 0.027\footnote{\(p\) is unknown but expect
   This project: house-size distributions and settlement layouts (details in subsequent chapters), just very short argumentation
 \end{itemize}
 
-\hypertarget{the-linear-pottery-culture-complex}{%
-\section{The Linear Pottery culture complex}\label{the-linear-pottery-culture-complex}}
+\hypertarget{lbk}{%
+\section{The Linear Pottery culture complex}\label{lbk}}
 
 \begin{itemize}
 \item
@@ -444,8 +444,8 @@ We will approximate standard error to 0.027\footnote{\(p\) is unknown but expect
   Organisation of Linear Pottery society: egalitarian or hierarchic?
 \end{itemize}
 
-\hypertarget{the-cucutenuxed-trypillia-culture-complex}{%
-\section{The Cucutení-Trypillia culture complex}\label{the-cucutenuxed-trypillia-culture-complex}}
+\hypertarget{trypillia}{%
+\section{The Cucutení-Trypillia culture complex}\label{trypillia}}
 
 \begin{itemize}
 \item
@@ -476,8 +476,8 @@ We will approximate standard error to 0.027\footnote{\(p\) is unknown but expect
 \hypertarget{part-size-distributions}{%
 \part{Size distributions}\label{part-size-distributions}}
 
-\hypertarget{house-sizes-and-social-meaning}{%
-\chapter{House sizes and social meaning}\label{house-sizes-and-social-meaning}}
+\hypertarget{house-sizes-theory}{%
+\chapter{House sizes and social meaning}\label{house-sizes-theory}}
 
 \hypertarget{what-is-social-hierarchy}{%
 \section{What is social hierarchy?}\label{what-is-social-hierarchy}}
@@ -542,8 +542,8 @@ Functional difference:
   A law (distribution) is not a law (of nature), see Grove (2011) for review of the long-lasting confusion in Archaeology (e.g. Hodder (1979)), also ``rank-size rule''
 \end{itemize}
 
-\hypertarget{fitting-heavy-tailed-distributions-in-archaeology}{%
-\section{Fitting heavy-tailed distributions in Archaeology}\label{fitting-heavy-tailed-distributions-in-archaeology}}
+\hypertarget{distfit-archaeo}{%
+\section{Fitting heavy-tailed distributions in Archaeology}\label{distfit-archaeo}}
 
 \begin{itemize}
 \item
@@ -554,8 +554,8 @@ Functional difference:
 
 END chapter
 
-\hypertarget{methods-distribution-fitting}{%
-\chapter{Methods: Distribution fitting}\label{methods-distribution-fitting}}
+\hypertarget{methods-distfit}{%
+\chapter{Methods: Distribution fitting}\label{methods-distfit}}
 
 \hypertarget{heavy-tailed-distributions-testing-for-power-laws}{%
 \section{Heavy-tailed distributions, testing for power laws}\label{heavy-tailed-distributions-testing-for-power-laws}}
@@ -609,8 +609,8 @@ END chapter
 
 END chapter
 
-\hypertarget{results-distribution-fitting}{%
-\chapter{Results: Distribution fitting}\label{results-distribution-fitting}}
+\hypertarget{results-distfit}{%
+\chapter{Results: Distribution fitting}\label{results-distfit}}
 
 \hypertarget{synthetic-distributions}{%
 \section{Synthetic distributions}\label{synthetic-distributions}}
@@ -648,8 +648,8 @@ END Chapter
 \hypertarget{part-settlement-plans}{%
 \part{Settlement Plans}\label{part-settlement-plans}}
 
-\hypertarget{village-planning-in-prehistory}{%
-\chapter{Village planning in Prehistory}\label{village-planning-in-prehistory}}
+\hypertarget{images-theory}{%
+\chapter{Village planning in Prehistory}\label{images-theory}}
 
 \hypertarget{settlement-layout-and-social-structure}{%
 \section{Settlement layout and social structure}\label{settlement-layout-and-social-structure}}
@@ -689,13 +689,13 @@ Factors affecting village layout:
   Binary or continuum? Needs to be studied empirically.
 \end{itemize}
 
-\hypertarget{fractal-image-analysis-in-archaeology}{%
-\section{Fractal image analysis in archaeology}\label{fractal-image-analysis-in-archaeology}}
+\hypertarget{image-archaeo}{%
+\section{Fractal image analysis in archaeology}\label{image-archaeo}}
 
 END Chapter
 
-\hypertarget{methods-fractal-image-analysis}{%
-\chapter{Methods: Fractal image analysis}\label{methods-fractal-image-analysis}}
+\hypertarget{images-methods}{%
+\chapter{Methods: Fractal image analysis}\label{images-methods}}
 
 fdasdf
 
@@ -730,8 +730,8 @@ fdasdf
 
 END Chapter
 
-\hypertarget{results-image-analysis}{%
-\chapter{Results: Image analysis}\label{results-image-analysis}}
+\hypertarget{images-results}{%
+\chapter{Results: Image analysis}\label{images-results}}
 
 fdsasdf
 
@@ -740,22 +740,22 @@ END Chapter
 \hypertarget{part-synthesis}{%
 \part{Synthesis}\label{part-synthesis}}
 
-\hypertarget{discussion-social-complexity-in-linear-pottery-and-trypillia-settlements}{%
-\chapter{Discussion: Social complexity in Linear Pottery and Trypillia settlements}\label{discussion-social-complexity-in-linear-pottery-and-trypillia-settlements}}
+\hypertarget{disc-results}{%
+\chapter{Discussion: Social complexity in Linear Pottery and Trypillia settlements}\label{disc-results}}
 
 fdsasdf
 
 END Chapter
 
-\hypertarget{discussion-fractal-analysis-and-archaeological-data}{%
-\chapter{Discussion: Fractal Analysis and Archaeological data}\label{discussion-fractal-analysis-and-archaeological-data}}
+\hypertarget{disc-methods}{%
+\chapter{Discussion: Fractal Analysis and Archaeological data}\label{disc-methods}}
 
 fdsasdf
 
 END Chapter
 
-\hypertarget{conclusion-and-outlook}{%
-\chapter{Conclusion and Outlook}\label{conclusion-and-outlook}}
+\hypertarget{conclusion}{%
+\chapter{Conclusion and Outlook}\label{conclusion}}
 
 \hypertarget{things-i-would-like-to-have-done-but-that-didnt-fit-into-this-study}{%
 \section{Things I would like to have done, but that didn't fit into this study}\label{things-i-would-like-to-have-done-but-that-didnt-fit-into-this-study}}

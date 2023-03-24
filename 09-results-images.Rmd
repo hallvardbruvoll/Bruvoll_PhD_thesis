@@ -1,5 +1,13 @@
-# Results: Image analysis
+# Results: Image analysis {#images-results}
 
-fdsasdf
+## Synthetic settlement plans
+
+## Settlements
+
+## Quarters/neighbourhoods
+
+## Temporal samples (Vráble)
+
+## Summary of findings
 
 END Chapter

@@ -1,4 +1,4 @@
-# Results: Distribution fitting
+# Results: Distribution fitting {#results-distfit}
 
 ## Synthetic distributions
 

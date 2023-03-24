@@ -1,4 +1,4 @@
-# Methods: Fractal image analysis
+# Methods: Fractal image analysis {#images-methods}
 
 fdasdf
 

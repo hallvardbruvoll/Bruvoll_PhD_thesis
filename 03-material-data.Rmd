@@ -1,6 +1,6 @@
-# Material and data: social complexity in the European Neolithic
+# Material and data: social complexity in the European Neolithic {#material}
 
-## Studying social complexity in Archaeology and Prehistory.
+## Studying social complexity in Archaeology and Prehistory. {#complexity-archaeo}
 
 -   Grave goods
 
@@ -14,7 +14,7 @@
 
 -   This project: house-size distributions and settlement layouts (details in subsequent chapters), just very short argumentation
 
-## The Linear Pottery culture complex
+## The Linear Pottery culture complex {#lbk}
 
 -   General intro to the culture
 
@@ -22,7 +22,7 @@
 
 -   Organisation of Linear Pottery society: egalitarian or hierarchic?
 
-## The Cucutení-Trypillia culture complex
+## The Cucutení-Trypillia culture complex {#trypillia}
 
 -   General intro to the culture
 

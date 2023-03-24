@@ -1,4 +1,4 @@
-# Methods: Distribution fitting
+# Methods: Distribution fitting {#methods-distfit}
 
 ## Heavy-tailed distributions, testing for power laws
 

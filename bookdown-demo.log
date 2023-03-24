@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2023.3.16)  23 MAR 2023 17:56
+This is XeTeX, Version 3.141592653-2.6-0.999994 (TeX Live 2022) (preloaded format=xelatex 2023.3.16)  24 MAR 2023 13:46
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -938,29 +938,23 @@ LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/b/n' will be
 (Font)              scaled to size 17.28pt on input line 189.
 [11
 
-]
+] [12]
 
-LaTeX Warning: Reference `part2' on page 12 undefined on input line 234.
+LaTeX Warning: Reference `methods' on page 13 undefined on input line 243.
 
-
-LaTeX Warning: Reference `intro' on page 12 undefined on input line 243.
-
-
-LaTeX Warning: Reference `methods' on page 12 undefined on input line 243.
-
-[12]
+[13]
 File: bookdown-demo_files/figure-latex/nice-fig-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/nice-fig-1.pdf>
-[13] [14]
+[14] [15] [16]
 Chapter 2.
-[15
+[17
 
 ]
 Overfull \hbox (46.61923pt too wide) in paragraph at lines 347--348
 []\TU/TimesNewRoman(0)/m/n/12 Cascading bifurcations and confluences (splitting or merging - tree structure/arborescence/branching,
  []
 
-[16]
+[18]
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/n' will be
 (Font)              scaled to size 8.4pt on input line 406.
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/n' will be
@@ -975,79 +969,79 @@ LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/n' will be
 (Font)              scaled to size 7.0pt on input line 406.
 
 Overfull \hbox (15.68422pt too wide) has occurred while \output is active
-\TU/TimesNewRoman(0)/m/it/12 2.3.  VERY SHORT INTRODUCTION TO MICRO-MACRO APPROACHES IN SOCIAL THEORY \TU/TimesNewRoman(0)/m/n/12 17
+\TU/TimesNewRoman(0)/m/it/12 2.3.  VERY SHORT INTRODUCTION TO MICRO-MACRO APPROACHES IN SOCIAL THEORY \TU/TimesNewRoman(0)/m/n/12 19
  []
 
-[17] [18
+[19] [20
 
 ]
 Chapter 3.
-[19
+[21
 
 ]
 Overfull \hbox (21.55826pt too wide) has occurred while \output is active
-\TU/TimesNewRoman(0)/m/n/12 20 \TU/TimesNewRoman(0)/m/it/12 CHAPTER 3.  MATERIAL AND DATA: SOCIAL COMPLEXITY IN THE EUROPEAN NEOLITHIC
+\TU/TimesNewRoman(0)/m/n/12 22 \TU/TimesNewRoman(0)/m/it/12 CHAPTER 3.  MATERIAL AND DATA: SOCIAL COMPLEXITY IN THE EUROPEAN NEOLITHIC
  []
 
-[20] [21
+[22] [23
 
-] [22]
+] [24]
 Chapter 4.
-[23
+[25
 
 ]
 Underfull \hbox (badness 4872) in paragraph at lines 528--528
 []\TU/TimesNewRoman(0)/b/n/17.28 Interpreting distribution types and their underlying
  []
 
-[24] [25] [26
+[26] [27] [28
 
 ]
 Chapter 5.
-[27]
+[29]
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/n' will be
 (Font)              scaled to size 15.60004pt on input line 598.
-[28]
+[30]
 Chapter 6.
-[29
+[31
 
-] [30] [31
-
-] [32]
-Chapter 7.
-[33
+] [32] [33
 
 ] [34]
-Chapter 8.
+Chapter 7.
 [35
 
 ] [36]
-Chapter 9.
+Chapter 8.
 [37
 
-] [38
+] [38]
+Chapter 9.
+[39
 
-] [39] [40]
+] [40
+
+] [41] [42]
 Chapter 10.
-[41
+[43
 
 ]
 Overfull \hbox (90.28287pt too wide) has occurred while \output is active
-\TU/TimesNewRoman(0)/m/n/12 42 \TU/TimesNewRoman(0)/m/it/12 CHAPTER 10.  DISCUSSION: SOCIAL COMPLEXITY IN LINEAR POTTERY AND TRYPILLIA SETTLEMENTS
+\TU/TimesNewRoman(0)/m/n/12 44 \TU/TimesNewRoman(0)/m/it/12 CHAPTER 10.  DISCUSSION: SOCIAL COMPLEXITY IN LINEAR POTTERY AND TRYPILLIA SETTLEMENTS
  []
 
-[42
+[44
 
 ]
 Chapter 11.
-[43] [44
+[45] [46
 
 ]
 Chapter 12.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[45] [46]
+[47] [48]
 Underfull \hbox (badness 1259) in paragraph at lines 792--794
 \TU/TimesNewRoman(0)/m/n/12 from an Archaeological Perspective.” \TU/TimesNewRoman(0)/m/it/12 PLOS ONE \TU/TimesNewRoman(0)/m/n/12 9(3):e91510. doi: []10.1371/jour-
  []
@@ -1055,15 +1049,15 @@ Underfull \hbox (badness 1259) in paragraph at lines 792--794
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[47
+[49
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[48]
+[50]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[49]
+[51]
 Underfull \hbox (badness 1430) in paragraph at lines 912--914
 []\TU/TimesNewRoman(0)/m/n/12 Li, Jian, Qian Du, and Caixin Sun. 2009. “An Improved Box-Counting Method for
  []
@@ -1081,18 +1075,18 @@ Overfull \hbox (31.4721pt too wide) in paragraph at lines 933--935
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[50]
+[52]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[51] [52]
+[53] [54]
 Appendix A.
-[53
+[55
 
-] [54
+] [56
 
 ]
 Appendix B.
-[55] (./bookdown-demo.aux)
+[57] (./bookdown-demo.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -1100,12 +1094,12 @@ Package rerunfilecheck Info: File `bookdown-demo.out' has not changed.
 (rerunfilecheck)             Checksum: 2BC167AC4F1B6AEB3B8CB4EAB7F18211;12133.
  ) 
 Here is how much of TeX's memory you used:
- 17928 strings out of 478683
- 334931 string characters out of 5847152
- 1853012 words of memory out of 5000000
- 37773 multiletter control sequences out of 15000+600000
+ 17926 strings out of 478683
+ 334420 string characters out of 5847152
+ 1854012 words of memory out of 5000000
+ 37771 multiletter control sequences out of 15000+600000
  519811 words of font info for 105 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 86i,8n,122p,490b,551s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 86i,8n,122p,1517b,551s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on bookdown-demo.pdf (55 pages).
+Output written on bookdown-demo.pdf (57 pages).
