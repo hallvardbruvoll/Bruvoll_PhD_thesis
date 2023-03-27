@@ -12,7 +12,7 @@ Mention the most common applications in Archaeology: ABMs, **and what**? check i
 
 ## Very short introduction to Fractals and Fractal Analysis {#fractals}
 
-Lit. use @mandelbrot1982, @falconer2013 (general), also @brown2010, @brown2005 and @diachenko2018 (for Archaeology)
+Lit. use @mandelbrot2021, @falconer2013 (general), also @brown2010, @brown2005 and @diachenko2018 (for Archaeology)
 
 Two sentences on history of fractals? Mandelbrot. Maybe cut?
 
