@@ -6,7 +6,7 @@ Lit. use @daems2021 and @bentley2007.
 
 For Dynamical Systems, use @awrejcewicz2020 and @devaney2020, but don't go into detail.
 
-Describe complexity, dynamical systems, chaos, feedback loops, criticality, emergence.
+Describe complexity, dynamical systems, chaos, feedback loops, criticality, emergence. Scale @west2017 NA
 
 Mention the most common applications in Archaeology: ABMs, **and what**? check in literature.
 

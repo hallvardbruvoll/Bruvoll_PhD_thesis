@@ -19,7 +19,7 @@ output:
     keep_tex: yes
     latex_engine: xelatex
     toc_appendix: yes
-#    citation_package: natbib
+    #citation_package: biblatex (this creates a bug, prevents book compliation)
 # pandoc_args: "--csl" this doesn't change anything
 documentclass: book
 bibliography: [book.bib]

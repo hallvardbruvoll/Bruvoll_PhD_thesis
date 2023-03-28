@@ -6,7 +6,7 @@
 
 -   Political assumptions -- all hierarchical social structures are not despotic top-down rule. Democracies can also be very hierarchical. Matter of scale rather than political system @graeber2021. But, tendencies? Use @pumain2006, also furholt2020b.
 
--   Nested and non-nested social hierarchies, hierarchical hunter-gatherers? @hamilton2007, @whitridge2016
+-   Nested and non-nested social hierarchies, hierarchical hunter-gatherers? @hamilton2007, @whitridge2016 (or use in Chapter \@ref(disc-methods)?)
 
 -   Biologically defined thresholds to group size? Dunbar's number and controversies, @dunbar2022, @west2023 (add published papers). Scalar stress @johnson1982, @alberti2014, @zhou2005
 
@@ -14,7 +14,7 @@
 
 -   Tools for classifying societies, or evolutionary model? Discussion of @johnson1987, @testart2005, @service1971, @earle1997.
 
--   Anti-evolution critique in @yoffee1993, @yoffee2005, @kienlin2012, @lund2022,  @furholt2020. Anarchistic critique: @crumley1995, @haude2019, @graeber2021
+-   Anti-evolution critique in @yoffee1993, @yoffee2005, @kienlin2012, @lund2022, @furholt2020. Anarchistic critique: @crumley1995, @haude2019, @graeber2021
 
 ## Possible reasons for house-size difference
 

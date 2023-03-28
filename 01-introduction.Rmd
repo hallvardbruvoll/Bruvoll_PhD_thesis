@@ -32,13 +32,21 @@ While both these methodological approaches are well developed and integrated to 
 
 Just the minimum required to present the thesis in general terms.
 
--   Hierarchy @pumain2006
+-   Hierarchy @pumain2006, @xia2021,
 
--   Inequality @kohler2018, @midlarsky1999
+Wolves:
 
--   Social complexity @daems2021
+@cafazzo2016, @packard2003: linear hierarchy and leadership among wolves.
 
--   Scale @west2017
+@rodríguez2017: wolf "hierarchy", even when illustrated as pyramidal, is really linear (me).
+
+In @muro2011: simulating wolf-pack hunting strategies without hierarchy
+
+@mech1999: "linear dominance hierarchy" model doesn't fit well with most wolf packs in the wild, consisting of a single breeding couple and their offspring.
+
+-   Inequality @kohler2018, @midlarsky1999, @price2010, @price1995 NA
+
+-   Social complexity @daems2021 NA
 
 ## Main findings here?
 
