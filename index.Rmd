@@ -17,7 +17,7 @@ output:
     includes:
       in_header: preamble.tex
     keep_tex: yes
-    latex_engine: xelatex
+    latex_engine: xelatex # for handling UTF-8 and font issues
     toc_appendix: yes
     #citation_package: biblatex (this creates a bug, prevents book compliation)
 # pandoc_args: "--csl" this doesn't change anything
