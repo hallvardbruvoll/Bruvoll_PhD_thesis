@@ -32,7 +32,7 @@ While both these methodological approaches are well developed and integrated to 
 
 Just the minimum required to present the thesis in general terms.
 
--   Hierarchy @pumain2006, @xia2021,
+-   Hierarchy @pumain2006 (hierarchy in natural and social sciences), @strauss2022 (dominance hierarchies/pecking order), @redhead2022 (social hierarchies humans)
 
 Wolves:
 
@@ -43,6 +43,10 @@ Wolves:
 In @muro2011: simulating wolf-pack hunting strategies without hierarchy
 
 @mech1999: "linear dominance hierarchy" model doesn't fit well with most wolf packs in the wild, consisting of a single breeding couple and their offspring.
+
+Branching, multi-level social hierarchies among animals: hamadryas baboons @schreier2009. Eusocial insects (ants, wasps...) @shimoji2022
+
+Bottom line hierarchy: pecking order/linear dominance hierarchy may be prevalent in any part of human Prehistory, but very hard to study from material remains. Branching/fractal hierarchies as well as social stratification should leave material traces, and are most probably related to population size (see Section \@ref(house-sizes-theory), and thus less likely to be found within pre-Neolithic societies.
 
 -   Inequality @kohler2018, @midlarsky1999, @price2010, @price1995 NA
 
