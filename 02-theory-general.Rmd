@@ -8,6 +8,8 @@ For Dynamical Systems, use @awrejcewicz2020 and @devaney2020, but don't go into 
 
 Describe complexity, dynamical systems, chaos, feedback loops, criticality, emergence. Scale @west2017 NA
 
+Social complexity
+
 Mention the most common applications in Archaeology: ABMs, **and what**? check in literature.
 
 ## Very short introduction to Fractals and Fractal Analysis {#fractals}
