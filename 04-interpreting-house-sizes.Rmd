@@ -8,31 +8,35 @@
 
 -   Nested and non-nested social hierarchies, hierarchical hunter-gatherers? @hamilton2007, @whitridge2016 (or use in Chapter \@ref(disc-methods)?)
 
--   Biologically defined thresholds to group size? Dunbar's number and controversies, @dunbar2022, @west2023 (add published papers). Scalar stress @johnson1982, @alberti2014, @zhou2005
+-   Biologically defined thresholds to group size? Dunbar's number and controversies, @dunbar2022, @west2023 (add published papers). Scalar stress @johnson1982, @alberti2014, @zhou2005. Also @carneiro1986
 
--   Temporal dynamics of social hierarchies: cyclicity [@peters2017], sawtooth waves [@scheidel2017], punctuated equilibrium [@gould2007; zimmermann?]
+-   Temporal dynamics of social hierarchies: cyclicity [@peters2017], sawtooth waves [@scheidel2017], punctuated equilibrium [@gould2007; zimmermann?]. Archaeo. example South Sweden Neo/BA: @nordquist2001
 
 ## Social typologies and their critique {#soc-typ}
 
 -   Tools for classifying societies, or evolutionary model? Discussion of @johnson1987, @testart2005, @service1971, @earle1997.
 
--   Anti-evolution critique in @yoffee1993, @yoffee2005, @kienlin2012, @lund2022, @furholt2020. Anarchistic critique: @crumley1995, @haude2019, @graeber2021
+    -   Lineage and Chiefdom societies @earle2002, @sahlins2020
+
+-   Anti-evolution critique in @yoffee1993, @yoffee2005, @fontijn2013, @kienlin2012, @lund2022, @furholt2020. Anarchistic critique: @crumley1995, @haude2019, @graeber2021
 
 ## Possible reasons for house-size difference
 
 Often underlying assumptions: household wealth or size? Or both?
 
--   Kinship and households: who lives in a house? @sahlins2013, @ensor2013, @ensor2017
+-   Kinship and households: who lives in a house? @sahlins2013, @ensor2013, @ensor2017. @blanton1994
 
--   Do clan leaders have bigger houses? check @haude2019
+-   Do clan leaders have bigger houses? check @haude2019, check @carsten1995
 
 Discuss some archaeo references
+
+-   Schiesberg 2010 2016, go through refs in Zotero, family size and houses for the LBK
 
 Functional difference:
 
 -   Ethnography of initiation houses, communal/assembly houses, ritual houses, including @barley2011, @godelier1986, @wilk1983, @fraser1968, @haude2019
 
--   Caveats: building materials and constraints
+-   Caveats: building materials and constraints, climate (heating), mobility, multi-floored, see @porcic2012 ++
 
 ## Interpreting distribution types and their underlying mechanisms
 
@@ -53,5 +57,7 @@ Functional difference:
 -   Lit. use @strawinska-zanko2018, @crabtree2017, @maschner2003, @grove2011 ++
 
 -   Zipf law and Settlement Scaling theory, @bettencourt2021, @gomez-lievano2012, @lobo2020. Connection with Central Place Theory, e.g. @müller-scheeßel2007, @chen2011. Why I'm not doing settlement scaling in this study.
+
+-   Not fitting distributions in Archaeology, just assuming they are heavy-tailed, or avoiding the question: ex. @brink2013 (could include lots more!)
 
 END chapter
