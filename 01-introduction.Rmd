@@ -32,7 +32,7 @@ While both these methodological approaches are well developed and integrated to 
 
 The term *hierarchy* is central to the present study. Though commonly used in daily speech, defining the word is not as straight-forward as one might think, so some clarification on how it is understood here might be needed. In a volume dedicated to exploring the meanings and uses of hierarchy as a study object within a range of natural and social sciences, Denise Pumain provides a panorama of definition nuances, but also highlighting the characteristics that are commonly found in most cases [@pumain2006]. Among these characteristics are:
 
--    A pyramidal organisation of elements, ordered by a very unequal size distribution of a certain quality or variable, from a few large elements on top to many small elements at the bottom
+-   A pyramidal organisation of elements, ordered by a very unequal size distribution of a certain quality or variable, from a few large elements on top to many small elements at the bottom
 
 -   When seen as a system, the whole is constituted of sub-systems, which are again constituted of sub-sub-systems, and so forth. These can either be ordered into clearly distinguished levels (stratified), or in other cases be scaled in a continuum (branched or tree structure)
 

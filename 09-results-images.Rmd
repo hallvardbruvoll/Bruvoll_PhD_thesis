@@ -2,6 +2,8 @@
 
 ## Synthetic settlement plans
 
+Relationship between image density (built-up area) and fractal dimension, evaluated in @thomas2007, where they show that these two parameters, under certain conditions (constant observation window, prefactor values close to 1), are exponentially correlated, which is also what I found in my article. They show that observation window size and shape, as well as centroid placement, have little influence on *D*, while they have more influence on density when the pattern is not homogeneous. They do show, however, that images with the same density may have quite much variation in *D*, which is reflected in the layouts. Judging from their examples, more clustered layouts give higher *D* values, while more dispersed or dusty layouts give lower *D*, when density is constant. I ignore the use of prefactor values. According to @thomas2007, density is a crude measure of the overall intensity of the pattern, while fractal dimension is characterises the morphological structure, though it is not directly descriptive.
+
 ## Settlements
 
 ## Quarters/neighbourhoods
