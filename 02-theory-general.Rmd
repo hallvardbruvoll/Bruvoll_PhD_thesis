@@ -4,7 +4,7 @@
 
 Lit. use @daems2021 and @bentley2007.
 
-For Dynamical Systems, use @awrejcewicz2020 and @devaney2020, but don't go into detail.
+For Dynamical Systems, use @devaney2020, but don't go into detail.
 
 Describe complexity, dynamical systems, chaos, feedback loops, criticality, emergence. Scale @west2017 NA
 
@@ -16,9 +16,9 @@ Mention the most common applications in Archaeology: ABMs, **and what**? check i
 
 Lit. use @mandelbrot2021, @falconer2013 (general), also @brown2010, @brown2005 and @diachenko2018 (for Archaeology)
 
-Two sentences on history of fractals? Mandelbrot. Maybe cut?
+The term *fractal* was pinned by the French-American mathematician Benoît Mandelbrot (1924-2010), from the latin word *fractus* meaning broken or irregular, to describe patterns that because of their apparent limitless complexity defied concise description within the framework of Euclidean geometry [@falconer2013, pp. 116-20]. Such patterns -- both theoretical and empirical -- had been described and analysed by mathematicians and researchers within other disciplines since the end of the 19th century, but were mostly regarded as curiosities and exceptions, and Mandelbrot was the first to link all these previous studies within a unified theoretical framework [@mandelbrot1975; @mandelbrot2021].
 
-Fractals as irregular patterns/structures
+In one influential paper, drawing on previous work by mathematician Lewis Fry Richardson, @mandelbrot1967 argued that a rugged linear feature like a coastline cannot be fully described through traditional geometry with a set of line segments, since this would result in a curve of infinite complexity. More importantly, he showed that the traditional measure of lines -- the length -- will inevitably depend on the scale of observation when applied to a coastline. If measured in kilometres, a coastline will always appear shorter in total length, than if it is measured in metres, since smaller bays and inlets can then also be accounted for. But this phenomenon continues seemingly without limit, since the same coastline measured in centimetres will appear much longer, and in millimetres far longer again, and so on. Length as a measure of rugged linear features thus seems inadequate, which may become a problem in practical settings when comparing coastlines between countries that operate with different measurement units and procedures. The same problem occurs when describing irregular patterns in the plane (like island or continent outlines) with area or in three-dimensional space (like clouds or galaxies) with volume. As a solution, Mandelbrot proposed the use of the *fractal dimension* as a descriptive tool for characterising such patterns.
 
 Fractals as hierarchy
 
@@ -30,7 +30,7 @@ Processes/mechanisms that produce fractals:
 
 The role of randomness - tidy and messy fractals (romanesco broccolis are not more fractal than regular broccolis, only more regular.
 
-The relationship with criticality and chaos: deterministic *and* unpredictable
+The relationship with (self-organised) criticality and chaos: deterministic *and* unpredictable
 
 Fractals embedded in
 
@@ -53,6 +53,8 @@ Fractal analysis for studying irregular phenomena (methods described in more det
 -   Giddens and Structuration Theory
 
 -   Delanda and Assemblage Theory
+
+For social hierarchies, he refers to Weber's classification of legitimation strategies, as being founded on sacred tradition, personal charisma or rational bureaucracy [see also @graeber2021, pp.]. Delanda furthermore places Bourdieu's concept of *habitus* on the mid-range between micro and macro processes, as an explanation of social action that is not entirely individual dependent, but not emergent properties of society-as-a-whole either.
 
 -   Latour and Actor-Network Theory
 
