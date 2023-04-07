@@ -10,7 +10,7 @@
 
 -   Biologically defined thresholds to group size? Dunbar's number and controversies, @dunbar2022, @west2023 (add published papers). Scalar stress @johnson1982, @alberti2014, @zhou2005. Also @carneiro1986
 
--   Temporal dynamics of social hierarchies: cyclicity [@peters2017], sawtooth waves [@scheidel2017], punctuated equilibrium [@gould2007; zimmermann?]. Archaeo. example South Sweden Neo/BA: @nordquist2001
+-   Temporal dynamics of social hierarchies: cyclicity [@peters2017], sawtooth waves [@scheidel2017], punctuated equilibrium [@gould2007; zimmermann?]. Archaeo. example South Sweden Neo/BA: @nordquist2001. Transitions villages to urban: @birch2014
 
 ## Social typologies and their critique {#soc-typ}
 
@@ -18,13 +18,13 @@
 
     -   Lineage and Chiefdom societies @earle2002, @sahlins2020
 
--   Anti-evolution critique in @yoffee1993, @yoffee2005, @fontijn2013, @kienlin2012, @lund2022, @furholt2020. Anarchistic critique: @crumley1995, @haude2019, @graeber2021
+-   Anti-evolution critique in @yoffee1993, @yoffee2005, @fontijn2013, @kienlin2012, @lund2022, @furholt2020. Anarchistic critique/heterarchy: @crumley1995, @haude2019, @graeber2021
 
 ## Possible reasons for house-size difference
 
 Often underlying assumptions: household wealth or size? Or both?
 
--   Kinship and households: who lives in a house? @sahlins2013, @ensor2013, @ensor2017. @blanton1994
+-   Kinship and households: who lives in a house? @sahlins2013, @ensor2013, @ensor2017. @blanton1994. @carpenter2022
 
 -   Do clan leaders have bigger houses? check @haude2019, check @carsten1995
 

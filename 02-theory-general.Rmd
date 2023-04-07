@@ -2,7 +2,7 @@
 
 ## Very short introduction to Complexity Theory / Dynamical Systems Theory
 
-Lit. use @daems2021 and @bentley2007.
+Lit. use @daems2021, @baden2016, @ross2017, @smith2011 and @bentley2008.
 
 For Dynamical Systems, use @devaney2020, but don't go into detail.
 
@@ -38,7 +38,7 @@ Fractals embedded in
 
 -   Time series: earthquakes, finance (not applied in this study, though should be done later)
 
--   Networks/abstract: hierarchical organisations, income distributions, word counts, 1/f or pink noise, www. etc. (see Chapter xxx for details)
+-   Networks/abstract: hierarchical organisations, income distributions, word counts, 1/f or pink noise, www. @barabási1999 etc. (see Chapter xxx for details). Fractal social networks: @west2023.
 
 -   Pure mathematics: Julia and Mandelbrot sets, strange attractors (don't go into details!)
 
