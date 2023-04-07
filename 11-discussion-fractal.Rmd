@@ -2,6 +2,6 @@
 
 fdsasdf
 
-Also mention here fractals or related concepts used as a metaphor, with no mathematics involved [e.g. @sherratt2004; @sindbæk2022; @whitridge2016].
+Also mention here fractals or related concepts used as a metaphor, with no mathematics involved [e.g. @chapman2006; @sherratt2004; @sindbæk2022; @whitridge2016].
 
 END Chapter

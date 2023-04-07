@@ -50,6 +50,25 @@ Bottom line hierarchy: pecking order/linear dominance hierarchy may be prevalent
 
 -   Inequality @kohler2018, @midlarsky1999, @price2010, @price1995 NA
 
+## What is social hierarchy?
+
+-   Political assumptions -- all hierarchical social structures are not despotic top-down rule. Democracies can also be very hierarchical. Matter of scale rather than political system @graeber2021. But, tendencies? Use @pumain2006, also @furholt2020. Use @redhead2022: status and leadership, multiple overlapping networks. Emergence of hierarchies: "Positions in the dominance hierarchy is determined by a combination of attributes of individuals, stochastic processes, and social context" @strauss2022.
+
+-   Nested and non-nested social hierarchies, hierarchical hunter-gatherers? @hamilton2007, @whitridge2016 (or use in Chapter \@ref(disc-methods)?)
+
+-   Biologically defined thresholds to group size? Dunbar's number and controversies, @dunbar2022, @west2023 (add published papers). Scalar stress @johnson1982, @alberti2014, @zhou2005. Also @carneiro1986
+
+-   Temporal dynamics of social hierarchies: cyclicity [@peters2017], sawtooth waves [@scheidel2017], punctuated equilibrium [@gould2007; zimmermann?]. Archaeo. example South Sweden Neo/BA: @nordquist2001. Transitions villages to urban: @birch2014
+
+```{=html}
+<!-- -->
+```
+-   Tools for classifying societies, or evolutionary model? Discussion of @johnson1987, @testart2005, @service1971, @earle1997.
+
+    -   Lineage and Chiefdom societies @earle2002, @sahlins2020
+
+-   Anti-evolution critique in @yoffee1993, @yoffee2005, @fontijn2013, @kienlin2012, @lund2022, @furholt2020. Anarchistic critique/heterarchy: @crumley1995, @haude2019, @graeber2021
+
 ## Main findings here?
 
 Maybe leave to the end, and fill in, like abstract.
