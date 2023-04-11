@@ -8,9 +8,19 @@ For Dynamical Systems, use @devaney2020, but don't go into detail.
 
 Describe complexity, dynamical systems, chaos, feedback loops, criticality, emergence. Scale @west2017 NA
 
-Social complexity
+Social complexity is more than social hierarchy, and all societies -- whether they are classified as simple or complex within a social evolutionary framework -- can arguably be studied as complex systems, since they always consist of various sub-systems and populations of individuals acting and interacting in a variety of ways [@daems2021, p. 6]. The sense of social complexity that is traditionally understood in Archaeology, derived from social evolution theory, is somewhat narrower and relates more to the specific characteristics of organisational scale (i.e. hierarchy) than to complexity per se. Studying the scale of social organisation from a complex systems perspective rather than from a social evolutionist one holds several advantages:
 
-Mention the most common applications in Archaeology: ABMs, **and what**? check in literature.
+1.  The switch from discrete evolutionary stages to continuous spectra allows for more nuanced evaluation of the society in question, avoiding false binaries like simple-complex
+
+2.  The complex systems approach arguably has a stronger explanatory power than the more classificatory social evolution schemes
+
+3.  Complexity theory offers a better alternative for ethical reasons, as it avoids the underlying colonial and eurocentric connotations associated with classifying societies into simple and complex
+
+As a further elaboration on the latter point, an analysis of a society from a complexity theoretical viewpoint is not a matter of establishing whether or not the society can be characterised as a complex system. When the scale of social organisation is the object of study -- as in the present thesis -- the word hierarchy is both more accurate and, if not neutral, at least more balanced than social complexity, since it is not obvious whether or not it is a good thing for a society to be characterised as hierarchical. The study of the dynamics of social hierarchy over time is thus not a story of progress, as the 19th century studies of social evolution too often were.
+
+[\@hamilton2007].
+
+Mention the most common applications in Archaeology, as discussed in @daems2021, p. 13: network science, settlement scaling, cultural evolution and agent-based modelling.
 
 ## Very short introduction to Fractals and Fractal Analysis {#fractals}
 

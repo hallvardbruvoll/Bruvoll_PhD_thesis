@@ -60,9 +60,8 @@ Bottom line hierarchy: pecking order/linear dominance hierarchy may be prevalent
 
 -   Temporal dynamics of social hierarchies: cyclicity [@peters2017], sawtooth waves [@scheidel2017], punctuated equilibrium [@gould2007; zimmermann?]. Archaeo. example South Sweden Neo/BA: @nordquist2001. Transitions villages to urban: @birch2014
 
-```{=html}
 <!-- -->
-```
+
 -   Tools for classifying societies, or evolutionary model? Discussion of @johnson1987, @testart2005, @service1971, @earle1997.
 
     -   Lineage and Chiefdom societies @earle2002, @sahlins2020
