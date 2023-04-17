@@ -38,7 +38,7 @@ Processes/mechanisms that produce fractals:
 
 -   Cascading bifurcations and confluences (splitting or merging - tree structure/arborescence/branching, and relation to size. Terminology borrowed from biology and fluid dynamics (including turbulence/turbulent flow)
 
-The role of randomness - tidy and messy fractals (romanesco broccolis are not more fractal than regular broccolis, only more regular.
+The role of randomness - tidy and messy fractals (romanesco broccolis are not more fractal than regular broccolis, only more regular. Also: a system may be both random and deterministic, often only depending on scale of observation (chaos).
 
 The relationship with (self-organised) criticality and chaos: deterministic *and* unpredictable
 

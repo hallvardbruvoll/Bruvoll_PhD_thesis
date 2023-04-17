@@ -56,7 +56,7 @@ Bottom line hierarchy: pecking order/linear dominance hierarchy may be prevalent
 
 -   Nested and non-nested social hierarchies, hierarchical hunter-gatherers? @hamilton2007, @whitridge2016 (or use in Chapter \@ref(disc-methods)?)
 
--   Biologically defined thresholds to group size? Dunbar's number and controversies, @dunbar2022, @west2023 (add published papers). Scalar stress @johnson1982, @alberti2014, @zhou2005. Also @carneiro1986
+-   Biologically defined thresholds to group size? Dunbar's number and controversies, @dunbar2022, @west2023 (add published papers). Scalar stress @johnson1982, @alberti2014, @zhou2005. Also @carneiro1986, @dubreuil2010
 
 -   Temporal dynamics of social hierarchies: cyclicity [@peters2017], sawtooth waves [@scheidel2017], punctuated equilibrium [@gould2007; zimmermann?]. Archaeo. example South Sweden Neo/BA: @nordquist2001. Transitions villages to urban: @birch2014
 
@@ -66,7 +66,7 @@ Bottom line hierarchy: pecking order/linear dominance hierarchy may be prevalent
 
     -   Lineage and Chiefdom societies @earle2002, @sahlins2020
 
--   Anti-evolution critique in @yoffee1993, @yoffee2005, @fontijn2013, @kienlin2012, @lund2022, @furholt2020. Anarchistic critique/heterarchy: @crumley1995, @haude2019, @graeber2021
+-   Anti-evolution critique in @yoffee1993, @yoffee2005, @fontijn2013, @kienlin2012, @lund2022, @furholt2020. Review in @dubreuil2010. Anarchistic critique/heterarchy: @crumley1995, @haude2019, @graeber2021. Paleaeolithic social inequality: @honoré2022 ++.
 
 ## Main findings here?
 

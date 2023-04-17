@@ -16,7 +16,7 @@
 
     -   Why?
 
-        1.  Process: how long/much does in take for a normal distribution to become power-law? And reverse sense?
+        1.  Process: how long/much does it take for a normal distribution to become power-law? And reverse sense?
 
         2.  Temporal resolution issue: does the temporal palimpsest of several phases with e.g. log-normal distributions produce false power-law signals?
 
