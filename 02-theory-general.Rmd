@@ -8,7 +8,7 @@ For Dynamical Systems, use @devaney2020, but don't go into detail.
 
 Describe complexity, dynamical systems, chaos, feedback loops, criticality, emergence. Scale @west2017 NA
 
-Social complexity is more than social hierarchy, and all societies -- whether they are classified as simple or complex within a social evolutionary framework -- can arguably be studied as complex systems, since they always consist of various sub-systems and populations of individuals acting and interacting in a variety of ways [@daems2021, p. 6]. The sense of social complexity that is traditionally understood in Archaeology, derived from social evolution theory, is somewhat narrower and relates more to the specific characteristics of organisational scale (i.e. hierarchy) than to complexity per se. Studying the scale of social organisation from a complex systems perspective rather than from a social evolutionist one holds several advantages:
+Social complexity is more than social hierarchy, and all societies -- whether they are classified as simple or complex within a social evolutionary framework -- can arguably be studied as complex systems, since they always consist of various sub-systems and populations of individuals acting and interacting in a variety of ways [@daems2021, p. 6]. The sense of social complexity that is traditionally understood in archaeology, derived from social evolution theory, is somewhat narrower and relates more to the specific characteristics of organisational scale (i.e. hierarchy) than to complexity per se. Studying the scale of social organisation from a complex systems perspective rather than from a social evolutionist one holds several advantages:
 
 1.  The switch from discrete evolutionary stages to continuous spectra allows for more nuanced evaluation of the society in question, avoiding false binaries like simple-complex
 
@@ -20,11 +20,11 @@ As a further elaboration on the latter point, an analysis of a society from a co
 
 [\@hamilton2007].
 
-Mention the most common applications in Archaeology, as discussed in @daems2021, p. 13: network science, settlement scaling, cultural evolution and agent-based modelling.
+Mention the most common applications in archaeology, as discussed in @daems2021, p. 13: network science, settlement scaling, cultural evolution and agent-based modelling.
 
 ## Very short introduction to Fractals and Fractal Analysis {#fractals}
 
-Lit. use @mandelbrot2021, @falconer2013 (general), also @brown2010, @brown2005 and @diachenko2018 (for Archaeology)
+Lit. use @mandelbrot2021, @falconer2013 (general), also @brown2010, @brown2005 and @diachenko2018 (for archaeology)
 
 The term *fractal* was pinned by the French-American mathematician Benoît Mandelbrot (1924-2010), from the latin word *fractus* meaning broken or irregular, to describe patterns that because of their apparent limitless complexity defied concise description within the framework of Euclidean geometry [@falconer2013, pp. 116-20]. Such patterns -- both theoretical and empirical -- had been described and analysed by mathematicians and researchers within other disciplines since the end of the 19th century, but were mostly regarded as curiosities and exceptions, and Mandelbrot was the first to link all these previous studies within a unified theoretical framework [@mandelbrot1975; @mandelbrot2021].
 
