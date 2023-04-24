@@ -39,11 +39,24 @@ Questions of contact and even creolisation with local hunter-gatherer groups in 
 -   Organisation of Linear Pottery society: egalitarian or hierarchic?
 -   Linear Pottery architecture and house construction
 
-origin of the longhouse: @bánffy2020, @coudart2015
+origin of the longhouse: @bánffy2020, @coudart2015, @last2015
 
 house typology, construction, and use: @modderman1970, @coudart1998
 
 house orientation: "origin" hypothesis: @bradley2001
+
+```{r}
+#example of how a pl distribution can be constructed
+library(tidyverse)
+freq <- 4^(0:7)
+size <- 1.5^(7:0)*50 #the normalizing constant is the y-intercept when in log axes!
+data <- tibble(size, freq)
+ggplot(data = data)+
+  aes(x = size, y = freq)+
+  geom_point()+
+  scale_x_log10()+
+  scale_y_log10()
+```
 
 -   The Žitava valley and research project
 
