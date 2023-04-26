@@ -19,12 +19,12 @@ output:
     keep_tex: yes
     latex_engine: xelatex # for handling UTF-8 and font issues
     toc_appendix: yes
-    #citation_package: biblatex (this creates a bug, prevents book compliation)
-# pandoc_args: "--csl" this doesn't change anything
+    citation_package: default # not biblatex, it bugs upon compilation!
+    pandoc_args: ["--csl", "apa.csl"]
 documentclass: book
 bibliography: [book.bib]
 #biblio-style: apalike
-csl: asa.csl
+#csl: asa.csl
 github-repo: hallvardbruvoll/Hallvard_Thesis_2
 description: "This is from 'description' in the YAML"
 geometry: "left=2.9cm, right=2.5cm, top=2.5cm, bottom=2.5cm"
