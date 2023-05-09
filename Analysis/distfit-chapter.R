@@ -20,54 +20,53 @@ library(poweRlaw)
 # Generate data set
 set.seed(100)
 
-# Multiplying all values with a single value results in wider normal
-# distributions:
+change <- rnorm(1000, mean = 1, sd = 0.4)
+min(change)
+# if min(change) < 0
+change <- change-min(change)
+hist(change)
+min(change)
 
-return <- rnorm(1000, mean = 1, sd = 0.4)
-return <- return-min(return)
-min(return)
-hist(return)
-constant <- 5
-dists <- tibble(gen_1 = seq(40,40, length.out = 1000),
-                gen_2 = gen_1*sample(x = return, size = length(gen_1))+constant,
-                gen_3 = gen_2*sample(return, length(gen_1))+constant,
-                gen_4 = gen_3*sample(return, length(gen_1))+constant,
-                gen_5 = gen_4*sample(return, length(gen_1))+constant,
-                gen_6 = gen_5*sample(return, length(gen_1))+constant,
-                gen_7 = gen_6*sample(return, length(gen_1))+constant,
-                gen_8 = gen_7*sample(return, length(gen_1))+constant,
-                gen_9 = gen_8*sample(return, length(gen_1))+constant)
-min(dists)
+init_size <- 10
+n_points <- 100
 
-ggplot(dists)+
-  aes(x = gen_1)+
-  #geom_density()+
-  geom_density(aes(x = gen_2), colour = 2)+
-  geom_density(aes(x = gen_3), colour = 3)+
-  geom_density(aes(x = gen_4), colour = 4)+
-  geom_density(aes(x = gen_5), colour = 5)+
-  geom_density(aes(x = gen_6), colour = 6)+
-  geom_density(aes(x = gen_7), colour = 7)+
-  geom_density(aes(x = gen_8), colour = 8)+
-  geom_density(aes(x = gen_9), colour = 9)
 
-ggplot(dists)+
-  aes(x = normal,
-      y = gen_4)+
-  geom_point()
+iterate.dist <- function(n_points, init_size, iterations, change){
+  output <- tibble(start = seq(init_size, init_size, length.out = n_points),
+                   iter_1 = start*sample(change, size = n_points))
 
-dists$normal/dists$gen_4
+  for (i in 2:iterations-1) {
+  single_iter <- tibble("iter_{i+1}" := pull(output, i)*sample(change, n_points))
+  output <- bind_cols(output, single_iter)
+  }
+  return(output)
+}
 
-# Do this tomorrow:
-# To generate skewed distributions from a normal, I need to multiply the
-# normal with an exponential.
-# Order both, so that each value is multiplied with the one of the same rank.
-# Higher rates give shorter range in exp-dist.
-# Add 1 to the exp-dist, to avoid multiplying values with <1.
-# Iterate by raising powers incrementally.
-# This is a bit harder to explain socially than what I had hoped for.
-# Can't I just make a feedback loop???
-# Try a linear multiplier as well maybe. Stop for today. Pensez-y.
+test <- iterate.dist(n_points = 100, init_size = 10, iterations = 10,
+                     change = change)
+
+test_long <- pivot_longer(data = test, cols = everything(),
+                        names_to = "iteration", values_to = "house_size",
+                        cols_vary = "slowest")
+test_long <- test_long %>%
+  group_by(iteration) %>%
+  mutate(iteration = as_factor(iteration),
+         rank = min_rank(house_size),
+         ccdf = round((length(rank)-rank+1)/length(rank), 3),
+         group = as.numeric(iteration))
+
+ggplot(test_long)+
+  aes(x = house_size,
+      y = ccdf,
+      colour = iteration)+
+  geom_line()+
+  theme_minimal()+
+  scale_x_log10()+
+  scale_y_log10()+
+  scale_colour_grey(start = 0.8, end = 0.2)+
+  theme(legend.position = "none")
+
+
 
 # Fit models to each subset and select/mark power-laws
 
