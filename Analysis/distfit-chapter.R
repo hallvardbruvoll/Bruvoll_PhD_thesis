@@ -1,6 +1,8 @@
 # Analyses for Part II - Size distributions
 library(tidyverse)
 library(poweRlaw)
+library(ineq)
+library(AICcmodavg)
 
 # Wrapper and loop functions ----------------------------------------------
 
@@ -67,22 +69,83 @@ models.xy <- function(models) { #Loop the above function for all input models
   return(output)
 }
 
-test_model_data <- tibble(value = 50*0.5^(1:150),
-                          rank = min_rank(value),
-                          ccdf = round((length(rank)-rank+1)/length(rank), 3))
-hist(test_model_data$value) #This should be an exponential dist
+# Table with input and columns for storing results
+dist.fit.object <- function(data.vector) {
+  object <- tibble(value = data.vector,
+                   rank = min_rank(value),
+                   ccdf = round((length(rank)-rank+1)/length(rank), 3),
+                   tail = NA, xmin = NA, ntail = NA,
+                   pars = NA, alpha = NA)
+  return(object)
+}
+
+# Delete the following (just for testing):
+test_model_data <- dist.fit.object(data.vector = rexp(n = 150, rate = 1))
+hist(test_model_data$value)
 
 test_models <- tail.models(test_model_data$value)
 test_models_xy <- models.xy(test_models)
 
 ggplot(test_models_xy)+
   aes(x = value, y = ccdf, colour = model)+
+  geom_line(data = test_model_data, colour  = "black")+
   geom_line()+
-  geom_line(data = test_model_data, colour  = "black")
   scale_x_log10()+
-  scale_y_log10() # Not very clear from the plots which model is best
+  scale_y_log10()+
+  theme_minimal()
 
-#NEXT: add code for selecting the best fit, and then we're finally getting somewhere
+test_models_AIC <- tibble()
+
+#HERE
+# Loop distribution fitting HERE!
+for (i in 1:nrow(vrable_samples_neigh10)) {
+  data <- filter(vrable_samples, sample == vrable_samples_neigh10$sample[i]
+                 & Settlement == vrable_samples_neigh10$Settlement[i]) %>%
+    select(house_size) %>%
+    mutate(rank = min_rank(house_size),
+           ccdf = round((length(rank)-rank+1)/length(rank), 3))
+  pl_model <- pl.model(data$house_size)
+  tail_models <- tail.models(data = data$house_size, xmin = pl_model$xmin)
+  tail_models <- list("ln" = tail_models[[1]], "str exp" = tail_models[[2]],
+                      "exp" = tail_models[[3]], "pl" = pl_model)
+  tail_models_xy <- models.xy(tail_models) %>%
+    mutate(Settlement = vrable_samples_neigh10$Settlement[i],
+           sample = vrable_samples_neigh10$sample[i])
+  # Store output for model plotting
+  vrable_models_xy <- bind_rows(vrable_models_xy, tail_models_xy)
+
+  # Model selection with AIC
+  log_lik <- map_dbl(tail_models, dist_ll)
+  no_pars <- c(2,2,1,1) # Number of parameters in the listed order
+  modnames <- c("ln", "str exp", "exp", "pl")
+  nobs <- pl_model$internal$n
+  sample_AIC <- aictabCustom(logL = log_lik,
+                             K = no_pars,
+                             modnames = modnames,
+                             second.ord = TRUE,
+                             nobs = nobs) %>%
+    mutate(Settlement = vrable_samples_neigh10$Settlement[i],
+           sample = vrable_samples_neigh10$sample[i])
+  # Store output
+  vrable_models_AIC <- bind_rows(vrable_models_AIC, sample_AIC)
+  vrable_samples_neigh10$tail[i] <- sample_AIC[1,1]
+  vrable_samples_neigh10$xmin[i] <- pl_model$xmin
+  vrable_samples_neigh10$ntail[i] <- nobs
+  if (sample_AIC[1,1] == "pl") {
+    vrable_samples_neigh10$alpha[i] <- pl_model$pars
+  }
+  if (sample_AIC[1,1] == "str exp") {
+    vrable_samples_neigh10$pars[i] <- tail_models$`str exp`$pars
+  }
+  if (sample_AIC[1,1] == "exp") {
+    vrable_samples_neigh10$pars[i] <- tail_models$exp$pars
+  }
+  if (sample_AIC[1,1] == "ln") {
+    vrable_samples_neigh10$pars[i] <- tail_models$ln$pars
+  }
+}
+
+
 
 # 1 Synthetic distributions -----------------------------------------------
 
