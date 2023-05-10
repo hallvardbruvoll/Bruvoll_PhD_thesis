@@ -2,12 +2,87 @@
 library(tidyverse)
 library(poweRlaw)
 
-
 # Wrapper and loop functions ----------------------------------------------
 
-# Fill in and modify from poweRlaw_script.R
   # Don't do distfitting for every single row - very redundant and slow
   # Use group_by etc. and do it once per group.
+
+#Fit a power-law, lognormal, exponential and stretched exponential
+#(Weibull cCDF) models to the data by MLE, and estimating the best
+#power-law xmin through KS-testing (cf. @clauset2009; @gillespie2015).
+tail.models <- function(data) { #"data" must be a continuous numeric vector
+  pl.model <- conpl$new(data) # power-law model
+  xmin <- estimate_xmin(pl.model)
+  pl.model$setXmin(xmin)
+  ln.model <- conlnorm$new(data) # lognormal model
+  ln.model$setXmin(xmin) # xmin for all models are set at the best pl fit
+  ln.pars <- estimate_pars(ln.model)
+  ln.model$setPars(ln.pars)
+  exp.model <- conexp$new(data) # exponential model
+  exp.model$setXmin(xmin)
+  exp.pars <- estimate_pars(exp.model)
+  exp.model$setPars(exp.pars)
+  strexp.model <- conweibull$new(data) # stretched exponential/Weibull model
+  strexp.model$setXmin(xmin)
+  strexp.pars <- estimate_pars(strexp.model)
+  strexp.model$setPars(strexp.pars)
+  return(list("pl" = pl.model,
+              "ln" = ln.model,
+              "str exp" = strexp.model,
+              "exp" = exp.model))
+}
+#Early experiments included a model function for power law with exponential
+#cutoff, discussed in the Clauset et al. (2009) paper, not implemented in
+#the poweRlaw package (May 2023). The function was borrowed from
+#"https://github.com/jeffalstott/powerlaw/tree/master/testing/
+#pli-R-v0.0.3-2007-07-25", written by C. Shalizi, co-author of the paper.
+#Because of copyright issues, this model is not included here. However, when
+#included it never passed as the best fit for the data used in this thesis
+#(note that the code does not include any function for setting xmin, unlike
+#all the models included in the poweRlaw package).
+
+#Extract coordinates for cCDF plot of models.
+#Input "models" must be a list of the type produced by the tail.models
+#function above.
+extract.xy <- function(models) { #This function goes into the next one below
+  plot.new()
+  model_xy <- lines(models)
+  model_xy <- tibble(model_xy)
+  if (model_xy$y[1] == 0) { #Remove first row if for some reason y = 0 (bug)
+    model_xy <- model_xy[2:nrow(model_xy),]
+  }
+  model_xy <- model_xy %>%
+    rename(value = x,
+           ccdf = y)
+  return(model_xy)
+}
+
+models.xy <- function(models) { #Loop the above function for all input models
+  output <- tibble()
+  for (i in 1:length(models)) {
+    modxy <- extract.xy(models = models[[i]]) %>%
+      mutate(model = names(models[i]))
+    output <- bind_rows(output, modxy)
+  }
+  return(output)
+}
+
+test_model_data <- tibble(value = 50*0.5^(1:150),
+                          rank = min_rank(value),
+                          ccdf = round((length(rank)-rank+1)/length(rank), 3))
+hist(test_model_data$value) #This should be an exponential dist
+
+test_models <- tail.models(test_model_data$value)
+test_models_xy <- models.xy(test_models)
+
+ggplot(test_models_xy)+
+  aes(x = value, y = ccdf, colour = model)+
+  geom_line()+
+  geom_line(data = test_model_data, colour  = "black")
+  scale_x_log10()+
+  scale_y_log10() # Not very clear from the plots which model is best
+
+#NEXT: add code for selecting the best fit, and then we're finally getting somewhere
 
 # 1 Synthetic distributions -----------------------------------------------
 

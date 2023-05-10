@@ -6,7 +6,9 @@ Fill in analysis for
 
 1.  Multiplicative process
 
-2.  Additive process
+A multiplicative process is one where a term is multiplied with itself a number of times, resulting in an exponential distribution $f(x) ∝ 𝜆^x$,
+
+1.  Additive process
 
 ## Settlements
 
