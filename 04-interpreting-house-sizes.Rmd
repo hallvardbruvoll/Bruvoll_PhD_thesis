@@ -10,13 +10,13 @@ Even though the goal here is not to investigate household sizes but to focus on 
 
 Kinship studies within anthropology have shown over the last decades that in most societies, contrarily to common misconception, kin affiliation is *not* simply a matter of biological relatedness. In an attempt of grouping together all possible justifications for kinship ties, Marshall Sahlins [@sahlins2013] defined kinship as "mutuality of being" -- that some real or imagined substance is shared, and that this substance is not necessarily genes, as is mostly the case in modern Western societies (with adoption as the main exception). A variety of non-genetic foundations of kinship are widely accepted in different cultures, like sharing of name, time or place of birth or childhood, food source, shared experiences, blood ties, and so on. At the same time, archaeology as a whole has arguably been very slow in taking this diversity of kinship configurations into account, far too often taking for granted the modern Western (especially post-war 20th century) ideal of patrilineal nuclear families as the default configuration for all of human history [e.g. @ensor2021]. That being said, anthropological kinship studies such as that represented by Sahlins typically shows little concern with material culture, and is mostly silent on the question of who -- at the end of the day, quite literally -- sleeps under the same roof, making it hard to interpret domestic architecture in terms of kinship structure and social organisation. The recent comeback of kinship studies in archaeology has been far more focussed on linking isotope and aDNA data with social structures, largely fuelled by the rapid developments of the related methodologies [e.g. @carpenter2022 ; ]
 
-WRITE: kinship studies become a thing recently in archaeology, but ethnography rarely tells who sleeps in which house (locality/residency), making it hard to use house size as proxy for kinship configurations. But see references below.
-
 -   Kinship and households: who lives in a house? @sahlins2013, @ensor2013, @ensor2017.. archaeology: @carpenter2022, @madella2013, @joyce2000, @blanton1994, @carsten1995, @hofmann2013, @wilk1982
 
 -   Do clan leaders have bigger houses? check @haude2019, @kahn2021, @bradley2013, @wilk1983.
 
 Persons who possess enough food resources to create obligations through gifts and feasting... What is wealth? House construction as communal activity @goodale2021
+
+P. Květina and J. Řídký point out both architecture (construction, size, orientation) and settlement layout as possible distinctive features between Big Men (achievement-based) and Chief societies, arguing that the former type may be recognised by a dispersed intra-settlement layout combined with uniform architecture, while the latter type would tend towards more regular settlement layout and more marked differences in architecture [!@kvetina2019, p. 13]. EXPAND UPON THIS.
 
 Discuss some archaeo references
 

@@ -1,13 +1,10 @@
 # Analyses for Part II - Size distributions
 library(tidyverse)
 library(poweRlaw)
-library(ineq)
 library(AICcmodavg)
+library(ineq)
 
 # Wrapper and loop functions ----------------------------------------------
-
-  # Don't do distfitting for every single row - very redundant and slow
-  # Use group_by etc. and do it once per group.
 
 #Fit a power-law, lognormal, exponential and stretched exponential
 #(Weibull cCDF) models to the data by MLE, and estimating the best
@@ -28,7 +25,7 @@ tail.models <- function(data) { #"data" must be a continuous numeric vector
   strexp.model$setXmin(xmin)
   strexp.pars <- estimate_pars(strexp.model)
   strexp.model$setPars(strexp.pars)
-  return(list("ln" = ln.model,
+  return(list("ln" = ln.model, # mind the model order here (for AIC below)
               "str exp" = strexp.model,
               "exp" = exp.model,
               "pl" = pl.model))
@@ -43,14 +40,16 @@ tail.models <- function(data) { #"data" must be a continuous numeric vector
 #(note that the code does not include any function for setting xmin, unlike
 #all the models included in the poweRlaw package).
 
-#Extract coordinates for cCDF plot of models.
+#Extract coordinates for cCDF (i.e. survival function) plot of models.
 #Input "models" must be a list of the type produced by the tail.models
 #function above.
 extract.xy <- function(models) { #This function goes into the next one below
   plot.new()
   model_xy <- lines(models)
   model_xy <- tibble(model_xy) %>%
-    filter(y != 0) %>% # Filter out rows where y = 0 (a bug)
+    # Filter out rows where y = 0 (a bug in the poweRlaw package)
+    # This doesn't affect analyses, only graphical representation
+    filter(y != 0) %>%
     rename(value = x,
            ccdf = y)
   return(model_xy)
@@ -72,8 +71,7 @@ dist.fit.object <- function(data.vector, set) {
   object <- tibble(value = data.vector,
                    rank = min_rank(value),
                    ccdf = round((length(rank)-rank+1)/length(rank), 3),
-                   tail = NA, xmin = NA, ntail = NA,
-                   pars = NA, alpha = NA,
+                   tail = NA, xmin = NA, ntail = NA, par1 = NA, par2 = NA,
                    set = set)
   return(object)
 }
@@ -84,7 +82,7 @@ aic.selection <- function(tail_models){ # For a single data series
   log_lik <- map_dbl(tail_models, dist_ll)
   # Number of parameters for each model (I gave up vectorising this properly)
   no_pars <- c(tail_models[[1]]$no_pars, tail_models[[2]]$no_pars,
-               tail_models[[2]]$no_pars, tail_models[[4]]$no_pars)
+               tail_models[[3]]$no_pars, tail_models[[4]]$no_pars)
   modnames <- names(tail_models)
   # Sample size (number of observations) above xmin
   nobs <- tail_models[[1]]$internal$n
@@ -95,10 +93,33 @@ aic.selection <- function(tail_models){ # For a single data series
   return(sample_AIC)
 }
 
+# Add results to dist.fit.object
+add.results <- function(data, tail_models, AIC.results) {
+  # data must be a dist.fit.object (see above)
+  data$tail <- AIC.results[1,1]
+  data$xmin <- tail_models[[1]]$xmin
+  data$ntail <- tail_models[[1]]$internal$n
+  if (data$tail[1] == "ln") { # the poweRlaw objects are hard to vectorise
+                                # so this gets a bit repetitive
+    data$par1 <- tail_models$ln$pars[1]
+    data$par2 <- tail_models$ln$pars[2]
+  }
+  if (data$tail[1] == "str exp") {
+    data$par1 <- tail_models$`str exp`$pars[1]
+    data$par2 <- tail_models$`str exp`$pars[2]
+  }
+  if (data$tail[1] == "exp") {
+    data$par1 <- tail_models$exp$pars
+  }
+  if (data$tail[1] == "pl") {
+    data$par1 <- tail_models$pl$pars
+  }
+  return(data)
+}
 
-# Delete the following (just for testing):
-test_model_data <- dist.fit.object(data.vector = rlnorm(n = 3000,
-                                                      meanlog = 0, sdlog = 1),
+# Test these functions here:
+test_model_data <- dist.fit.object(data.vector = rlnorm(n = 2000,
+                                                      meanlog = 2, sdlog = 1),
                                    set = "test_set")
 hist(test_model_data$value)
 
@@ -115,90 +136,25 @@ ggplot(test_models_xy)+
 
 test_AIC <- aic.selection(tail_models = test_models)
 test_AIC
-# Note to self: the method finds pl in all rexp and most rlnorm distributions
 
-# NEXT: Assign selected tail model and params (including xmin!) to set,
-# allowing for filtering out pl houses.
-# Then: looping for multiple series.
+test_model_data <- add.results(data = test_model_data,
+                               tail_models = test_models,
+                               AIC.results = test_AIC)
+
+# Plot highlighting data that fits pl model
+# Only do this if the pl model is actually selected of course
+# Comparing multiple series, consider boxplot
+ggplot(test_model_data)+
+  aes(x = value, y = ccdf)+
+  geom_point(shape = 1)+
+  geom_point(data = filter(test_model_data, value >= xmin),
+             colour = "red", shape = 1)+
+  scale_x_log10()+
+  scale_y_log10()+
+  theme_minimal()
+
+# Then: looping for multiple series. Or go to text again first?
 # Then: the actual analyses...
-
-# Model selection with AIC
-log_lik <- map_dbl(tail_models, dist_ll)
-no_pars <- c(2,2,1,1) # Number of parameters in the listed order
-modnames <- c("ln", "str exp", "exp", "pl")
-nobs <- pl_model$internal$n
-sample_AIC <- aictabCustom(logL = log_lik,
-                           K = no_pars,
-                           modnames = modnames,
-                           second.ord = TRUE,
-                           nobs = nobs) %>%
-  mutate(Settlement = vrable_samples_neigh10$Settlement[i],
-         sample = vrable_samples_neigh10$sample[i])
-# Store output
-vrable_models_AIC <- bind_rows(vrable_models_AIC, sample_AIC)
-vrable_samples_neigh10$tail[i] <- sample_AIC[1,1]
-vrable_samples_neigh10$xmin[i] <- pl_model$xmin
-vrable_samples_neigh10$ntail[i] <- nobs
-if (sample_AIC[1,1] == "pl") {
-  vrable_samples_neigh10$alpha[i] <- pl_model$pars
-}
-if (sample_AIC[1,1] == "str exp") {
-  vrable_samples_neigh10$pars[i] <- tail_models$`str exp`$pars
-}
-if (sample_AIC[1,1] == "exp") {
-  vrable_samples_neigh10$pars[i] <- tail_models$exp$pars
-}
-if (sample_AIC[1,1] == "ln") {
-  vrable_samples_neigh10$pars[i] <- tail_models$ln$pars
-}
-
-# Duplicate, delete this
-for (i in 1:nrow(vrable_samples_neigh10)) {
-  data <- filter(vrable_samples, sample == vrable_samples_neigh10$sample[i]
-                 & Settlement == vrable_samples_neigh10$Settlement[i]) %>%
-    select(house_size) %>%
-    mutate(rank = min_rank(house_size),
-           ccdf = round((length(rank)-rank+1)/length(rank), 3))
-  pl_model <- pl.model(data$house_size)
-  tail_models <- tail.models(data = data$house_size, xmin = pl_model$xmin)
-  tail_models <- list("ln" = tail_models[[1]], "str exp" = tail_models[[2]],
-                      "exp" = tail_models[[3]], "pl" = pl_model)
-  tail_models_xy <- models.xy(tail_models) %>%
-    mutate(Settlement = vrable_samples_neigh10$Settlement[i],
-           sample = vrable_samples_neigh10$sample[i])
-  # Store output for model plotting
-  vrable_models_xy <- bind_rows(vrable_models_xy, tail_models_xy)
-
-  # Model selection with AIC
-  log_lik <- map_dbl(tail_models, dist_ll)
-  no_pars <- c(2,2,1,1) # Number of parameters in the listed order
-  modnames <- c("ln", "str exp", "exp", "pl")
-  nobs <- pl_model$internal$n
-  sample_AIC <- aictabCustom(logL = log_lik,
-                             K = no_pars,
-                             modnames = modnames,
-                             second.ord = TRUE,
-                             nobs = nobs) %>%
-    mutate(Settlement = vrable_samples_neigh10$Settlement[i],
-           sample = vrable_samples_neigh10$sample[i])
-  # Store output
-  vrable_models_AIC <- bind_rows(vrable_models_AIC, sample_AIC)
-  vrable_samples_neigh10$tail[i] <- sample_AIC[1,1]
-  vrable_samples_neigh10$xmin[i] <- pl_model$xmin
-  vrable_samples_neigh10$ntail[i] <- nobs
-  if (sample_AIC[1,1] == "pl") {
-    vrable_samples_neigh10$alpha[i] <- pl_model$pars
-  }
-  if (sample_AIC[1,1] == "str exp") {
-    vrable_samples_neigh10$pars[i] <- tail_models$`str exp`$pars
-  }
-  if (sample_AIC[1,1] == "exp") {
-    vrable_samples_neigh10$pars[i] <- tail_models$exp$pars
-  }
-  if (sample_AIC[1,1] == "ln") {
-    vrable_samples_neigh10$pars[i] <- tail_models$ln$pars
-  }
-}
 
 
 
