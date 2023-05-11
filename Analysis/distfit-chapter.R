@@ -28,10 +28,10 @@ tail.models <- function(data) { #"data" must be a continuous numeric vector
   strexp.model$setXmin(xmin)
   strexp.pars <- estimate_pars(strexp.model)
   strexp.model$setPars(strexp.pars)
-  return(list("pl" = pl.model,
-              "ln" = ln.model,
+  return(list("ln" = ln.model,
               "str exp" = strexp.model,
-              "exp" = exp.model))
+              "exp" = exp.model,
+              "pl" = pl.model))
 }
 #Early experiments included a model function for power law with exponential
 #cutoff, discussed in the Clauset et al. (2009) paper, not implemented in
@@ -49,11 +49,8 @@ tail.models <- function(data) { #"data" must be a continuous numeric vector
 extract.xy <- function(models) { #This function goes into the next one below
   plot.new()
   model_xy <- lines(models)
-  model_xy <- tibble(model_xy)
-  if (model_xy$y[1] == 0) { #Remove first row if for some reason y = 0 (bug)
-    model_xy <- model_xy[2:nrow(model_xy),]
-  }
-  model_xy <- model_xy %>%
+  model_xy <- tibble(model_xy) %>%
+    filter(y != 0) %>% # Filter out rows where y = 0 (a bug)
     rename(value = x,
            ccdf = y)
   return(model_xy)
@@ -70,17 +67,39 @@ models.xy <- function(models) { #Loop the above function for all input models
 }
 
 # Table with input and columns for storing results
-dist.fit.object <- function(data.vector) {
+# Can I include this inside one of the functions above?
+dist.fit.object <- function(data.vector, set) {
   object <- tibble(value = data.vector,
                    rank = min_rank(value),
                    ccdf = round((length(rank)-rank+1)/length(rank), 3),
                    tail = NA, xmin = NA, ntail = NA,
-                   pars = NA, alpha = NA)
+                   pars = NA, alpha = NA,
+                   set = set)
   return(object)
 }
 
+# Model selection with AICc (second order Akaike's Information Criterion)
+aic.selection <- function(tail_models){ # For a single data series
+  # Find log-likelihood for each model
+  log_lik <- map_dbl(tail_models, dist_ll)
+  # Number of parameters for each model (I gave up vectorising this properly)
+  no_pars <- c(tail_models[[1]]$no_pars, tail_models[[2]]$no_pars,
+               tail_models[[2]]$no_pars, tail_models[[4]]$no_pars)
+  modnames <- names(tail_models)
+  # Sample size (number of observations) above xmin
+  nobs <- tail_models[[1]]$internal$n
+  sample_AIC <- aictabCustom(logL = log_lik, K = no_pars,
+                             modnames = modnames,
+                             second.ord = TRUE, # better for small samples
+                             nobs = nobs)
+  return(sample_AIC)
+}
+
+
 # Delete the following (just for testing):
-test_model_data <- dist.fit.object(data.vector = rexp(n = 150, rate = 1))
+test_model_data <- dist.fit.object(data.vector = rlnorm(n = 3000,
+                                                      meanlog = 0, sdlog = 1),
+                                   set = "test_set")
 hist(test_model_data$value)
 
 test_models <- tail.models(test_model_data$value)
@@ -89,15 +108,51 @@ test_models_xy <- models.xy(test_models)
 ggplot(test_models_xy)+
   aes(x = value, y = ccdf, colour = model)+
   geom_line(data = test_model_data, colour  = "black")+
-  geom_line()+
+  geom_line(size = 0.8)+
   scale_x_log10()+
   scale_y_log10()+
   theme_minimal()
 
-test_models_AIC <- tibble()
+test_AIC <- aic.selection(tail_models = test_models)
+test_AIC
+# Note to self: the method finds pl in all rexp and most rlnorm distributions
 
-#HERE
-# Loop distribution fitting HERE!
+# NEXT: Assign selected tail model and params (including xmin!) to set,
+# allowing for filtering out pl houses.
+# Then: looping for multiple series.
+# Then: the actual analyses...
+
+# Model selection with AIC
+log_lik <- map_dbl(tail_models, dist_ll)
+no_pars <- c(2,2,1,1) # Number of parameters in the listed order
+modnames <- c("ln", "str exp", "exp", "pl")
+nobs <- pl_model$internal$n
+sample_AIC <- aictabCustom(logL = log_lik,
+                           K = no_pars,
+                           modnames = modnames,
+                           second.ord = TRUE,
+                           nobs = nobs) %>%
+  mutate(Settlement = vrable_samples_neigh10$Settlement[i],
+         sample = vrable_samples_neigh10$sample[i])
+# Store output
+vrable_models_AIC <- bind_rows(vrable_models_AIC, sample_AIC)
+vrable_samples_neigh10$tail[i] <- sample_AIC[1,1]
+vrable_samples_neigh10$xmin[i] <- pl_model$xmin
+vrable_samples_neigh10$ntail[i] <- nobs
+if (sample_AIC[1,1] == "pl") {
+  vrable_samples_neigh10$alpha[i] <- pl_model$pars
+}
+if (sample_AIC[1,1] == "str exp") {
+  vrable_samples_neigh10$pars[i] <- tail_models$`str exp`$pars
+}
+if (sample_AIC[1,1] == "exp") {
+  vrable_samples_neigh10$pars[i] <- tail_models$exp$pars
+}
+if (sample_AIC[1,1] == "ln") {
+  vrable_samples_neigh10$pars[i] <- tail_models$ln$pars
+}
+
+# Duplicate, delete this
 for (i in 1:nrow(vrable_samples_neigh10)) {
   data <- filter(vrable_samples, sample == vrable_samples_neigh10$sample[i]
                  & Settlement == vrable_samples_neigh10$Settlement[i]) %>%
