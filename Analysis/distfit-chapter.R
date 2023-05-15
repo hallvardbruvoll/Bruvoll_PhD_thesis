@@ -4,6 +4,23 @@ library(poweRlaw)
 library(AICcmodavg)
 library(ineq)
 
+a <- 200
+
+b <- 0.2
+
+x <- 0:200
+
+test <- tibble(x = x, y = a*b^x, log_y = log(b)*x+log(a))
+ggplot(test)+
+  aes(x, y)+
+  geom_point()+
+  scale_y_log10()
+
+max(test$log_y)
+max(exp(test$log_y))
+exp(min(test$log_y))
+min(test$y)
+
 # Wrapper and loop functions ----------------------------------------------
 
 #Fit a power-law, lognormal, exponential and stretched exponential

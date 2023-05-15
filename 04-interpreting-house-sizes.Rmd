@@ -16,7 +16,7 @@ Kinship studies within anthropology have shown over the last decades that in mos
 
 Persons who possess enough food resources to create obligations through gifts and feasting... What is wealth? House construction as communal activity @goodale2021
 
-P. Květina and J. Řídký point out both architecture (construction, size, orientation) and settlement layout as possible distinctive features between Big Men (achievement-based) and Chief societies, arguing that the former type may be recognised by a dispersed intra-settlement layout combined with uniform architecture, while the latter type would tend towards more regular settlement layout and more marked differences in architecture [!@kvetina2019, p. 13]. EXPAND UPON THIS.
+P. Květina and J. Řídký point out both architecture (construction, size, orientation) and settlement layout as possible distinctive features between Big Men (achievement-based) and Chief societies, arguing that the former type may be recognised by a dispersed intra-settlement layout combined with uniform architecture, while the latter type would tend towards more regular settlement layout and more marked differences in architecture [! @kvetina2019, p. 13]. EXPAND UPON THIS.
 
 Discuss some archaeo references
 
@@ -28,7 +28,7 @@ Functional difference:
 
 -   Caveats: building materials and constraints, climate (heating), mobility, multi-floored, see @porcic2012, residence pattern and floor area in @porcic2010.
 
-## Interpreting distribution types and their underlying mechanisms
+## Interpreting distribution types and their underlying mechanisms {#distributions}
 
 -   Power-law distributions, hierarchy and scale invariance.
 
