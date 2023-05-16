@@ -4,23 +4,6 @@ library(poweRlaw)
 library(AICcmodavg)
 library(ineq)
 
-a <- 200
-
-b <- 0.2
-
-x <- 0:200
-
-test <- tibble(x = x, y = a*b^x, log_y = log(b)*x+log(a))
-ggplot(test)+
-  aes(x, y)+
-  geom_point()+
-  scale_y_log10()
-
-max(test$log_y)
-max(exp(test$log_y))
-exp(min(test$log_y))
-min(test$y)
-
 # Wrapper and loop functions ----------------------------------------------
 
 #Fit a power-law, lognormal, exponential and stretched exponential
@@ -133,6 +116,74 @@ add.results <- function(data, tail_models, AIC.results) {
   }
   return(data)
 }
+
+# Loop for multiple data sets (this function is not tested! doesn't run)
+dist.fit.all <- function(data, x, set){ # x and set must be columns in data
+  data <- data %>%
+    group_by(set)
+  sets <- as.factor(levels(set))
+  output <- tibble()
+  for (i in 1:length(as.factor(levels(set)))) {
+    one_set <- dist.fit.object(data.vector = filter(data, set == sets[i]) %>%
+                                 pull(x),
+                               set = sets[i])
+    one_set_models <- tail.models(one_set$value)
+    one_set_xy <- models.xy(one_set_models)
+    one_set_AIC <- aic.selection(tail_models = one_set_models)
+    one_set <- add.results(data = one_set,
+                           tail_models = one_set_models,
+                           AIC.results = one_set_AIC)
+    output <- bind_rows(output, one_set)
+  }
+  return(output)
+}
+
+# Test that it works (delete afterwards)
+ln <- tibble(x = rlnorm(n = 1000, meanlog = mu, sdlog = sigma),
+             set = "ln")
+exp <- tibble(x = rexp(n = 1000, rate = lambda),
+              set = "exp")
+test <- bind_rows(ln, exp)
+test <- test %>%
+  mutate(high_x = x+15)
+  # Test doesn't run on dist.fit.all()
+
+
+# Pre-analysis: testing for false positive power laws ---------------------
+
+mu <- 0.3
+sigma <- 2
+lambda <- 0.125
+alpha <- 2.5
+n <- c(10, 100, 1000, 10000)
+dists <- c("ln", "exp", "pl")
+
+# Generate data sets
+pretest_data <- tibble()
+
+for (j in 1:length(dists)) {
+  for (i in 1:length(n)) {
+    if (j == 1) {
+      single <- tibble(x = rlnorm(n = n[i], mu, sigma))
+    }
+    if (j == 2) {
+      single <- tibble(x = rexp(n = n[i], lambda))
+    }
+    if (j == 3) {
+      single <- tibble(x = rplcon(n = n[i], xmin = 15, alpha = alpha))
+    }
+    single <- single %>%
+      mutate(set = paste0(dists[j], n[i]))
+    pretest_data <- bind_rows(pretest_data, single)
+  }
+}
+pretest_data <- filter(pretest_data, x > 15)
+# To only have positive values of log(x). Not sure how Clauset et al. (2009)
+# set xmin on log-normal and exponential distributions
+
+pretest_results <- dist.fit.all(data = pretest_data,
+                                x = pretest_data$x,
+                                set = pretest_data$set)
 
 # Test these functions here:
 test_model_data <- dist.fit.object(data.vector = rlnorm(n = 2000,
