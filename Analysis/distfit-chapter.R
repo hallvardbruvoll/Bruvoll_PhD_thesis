@@ -3,6 +3,7 @@ library(tidyverse)
 library(poweRlaw)
 library(AICcmodavg)
 library(ineq)
+library(roxygen2)
 
 # Wrapper and loop functions ----------------------------------------------
 
@@ -117,37 +118,44 @@ add.results <- function(data, tail_models, AIC.results) {
   return(data)
 }
 
-# Loop for multiple data sets (this function is not tested! doesn't run)
-dist.fit.all <- function(data, x, set){ # x and set must be columns in data
+data <- bind_rows(tibble(x = rlnorm(1000, 0.3, 2), set = "ln"),
+                  tibble(x = rexp(1000, 0.125), set = "exp"))
+dist.fit.all(data = data)
+
+# Loop for multiple data sets
+#' Distribution fitting loop
+#'
+#' Fit four heavy-tailed distribution models (log-normal, exponential, stretched exponential and power law) to multiple data series, and select best model for each series based on AICc. Xmin for all models is the one that gives the best power-law fit (KS-test). Dependencies: poweRlaw, tidyverse, AICcmodavg.
+#'
+#' @param data A data.table or tibble, with a numeric vector named "x" and a factor or character vector named "set".
+#'
+#' @return The input table with additional columns reporting the best fit with parameter values.
+#' @export
+#'
+#' @examples
+#' data <- bind_rows(tibble(x = rlnorm(1000, 0.3, 2), set = "ln"),
+#' tibble(x = rexp(1000, 0.125), set = "exp"))
+#' dist.fit.all(data = data)
+dist.fit.all <- function(data){
+  # "x" and "set" must be columns in "data"
   data <- data %>%
-    group_by(set)
-  sets <- as.factor(levels(set))
+    group_by(set) # Group to analyse each set separately
+  sets <- levels(as.factor(data$set))
   output <- tibble()
-  for (i in 1:length(as.factor(levels(set)))) {
+  for (i in 1:length(sets)) {
+    # Filter out one set and create object with necessary columns
     one_set <- dist.fit.object(data.vector = filter(data, set == sets[i]) %>%
                                  pull(x),
                                set = sets[i])
-    one_set_models <- tail.models(one_set$value)
-    one_set_xy <- models.xy(one_set_models)
-    one_set_AIC <- aic.selection(tail_models = one_set_models)
-    one_set <- add.results(data = one_set,
+    one_set_models <- tail.models(one_set$value) # Fit models to data
+    one_set_AIC <- aic.selection(tail_models = one_set_models) # Compare models
+    one_set <- add.results(data = one_set, # Add param values from best fit
                            tail_models = one_set_models,
                            AIC.results = one_set_AIC)
-    output <- bind_rows(output, one_set)
-  }
+    output <- bind_rows(output, one_set) # Add results for each set to output
+ }
   return(output)
 }
-
-# Test that it works (delete afterwards)
-ln <- tibble(x = rlnorm(n = 1000, meanlog = mu, sdlog = sigma),
-             set = "ln")
-exp <- tibble(x = rexp(n = 1000, rate = lambda),
-              set = "exp")
-test <- bind_rows(ln, exp)
-test <- test %>%
-  mutate(high_x = x+15)
-  # Test doesn't run on dist.fit.all()
-
 
 # Pre-analysis: testing for false positive power laws ---------------------
 
