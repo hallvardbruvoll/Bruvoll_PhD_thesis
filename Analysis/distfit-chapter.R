@@ -154,11 +154,11 @@ dist.fit.all <- function(x, set){
 }
 
 # test (I can delete this)
-data <- bind_rows(tibble(x = rlnorm(1000, 0.3, 2), set = "ln"),
-                  tibble(x = rexp(1000, 0.125), set = "exp"))
-test <- dist.fit.all(x = data$x, set = data$set)
-set_test <- as.factor(data$set)
-levels(set_test)
+#data <- bind_rows(tibble(x = rlnorm(1000, 0.3, 2), set = "ln"),
+#                  tibble(x = rexp(1000, 0.125), set = "exp"))
+#test <- dist.fit.all(x = data$x, set = data$set)
+#set_test <- as.factor(data$set)
+#levels(set_test)
 
 # Pre-analysis: testing for false positive power laws ---------------------
 
@@ -172,6 +172,26 @@ dists <- c("ln", "exp", "pl")
 # Generate data sets
 pretest_data <- tibble()
 set.seed(100) # Reproducible random numbers
+
+# additional test for dists with xmin
+exp_test1 <- tibble(x = rexp(n = 1000, rate = lambda),
+                    rank = min_rank(x),
+                    ccdf = round((length(rank)-rank+1)/length(rank), 3))
+r <- runif(1000)
+xmin <- 15
+exp_test2 <- tibble(x = xmin-((1/lambda)*log(1-r)),
+                    rank = min_rank(x),
+                    ccdf = round((length(rank)-rank+1)/length(rank), 3))
+exp_test <- bind_rows(exp_test1, exp_test2, .id = "dist")
+ggplot(exp_test)+
+  aes(x = x,
+      y = ccdf, colour = dist)+
+  geom_point()+
+  geom_point(data = exp_test1, aes(x = x+15, colour = "black"))
+# yes it works for exp, but I could just as well do a regular exp and +15...
+# try for log-normal (they're throwing me out. at home: generate rlnorm,
+# and 15-min(x), and call it a day damn it!)
+
 
 for (j in 1:length(dists)) { # Loop for distribution types
   for (i in 1:length(n)) { # Loop for n (distribution sizes)
@@ -189,56 +209,53 @@ for (j in 1:length(dists)) { # Loop for distribution types
     pretest_data <- bind_rows(pretest_data, single)
   }
 }
-# pretest_data <- filter(pretest_data, x > 1)
-# To only have positive values of log(x). Not sure how Clauset et al. (2009)
-# set xmin on log-normal and exponential distributions
 
+# Fit tail models to all distributions (this takes a while!)
 pretest_results <- dist.fit.all(x = pretest_data$x,
                                 set = pretest_data$set)
 pretest_results <- pretest_results %>%
   mutate(set_type = str_remove_all(set, "[10]"),
          n = parse_number(set))
+# Summarise results for all (12) distributions
 pretest_summary <- pretest_results %>%
   group_by(set, set_type, tail, n, ntail) %>%
   summarise()
 
+# Store output for later
+save(pretest_results, file = "Results/pretest_results.RData")
+save(pretest_summary, file = "Results/pretest_summary.RData")
+
+# Plot distribution type and best fit tail
 ggplot(pretest_summary)+
   aes(x = set_type,
       y = tail,
-      size = log10(n),
+      size = n,
       colour = ntail/n)+
-  geom_jitter()+
+  geom_point(position = position_dodge2(width = 0.55))+
   theme_minimal()+
   labs(x = "Distribution type",
        y = "Best fit tail",
-       size = "log10(n)",
-       colour = "tail/n")
+       colour = "ntail/n")+
+  scale_size(name = "n", breaks = c(10,100,1000,10000))
 
-
-ggplot(test_models_xy)+
-  aes(x = value, y = ccdf, colour = model)+
-  geom_line(data = test_model_data, colour  = "black")+
-  geom_line(size = 0.8)+
+ggplot(pretest_results)+
+  aes(x = value, y = ccdf, shape = set_type)+
+  geom_point()+
+  geom_point(data = filter(pretest_results, value >= xmin & tail == "pl"),
+             colour = "red")+
+  scale_shape(solid = FALSE)+
   scale_x_log10()+
   scale_y_log10()+
   theme_minimal()
 
-
-# Plot highlighting data that fits pl model
-# Only do this if the pl model is actually selected of course
-# Comparing multiple series, consider boxplot
-ggplot(test_model_data)+
-  aes(x = value, y = ccdf)+
-  geom_point(shape = 1)+
-  geom_point(data = filter(test_model_data, value >= xmin),
-             colour = "red", shape = 1)+
-  scale_x_log10()+
-  scale_y_log10()+
+ggplot(pretest_results)+
+  aes(x = value, y = set)+
+  geom_boxplot()+
+  geom_point(data = filter(pretest_results, value >= xmin & tail == "pl"),
+               colour = "red", shape = 1)+
+  scale_x_log10(labels = scales::comma)+
+  labs(x = "Value", y = "Distribution")+
   theme_minimal()
-
-# Then: looping for multiple series. Or go to text again first?
-# Then: the actual analyses...
-
 
 
 # 1 Synthetic distributions -----------------------------------------------
