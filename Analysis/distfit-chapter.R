@@ -118,10 +118,6 @@ add.results <- function(data, tail_models, AIC.results) {
   return(data)
 }
 
-data <- bind_rows(tibble(x = rlnorm(1000, 0.3, 2), set = "ln"),
-                  tibble(x = rexp(1000, 0.125), set = "exp"))
-dist.fit.all(data = data)
-
 # Loop for multiple data sets
 #' Distribution fitting loop
 #'
@@ -136,11 +132,11 @@ dist.fit.all(data = data)
 #' data <- bind_rows(tibble(x = rlnorm(1000, 0.3, 2), set = "ln"),
 #' tibble(x = rexp(1000, 0.125), set = "exp"))
 #' dist.fit.all(data = data)
-dist.fit.all <- function(data){
-  # "x" and "set" must be columns in "data"
-  data <- data %>%
+dist.fit.all <- function(x, set){
+  # "x" and "set" must be in the same order, preferably as columns in a table
+  data <- tibble(x, set = as.factor(set)) %>%
     group_by(set) # Group to analyse each set separately
-  sets <- levels(as.factor(data$set))
+  sets <- levels(data$set) # Causes output to be in alphabetic order by sets
   output <- tibble()
   for (i in 1:length(sets)) {
     # Filter out one set and create object with necessary columns
@@ -157,6 +153,13 @@ dist.fit.all <- function(data){
   return(output)
 }
 
+# test (I can delete this)
+data <- bind_rows(tibble(x = rlnorm(1000, 0.3, 2), set = "ln"),
+                  tibble(x = rexp(1000, 0.125), set = "exp"))
+test <- dist.fit.all(x = data$x, set = data$set)
+set_test <- as.factor(data$set)
+levels(set_test)
+
 # Pre-analysis: testing for false positive power laws ---------------------
 
 mu <- 0.3
@@ -168,16 +171,17 @@ dists <- c("ln", "exp", "pl")
 
 # Generate data sets
 pretest_data <- tibble()
+set.seed(100) # Reproducible random numbers
 
-for (j in 1:length(dists)) {
-  for (i in 1:length(n)) {
-    if (j == 1) {
+for (j in 1:length(dists)) { # Loop for distribution types
+  for (i in 1:length(n)) { # Loop for n (distribution sizes)
+    if (j == 1) { # Log-normal distributions
       single <- tibble(x = rlnorm(n = n[i], mu, sigma))
     }
-    if (j == 2) {
+    if (j == 2) { # Exponential distributions
       single <- tibble(x = rexp(n = n[i], lambda))
     }
-    if (j == 3) {
+    if (j == 3) { # Power-law distributions
       single <- tibble(x = rplcon(n = n[i], xmin = 15, alpha = alpha))
     }
     single <- single %>%
@@ -185,22 +189,31 @@ for (j in 1:length(dists)) {
     pretest_data <- bind_rows(pretest_data, single)
   }
 }
-pretest_data <- filter(pretest_data, x > 15)
+# pretest_data <- filter(pretest_data, x > 1)
 # To only have positive values of log(x). Not sure how Clauset et al. (2009)
 # set xmin on log-normal and exponential distributions
 
-pretest_results <- dist.fit.all(data = pretest_data,
-                                x = pretest_data$x,
+pretest_results <- dist.fit.all(x = pretest_data$x,
                                 set = pretest_data$set)
+pretest_results <- pretest_results %>%
+  mutate(set_type = str_remove_all(set, "[10]"),
+         n = parse_number(set))
+pretest_summary <- pretest_results %>%
+  group_by(set, set_type, tail, n, ntail) %>%
+  summarise()
 
-# Test these functions here:
-test_model_data <- dist.fit.object(data.vector = rlnorm(n = 2000,
-                                                      meanlog = 2, sdlog = 1),
-                                   set = "test_set")
-hist(test_model_data$value)
+ggplot(pretest_summary)+
+  aes(x = set_type,
+      y = tail,
+      size = log10(n),
+      colour = ntail/n)+
+  geom_jitter()+
+  theme_minimal()+
+  labs(x = "Distribution type",
+       y = "Best fit tail",
+       size = "log10(n)",
+       colour = "tail/n")
 
-test_models <- tail.models(test_model_data$value)
-test_models_xy <- models.xy(test_models)
 
 ggplot(test_models_xy)+
   aes(x = value, y = ccdf, colour = model)+
@@ -210,12 +223,6 @@ ggplot(test_models_xy)+
   scale_y_log10()+
   theme_minimal()
 
-test_AIC <- aic.selection(tail_models = test_models)
-test_AIC
-
-test_model_data <- add.results(data = test_model_data,
-                               tail_models = test_models,
-                               AIC.results = test_AIC)
 
 # Plot highlighting data that fits pl model
 # Only do this if the pl model is actually selected of course
