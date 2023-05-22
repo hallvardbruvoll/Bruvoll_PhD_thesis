@@ -4,6 +4,7 @@ library(poweRlaw)
 library(AICcmodavg)
 library(ineq)
 library(roxygen2)
+library(scales)
 
 # Wrapper and loop functions ----------------------------------------------
 
@@ -153,7 +154,7 @@ dist.fit.all <- function(x, set){
   return(output)
 }
 
-# test (I can delete this)
+# test data if necessary
 #data <- bind_rows(tibble(x = rlnorm(1000, 0.3, 2), set = "ln"),
 #                  tibble(x = rexp(1000, 0.125), set = "exp"))
 #test <- dist.fit.all(x = data$x, set = data$set)
@@ -166,6 +167,7 @@ mu <- 0.3
 sigma <- 2
 lambda <- 0.125
 alpha <- 2.5
+xmin <- 15
 n <- c(10, 100, 1000, 10000)
 dists <- c("ln", "exp", "pl")
 
@@ -173,25 +175,32 @@ dists <- c("ln", "exp", "pl")
 pretest_data <- tibble()
 set.seed(100) # Reproducible random numbers
 
-# additional test for dists with xmin
-exp_test1 <- tibble(x = rexp(n = 1000, rate = lambda),
-                    rank = min_rank(x),
-                    ccdf = round((length(rank)-rank+1)/length(rank), 3))
-r <- runif(1000)
-xmin <- 15
-exp_test2 <- tibble(x = xmin-((1/lambda)*log(1-r)),
-                    rank = min_rank(x),
-                    ccdf = round((length(rank)-rank+1)/length(rank), 3))
-exp_test <- bind_rows(exp_test1, exp_test2, .id = "dist")
-ggplot(exp_test)+
-  aes(x = x,
-      y = ccdf, colour = dist)+
-  geom_point()+
-  geom_point(data = exp_test1, aes(x = x+15, colour = "black"))
-# yes it works for exp, but I could just as well do a regular exp and +15...
-# try for log-normal (they're throwing me out. at home: generate rlnorm,
-# and 15-min(x), and call it a day damn it!)
+# Reproduce fig. 5a in Clauset et al. 2009
+pl <- tibble(x = rplcon(n = 100, xmin = xmin, alpha = alpha),
+             rank = min_rank(x),
+             ccdf = round((length(rank)-rank+1)/length(rank), 3))
+exp <- tibble(x = rexp(n = 10000, rate = lambda)) %>%
+  filter(x >= xmin) %>%
+  slice_sample(n = 100) %>%
+  mutate(rank = min_rank(x),
+         ccdf = round((length(rank)-rank+1)/length(rank), 3))
+ln <- tibble(x = rlnorm(n = 10000, meanlog = mu, sdlog = sigma)) %>%
+  filter(x >= xmin) %>%
+  slice_sample(n = 100) %>%
+  mutate(rank = min_rank(x),
+         ccdf = round((length(rank)-rank+1)/length(rank), 3))
 
+clauset_5a <- bind_rows(pl = pl, exp = exp, ln = ln, .id = "dist")
+
+ggplot(clauset_5a)+
+  aes(x = x, y = ccdf, colour = dist, shape = dist)+
+  geom_point()+
+  scale_x_log10(labels = label_log(), breaks = breaks_log())+
+  scale_y_log10(labels = label_log())+
+  geom_vline(xintercept = 15, linetype = 2)+
+  theme_minimal()
+
+# HERE !!!!
 
 for (j in 1:length(dists)) { # Loop for distribution types
   for (i in 1:length(n)) { # Loop for n (distribution sizes)
