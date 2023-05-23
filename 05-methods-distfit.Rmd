@@ -18,6 +18,28 @@ REWRITE: So I decided to do a small pre-analysis, to check if synthetic log-norm
 
 First: real vs retained distribution model, with set param values (ln, exp, and pl), and different n.
 
+(ref:05-distfit) Synthetic data series drawn from three different distribution types: exponential ($\lambda=0.125$), power-law ($\alpha=2.5$) and log-normal ($\mu=0.3$, $\sigma=2$), all with $n=100$ data points and $x_{min}=15$. Reproduction of Fig.5a in Clauset et al. (2009), with deviations due to random fluctuations. Scales are logarithmic, and all three series appear as straight lines, though one is a true power law.
+
+```{r 05-distfit, echo=FALSE, fig.cap="(ref:05-distfit)", out.width='80%', fig.asp=.75, fig.align='center'}
+load("Results/fig05_synthdist.RData")
+fig05_synthdist
+```
+
+(ref:next) caption
+
+```{r next, fig.cap="(ref:next)", out.width='80%', fig.asp=.75, fig.align='center'}
+load("Results/fig05_type_tail.RData")
+fig05_type_tail
+```
+
+(ref:next2) caption here
+
+```{r next2, fig.cap="(ref:next2)", out.width='80%', fig.asp=.75, fig.align='center'}
+load("Results/fig05_synth_pl.RData")
+fig05_synth_pl
+```
+\FloatBarrier
+
 Second: Ln giving pl tail, set n, different meanlog and sdlog.
 
 ## Methodological procedure

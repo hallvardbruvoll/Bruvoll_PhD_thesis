@@ -1,8 +1,21 @@
 \usepackage{booktabs}
 \usepackage{amsthm}
+\usepackage{flafter}
+\usepackage{placeins}
+\usepackage[margin=10pt,font=small,labelfont=bf, textfont=it]{caption}
 \makeatletter
 \def\thm@space@setup{%
   \thm@preskip=8pt plus 2pt minus 4pt
   \thm@postskip=\thm@preskip
 }
 \makeatother
+\renewcommand{\topfraction}{.85}
+ \renewcommand{\bottomfraction}{.7}
+ \renewcommand{\textfraction}{.15}
+ \renewcommand{\floatpagefraction}{.66}
+ \renewcommand{\dbltopfraction}{.66}
+ \renewcommand{\dblfloatpagefraction}{.66}
+ \setcounter{topnumber}{9}
+ \setcounter{bottomnumber}{9}
+ \setcounter{totalnumber}{20}
+ \setcounter{dbltopnumber}{9}

@@ -129,12 +129,25 @@
 \newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
 \usepackage{booktabs}
 \usepackage{amsthm}
+\usepackage{flafter}
+\usepackage{placeins}
+\usepackage[margin=10pt,font=small,labelfont=bf, textfont=it]{caption}
 \makeatletter
 \def\thm@space@setup{%
   \thm@preskip=8pt plus 2pt minus 4pt
   \thm@postskip=\thm@preskip
 }
 \makeatother
+\renewcommand{\topfraction}{.85}
+ \renewcommand{\bottomfraction}{.7}
+ \renewcommand{\textfraction}{.15}
+ \renewcommand{\floatpagefraction}{.66}
+ \renewcommand{\dbltopfraction}{.66}
+ \renewcommand{\dblfloatpagefraction}{.66}
+ \setcounter{topnumber}{9}
+ \setcounter{bottomnumber}{9}
+ \setcounter{totalnumber}{20}
+ \setcounter{dbltopnumber}{9}
 \usepackage{titling}
 \pretitle{\begin{center} \includegraphics[width=2cm, height=2cm]{UiO_logo.png}\LARGE\\}
 \posttitle{\end{center}}
@@ -159,7 +172,7 @@
 \makeatother
 \subtitle{with case studies from the Linear Pottery and Trypillia cultures (5.500 - 3.500 cal. BCE)}
 \author{Hallvard Bruvoll \and Department of Archaeology, Conservation and History \and University of Oslo}
-\date{2023-04-25}
+\date{2023-05-23}
 
 \begin{document}
 \maketitle
@@ -196,30 +209,30 @@ Furholt, Grier, et al. (2020), Furholt, Müller, et al. (2020), Furholt, Müller
 \item
   Early farming economy, influence from the Near East.
 \item
-  Large variety in scale and content of archaeologically defined culture groups. Single farmsteads and small hamlets in many phases -- some with hardly any settlement evidence at all \textbf{examples mid-neo, use} Shennan (2018). Other phases include exceptionally large settlements, probably hosting populations of several thousand inhabitants, like at Maidanetske in central Ukraine around 3.800 BCE (see \ref{trypillia}). While in some settings, like in Linear Pottery society in much of continental Europe north of the Alps towards 5.100 BCE (see \ref{lbk}), the dead were buried in simple pit graves, with very little distinction in treatment between individuals, in other phases some individuals were buried with tremendous amounts of precious goods like in Varna, Romania, or under colossal burial mounds like in Carnac, France, both in the mid-5th millennium (Shennan, 2018)\textbf{check ref}.
+  Large variety in scale and content of archaeologically defined culture groups. Single farmsteads and small hamlets in many phases -- some with hardly any settlement evidence at all \textbf{examples mid-neo, use} Shennan (2018). Other phases include exceptionally large settlements, probably hosting populations of several thousand inhabitants, like at Maidanetske in central Ukraine around 3.800 BCE (see \ref{trypillia}). While in some settings, like in Linear Pottery society in much of continental Europe north of the Alps towards 5.100 BCE (see \ref{lbk}), the dead were buried in simple pit graves, with very little distinction in treatment between individuals, in other phases some individuals were buried with tremendous amounts of precious goods like in Varna, Romania, or under colossal burial mounds like in Carnac, France, both in the mid-5th millennium (Shennan 2018)\textbf{check ref}.
 \item
-  Seen at a very large scale -- across the continent and through the Holocene -- the development of society from small scale and relatively egalitarian towards large scale and more hierarchical seems evident (though not to everyone, see Graeber \& Wengrow (2021) and Section \ref{soc-typ}). When we look more closely however, this evolution is anything but linear, as both population sizes and levels of hierarchical organisation seem to fluctuate considerably, sometimes over short time spans as from the Trypillia \textbf{C2 to D1??, check this}, when the so-called mega-sites are abandoned and their former inhabitants regroup into much smaller settlements during a transition of maybe only \textbf{check and ref} years.
+  Seen at a very large scale -- across the continent and through the Holocene -- the development of society from small scale and relatively egalitarian towards large scale and more hierarchical seems evident (though not to everyone, see Graeber and Wengrow (2021) and Section \ref{soc-typ}). When we look more closely however, this evolution is anything but linear, as both population sizes and levels of hierarchical organisation seem to fluctuate considerably, sometimes over short time spans as from the Trypillia \textbf{C2 to D1??, check this}, when the so-called mega-sites are abandoned and their former inhabitants regroup into much smaller settlements during a transition of maybe only \textbf{check and ref} years.
 \item
   In many cases, the level of social hierarchisation and complexity in a given Prehistoric society is very hard for researchers to evaluate, since many indicators of such structures are either lost from the archaeological record, or were never included in the first place {[}Perreault (2019); Section \ref{complexity-archaeo}{]}. Archaeological traces that are often interpreted as signs of social complexity and hierarchy may furthermore be deceiving. Seemingly monumental structures were in many cases built through small additions over centuries, rather than in one colossal construction campaign {[}\textbf{example, Carnac alignments? Danish megaliths?}{]}. In many megalithic burial contexts, it may be impossible to know how large a segment of the society that had access to such inhumations (\textbf{rephrase}).
 \item
-  New methods for investigating hierarchy: fractal analysis. Borrowed from other disciplines, not much tested in archaeology. Example from human geography, use:(Batty, 2005; Batty \& Longley, 1994; D'Acci, 2019; Jahanmiri \& Parker, 2022; Lagarias \& Prastacos, 2021; Tannier \& Pumain, 2005) (say what fractal analysis does, don't explain what it is here)(explain just the word fractal and cite section).
+  New methods for investigating hierarchy: fractal analysis. Borrowed from other disciplines, not much tested in archaeology. Example from human geography, use:(Batty 2005; Batty and Longley 1994; D'Acci 2019; Jahanmiri and Parker 2022; Lagarias and Prastacos 2021; Tannier and Pumain 2005) (say what fractal analysis does, don't explain what it is here)(explain just the word fractal and cite section).
 \end{itemize}
 
 \hypertarget{research-question-and-objectives}{%
 \section{Research question and objectives}\label{research-question-and-objectives}}
 
-The overall goal of the present study is to test and assess the utility of fractal analysis techniques as tools for studying hierarchical social organisation in prehistoric societies. Two methodological approaches are under special scrutiny: the distribution fitting approach and the image analysis approach (C. T. Brown et al., 2005; C. Brown \& Liebovitch, 2010). These are applied to architectural data series from well-preserved and documented archaeological samples within Neolithic Linear Pottery and Trypillia contexts, as well as to synthetic data series. This thesis is thus not to be considered a culture-historic study of Linear Pottery or Trypillia society, but mainly a methodological study. However, results from the proposed analyses of these case studies may also contribute, as side-effects, to their respective fields of research.
+The overall goal of the present study is to test and assess the utility of fractal analysis techniques as tools for studying hierarchical social organisation in prehistoric societies. Two methodological approaches are under special scrutiny: the distribution fitting approach and the image analysis approach (Brown and Liebovitch 2010; Brown, Witschey, and Liebovitch 2005). These are applied to architectural data series from well-preserved and documented archaeological samples within Neolithic Linear Pottery and Trypillia contexts, as well as to synthetic data series. This thesis is thus not to be considered a culture-historic study of Linear Pottery or Trypillia society, but mainly a methodological study. However, results from the proposed analyses of these case studies may also contribute, as side-effects, to their respective fields of research.
 
 For the distribution fitting approach, house-size distributions within settlements are modelled following a given procedure, and the retained model (the best fit) is interpreted in terms of social generating mechanisms. In particular, it is argued here that so-called power-law distributions reflect hierarchical structure, so that the identification of these within the studied samples may indicate the presence of some social hierarchisation process which warrants further interpretation.
 
 With the image analysis approach, the spatial layouts of archaeological and synthetic settlement plans are analysed through the calculation of fractal dimension and lacunarity -- summary statistics which serve as quantifications of irregular spatial patterns or image textures. I argue here that geometrically irregular settlement plans are indicative of relative independence between households, while settlements that develop within geometrically regular grids indicate stronger overarching social structures, with a continuous range of possibilities in-between. The goal here is to test to which extent quantitative measures like fractal dimension and lacunarity may help differentiating between varying degrees of planning in prehistoric settlements.
 
-While both these methodological approaches are well developed and integrated to other disciplines (e.g. Lagarias \& Prastacos, 2021), their usage in archaeology have so far remained anecdotal (Diachenko, 2018). A further overall goal of this thesis is to identify and explore possible limitations in the nature of archaeological data that may limit the applicability of fractal analysis methods within this discipline. For example, does fractal analysis of settlement plans require a data quality that would be practically unattainable in archaeological settings? But also inversely, as it is impossible to explore all potential applications within the framework of one doctoral thesis, suggestions for future research are provided in the last chapter.
+While both these methodological approaches are well developed and integrated to other disciplines (e.g. Lagarias and Prastacos 2021), their usage in archaeology have so far remained anecdotal (Diachenko 2018). A further overall goal of this thesis is to identify and explore possible limitations in the nature of archaeological data that may limit the applicability of fractal analysis methods within this discipline. For example, does fractal analysis of settlement plans require a data quality that would be practically unattainable in archaeological settings? But also inversely, as it is impossible to explore all potential applications within the framework of one doctoral thesis, suggestions for future research are provided in the last chapter.
 
 \hypertarget{defining-hierarchies}{%
 \section{Defining hierarchies}\label{defining-hierarchies}}
 
-The term \emph{hierarchy} is central to the present study. Though commonly used in daily speech, defining the word is not as straight-forward as one might think, so some clarification on how it is understood here might be needed. In a volume dedicated to exploring the meanings and uses of hierarchy as a study object within a range of natural and social sciences, Denise Pumain provides a panorama of definition nuances, but also highlighting the characteristics that are commonly found in most cases (Pumain, 2006). Among these characteristics are:
+The term \emph{hierarchy} is central to the present study. Though commonly used in daily speech, defining the word is not as straight-forward as one might think, so some clarification on how it is understood here might be needed. In a volume dedicated to exploring the meanings and uses of hierarchy as a study object within a range of natural and social sciences, Denise Pumain provides a panorama of definition nuances, but also highlighting the characteristics that are commonly found in most cases (Pumain 2006). Among these characteristics are:
 
 \begin{itemize}
 \item
@@ -232,18 +245,18 @@ The term \emph{hierarchy} is central to the present study. Though commonly used 
 
 Hierarchies are found in humanly constructed classification and taxonomical systems, where morphological distinctions are considered more important or fundamental at the higher end of the hierarchy, while being more detailed or specific at the lower end. Many hierarchical social systems, like religious (from Greek \emph{hieros} -- sacred, and \emph{archê} -- government), military or corporate organisations, include strongly reinforced regulations of subordination, which in modern society has led to somewhat negative connotations to both hyper-rational and despotic rule(\textbf{pumain2006:5-6?}). While one prevalent explanation for the frequency of hierarchical structures in nature and society is indeed that they ``represent the best solution for many optimisation problems'' (\emph{ibid}.:7), that does in no way mean they need to be consciously planned. On the contrary, in most cases hierarchies seem to emerge spontaneously, often from growth processes with systems splitting into sub-systems once they reach a certain critical size limit. There is also no compulsory link between social hierarchies and despotism, as it matters little to the overall structure whether the top element is elected for a limited period or born into an inherited leading position. More detail on how hierarchical structures emerge and how they can be described as fractals, is given in Chapter \ref{theory}. A further discussion on the specifics of social hierarchies is given below in Section \ref{social-hierarchy}, and on the differences between spontaneously emergent versus consciously planned structures in Chapter \ref{images-theory}.
 
-A possible confusion with a somewhat different meaning of the term hierarchy should however be mentioned already here. If hierarchical structures are abundant in nature in both physical (inert) and biological systems, social hierarchies on the other hand -- understood as intra-species populations of individuals organised in pyramidal hierarchical, i.e.~multi-level relationships to each other -- seems to be almost exclusively found among human groups. At the same time, a different type of hierarchy is frequently described by biologists which is common among animals, namely \emph{dominance hierarchies}, also known as pecking order (Strauss et al., 2022). These structures are hierarchical in the sense that there is difference in rank between group members, and they also seem to emerge spontaneously in the animal populations where they are described. But unlike social hierarchies, these are purely \emph{linear}, in the sense that each group member is situated in rank above one part of the group and below the rest, so that the whole group forms a rank chain in the form A \textgreater{} B \textgreater{} C \ldots{} n.~The rank of an individual will typically decide their access to food and reproduction relative to the other members, and may be settled and resettled in a number of ways depending on the species and population under study, but typically involving some level of violence or threat and subordination in face-to-face encounters (Strauss et al., 2022).
+A possible confusion with a somewhat different meaning of the term hierarchy should however be mentioned already here. If hierarchical structures are abundant in nature in both physical (inert) and biological systems, social hierarchies on the other hand -- understood as intra-species populations of individuals organised in pyramidal hierarchical, i.e.~multi-level relationships to each other -- seems to be almost exclusively found among human groups. At the same time, a different type of hierarchy is frequently described by biologists which is common among animals, namely \emph{dominance hierarchies}, also known as pecking order (Strauss et al. 2022). These structures are hierarchical in the sense that there is difference in rank between group members, and they also seem to emerge spontaneously in the animal populations where they are described. But unlike social hierarchies, these are purely \emph{linear}, in the sense that each group member is situated in rank above one part of the group and below the rest, so that the whole group forms a rank chain in the form A \textgreater{} B \textgreater{} C \ldots{} n.~The rank of an individual will typically decide their access to food and reproduction relative to the other members, and may be settled and resettled in a number of ways depending on the species and population under study, but typically involving some level of violence or threat and subordination in face-to-face encounters (Strauss et al. 2022).
 
-A classic example -- perhaps most of all in popular culture -- is dominance hierarchy among wolves, led by an alpha male (e.g. Cafazzo et al., 2016; Packard, 2003). Though it has been much discussed whether or not this trope model actually fits wolves (see Mech, 1999; Muro et al., 2011), any reported dominance hierarchies among larger groups of wolves and stray dogs are linear rather than pyramidal, even when they are illustrated as pyramidal (e.g.~Fig.1 in Rodríguez et al., 2017). Similar social organisation systems are found among a wide variety of species -- mammals, birds, fish, particularly but not only among group-hunting carnivores -- and are generally interpreted as an evolutionary mechanism (Strauss et al., 2022, with references). Cases of branching, multi-level social hierarchies among animals are on the other hand extremely rare, but have been reported to operate among hamadryas baboons in Ethiopia, with ``clan leaders'' forming relays of information flow and decision making between the ``one-male units'' within a total population (``band'') of about 200 individuals (Schreier \& Swedell, 2009). Eusocial insects like ants and wasps provide a more well-known example of hierarchical organisation among animals (Shimoji \& Dobata, 2022), also indicating -- if it should be necessary -- that it is not a matter of cognitive abilities or brain size, but rather of social function (e.g.~building a hive or a village together) and population size above a certain threshold.
+A classic example -- perhaps most of all in popular culture -- is dominance hierarchy among wolves, led by an alpha male (e.g. Cafazzo, Lazzaroni, and Marshall-Pescini 2016; Packard 2003). Though it has been much discussed whether or not this trope model actually fits wolves (see Mech 1999; Muro et al. 2011), any reported dominance hierarchies among larger groups of wolves and stray dogs are linear rather than pyramidal, even when they are illustrated as pyramidal (e.g.~Fig.1 in Rodríguez et al. 2017). Similar social organisation systems are found among a wide variety of species -- mammals, birds, fish, particularly but not only among group-hunting carnivores -- and are generally interpreted as an evolutionary mechanism (Strauss et al. 2022, with references). Cases of branching, multi-level social hierarchies among animals are on the other hand extremely rare, but have been reported to operate among hamadryas baboons in Ethiopia, with ``clan leaders'' forming relays of information flow and decision making between the ``one-male units'' within a total population (``band'') of about 200 individuals (Schreier and Swedell 2009). Eusocial insects like ants and wasps provide a more well-known example of hierarchical organisation among animals (Shimoji and Dobata 2022), also indicating -- if it should be necessary -- that it is not a matter of cognitive abilities or brain size, but rather of social function (e.g.~building a hive or a village together) and population size above a certain threshold.
 
 The reason to dwell upon this qualitative distinction between linear and pyramidal hierarchies, is that the prevalence of the former in nature is sometimes put forward as an argument for social hierarchies among hunter-gatherer groups in the Palaeo- and Mesolithic {[}find precise reference here --\textgreater{} Graeber, if else strawman, Hayden 2007, pp.~231-6{]} \textbf{fill in this one}. While it is a good point that there is no reason there couldn't be linear dominance hierarchies among small forager groups, and that such systems hardly can be described as egalitarian by those who live them, we cannot assume that pyramidal social hierarchies have always been part of human culture, but rather that they -- much like agriculture -- at some point came to be as historical phenomena.
 
-Bottom line hierarchy: pecking order/linear dominance hierarchy may be prevalent in any part of human prehistory, but could also be very hard to study from material remains. Branching (i.e.~fractal) hierarchies as well as social stratification should leave material traces, and are most probably related to population size (see below), and thus less likely to be found within pre-Neolithic societies. They should be regarded as historically situated phenomenons -- much like agriculture, pottery, writing or the steam engine -- justifying the search for and explanation of their possible origins (\emph{contra} e.g. Graeber \& Wengrow, 2021). The issue of the universality or particularity of social inequality and hierarchy is discussed in more detail \textbf{in the final chapters of this thesis (specify).}
+Bottom line hierarchy: pecking order/linear dominance hierarchy may be prevalent in any part of human prehistory, but could also be very hard to study from material remains. Branching (i.e.~fractal) hierarchies as well as social stratification should leave material traces, and are most probably related to population size (see below), and thus less likely to be found within pre-Neolithic societies. They should be regarded as historically situated phenomenons -- much like agriculture, pottery, writing or the steam engine -- justifying the search for and explanation of their possible origins (\emph{contra} e.g. Graeber and Wengrow 2021). The issue of the universality or particularity of social inequality and hierarchy is discussed in more detail \textbf{in the final chapters of this thesis (specify).}
 
 \begin{itemize}
 \tightlist
 \item
-  Inequality Kohler \& Smith (2018), Midlarsky (1999), Price \& Feinman (2010), Price \& Feinman (1995) NA
+  Inequality Kohler and Smith (2018), Midlarsky (1999), Price and Feinman (2010), Price and Feinman (1995) NA
 \end{itemize}
 
 \hypertarget{social-hierarchy}{%
@@ -251,26 +264,39 @@ Bottom line hierarchy: pecking order/linear dominance hierarchy may be prevalent
 
 \begin{itemize}
 \item
-  Political assumptions -- all hierarchical social structures are not despotic top-down rule. Democracies can also be very hierarchical. Matter of scale rather than political system Graeber \& Wengrow (2021). But, tendencies? Use Pumain (2006), also Furholt, Grier, et al. (2020). Use Redhead \& Power (2022): status and leadership, multiple overlapping networks. Emergence of hierarchies: ``Positions in the dominance hierarchy is determined by a combination of attributes of individuals, stochastic processes, and social context'' Strauss et al. (2022).
+  Political assumptions -- all hierarchical social structures are not despotic top-down rule. Democracies can also be very hierarchical. Matter of scale rather than political system Graeber and Wengrow (2021). But, tendencies? Use Pumain (2006), also Furholt, Grier, et al. (2020). Use Redhead and Power (2022): status and leadership, multiple overlapping networks. Emergence of hierarchies: ``Positions in the dominance hierarchy is determined by a combination of attributes of individuals, stochastic processes, and social context'' Strauss et al. (2022).
 \item
   Nested and non-nested social hierarchies, hierarchical hunter-gatherers? Hamilton et al. (2007), Whitridge (2016) (or use in Chapter \ref{disc-methods}?)
 \item
-  Biologically defined thresholds to group size? Dunbar's number and controversies, Dunbar (2022), B. West et al. (2023) (add published papers). Scalar stress G. A. Johnson (1982), Alberti (2014), Zhou et al. (2005). Also Carneiro (1986), Dubreuil (2010)
+  Biologically defined thresholds to group size? Dunbar's number and controversies, Dunbar (2022), West et al. (2023) (add published papers). Scalar stress Johnson (1982), Alberti (2014), Zhou et al. (2005). Also Carneiro (1986), Dubreuil (2010)
 \item
-  Temporal dynamics of social hierarchies: cyclicity (Peters \& Zimmermann, 2017), sawtooth waves (Scheidel, 2017), punctuated equilibrium {[}Gould (2007); zimmermann?{]}. Archaeo. example South Sweden Neo/BA: Nordquist (2001). Transitions villages to urban: Birch (2014)
+  Temporal dynamics of social hierarchies: cyclicity (Peters and Zimmermann 2017), sawtooth waves (Scheidel 2017), punctuated equilibrium {[}Gould (2007); zimmermann?{]}. Archaeo. example South Sweden Neo/BA: Nordquist (2001). Transitions villages to urban: Birch (2014)
 \end{itemize}
 
 \begin{itemize}
 \item
-  Tools for classifying societies, or evolutionary model? Discussion of A. Johnson \& Earle (1987), Testart (2005), Service (1971), T. K. Earle (1997).
+  Tools for classifying societies, or evolutionary model? Discussion of Johnson and Earle (1987), Testart (2005), Service (1971), Earle (1997).
 
   \begin{itemize}
   \tightlist
   \item
-    Lineage and Chiefdom societies T. Earle (2002), Sahlins (2020)
+    Lineage and Chiefdom societies Earle (2002), Sahlins (2020)
   \end{itemize}
+\end{itemize}
+
+An additional category of social structure, which has had a certain success in archaeology, was described by Claude Lévi-Strauss as \emph{house societies} (Lévi-Strauss 1982). Here a house is a social unit, often centred around a material estate but also involving titles, heirlooms, land ownership, rights to hunting grounds etc. and where membership is not determined from genealogy in a systematic manner, as is the case with more regularly structured lineage or clan societies. House membership may be gained through more competitive social action, privileging those that possess the resources to engage in activities such as gift exchange and \emph{potlatch}-style feasting. This opens up for more complex configurations, and house membership will often entail a certain level of prestige. Inheritance may furthermore follow (male) descent or (female) affinity -- that is from grand-father to grand-son via mother -- in a pragmatic way depending on which option is in the best interest of the house, as long as it can be justified in more or less precise kinship-related terms. A segment of society of varying size will not afford to partake in this competition, and as a result, house societies can be viewed as being in a somewhat unstable transition state between lineage and class societies. Lévi-Strauss originally pinned the term on Kwakiutl society in the American north-west coast (as described by Franz Boas), but argued for its generality by associating it with the feudal system of medieval Europe. The concept has since been applied to a wide range of cases from ethnography (especially in the South-East Asian and Pacific regions), as well as to prehistoric contexts \textbf{insert examples}, reflecting a relevance that extends far beyond European feudalism. Ian Kuijt (2018) recently provided an interpretation of Neolithic Çatalöyük where he proposed that
+
+Refs. house societies {[}Joyce and Gillespie (2000), Bnf; Beck (2007); Kuijt (2018); Lévi-Strauss (1982); Bickle et al 2016 (reload in Zotero){]}.
+
+\begin{itemize}
+\tightlist
 \item
-  Anti-evolution critique in Yoffee (1993), Yoffee (2005), Fontijn \& Brück (2013), Kienlin \& Zimmermann (2012), Lund et al. (2022), Furholt, Grier, et al. (2020). Review in Dubreuil (2010). Anarchistic critique/heterarchy: Crumley (1995), Haude \& Wagner (2019), Graeber \& Wengrow (2021). Paleaeolithic social inequality: Honoré (2022) ++.
+\end{itemize}
+
+\begin{itemize}
+\tightlist
+\item
+  Anti-evolution critique in Yoffee (1993), Yoffee (2005), Fontijn and Brück (2013), Kienlin and Zimmermann (2012), Lund, Furholt, and Austvoll (2022), Furholt, Grier, et al. (2020). Review in Dubreuil (2010). Anarchistic critique/heterarchy: Crumley (1995), Haude and Wagner (2019), Graeber and Wengrow (2021). Paleaeolithic social inequality: Honoré (2022) ++.
 \end{itemize}
 
 \hypertarget{main-findings-here}{%
@@ -370,11 +396,11 @@ Sepal.Length & Sepal.Width & Petal.Length & Petal.Width & Species\\
 \end{tabular}
 \end{table}
 
-You can write citations, too. For example, we are using the \textbf{bookdown} package (\textbf{R-bookdown?}) in this sample book, which was built on top of R Markdown and \textbf{knitr} (Xie, 2015).
+You can write citations, too. For example, we are using the \textbf{bookdown} package (\textbf{R-bookdown?}) in this sample book, which was built on top of R Markdown and \textbf{knitr} (Xie 2015).
 
 Test: Morgan (1965).
 
-Test: B. B. Mandelbrot (2021). jløkj fdsasdfadfasdfadf new text
+Test: Mandelbrot (2021). jløkj fdsasdfadfasdfadf new text
 
 \hypertarget{theory}{%
 \chapter{Theoretical framework: Complexity and Fractals}\label{theory}}
@@ -382,13 +408,13 @@ Test: B. B. Mandelbrot (2021). jløkj fdsasdfadfasdfadf new text
 \hypertarget{very-short-introduction-to-complexity-theory-dynamical-systems-theory}{%
 \section{Very short introduction to Complexity Theory / Dynamical Systems Theory}\label{very-short-introduction-to-complexity-theory-dynamical-systems-theory}}
 
-Lit. use Daems (2021), Baden \& Beekman (2016), Ross \& Steadman (2017), Smith (2011) and Bentley \& Maschner (2008).
+Lit. use Daems (2021), Baden and Beekman (2016), Ross and Steadman (2017), Smith (2011) and Bentley and Maschner (2008).
 
 For Dynamical Systems, use Devaney (2020), but don't go into detail.
 
-Describe complexity, dynamical systems, chaos, feedback loops, criticality, emergence. Scale G. B. West (2017) NA
+Describe complexity, dynamical systems, chaos, feedback loops, criticality, emergence. Scale West (2017) NA
 
-Social complexity is more than social hierarchy, and all societies -- whether they are classified as simple or complex within a social evolutionary framework -- can arguably be studied as complex systems, since they always consist of various sub-systems and populations of individuals acting and interacting in a variety of ways (Daems, 2021, p. 6). The sense of social complexity that is traditionally understood in archaeology, derived from social evolution theory, is somewhat narrower and relates more to the specific characteristics of organisational scale (i.e.~hierarchy) than to complexity per se. Studying the scale of social organisation from a complex systems perspective rather than from a social evolutionist one holds several advantages:
+Social complexity is more than social hierarchy, and all societies -- whether they are classified as simple or complex within a social evolutionary framework -- can arguably be studied as complex systems, since they always consist of various sub-systems and populations of individuals acting and interacting in a variety of ways (Daems 2021:6). The sense of social complexity that is traditionally understood in archaeology, derived from social evolution theory, is somewhat narrower and relates more to the specific characteristics of organisational scale (i.e.~hierarchy) than to complexity per se. Studying the scale of social organisation from a complex systems perspective rather than from a social evolutionist one holds several advantages:
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
@@ -409,11 +435,11 @@ Mention the most common applications in archaeology, as discussed in Daems (2021
 \hypertarget{fractals}{%
 \section{Very short introduction to Fractals and Fractal Analysis}\label{fractals}}
 
-Lit. use B. B. Mandelbrot (2021), Falconer \& Falconer (2013) (general), also C. Brown \& Liebovitch (2010), C. T. Brown et al. (2005) and Diachenko (2018) (for archaeology)
+Lit. use Mandelbrot (2021), Falconer and Falconer (2013) (general), also Brown and Liebovitch (2010), Brown et al. (2005) and Diachenko (2018) (for archaeology)
 
-The term \emph{fractal} was pinned by the French-American mathematician Benoît Mandelbrot (1924-2010), from the latin word \emph{fractus} meaning broken or irregular, to describe patterns that because of their apparent limitless complexity defied concise description within the framework of Euclidean geometry (Falconer \& Falconer, 2013, pp. 116--120). Such patterns -- both theoretical and empirical -- had been described and analysed by mathematicians and researchers within other disciplines since the end of the 19th century, but were mostly regarded as curiosities and exceptions, and Mandelbrot was the first to link all these previous studies within a unified theoretical framework (B. B. Mandelbrot, 2021, 1975).
+The term \emph{fractal} was pinned by the French-American mathematician Benoît Mandelbrot (1924-2010), from the latin word \emph{fractus} meaning broken or irregular, to describe patterns that because of their apparent limitless complexity defied concise description within the framework of Euclidean geometry (Falconer and Falconer 2013:116--20). Such patterns -- both theoretical and empirical -- had been described and analysed by mathematicians and researchers within other disciplines since the end of the 19th century, but were mostly regarded as curiosities and exceptions, and Mandelbrot was the first to link all these previous studies within a unified theoretical framework (Mandelbrot 1975, 2021).
 
-In one influential paper, drawing on previous work by mathematician Lewis Fry Richardson, B. Mandelbrot (1967) argued that a rugged linear feature like a coastline cannot be fully described through traditional geometry with a set of line segments, since this would result in a curve of infinite complexity. More importantly, he showed that the traditional measure of lines -- the length -- will inevitably depend on the scale of observation when applied to a coastline. If measured in kilometres, a coastline will always appear shorter in total length, than if it is measured in metres, since smaller bays and inlets can then also be accounted for. But this phenomenon continues seemingly without limit, since the same coastline measured in centimetres will appear much longer, and in millimetres far longer again, and so on. Length as a measure of rugged linear features thus seems inadequate, which may become a problem in practical settings when comparing coastlines between countries that operate with different measurement units and procedures. The same problem occurs when describing irregular patterns in the plane (like island or continent outlines) with area or in three-dimensional space (like clouds or galaxies) with volume. As a solution, Mandelbrot proposed the use of the \emph{fractal dimension} as a descriptive tool for characterising such patterns.
+In one influential paper, drawing on previous work by mathematician Lewis Fry Richardson, Mandelbrot (1967) argued that a rugged linear feature like a coastline cannot be fully described through traditional geometry with a set of line segments, since this would result in a curve of infinite complexity. More importantly, he showed that the traditional measure of lines -- the length -- will inevitably depend on the scale of observation when applied to a coastline. If measured in kilometres, a coastline will always appear shorter in total length, than if it is measured in metres, since smaller bays and inlets can then also be accounted for. But this phenomenon continues seemingly without limit, since the same coastline measured in centimetres will appear much longer, and in millimetres far longer again, and so on. Length as a measure of rugged linear features thus seems inadequate, which may become a problem in practical settings when comparing coastlines between countries that operate with different measurement units and procedures. The same problem occurs when describing irregular patterns in the plane (like island or continent outlines) with area or in three-dimensional space (like clouds or galaxies) with volume. As a solution, Mandelbrot proposed the use of the \emph{fractal dimension} as a descriptive tool for characterising such patterns.
 
 Fractals as hierarchy
 
@@ -439,7 +465,7 @@ Fractals embedded in
 \item
   Time series: earthquakes, finance (not applied in this study, though should be done later)
 \item
-  Networks/abstract: hierarchical organisations, income distributions, word counts, 1/f or pink noise, www. Barabási \& Albert (1999) etc. (see Chapter xxx for details). Fractal social networks: B. West et al. (2023).
+  Networks/abstract: hierarchical organisations, income distributions, word counts, 1/f or pink noise, www. Barabási and Albert (1999) etc. (see Chapter xxx for details). Fractal social networks: West et al. (2023).
 \item
   Pure mathematics: Julia and Mandelbrot sets, strange attractors (don't go into details!)
 \end{itemize}
@@ -462,7 +488,7 @@ Fractal analysis for studying irregular phenomena (methods described in more det
   Delanda and Assemblage Theory
 \end{itemize}
 
-For social hierarchies, he refers to Weber's classification of legitimation strategies, as being founded on sacred tradition, personal charisma or rational bureaucracy (see also Graeber \& Wengrow, 2021, pp.). Delanda furthermore places Bourdieu's concept of \emph{habitus} on the mid-range between micro and macro processes, as an explanation of social action that is not entirely individual dependent, but not emergent properties of society-as-a-whole either.
+For social hierarchies, he refers to Weber's classification of legitimation strategies, as being founded on sacred tradition, personal charisma or rational bureaucracy (see also Graeber and Wengrow 2021, pp.). Delanda furthermore places Bourdieu's concept of \emph{habitus} on the mid-range between micro and macro processes, as an explanation of social action that is not entirely individual dependent, but not emergent properties of society-as-a-whole either.
 
 \begin{itemize}
 \tightlist
@@ -526,7 +552,7 @@ For this project I opted for the use of houses and built environments as proxy f
 
 Some caveats do remain, however, for the use of houses as proxy of social status. Firstly, there may be a documentation bias favouring larger houses, since they may be easier to discover both during excavation and in remote-sensing surveys (\textbf{citation?}). In samples with very skewed house-size distributions, there may also be a further taphonomic bias towards large houses, since smaller houses -- being far more numerous -- are statistically in greater risk of being affected by post-depositional disturbances. Both of these biases are hard to evaluate empirically, though computer modelling could potentially give indications of their importance. This, however, is not within the scope of the present study.
 
-A second, and maybe more important issue, is that of the contemporaneity of houses. When the goal is to investigate the social structure of a settlement as reflected in its architecture -- be it through the size distribution of buildings or their spatial layout -- all the analysed features should ideally have been in use at the same point in time. This is however very hard to achieve in most archaeological settings, and many researchers choose to either ignore the issue, or to accept a temporal resolution that is far wider than what their research questions should logically allow for (Perreault, 2019). One way of limiting this problem is to select study samples with little to no stratigraphic overlap, which might indicate short occupation span, though as shown below this indicator can also be deceiving. For both study areas selected for this thesis -- the Linear Pottery in south-west Slovakia and the B2/C1 Trypillia of central Ukraine -- settlement plans show very little overlap between houses, even though some of them probably developed over more than three centuries, as shown by radiocarbon dates and modelling (see below). Such settlement plans may be impossible to differentiate into separate coeval time samples without precise dating of construction and abandon of every individual house, counting in the thousands on the Trypillia mega-sites (an alternative method is presented only for the Linear Pottery settlements in Section \ref{lbk}). On the other hand, the fact that there is so little overlap between houses despite temporal differences clearly illustrates how these settlement plans emerged over time, not as a \emph{tabula rasa} in each generation but rather with new constructions respecting the location and orientation of older ones long after abandonment. Though such practices are indeed interesting, it is not at all obvious, however, to which extent they may reflect or even relate to social factors such as hierarchy. With settlement types with much higher degree of stratigraphic overlap, like the tell sites of the Balkan and Near Eastern Neolithic traditions, it may be easier to distinguish more or less coeval occupation phases, but they are again harder to document extensively -- because of the high density of archaeological finds and features, excavation surfaces typically cover only very small portions of the settlement, while remote sensing performs less well and not allowing for temporal disentanglement of constructed features (\textbf{citation}). In any case, the issue of temporal resolution of the data and its influence on analytical results is crucial, and will be discussed repeatedly throughout this thesis, with a summary in Chapter \ref{disc-methods}.
+A second, and maybe more important issue, is that of the contemporaneity of houses. When the goal is to investigate the social structure of a settlement as reflected in its architecture -- be it through the size distribution of buildings or their spatial layout -- all the analysed features should ideally have been in use at the same point in time. This is however very hard to achieve in most archaeological settings, and many researchers choose to either ignore the issue, or to accept a temporal resolution that is far wider than what their research questions should logically allow for (Perreault 2019). One way of limiting this problem is to select study samples with little to no stratigraphic overlap, which might indicate short occupation span, though as shown below this indicator can also be deceiving. For both study areas selected for this thesis -- the Linear Pottery in south-west Slovakia and the B2/C1 Trypillia of central Ukraine -- settlement plans show very little overlap between houses, even though some of them probably developed over more than three centuries, as shown by radiocarbon dates and modelling (see below). Such settlement plans may be impossible to differentiate into separate coeval time samples without precise dating of construction and abandon of every individual house, counting in the thousands on the Trypillia mega-sites (an alternative method is presented only for the Linear Pottery settlements in Section \ref{lbk}). On the other hand, the fact that there is so little overlap between houses despite temporal differences clearly illustrates how these settlement plans emerged over time, not as a \emph{tabula rasa} in each generation but rather with new constructions respecting the location and orientation of older ones long after abandonment. Though such practices are indeed interesting, it is not at all obvious, however, to which extent they may reflect or even relate to social factors such as hierarchy. With settlement types with much higher degree of stratigraphic overlap, like the tell sites of the Balkan and Near Eastern Neolithic traditions, it may be easier to distinguish more or less coeval occupation phases, but they are again harder to document extensively -- because of the high density of archaeological finds and features, excavation surfaces typically cover only very small portions of the settlement, while remote sensing performs less well and not allowing for temporal disentanglement of constructed features (\textbf{citation}). In any case, the issue of temporal resolution of the data and its influence on analytical results is crucial, and will be discussed repeatedly throughout this thesis, with a summary in Chapter \ref{disc-methods}.
 
 Comparative technology
 
@@ -545,7 +571,7 @@ Formation, characteristics -- striking difference from earlier Mesolithic cultur
 
 expansion trajectory: east: Saile (2020),
 
-Questions of contact and even creolisation with local hunter-gatherer groups in the margins of the Linear Pottery settlement area -- Limbourg and La Hoguette pottery groups in northern France and Belgium, Swifterbandt in the Netherlands??, Ertebølle in northern Germany??, Bug-Dniestr in Ukraine and Moldova (Saile, 2020) -- as well as with other already established Neolithic groups in central France (Roussot‑Larroque, 2022) and the lower Danube (Saile, 2020), remain hotly debated
+Questions of contact and even creolisation with local hunter-gatherer groups in the margins of the Linear Pottery settlement area -- Limbourg and La Hoguette pottery groups in northern France and Belgium, Swifterbandt in the Netherlands??, Ertebølle in northern Germany??, Bug-Dniestr in Ukraine and Moldova (Saile 2020) -- as well as with other already established Neolithic groups in central France (Roussot‑Larroque 2022) and the lower Danube (Saile 2020), remain hotly debated
 
 \begin{itemize}
 \tightlist
@@ -555,7 +581,7 @@ Questions of contact and even creolisation with local hunter-gatherer groups in 
   Linear Pottery architecture and house construction
 \end{itemize}
 
-origin of the longhouse: Bánffy \& Höhler-Brockmann (2020), Coudart (2015), Last (2015)
+origin of the longhouse: Bánffy and Höhler-Brockmann (2020), Coudart (2015), Last (2015)
 
 house typology, construction, and use: Modderman et al. (1970), Coudart (1998)
 
@@ -569,13 +595,13 @@ house orientation: ``origin'' hypothesis: Bradley (2001)
 \end{Shaded}
 
 \begin{verbatim}
-## -- Attaching core tidyverse packages ------ tidyverse 2.0.0 --
+## -- Attaching core tidyverse packages ---
 ## v dplyr     1.1.1     v readr     2.1.4
 ## v forcats   1.0.0     v stringr   1.5.0
-## v ggplot2   3.4.1     v tibble    3.2.1
+## v ggplot2   3.4.2     v tibble    3.2.1
 ## v lubridate 1.9.2     v tidyr     1.3.0
 ## v purrr     1.0.1     
-## -- Conflicts ------------------------ tidyverse_conflicts() --
+## -- Conflicts -- tidyverse_conflicts() --
 ## x dplyr::filter() masks stats::filter()
 ## x dplyr::lag()    masks stats::lag()
 ## i Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
@@ -652,20 +678,20 @@ Side note on Varna: Lichardus (1991; also Gimbutas), as discussed in Kadrow (201
 
 In archaeology there are two recurrent and seemingly contradicting assumptions underlying interpretations of house-size differences within a society. In studies where the goal is to provide population size estimates, this is often calculated from total living area, adding together the areas of the houses in question, and multiplying by a mean value of surface per inhabitant (\textbf{give examples}). This mean value is generally obtained from multiple ethnographic parallels. With this assumption -- that every inhabitant requires a similar amount of living space (\textbf{mention actual values from literature}) -- the size of a house effectively reflects its number of inhabitants. The second assumption, which is more frequently seen in studies focussing on wealth inequality and social stratification, is that house-size differences are expressions of differences in some sort of wealth or power (\textbf{give examples}). In this view, a larger house would have belonged to a wealthier household, capable of procuring more raw materials and activating a larger labour force for its construction and maintenance, in which case there would be significant disparities in living space per individual. Even though there is not necessarily any contradiction between these two interpretations from an anthropological point of view, most archaeologists seem to be unable to consider both possibilities simultaneously. From a methodological point of view, each of these assumptions will tend to mask our ability to see traces in the archaeological data relating to the other assumption -- that is, with existing methods we cannot convincingly provide estimations of both population size and level of social inequality from the same data, even though house sizes frequently form the basis of both argumentations. Far from proposing a solution to this issue, my argument here is that a variety of social institutions known from ethnography and historical sources can explain some level of correlation between the two variables. Dowry and bride price are geographically and temporally widespread practices that link number of offspring (daughters, sons or both, depending on cultural context) with wealth. Clan leaders may draw upon kinship ties and dependencies in order to obtain the workforce needed to construct a larger house (\textbf{citation needed}). Nevertheless, if the notion of wealth is at all to be applied meaningfully to non-capitalistic societies, it should designate cases where there is significant and persistent material disparities between members of a population, and not simply point to different household sizes. House sizes could thus potentially reflect a somewhat more complex culture-specific interplay between household size and wealth, meaning that for a given house size, one could assume a range of possible values of the two parameters (\textbf{insert fig/illustration}). This relationship between household size, wealth and house size should be studied more in detail empirically through the available ethnographic data, rather than reducing its complexity to a mean surface area per inhabitant for the entire population. Such a study, however, lies beyond the scope of the present thesis. Here I will largely leave aside the question of population and household size, focussing on distribution types of house size data, arguing that the most unequal distribution type considered here -- the power-law distribution -- is unlikely to emerge only from random differences in household size and standard marital patterns, favouring thus interpretations relating to wealth and/or power differences.
 
-Even though the goal here is not to investigate household sizes but to focus on the material aspect of house-size distributions, some fundamental issues of terminology should be addressed. The use of the word \emph{house} is indicative of an underlying assumption that the building in question was in use primarily for domestic purposes -- essentially, a fixed architectural unit where someone would spend their nights at least most of their time, and in many cases also cook and eat their main meal during the day -- though proving this directly is not always straightforward in archaeology. For the cultural contexts discussed here -- the Linear Pottery and Trypillia groups in the Neolithic-Chalcolithic -- there is however little evidence for buildings with specific non-domestic (e.g.~economic, religious or administrative) purposes, with the probable exception of the so-called mega-structures or assembly houses in the Trypillia mega-sites, which are discussed more in detail below. This lack of evidence does not imply that there was no specialised economic, religious or administrative activity in these societies, as ethnography and history clearly shows that such activity must reach a high degree of specialisation before it materialises in distinct buildings devoted exclusively for these functions (\textbf{refs? not Hendon 2007}). Artisans, shamans and chiefs could be highly specialised but still perform their activity at their domestic home or more diffusely outdoors or without any fixed location (cite Costin ++). It is in any case of common usage to speak of houses when discussing architectural units in Neolithic Europe and other prehistoric contexts, maybe because of a lack of a better generic word, but this usage should not prevent archaeologists from recognising other non-domestic functions of buildings whenever there is evidence for it. The \emph{household} is furthermore the designation of all the people, genealogically related or not, usually living under the same roof or within the same architectural unit, constituting a functional whole economically and socially.
+Even though the goal here is not to investigate household sizes but to focus on the material aspect of house-size distributions, some fundamental issues of terminology should be addressed. The use of the word \emph{house} (in the wider material sense rather than the Lévi-Straussian sense, see Section \ref{social-hierarchy}) is indicative of an underlying assumption that the building in question was in use primarily for domestic purposes -- essentially, a fixed architectural unit where someone would spend their nights at least most of their time, and in many cases also cook and eat their main meal during the day -- though proving this directly is not always straightforward in archaeology. For the cultural contexts discussed here -- the Linear Pottery and Trypillia groups in the Neolithic-Chalcolithic -- there is however little evidence for buildings with specific non-domestic (e.g.~economic, religious or administrative) purposes, with the probable exception of the so-called mega-structures or assembly houses in the Trypillia mega-sites, which are discussed more in detail below. This lack of evidence does not imply that there was no specialised economic, religious or administrative activity in these societies, as ethnography and history clearly shows that such activity must reach a certain degree of specialisation before it materialises in distinct buildings devoted exclusively for these functions. Artisans, shamans and chiefs could be specialised to some extent but still perform their activity at their domestic home or more diffusely outdoors or without any fixed location (e.g. Costin 1991:25). It is in any case of common usage to speak of houses when discussing architectural units in Neolithic Europe and other prehistoric contexts, maybe because of a lack of a better generic word, but this usage should not prevent archaeologists from recognising other non-domestic functions of buildings whenever there is evidence for it. The \emph{household} is furthermore the designation of all the people, genealogically related or not, usually living under the same roof or within the same architectural unit, constituting a functional whole economically and socially, and potentially including more than a single family unit, as well as servants or slaves, depending on the context.
 
-A somewhat distinct meaning of the word house, which has had a certain success in archaeology, is derived from what Lévi-Strauss termed \emph{house societies} (Lévi-Strauss, 1982, \emph{sociétés à maisons}). Here a House (with a capital H) is a social unit, often centred around a material estate but also involving heirlooms, land ownership etc. and where membership is not automatically determined from genealogy alone, as is the case with more regularly structured lineage societies. House membership may be gained, and lost, through more competitive social action, privileging those that possess the resources to engage in activities such as gift exchange and \emph{potlatch}-style feasting. This opens up for more complex configurations, and House membership will often entail a certain level of prestige. A segment of society of varying size will not afford to partake in this competition, and as a result, house societies can be viewed as being in a somewhat unstable transition state between lineage and class societies. They are often however associated with feudal systems -- the most well-known examples from contemporary pop culture (House of Lannister, House of Gryffindor etc.) tend to mirror medieval European feudal society more or less explicitly. Lévi-Strauss based his initial analysis on \textbf{check} society, and the concept has since been applied to a wide range of cases from \textbf{insert examples} ethnography, as well as to prehistoric contexts \textbf{insert examples}, reflecting a relevance that extends far beyond European feudalism. Ian Kuijt (2018) recently provided an interpretation of Neolithic Çatalöyük where he proposed that
-
-Refs. {[}Joyce \& Gillespie (2000), Bnf; Beck (2007); Kuijt (2018); Lévi-Strauss (1982); Bickle et al 2016 (reload in Zotero){]}.
+Kinship studies within anthropology have shown over the last decades that in most societies, contrarily to common misconception, kin affiliation is \emph{not} simply a matter of biological relatedness. In an attempt of grouping together all possible justifications for kinship ties, Marshall Sahlins (Sahlins 2013) defined kinship as ``mutuality of being'' -- that some real or imagined substance is shared, and that this substance is not necessarily genes, as is mostly the case in modern Western societies (with adoption as the main exception). A variety of non-genetic foundations of kinship are widely accepted in different cultures, like sharing of name, time or place of birth or childhood, food source, shared experiences, blood ties, and so on. At the same time, archaeology as a whole has arguably been very slow in taking this diversity of kinship configurations into account, far too often taking for granted the modern Western (especially post-war 20th century) ideal of patrilineal nuclear families as the default configuration for all of human history (e.g. Ensor 2021). That being said, anthropological kinship studies such as that represented by Sahlins typically shows little concern with material culture, and is mostly silent on the question of who -- at the end of the day, quite literally -- sleeps under the same roof, making it hard to interpret domestic architecture in terms of kinship structure and social organisation. The recent comeback of kinship studies in archaeology has been far more focussed on linking isotope and aDNA data with social structures, largely fuelled by the rapid developments of the related methodologies {[}e.g. Carpenter and Prentiss (2022) ; {]}
 
 \begin{itemize}
 \item
-  Kinship and households: who lives in a house? Sahlins (2013), Ensor (2013), Ensor et al. (2017).. archaeology: Carpenter \& Prentiss (2022), Madella (2013), Joyce \& Gillespie (2000), Blanton (1994), Carsten \& Hugh-Jones (1995), Hofmann \& Smyth (2013), Wilk \& Rathje (1982)
+  Kinship and households: who lives in a house? Sahlins (2013), Ensor (2013), Ensor, Irish, and Keegan (2017).. archaeology: Carpenter and Prentiss (2022), Madella (2013), Joyce and Gillespie (2000), Blanton (1994), Carsten and Hugh-Jones (1995), Hofmann and Smyth (2013), Wilk and Rathje (1982)
 \item
-  Do clan leaders have bigger houses? check Haude \& Wagner (2019), Kahn (2021), Bradley (2013), Wilk (1983).
+  Do clan leaders have bigger houses? check Haude and Wagner (2019), Kahn (2021), Bradley (2013), Wilk (1983).
 \end{itemize}
 
-Persons who possess enough food resources to create obligations through gifts and feasting\ldots{} What is wealth? House construction as communal activity Goodale et al. (2021)
+Persons who possess enough food resources to create obligations through gifts and feasting\ldots{} What is wealth? House construction as communal activity Goodale, Quinn, and Nauman (2021)
+
+P. Květina and J. Řídký point out both architecture (construction, size, orientation) and settlement layout as possible distinctive features between Big Men (achievement-based) and Chief societies, arguing that the former type may be recognised by a dispersed intra-settlement layout combined with uniform architecture, while the latter type would tend towards more regular settlement layout and more marked differences in architecture (! Květina and Řídký 2019:13). EXPAND UPON THIS.
 
 Discuss some archaeo references
 
@@ -679,13 +705,13 @@ Functional difference:
 
 \begin{itemize}
 \item
-  Ethnography of initiation houses, communal/assembly houses, ritual houses, including Barley (2011), Godelier (1986), Wilk (1983), Fraser (1968), Haude \& Wagner (2019)
+  Ethnography of initiation houses, communal/assembly houses, ritual houses, including Barley (2011), Godelier (1986), Wilk (1983), Fraser (1968), Haude and Wagner (2019)
 \item
-  Caveats: building materials and constraints, climate (heating), mobility, multi-floored, see Porčić (2012) ++
+  Caveats: building materials and constraints, climate (heating), mobility, multi-floored, see Porčić (2012), residence pattern and floor area in Porcic (2010).
 \end{itemize}
 
-\hypertarget{interpreting-distribution-types-and-their-underlying-mechanisms}{%
-\section{Interpreting distribution types and their underlying mechanisms}\label{interpreting-distribution-types-and-their-underlying-mechanisms}}
+\hypertarget{distributions}{%
+\section{Interpreting distribution types and their underlying mechanisms}\label{distributions}}
 
 \begin{itemize}
 \tightlist
@@ -713,9 +739,9 @@ Start here.
 
 \begin{itemize}
 \item
-  Lit. use Strawinska-Zanko et al. (2018), Crabtree et al. (2017), Maschner \& Bentley (2003), Grove (2011) ++
+  Lit. use Strawinska-Zanko et al. (2018), Crabtree et al. (2017), Maschner and Bentley (2003), Grove (2011) ++
 \item
-  Zipf law and Settlement Scaling theory, Bettencourt (2021), Gomez-Lievano et al. (2012), Lobo et al. (2020). Connection with Central Place Theory, e.g. Müller-Scheeßel (2007), Chen (2011). Why I'm not doing settlement scaling in this study.
+  Zipf law and Settlement Scaling theory, Bettencourt (2021), Gomez-Lievano, Youn, and Bettencourt (2012), Lobo et al. (2020). Connection with Central Place Theory, e.g. Müller-Scheeßel (2007), Chen (2011). Why I'm not doing settlement scaling in this study.
 \item
   Not fitting distributions in archaeology, just assuming they are heavy-tailed, or avoiding the question: ex. Brink (2013) (could include lots more!)
 \end{itemize}
@@ -732,10 +758,73 @@ END chapter
 \item
   Technical characteristics of power laws, Newman (2005), do I need more?
 \item
-  Old style distribution fitting (which is used in C. Brown \& Liebovitch (2010) and C. T. Brown et al. (2005) and check. Mitzenmacher (2004), Harrison (1981)
+  Old style distribution fitting (which is used in Brown and Liebovitch (2010) and Brown et al. (2005) and check. Mitzenmacher (2004), Harrison (1981)
 \item
-  New style presented in Clauset et al. (2009), Stumpf \& Porter (2012), implemented in R with the poweRlaw package Gillespie (2015), and used in Strawinska-Zanko et al. (2018) and Crabtree et al. (2017). More recent?
+  New style presented in Clauset, Shalizi, and Newman (2009), Stumpf and Porter (2012), implemented in R with the poweRlaw package Gillespie (2015), and used in Strawinska-Zanko et al. (2018) and Crabtree et al. (2017).
+
+  \begin{itemize}
+  \item
+    Finding best x-min value for power-law iteratively with maximum likelihood estimation (the actual fitting) and KS-testing (selecting the best fit).
+  \item
+    Comparing this fit with that of other model candidates, setting the same x-min and selecting the best through AICc scores (this deviates from the procedure in Clauset et al. (2009) and Gillespie (2015), but is commonly done in other contexts when comparing multiple models at once (e.g. Dauphiné 2011).
+  \end{itemize}
 \end{itemize}
+
+The difficulty of comparing power-law models with other common candidate models (like log-normal or exponential), is that they, unlike the others, by definition need a specified lower bound above 0, denoted \emph{x\textsubscript{min}}. Comparison of multiple models with AIC scores is only meaningful when done over the same range of data (this also applies to the Vuong's log-likelihood test for pairs of models proposed by Clauset et al. 2009). However, comparing multiple models over the range in a data set which has already been recognised as providing the best possible fit for a power-law model, gives this latter model a potential advantage over the other ones. Log-normal models, for instance, can explain the entire range of a data distribution, where a power law can only explain the tail of the highest values. The fact that these two model types have frequently and for a long time represented competing explanations for the same empirical data sets, may reflect this apparent incomparability between them (Harrison 1981; Mitzenmacher 2004). One can suspect then that this procedure of distribution fitting and model selection would favour power-law models unreasonably. At the same time, one of the main findings of the Clauset et al. (2009) study, was that power-law behaviour was only confirmed beyond reasonable doubt in one out of 24 empirical data sets which had been reported as power-law distributed in earlier studies, leaving the impression that the methodology would be conservative rather than lenient. In many cases however, the study remained inconclusive, especially regarding comparisons between power-law and log-normal models to empirical data sets (comparisons between power-law and other models were generally more conclusive). The authors admitted ``\emph{In general, we find that it is extremely difficult to tell the difference between log-normal and power-law behavior. Indeed, over realistic ranges of} x \emph{the two distributions are very close, so it appears unlikely that any test would be able to tell them apart unless we had an extremely large data set}'' (Clauset et al. 2009:689). Extremely large data sets are of course a luxury that is rarely afforded in archaeology, and if these two models are that close in many situations, one can ask whether picking one over the other really matters in the end. This question is further developed in Chapter \ref{disc-methods}.
+
+REWRITE: So I decided to do a small pre-analysis, to check if synthetic log-normal distributions get power-law tails with this methodology, and under which circumstances.
+
+First: real vs retained distribution model, with set param values (ln, exp, and pl), and different n.
+
+
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.8\linewidth]{bookdown-demo_files/figure-latex/05-distfit-1} 
+
+}
+
+\caption{Synthetic data series drawn from three different distribution types: exponential (\(\lambda=0.125\)), power-law (\(\alpha=2.5\)) and log-normal (\(\mu=0.3\), \(\sigma=2\)), all with \(n=100\) data points and \(x_{min}=15\). Reproduction of Fig.5a in Clauset et al.~(2009), with deviations due to random fluctuations. Scales are logarithmic, and all three series appear as straight lines, though one is a true power law.}\label{fig:05-distfit}
+\end{figure}
+
+
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{load}\NormalTok{(}\StringTok{"Results/fig05\_type\_tail.RData"}\NormalTok{)}
+\NormalTok{fig05\_type\_tail}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.8\linewidth]{bookdown-demo_files/figure-latex/next-1} 
+
+}
+
+\caption{caption}\label{fig:next}
+\end{figure}
+
+
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{load}\NormalTok{(}\StringTok{"Results/fig05\_synth\_pl.RData"}\NormalTok{)}
+\NormalTok{fig05\_synth\_pl}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.8\linewidth]{bookdown-demo_files/figure-latex/next2-1} 
+
+}
+
+\caption{caption here}\label{fig:next2}
+\end{figure}
+\FloatBarrier
+
+Second: Ln giving pl tail, set n, different meanlog and sdlog.
 
 \hypertarget{methodological-procedure}{%
 \section{Methodological procedure}\label{methodological-procedure}}
@@ -753,9 +842,9 @@ END chapter
     \begin{enumerate}
     \def\labelenumi{\arabic{enumi}.}
     \item
-      Process: how long/much does it take for a normal distribution to become power-law? And reverse sense?
+      Process: how long/much does it take for a normal distribution to become power-law? And reverse sense? (multiplicative process)
     \item
-      Temporal resolution issue: does the temporal palimpsest of several phases with e.g.~log-normal distributions produce false power-law signals?
+      Temporal resolution issue: does the temporal palimpsest of several phases with e.g.~log-normal distributions produce false power-law signals? (additive process)
     \end{enumerate}
   \item
     How?
@@ -763,7 +852,7 @@ END chapter
     \begin{itemize}
     \tightlist
     \item
-      Random number generation and iterated multiplicative (1.) or additive (2.) sequences, with K-S testing (Gillespie, 2015) at each stage. Report when the distributions become power laws.
+      Random number generation and iterated multiplicative (1.) or additive (2.) sequences, with K-S testing (Gillespie 2015) at each stage. Report when the distributions become power laws.
     \end{itemize}
   \end{itemize}
 \item
@@ -783,12 +872,20 @@ END chapter
 \hypertarget{synthetic-distributions}{%
 \section{Synthetic distributions}\label{synthetic-distributions}}
 
-Fill in analysis for
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+  Multiplicative process
+\end{enumerate}
+
+A multiplicative process is one in which a term is multiplied with itself a number of times, and can be mathematically described through an exponential function. This is commonly denoted \[f(x) = ab^x\], read as ``the function of \emph{x} equals \emph{a} times \emph{b} to the power of \emph{x}'', where \emph{b} is the main term which is multiplied with itself \emph{x} number of times, and \emph{a} being a constant of proportionality. In such functions, \emph{b} determines the \emph{shape} of the function -- if between 0 and 1, the function models exponential decrease or decay as \emph{x} grows larger, and if \(b > 1\) the function models exponential growth. This term corresponds to the \emph{rate} parameter for exponential distributions detailed in Section \ref{distributions}. The \emph{a} term determines the \emph{scale} of the function, similarly to the y-intercept of a linear function of the type \(f(x) = ax+b\) (in this case \emph{b}), and though in an exponential function this \emph{a} is multiplied rather than added to the variable term (\emph{b\textsuperscript{x}}), its value gives the y-intercept since \(ab^x = a\) when \(x = 0\). Furthermore, the link between exponential and linear functions is illustrated more clearly when we log-transform the former, that is: \(f(x) = log(b)x+a\), which is essentially a linear function where \emph{a} is the y-intercept and \emph{b} is the slope (\# Show with fig! and go on).
+
+\#Insert figure, ill.~exponential functions.
 
 \begin{enumerate}
 \def\labelenumi{\arabic{enumi}.}
-\item
-  Multiplicative process
+\tightlist
 \item
   Additive process
 \end{enumerate}
@@ -824,9 +921,13 @@ END Chapter
 
 Or the social organisation of village layout. Research background:
 
-Lit. use Furholt (2016), Fraser (1968), Ensor et al. (2017) (not the correct reference, I should ask him!) Artursson et al. (2010) (Bronze Age, descriptive/interpretive approach). Cleuziou et al. (1999) (book in MAE)
+Lit. use Furholt (2016), Fraser (1968), Ensor (2017), Ensor (2013), also check Souvatzi (2017).
 
-Use the Trypillia volumes. Also Müller-Scheeßel (2019), Trebsche et al. (2010)
+For cities, see Kostof (1991)
+
+Artursson et al. (2010) (Bronze Age, descriptive/interpretive approach). Cleuziou, Braemer, and Coudart (1999) (book in MAE)
+
+Use the Trypillia volumes. Also Müller-Scheeßel (2019), Trebsche, Müller-Scheeβel, and Reinhold (2010)
 
 Transition from village to urban (again): Birch (2014).
 
@@ -874,9 +975,9 @@ fdasdf
 
 \begin{itemize}
 \item
-  Box-counting, lit. Mancuso (2021), Li et al. (2009), Klinkenberg (1994)
+  Box-counting, lit. Mancuso (2021), Li, Du, and Sun (2009), Klinkenberg (1994)
 \item
-  Gliding-box algorithmsc, Allain \& Cloitre (1991), Hingee et al. (2019), Cheng (1997), Plotnick et al. (1996)
+  Gliding-box algorithmsc, Allain and Cloitre (1991), Hingee et al. (2019), Cheng (1997), Plotnick et al. (1996)
 \item
   Caveats:
 
@@ -906,7 +1007,7 @@ END Chapter
 \hypertarget{synthetic-settlement-plans}{%
 \section{Synthetic settlement plans}\label{synthetic-settlement-plans}}
 
-Relationship between image density (built-up area) and fractal dimension, evaluated in Thomas et al. (2007), where they show that these two parameters, under certain conditions (constant observation window, prefactor values close to 1), are exponentially correlated, which is also what I found in my article. They show that observation window size and shape, as well as centroid placement, have little influence on \emph{D}, while they have more influence on density when the pattern is not homogeneous. They do show, however, that images with the same density may have quite much variation in \emph{D}, which is reflected in the layouts. Judging from their examples, more clustered layouts give higher \emph{D} values, while more dispersed or dusty layouts give lower \emph{D}, when density is constant. I ignore the use of prefactor values. According to Thomas et al. (2007), density is a crude measure of the overall intensity of the pattern, while fractal dimension is characterises the morphological structure, though it is not directly descriptive.
+Relationship between image density (built-up area) and fractal dimension, evaluated in Thomas, Frankhauser, and De Keersmaecker (2007), where they show that these two parameters, under certain conditions (constant observation window, prefactor values close to 1), are exponentially correlated, which is also what I found in my article. They show that observation window size and shape, as well as centroid placement, have little influence on \emph{D}, while they have more influence on density when the pattern is not homogeneous. They do show, however, that images with the same density may have quite much variation in \emph{D}, which is reflected in the layouts. Judging from their examples, more clustered layouts give higher \emph{D} values, while more dispersed or dusty layouts give lower \emph{D}, when density is constant. I ignore the use of prefactor values. According to Thomas et al. (2007), density is a crude measure of the overall intensity of the pattern, while fractal dimension is characterises the morphological structure, though it is not directly descriptive.
 
 \hypertarget{settlements-1}{%
 \section{Settlements}\label{settlements-1}}
@@ -937,7 +1038,7 @@ END Chapter
 
 fdsasdf
 
-Also mention here fractals or related concepts used as a metaphor, with no mathematics involved (e.g. Chapman et al., 2006; Sherratt, 2004; Sindbæk, 2022; Whitridge, 2016).
+Also mention here fractals or related concepts used as a metaphor, with no mathematics involved (e.g. Chapman et al. 2006; Sherratt 2004; Sindbæk 2022; Whitridge 2016).
 
 END Chapter
 
@@ -977,412 +1078,436 @@ END Thesis
 \addcontentsline{toc}{chapter}{References}
 
 \leavevmode\vadjust pre{\hypertarget{ref-alberti2014}{}}%
-Alberti, G. (2014). Modeling Group Size and Scalar Stress by Logistic Regression from an Archaeological Perspective. \emph{PLOS ONE}, \emph{9}(3), e91510. \url{https://doi.org/10.1371/journal.pone.0091510}
+Alberti, Gianmarco. 2014. {``Modeling Group Size and Scalar Stress by Logistic Regression from an Archaeological Perspective.''} \emph{PLOS ONE} 9(3):e91510. doi: \href{https://doi.org/10.1371/journal.pone.0091510}{10.1371/journal.pone.0091510}.
 
 \leavevmode\vadjust pre{\hypertarget{ref-allain1991}{}}%
-Allain, C., \& Cloitre, M. (1991). Characterizing the lacunarity of random and deterministic fractal sets. \emph{Physical Review A}, \emph{44}(6), 3552--3558. \url{https://doi.org/10.1103/PhysRevA.44.3552}
+Allain, C., and M. Cloitre. 1991. {``Characterizing the Lacunarity of Random and Deterministic Fractal Sets.''} \emph{Physical Review A} 44(6):3552--58. doi: \href{https://doi.org/10.1103/PhysRevA.44.3552}{10.1103/PhysRevA.44.3552}.
 
 \leavevmode\vadjust pre{\hypertarget{ref-artursson2010}{}}%
-Artursson, M., Bech, J.-H., Earle, T., Fuköh, D., Kolb, M. J., Kristiansen, K., Ling, J., Mühlenbock, C., Prescott, C., Sevara, C., Tusa, S., Uhnér, C., \& Vicze, M. (2010). Settlement {Structure} and {Organisation}. In K. Kristiansen \& T. Earle (Eds.), \emph{Organizing {Bronze Age Societies}: {The Mediterranean}, {Central Europe}, and {Scandanavia Compared}} (pp. 87--121). {Cambridge University Press}. \url{https://doi.org/10.1017/CBO9780511779282.005}
+Artursson, Magnus, Jens-Henrik Bech, Timothy Earle, Dániel Fuköh, Michael J. Kolb, Kristian Kristiansen, Johan Ling, Christian Mühlenbock, Christopher Prescott, Chris Sevara, Sebastiano Tusa, Claes Uhnér, and Magdolna Vicze. 2010. {``\href{https://doi.org/10.1017/CBO9780511779282.005}{Settlement {Structure} and {Organisation}}.''} Pp. 87--121 in \emph{Organizing {Bronze Age Societies}: {The Mediterranean}, {Central Europe}, and {Scandanavia Compared}}, edited by K. Kristiansen and T. Earle. {Cambridge}: {Cambridge University Press}.
 
 \leavevmode\vadjust pre{\hypertarget{ref-baden2016}{}}%
-Baden, W. W., \& Beekman, C. S. (2016). \emph{Nonlinear models for archaeology and anthropology: Continuing the revolution}. Routledge. \url{https://doi.org/10.4324/9781315247908}
+Baden, William W., and Christopher S. Beekman. 2016. \emph{\href{https://doi.org/10.4324/9781315247908}{Nonlinear Models for Archaeology and Anthropology: Continuing the Revolution}}. London: Routledge.
 
 \leavevmode\vadjust pre{\hypertarget{ref-buxe1nffy2020}{}}%
-Bánffy, E., \& Höhler-Brockmann, H. (2020). Burnt daub talking: The formation of the LBK longhouse (a work hypothesis). \emph{Quaternary international}, \emph{560-561}, 179196. \url{https://doi.org/10.1016/j.quaint.2020.06.007}
+Bánffy, Eszter, and Hajo Höhler-Brockmann. 2020. {``Burnt daub talking: The formation of the LBK longhouse (a work hypothesis).''} \emph{Quaternary international} 560-561:179196. doi: \href{https://doi.org/10.1016/j.quaint.2020.06.007}{10.1016/j.quaint.2020.06.007}.
 
 \leavevmode\vadjust pre{\hypertarget{ref-barabuxe1si1999}{}}%
-Barabási, A.-L., \& Albert, R. (1999). Emergence of Scaling in Random Networks. \emph{Science}, \emph{286}(5439), 509--512. \url{https://doi.org/10.1126/science.286.5439.509}
+Barabási, Albert-László, and Réka Albert. 1999. {``Emergence of Scaling in Random Networks.''} \emph{Science} 286(5439):509--12. doi: \href{https://doi.org/10.1126/science.286.5439.509}{10.1126/science.286.5439.509}.
 
 \leavevmode\vadjust pre{\hypertarget{ref-barley2011}{}}%
-Barley, N. (2011). \emph{The Innocent Anthropologist: Notes from a Mud Hut}. Eland.
+Barley, Nigel. 2011. \emph{The Innocent Anthropologist: Notes from a Mud Hut}. Eland.
 
 \leavevmode\vadjust pre{\hypertarget{ref-batty2005}{}}%
-Batty, M. (2005). \emph{Cities and complexity: understanding cities with cellular automata, agent-based models, and fractals}. MIT Press.
+Batty, Michael. 2005. \emph{Cities and complexity: understanding cities with cellular automata, agent-based models, and fractals}. Cambridge, Mass.: MIT Press.
 
 \leavevmode\vadjust pre{\hypertarget{ref-batty1994}{}}%
-Batty, M., \& Longley, P. (1994). \emph{Fractal cities - a geometry of form and function}. Academic Press.
+Batty, Michael, and Paul Longley. 1994. \emph{Fractal Cities - a Geometry of Form and Function}. London: Academic Press.
 
 \leavevmode\vadjust pre{\hypertarget{ref-beck2007}{}}%
-Beck, R. A. (Ed.). (2007). \emph{The Durable House: House Society Models in Archaeology}. Center for Archaeological Investigations, Southern Illinois University.
+Beck, Robin A., ed. 2007. \emph{The Durable House: House Society Models in Archaeology}. Center for Archaeological Investigations, Southern Illinois University.
 
 \leavevmode\vadjust pre{\hypertarget{ref-bentley2008}{}}%
-Bentley, R. A., \& Maschner, H. D. G. (2008). \emph{Complexity Theory} (R. A. Bentley, H. D. G. Maschner, \& C. Chippindale, Eds.). AltaMira Press.
+Bentley, R. Alexander, and Herbert D. G. Maschner. 2008. {``Complexity Theory.''} edited by R. A. Bentley, H. D. G. Maschner, and C. Chippindale. Lanham, Md: AltaMira Press.
 
 \leavevmode\vadjust pre{\hypertarget{ref-bettencourt2021}{}}%
-Bettencourt, L. M. A. (2021). \emph{Introduction to Urban Science: Evidence and Theory of Cities as Complex Systems}. MIT Press.
+Bettencourt, Luís M. A. 2021. \emph{Introduction to Urban Science: Evidence and Theory of Cities as Complex Systems}. Cambridge, MA, USA: MIT Press.
 
 \leavevmode\vadjust pre{\hypertarget{ref-birch2014}{}}%
-Birch, J. (2014). \emph{From prehistoric villages to cities: settlement aggregation and community} (Vol. 10). Routledge.
+Birch, Jennifer. 2014. \emph{From prehistoric villages to cities: settlement aggregation and community}. Vol. 10. Routledge.
 
 \leavevmode\vadjust pre{\hypertarget{ref-blanton1994}{}}%
-Blanton, R. E. (1994). \emph{Houses and households}. Springer US. \url{https://doi.org/10.1007/978-1-4899-0990-9}
-
-\leavevmode\vadjust pre{\hypertarget{ref-bradley2013}{}}%
-Bradley, R. (2013). Houses of Commons, Houses of Lords: Domestic Dwellings and Monumental Architecture in Prehistoric Europe. \emph{Proceedings of the Prehistoric Society}, \emph{79}, 1--17. \url{https://doi.org/10.1017/ppr.2013.1}
+Blanton, Richard E. 1994. \emph{\href{https://doi.org/10.1007/978-1-4899-0990-9}{Houses and Households}}. Boston, MA: Springer US.
 
 \leavevmode\vadjust pre{\hypertarget{ref-bradley2001}{}}%
-Bradley, R. (2001). Orientations and origins: a symbolic dimension to the long house in Neolithic Europe. \emph{Antiquity}, \emph{75}(287), 5056. \url{https://doi.org/10.1017/S0003598X00052704}
+Bradley, Richard. 2001. {``Orientations and origins: a symbolic dimension to the long house in Neolithic Europe.''} \emph{Antiquity} 75(287):5056. doi: \href{https://doi.org/10.1017/S0003598X00052704}{10.1017/S0003598X00052704}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-bradley2013}{}}%
+Bradley, Richard. 2013. {``Houses of Commons, Houses of Lords: Domestic Dwellings and Monumental Architecture in Prehistoric Europe.''} \emph{Proceedings of the Prehistoric Society} 79:1--17. doi: \href{https://doi.org/10.1017/ppr.2013.1}{10.1017/ppr.2013.1}.
 
 \leavevmode\vadjust pre{\hypertarget{ref-brink2013}{}}%
-Brink, K. (2013). Houses and hierarchies: Economic and social relations in the late neolithic and early bronze age of southernmost scandinavia. \emph{European Journal of Archaeology}, \emph{16}(3), 433--458. \url{https://doi.org/10.1179/1461957113Y.0000000033}
+Brink, Kristian. 2013. {``Houses and Hierarchies: Economic and Social Relations in the Late Neolithic and Early Bronze Age of Southernmost Scandinavia.''} \emph{European Journal of Archaeology} 16(3):433--58. doi: \href{https://doi.org/10.1179/1461957113Y.0000000033}{10.1179/1461957113Y.0000000033}.
 
 \leavevmode\vadjust pre{\hypertarget{ref-brown2005}{}}%
-Brown, C. T., Witschey, W. R., \& Liebovitch, L. S. (2005). The Broken past: Fractals in Archaeology. \emph{Journal of archaeological method and theory}, \emph{12}(1), 3778. \url{https://doi.org/10.1007/s10816-005-2396-6}
+Brown, Clifford T., Walter RT Witschey, and Larry S. Liebovitch. 2005. {``The Broken past: Fractals in Archaeology.''} \emph{Journal of archaeological method and theory} 12(1):3778. doi: \href{https://doi.org/10.1007/s10816-005-2396-6}{10.1007/s10816-005-2396-6}.
 
 \leavevmode\vadjust pre{\hypertarget{ref-brown2010}{}}%
-Brown, C., \& Liebovitch, L. (2010). \emph{Fractal analysis}. SAGE Publications, Inc. \url{https://doi.org/10.4135/9781412993876}
+Brown, Clifford, and Larry Liebovitch. 2010. \emph{\href{https://doi.org/10.4135/9781412993876}{Fractal Analysis}}. 2455 Teller Road,~Thousand Oaks~California~91320~United States of America: SAGE Publications, Inc.
 
 \leavevmode\vadjust pre{\hypertarget{ref-cafazzo2016}{}}%
-Cafazzo, S., Lazzaroni, M., \& Marshall-Pescini, S. (2016). Dominance relationships in a family pack of captive arctic wolves (Canis lupus arctos): the influence of competition for food, age and sex. \emph{PeerJ}, \emph{4}, e2707. \url{https://doi.org/10.7717/peerj.2707}
+Cafazzo, Simona, Martina Lazzaroni, and Sarah Marshall-Pescini. 2016. {``Dominance Relationships in a Family Pack of Captive Arctic Wolves (Canis Lupus Arctos): The Influence of Competition for Food, Age and Sex.''} \emph{PeerJ} 4:e2707. doi: \href{https://doi.org/10.7717/peerj.2707}{10.7717/peerj.2707}.
 
 \leavevmode\vadjust pre{\hypertarget{ref-carneiro1986}{}}%
-Carneiro, R. L. (1986). On the relationship between size of population and complexity of social organization. \emph{Journal of Anthropological Research}, \emph{42}(3), 355--364. \url{http://www.jstor.org/stable/3630039}
+Carneiro, Robert L. 1986. {``\href{http://www.jstor.org/stable/3630039}{On the Relationship Between Size of Population and Complexity of Social Organization}.''} \emph{Journal of Anthropological Research} 42(3):355--64.
 
 \leavevmode\vadjust pre{\hypertarget{ref-carpenter2022}{}}%
-Carpenter, L. B., \& Prentiss, A. M. (2022). \emph{Archaeology of households, kinship, and social change}. Routledge.
+Carpenter, Lacey B., and Anna Marie Prentiss. 2022. \emph{Archaeology of households, kinship, and social change}. London, New York, New York: Routledge.
 
 \leavevmode\vadjust pre{\hypertarget{ref-carsten1995}{}}%
-Carsten, J., \& Hugh-Jones, S. (1995). \emph{About the house: Lévi-Strauss and beyond}. University Press.
+Carsten, Janet, and Stephen Hugh-Jones. 1995. \emph{About the house: Lévi-Strauss and beyond}. Cambridge: University Press.
 
 \leavevmode\vadjust pre{\hypertarget{ref-chapman2006}{}}%
-Chapman, J., Higham, T., Slavchev, V., Gaydarska, B., \& Honch, N. (2006). The social context of the emergence, development and abandonment of the Varna cemetery, Bulgaria. \emph{European journal of archaeology}, \emph{9}(2-3), 159183. \url{https://doi.org/10.1177/1461957107086121}
+Chapman, John, Tom Higham, Vladimir Slavchev, Bisserka Gaydarska, and Noah Honch. 2006. {``The social context of the emergence, development and abandonment of the Varna cemetery, Bulgaria.''} \emph{European journal of archaeology} 9(2-3):159183. doi: \href{https://doi.org/10.1177/1461957107086121}{10.1177/1461957107086121}.
 
 \leavevmode\vadjust pre{\hypertarget{ref-chen2011}{}}%
-Chen, Y. (2011). Fractal systems of central places based on intermittency of space-filling. \emph{Chaos, Solitons \& Fractals}, \emph{44}, 619--632.
+Chen, Yanguang. 2011. {``Fractal Systems of Central Places Based on Intermittency of Space-Filling.''} \emph{Chaos, Solitons \& Fractals} 44:619--32.
 
 \leavevmode\vadjust pre{\hypertarget{ref-cheng1997}{}}%
-Cheng, Q. (1997). Multifractal Modeling and Lacunarity Analysis. \emph{Mathematical geology}, \emph{29}(7), 919932. \url{https://doi.org/10.1023/A:1022355723781}
+Cheng, Qiuming. 1997. {``Multifractal Modeling and Lacunarity Analysis.''} \emph{Mathematical geology} 29(7):919932. doi: \href{https://doi.org/10.1023/A:1022355723781}{10.1023/A:1022355723781}.
 
 \leavevmode\vadjust pre{\hypertarget{ref-clauset2009}{}}%
-Clauset, A., Shalizi, C. R., \& Newman, M. E. J. (2009). Power-law distributions in empirical data. \emph{Society for Industrial and Applied Mathematics Review}, \emph{51}(4), 661--703.
+Clauset, Aaron, Cosma Rohilla Shalizi, and M. E. J. Newman. 2009. {``Power-Law Distributions in Empirical Data.''} \emph{Society for Industrial and Applied Mathematics Review} 51(4):661--703.
 
 \leavevmode\vadjust pre{\hypertarget{ref-cleuziou1999}{}}%
-Cleuziou, S., Braemer, F., \& Coudart, A. (1999). \emph{Habitat et société}. APDCA.
+Cleuziou, Serge, Frank Braemer, and Anick Coudart. 1999. \emph{Habitat et société}. Antibes: APDCA.
+
+\leavevmode\vadjust pre{\hypertarget{ref-costin1991}{}}%
+Costin, Cathy Lynne. 1991. {``\href{https://www.jstor.org/stable/20170212}{Craft Specialization: Issues in Defining, Documenting, and Explaining the Organization of Production}.''} \emph{Archaeological Method and Theory} 3:1--56.
 
 \leavevmode\vadjust pre{\hypertarget{ref-coudart1998}{}}%
-Coudart, A. (1998). \emph{Architecture et société néolithique : L'unité et la variance de la maison danubienne}. Éditions de la Maison des Sciences de l'Homme.
+Coudart, Anick. 1998. \emph{Architecture Et Société Néolithique : L'unité Et La Variance de La Maison Danubienne}. Paris: Éditions de la Maison des Sciences de l'Homme.
 
 \leavevmode\vadjust pre{\hypertarget{ref-coudart2015}{}}%
-Coudart, A. (2015). \emph{The bandkeramik longhouses: A material, social, and mental metaphor for small-scale sedentary societies} (C. Fowler, J. Harding, \& D. Hofmann, Eds.; pp. 309--325). Oxford University Press.
+Coudart, Anick. 2015. {``The Bandkeramik Longhouses: A Material, Social, and Mental Metaphor for Small-Scale Sedentary Societies.''} Pp. 309--25 in, edited by C. Fowler, J. Harding, and D. Hofmann. Oxford: Oxford University Press.
 
 \leavevmode\vadjust pre{\hypertarget{ref-crabtree2017}{}}%
-Crabtree, S. A., Bocinsky, R. K., Hooper, P. L., Ryan, S. C., \& Kohler, T. A. (2017). How to make a Polity (in the Central Mesa Verde Region). \emph{American Antiquity}, \emph{82}(1), 71--95. \url{https://doi.org/10.1017/aaq.2016.18}
+Crabtree, Stefani A., R. Kyle Bocinsky, Paul L. Hooper, Susan C. Ryan, and Timothy A. Kohler. 2017. {``How to Make a Polity (in the Central Mesa Verde Region).''} \emph{American Antiquity} 82(1):71--95. doi: \href{https://doi.org/10.1017/aaq.2016.18}{10.1017/aaq.2016.18}.
 
 \leavevmode\vadjust pre{\hypertarget{ref-crumley1995}{}}%
-Crumley, C. L. (1995). Heterarchy and the Analysis of Complex Societies. \emph{Archaeological Papers of the American Anthropological Association}, \emph{6}(1), 1--5. https://doi.org/\url{https://doi.org/10.1525/ap3a.1995.6.1.1}
+Crumley, Carole L. 1995. {``Heterarchy and the Analysis of Complex Societies.''} \emph{Archaeological Papers of the American Anthropological Association} 6(1):1--5. doi: \url{https://doi.org/10.1525/ap3a.1995.6.1.1}.
 
 \leavevmode\vadjust pre{\hypertarget{ref-themath2019}{}}%
-D'Acci, L. (Ed.). (2019). \emph{The Mathematics of Urban Morphology}. Springer International Publishing. \url{https://doi.org/10.1007/978-3-030-12381-9}
+D'Acci, Luca, ed. 2019. \emph{\href{https://doi.org/10.1007/978-3-030-12381-9}{The Mathematics of Urban Morphology}}. Cham: Springer International Publishing.
 
 \leavevmode\vadjust pre{\hypertarget{ref-daems2021}{}}%
-Daems, D. (2021). \emph{Social complexity and complex systems in archaeology}. Routledge.
+Daems, Dries. 2021. \emph{Social complexity and complex systems in archaeology}. London, New York: Routledge.
+
+\leavevmode\vadjust pre{\hypertarget{ref-dauphinuxe92011}{}}%
+Dauphiné, André. 2011. \emph{Géographie Fractale}. Paris: Hermes Science Publications; Lavoisier.
 
 \leavevmode\vadjust pre{\hypertarget{ref-devaney2020}{}}%
-Devaney, R. L. (2020). \emph{A First Course In Chaotic Dynamical Systems: Theory And Experiment}. CRC Press.
+Devaney, Robert L. 2020. \emph{A First Course In Chaotic Dynamical Systems: Theory And Experiment}. Milton: CRC Press.
 
 \leavevmode\vadjust pre{\hypertarget{ref-diachenko2018}{}}%
-Diachenko, A. (2018). \emph{Fractal models} (S. López Varela, Ed.). John Wiley \& Sons.
+Diachenko, Alexandr. 2018. {``Fractal Models''} edited by S. López Varela.
 
 \leavevmode\vadjust pre{\hypertarget{ref-dubreuil2010}{}}%
-Dubreuil, B. (2010). \emph{Human evolution and the origins of hierarchies: the state of nature}. University Press.
+Dubreuil, Benoît. 2010. \emph{Human evolution and the origins of hierarchies: the state of nature}. Cambridge: University Press.
 
 \leavevmode\vadjust pre{\hypertarget{ref-dunbar2022}{}}%
-Dunbar, R. (2022). \emph{Annales academiciae scientarum fennicae {[}forthcoming{]} reconstructing dunbar's number: A guide for the perplexed to some pitfalls, indiscretions and fallacies}. \url{https://doi.org/10.13140/RG.2.2.34145.58727}
+Dunbar, Robin. 2022. \emph{\href{https://doi.org/10.13140/RG.2.2.34145.58727}{Annales Academiciae Scientarum Fennicae {[}Forthcoming{]} Reconstructing Dunbar's Number: A Guide for the Perplexed to Some Pitfalls, Indiscretions and Fallacies}}.
 
 \leavevmode\vadjust pre{\hypertarget{ref-earle2002}{}}%
-Earle, T. (2002). \emph{Bronze Age Economics: The Beginnings of Political Economies}. Westview Press.
+Earle, Timothy. 2002. \emph{Bronze Age Economics: The Beginnings of Political Economies}. Boulder, CO: Westview Press.
 
 \leavevmode\vadjust pre{\hypertarget{ref-earle1997}{}}%
-Earle, T. K. (1997). \emph{How chiefs come to power: the political economy in prehistory}. Stanford University Press.
+Earle, Timothy K. 1997. \emph{How chiefs come to power: the political economy in prehistory}. Stanford, Calif: Stanford University Press.
 
 \leavevmode\vadjust pre{\hypertarget{ref-ensor2013}{}}%
-Ensor, B. E. (2013). \emph{The archaeology of kinship: Advancing interpretation and contributions to theory}. University of Arizona Press. \url{https://www.jstor.org/stable/j.ctt183pcj3}
+Ensor, Bradley E. 2013. \emph{\href{https://www.jstor.org/stable/j.ctt183pcj3}{The Archaeology of Kinship: Advancing Interpretation and Contributions to Theory}}. University of Arizona Press.
+
+\leavevmode\vadjust pre{\hypertarget{ref-ensor2017a}{}}%
+Ensor, Bradley E. 2017. {``Testing Ethnological Theories on Prehistoric Kinship.''} \emph{Cross-Cultural Research} 51(3):199--227. doi: \href{https://doi.org/10.1177/1069397117697648}{10.1177/1069397117697648}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-ensor2021}{}}%
+Ensor, Bradley E. 2021. {``Making aDNA Useful for Kinship Analysis.''} \emph{Antiquity} 95(379):241--43. doi: \href{https://doi.org/10.15184/aqy.2020.234}{10.15184/aqy.2020.234}.
 
 \leavevmode\vadjust pre{\hypertarget{ref-ensor2017}{}}%
-Ensor, B. E., Irish, J. D., \& Keegan, W. F. (2017). The bioarchaeology of kinship: Proposed revisions to assumptions guiding interpretation. \emph{Current Anthropology}, \emph{58}(6), 739--761. \url{https://doi.org/10.1086/694584}
+Ensor, Bradley E., Joel D. Irish, and William F. Keegan. 2017. {``The Bioarchaeology of Kinship: Proposed Revisions to Assumptions Guiding Interpretation.''} \emph{Current Anthropology} 58(6):739--61. doi: \href{https://doi.org/10.1086/694584}{10.1086/694584}.
 
 \leavevmode\vadjust pre{\hypertarget{ref-falconer2013}{}}%
-Falconer, K., \& Falconer, K. (2013). \emph{Fractals: A very short introduction}. Oxford University Press.
+Falconer, Kenneth, and Kenneth Falconer. 2013. \emph{Fractals: A Very Short Introduction}. Oxford, New York: Oxford University Press.
 
 \leavevmode\vadjust pre{\hypertarget{ref-faruxedas-pelayo2017}{}}%
-Farías-Pelayo, S. (2017). \emph{Characterization of Cultural Traits by Means of Fractal Analysis} (F. Brambila, Ed.). IntechOpen. \href{https://DOI:\%2010.5772/67893}{DOI: 10.5772/67893}
+Farías-Pelayo, Sabrina. 2017. {``\href{https://DOI:\%2010.5772/67893}{Characterization of Cultural Traits by Means of Fractal Analysis}.''} edited by F. Brambila. IntechOpen.
 
 \leavevmode\vadjust pre{\hypertarget{ref-fontijn2013}{}}%
-Fontijn, D., \& Brück, J. (2013). The {Myth} of the {Chief}: {Prestige Goods}, {Power}, and {Personhood} in the {European Bronze Age}. In \emph{The {Oxford Handbook} of the {European Bronze Age}}. {Oxford University Press}. \url{https://doi.org/10.1093/oxfordhb/9780199572861.013.0011}
+Fontijn, David, and Joanna Brück. 2013. {``\href{https://doi.org/10.1093/oxfordhb/9780199572861.013.0011}{The {Myth} of the {Chief}: {Prestige Goods}, {Power}, and {Personhood} in the {European Bronze Age}}.''} in \emph{The {Oxford Handbook} of the {European Bronze Age}}, \emph{Oxford {Handbooks} in {Archaeology}}. {Oxford University Press}.
 
 \leavevmode\vadjust pre{\hypertarget{ref-fraser1968}{}}%
-Fraser, D. (1968). \emph{Village planning in the primitive world}. George Braziller. \url{http://archive.org/details/VillagePlanningInThePrimitiveWorld}
+Fraser, Douglas. 1968. \emph{\href{http://archive.org/details/VillagePlanningInThePrimitiveWorld}{Village Planning in the Primitive World}}. New York: George Braziller.
 
 \leavevmode\vadjust pre{\hypertarget{ref-furholt2016}{}}%
-Furholt, M. (2016). Settlement layout and social organisation in the earliest european neolithic. \emph{Antiquity}, \emph{90}(353), 1196--1212.
+Furholt, Martin. 2016. {``Settlement Layout and Social Organisation in the Earliest European Neolithic.''} \emph{Antiquity} 90(353):1196--1212.
 
 \leavevmode\vadjust pre{\hypertarget{ref-furholt2020}{}}%
-Furholt, M., Grier, C., Spriggs, M., \& Earle, T. (2020). Political Economy in the Archaeology of Emergent Complexity: a Synthesis of Bottom-Up and Top-Down Approaches. \emph{Journal of Archaeological Method and Theory}, \emph{27}(2), 157--191. \url{https://doi.org/10.1007/s10816-019-09422-0}
+Furholt, Martin, Colin Grier, Matthew Spriggs, and Timothy Earle. 2020. {``Political Economy in the Archaeology of Emergent Complexity: A Synthesis of Bottom-Up and Top-Down Approaches.''} \emph{Journal of Archaeological Method and Theory} 27(2):157--91. doi: \href{https://doi.org/10.1007/s10816-019-09422-0}{10.1007/s10816-019-09422-0}.
 
 \leavevmode\vadjust pre{\hypertarget{ref-furholt2020a}{}}%
-Furholt, M., Müller, J., Bistáková, A., Wunderlich, M., Cheben, I., \& Müller-Scheeßel, N. (2020). \emph{Archaeology in the zitava valley 1 - the LBK and zeliezovce settlement site of vráble}. Sidestone Press.
+Furholt, Martin, Johannes Müller, Alena Bistáková, Maria Wunderlich, Ivan Cheben, and Nils Müller-Scheeßel. 2020. \emph{Archaeology in the Zitava Valley 1 - the LBK and Zeliezovce Settlement Site of Vráble}. Leiden: Sidestone Press.
 
 \leavevmode\vadjust pre{\hypertarget{ref-furholt2020b}{}}%
-Furholt, M., Müller-Scheeßel, N., Wunderlich, M., Cheben, I., \& Müller, J. (2020). Communality and discord in an early neolithic settlement agglomeration: The LBK site of vráble, southwest slovakia. \emph{Cambridge Archaeological Journal}, \emph{30}(3), 469--489.
+Furholt, Martin, Nils Müller-Scheeßel, Maria Wunderlich, Ivan Cheben, and Johannes Müller. 2020. {``Communality and Discord in an Early Neolithic Settlement Agglomeration: The LBK Site of Vráble, Southwest Slovakia.''} \emph{Cambridge Archaeological Journal} 30(3):469--89.
 
 \leavevmode\vadjust pre{\hypertarget{ref-gillespie2015}{}}%
-Gillespie, C. S. (2015). Fitting heavy tailed distributions: The poweRlaw package. \emph{Journal of Statistical Software}, \emph{64}(2).
+Gillespie, Colin S. 2015. {``Fitting Heavy Tailed Distributions: The poweRlaw Package.''} \emph{Journal of Statistical Software} 64(2).
 
 \leavevmode\vadjust pre{\hypertarget{ref-godelier1986}{}}%
-Godelier, M. (1986). \emph{The making of great men: male domination and power among the New Guinea Baruya} (Vol. 56). University Press.
+Godelier, Maurice. 1986. \emph{The making of great men: male domination and power among the New Guinea Baruya}. Vol. 56. Cambridge: University Press.
 
 \leavevmode\vadjust pre{\hypertarget{ref-gomez-lievano2012}{}}%
-Gomez-Lievano, A., Youn, H., \& Bettencourt, L. (2012). The statistics of urban scaling and their connection to zipf{'}s law. \emph{PloS One}, \emph{7}, e40393. \url{https://doi.org/10.1371/journal.pone.0040393}
+Gomez-Lievano, Andres, Hyejin Youn, and Luís Bettencourt. 2012. {``The Statistics of Urban Scaling and Their Connection to Zipf{'}s Law.''} \emph{PloS One} 7:e40393. doi: \href{https://doi.org/10.1371/journal.pone.0040393}{10.1371/journal.pone.0040393}.
 
 \leavevmode\vadjust pre{\hypertarget{ref-goodale2021}{}}%
-Goodale, N., Quinn, C. P., \& Nauman, A. (2021). Monumentality of houses: {Collective} action, inequality, and kinship in pithouse construction. In L. B. Carpenter \& A. M. Prentiss (Eds.), \emph{Archaeology of {Households}, {Kinship}, and {Social Change}} (pp. 177--203). {Routledge}.
+Goodale, Nathan, Colin P. Quinn, and Alissa Nauman. 2021. {``Monumentality of Houses: {Collective} Action, Inequality, and Kinship in Pithouse Construction.''} Pp. 177--203 in \emph{Archaeology of {Households}, {Kinship}, and {Social Change}}, edited by L. B. Carpenter and A. M. Prentiss. {Routledge}.
 
 \leavevmode\vadjust pre{\hypertarget{ref-gould2007}{}}%
-Gould, S. J. (2007). \emph{Punctuated equilibrium}. Belknap Press of Harvard University Press.
+Gould, Stephen Jay. 2007. \emph{Punctuated equilibrium}. Cambridge, Mass: Belknap Press of Harvard University Press.
 
 \leavevmode\vadjust pre{\hypertarget{ref-graeber2021}{}}%
-Graeber, D., \& Wengrow, D. (2021). \emph{The dawn of everything: a new history of humanity}. Farrar, Straus; Giroux.
+Graeber, David, and David Wengrow. 2021. \emph{The dawn of everything: a new history of humanity}. New York: Farrar, Straus; Giroux.
 
 \leavevmode\vadjust pre{\hypertarget{ref-grove2011}{}}%
-Grove, M. (2011). An archaeological signature of multi-level social systems: The case of the Irish Bronze Age. \emph{Journal of Anthropological Archaeology}, \emph{30}(1), 44--61. \url{https://doi.org/10.1016/j.jaa.2010.12.002}
+Grove, Matt. 2011. {``An Archaeological Signature of Multi-Level Social Systems: The Case of the Irish Bronze Age.''} \emph{Journal of Anthropological Archaeology} 30(1):44--61. doi: \href{https://doi.org/10.1016/j.jaa.2010.12.002}{10.1016/j.jaa.2010.12.002}.
 
 \leavevmode\vadjust pre{\hypertarget{ref-hamilton2007}{}}%
-Hamilton, M., Milne, B., Walker, R., Burger, O., \& Brown, J. (2007). The complex structure of hunter-gatherer social networks. \emph{Proceedings of the Royal Society B}, \emph{274}, 2195--2202.
+Hamilton, Marcus, Bruce Milne, Robert Walker, Oskar Burger, and James Brown. 2007. {``The Complex Structure of Hunter-Gatherer Social Networks.''} \emph{Proceedings of the Royal Society B} 274:2195--2202.
 
 \leavevmode\vadjust pre{\hypertarget{ref-harrison1981}{}}%
-Harrison, A. (1981). A tale of two distributions. \emph{The Review of Economic Studies}, \emph{48}(4), 621--631.
+Harrison, Alan. 1981. {``A Tale of Two Distributions.''} \emph{The Review of Economic Studies} 48(4):621--31.
 
 \leavevmode\vadjust pre{\hypertarget{ref-haude2019}{}}%
-Haude, R., \& Wagner, T. (2019). \emph{Herrschaftsfreie Institutionen : Texte zur Stabilisierung staatsloser, egalitärer Gesellschaften}. Verlag Graswurzelrevolution. \url{http://www.deutsche-digitale-bibliothek.de/item/7WYRGHTXGAOZOF5JUQ5JQCONFJKLTBIE}
+Haude, Rüdiger, and Thomas Wagner. 2019. \emph{\href{http://www.deutsche-digitale-bibliothek.de/item/7WYRGHTXGAOZOF5JUQ5JQCONFJKLTBIE}{Herrschaftsfreie Institutionen : Texte zur Stabilisierung staatsloser, egalitärer Gesellschaften}}. Heidelberg: Verlag Graswurzelrevolution.
 
 \leavevmode\vadjust pre{\hypertarget{ref-hingee2019}{}}%
-Hingee, K., Baddeley, A., Caccetta, P., \& Nair, G. (2019). Computation of Lacunarity from Covariance of Spatial Binary Maps. \emph{Journal of Agricultural, Biological and Environmental Statistics}, \emph{24}(2), 264--288. \url{https://doi.org/10.1007/s13253-019-00351-9}
+Hingee, Kassel, Adrian Baddeley, Peter Caccetta, and Gopalan Nair. 2019. {``Computation of Lacunarity from Covariance of Spatial Binary Maps.''} \emph{Journal of Agricultural, Biological and Environmental Statistics} 24(2):264--88. doi: \href{https://doi.org/10.1007/s13253-019-00351-9}{10.1007/s13253-019-00351-9}.
 
 \leavevmode\vadjust pre{\hypertarget{ref-hodder1979}{}}%
-Hodder, I. (1979). \emph{Simulating the Growth of Hierarchies} (C. Renfrew \& K. L. Cooke, Eds.; pp. 117--144). Academic Press. \url{https://doi.org/10.1016/B978-0-12-586050-5.50015-4}
+Hodder, Ian. 1979. {``\href{https://doi.org/10.1016/B978-0-12-586050-5.50015-4}{Simulating the Growth of Hierarchies}.''} Pp. 117--44 in, edited by C. Renfrew and K. L. Cooke. New York: Academic Press.
 
 \leavevmode\vadjust pre{\hypertarget{ref-hofmann2013}{}}%
-Hofmann, D., \& Smyth, J. (Eds.). (2013). \emph{Tracking the Neolithic House in Europe}. Springer New York. \url{https://doi.org/10.1007/978-1-4614-5289-8}
+Hofmann, Daniela, and Jessica Smyth, eds. 2013. \emph{\href{https://doi.org/10.1007/978-1-4614-5289-8}{Tracking the Neolithic House in Europe}}. New York, NY: Springer New York.
 
 \leavevmode\vadjust pre{\hypertarget{ref-honoruxe92022}{}}%
-Honoré, E. (2022). Différences de richesse et inégalités sociales au Paléolithique: éléments pour une discussion. \emph{Paléo (Les Eyzies de Tayac-Sireuil)}, 5059.
+Honoré, Emmanuelle. 2022. {``Différences de richesse et inégalités sociales au Paléolithique: éléments pour une discussion.''} \emph{Paléo (Les Eyzies de Tayac-Sireuil)} 5059.
 
 \leavevmode\vadjust pre{\hypertarget{ref-jahanmiri2022}{}}%
-Jahanmiri, F., \& Parker, D. C. (2022). An Overview of Fractal Geometry Applied to Urban Planning. \emph{Land}, \emph{11}(4), 475. \url{https://doi.org/10.3390/land11040475}
+Jahanmiri, Fatemeh, and Dawn Cassandra Parker. 2022. {``An Overview of Fractal Geometry Applied to Urban Planning.''} \emph{Land} 11(4):475. doi: \href{https://doi.org/10.3390/land11040475}{10.3390/land11040475}.
 
 \leavevmode\vadjust pre{\hypertarget{ref-johnson1987}{}}%
-Johnson, A., \& Earle, T. (1987). \emph{The evolution of human societies : From foraging group to agrarian state}. Stanford University Press.
+Johnson, Allen, and Timothy Earle. 1987. \emph{The Evolution of Human Societies : From Foraging Group to Agrarian State}. Stanford: Stanford University Press.
 
 \leavevmode\vadjust pre{\hypertarget{ref-johnson1982}{}}%
-Johnson, G. A. (1982). \emph{Organizational structure and scalar stress} (C. Renfrew, M. J. Rowlands, \& B. A. Segraves, Eds.; pp. 389--421). Academic Press.
+Johnson, Gregory A. 1982. {``Organizational Structure and Scalar Stress.''} Pp. 389--421 in, edited by C. Renfrew, M. J. Rowlands, and B. A. Segraves. New York: Academic Press.
 
 \leavevmode\vadjust pre{\hypertarget{ref-joyce2000}{}}%
-Joyce, R. A., \& Gillespie, S. D. (2000). \emph{Beyond kinship: social and material reproduction in house societies}. University of Pennsylvania Press.
+Joyce, Rosemary A., and Susan D. Gillespie. 2000. \emph{Beyond kinship: social and material reproduction in house societies}. Philadelphia, Pa: University of Pennsylvania Press.
 
 \leavevmode\vadjust pre{\hypertarget{ref-kadrow2013}{}}%
-Kadrow, S. (2013). \emph{Social organization and change} (A. Gardner, M. Lake, \& U. Sommer, Eds.; p. 0). Oxford University Press. \url{https://doi.org/10.1093/oxfordhb/9780199567942.013.023}
+Kadrow, Sławomir. 2013. {``\href{https://doi.org/10.1093/oxfordhb/9780199567942.013.023}{Social Organization and Change}.''} P. 0 in, edited by A. Gardner, M. Lake, and U. Sommer. Oxford University Press.
 
 \leavevmode\vadjust pre{\hypertarget{ref-kahn2021}{}}%
-Kahn, J. G. (2021). Houses of power: {Community} houses and specialized houses as markers of social complexity in the pre-contact {Society Island} chiefdoms. In L. B. Carpenter \& A. M. Prentiss (Eds.), \emph{Archaeology of {Households}, {Kinship}, and {Social Change}} (pp. 82--110). {Routledge}.
+Kahn, Jennifer G. 2021. {``Houses of Power: {Community} Houses and Specialized Houses as Markers of Social Complexity in the Pre-Contact {Society Island} Chiefdoms.''} Pp. 82--110 in \emph{Archaeology of {Households}, {Kinship}, and {Social Change}}, edited by L. B. Carpenter and A. M. Prentiss. {Routledge}.
 
 \leavevmode\vadjust pre{\hypertarget{ref-kienlin2012}{}}%
-Kienlin, T. L., \& Zimmermann, A. (2012). \emph{Beyond Elites - Alternatives to Hierarchical Systems in Modelling Social Formations: International Conference at the Ruhr-Universität Bochum, Germany, ... zur prähistorischen Archäologie)}. Habelt, R.
+Kienlin, Tobias L., and Andreas Zimmermann. 2012. \emph{Beyond Elites - Alternatives to Hierarchical Systems in Modelling Social Formations: International Conference at the Ruhr-Universität Bochum, Germany, ... Zur Prähistorischen Archäologie)}. Bonn: Habelt, R.
 
 \leavevmode\vadjust pre{\hypertarget{ref-klinkenberg1994}{}}%
-Klinkenberg, B. (1994). A review of methods used to determine the fractal dimension of linear features. \emph{Mathematical Geology}, \emph{26}(1), 23--46. \url{https://doi.org/10.1007/BF02065874}
+Klinkenberg, Brian. 1994. {``A Review of Methods Used to Determine the Fractal Dimension of Linear Features.''} \emph{Mathematical Geology} 26(1):23--46. doi: \href{https://doi.org/10.1007/BF02065874}{10.1007/BF02065874}.
 
 \leavevmode\vadjust pre{\hypertarget{ref-kohler2018}{}}%
-Kohler, T. A., \& Smith, M. E. (2018). \emph{Ten thousand years of inequality: The archaeology of wealth differences}. University of Arizona Press.
+Kohler, Timothy A., and Michael E. Smith. 2018. \emph{Ten Thousand Years of Inequality: The Archaeology of Wealth Differences}. Tucson: University of Arizona Press.
+
+\leavevmode\vadjust pre{\hypertarget{ref-kostof1991}{}}%
+Kostof, Spiro. 1991. \emph{The city shaped: urban patterns and meanings through history ; original drawings by Richard Tobias}. London: Thames; Hudson.
 
 \leavevmode\vadjust pre{\hypertarget{ref-kuijt2018}{}}%
-Kuijt, I. (2018). Material Geographies of House Societies: Reconsidering Neolithic Çatalhöyük, Turkey. \emph{Cambridge Archaeological Journal}, \emph{28}(4), 565--590. \url{https://doi.org/10.1017/S0959774318000240}
+Kuijt, Ian. 2018. {``Material Geographies of House Societies: Reconsidering Neolithic Çatalhöyük, Turkey.''} \emph{Cambridge Archaeological Journal} 28(4):565--90. doi: \href{https://doi.org/10.1017/S0959774318000240}{10.1017/S0959774318000240}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-kvetina2019}{}}%
+Květina, Petr, and Jaroslav Řídký. 2019. {``Traditional and Archaic Societies - Problems Linked to the Search for Social and Power Attributes in the Archaeological Record.''} Pp. 7--14 in \emph{Big men or chiefs? {Rondel} builders of neolithic {Europe}}. {Oxford}: {Oxbow Books}.
 
 \leavevmode\vadjust pre{\hypertarget{ref-lagarias2021}{}}%
-Lagarias, A., \& Prastacos, P. (2021). Fractal dimension of European Cities: A comparison of the patterns of built-up areas in the urban core and the peri-urban ring. \emph{Cybergeo: European Journal of Geography}. \url{https://doi.org/10.4000/cybergeo.37243}
+Lagarias, Apostolos, and Poulicos Prastacos. 2021. {``Fractal Dimension of European Cities: A Comparison of the Patterns of Built-up Areas in the Urban Core and the Peri-Urban Ring.''} \emph{Cybergeo: European Journal of Geography}. doi: \href{https://doi.org/10.4000/cybergeo.37243}{10.4000/cybergeo.37243}.
 
 \leavevmode\vadjust pre{\hypertarget{ref-last2015}{}}%
-Last, J. (2015). \emph{Longhouse lifestyles in the central european neolithic} (C. Fowler, J. Harding, \& D. Hofmann, Eds.; p. 0). Oxford University Press. \url{https://doi.org/10.1093/oxfordhb/9780199545841.013.009}
+Last, Jonathan. 2015. {``\href{https://doi.org/10.1093/oxfordhb/9780199545841.013.009}{Longhouse Lifestyles in the Central European Neolithic}.''} P. 0 in, edited by C. Fowler, J. Harding, and D. Hofmann. Oxford University Press.
 
 \leavevmode\vadjust pre{\hypertarget{ref-luxe9vi-strauss1982}{}}%
-Lévi-Strauss, C. (1982). \emph{The way of the masks}. University of Washington Press.
+Lévi-Strauss, Claude. 1982. \emph{The way of the masks}. Seattle, Wash: University of Washington Press.
 
 \leavevmode\vadjust pre{\hypertarget{ref-li2009}{}}%
-Li, J., Du, Q., \& Sun, C. (2009). An improved box-counting method for image fractal dimension estimation. \emph{Pattern Recognition}, \emph{42}(11), 2460--2469. \url{https://doi.org/10.1016/j.patcog.2009.03.001}
+Li, Jian, Qian Du, and Caixin Sun. 2009. {``An Improved Box-Counting Method for Image Fractal Dimension Estimation.''} \emph{Pattern Recognition} 42(11):2460--69. doi: \href{https://doi.org/10.1016/j.patcog.2009.03.001}{10.1016/j.patcog.2009.03.001}.
 
 \leavevmode\vadjust pre{\hypertarget{ref-lobo2020}{}}%
-Lobo, J., Bettencourt, L. M., Smith, M. E., \& Ortman, S. (2020). Settlement scaling theory: Bridging the study of ancient and contemporary urban systems. \emph{Urban Studies}, \emph{57}(4), 731--747. \url{https://doi.org/10.1177/0042098019873796}
+Lobo, Jose, Luis MA Bettencourt, Michael E. Smith, and Scott Ortman. 2020. {``Settlement Scaling Theory: Bridging the Study of Ancient and Contemporary Urban Systems.''} \emph{Urban Studies} 57(4):731--47. doi: \href{https://doi.org/10.1177/0042098019873796}{10.1177/0042098019873796}.
 
 \leavevmode\vadjust pre{\hypertarget{ref-lund2022}{}}%
-Lund, J., Furholt, M., \& Austvoll, K. I. (2022). Reassessing power in the archaeological discourse. How collective, cooperative and affective perspectives may impact our understanding of social relations and organization in prehistory. \emph{Archaeological Dialogues}, 1--18. \url{https://doi.org/10.1017/S1380203822000162}
+Lund, Julie, Martin Furholt, and Knut Ivar Austvoll. 2022. {``Reassessing Power in the Archaeological Discourse. How Collective, Cooperative and Affective Perspectives May Impact Our Understanding of Social Relations and Organization in Prehistory.''} \emph{Archaeological Dialogues} 1--18. doi: \href{https://doi.org/10.1017/S1380203822000162}{10.1017/S1380203822000162}.
 
 \leavevmode\vadjust pre{\hypertarget{ref-madella2013}{}}%
-Madella, M. (2013). \emph{The archaeology of household}. Oxbow books.
+Madella, Marco. 2013. \emph{The archaeology of household}. Oxford: Oxbow books.
 
 \leavevmode\vadjust pre{\hypertarget{ref-mancuso2021}{}}%
-Mancuso, F. P. (2021). \emph{fractD: Estimation of fractal dimension of a black area in 2D and 3D (slices) images}. \url{https://CRAN.R-project.org/package=fractD}
-
-\leavevmode\vadjust pre{\hypertarget{ref-mandelbrot1967}{}}%
-Mandelbrot, B. (1967). How long is the coast of britain? Statistical self-similarity and fractional dimension. \emph{Science}, \emph{156}(3775), 636--638. \url{https://www.jstor.org/stable/1721427}
-
-\leavevmode\vadjust pre{\hypertarget{ref-mandelbrot2021}{}}%
-Mandelbrot, B. B. (2021). \emph{The fractal geometry of nature}. Echo Point Books \& Media, LLC.
+Mancuso, Francesco Paolo. 2021. {``\href{https://CRAN.R-project.org/package=fractD}{fractD: Estimation of Fractal Dimension of a Black Area in 2D and 3D (Slices) Images}.''}
 
 \leavevmode\vadjust pre{\hypertarget{ref-mandelbrot1975}{}}%
-Mandelbrot, B. B. (1975). \emph{Les objets fractals: forme, hasard et dimension}. Flammarion.
+Mandelbrot, Benoit B. 1975. \emph{Les objets fractals: forme, hasard et dimension}. Paris: Flammarion.
+
+\leavevmode\vadjust pre{\hypertarget{ref-mandelbrot2021}{}}%
+Mandelbrot, Benoit B. 2021. \emph{The Fractal Geometry of Nature}. Brattleboro: Echo Point Books \& Media, LLC.
+
+\leavevmode\vadjust pre{\hypertarget{ref-mandelbrot1967}{}}%
+Mandelbrot, Benoît. 1967. {``\href{https://www.jstor.org/stable/1721427}{How Long Is the Coast of Britain? Statistical Self-Similarity and Fractional Dimension}.''} \emph{Science} 156(3775):636--38.
 
 \leavevmode\vadjust pre{\hypertarget{ref-maschner2003}{}}%
-Maschner, H., \& Bentley, A. (2003). \emph{The power law of rank and household on the north pacific} (A. Bentley \& H. Maschner, Eds.; pp. 47--143). The University of Utah Press.
+Maschner, Herbert, and Alexander Bentley. 2003. {``The Power Law of Rank and Household on the North Pacific.''} Pp. 47--143 in, edited by A. Bentley and H. Maschner. Salt Lake City: The University of Utah Press.
 
 \leavevmode\vadjust pre{\hypertarget{ref-mech1999}{}}%
-Mech, L. D. (1999). Alpha status, dominance, and division of labor in wolf packs. \emph{Canadian Journal of Zoology}, \emph{77}(8), 1196--1203. \url{https://doi.org/10.1139/z99-099}
+Mech, L. David. 1999. {``Alpha Status, Dominance, and Division of Labor in Wolf Packs.''} \emph{Canadian Journal of Zoology} 77(8):1196--1203. doi: \href{https://doi.org/10.1139/z99-099}{10.1139/z99-099}.
 
 \leavevmode\vadjust pre{\hypertarget{ref-midlarsky1999}{}}%
-Midlarsky, M. I. (1999). \emph{The evolution of inequality: War, state survival, and democracy in comparative perspective}. Stanford University Press.
+Midlarsky, Manus I. 1999. \emph{The Evolution of Inequality: War, State Survival, and Democracy in Comparative Perspective}. Stanford: Stanford University Press.
 
 \leavevmode\vadjust pre{\hypertarget{ref-mitzenmacher2004}{}}%
-Mitzenmacher, M. (2004). A brief history of generative models for power law and lognormal distributions. \emph{Internet Mathematics}, \emph{1}(2), 226--251. \url{https://doi.org/10.1080/15427951.2004.10129088}
+Mitzenmacher, Michael. 2004. {``A Brief History of Generative Models for Power Law and Lognormal Distributions.''} \emph{Internet Mathematics} 1(2):226--51. doi: \href{https://doi.org/10.1080/15427951.2004.10129088}{10.1080/15427951.2004.10129088}.
 
 \leavevmode\vadjust pre{\hypertarget{ref-modderman1970}{}}%
-Modderman, P. J. R., Newell, R. R., Brinkman, J. E., \& Bakels, C. C. (1970). \emph{Linearbandkeramik aus Elsloo und Stein} (Vol. 3). Leiden University Press. \url{http://hdl.handle.net/1887/2720923}
+Modderman, P. J. R., R. R. Newell, J. E. Brinkman, and C. C. Bakels. 1970. \emph{\href{http://hdl.handle.net/1887/2720923}{Linearbandkeramik aus Elsloo und Stein}}. Vol. 3. Leiden University Press.
 
 \leavevmode\vadjust pre{\hypertarget{ref-morgan1965}{}}%
-Morgan, L. H. (1965). \emph{Houses and house-life of the american aborigines}. The University of Chicago Press.
+Morgan, Lewis H. 1965. \emph{Houses and House-Life of the American Aborigines}. Chicago: The University of Chicago Press.
 
 \leavevmode\vadjust pre{\hypertarget{ref-muxfcller-scheeuxdfel2007}{}}%
-Müller-Scheeßel, N. (2007). Further thoughts on the hidden settlement structures of the hallstatt period in southern germany: Testing for auto-correlation. \emph{Archäologisches Korrespondenzblatt}, \emph{37}(1), 57--66.
+Müller-Scheeßel, Niels. 2007. {``Further Thoughts on the Hidden Settlement Structures of the Hallstatt Period in Southern Germany: Testing for Auto-Correlation.''} \emph{Archäologisches Korrespondenzblatt} 37(1):57--66.
 
 \leavevmode\vadjust pre{\hypertarget{ref-muxfcller-scheeuxdfel2019}{}}%
-Müller-Scheeßel, N. (2019). \emph{A new approach to the temporal significance of house orientations in European Early Neolithic settlements}. \url{https://doi.org/10.17026/DANS-XU6-C6YR}
+Müller-Scheeßel, Nils. 2019. {``A New Approach to the Temporal Significance of House Orientations in European Early Neolithic Settlements.''} doi: \href{https://doi.org/10.17026/DANS-XU6-C6YR}{10.17026/DANS-XU6-C6YR}.
 
 \leavevmode\vadjust pre{\hypertarget{ref-muro2011}{}}%
-Muro, C., Escobedo, R., Spector, L., \& Coppinger, R. P. (2011). Wolf-pack (Canis lupus) hunting strategies emerge from simple rules in computational simulations. \emph{Behavioural Processes}, \emph{88}(3), 192--197. \url{https://doi.org/10.1016/j.beproc.2011.09.006}
+Muro, C., R. Escobedo, L. Spector, and R. P. Coppinger. 2011. {``Wolf-Pack (Canis Lupus) Hunting Strategies Emerge from Simple Rules in Computational Simulations.''} \emph{Behavioural Processes} 88(3):192--97. doi: \href{https://doi.org/10.1016/j.beproc.2011.09.006}{10.1016/j.beproc.2011.09.006}.
 
 \leavevmode\vadjust pre{\hypertarget{ref-newman2005}{}}%
-Newman, M. E. J. (2005). Power laws, pareto distributions and zipf's law. \emph{Contemporary Physics}, \emph{46}(5), 325--351. \url{https://doi.org/10.1080/00107510500052444}
+Newman, M. E. J. 2005. {``Power Laws, Pareto Distributions and Zipf's Law.''} \emph{Contemporary Physics} 46(5):325--51. doi: \href{https://doi.org/10.1080/00107510500052444}{10.1080/00107510500052444}.
 
 \leavevmode\vadjust pre{\hypertarget{ref-nordquist2001}{}}%
-Nordquist, P. (2001). \emph{Hierarkiseringsprocesser: om konstruktion av social ojämlikhet i Skåne, 5500-1100 f.Kr.} {[}PhD thesis{]}.
+Nordquist, Pär. 2001. {``Hierarkiseringsprocesser: om konstruktion av social ojämlikhet i Skåne, 5500-1100 f.Kr.''} PhD thesis, Umeå.
 
 \leavevmode\vadjust pre{\hypertarget{ref-packard2003}{}}%
-Packard, J. (2003). Wolf behavior: Reproductive, social and intelligent. In L. D. Mech \& L. Boitani (Eds.), \emph{Wolves: Behavior, ecology, and conservation} (pp. 35--65). {The University of Chicago Press}.
+Packard, Jane. 2003. {``Wolf Behavior: Reproductive, Social and Intelligent.''} Pp. 35--65 in \emph{Wolves: Behavior, ecology, and conservation}, edited by L. D. Mech and L. Boitani. {Chicago and London}: {The University of Chicago Press}.
 
 \leavevmode\vadjust pre{\hypertarget{ref-perreault2019}{}}%
-Perreault, C. (2019). \emph{The quality of the archaeological record}. The University of Chicago Press.
+Perreault, Charles. 2019. \emph{The quality of the archaeological record}. Chicago: The University of Chicago Press.
 
 \leavevmode\vadjust pre{\hypertarget{ref-peters2017}{}}%
-Peters, R., \& Zimmermann, A. (2017). Resilience and Cyclicity: Towards a macrohistory of the Central European Neolithic. \emph{Quaternary International}, \emph{446}, 43--53. \url{https://doi.org/10.1016/j.quaint.2017.03.073}
+Peters, Robin, and Andreas Zimmermann. 2017. {``Resilience and Cyclicity: Towards a Macrohistory of the Central European Neolithic.''} \emph{Quaternary International} 446:43--53. doi: \href{https://doi.org/10.1016/j.quaint.2017.03.073}{10.1016/j.quaint.2017.03.073}.
 
 \leavevmode\vadjust pre{\hypertarget{ref-plotnick1996}{}}%
-Plotnick, R. E., Gardner, R. H., Hargrove, W. W., Prestegaard, K., \& Perlmutter, M. (1996). Lacunarity analysis: A general technique for the analysis of spatial patterns. \emph{Physical Review E}, \emph{53}(5), 5461--5468. \url{https://doi.org/10.1103/PhysRevE.53.5461}
+Plotnick, Roy E., Robert H. Gardner, William W. Hargrove, Karen Prestegaard, and Martin Perlmutter. 1996. {``Lacunarity Analysis: A General Technique for the Analysis of Spatial Patterns.''} \emph{Physical Review E} 53(5):5461--68. doi: \href{https://doi.org/10.1103/PhysRevE.53.5461}{10.1103/PhysRevE.53.5461}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-porcic2010}{}}%
+Porcic, Marko. 2010. {``House Floor Area as a Correlate of Marital Residence Pattern: A Logistic Regression Approach.''} \emph{Cross-cultural research} 44(4):405424. doi: \href{https://doi.org/10.1177/1069397110378839}{10.1177/1069397110378839}.
 
 \leavevmode\vadjust pre{\hypertarget{ref-porcic2012}{}}%
-Porčić, M. (2012). Effects of Residential Mobility on the Ratio of Average House Floor Area to Average Household Size: Implications for Demographic Reconstructions in Archaeology. \emph{Cross-Cultural Research}, \emph{46}(1), 72--86. \url{https://doi.org/10.1177/1069397111423889}
+Porčić, Marko. 2012. {``Effects of Residential Mobility on the Ratio of Average House Floor Area to Average Household Size: Implications for Demographic Reconstructions in Archaeology.''} \emph{Cross-Cultural Research} 46(1):72--86. doi: \href{https://doi.org/10.1177/1069397111423889}{10.1177/1069397111423889}.
 
 \leavevmode\vadjust pre{\hypertarget{ref-price1995}{}}%
-Price, T. D., \& Feinman, G. M. (1995). \emph{Foundations of social inequality}. Plenum Press.
+Price, T. Douglas, and Gary M. Feinman. 1995. \emph{Foundations of social inequality}. New York: Plenum Press.
 
 \leavevmode\vadjust pre{\hypertarget{ref-price2010}{}}%
-Price, T. D., \& Feinman, G. M. (2010). \emph{Pathways to Power: New Perspectives on the Emergence of Social Inequality}. Springer.
+Price, T. Douglas, and Gary M. Feinman. 2010. \emph{Pathways to Power: New Perspectives on the Emergence of Social Inequality}. New York, NY: Springer.
 
 \leavevmode\vadjust pre{\hypertarget{ref-pumain2006}{}}%
-Pumain, D. (2006). Introduction. In D. Pumain (Ed.), \emph{Hierarchy in {Natural} and {Social Sciences}} (pp. 1--12). {Springer Netherlands}. \url{https://doi.org/10.1007/1-4020-4127-6_1}
+Pumain, Denise. 2006. {``\href{https://doi.org/10.1007/1-4020-4127-6_1}{Introduction}.''} Pp. 1--12 in \emph{Hierarchy in {Natural} and {Social Sciences}}, \emph{Methodos {Series}}, edited by D. Pumain. {Dordrecht}: {Springer Netherlands}.
 
 \leavevmode\vadjust pre{\hypertarget{ref-redhead2022}{}}%
-Redhead, D., \& Power, E. A. (2022). Social hierarchies and social networks in humans. \emph{Philosophical Transactions of the Royal Society B: Biological Sciences}, \emph{377}(1845), 20200440. \url{https://doi.org/10.1098/rstb.2020.0440}
+Redhead, Daniel, and Eleanor A. Power. 2022. {``Social Hierarchies and Social Networks in Humans.''} \emph{Philosophical Transactions of the Royal Society B: Biological Sciences} 377(1845):20200440. doi: \href{https://doi.org/10.1098/rstb.2020.0440}{10.1098/rstb.2020.0440}.
 
 \leavevmode\vadjust pre{\hypertarget{ref-rodruxedguez2017}{}}%
-Rodríguez, L., Castillo, O., Soria, J., Melin, P., Valdez, F., Gonzalez, C. I., Martinez, G. E., \& Soto, J. (2017). A fuzzy hierarchical operator in the grey wolf optimizer algorithm. \emph{Applied Soft Computing}, \emph{57}, 315--328. \url{https://doi.org/10.1016/j.asoc.2017.03.048}
+Rodríguez, Luis, Oscar Castillo, José Soria, Patricia Melin, Fevrier Valdez, Claudia I. Gonzalez, Gabriela E. Martinez, and Jesus Soto. 2017. {``A Fuzzy Hierarchical Operator in the Grey Wolf Optimizer Algorithm.''} \emph{Applied Soft Computing} 57:315--28. doi: \href{https://doi.org/10.1016/j.asoc.2017.03.048}{10.1016/j.asoc.2017.03.048}.
 
 \leavevmode\vadjust pre{\hypertarget{ref-ross2017}{}}%
-Ross, J. C., \& Steadman, S. R. (2017). \emph{Ancient complex societies}. Routledge.
+Ross, Jennifer C., and Sharon R. Steadman. 2017. \emph{Ancient complex societies}. New York: Routledge.
 
 \leavevmode\vadjust pre{\hypertarget{ref-roussot-larroque2022}{}}%
-Roussot‑Larroque, J. (2022). Relations sud‑nord en Europe occidentale au Néolithique ancien. In C. Guillaume (Ed.), \emph{Le Néolithique du nord-est de la France et des régions limitrophes : Actes du XIIIe colloque interrégional sur le Néolithique} (p. 10‑40). {Éditions de la Maison des sciences de l'homme}. \url{https://doi.org/10.4000/books.editionsmsh.39018}
+Roussot‑Larroque, Julia. 2022. {``\href{https://doi.org/10.4000/books.editionsmsh.39018}{Relations sud‑nord en Europe occidentale au Néolithique ancien}.''} P. 10‑40 in \emph{Le Néolithique du nord-est de la France et des régions limitrophes : Actes du XIIIe colloque interrégional sur le Néolithique}, \emph{Documents d'archéologie française}, edited by C. Guillaume. {Paris}: {Éditions de la Maison des sciences de l'homme}.
 
 \leavevmode\vadjust pre{\hypertarget{ref-sahlins2013}{}}%
-Sahlins, M. (2013). \emph{What kinship is - and is not}. University of Chicago Press.
+Sahlins, Marshall. 2013. \emph{What kinship is - and is not}. Chicago: University of Chicago Press.
 
 \leavevmode\vadjust pre{\hypertarget{ref-sahlins2020}{}}%
-Sahlins, M. (2020). \emph{Stone Age Economics}. Routledge.
+Sahlins, Marshall. 2020. \emph{Stone Age Economics}. Routledge.
 
 \leavevmode\vadjust pre{\hypertarget{ref-saile2020}{}}%
-Saile, T. (2020). On the Bandkeramik to the east of the Vistula River: At the limits of the possible. \emph{Quaternary international}, \emph{560-561}, 208227. \url{https://doi.org/10.1016/j.quaint.2020.04.036}
+Saile, Thomas. 2020. {``On the Bandkeramik to the east of the Vistula River: At the limits of the possible.''} \emph{Quaternary international} 560-561:208227. doi: \href{https://doi.org/10.1016/j.quaint.2020.04.036}{10.1016/j.quaint.2020.04.036}.
 
 \leavevmode\vadjust pre{\hypertarget{ref-scheidel2017}{}}%
-Scheidel, W. (2017). \emph{Great leveler: violence and the history of inequality from the stone age to the twenty-first century}. University Press.
+Scheidel, Walter. 2017. \emph{Great leveler: violence and the history of inequality from the stone age to the twenty-first century}. Princeton: University Press.
 
 \leavevmode\vadjust pre{\hypertarget{ref-schreier2009}{}}%
-Schreier, A. L., \& Swedell, L. (2009). The fourth level of social structure in a multi-level society: ecological and social functions of clans in hamadryas baboons. \emph{American Journal of Primatology}, \emph{71}(11), 948--955. \url{https://doi.org/10.1002/ajp.20736}
+Schreier, Amy L., and Larissa Swedell. 2009. {``The Fourth Level of Social Structure in a Multi-Level Society: Ecological and Social Functions of Clans in Hamadryas Baboons.''} \emph{American Journal of Primatology} 71(11):948--55. doi: \href{https://doi.org/10.1002/ajp.20736}{10.1002/ajp.20736}.
 
 \leavevmode\vadjust pre{\hypertarget{ref-service1971}{}}%
-Service, E. (1971). \emph{Primitive social organization : An evolutionary perspective} (2nd ed.). Random House.
+Service, Elman. 1971. \emph{Primitive Social Organization : An Evolutionary Perspective}. 2nd ed. New York: Random House.
 
 \leavevmode\vadjust pre{\hypertarget{ref-shennan2018}{}}%
-Shennan, S. (2018). \emph{The first farmers of Europe: an evolutionary perspective}. University Press.
+Shennan, Stephen. 2018. \emph{The first farmers of Europe: an evolutionary perspective}. Cambridge: University Press.
 
 \leavevmode\vadjust pre{\hypertarget{ref-sherratt2004}{}}%
-Sherratt, A. (2004). \emph{Fractal farmers: Patterns of neolithic origin and dispersal} (J. Cherry, C. Scarre, \& S. Shennan, Eds.; pp. 53--63). McDonald Institute for Archaeological Research.
+Sherratt, Andrew. 2004. {``Fractal Farmers: Patterns of Neolithic Origin and Dispersal.''} Pp. 53--63 in, edited by J. Cherry, C. Scarre, and S. Shennan. Cambridge: McDonald Institute for Archaeological Research.
 
 \leavevmode\vadjust pre{\hypertarget{ref-shimoji2022}{}}%
-Shimoji, H., \& Dobata, S. (2022). The build-up of dominance hierarchies in eusocial insects. \emph{Philosophical Transactions of the Royal Society B: Biological Sciences}, \emph{377}(1845), 20200437. \url{https://doi.org/10.1098/rstb.2020.0437}
+Shimoji, Hiroyuki, and Shigeto Dobata. 2022. {``The Build-up of Dominance Hierarchies in Eusocial Insects.''} \emph{Philosophical Transactions of the Royal Society B: Biological Sciences} 377(1845):20200437. doi: \href{https://doi.org/10.1098/rstb.2020.0437}{10.1098/rstb.2020.0437}.
 
 \leavevmode\vadjust pre{\hypertarget{ref-sindbuxe6k2022}{}}%
-Sindbæk, Søren~M. (2022). Weak ties and strange attractors: Anomalocivitas and the archaeology of urban origins. \emph{Journal of Urban Archaeology}, \emph{5}, 19--32. \url{https://doi.org/10.1484/J.JUA.5.129841}
+Sindbæk, Søren~M. 2022. {``Weak Ties and Strange Attractors: Anomalocivitas and the Archaeology of Urban Origins.''} \emph{Journal of Urban Archaeology} 5:19--32. doi: \href{https://doi.org/10.1484/J.JUA.5.129841}{10.1484/J.JUA.5.129841}.
 
 \leavevmode\vadjust pre{\hypertarget{ref-smith2011}{}}%
-Smith, M. E. (Ed.). (2011). \emph{The Comparative Archaeology of Complex Societies}. Cambridge University Press. \url{https://doi.org/10.1017/CBO9781139022712}
+Smith, Michael E., ed. 2011. \emph{\href{https://doi.org/10.1017/CBO9781139022712}{The Comparative Archaeology of Complex Societies}}. New York: Cambridge University Press.
+
+\leavevmode\vadjust pre{\hypertarget{ref-souvatzi2017}{}}%
+Souvatzi, Stella. 2017. {``Kinship and Social Archaeology.''} \emph{Cross-cultural research} 51(2):172195. doi: \href{https://doi.org/10.1177/1069397117691028}{10.1177/1069397117691028}.
 
 \leavevmode\vadjust pre{\hypertarget{ref-strauss2022}{}}%
-Strauss, E. D., Curley, J. P., Shizuka, D., \& Hobson, E. A. (2022). The centennial of the pecking order: Current state and future prospects for the study of dominance hierarchies. \emph{Philosophical Transactions of the Royal Society B: Biological Sciences}, \emph{377}(1845), 20200432. \url{https://doi.org/10.1098/rstb.2020.0432}
+Strauss, Eli D., James P. Curley, Daizaburo Shizuka, and Elizabeth A. Hobson. 2022. {``The Centennial of the Pecking Order: Current State and Future Prospects for the Study of Dominance Hierarchies.''} \emph{Philosophical Transactions of the Royal Society B: Biological Sciences} 377(1845):20200432. doi: \href{https://doi.org/10.1098/rstb.2020.0432}{10.1098/rstb.2020.0432}.
 
 \leavevmode\vadjust pre{\hypertarget{ref-strawinska-zanko2018}{}}%
-Strawinska-Zanko, U., Liebovitch, L., Watson, A., \& Brown, C. (2018). \emph{Capital in the~First Century: The Evolution of Inequality in Ancient Maya Society} (U. Strawinska-Zanko \& L. Liebovitch, Eds.; pp. 161--192). Springer International Publishing. \url{https://doi.org/10.1007/978-3-319-76765-9_9}
+Strawinska-Zanko, Urszula, Larry Liebovitch, April Watson, and Clifford Brown. 2018. {``\href{https://doi.org/10.1007/978-3-319-76765-9_9}{Capital in the~First Century: The Evolution of Inequality in Ancient Maya Society}.''} Pp. 161--92 in, \emph{Computational Social Sciences}, edited by U. Strawinska-Zanko and L. Liebovitch. Cham: Springer International Publishing.
 
 \leavevmode\vadjust pre{\hypertarget{ref-stumpf2012}{}}%
-Stumpf, M. P. H., \& Porter, M. A. (2012). Critical truths about power laws. \emph{Science}, \emph{335}(6069), 665--666. \url{https://doi.org/10.1126/science.1216142}
+Stumpf, Michael P. H., and Mason A. Porter. 2012. {``Critical Truths about Power Laws.''} \emph{Science} 335(6069):665--66. doi: \href{https://doi.org/10.1126/science.1216142}{10.1126/science.1216142}.
 
 \leavevmode\vadjust pre{\hypertarget{ref-tannier2005}{}}%
-Tannier, C., \& Pumain, D. (2005). Fractals in urban geography: A theoretical outline and an empirical example. \emph{Cybergeo : European Journal of Geography}. https://doi.org/\url{https://doi.org/10.4000/cybergeo.3275}
+Tannier, Cécile, and Denise Pumain. 2005. {``Fractals in Urban Geography: A Theoretical Outline and an Empirical Example.''} \emph{Cybergeo : European Journal of Geography}. doi: \url{https://doi.org/10.4000/cybergeo.3275}.
 
 \leavevmode\vadjust pre{\hypertarget{ref-testart2005}{}}%
-Testart, A. (2005). \emph{Eléments de classification des sociétés}. Éditions Errance : ill. en noir, tabl., cartes, schémas, couv. ill. en coul.
+Testart, Alain. 2005. \emph{Eléments de Classification Des Sociétés}. Paris, France: Éditions Errance : ill. en noir, tabl., cartes, schémas, couv. ill. en coul.
 
 \leavevmode\vadjust pre{\hypertarget{ref-thomas2007}{}}%
-Thomas, I., Frankhauser, P., \& De Keersmaecker, M.-L. (2007). Fractal dimension versus density of built-up surfaces in the periphery of Brussels*. \emph{Papers in Regional Science}, \emph{86}(2), 287--308. \url{https://doi.org/10.1111/j.1435-5957.2007.00122.x}
+Thomas, Isabelle, Pierre Frankhauser, and Marie-Laurence De Keersmaecker. 2007. {``Fractal Dimension Versus Density of Built-up Surfaces in the Periphery of Brussels*.''} \emph{Papers in Regional Science} 86(2):287--308. doi: \href{https://doi.org/10.1111/j.1435-5957.2007.00122.x}{10.1111/j.1435-5957.2007.00122.x}.
 
 \leavevmode\vadjust pre{\hypertarget{ref-trebsche2010}{}}%
-Trebsche, P., Müller-Scheeβel, N., \& Reinhold, S. (2010). \emph{Der gebaute Raum: Bausteine einer Architektursoziologie vormoderner Gesellschaften}. Waxmann.
+Trebsche, Peter, Nils Müller-Scheeβel, and Sabine Reinhold. 2010. \emph{Der gebaute Raum: Bausteine einer Architektursoziologie vormoderner Gesellschaften}. Münster: Waxmann.
 
 \leavevmode\vadjust pre{\hypertarget{ref-west2023}{}}%
-West, B., Dunbar, R., Garland, C., \& Grigolini, P. (2023). \emph{Fractal structure of human and primate social networks optimizes information flow}. \url{https://doi.org/10.1101/2023.02.23.529431}
+West, Bruce, Robin Dunbar, Culbreth Garland, and Paolo Grigolini. 2023. \emph{\href{https://doi.org/10.1101/2023.02.23.529431}{Fractal Structure of Human and Primate Social Networks Optimizes Information Flow}}.
 
 \leavevmode\vadjust pre{\hypertarget{ref-west2017}{}}%
-West, G. B. (2017). \emph{Scale: the universal laws of growth, innovation, sustainability, and the pace of life in organisms, cities, economies, and companies}. Penguin Press.
+West, Geoffrey B. 2017. \emph{Scale: the universal laws of growth, innovation, sustainability, and the pace of life in organisms, cities, economies, and companies}. New York: Penguin Press.
 
 \leavevmode\vadjust pre{\hypertarget{ref-whitridge2016}{}}%
-Whitridge, P. (2016). Fractal Worlds: An Archaeology of Nested Spatial Scales. \emph{ARCTIC}, \emph{69}(5), 1--10. \url{https://doi.org/10.14430/arctic4659}
+Whitridge, Peter. 2016. {``Fractal Worlds: An Archaeology of Nested Spatial Scales.''} \emph{ARCTIC} 69(5):1--10. doi: \href{https://doi.org/10.14430/arctic4659}{10.14430/arctic4659}.
 
 \leavevmode\vadjust pre{\hypertarget{ref-whittle2022}{}}%
-Whittle, A. (2022). The Danube in Prehistory. \emph{European Journal of Archaeology}, \emph{25}(1), 133137. \url{https://doi.org/10.1017/eaa.2021.59}
+Whittle, Alasdair. 2022. {``The Danube in Prehistory.''} \emph{European Journal of Archaeology} 25(1):133137. doi: \href{https://doi.org/10.1017/eaa.2021.59}{10.1017/eaa.2021.59}.
 
 \leavevmode\vadjust pre{\hypertarget{ref-wilk1983}{}}%
-Wilk, R. R. (1983). Little house in the jungle: The causes of variation in house size among modern Kekchi Maya. \emph{Journal of anthropological archaeology}, \emph{2}(2), 99116. \url{https://doi.org/10.1016/0278-4165(83)90009-0}
+Wilk, Richard R. 1983. {``Little house in the jungle: The causes of variation in house size among modern Kekchi Maya.''} \emph{Journal of anthropological archaeology} 2(2):99116. doi: \href{https://doi.org/10.1016/0278-4165(83)90009-0}{10.1016/0278-4165(83)90009-0}.
 
 \leavevmode\vadjust pre{\hypertarget{ref-wilk1982}{}}%
-Wilk, R. R., \& Rathje, W. L. (1982). \emph{Archaeology of the household: building a prehistory of domestic life: Vols. 25(1982) no 6}. Sage Publications.
+Wilk, Richard R., and William L. Rathje. 1982. \emph{Archaeology of the household: building a prehistory of domestic life}. Vols. 25(1982) no 6. Beverly Hills, Cal: Sage Publications.
 
 \leavevmode\vadjust pre{\hypertarget{ref-xie2015}{}}%
-Xie, Y. (2015). \emph{Dynamic documents with {R} and knitr} (2nd ed.). Chapman; Hall/CRC. \url{http://yihui.name/knitr/}
+Xie, Yihui. 2015. \emph{\href{http://yihui.name/knitr/}{Dynamic Documents with {R} and Knitr}}. 2nd ed. Boca Raton, Florida: Chapman; Hall/CRC.
 
 \leavevmode\vadjust pre{\hypertarget{ref-yoffee1993}{}}%
-Yoffee, N. (1993). \emph{Too many chiefs? (or, Safe texts for the '90s)} (N. Yoffee \& A. Sherratt, Eds.; 1st ed., pp. 60--78). Cambridge University Press. \url{https://doi.org/10.1017/CBO9780511720277.007}
+Yoffee, Norman. 1993. {``\href{https://doi.org/10.1017/CBO9780511720277.007}{Too Many Chiefs? (Or, Safe Texts for the '90s)}.''} Pp. 60--78 in, edited by N. Yoffee and A. Sherratt. Cambridge University Press.
 
 \leavevmode\vadjust pre{\hypertarget{ref-yoffee2005}{}}%
-Yoffee, N. (2005). \emph{Myths of the archaic state : Evolution of the earliest cities, states, and civilizations}. Cambridge University Press.
+Yoffee, Norman. 2005. \emph{Myths of the Archaic State : Evolution of the Earliest Cities, States, and Civilizations}. Cambridge: Cambridge University Press.
 
 \leavevmode\vadjust pre{\hypertarget{ref-zhou2005}{}}%
-Zhou, W.-X., Sornette, D., Hill, R. A., \& Dunbar, R. I. M. (2005). Discrete hierarchical organization of social group sizes. \emph{Proceedings of the Royal Society B: Biological Sciences}, \emph{272}(1561), 439--444. \url{https://doi.org/10.1098/rspb.2004.2970}
+Zhou, W.-X., D. Sornette, R. A. Hill, and R. I. M. Dunbar. 2005. {``Discrete Hierarchical Organization of Social Group Sizes.''} \emph{Proceedings of the Royal Society B: Biological Sciences} 272(1561):439--44. doi: \href{https://doi.org/10.1098/rspb.2004.2970}{10.1098/rspb.2004.2970}.
 
 \end{CSLReferences}
 

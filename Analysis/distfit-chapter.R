@@ -241,7 +241,7 @@ pretest_summary <- pretest_results %>%
   summarise()
 
 # Plot distributions of synthetic data (same as Clauset et al. 2009, fig. 5a)
-ggplot(filter(pretest_results, n == 100))+
+fig05_synthdist <- ggplot(filter(pretest_results, n == 100))+
   aes(x = value, y = ccdf, colour = set_type, shape = set_type)+
   geom_point()+
   scale_x_log10(labels = label_log(), breaks = c(10, 100, 1000))+
@@ -251,7 +251,7 @@ ggplot(filter(pretest_results, n == 100))+
   labs(x = "x", y = "P(x)", colour = "", shape = "")
 
 # Plot distribution type and best fit tail
-ggplot(pretest_summary)+
+fig05_type_tail <- ggplot(pretest_summary)+
   aes(x = set_type,
       y = tail,
       size = n,
@@ -265,7 +265,7 @@ ggplot(pretest_summary)+
   scale_size(breaks = c(10,100,1000,10000))
 
 # Plot range of power-law fits over synthetic distributions
-ggplot(pretest_results)+
+fig05_synth_pl <- ggplot(pretest_results)+
   aes(x = value, y = set)+
   geom_boxplot()+
   geom_point(data = filter(pretest_results, value >= xmin & tail == "pl"),
@@ -274,9 +274,12 @@ ggplot(pretest_results)+
   labs(x = "x", y = "Distribution")+
   theme_minimal()
 
-# Store output for later
+# Store output
 save(pretest_results, file = "Results/pretest_results.RData")
 save(pretest_summary, file = "Results/pretest_summary.RData")
+save(fig05_synthdist, file = "Results/fig05_synthdist.RData")
+save(fig05_type_tail, file = "Results/fig05_type_tail.RData")
+save(fig05_synth_pl, file = "Results/fig05_synth_pl.RData")
 
 
 # Store plots, add them to text, and move on to param scan for ln

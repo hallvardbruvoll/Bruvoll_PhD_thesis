@@ -72,9 +72,8 @@ Refs. house societies [@joyce2000, Bnf; @beck2007; @kuijt2018; @lévi-strauss198
 
 -   
 
-```{=html}
 <!-- -->
-```
+
 -   Anti-evolution critique in @yoffee1993, @yoffee2005, @fontijn2013, @kienlin2012, @lund2022, @furholt2020. Review in @dubreuil2010. Anarchistic critique/heterarchy: @crumley1995, @haude2019, @graeber2021. Paleaeolithic social inequality: @honoré2022 ++.
 
 ## Main findings here?
