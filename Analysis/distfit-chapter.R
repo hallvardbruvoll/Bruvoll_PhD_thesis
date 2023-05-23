@@ -163,6 +163,7 @@ dist.fit.all <- function(x, set){
 
 # Pre-analysis: testing for false positive power laws ---------------------
 
+# Set parameter values
 mu <- 0.3
 sigma <- 2
 lambda <- 0.125
@@ -176,63 +177,78 @@ pretest_data <- tibble()
 set.seed(100) # Reproducible random numbers
 
 # Reproduce fig. 5a in Clauset et al. 2009
-pl <- tibble(x = rplcon(n = 100, xmin = xmin, alpha = alpha),
-             rank = min_rank(x),
-             ccdf = round((length(rank)-rank+1)/length(rank), 3))
-exp <- tibble(x = rexp(n = 10000, rate = lambda)) %>%
-  filter(x >= xmin) %>%
-  slice_sample(n = 100) %>%
-  mutate(rank = min_rank(x),
-         ccdf = round((length(rank)-rank+1)/length(rank), 3))
-ln <- tibble(x = rlnorm(n = 10000, meanlog = mu, sdlog = sigma)) %>%
-  filter(x >= xmin) %>%
-  slice_sample(n = 100) %>%
-  mutate(rank = min_rank(x),
-         ccdf = round((length(rank)-rank+1)/length(rank), 3))
-
-clauset_5a <- bind_rows(pl = pl, exp = exp, ln = ln, .id = "dist")
-
-ggplot(clauset_5a)+
-  aes(x = x, y = ccdf, colour = dist, shape = dist)+
-  geom_point()+
-  scale_x_log10(labels = label_log(), breaks = breaks_log())+
-  scale_y_log10(labels = label_log())+
-  geom_vline(xintercept = 15, linetype = 2)+
-  theme_minimal()
-
-# HERE !!!!
+# pl <- tibble(x = rplcon(n = 100, xmin = xmin, alpha = alpha),
+#              rank = min_rank(x),
+#              ccdf = round((length(rank)-rank+1)/length(rank), 3))
+# exp <- tibble(x = rexp(n = 10000, rate = lambda)) %>%
+#   filter(x >= xmin) %>%
+#   slice_sample(n = 100) %>%
+#   mutate(rank = min_rank(x),
+#          ccdf = round((length(rank)-rank+1)/length(rank), 3))
+# ln <- tibble(x = rlnorm(n = 10000, meanlog = mu, sdlog = sigma)) %>%
+#   filter(x >= xmin) %>%
+#   slice_sample(n = 100) %>%
+#   mutate(rank = min_rank(x),
+#          ccdf = round((length(rank)-rank+1)/length(rank), 3))
+#
+# clauset_5a <- bind_rows(pl = pl, exp = exp, ln = ln, .id = "dist")
+#
+# ggplot(clauset_5a)+
+#   aes(x = x, y = ccdf, colour = dist, shape = dist)+
+#   geom_point()+
+#   scale_x_log10(labels = label_log(), breaks = c(10, 100, 1000))+
+#   scale_y_log10(labels = label_log())+
+#   geom_vline(xintercept = 15, linetype = 2)+
+#   theme_minimal()
 
 for (j in 1:length(dists)) { # Loop for distribution types
   for (i in 1:length(n)) { # Loop for n (distribution sizes)
-    if (j == 1) { # Log-normal distributions
-      single <- tibble(x = rlnorm(n = n[i], mu, sigma))
+    if (j == 1) { # Log-normal distributions, generate a large enough dist.
+                    # to filter out only values above xmin, and sample to
+                      # needed size (same for exponential)
+      single <- tibble(x = rlnorm(n = 100000, mu, sigma)) %>%
+        filter(x >= xmin) %>%
+        slice_sample(n = n[i])
     }
     if (j == 2) { # Exponential distributions
-      single <- tibble(x = rexp(n = n[i], lambda))
+      single <- tibble(x = rexp(n = 100000, lambda)) %>%
+        filter(x >= xmin) %>%
+        slice_sample(n = n[i])
     }
     if (j == 3) { # Power-law distributions
       single <- tibble(x = rplcon(n = n[i], xmin = 15, alpha = alpha))
     }
     single <- single %>%
-      mutate(set = paste0(dists[j], n[i]))
+      mutate(set = paste0(dists[j], n[i]),
+             set_type = dists[j],
+             n = n[i])
     pretest_data <- bind_rows(pretest_data, single)
   }
-}
+} # pretest_data should end with 33330 obs.
+rm(single)
 
 # Fit tail models to all distributions (this takes a while!)
 pretest_results <- dist.fit.all(x = pretest_data$x,
                                 set = pretest_data$set)
-pretest_results <- pretest_results %>%
+
+pretest_results <- pretest_results %>% # set type and n fell out, add again
   mutate(set_type = str_remove_all(set, "[10]"),
          n = parse_number(set))
+
 # Summarise results for all (12) distributions
 pretest_summary <- pretest_results %>%
   group_by(set, set_type, tail, n, ntail) %>%
   summarise()
 
-# Store output for later
-save(pretest_results, file = "Results/pretest_results.RData")
-save(pretest_summary, file = "Results/pretest_summary.RData")
+# Plot distributions of synthetic data (same as Clauset et al. 2009, fig. 5a)
+ggplot(filter(pretest_results, n == 100))+
+  aes(x = value, y = ccdf, colour = set_type, shape = set_type)+
+  geom_point()+
+  scale_x_log10(labels = label_log(), breaks = c(10, 100, 1000))+
+  scale_y_log10(labels = label_log())+
+  geom_vline(xintercept = 15, linetype = 2)+
+  theme_minimal()+
+  labs(x = "x", y = "P(x)", colour = "", shape = "")
 
 # Plot distribution type and best fit tail
 ggplot(pretest_summary)+
@@ -244,28 +260,26 @@ ggplot(pretest_summary)+
   theme_minimal()+
   labs(x = "Distribution type",
        y = "Best fit tail",
-       colour = "ntail/n")+
-  scale_size(name = "n", breaks = c(10,100,1000,10000))
+       colour = "ntail/n",
+       size = "n")+
+  scale_size(breaks = c(10,100,1000,10000))
 
-ggplot(pretest_results)+
-  aes(x = value, y = ccdf, shape = set_type)+
-  geom_point()+
-  geom_point(data = filter(pretest_results, value >= xmin & tail == "pl"),
-             colour = "red")+
-  scale_shape(solid = FALSE)+
-  scale_x_log10()+
-  scale_y_log10()+
-  theme_minimal()
-
+# Plot range of power-law fits over synthetic distributions
 ggplot(pretest_results)+
   aes(x = value, y = set)+
   geom_boxplot()+
   geom_point(data = filter(pretest_results, value >= xmin & tail == "pl"),
                colour = "red", shape = 1)+
   scale_x_log10(labels = scales::comma)+
-  labs(x = "Value", y = "Distribution")+
+  labs(x = "x", y = "Distribution")+
   theme_minimal()
 
+# Store output for later
+save(pretest_results, file = "Results/pretest_results.RData")
+save(pretest_summary, file = "Results/pretest_summary.RData")
+
+
+# Store plots, add them to text, and move on to param scan for ln
 
 # 1 Synthetic distributions -----------------------------------------------
 
