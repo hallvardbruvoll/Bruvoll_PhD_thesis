@@ -247,7 +247,7 @@ fig05_synthdist <- ggplot(filter(pretest_results, n == 100))+
   scale_x_log10(labels = label_log(), breaks = c(10, 100, 1000))+
   scale_y_log10(labels = label_log())+
   geom_vline(xintercept = 15, linetype = 2)+
-  theme_minimal()+
+  theme_bw()+
   labs(x = "x", y = "P(x)", colour = "", shape = "")
 
 # Plot distribution type and best fit tail
@@ -257,7 +257,7 @@ fig05_type_tail <- ggplot(pretest_summary)+
       size = n,
       colour = ntail/n)+
   geom_point(position = position_dodge2(width = 0.55))+
-  theme_minimal()+
+  theme_bw()+
   labs(x = "Distribution type",
        y = "Best fit tail",
        colour = "ntail/n",
@@ -272,7 +272,7 @@ fig05_synth_pl <- ggplot(pretest_results)+
                colour = "red", shape = 1)+
   scale_x_log10(labels = scales::comma)+
   labs(x = "x", y = "Distribution")+
-  theme_minimal()
+  theme_bw()
 
 # Store output
 save(pretest_results, file = "Results/pretest_results.RData")

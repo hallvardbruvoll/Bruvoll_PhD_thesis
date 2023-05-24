@@ -39,6 +39,11 @@ toc-depth: 1
 
 # Preface {.unnumbered}
 
+```{r setup, include=FALSE}
+# Set defaults for code chunks: code is not printed, figure size and alignment
+knitr::opts_chunk$set(echo = FALSE, out.width='70%', fig.asp=.75, fig.align='center')
+```
+
 Thanks to everyone.
 
 Remember to add abstracts

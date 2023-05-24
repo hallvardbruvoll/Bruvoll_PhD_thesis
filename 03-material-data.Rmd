@@ -60,9 +60,11 @@ ggplot(data = data)+
 
 -   The Žitava valley and research project
 
-## The Cucutení-Trypillia culture complex {#trypillia}
+## The Cucuteni-Trypillia culture complex {#trypillia}
 
 -   General intro to the culture
+
+Recent dating, see @harper2023.
 
 -   Trypillia architecture and house construction
 
