@@ -161,7 +161,7 @@ dist.fit.all <- function(x, set){
 #set_test <- as.factor(data$set)
 #levels(set_test)
 
-# Pre-analysis: testing for false positive power laws ---------------------
+# Pre-analysis 1: testing for false positive power laws ---------------------
 
 # Set parameter values
 mu <- 0.3
@@ -175,31 +175,6 @@ dists <- c("ln", "exp", "pl")
 # Generate data sets
 pretest_data <- tibble()
 set.seed(100) # Reproducible random numbers
-
-# Reproduce fig. 5a in Clauset et al. 2009
-# pl <- tibble(x = rplcon(n = 100, xmin = xmin, alpha = alpha),
-#              rank = min_rank(x),
-#              ccdf = round((length(rank)-rank+1)/length(rank), 3))
-# exp <- tibble(x = rexp(n = 10000, rate = lambda)) %>%
-#   filter(x >= xmin) %>%
-#   slice_sample(n = 100) %>%
-#   mutate(rank = min_rank(x),
-#          ccdf = round((length(rank)-rank+1)/length(rank), 3))
-# ln <- tibble(x = rlnorm(n = 10000, meanlog = mu, sdlog = sigma)) %>%
-#   filter(x >= xmin) %>%
-#   slice_sample(n = 100) %>%
-#   mutate(rank = min_rank(x),
-#          ccdf = round((length(rank)-rank+1)/length(rank), 3))
-#
-# clauset_5a <- bind_rows(pl = pl, exp = exp, ln = ln, .id = "dist")
-#
-# ggplot(clauset_5a)+
-#   aes(x = x, y = ccdf, colour = dist, shape = dist)+
-#   geom_point()+
-#   scale_x_log10(labels = label_log(), breaks = c(10, 100, 1000))+
-#   scale_y_log10(labels = label_log())+
-#   geom_vline(xintercept = 15, linetype = 2)+
-#   theme_minimal()
 
 for (j in 1:length(dists)) { # Loop for distribution types
   for (i in 1:length(n)) { # Loop for n (distribution sizes)
@@ -281,8 +256,86 @@ save(fig05_synthdist, file = "Results/fig05_synthdist.RData")
 save(fig05_type_tail, file = "Results/fig05_type_tail.RData")
 save(fig05_synth_pl, file = "Results/fig05_synth_pl.RData")
 
+# Pre-analysis 2: parameter scan for log-normal distributions ---------------
 
-# Store plots, add them to text, and move on to param scan for ln
+set.seed(100) # Reset random number generation
+pretest2_results <- tibble()
+
+# Set parameter values (natural logarithms)
+# 6^2 parameter combinations gives 36 different distributions
+logmean_range <- seq(1.5, 4, by = 0.5)
+exp(logmean_range)
+logsd_range <- seq(0.5, 3, by = 0.5)
+exp(logsd_range)
+n <- 1000 # 36.000 data points
+
+for (i in 1:length(logmean_range)) {
+  for (j in 1:length(logsd_range)) {
+    one_dist <- tibble(x = rlnorm(n = n,
+                                  meanlog = logmean_range[i],
+                                  sdlog = logsd_range[j]),
+                       dist = paste0(format(logsd_range[j], nsmall = 1),
+                                     "_",
+                                     format(logmean_range[i], nsmall = 1)))
+    pretest2_results <- bind_rows(pretest2_results, one_dist)
+  }
+}
+rm(one_dist)
+
+# Analyse the data (take a coffee break)
+pretest2_results <- dist.fit.all(x = pretest2_results$x,
+                                 set = pretest2_results$dist)
+# Add back values for mean and sd
+pretest2_results <- pretest2_results %>%
+  mutate(logmean = as.numeric(str_sub(set, -3, -1)),
+         logsd = as.numeric(str_sub(set, 1, 3)))
+
+pretest2_summary <- pretest2_results %>%
+  group_by(set, logmean, logsd, tail, xmin, ntail, par1) %>%
+  summarise(n = n())
+
+# Plot all distributions
+fig05_synth_ln <- ggplot(pretest2_results)+
+  aes(x = value, y = ccdf, colour = logsd, group = set)+
+  geom_line()+
+  scale_x_log10(
+  labels = scales::comma
+  )+
+  scale_y_log10()+
+  labs(x = "x", y = "P(x)", colour = "log(sd)")+
+  theme_bw()
+
+# Plot pl tails depending on meanlog and sdlog
+  # Extract default colours and add manually for consistency
+hex <- hue_pal()(3)
+hex2 <- hue_pal()(5)
+show_col(hex2)
+
+fig05_ln_tail <- ggplot(pretest2_summary)+
+  aes(x = logmean, y = logsd,
+      colour = tail, size = ntail/n, shape = tail)+
+  geom_point()+
+  scale_colour_manual(values = c(hex[1], hex[2], hex[3], hex2[5]))+
+  scale_shape_manual(values = c(16, 17, 15, 18))+
+  labs(x = "log(mean)", y = "log(sd)")+
+  theme_bw()
+
+# Plot distributions and overlay with pl tails
+fig05_ln_pl <- ggplot(pretest2_results)+
+  aes(x = value, y = set)+
+  geom_boxplot()+
+  geom_point(data = filter(pretest2_results, tail == "pl" & value >= xmin),
+             colour = "red")+
+  scale_x_log10(labels = scales::comma)+
+  labs(x = "x", y = "log(sd)_log(mean)")+
+  theme_bw()
+
+# Store output
+save(pretest2_results, file = "Results/pretest2_results.RData")
+save(pretest2_summary, file = "Results/pretest2_summary.RData")
+save(fig05_synth_ln, file = "Results/fig05_synth_ln.RData")
+save(fig05_ln_tail, file = "Results/fig05_ln_tail.RData")
+save(fig05_ln_pl, file = "Results/fig05_ln_pl.RData")
 
 # 1 Synthetic distributions -----------------------------------------------
 
@@ -353,11 +406,6 @@ ggplot(filter(test_long, !is.na(iteration)))+
   scale_colour_grey(start = 0.8, end = 0.2)+
   scale_x_log10()+
   theme_minimal()
-
-# Fit models to each subset and select/mark power-laws
-
-# Make plots/illustrations
-
 
 # 1.2 Additive process: effect of temporal resolution--------------------
 

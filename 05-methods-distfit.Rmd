@@ -41,7 +41,36 @@ fig05_synth_pl
 
 \FloatBarrier
 
-Second: Ln giving pl tail, set n, different meanlog and sdlog.
+Second: Ln giving pl tail, fixed n and no truncation, range of meanlog and sdlog.
+
+(ref:05-synth-ln) bla bla bla.
+
+```{r 05-synth-ln, fig.cap="(ref:05-synth-ln)"}
+load("Results/fig05_synth_ln.RData")
+fig05_synth_ln
+```
+
+Next.
+
+(ref:05-ln-tail) Jada jada.
+
+```{r 05-ln-tail, fig.cap="(ref:05-ln-tail)"}
+load("Results/fig05_ln_tail.RData")
+fig05_ln_tail
+```
+
+Next
+
+(ref:05-ln-pl) Tut og kjør.
+
+```{r 05-ln-pl, fig.cap="(ref:05-ln-pl)"}
+load("Results/fig05_ln_pl.RData")
+fig05_ln_pl
+```
+
+End section, test so far.
+
+\FloatBarrier
 
 ## Methodological procedure
 
@@ -62,7 +91,5 @@ Second: Ln giving pl tail, set n, different meanlog and sdlog.
 -   Present data set with categories (settlements, quarters/neighbourhoods, time samples for Vráble)
 
 -   Parameter settings: dist. types, xmin, testing the pl hypothesis etc. Minimal house-count cutoff (min. sample size). Isolating top house.
-
-## 
 
 END chapter

@@ -132,7 +132,7 @@
 \makeatother
 \subtitle{with case studies from the Linear Pottery and Trypillia cultures (5.500 - 3.500 cal. BCE)}
 \author{Hallvard Bruvoll \and Department of Archaeology, Conservation and History \and University of Oslo}
-\date{2023-05-24}
+\date{2023-05-25}
 
 \begin{document}
 \maketitle
@@ -532,13 +532,13 @@ house typology, construction, and use: Modderman et al. (1970), Coudart (1998)
 house orientation: ``origin'' hypothesis: Bradley (2001)
 
 \begin{verbatim}
-## -- Attaching core tidyverse packages ------
+## -- Attaching core tidyverse packages -----------------
 ## v dplyr     1.1.1     v readr     2.1.4
 ## v forcats   1.0.0     v stringr   1.5.0
 ## v ggplot2   3.4.2     v tibble    3.2.1
 ## v lubridate 1.9.2     v tidyr     1.3.0
 ## v purrr     1.0.1     
-## -- Conflicts ----- tidyverse_conflicts() --
+## -- Conflicts ---------------- tidyverse_conflicts() --
 ## x dplyr::filter() masks stats::filter()
 ## x dplyr::lag()    masks stats::lag()
 ## i Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
@@ -736,12 +736,53 @@ First: real vs retained distribution model, with set param values (ln, exp, and 
 
 }
 
-\caption{Boxplot of all the synthetic data sets, overlaid (in red) with the data points interpreted as power-law tails. X axis is logarithmic -- note however that the log-normal distributions are not symmetric since they are truncated with a lower threshold.}\label{fig:05-pltails}
+\caption{Boxplot of all the synthetic data sets, overlaid (in red) with the data points interpreted as power-law tails. X axis is logarithmic -- note however that the log-normal distributions do not appear symmetric since they are truncated with a lower threshold.}\label{fig:05-pltails}
 \end{figure}
 
 \FloatBarrier
 
-Second: Ln giving pl tail, set n, different meanlog and sdlog.
+Second: Ln giving pl tail, fixed n and no truncation, range of meanlog and sdlog.
+
+
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.7\linewidth]{bookdown-demo_files/figure-latex/05-synth-ln-1} 
+
+}
+
+\caption{bla bla bla.}\label{fig:05-synth-ln}
+\end{figure}
+
+Next.
+
+
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.7\linewidth]{bookdown-demo_files/figure-latex/05-ln-tail-1} 
+
+}
+
+\caption{Jada jada.}\label{fig:05-ln-tail}
+\end{figure}
+
+Next
+
+
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.7\linewidth]{bookdown-demo_files/figure-latex/05-ln-pl-1} 
+
+}
+
+\caption{Tut og kjør.}\label{fig:05-ln-pl}
+\end{figure}
+
+End section, test so far.
+
+\FloatBarrier
 
 \hypertarget{methodological-procedure}{%
 \section{Methodological procedure}\label{methodological-procedure}}
@@ -777,9 +818,6 @@ Second: Ln giving pl tail, set n, different meanlog and sdlog.
 \item
   Parameter settings: dist. types, xmin, testing the pl hypothesis etc. Minimal house-count cutoff (min. sample size). Isolating top house.
 \end{itemize}
-
-\hypertarget{section}{%
-\section{}\label{section}}
 
 END chapter
 
