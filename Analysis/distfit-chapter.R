@@ -225,19 +225,26 @@ fig05_synthdist <- ggplot(filter(pretest_results, n == 100))+
   theme_bw()+
   labs(x = "x", y = "P(x)", colour = "", shape = "")
 
+# Plot pl tails depending on meanlog and sdlog
+# Extract default colours and add manually for consistency
+hex <- hue_pal()(3)
+hex2 <- hue_pal()(5)
+my_colours <- c(hex[1], hex[2], hex[3], hex2[5])
+show_col(my_colours)
+
 # Plot distribution type and best fit tail
 fig05_type_tail <- ggplot(pretest_summary)+
   aes(x = set_type,
-      y = tail,
-      size = n,
-      colour = ntail/n)+
-  geom_point(position = position_dodge2(width = 0.55))+
+      y = n,
+      size = ntail/n,
+      shape = tail,
+      colour = tail)+
+  geom_point()+
+  scale_y_log10()+
+  scale_shape_manual(values = c(16, 17, 15, 18))+
+  scale_colour_manual(values = c(my_colours))+
   theme_bw()+
-  labs(x = "Distribution type",
-       y = "Best fit tail",
-       colour = "ntail/n",
-       size = "n")+
-  scale_size(breaks = c(10,100,1000,10000))
+  labs(x = "Distribution type")
 
 # Plot range of power-law fits over synthetic distributions
 fig05_synth_pl <- ggplot(pretest_results)+
@@ -304,12 +311,6 @@ fig05_synth_ln <- ggplot(pretest2_results)+
   scale_y_log10()+
   labs(x = "x", y = "P(x)", colour = "log(sd)")+
   theme_bw()
-
-# Plot pl tails depending on meanlog and sdlog
-  # Extract default colours and add manually for consistency
-hex <- hue_pal()(3)
-hex2 <- hue_pal()(5)
-show_col(hex2)
 
 fig05_ln_tail <- ggplot(pretest2_summary)+
   aes(x = logmean, y = logsd,
