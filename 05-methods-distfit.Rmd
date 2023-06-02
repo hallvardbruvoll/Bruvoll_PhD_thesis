@@ -52,6 +52,18 @@ fig05_synth_ln
 
 Next.
 
+In his extensive review of power-law generating mechanisms, Mark Newman [-@newman2005, p. 347-8] showed algebraically how log-normal distributions can be mistaken for power laws especially when the range of the data that is being analysed is short, and when the value of \sigma is high. More specifically, since the PDF of a log-normal on log scales is a quadratic function -- i.e. a parabola -- sufficiently smaller sections of this will be nearly indistinguishable from straight lines, and can thus be well modelled as a power law. The curvature of the function is characterised by its quadratic term, which is a fraction with *x* in the numerator and \sigma in the denominator, written $-\frac{(\ln x)^2}{2\sigma^2}$, essentially causing a flatter curvature with higher values of \sigma since this term then will vary more slowly with x [see Eq. 84 in @newman2005 for more details]. This phenomenon does not seem to be apparent in the example above, possibly since the range of \sigma used here is moderate (Newman's example is with $\sigma = 10$). though we do see in Figure \@ref(fig:05-synth-ln) that higher \sigma values generate more regular curvatures rather than the abrupt curvatures caused by low values. Figures \@ref(fig:05-ln-tail) and \@ref(fig:05-ln-pl) show that power-law tails are identified -- given the methodology presented above -- in log-normal distributions with \sigma ranging from 0.5 to 3.0 and with \mu between 1.5 and 4.0, with no obvious pattern within these ranges.
+
+```{r}
+load("Results/pretest2_summary.RData")
+pretest2_summary <- filter(pretest2_summary, tail == "pl") %>% 
+  mutate(ntail_n = ntail/n)
+```
+
+The identified power-law tails stretch across the log-normal data in a range from `r round(min(pretest2_summary$ntail_n)*100, 3)`% (3 data points out of 1000) to `r round(max(pretest2_summary$ntail_n)*100, 3)`%.
+
+new line
+
 (ref:05-ln-tail) Jada jada.
 
 ```{r 05-ln-tail, fig.cap="(ref:05-ln-tail)"}
