@@ -39,67 +39,35 @@ sierpinski <- ggplot(my_fractal)+
 
 save(sierpinski, file = "Results/sierpinski_triangle.RData")
 
-
-# Grass ------------------------------------------------------
-
-impro <- tibble(x = 0, y = 0, iter = 0)
+# with rotation -----------------------------------------------------------
+spiral <- tibble(x = 0, y = 0, iter = 0)
 iterations <- 40000
 
 for (i in 1:iterations) {
-  random <- sample(1:100, 1)
-  last_x <- last(impro$x)
-  last_y <- last(impro$y)
-  if (random == 1) {
-    one_point <- tibble(x = last_x*0.5, y = last_y*0.8+0.2, iter = i)
-  }
-  if (random == 2) {
-    one_point <- tibble(x = last_x*0.5+0.5, y = last_y*0.8+0.2, iter = i)
-  }
-  if (random == 3) {
-    one_point <- tibble(x = last_x*0.8, y = last_y*0.8+0.7, iter = i)
-  }
-  if (random > 3) {
-    one_point <- tibble(x = last_x+(last_x-0.5)*0.001, y = last_y+0.001,
-                        iter = i)
-  }
-  impro <- bind_rows(impro, one_point)
-}
-impro <- filter(impro, iter > 1000)
-
-ggplot(impro)+
-  aes(x, y)+
-  geom_tile(height = 0.0025, width = 0.0025)+
-  coord_fixed()+
-  theme_void()
-
-# with rotation -----------------------------------------------------------
-spiral <- tibble(x = 0, y = 0, iter = 0)
-iter <- 50000
-
-for (i in 1:iter) {
   last_x <- last(spiral$x)
   last_y <- last(spiral$y)
-  random <- sample(1:2, 1)
-  if (random == 1) {
-    one_point <- tibble(x = last_x*0.85+0.075, y = last_y*0.85+0.075)
-    one_point <- plothelper::rotatexy(one_point, angle = pi/3, # = 60 degrees
+  random <- sample(1:8, 1)
+  if (random > 1) {
+    one_point <- tibble(x = last_x*0.95, y = last_y*0.95)
+    one_point <- plothelper::rotatexy(one_point, angle = pi/7,
                                       xmiddle = 0.5, ymiddle = 0.5) %>%
       mutate(iter = i)
    }
-   if (random == 2) {
-     one_point <- tibble(x = last_x*0.3+0.9, y = last_y*0.3+0.6, iter = i)
+   if (random == 1) {
+     one_point <- tibble(x = last_x*0.25+0.7, y = last_y*0.25+0.5, iter = i)
    }
   spiral <- bind_rows(spiral, one_point)
 }
 spiral <- filter(spiral, iter > 100)
 
-spiral_fractal <- ggplot(spiral)+
+#spiral_fractal
+romanesco <- ggplot(spiral)+
   aes(x, y)+
-  geom_tile(height = 0.003, width = 0.003)+
+  geom_tile(height = 0.0025, width = 0.0025)+
   coord_fixed()+
   theme_void()
 
-save(spiral_fractal, file = "Results/spiral_fractal.RData")
+save(romanesco, file = "Results/romanesco.RData")
 
 # Another one -------------------------------------------------------------
 
@@ -175,3 +143,38 @@ von_koch_curve <- ggplot(von_koch)+
   theme_void()
 
 save(von_koch_curve, file = "Results/von_koch.RData")
+
+# galaxy ------------------------------------------------------------------
+# this is so much fun
+galaxy <- tibble(x = 0, y = 0, iter = 0)
+iterations <- 40000
+
+for (i in 1:iterations) {
+  last_x <- last(galaxy$x)
+  last_y <- last(galaxy$y)
+  random <- sample(1:9, 1)
+  if (random > 2) {
+    one_point <- tibble(x = last_x*0.85, y = last_y*0.85)
+    one_point <- plothelper::rotatexy(one_point, angle = pi/8,
+                                      xmiddle = 0.5, ymiddle = 0.5) %>%
+      mutate(iter = i)
+  }
+  if (random == 1) {
+    one_point <- tibble(x = last_x*0.4, y = last_y*0.4, iter = i)
+  }
+  if (random == 2) {
+    one_point <- tibble(x = last_x*0.4+0.6, y = last_y*0.4+0.6, iter = i)
+  }
+  galaxy <- bind_rows(galaxy, one_point)
+}
+galaxy <- filter(galaxy, iter > 100)
+
+fuzzy_wave <- ggplot(galaxy)+
+  aes(x, y)+
+  geom_tile(height = 0.002, width = 0.002)+
+  coord_fixed()+
+  theme_void()
+
+save(fuzzy_wave, file = "Results/fuzzy_wave.RData")
+
+# something complex -------------------------------------------------------
