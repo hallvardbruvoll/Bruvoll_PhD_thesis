@@ -177,4 +177,89 @@ fuzzy_wave <- ggplot(galaxy)+
 
 save(fuzzy_wave, file = "Results/fuzzy_wave.RData")
 
-# something complex -------------------------------------------------------
+# fern branch -------------------------------------------------------
+fern <- tibble(x = 0, y = 0, iter = 0)
+iterations <- 40000
+
+for (i in 1:iterations) {
+  random <- sample(1:6, 1)
+  last_x <- last(fern$x)
+  last_y <- last(fern$y)
+  if (random == 1) {
+    one_point <- tibble(x = last_x*0.5, y = last_y*0.3)
+    one_point <- plothelper::rotatexy(one_point, angle = pi/4,
+                                      xmiddle = 0.5, ymiddle = 0) %>%
+      mutate(iter = i)
+  }
+  if (random == 2) {
+    one_point <- tibble(x = last_x*0.35+0.4, y = last_y*0.25+0.15)
+    one_point <- plothelper::rotatexy(one_point, angle = 5*pi/3,
+                                      xmiddle = 0.3, ymiddle = 0) %>%
+      mutate(iter = i)
+  }
+  if (random > 2) {
+    one_point <- tibble(x = last_x*0.8+0.1, y = last_y*0.8+0.2,
+                        iter = i)
+  }
+  fern <- bind_rows(fern, one_point)
+}
+fern <- filter(fern, iter > 100)
+
+fern_plot <- ggplot(fern)+
+  aes(x, y)+
+  geom_tile(height = 0.0025, width = 0.0025)+
+  coord_fixed()+
+  theme_void()
+
+save(fern_plot, file = "Results/fern_plot.RData")
+
+# lightning bolt (really the last one!) -----------------------------------
+
+bolt <- tibble(x = 0, y = 0, iter = 0)
+iterations <- 100
+
+for (i in 1:iterations) {
+  random <- sample(1:10, 1)
+  last_x <- last(bolt$x)
+  last_y <- last(bolt$y)
+  if (random == 1) {
+    one_point <- tibble(x = last_x*0.5+0.25,
+                        y = last_y*0.5+0.1)
+    one_point <- plothelper::rotatexy(one_point, angle = pi/4,
+                                      xmiddle = 0.5, ymiddle = 0.1) %>%
+      mutate(iter = i)
+  }
+  if (random == 2) {
+    one_point <- tibble(x = last_x*0.4+0.3, y = last_y*0.4+0.2)
+    one_point <- plothelper::rotatexy(one_point, angle = 5*pi/3,
+                                      xmiddle = 0.5, ymiddle = 0.2) %>%
+      mutate(iter = i)
+  }
+  if (random == 3) {
+    one_point <- tibble(x = last_x*0.8, y = last_y*0.8+0.4, iter = i)
+  }
+  if (random > 3) { # random walk for most of the iterations
+    one_point <- tibble(x = last_x+sample(c(0.0025, -0.0025), 1),
+                        y = last_y+0.0025,
+                        iter = i)
+    for (j in 1:100) {
+      last_x2 <- last(one_point$x)
+      last_y2 <- last(one_point$y)
+      one_branch <- tibble(x = last_x2+sample(c(0.0025, -0.0025), 1),
+                           y = last_y2+0.0025,
+                           iter = i)
+      one_point <- bind_rows(one_point, one_branch)
+    }
+
+  }
+  bolt <- bind_rows(bolt, one_point)
+}
+bolt <- filter(bolt, iter > 5)
+
+ggplot(bolt)+
+  aes(x, y)+
+  geom_tile(height = 0.0025, width = 0.0025)+
+  coord_fixed()+
+  theme_void()
+
+# Not working, get back to it later

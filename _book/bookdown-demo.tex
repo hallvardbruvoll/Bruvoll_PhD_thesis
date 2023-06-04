@@ -132,7 +132,7 @@
 \makeatother
 \subtitle{with case studies from the Linear Pottery and Trypillia cultures (5.500 - 3.500 cal. BCE)}
 \author{Hallvard Bruvoll \and Department of Archaeology, Conservation and History \and University of Oslo}
-\date{2023-05-25}
+\date{2023-06-04}
 
 \begin{document}
 \maketitle
@@ -532,13 +532,13 @@ house typology, construction, and use: Modderman et al. (1970), Coudart (1998)
 house orientation: ``origin'' hypothesis: Bradley (2001)
 
 \begin{verbatim}
-## -- Attaching core tidyverse packages -----------------
+## -- Attaching core tidyverse packages ---------------
 ## v dplyr     1.1.1     v readr     2.1.4
 ## v forcats   1.0.0     v stringr   1.5.0
 ## v ggplot2   3.4.2     v tibble    3.2.1
 ## v lubridate 1.9.2     v tidyr     1.3.0
 ## v purrr     1.0.1     
-## -- Conflicts ---------------- tidyverse_conflicts() --
+## -- Conflicts -------------- tidyverse_conflicts() --
 ## x dplyr::filter() masks stats::filter()
 ## x dplyr::lag()    masks stats::lag()
 ## i Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
@@ -756,6 +756,12 @@ Second: Ln giving pl tail, fixed n and no truncation, range of meanlog and sdlog
 
 Next.
 
+In his extensive review of power-law generating mechanisms, Mark Newman (2005:347--48) showed algebraically how log-normal distributions can be mistaken for power laws especially when the range of the data that is being analysed is short, and when the value of \sigma is high. More specifically, since the PDF of a log-normal on log scales is a quadratic function -- i.e.~a parabola -- sufficiently smaller sections of this will be nearly indistinguishable from straight lines, and can thus be well modelled as a power law. The curvature of the function is characterised by its quadratic term, which is a fraction with \emph{x} in the numerator and \sigma in the denominator, written \(-\frac{(\ln x)^2}{2\sigma^2}\), essentially causing a flatter curvature with higher values of \sigma since this term then will vary more slowly with x (see Eq. 84 in Newman 2005 for more details). This phenomenon does not seem to be apparent in the example above, possibly since the range of \sigma used here is moderate (Newman's example is with \(\sigma = 10\)). though we do see in Figure \ref{fig:05-synth-ln} that higher \sigma values generate more regular curvatures rather than the abrupt curvatures caused by low values. Figures \ref{fig:05-ln-tail} and \ref{fig:05-ln-pl} show that power-law tails are identified -- given the methodology presented above -- in log-normal distributions with \sigma ranging from 0.5 to 3.0 and with \mu between 1.5 and 4.0, with no obvious pattern within these ranges.
+
+The identified power-law tails stretch across the log-normal data in a range from 0.3\% (3 data points out of 1000) to 23.5\%.
+
+new line
+
 
 
 \begin{figure}
@@ -844,6 +850,10 @@ A multiplicative process is one in which a term is multiplied with itself a numb
 \item
   Additive process
 \end{enumerate}
+
+Lumping of samples may be done for two main reasons (in archaeology): 1 - the sample size is too small, and lumping together several contemporary samples can raise the sample size to an acceptable level (spatial lumping), or 2 - it is impossible to temporally disentangle elements within a settlement, i.e.~reduce temporal resolution to coeval elements, in which case one has no option but temporal lumping (accepting a low temporal resolution). The problem can be further broken down to two case types: a) all lumped samples are really drawn from the same distribution, and b) they are not similarly distributed (\textbf{illustrate with table}). For spatial lumping this degree of similarity can be assessed, but not necessarily for temporal lumping. But even when it can be assessed, the lumping needs to be justified in social terms. As an example, several spatial samples (e.g.~villages in a region) can have house-size distributions with no significant differences between them (ANOVA), but at the same time be functionally entirely independent, in which case it is more logical to augment the sample size of a single one through simulation and evaluate plausibility through bootstrapping, rather than by lumping of all samples, \textbf{rewrite this more clearly}. On the other hand, house sizes can be significantly different between quarters or suburbs within a city or metropolitan area, or even between cities in a region or country, but if they all function together in a coherent system, they may reflect a spatial segregation between different strata in the society, and it makes much sense to lump and analyse them together.
+
+When it comes to temporal lumping, given that a settlement does not undergo substantial cultural changes during its timespan, a workaround to evaluate whether the house-size distribution evolves significantly over time may be to target a number of size categories for \textsuperscript{14}C dating, and to check that they all stretch over the entire range of the settlement's duration, and if yes, accept to analyse the whole distribution as one. \textbf{recheck this after I have my results, maybe move it all to summary}. 𝜆
 
 \hypertarget{settlements}{%
 \section{Settlements}\label{settlements}}
