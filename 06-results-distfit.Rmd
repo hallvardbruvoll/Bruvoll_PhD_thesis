@@ -1,6 +1,6 @@
 # Results: Distribution fitting {#results-distfit}
 
-## Synthetic distributions
+## Synthetic distributions {#distfit-synth}
 
 ### Multiplicative process
 

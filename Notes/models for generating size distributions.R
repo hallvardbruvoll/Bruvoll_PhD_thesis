@@ -36,15 +36,16 @@ hist(my_village$house_size)
 # added linearly in time, and they all grow exponentially without limit)
 
 #houses are added and grow linearly, but are abandoned exponentially
-my_village <- tibble(house_size = rep(1, 100))
+my_village <- tibble(house_size = rep(1, 100), iter = rep(1, 100))
 scission_rate <- 0.1
 reps <- 0
 
 while (reps < 1000) {
   my_village$house_size <- my_village$house_size+1
+  my_village$iter <- my_village$iter+1
   my_village <- slice_sample(my_village, prop = 1-scission_rate)
   my_village <- my_village %>%
-    add_row(house_size = rep(1, 10))
+    add_row(house_size = rep(1, 10), iter = rep(1, 10))
   reps <- reps+1
 }
 my_village <- my_village %>%
@@ -54,5 +55,5 @@ my_village <- my_village %>%
 ggplot(my_village)+
   aes(x = house_size, y = ccdf)+
   geom_point()+
-  scale_x_log10()+
+#  scale_x_log10()+
   scale_y_log10()
