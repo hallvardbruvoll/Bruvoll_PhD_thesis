@@ -1,3 +1,5 @@
+# This file is just personal notes.
+
 my_village <- tibble(house_size = rep_len(1, length.out = 1000))
 
 growth_rate <- 1
@@ -18,7 +20,8 @@ while (reps < 100) {
 hist(my_village$house_size)
 # oups, that's a power law. Combination of exponentials.
 
-#houses are added linearly, and grow exponentially
+# exponential 1:
+# houses are added linearly, and grow exponentially
 my_village <- tibble(house_size = 1)
 growth_rate <- 0.05
 
@@ -35,7 +38,8 @@ hist(my_village$house_size)
 # that's more exponential, but also a more unlikely scenario (new houses are
 # added linearly in time, and they all grow exponentially without limit)
 
-#houses are added and grow linearly, but are abandoned exponentially
+# exponential 2:
+# houses are added and grow linearly, but are abandoned exponentially
 my_village <- tibble(house_size = rep(1, 100), iter = rep(1, 100))
 scission_rate <- 0.1
 reps <- 0
@@ -57,3 +61,35 @@ ggplot(my_village)+
   geom_point()+
 #  scale_x_log10()+
   scale_y_log10()
+
+# log-normal: product of random numbers
+z <- runif(1000, min = 0.95, max = 1.2)
+prod(sample(z, size = 50, replace = TRUE))
+
+test <- tibble(x = map_dbl(1:1000, function(x) prod(sample(z, size = 100, replace = TRUE))))
+ggplot(test)+
+  aes(x = x)+
+  geom_density()
+  scale_x_log10()
+
+# log-normal: sum of random exponents
+test2 <- tibble(log_x = map_dbl(1:1000, function(x) sum(sample(log(z), size = 100, replace = TRUE))))
+ggplot(test2)+
+  aes(x = exp(log_x))+
+  geom_density()
+
+# log-normal: exponential of normal
+test3 <- tibble(a = rnorm(1000, mean = 20, sd = 3),
+                b = exp(-0.2)^a)
+ggplot(test3)+
+  aes(x = b)+
+  geom_density()
+
+# log-normal: normal of exponential
+test4 <- tibble(a = rexp(1000, rate = 0.1),
+                b = 1/(sqrt(2*pi)*1)*exp((-(a-10)^2)/(2*1^2)))
+ggplot(test4)+
+  aes(x = b)+
+  geom_density()+
+  scale_x_log10() # Tried some different values, does work but doesn't look nice
+
