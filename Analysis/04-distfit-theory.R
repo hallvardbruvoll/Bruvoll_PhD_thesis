@@ -1,6 +1,5 @@
 # Code for generating the plots in chapter 04: House sizes and social meaning
-
-
+library(tidyverse)
 
 
 # Log-normal distributions: financial investment example ---------------------
@@ -60,4 +59,64 @@ save(fig04_multi_exp, file = "Results/fig04_multi_exp.RData")
 
 fig04_lnorm_exp <- plot_grid(lnorm_from_exp, lnorm_from_exp_log, labels = "auto")
 save(fig04_lnorm_exp, file = "Results/fig04_lnorm_exp.RData")
+
+# Log-normal: crop yields example and Gibrat's law --------------------------
+
+set.seed(100)
+
+HERE!
+
+# make table of 100 individual runs
+test6 <- tibble()
+# rate is proportional to house size,
+# and starting point is normally distributed
+for (i in 1:100) {
+  y1 <- sample(rnorm(100, mean = 2, sd = 1), size = 1)
+  one_run <- tibble(x = 0:100,
+                    y = accumulate(x, y1*x^x),
+                    run = i)
+  test6 <- bind_rows(test6, one_run)
+}
+
+# plot all runs in linear and log scales
+#multi_exp
+ggplot(test6)+
+  aes(x, y, colour = as.factor(run))+
+  geom_line()+
+#  scale_y_log10()+
+  theme_bw()+
+  theme(legend.position = "none")
+
+#multi_exp
+ggplot(test6)+
+  aes(x, y, colour = as.factor(run))+
+  geom_line()+
+  scale_y_log10()+
+  theme_bw()+
+  theme(legend.position = "none")
+
+# plot density of all values at fixed x
+#lnorm_from_exp
+ggplot(filter(test6, x == 100))+
+  aes(x = y)+
+  geom_density()+
+  # scale_x_log10()+
+  theme_bw()+
+  labs(x = "y (x = 100)", y = "p(y)")
+
+#lnorm_from_exp_log
+ggplot(filter(test6, x == 100))+
+  aes(x = y)+
+  geom_density()+
+  scale_x_log10()+
+  theme_bw()+
+  labs(x = "y (x = 100)", y = "p(y)")
+
+library(cowplot)
+fig04_multi_exp <- plot_grid(multi_exp, multi_exp_log, labels = "auto")
+save(fig04_multi_exp, file = "Results/fig04_multi_exp.RData")
+
+fig04_lnorm_exp <- plot_grid(lnorm_from_exp, lnorm_from_exp_log, labels = "auto")
+save(fig04_lnorm_exp, file = "Results/fig04_lnorm_exp.RData")
+
 
