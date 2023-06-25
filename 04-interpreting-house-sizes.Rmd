@@ -20,7 +20,8 @@ P. Květina and J. Řídký point out both architecture (construction, size, ori
 
 Discuss some archaeo references
 
--   Schiesberg 2010 2016, go through refs in Zotero, family size and houses for the LBK
+-   Schiesberg 2010 2016, go through refs in Zotero, family size and houses for the LBK.
+-   Post-marital residency and (average) house size: @hrncir2020.
 
 Functional difference:
 
@@ -117,7 +118,7 @@ p(x)=\frac{1}{\sqrt{2\pi}\sigma x}e^{-(\log(x)-\mu)^2/2\sigma^2}.
 (\#eq:log-normal)
 \end{equation}
 ```
-The $\mu$ (mean) and $\sigma$ (standard deviation) parameters are usually understood as the equivalent values associated with the normal distribution of $\log(x)$. It can be thought of as a combination of the normal and the exponential distributions, and like these, it has been shown to apply well to a wide range of natural and social phenomena, from the growth of organisms in biology to the pricing of options in finance [see @mitzenmacher2004, pp. 235-7; @johnson1994, pp. 209-11, 238-40]. One implication of $\log (x)$ being normally distributed, is that the density curve of $x$ will appear as a normal bell curve when plotted with a logarithmic scale on the x-axis (#fig). With linear scales, the curve is skewed with the mode to the left and a tail of high values to the right. More technically, the (natural) logarithm of a variable ($x$) is the variable of exponents that may raise $e$ to the values of $x$. A linear increment in a variable of exponents -- say from 1 to 2 -- will, with the same base, correspond to an exponential increment in powers (the result of exponentiation), as $e^1 \approx 2.718$ and $e^2 \approx 7.389$. Thus, if the exponents of $e$ that correspond to the values of $x$ are normally distributed, then $x$ itself will resemble an exponentially stretched normal distribution.
+The $\mu$ (mean) and $\sigma$ (standard deviation) parameters are usually understood as the equivalent values associated with the normal distribution of $\log(x)$. It can be thought of as a combination of the normal and the exponential distributions, and like these, it has been shown to apply well to a wide range of natural and social phenomena, from the growth of organisms in biology to the pricing of options in finance [see @mitzenmacher2004, pp. 235-7; @johnson1994, pp. 209-11, 238-40]. One implication of $\log (x)$ being normally distributed, is that the density curve of $x$ will appear as a normal bell curve when plotted with a logarithmic scale on the x-axis (#fig). With linear scales, the curve is skewed with the mode to the left and a tail of high values to the right. More technically, the (natural) logarithm of a variable ($x$) is the variable of exponents that may raise $e$ to the values of $x$. A linear increment in a variable of exponents -- say from 1 to 2 -- will, with the same base, correspond to an exponential increment in powers (the result of exponentiation), as $e^1 \approx 2.718$ and $e^2 \approx 7.389$. Thus, if the exponents of $e$ that correspond to the values of $x$ are normally distributed, then $x$ itself will resemble an exponentially stretched normal distribution, which is a log-normal distribution.
 
 Since exponents represent repeated multiplication and normal distributions result from random additive processes (see above), log-normal distributions may be most easily understood as resulting from random multiplicative processes. The product rule of logarithms states that the logarithm of a product of numbers equals the sum of the logarithms of those same numbers. This can be expressed as $\log (ab) = \log (a) + \log (b)$. Then, since the sums of many random numbers are normally distributed according to the Central Limit Theorem, the logarithm of the product of many random numbers (that is, these numbers multiplied together) should also be normally distributed [see *e.g.* @newman2005, pp. 347-8 for more elaboration].
 
@@ -137,23 +138,25 @@ load("Results/fig04_lnorm_exp.RData")
 fig04_lnorm_exp
 ```
 
+This process is known as *Gibrat's law*, after the French engineer Robert Gibrat who HERE
+
 The modern financial market is of course not directly applicable to the Neolithic, but a number of multiplicative processes involving random fluctuations may also be relevant to Neolithic social structure or economy. One obvious example would be that of crop yields over time. Assuming that crop cultivation in a village is organised at a household level, and that households grow their crops at separate locations in the vicinity, random differences in soil quality, sunlight, water, exposure to disease and so on, would arguably generate normally distributed yields in one year (the yield volume being the sum of many random effects). But given that the yield the year after also depends on the current yield through the size of the surplus that will be available for sowing, a randomly large yield one year will have better chances of producing an even larger yield the next year, and so on, in the same way a large financial return of a lucky investor one year is more likely to reach an even higher return later if reinvested. Supposing again that house size reflects household size linearly, and that larger yields can sustain larger households, this process could explain the emergence of a log-normal house-size distribution in a village over time.
 
-For Neolithic crop cultivation it is in many cases more reasonable to assume that cultivation took place very close to or even within the village, in which case the conditions for yield volume would be very similar between households (#ref needed?). Cultivation could also be organised collectively rather than at the single household level, or as a combination depending on the crop. In such cases, a good or a bad harvest would affect all households equally, and unequally distributions would not emerge easily (#Ref. to Kohler 2018). However, even in such scenarios, small random differences in the initial sowing volumes of individual households could grow exponentially over time and produce a log-normal distribution of household yields.
+For Neolithic crop cultivation it is in many cases more reasonable to assume that cultivation took place very close to or even within the village, in which case the conditions for yield volume would be very similar between households (#ref needed?). Cultivation could also be organised collectively rather than at the single household level, or as a combination depending on the crop. In such cases, a good or a bad harvest would affect all households equally, and skewed distributions would not emerge easily (#Ref. to Kohler 2018). However, even in such scenarios, small random differences in the initial sowing volumes of individual households could grow exponentially over time and produce a log-normal distribution of household yields, though with smaller spread between the highest and lowest values.
 
-Theory: multiplicative processes: Gibrat's law ("proportionate effects"). Example with only initial random differences and exponential divergence over time!
+A somewhat different approach jada jada, @schiesberg2010, p. 61-4. Combination of a Poisson distribution (*i.e.* discrete skewed distribution) for number of children, and binomial (discrete normal, with two possible outcomes) for male or female offspring, for probability of number of male offsprings --\> skewed.
 
 Normal but for variables that can only be positive, @johnson1994, p. 239.
 
 \FloatBarrier
 
-### Power-law distributions, hierarchy and scale invariance
+### Power-law distributions, preferential attachment and hierarchy
 
 fdsa
 
 Preferential attachment, optimisation, [@mitzenmacher2004]
 
-Yule-Simon something.
+Yule process, Matthew effect, rich-gets-richer.
 
 Combination log-normal + exponential (i.e. normal + exponential + exponential) [@reed2001; @reed2002]
 

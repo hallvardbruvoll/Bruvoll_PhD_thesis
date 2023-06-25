@@ -45,6 +45,8 @@ house typology, construction, and use: @modderman1970, @coudart1998
 
 house orientation: "origin" hypothesis: @bradley2001
 
+Patrilocality in LBK based on Sr isotopes: @hrncir2020a (read this more carefully), and other data (check) @schiesberg2016.
+
 ```{r}
 #example of how a pl distribution can be constructed
 library(tidyverse)
