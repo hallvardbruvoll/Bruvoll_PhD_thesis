@@ -24,13 +24,13 @@ for (i in 1:100) {
 }
 
   # plot all runs in linear and log scales
-multi_exp <- ggplot(test5)+
+multi_exp <- ggplot(filter(test5, x < 40))+
   aes(x, y, colour = as.factor(run))+
   geom_line()+
   theme_bw()+
   theme(legend.position = "none")
 
-multi_exp_log <- ggplot(test5)+
+multi_exp_log <- ggplot(filter(test5, x < 40))+
   aes(x, y, colour = as.factor(run))+
   geom_line()+
   scale_y_log10()+
@@ -38,18 +38,18 @@ multi_exp_log <- ggplot(test5)+
   theme(legend.position = "none")
 
   # plot density of all values at fixed x
-lnorm_from_exp <- ggplot(filter(test5, x == 100))+
+lnorm_from_exp <- ggplot(filter(test5, x == 40))+
   aes(x = y)+
   geom_density()+
   theme_bw()+
-  labs(x = "y (x = 100)", y = "p(y)")
+  labs(x = "y (x = 40)", y = "p(y)")
 
-lnorm_from_exp_log <- ggplot(filter(test5, x == 100))+
+lnorm_from_exp_log <- ggplot(filter(test5, x == 40))+
   aes(x = y)+
   geom_density()+
   scale_x_log10()+
   theme_bw()+
-  labs(x = "y (x = 100)", y = "p(y)")
+  labs(x = "y (x = 40)", y = "p(y)")
 
 library(cowplot)
 fig04_multi_exp <- plot_grid(multi_exp, multi_exp_log, labels = "auto")
@@ -57,4 +57,41 @@ save(fig04_multi_exp, file = "Results/fig04_multi_exp.RData")
 
 fig04_lnorm_exp <- plot_grid(lnorm_from_exp, lnorm_from_exp_log, labels = "auto")
 save(fig04_lnorm_exp, file = "Results/fig04_lnorm_exp.RData")
+
+
+# not log-normal without spread in rate -----------------------------------
+
+# generate 100 random numbers (uniform distribution) around 1,
+# to use as randomly fluctuating rate in exponential dist.
+set.seed(100)
+lambda <- runif(n = 100, min = 0.75, max = 1.4)
+
+# make table of 100 individual runs
+test6 <- tibble()
+init <- rnorm(n = 100, mean = 10, sd = 2) # initial values are normally distr.
+for (i in 1:100) {
+  one_run <- tibble(x = 0:100,
+                    y = accumulate(lambda, prod, .init = sample(init, 1)),
+                    # product of previous y and next lambda
+                    run = i)
+  test6 <- bind_rows(test6, one_run)
+}
+
+# plot all runs
+still_normal <- ggplot(filter(test6, x < 40))+
+  aes(x, y, colour = as.factor(run))+
+  geom_line()+
+  theme_bw()+
+  theme(legend.position = "none")
+
+# plot density of all values at fixed x
+still_normal_dens <- ggplot(filter(test6, x == 40))+
+  aes(x = y)+
+  geom_density()+
+  theme_bw()+
+  labs(x = "y (x = 40)", y = "p(y)")
+
+library(cowplot)
+fig04_still_normal <- plot_grid(still_normal, still_normal_dens, labels = "auto")
+save(fig04_still_normal, file = "Results/fig04_still_normal.RData")
 

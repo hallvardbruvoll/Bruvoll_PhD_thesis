@@ -4,4 +4,6 @@ fdsasdf
 
 Also mention here fractals or related concepts used as a metaphor, with no mathematics involved [e.g. @chapman2006; @sherratt2004; @sindbæk2022; @whitridge2016].
 
+Check for "fractal + archaeology" in WorldCat.
+
 END Chapter

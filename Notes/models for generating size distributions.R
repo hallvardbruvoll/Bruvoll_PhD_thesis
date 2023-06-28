@@ -93,3 +93,10 @@ ggplot(test4)+
   geom_density()+
   scale_x_log10() # Tried some different values, does work but doesn't look nice
 
+test1 <- tibble(z = dnorm(x = seq(0,10, length.out = 100), mean = 5, sd = 1),
+                x = seq(0,10, length.out = 100),
+                xlnorm = exp(x))
+
+ggplot(test1)+
+  aes(x = log(xlnorm), y = x)+
+  geom_point()
