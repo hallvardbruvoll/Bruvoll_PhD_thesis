@@ -39,6 +39,7 @@ Questions of contact and even creolisation with local hunter-gatherer groups in 
 End of LBK as collapse? The whole culture as an adaptive cycle: @gronenborn2014.
 
 -   Organisation of Linear Pottery society: egalitarian or hierarchic?
+    -   Cemeteries: @jeunesse2022, check @gaydarska2023 and @augereau2021.
 -   Linear Pottery architecture and house construction
 
 origin of the longhouse: @bánffy2020, @coudart2015, @last2015
@@ -68,19 +69,24 @@ ggplot(data = data)+
 
 -   General intro to the culture
 
-Recent dating, see @harper2023.
+Recent dating, see @harper2023, @shatilo2021.
 
 -   Trypillia architecture and house construction
+
+    -   @pickartz2019, pp. 1649-50: "unburnt" and "eroded" are misleading labels, since highly burnt and even vitrified material regularly found during excavation of these. Probably reflecting houses that are constructed with less daub, without an oven installation, and/or without raised clay platform, thus causing significantly weaker magnetic signals. These houses may in fact represent entirely different social functions from regular houses, but there is as for now no consensus as to what this may be (e.g. artisanal, storage etc.)
 
 -   Trypillia social organisation: current debate
 
 Side note on Varna: Lichardus (1991; also Gimbutas), as discussed in @kadrow2013, proposed that the social inequality observed at Varna in the mid-5th millennium, was already then adopted from pastoral North Pontic steppe cultures (*check this and delete if unsure*); cf. @chapman2006 -- three social levels interpreted from grave goods, but not clear if these are really discrete or constructed on a continuum. The term *fractal* is here used purely as a metaphor for complex personhood structures, rather in opposition to the described social hierarchy.
 
--   The B2/C1 and the mega-sites of the Southern Bugh -- Dnipro interfluve
+-   The B2/C1 and the mega-sites of the Southern Bug -- Dnieper interfluve
+-   The urbanism debate: Comparison with Uruk in Müller and CHECK; low-density urbanism for Nebelivka: check for refs. in @ohlrau2022,p .91 cc. Mega-sites as *anomalocivitates*: @ohlrau2022 and @sindbæk2022.
 
 ## Reading site plans from geomagnetic imagery
 
 -   Caveats: fill in here.
+
+@pickartz2021.
 
 ## Synthetic data
 

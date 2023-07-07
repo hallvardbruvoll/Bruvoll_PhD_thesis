@@ -135,7 +135,7 @@
 \makeatother
 \subtitle{with case studies from the Linear Pottery and Trypillia cultures (5.500 - 3.500 cal. BCE)}
 \author{Hallvard Bruvoll \and Department of Archaeology, Conservation and History \and University of Oslo}
-\date{2023-06-28}
+\date{2023-07-07}
 
 \begin{document}
 \maketitle
@@ -528,6 +528,12 @@ End of LBK as collapse? The whole culture as an adaptive cycle: Gronenborn et al
 \tightlist
 \item
   Organisation of Linear Pottery society: egalitarian or hierarchic?
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Cemeteries: Jeunesse (2022), check Gaydarska et al. (2023) and Augereau (2021).
+  \end{itemize}
 \item
   Linear Pottery architecture and house construction
 \end{itemize}
@@ -541,13 +547,13 @@ house orientation: ``origin'' hypothesis: Bradley (2001)
 Patrilocality in LBK based on Sr isotopes: Hrnčíř, Vondrovský, and Květina (2020) (read this more carefully), and other data (check) Schiesberg (2016).
 
 \begin{verbatim}
-## -- Attaching core tidyverse packages --------- tidyverse 2.0.0 --
+## -- Attaching core tidyverse packages -------------------------------- tidyverse 2.0.0 --
 ## v dplyr     1.1.1     v readr     2.1.4
 ## v forcats   1.0.0     v stringr   1.5.0
 ## v ggplot2   3.4.2     v tibble    3.2.1
 ## v lubridate 1.9.2     v tidyr     1.3.0
 ## v purrr     1.0.1     
-## -- Conflicts --------------------------- tidyverse_conflicts() --
+## -- Conflicts -------------------------------------------------- tidyverse_conflicts() --
 ## x dplyr::filter() masks stats::filter()
 ## x dplyr::lag()    masks stats::lag()
 ## i Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
@@ -570,11 +576,17 @@ Patrilocality in LBK based on Sr isotopes: Hrnčíř, Vondrovský, and Květina 
   General intro to the culture
 \end{itemize}
 
-Recent dating, see Harper et al. (2023).
+Recent dating, see Harper et al. (2023), Shatilo (2021).
 
 \begin{itemize}
 \item
   Trypillia architecture and house construction
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Pickartz et al. (2019), pp.~1649-50: ``unburnt'' and ``eroded'' are misleading labels, since highly burnt and even vitrified material regularly found during excavation of these. Probably reflecting houses that are constructed with less daub, without an oven installation, and/or without raised clay platform, thus causing significantly weaker magnetic signals. These houses may in fact represent entirely different social functions from regular houses, but there is as for now no consensus as to what this may be (e.g.~artisanal, storage etc.)
+  \end{itemize}
 \item
   Trypillia social organisation: current debate
 \end{itemize}
@@ -584,7 +596,9 @@ Side note on Varna: Lichardus (1991; also Gimbutas), as discussed in Kadrow (201
 \begin{itemize}
 \tightlist
 \item
-  The B2/C1 and the mega-sites of the Southern Bugh -- Dnipro interfluve
+  The B2/C1 and the mega-sites of the Southern Bug -- Dnieper interfluve
+\item
+  The urbanism debate: Comparison with Uruk in Müller and CHECK; low-density urbanism for Nebelivka: check for refs. in Ohlrau (2022),p .91 cc. Mega-sites as \emph{anomalocivitates}: Ohlrau (2022) and Sindbæk (2022).
 \end{itemize}
 
 \hypertarget{reading-site-plans-from-geomagnetic-imagery}{%
@@ -595,6 +609,12 @@ Side note on Varna: Lichardus (1991; also Gimbutas), as discussed in Kadrow (201
 \item
   Caveats: fill in here.
 \end{itemize}
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\tightlist
+\item
+\end{enumerate}
 
 \hypertarget{synthetic-data}{%
 \section{Synthetic data}\label{synthetic-data}}
@@ -654,9 +674,31 @@ Functional difference:
 \hypertarget{distributions}{%
 \section{Distribution types and their underlying mechanisms}\label{distributions}}
 
-The main question in this part of the thesis is on the nature of house-size differences in the studied contexts, and to explain them either as being due to random fluctuations or as a material expression of a more structural inequality, or something in-between. In statistical terms, this is a question of distributions. A distribution is a mathematical model of the spread of data along a variable or axis, and it can be modelled on empirical data as a succinct description, or used to predict unobserved data (e.g.~future developments, or, in the case of archaeology, data that is lost to taphonomy). In theory, there is an infinite number of possible distributions, as there is no limit to how many parameters one can include to fit the data. It is however generally considered good practice in statistics to limit the number of parameters and identify the simplest possible model that gives a good fit, since a larger number of parameters can often lead to a better fit, but at the same time be harder to explain in terms of underlying mechanisms. Adding many parameters only to achieve a marginally better fit is referred to as \emph{overfitting} (\#ref?), and for most real-world contexts there is a limited number of model types that can be considered reasonable candidates. In cases where we are interested in inequality or uneven distributions of data (so-called \emph{skewed} distributions), the most likely distribution models are those that can be described as \emph{heavy-tailed}, meaning that on typical graphical representations (like density/PDF plots or histograms) they will show a characteristic stretch of some of the data towards the right end of the x-axis, while most of the data remains on the left side (Figure \#ADD illustration). The opposite orientation is also possible in theory, in which case the distribution can be referred to as left-tailed. It is important to keep in mind however, that not all distributions are heavy-tailed, and that other distributions also model the spread of data across a variable, but result from very different underlying mechanisms. Identifying the most likely distribution model for a data series is therefore crucial for understanding how the data could have been generated. And though it is true that one model type can have multiple different explanations -- in an archaeological setting for example, many different social behaviours can lead to the same material outcome, an issue known as \emph{equifinality} -- excluding one or more model types for the observed data can help limiting the number of plausible interpretations considerably.
+The main question in this part of the thesis is on the nature of house-size differences in the studied contexts, and to explain them either as being due to random fluctuations or as a material expression of a more structural inequality, or something in-between. In statistical terms, this is a question of distributions. A distribution is a mathematical model of the spread of data along a variable or axis, and it can be modelled on empirical data as a succinct description, or used to predict unobserved data (e.g.~future developments, or, in the case of archaeology, data that is lost to taphonomy). In theory, there is an infinite number of possible distributions, as there is no limit to how many parameters one can include to fit the data. It is however generally considered good practice in statistics to limit the number of parameters and identify the simplest possible model that gives a good fit, since a larger number of parameters can often lead to a better fit, but at the same time be harder to explain in terms of underlying mechanisms. Adding many parameters only to achieve a marginally better fit is referred to as \emph{overfitting} (\#ref?), and for most real-world contexts there is a limited number of model types that can be considered reasonable candidates. In cases where we are interested in inequality or uneven distributions of data (so-called \emph{skewed} distributions), the most likely distribution models are those that can be described as \emph{heavy-tailed}, meaning that on typical graphical representations (like density/PDF plots or histograms) they will show a characteristic stretch of some of the data towards the right end of the x-axis, while most of the data remains on the left side (Figure \ref{fig:04-PDF}). The opposite orientation is also possible in theory, in which case the distribution can be referred to as left-tailed. It is important to keep in mind however, that not all distributions are heavy-tailed, and that other distributions also model the spread of data across a variable, but result from very different underlying mechanisms. Identifying the most likely distribution model for a data series is therefore crucial for understanding how the data could have been generated. And though it is true that one model type can have multiple different explanations -- in an archaeological setting for example, many different social behaviours can lead to the same material outcome, an issue known as \emph{equifinality} -- excluding one or more model types for the observed data can help limiting the number of plausible interpretations considerably.
 
-Distributions can be represented graphically in a number of ways, most commonly in a coordinate system with the variable on the x-axis and its density, or \emph{probability density function} (PDF), on the y-axis (\#Fig again). Often, and in many of the sources cited in this part of the thesis (e.g. Clauset, Shalizi, and Newman 2009), the PDF is denoted by \(p(x)\), reading as \emph{the probability of x}, or simply \(f(x)\) (\emph{the function of x}). It gives the probability for a drawn sample (\(X\)) of falling within a given arbitrary range of the distribution, written \(Pr(x \le X < x+dx)\). By definition, the area between the PDF curve and the x-axis sums to 1. For reasons that are further discussed in Chapter \ref{methods-distfit}, heavy-tailed distributions, and power laws in particular, are instead often represented with their \emph{cumulative distribution function} (CDF), which is the integral of the PDF (inversely the PDF is the derivative of the CDF). Similarly to the PDF, the CDF is often denoted as \(P(x)\), depending on disciplinary tradition. It indicates the probability of a random sample value being equal to or lower than the function value, or \(Pr(X \le x)\). Furthermore, the specific version of the CDF used for plotting heavy-tailed distributions, is the \emph{complementary} or upper tail CDF (sometimes referred to as the \emph{survival function}, or denoted cCDF), which is \(1-CDF\) or \(P(X \ge x)\), indicating the probability that a random sample is higher than the function value. Both axes on such cCDF plots are traditionally set on logarithmic scales, usually \(\log_{10}\) for readability. To avoid confusion, in this thesis I refer to PDF and cCDF for density and distribution functions respectively (except in equations, where I use \(p(x)\) and \(P(x)\) respectively), and all PDFs are plotted on linear scales and cCDFs on \(\log_{10}\) scales, unless otherwise stated. Apart from scales on plots, whenever I refer to logarithms (i.e.~in calculations), I imply natural logarithms, that is \(\ln\) or \(\log_e\) where the base number \(e \approx 2.718\).
+Distributions can be represented graphically in a number of ways, most commonly in a coordinate system with the variable on the x-axis and its density, or \emph{probability density function} (PDF), on the y-axis (Figure \ref{fig:04-PDF}). Often, and in many of the sources cited in this part of the thesis (e.g. Clauset, Shalizi, and Newman 2009), the PDF is denoted by \(p(x)\), reading as \emph{the probability of x}, or simply \(f(x)\) (\emph{the function of x}). It gives the probability for a drawn sample (\(X\)) of falling within a given arbitrary range of the distribution, written \(Pr(x \le X < x+dx)\). By definition, the area between the PDF curve and the x-axis sums to 1. For reasons that are further discussed in Chapter \ref{methods-distfit}, heavy-tailed distributions, and power laws in particular, are instead often represented with their \emph{cumulative distribution function} (CDF), which is the integral of the PDF (inversely the PDF is the derivative of the CDF, Figure \ref{fig:04-cCDF}). Similarly to the PDF, the CDF is often denoted as \(P(x)\), depending on disciplinary tradition. It indicates the probability of a random sample value being equal to or lower than the function value, or \(Pr(X \le x)\). Furthermore, the specific version of the CDF used for plotting heavy-tailed distributions, is the \emph{complementary} or upper tail CDF (sometimes referred to as the \emph{survival function}, or denoted cCDF), which is \(1-CDF\) or \(P(X \ge x)\), indicating the probability that a random sample is higher than the function value. Both axes on such cCDF plots are traditionally set on logarithmic scales, usually \(\log_{10}\) for readability. To avoid confusion, in this thesis I refer to PDF and cCDF for density and distribution functions respectively (except in equations, where I use \(p(x)\) and \(P(x)\) respectively), and all PDFs are plotted on linear scales and cCDFs on \(\log_{10}\) scales, unless otherwise stated. Apart from scales on plots, whenever I refer to logarithms (i.e.~in calculations), I imply natural logarithms, that is \(\ln\) or \(\log_e\) where the base number \(e \approx 2.718\).
+
+
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.7\linewidth]{bookdown-demo_files/figure-latex/04-PDF-1} 
+
+}
+
+\caption{Example curves of the probability density function (PDF) of four distribution types: normal (blue, \(\mu = 50\), \(\sigma = 8\)), exponential (red, \(\lambda = 0.1\)), log-normal (green, \(\mu = 3\), \(\sigma = 0.5\)) and power-law (purple, \(\alpha = 3\), \(x_{min} = 1\)), in linear (a) and logarithmic scales (b). Parameter values are arbitrary and x-axis is truncated at \(2 < x < 100\) for readability.}\label{fig:04-PDF}
+\end{figure}
+
+
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.7\linewidth]{bookdown-demo_files/figure-latex/04-cCDF-1} 
+
+}
+
+\caption{The same distributions as in Figure \ref{fig:04-PDF}, but with the complementary (right-tail) cumulative distribution function (cCDF), in linear (a) and logarithmic scales (b), with \(0 < x < 80\) for readability.}\label{fig:04-cCDF}
+\end{figure}
 
 In the following, I present briefly the main distribution types that will be discussed further in the following chapters, with special focus on the \emph{power-law distribution}, which is the model type associated with fractals and structural hierarchy. All of these distributions are modelled on continuous univariate data series (see Johnson 1994 for more detailed presentations). Even though their mathematical definitions may seem complicated to non-initiated readers, most of the distribution types discussed in this thesis are readily implemented in standard statistical software, including Microsoft Excel, allowing for a more straight-forward use of them. For this thesis, I used base \emph{R} functions for calculating PDFs and cCDFs, and for random number generation for normal, log-normal and exponential distributions (R Core Team 2023), and equivalent functions from the \emph{poweRlaw} package for power-law and Weibull/stretched exponential distributions (Gillespie 2015).
 
@@ -785,9 +827,7 @@ For Neolithic crop cultivation it is in many cases more reasonable to assume tha
 
 A somewhat different mechanism for explaining skewed house-size distributions within Linear Pottery settlements in particular, was proposed by Sara Schiesberg (2010). Assuming a stable population over time, with number of children per woman surviving to reproductive age being Poisson distributed with \(\lambda = 2\) (with ever decreasing probability of larger numbers of surviving siblings), and the probabilities of having given ratios of male and female children following a binomial distribution, the combined probability of having \emph{x} male children surviving to reproductive age would follow a skewed log-normal-like (though discrete) distribution. Schiesberg observed this theoretical distribution of male siblings to be analogous to the empirical house-size distribution of excavated Linear Pottery settlements on the Aldenhoven plateau in North Rhine-Westphalia, Germany, arguing that there were gaps in the continuous size distribution that fitted with the discrete limits between numbers of male siblings. The correlation was furthermore explained as a result of a mainly patrilocal residence pattern, where house size would be a function of number of sons in an extended family (patrilocality being the most widely accepted residence pattern for the Linear Pottery culture, see Section \ref{lbk}). The same pattern could have emerged as a function of number of daughters in the case of matrilocality. Though Schiesberg did not model the observed house-size distribution explicitly as a log-normal, her model and the underlying process closely resemble the Gibrat's law described above. A (discrete) Poisson distribution with low rate can well approximate a (continuous) exponential, and a (discrete) binomial can approximate a (continuous) normal -- so a combination of the two (by multiplication of exponential and normal probabilities) will equally approximate a log-normal. Thus, simply by the social practice of patrilocal post-marital residence, a skewed house-size distribution would emerge spontaneously, without the presence of any additional structural inequality between community members. In this case, a log-normal distribution would be present in a settlement from its onset, and the skewness could or could not become more pronounced over time, depending on other factors like whether crop surplus would be distributed within the community or kept within households.
 
-A last mechanism that is sometimes referred to in statistical literature and which causes log-normal distributions, is
-
-Normal but for variables that can only be positive, Johnson (1994), p.~239.
+A last mechanism that is sometimes referred to in statistical literature as causing log-normal distributions, is that of random additive processes involving variables that by their nature cannot take on negative values, such as weights, heights or densities of physical entities (e.g. Johnson 1994:239). While (two-parameter) log-normal distributions only can have positive values (Johnson 1994:208), normal distributions will often also have positive probabilities below zero, depending on \mu and \sigma values, and are then poor models of such quantities. A house, as an example, cannot have negative size, but will always be larger than some lower threshold above zero, and should thus also be more adequately modelled as log-normal than normal, even if the distribution looks symmetrical. This will in turn allow for more accurate estimates of other derived parameters, like the confidence limits for the coefficient of variation. However, in cases of symmetrical distributions where \mu is much higher than \sigma, there is little practical reason to prefer a log-normal model over a normal one, as the probabilities of values below zero will be infinitesimally low.
 
 \FloatBarrier
 
@@ -1060,7 +1100,7 @@ Factors affecting village layout:
 
 \begin{itemize}
 \item
-  I need to find some references here!
+  I need to find some references here! Eglash (1999)
 \item
   Euclid: grids, lines, circles -- how humans think in shapes. Social settings: architect/planner, strong common institutions/ideals (examples?)
 \item
@@ -1197,6 +1237,9 @@ Allain, C., and M. Cloitre. 1991. {``Characterizing the Lacunarity of Random and
 \leavevmode\vadjust pre{\hypertarget{ref-artursson2010}{}}%
 Artursson, Magnus, Jens-Henrik Bech, Timothy Earle, Dániel Fuköh, Michael J. Kolb, Kristian Kristiansen, Johan Ling, Christian Mühlenbock, Christopher Prescott, Chris Sevara, Sebastiano Tusa, Claes Uhnér, and Magdolna Vicze. 2010. {``\href{https://doi.org/10.1017/CBO9780511779282.005}{Settlement {Structure} and {Organisation}}.''} Pp. 87--121 in \emph{Organizing {Bronze Age Societies}: {The Mediterranean}, {Central Europe}, and {Scandanavia Compared}}, edited by K. Kristiansen and T. Earle. {Cambridge}: {Cambridge University Press}.
 
+\leavevmode\vadjust pre{\hypertarget{ref-augereau2021}{}}%
+Augereau, Anne. 2021. \emph{Femmes Néolithiques - Le Genre Dans Les Premières Sociétés Agricoles}. Illustrated édition. Paris: Cnrs.
+
 \leavevmode\vadjust pre{\hypertarget{ref-baden2016}{}}%
 Baden, William W., and Christopher S. Beekman. 2016. \emph{\href{https://doi.org/10.4324/9781315247908}{Nonlinear Models for Archaeology and Anthropology: Continuing the Revolution}}. London: Routledge.
 
@@ -1314,6 +1357,9 @@ Earle, Timothy. 2002. \emph{Bronze Age Economics: The Beginnings of Political Ec
 \leavevmode\vadjust pre{\hypertarget{ref-earle1997}{}}%
 Earle, Timothy K. 1997. \emph{How chiefs come to power: the political economy in prehistory}. Stanford, Calif: Stanford University Press.
 
+\leavevmode\vadjust pre{\hypertarget{ref-eglash1999}{}}%
+Eglash, Ron. 1999. \emph{African Fractals: Modern Computing and Indigenous Design}. Rutgers University Press.
+
 \leavevmode\vadjust pre{\hypertarget{ref-ensor2013}{}}%
 Ensor, Bradley E. 2013. \emph{\href{https://www.jstor.org/stable/j.ctt183pcj3}{The Archaeology of Kinship: Advancing Interpretation and Contributions to Theory}}. University of Arizona Press.
 
@@ -1412,6 +1458,9 @@ Hrnčíř, Václav, Václav Vondrovský, and Petr Květina. 2020. {``Post-Marita
 
 \leavevmode\vadjust pre{\hypertarget{ref-jahanmiri2022}{}}%
 Jahanmiri, Fatemeh, and Dawn Cassandra Parker. 2022. {``An Overview of Fractal Geometry Applied to Urban Planning.''} \emph{Land} 11(4):475. doi: \href{https://doi.org/10.3390/land11040475}{10.3390/land11040475}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-jeunesse2022}{}}%
+Jeunesse, Christian. 2022. {``\href{https://www.academia.edu/95075660/Vertical_social_differentiation_and_social_competition_in_the_Lbk_rich_and_poor_cemeteries}{Vertical Social Differentiation and Social Competition in the Lbk: {``}Rich{''} and {``}Poor{''} Cemeteries}.''} Pp. 33--42 in, \emph{Universitätsforschungen zur prähistorischen Archäologie}, edited by M. Dębiec, J. Górski, J. Müller, M. Nowak, A. Pelisiak, T. Saile, and P. Włodarczak. Bonn: Verlag Dr. Rudolf Habelt GmbH.
 
 \leavevmode\vadjust pre{\hypertarget{ref-johnson1987}{}}%
 Johnson, Allen, and Timothy Earle. 1987. \emph{The Evolution of Human Societies : From Foraging Group to Agrarian State}. Stanford: Stanford University Press.
@@ -1515,6 +1564,9 @@ Newman, M. E. J. 2005. {``Power Laws, Pareto Distributions and Zipf's Law.''} \e
 \leavevmode\vadjust pre{\hypertarget{ref-nordquist2001}{}}%
 Nordquist, Pär. 2001. {``Hierarkiseringsprocesser: om konstruktion av social ojämlikhet i Skåne, 5500-1100 f.Kr.''} PhD thesis, Umeå.
 
+\leavevmode\vadjust pre{\hypertarget{ref-ohlrau2022}{}}%
+Ohlrau, René. 2022. {``Trypillia Mega-Sites: Neither Urban nor Low-Density?''} \emph{Journal of Urban Archaeology} 5:81--100. doi: \href{https://doi.org/10.1484/J.JUA.5.129844}{10.1484/J.JUA.5.129844}.
+
 \leavevmode\vadjust pre{\hypertarget{ref-packard2003}{}}%
 Packard, Jane. 2003. {``Wolf Behavior: Reproductive, Social and Intelligent.''} Pp. 35--65 in \emph{Wolves: Behavior, ecology, and conservation}, edited by L. D. Mech and L. Boitani. {Chicago and London}: {The University of Chicago Press}.
 
@@ -1523,6 +1575,9 @@ Perreault, Charles. 2019. \emph{The quality of the archaeological record}. Chica
 
 \leavevmode\vadjust pre{\hypertarget{ref-peters2017}{}}%
 Peters, Robin, and Andreas Zimmermann. 2017. {``Resilience and Cyclicity: Towards a Macrohistory of the Central European Neolithic.''} \emph{Quaternary International} 446:43--53. doi: \href{https://doi.org/10.1016/j.quaint.2017.03.073}{10.1016/j.quaint.2017.03.073}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-pickartz2019}{}}%
+Pickartz, Natalie, Robert Hofmann, Stefan Dreibrodt, Knut Rassmann, Liudmyla Shatilo, René Ohlrau, Dennis Wilken, and Wolfgang Rabbel. 2019. {``Deciphering Archeological Contexts from the Magnetic Map: Determination of Daub Distribution and Mass of Chalcolithic House Remains.''} \emph{The Holocene} 29(10):1637--52. doi: \href{https://doi.org/10.1177/0959683619857238}{10.1177/0959683619857238}.
 
 \leavevmode\vadjust pre{\hypertarget{ref-plotnick1996}{}}%
 Plotnick, Roy E., Robert H. Gardner, William W. Hargrove, Karen Prestegaard, and Martin Perlmutter. 1996. {``Lacunarity Analysis: A General Technique for the Analysis of Spatial Patterns.''} \emph{Physical Review E} 53(5):5461--68. doi: \href{https://doi.org/10.1103/PhysRevE.53.5461}{10.1103/PhysRevE.53.5461}.
@@ -1586,6 +1641,9 @@ Schreier, Amy L., and Larissa Swedell. 2009. {``The Fourth Level of Social Struc
 
 \leavevmode\vadjust pre{\hypertarget{ref-service1971}{}}%
 Service, Elman. 1971. \emph{Primitive Social Organization : An Evolutionary Perspective}. 2nd ed. New York: Random House.
+
+\leavevmode\vadjust pre{\hypertarget{ref-shatilo2021}{}}%
+Shatilo, Liudmyla. 2021. \emph{\href{https://library.oapen.org/handle/20.500.12657/50807}{Tripolye Typo-Chronology. Mega and Smaller Sites in the Sinyukha River Basin}}. Sidestone Press.
 
 \leavevmode\vadjust pre{\hypertarget{ref-shennan2018}{}}%
 Shennan, Stephen. 2018. \emph{The first farmers of Europe: an evolutionary perspective}. Cambridge: University Press.

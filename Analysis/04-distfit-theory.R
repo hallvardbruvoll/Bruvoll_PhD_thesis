@@ -1,6 +1,70 @@
 # Code for generating the plots in chapter 04: House sizes and social meaning
 library(tidyverse)
+library(poweRlaw) # for power-law random number generation
+library(cowplot) # for combining multiple plots per figure
 
+
+# Intro: Examples of heavy-tailed distributions ---------------------------
+
+# Generate examples of normal, exponential, log-normal and power-law
+# distributions, with convenient parameter values (just for visibility)
+
+x <- 0:1000
+normal <- tibble(x, PDF = dnorm(x, mean = 50, sd = 8),
+                 cCDF = pnorm(x, mean = 50, sd = 8, lower.tail = FALSE))
+exponential <- tibble(x, PDF = dexp(x, rate = 0.1),
+                      cCDF = pexp(x, rate = 0.1, lower.tail = FALSE))
+lognormal <- tibble(x, PDF = dlnorm(x, meanlog = 3, sdlog = 0.5),
+                    cCDF = plnorm(x, meanlog = 3,
+                                  sdlog = 0.5, lower.tail = FALSE))
+powerlaw <- tibble(x, PDF = dplcon(x, xmin = 1, alpha = 3),
+                   cCDF = pplcon(x, xmin = 1, alpha = 3, lower.tail = FALSE))
+
+distributions <- bind_rows(normal = normal, exponential = exponential,
+                           "log-normal" = lognormal,
+                          "power-law" = powerlaw, .id = "Type")
+
+# PDFs, linear and logarithmic scales
+PDF_lin <- ggplot(filter(distributions, x<100 &x>2))+
+  aes(x = x, y = PDF, colour = Type)+
+  geom_line()+
+  theme_bw()+
+  theme(legend.position = "bottom")
+
+PDF_log <- ggplot(filter(distributions, x<100 &x>2))+
+  aes(x = x, y = PDF, colour = Type)+
+  geom_line()+
+  theme_bw()+
+  scale_x_log10()+
+  scale_y_log10()+
+  theme(legend.position = "none")
+
+# cCDFs, linear and logarithmic scales
+cCDF_lin <- ggplot(filter(distributions, x< 80 & x>0))+
+  aes(x = x, y = cCDF, colour = Type)+
+  geom_line()+
+  theme_bw()+
+  theme(legend.position = "none")
+
+cCDF_log <- ggplot(filter(distributions, x< 80 & x>0))+
+  aes(x = x, y = cCDF, colour = Type)+
+  geom_line()+
+  theme_bw()+
+  scale_x_log10()+
+  scale_y_log10()+
+  theme(legend.position = "none")
+
+legend <- get_legend(PDF_lin)
+
+# Put together and store
+fig04_PDF <- plot_grid(plot_grid(PDF_lin+theme(legend.position = "none"),
+                                 PDF_log, labels = "auto", nrow = 1),
+                       legend, ncol = 1, rel_heights = c(2,0.1))
+fig04_cCDF <- plot_grid(plot_grid(cCDF_lin, cCDF_log,
+                                  labels = "auto", nrow = 1),
+                        legend, ncol = 1, rel_heights = c(2,0.1))
+save(fig04_PDF, file = "Results/fig04_PDF.RData")
+save(fig04_cCDF, file = "Results/fig04_cCDF.RData")
 
 # Log-normal distributions: financial investment example ---------------------
 
@@ -51,7 +115,6 @@ lnorm_from_exp_log <- ggplot(filter(test5, x == 40))+
   theme_bw()+
   labs(x = "y (x = 40)", y = "p(y)")
 
-library(cowplot)
 fig04_multi_exp <- plot_grid(multi_exp, multi_exp_log, labels = "auto")
 save(fig04_multi_exp, file = "Results/fig04_multi_exp.RData")
 
