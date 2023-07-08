@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.6.15)  7 JUL 2023 18:11
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.6.15)  8 JUL 2023 18:48
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1073,43 +1073,35 @@ LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 (Font)              scaled to size 8.30103pt on input line 689.
 File: bookdown-demo_files/figure-latex/04-cCDF-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/04-cCDF-1.pdf>
-[44] [45] [46] [47]
+[44] [45] [46]
+Underfull \vbox (badness 5681) has occurred while \output is active []
+
+[47]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[48]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[49] [50] [51] [52]
+[48] [49] [50] [51] [52]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [53] [54]
 File: bookdown-demo_files/figure-latex/04-multi-exp-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/04-multi-exp-1.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[55]
 File: bookdown-demo_files/figure-latex/04-lnorm-exp-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/04-lnorm-exp-1.pdf>
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[55] [56]
+[56]
 File: bookdown-demo_files/figure-latex/04-still-normal-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/04-still-normal-1.pdf>
-Missing character: There is no 𝜇 (U+1D707) in font Times New Roman Italic/OT:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 𝜎 (U+1D70E) in font Times New Roman Italic/OT:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 𝜇 (U+1D707) in font Times New Roman Italic/OT:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 𝜎 (U+1D70E) in font Times New Roman Italic/OT:script=latn;language=dflt;mapping=tex-text;!
-[57]
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[58]
-Missing character: There is no 𝜇 (U+1D707) in font Times New Roman/OT:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 𝜎 (U+1D70E) in font Times New Roman/OT:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 𝜇 (U+1D707) in font Times New Roman/OT:script=latn;language=dflt;mapping=tex-text;!
-Missing character: There is no 𝜎 (U+1D70E) in font Times New Roman/OT:script=latn;language=dflt;mapping=tex-text;!
-[59] [60]
+Underfull \vbox (badness 1303) has occurred while \output is active []
+
+[57] [58] [59] [60] [61] [62]
 Chapter 5.
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/it' will be
-(Font)              scaled to size 8.4pt on input line 893.
-[61
+(Font)              scaled to size 8.4pt on input line 914.
+[63
 
 ]
 File: bookdown-demo_files/figure-latex/05-distfit-1.pdf Graphic file (type pdf)
@@ -1117,10 +1109,10 @@ File: bookdown-demo_files/figure-latex/05-distfit-1.pdf Graphic file (type pdf)
 File: bookdown-demo_files/figure-latex/05-tails-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/05-tails-1.pdf>
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/it' will be
-(Font)              scaled to size 8.0pt on input line 918.
+(Font)              scaled to size 8.0pt on input line 939.
 File: bookdown-demo_files/figure-latex/05-pltails-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/05-pltails-1.pdf>
-[62] [63] [64]
+[64] [65] [66]
 File: bookdown-demo_files/figure-latex/05-synth-ln-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/05-synth-ln-1.pdf>
 Missing character: There is no 𝜎 (U+1D70E) in font Times New Roman/OT:script=latn;language=dflt;mapping=tex-text;!
@@ -1130,91 +1122,85 @@ Missing character: There is no 𝜎 (U+1D70E) in font Times New Roman/OT:script=
 Missing character: There is no 𝜎 (U+1D70E) in font Times New Roman/OT:script=latn;language=dflt;mapping=tex-text;!
 Missing character: There is no 𝜎 (U+1D70E) in font Times New Roman/OT:script=latn;language=dflt;mapping=tex-text;!
 Missing character: There is no 𝜇 (U+1D707) in font Times New Roman/OT:script=latn;language=dflt;mapping=tex-text;!
-[65
+[67
 
 ]
 File: bookdown-demo_files/figure-latex/05-ln-tail-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/05-ln-tail-1.pdf>
 File: bookdown-demo_files/figure-latex/05-ln-pl-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/05-ln-pl-1.pdf>
-[66]
+[68]
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/n' will be
-(Font)              scaled to size 15.60004pt on input line 1009.
-[67] [68]
+(Font)              scaled to size 15.60004pt on input line 1030.
+[69] [70]
 Chapter 6.
-[69
+[71
 
 ]
 Missing character: There is no 𝜆 (U+1D706) in font Times New Roman/OT:script=latn;language=dflt;mapping=tex-text;!
-[70] [71] [72
+[72] [73] [74
 
-] [73] [74]
+] [75] [76]
 Chapter 7.
-[75
-
-] [76]
-Chapter 8.
 [77
 
 ] [78]
+Chapter 8.
+[79
+
+] [80]
 Chapter 9.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[79
+[81
 
-] [80] [81
+] [82] [83
 
-] [82]
+] [84]
 Chapter 10.
-[83
+[85
 
 ]
 Overfull \hbox (90.28287pt too wide) has occurred while \output is active
-\TU/TimesNewRoman(0)/m/n/12 84 \TU/TimesNewRoman(0)/m/it/12 CHAPTER 10.  DISCUSSION: SOCIAL COMPLEXITY IN LINEAR POTTERY AND TRYPILLIA SETTLEMENTS
+\TU/TimesNewRoman(0)/m/n/12 86 \TU/TimesNewRoman(0)/m/it/12 CHAPTER 10.  DISCUSSION: SOCIAL COMPLEXITY IN LINEAR POTTERY AND TRYPILLIA SETTLEMENTS
  []
 
-[84
+[86
 
 ]
 Chapter 11.
-[85] [86
+[87] [88
 
 ]
 Chapter 12.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[87] [88]
-Underfull \hbox (badness 1259) in paragraph at lines 1231--1233
+[89] [90]
+Underfull \hbox (badness 1259) in paragraph at lines 1252--1254
 \TU/TimesNewRoman(0)/m/n/12 from an Archaeological Perspective.” \TU/TimesNewRoman(0)/m/it/12 PLOS ONE \TU/TimesNewRoman(0)/m/n/12 9(3):e91510. doi: []10.1371/jour-
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[89
+[91
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[90]
-Underfull \hbox (badness 1264) in paragraph at lines 1303--1305
+[92]
+Underfull \hbox (badness 1264) in paragraph at lines 1327--1329
 \TU/TimesNewRoman(0)/m/n/12 2006. “The social context of the emergence, development and abandonment of the
  []
 
 
-Underfull \hbox (badness 2103) in paragraph at lines 1303--1305
+Underfull \hbox (badness 2103) in paragraph at lines 1327--1329
 \TU/TimesNewRoman(0)/m/n/12 Varna cemetery, Bulgaria.” \TU/TimesNewRoman(0)/m/it/12 European journal of archaeology \TU/TimesNewRoman(0)/m/n/12 9(2-3):159183. doi:
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[91]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[92]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [93]
@@ -1224,77 +1210,83 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [95]
-Overfull \hbox (51.26196pt too wide) in paragraph at lines 1495--1497
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[96]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[97]
+Overfull \hbox (51.26196pt too wide) in paragraph at lines 1519--1521
 \TU/TimesNewRoman(0)/m/n/12 höyük, Turkey.” \TU/TimesNewRoman(0)/m/it/12 Cambridge Archaeological Journal \TU/TimesNewRoman(0)/m/n/12 28(4):565–90. doi: []10.1017/S0959774318000240[]. 
  []
 
 
-Underfull \hbox (badness 1430) in paragraph at lines 1510--1512
+Underfull \hbox (badness 1430) in paragraph at lines 1534--1536
 []\TU/TimesNewRoman(0)/m/n/12 Li, Jian, Qian Du, and Caixin Sun. 2009. “An Improved Box-Counting Method for
  []
 
 
-Underfull \hbox (badness 2922) in paragraph at lines 1510--1512
+Underfull \hbox (badness 2922) in paragraph at lines 1534--1536
 \TU/TimesNewRoman(0)/m/n/12 Image Fractal Dimension Estimation.” \TU/TimesNewRoman(0)/m/it/12 Pattern Recognition \TU/TimesNewRoman(0)/m/n/12 42(11):2460–69. doi:
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[96]
-Overfull \hbox (31.4721pt too wide) in paragraph at lines 1543--1545
+[98]
+Overfull \hbox (31.4721pt too wide) in paragraph at lines 1573--1575
 \TU/TimesNewRoman(0)/m/n/12 normal Distributions.” \TU/TimesNewRoman(0)/m/it/12 Internet Mathematics \TU/TimesNewRoman(0)/m/n/12 1(2):226–51. doi: []10.1080/15427951.2004.10129088[]. 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[97]
-Underfull \hbox (badness 2142) in paragraph at lines 1585--1587
+[99]
+Underfull \hbox (badness 2142) in paragraph at lines 1618--1620
 []\TU/TimesNewRoman(0)/m/n/12 Porcic, Marko. 2010. “House Floor Area as a Correlate of Marital Residence Pat-
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[98]
-Underfull \hbox (badness 1297) in paragraph at lines 1612--1614
+[100]
+Underfull \hbox (badness 1297) in paragraph at lines 1645--1647
 \TU/TimesNewRoman(0)/m/n/12 in the Grey Wolf Optimizer Algorithm.” \TU/TimesNewRoman(0)/m/it/12 Applied Soft Computing \TU/TimesNewRoman(0)/m/n/12 57:315–28. doi:
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[99]
-Underfull \hbox (badness 3302) in paragraph at lines 1657--1659
+[101]
+Underfull \hbox (badness 3302) in paragraph at lines 1693--1695
 []\TU/TimesNewRoman(0)/m/n/12 Sindbæk, Søren M. 2022. “Weak Ties and Strange Attractors: Anomalocivitas and
  []
 
 
-Underfull \hbox (badness 1331) in paragraph at lines 1657--1659
+Underfull \hbox (badness 1331) in paragraph at lines 1693--1695
 \TU/TimesNewRoman(0)/m/n/12 the Archaeology of Urban Origins.” \TU/TimesNewRoman(0)/m/it/12 Journal of Urban Archaeology \TU/TimesNewRoman(0)/m/n/12 5:19–32. doi:
  []
 
 
-Underfull \hbox (badness 2261) in paragraph at lines 1663--1665
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[102]
+Underfull \hbox (badness 2261) in paragraph at lines 1699--1701
 []\TU/TimesNewRoman(0)/m/n/12 Souvatzi, Stella. 2017. “Kinship and Social Archaeology.” \TU/TimesNewRoman(0)/m/it/12 Cross-cultural research
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[100]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[101] [102]
+[103] [104]
 Appendix A.
-[103
+[105
 
-] [104
+] [106
 
 ]
 Appendix B.
-[105] (./bookdown-demo.aux)
+[107] (./bookdown-demo.aux)
  ***********
 LaTeX2e <2023-06-01>
 L3 programming layer <2023-06-05>
@@ -1306,12 +1298,12 @@ Package rerunfilecheck Info: File `bookdown-demo.out' has not changed.
 (rerunfilecheck)             Checksum: D91C9573C4FECF5584CC4C6A839A2E6F;12607.
  ) 
 Here is how much of TeX's memory you used:
- 18864 strings out of 478386
- 355974 string characters out of 5839274
- 1862384 words of memory out of 5000000
- 38979 multiletter control sequences out of 15000+600000
+ 18865 strings out of 478386
+ 355988 string characters out of 5839274
+ 1864384 words of memory out of 5000000
+ 38980 multiletter control sequences out of 15000+600000
  522913 words of font info for 129 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  90i,8n,122p,3671b,474s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on bookdown-demo.pdf (105 pages).
+Output written on bookdown-demo.pdf (107 pages).
