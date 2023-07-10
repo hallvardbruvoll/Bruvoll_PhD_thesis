@@ -2,7 +2,7 @@
 library(tidyverse)
 library(poweRlaw) # for power-law random number generation
 library(cowplot) # for combining multiple plots per figure
-
+library(latex2exp) # for tex expressions inside ggplot code
 
 # Intro: Examples of heavy-tailed distributions ---------------------------
 
@@ -158,3 +158,71 @@ library(cowplot)
 fig04_still_normal <- plot_grid(still_normal, still_normal_dens, labels = "auto")
 save(fig04_still_normal, file = "Results/fig04_still_normal.RData")
 
+
+# Power-law distributions: combinations of exponentials and hierarchy --------
+my_pl_1 <- tibble(x = 0:1000, y = dplcon(x, xmin = 1, alpha = 1.5))
+my_pl_2 <- tibble(x = 0:1000, y = dplcon(x, xmin = 1, alpha = 2))
+my_pl_3 <- tibble(x = 0:1000, y = dplcon(x, xmin = 1, alpha = 3))
+my_pl <- bind_rows("1.5" = my_pl_1,"2" = my_pl_2,"3" = my_pl_3, .id = "model")
+
+coord_1 <- my_pl_1 %>% #coordinates for dashed lines
+  filter(x %in% c(10, 1000))
+coord_1 <- coord_1 %>%
+  add_row(x = 1000, y = coord_1$y[1]) %>%
+  arrange(desc(y))
+
+coord_3 <- my_pl_3 %>%
+  filter(x %in% c(100, 1000))
+coord_3 <- coord_3 %>%
+  add_row(x = 100, y = coord_3$y[2]) %>%
+  arrange(x)
+
+fig04_pl <- ggplot(filter(my_pl, x>0))+
+  aes(x, y, colour = model)+
+  geom_line()+
+  geom_path(data = coord_1, aes(x, y), linetype = 2, colour = "red")+
+  geom_path(data = coord_3, aes(x, y), linetype = 2, colour = "blue")+
+  geom_text(aes(x = 100, y = 0.1),
+            label = "3/2 = 1.5", colour = "red")+
+  geom_text(aes(x = 50, y = 10^-7),
+            label = "3/1 = 3", colour = "blue")+
+  scale_x_log10(minor_breaks = rep(1:9, 3)*(10^rep(0:2, each = 9)))+
+  scale_y_log10(minor_breaks = rep(1:9, 10)*10^rep(-9:0, each = 9))+
+                #labels = scales::comma)+
+  labs(x = "x", y = "p(x)", colour = TeX("$\\alpha$"))+
+  theme_bw()
+save(fig04_pl, file = "Results/fig04_pl.RData")
+
+my_hierarchy <- tibble(NULL)
+iterations <- 4
+sizes <- 1/exp(0:iterations)
+frequency <- 3^(0:iterations)
+
+for (i in 1:length(frequency)) {
+  if (i == 1) { # first point
+  units <- tibble(size = sizes[i], level = i, y = 0.5)
+  }
+  else { # the rest
+    # allot slots for groups of 3 with empty slots to either side
+  n_y_slots <- frequency[i]+(frequency[i]/3*2)
+    # coordinate for each slot
+  y_pos <- tibble(y = seq(0,1, length.out = n_y_slots), n = 1:n_y_slots)
+    # vector of empty slots only
+  dump <- c(seq(1,n_y_slots, by = 5), seq(5,n_y_slots, by = 5))
+    # filter out filled slots only
+  y_pos <- filter(y_pos, !n %in% dump)
+    # add size
+  units <- tibble(size = rep(sizes[i], frequency[i]),
+                  level = i, y = y_pos$y)
+  }
+  my_hierarchy <- bind_rows(my_hierarchy, units)
+}
+
+ggplot(my_hierarchy)+
+  aes(x = size, y = y, size = size)+
+  geom_point(shape = 15)+
+  scale_size_area()+
+#  scale_x_log10()+
+  coord_flip()+
+  theme_void()+
+  theme(legend.position = "none")
