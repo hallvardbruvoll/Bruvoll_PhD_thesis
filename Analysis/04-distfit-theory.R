@@ -176,7 +176,7 @@ coord_3 <- coord_3 %>%
   add_row(x = 100, y = coord_3$y[2]) %>%
   arrange(x)
 
-my_pl_fig <- ggplot(filter(my_pl, x>0))+
+fig04_pl <- ggplot(filter(my_pl, x>0))+
   aes(x, y, colour = model)+
   geom_line()+
   geom_path(data = coord_1, aes(x, y), linetype = 2, colour = "red")+
@@ -190,7 +190,9 @@ my_pl_fig <- ggplot(filter(my_pl, x>0))+
                 #labels = scales::comma)+
   labs(x = "x", y = "p(x)", colour = TeX("$\\alpha$"))+
   theme_bw()
-# save it below
+
+save(fig04_pl, file = "Results/fig04_pl.RData")
+
 
 # Power law as hierarchy --------------------------------------------------
 my_hierarchy <- tibble(NULL)
@@ -238,7 +240,7 @@ my_hierarchy <- my_hierarchy %>%
   mutate(y_wide = y*30) %>%
   rownames_to_column(var = "n")
 
-my_hierarchy_fig <-  ggplot(my_hierarchy)+
+fig04_hierarchy <- ggplot(my_hierarchy)+
   aes(x = y*40, y = size*20,
       height = sqrt(size), width = sqrt(size),
       #size = size,
@@ -250,7 +252,52 @@ my_hierarchy_fig <-  ggplot(my_hierarchy)+
   #scale_y_log10()+
   coord_fixed()+
   theme_void()+
+  theme(plot.background = element_rect(colour = "black"))+
   theme(legend.position = "none")
 
-fig04_pl <- plot_grid(my_pl_fig, my_hierarchy_fig, labels = "auto")
-save(fig04_pl, file = "Results/fig04_pl.RData")
+save(fig04_hierarchy, file = "Results/fig04_hierarchy.RData")
+
+
+# See the blazing Yule before us: -----------------------------------------
+
+time <- 1000
+yule_tree <- tibble(x = 1, t = 0)
+for (i in 1:time) {
+  random <- sample(1:2, size = 1)
+  if (random == 1) {
+    growth_1 <- sample(0:1, size = nrow(yule_tree), replace = TRUE)
+    yule_tree %>%
+      mutate(x = x+growth_1) %>%
+      add_row(x = 1, t = i)
+  }
+  else  {
+    yule_tree <- yule_tree %>%
+      mutate(x = x*1.3) %>%
+      add_row(x = 1, t = i)
+  }
+}
+
+# the above is wrong: a fixed number should be added per step, these are
+# distributed proportionally.
+m <- 100 # new balls per step to be distributed
+for (i in 1:time) {
+
+}
+
+
+yule_tree <- yule_tree %>%
+  mutate(rank = min_rank(x),
+         cCDF = round((length(rank)-rank+1)/length(rank), 3))
+yule_tail <- filter(yule_tree, t < 100) %>%
+   mutate(rank = min_rank(x),
+          cCDF = round((length(rank)-rank+1)/length(rank), 3))
+
+ggplot(yule_tail)+
+  aes(x = x)+
+  geom_density()
+
+ggplot(yule_tail)+
+  aes(x = x, y = cCDF)+
+  geom_line()+
+  scale_x_log10()
+  scale_y_log10()

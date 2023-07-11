@@ -185,38 +185,54 @@ p(x) = \frac{\alpha-1}{x_{min}}(\frac{x}{x_{min}})^{-\alpha}.
 (\#eq:power-law)
 \end{equation}
 ```
-In the cCDF or survival function, again the normalising constant is replaced with 1, but rather than left out it is written in the exponential form $(\frac{x}{x_{min}})^1$ which equals 1 when $x = x_{min}$, so that$$P(x) = (\frac{x}{x_{min}})^{-\alpha+1}$$
+In the cCDF or survival function, again the normalising constant is replaced with 1, but rather than left out it is written in the exponential form $(\frac{x}{x_{min}})^1$ which equals 1 when $x = x_{min}$, so that
+
+``` tex
+\begin{equation}
+P(x) = (\frac{x}{x_{min}})^{-\alpha+1}
+(\#eq:pareto)
+\end{equation}
+```
 
 in the notation of @clauset2009, Eq. 2.6, equivalent to the more complex notation in @newman2005, Eq. 4.
 
-As shown in Figures \@ref(fig:04-PDF)b and \@ref(fig:04-cCDF)b above, power-law PDFs and cCDFs hold the special property of appearing linear when plotted with logarithmic x and y axes (or equivalently when x and y values are log-transformed). This can be shown by log-transforming the simple functional form above, so that $log(p(x))=(-\alpha)log(x)+log(C)$, which is a linear model with y-intercept $log(C)$ and slope $-\alpha$. Power functions are in this way similar to exponential functions, with the difference that the variable $x$ is here in the base rather than the exponent, causing the graph to be linear only when *both* axes are logarithmic (as opposed to one axis for exponential functions). Because of this property, the most common method for estimating $\alpha$ since the first formulation of the model and until recently [@clauset2009] was to plot the data on logarithmic axes, perform a least squares linear regression and estimate the slope (see Chapter \@ref(methods-distfit)).
+As shown in Figures \@ref(fig:04-PDF)b and \@ref(fig:04-cCDF)b above, power-law PDFs and cCDFs hold the special property of appearing linear when plotted with logarithmic x and y axes (or equivalently when x and y values are log-transformed). This can be shown by log-transforming the simple functional form above, so that $log(p(x))=(-\alpha)log(x)+log(C)$, which is a linear model with y-intercept $log(C)$ and slope $-\alpha$. Power functions are in this way similar to exponential functions, with the difference that the variable $x$ is here in the base rather than in the exponent, causing the graph to be linear only when *both* axes are logarithmic (as opposed to one axis for exponential functions). Because of this property, the most common method for estimating $\alpha$ since the first formulation of the model and until recently [@clauset2009; @stumpf2012] was to plot the data on logarithmic axes, perform a least squares linear regression and estimate the slope (see Chapter \@ref(methods-distfit)).
 
-The main reason for the great attention that has been given to power-law distributions over the years (see below), is its property of *scale invariance*, meaning that the distribution will appear the same no matter the scale in which it is being observed [see chapters 1 and 2 of @west2017, pp. 1-78 for a general non-technical introduction to scaling in science]. Figure \@ref(fig:04-pl) shows the relation between change in the variable being modelled ($x$) and its function value (here the PDF function) as a constant proportion of exponents (i.e. a linear relation between two vectors of logarithms). This means that for a power-law distributed variable, a change of scale (zooming in or out on the x-axis, changing order of magnitude no matter the base number) will always result in a proportional change of order of magnitude of the probability or frequency modelled on the y-axis. Hierarchy.
+The main reason for the great attention that has been given to power-law distributions over the years (see below), is its property of *scale invariance*, meaning that the distribution will appear the same no matter the scale in which it is being observed [see chapters 1 and 2 of @west2017, pp. 1-78 for a general non-technical introduction to scaling in science]. Figure \@ref(fig:04-pl) shows the relation between change in the variable being modelled ($x$) and its function value (here the PDF function) as a constant proportion of exponents (i.e. a linear relation between two vectors of logarithms). This means that for a power-law distributed variable, a change of scale (zooming in or out on the x-axis, changing order of magnitude no matter the base number) will always result in a proportional change of order of magnitude of the probability or frequency modelled on the y-axis. If $x$ represents a size related variable, and $y$ a frequency (probability in the PDF, rank in the CDF, or absolute frequency), this proportional relation in logarithms generates a self-similar hierarchy, where the same structure of sizes and frequencies is repeated across different scales (Figure \@ref(fig:04-hierarchy)). Thus, even though fractal structures are most often associated with geometric shapes in physical space -- like the shapes of plants, rivers or clouds -- they can be equally present in non-geometric variables, like income or wealth, magnitude of events, sizes of cities or nodes in networks. Such structures are, as with physical fractals, recognised by their abrupt skewness or high level of inequality, by their hierarchically distributive mode of functioning, and their statistical signature which is the power law.
 
-(ref:04-pl) a: Examples of power-law distributions with different scaling exponent ($\alpha$) values on logarithmic axes, showing how this parameter reflect change over orders of magnitude. For a model with $\alpha = 3$ (blue), a decrease in probability p(x) of 3 orders of magnitude (powers of 10), e.g. from 0.1 to 0.0001 corresponds to an increase in the size of x of 1 order. For a model with $\alpha = 1.5$, the same decrease in probability corresponds to an increase in x of 2 orders of magnitude. The models appear linear in logarithmic space, but are in reality highly non-linear, as illustrated by the grid. b: A power-law distribution of sizes, arranged in discrete levels, illustrating its characteristic scale-independence. From the largest
+(ref:04-pl) Examples of power-law distributions with different scaling exponent ($\alpha$) values on logarithmic axes, showing how this parameter reflects change over orders of magnitude. For a model with $\alpha = 3$ (blue), a decrease in probability p(x) of 3 orders of magnitude (powers of 10), e.g. from 0.1 to 0.0001 corresponds to an increase in the size of x of 1 order. For a model with $\alpha = 1.5$, the same decrease in probability corresponds to an increase in x of 2 orders of magnitude. The models appear linear in logarithmic space, but are in reality highly non-linear, as illustrated by the grid
 
 ```{r 04-pl, fig.cap="(ref:04-pl)"}
 load("Results/fig04_pl.RData")
 fig04_pl
 ```
 
-As already mentioned, the power-law distribution was first formulated by Italian economist Vilfredo Pareto as a model of wealth inequality [-@pareto1896]. Over the 20^th^ century it saw an increasing number of applications in a wide variety of fields in natural and social sciences, modelling phenomena from magnitudes of earthquakes and sizes of moon craters to the intensity of wars, frequency of family names and citations of scientific papers [see @mitzenmacher2004 and @newman2005 for detailed overviews]. The idea that the power law could be a suitable model for city sizes was seemingly first proposed in a short paper by @auerbach1913, though it is often attributed to @zipf1949, through which it has become known to and sometimes applied by archaeologists (see below). The first influential attempt at an explanatory model of power-law distributions -- which at first were primarily descriptive, one of the main critiques against Pareto -- was made by @yule1925, who seaked to explain the size distribution of genera by number of species.
+(ref:04-hierarchy) A power-law distribution of sizes arranged in discrete levels, illustrating its characteristic scale invariance. From the largest element on top and downwards, sizes decrease while numbers (frequencies) increase, both exponentially but in opposite direction, generating a hierarchical fractal structure where the same shapes are recognised at different scales
 
--   scale-independent -\> fractal
+```{r 04-hierarchy, fig.cap="(ref:04-hierarchy)"}
+load("Results/fig04_hierarchy.RData")
+fig04_hierarchy
+```
 
-Preferential attachment: [@mitzenmacher2004], @yule1925, @zipf1949, @simon1955, @mandelbrot1997, short summary and connection to fractal geometry in @mandelbrot1982, pp. 341-8, @barabási1999,
+As already mentioned, the power-law distribution was first formulated by Italian economist Vilfredo Pareto as a model of wealth inequality [-@pareto1896]. Over the 20^th^ century it saw an increasing number of applications in a wide variety of fields in natural and social sciences, modelling phenomena from magnitudes of earthquakes and sizes of moon craters to the intensity of wars, frequency of family names and citations of scientific papers [see @mitzenmacher2004, @newman2005 for detailed overviews]. The idea that the power law could be a suitable model for city sizes was seemingly first proposed in a short paper by @auerbach1913, though it is often attributed to @zipf1949, through which it has become known to and sometimes applied by archaeologists (see Section \@ref(distfit-archaeo)). The first influential attempt at an explanatory model of power-law distributions -- which at first were primarily descriptive, one of the main critiques against Pareto -- was made by @yule1925, who seeked to explain the observed size distribution of genera by number of species.
 
-Yule process, Matthew effect, rich-gets-richer.
+*the Yule process* [@newman2005, pp. 340-2; @mitzenmacher2004, pp. 230-3].
 
-Combination log-normal + exponential (i.e. normal + exponential + exponential) [@reed2001; @reed2002]
+Preferential attachment: [@mitzenmacher2004], @yule1925, @zipf1949, @simon1955 calls it "the Gibrat principle", @mandelbrot1997, short summary and connection to fractal geometry in @mandelbrot1982, pp. 341-8, @barabási1999,
+
+Yule process, Matthew effect, rich-gets-richer, "80-20 rule".
+
+Other processes: phase transitions/critical phenomena - self-organised criticality, punctuated equilibrium. Random walks. Optimisation.
+
+Multiplicative processes: power laws vs. log-normal, long debates [e.g. @harrison1981, @sheridan2018].
+
+Power laws are not consciously made, they emerge spontaneously: is power-law word frequency a good proxy for language (possibly off topic)
 
 -   Notes on terminology: Power law, Pareto and Zipf, @newman2005, pp. 327 and 350. Lack of consensus on notation, also for scaling parameter. Difference between PDF and CDF, continuous and discrete.
 
+-   Upper and lower bounds. Other more complex models: stretched exponential, power law with exponential cutoff, parabolic fractal. Combination log-normal + exponential (i.e. normal + exponential + exponential) [@reed2001; @reed2002]
+
 -   A law (distribution) is not a law (of nature), see @grove2011 for review of the long-lasting confusion in archaeology (e.g. @hodder1979), also "rank-size rule"
-
-fsdasdf
-
-### Combinations: Log-normal, stretched exponential, parabolic fractal
 
 ## Fitting heavy-tailed distributions in archaeology {#distfit-archaeo}
 
