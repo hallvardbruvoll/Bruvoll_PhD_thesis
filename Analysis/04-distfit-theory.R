@@ -154,7 +154,6 @@ still_normal_dens <- ggplot(filter(test6, x == 40))+
   theme_bw()+
   labs(x = "y (x = 40)", y = "p(y)")
 
-library(cowplot)
 fig04_still_normal <- plot_grid(still_normal, still_normal_dens, labels = "auto")
 save(fig04_still_normal, file = "Results/fig04_still_normal.RData")
 
@@ -177,7 +176,7 @@ coord_3 <- coord_3 %>%
   add_row(x = 100, y = coord_3$y[2]) %>%
   arrange(x)
 
-fig04_pl <- ggplot(filter(my_pl, x>0))+
+my_pl_fig <- ggplot(filter(my_pl, x>0))+
   aes(x, y, colour = model)+
   geom_line()+
   geom_path(data = coord_1, aes(x, y), linetype = 2, colour = "red")+
@@ -191,38 +190,67 @@ fig04_pl <- ggplot(filter(my_pl, x>0))+
                 #labels = scales::comma)+
   labs(x = "x", y = "p(x)", colour = TeX("$\\alpha$"))+
   theme_bw()
-save(fig04_pl, file = "Results/fig04_pl.RData")
+# save it below
 
+# Power law as hierarchy --------------------------------------------------
 my_hierarchy <- tibble(NULL)
 iterations <- 4
-sizes <- 1/exp(0:iterations)
+sizes <- pexp(0:iterations, rate = 0.8, lower.tail = FALSE)
 frequency <- 3^(0:iterations)
 
 for (i in 1:length(frequency)) {
   if (i == 1) { # first point
   units <- tibble(size = sizes[i], level = i, y = 0.5)
   }
-  else { # the rest
-    # allot slots for groups of 3 with empty slots to either side
-  n_y_slots <- frequency[i]+(frequency[i]/3*2)
-    # coordinate for each slot
-  y_pos <- tibble(y = seq(0,1, length.out = n_y_slots), n = 1:n_y_slots)
-    # vector of empty slots only
-  dump <- c(seq(1,n_y_slots, by = 5), seq(5,n_y_slots, by = 5))
-    # filter out filled slots only
-  y_pos <- filter(y_pos, !n %in% dump)
+  else  {
+    if (i > 3) { # for levels 4 and up (recursive)
+      # assign full and empty spots for the entire row
+      n_y_slots <- frequency[i]+sum(frequency[i]/3^(1:(i-2))*2)
+      # with coordinates
+      y_pos <- tibble(y = seq(0,1, length.out = n_y_slots), n = 1:n_y_slots)
+      for (j in 1:(i-2)) { # loop for hierarchical grouping
+        # vector of empty slots only
+        dump <- as.integer(c(seq(1, n_y_slots, by = n_y_slots/3^j),
+          seq(n_y_slots/3^j, n_y_slots, by = n_y_slots/3^j)))
+        # keep full spots and update number of cells
+        y_pos <- filter(y_pos, !n %in% dump) %>%
+          mutate(n = 1:n())
+        n_y_slots <- nrow(y_pos)
+        }
+      }
+    else { # for levels 2 and 3 only
+      n_y_slots <- frequency[i]+(frequency[i]/3*2)
+      # coordinates
+      y_pos <- tibble(y = seq(0,1, length.out = n_y_slots), n = 1:n_y_slots)
+      # vector of empty slots only
+      dump <- c(seq(1,n_y_slots, by = 5), seq(5,n_y_slots, by = 5))
+      # filter out filled slots only
+      y_pos <- filter(y_pos, !n %in% dump)
+      }
     # add size
-  units <- tibble(size = rep(sizes[i], frequency[i]),
+    units <- tibble(size = rep(sizes[i], frequency[i]),
                   level = i, y = y_pos$y)
-  }
+    }
   my_hierarchy <- bind_rows(my_hierarchy, units)
 }
+# adjust coordinates
+my_hierarchy <- my_hierarchy %>%
+  mutate(y_wide = y*30) %>%
+  rownames_to_column(var = "n")
 
-ggplot(my_hierarchy)+
-  aes(x = size, y = y, size = size)+
-  geom_point(shape = 15)+
-  scale_size_area()+
-#  scale_x_log10()+
-  coord_flip()+
+my_hierarchy_fig <-  ggplot(my_hierarchy)+
+  aes(x = y*40, y = size*20,
+      height = sqrt(size), width = sqrt(size),
+      #size = size,
+      label = n)+
+  geom_tile()+
+  #geom_label()+
+  #geom_point(shape = 15)+
+  #scale_size_area()+
+  #scale_y_log10()+
+  coord_fixed()+
   theme_void()+
   theme(legend.position = "none")
+
+fig04_pl <- plot_grid(my_pl_fig, my_hierarchy_fig, labels = "auto")
+save(fig04_pl, file = "Results/fig04_pl.RData")
