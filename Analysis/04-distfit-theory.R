@@ -259,6 +259,8 @@ save(fig04_hierarchy, file = "Results/fig04_hierarchy.RData")
 
 
 # See the blazing Yule before us: -----------------------------------------
+# This code isn't right- produces exponential not power-law,
+# either correct or delete!
 
 time <- 1000
 yule_tree <- tibble(x = 1, t = 0)
