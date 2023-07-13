@@ -40,6 +40,46 @@
 \makeatother
 \usepackage{xcolor}
 \usepackage[left=2.9cm, right=2.5cm, top=2.5cm, bottom=2.5cm]{geometry}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
 \usepackage{longtable,booktabs,array}
 \usepackage{calc} % for calculating minipage widths
 % Correct order of tables after \paragraph or \subparagraph
@@ -135,7 +175,7 @@
 \makeatother
 \subtitle{with case studies from the Linear Pottery and Trypillia cultures (5.500 - 3.500 cal. BCE)}
 \author{Hallvard Bruvoll \and Department of Archaeology, Conservation and History \and University of Oslo}
-\date{2023-07-11}
+\date{2023-07-12}
 
 \begin{document}
 \maketitle
@@ -547,13 +587,13 @@ house orientation: ``origin'' hypothesis: Bradley (2001)
 Patrilocality in LBK based on Sr isotopes: Hrnčíř, Vondrovský, and Květina (2020) (read this more carefully), and other data (check) Schiesberg (2016).
 
 \begin{verbatim}
-## -- Attaching core tidyverse packages -------------------------------- tidyverse 2.0.0 --
+## -- Attaching core tidyverse packages -------
 ## v dplyr     1.1.1     v readr     2.1.4
 ## v forcats   1.0.0     v stringr   1.5.0
 ## v ggplot2   3.4.2     v tibble    3.2.1
 ## v lubridate 1.9.2     v tidyr     1.3.0
 ## v purrr     1.0.1     
-## -- Conflicts -------------------------------------------------- tidyverse_conflicts() --
+## -- Conflicts ------ tidyverse_conflicts() --
 ## x dplyr::filter() masks stats::filter()
 ## x dplyr::lag()    masks stats::lag()
 ## i Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
@@ -845,13 +885,22 @@ p(x) = \frac{\alpha-1}{x_{min}}(\frac{x}{x_{min}})^{-\alpha}.
 \label{eq:power-law}
 \end{equation}
 
-In the cCDF or survival function, again the normalising constant is replaced with 1, but rather than left out it is written in the exponential form \((\frac{x}{x_{min}})^1\) which equals 1 when \(x = x_{min}\), so that\[P(x) = (\frac{x}{x_{min}})^{-\alpha+1}\]
+In the cCDF or survival function, again the normalising constant is replaced with 1, but rather than left out it is written in the exponential form \((\frac{x}{x_{min}})^1\) which equals 1 when \(x = x_{min}\), so that
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\KeywordTok{\textbackslash{}begin}\NormalTok{\{}\ExtensionTok{equation}\NormalTok{\}}
+\SpecialStringTok{P(x) = (}\SpecialCharTok{\textbackslash{}frac}\SpecialStringTok{\{x\}\{x\_\{min\}\})\^{}\{{-}}\SpecialCharTok{\textbackslash{}alpha}\SpecialStringTok{+1\}}
+\SpecialStringTok{(}\SpecialCharTok{\textbackslash{}\#}\SpecialStringTok{eq:pareto)}
+\KeywordTok{\textbackslash{}end}\NormalTok{\{}\ExtensionTok{equation}\NormalTok{\}}
+\end{Highlighting}
+\end{Shaded}
 
 in the notation of Clauset et al. (2009), Eq. 2.6, equivalent to the more complex notation in Newman (2005), Eq. 4.
 
-As shown in Figures \ref{fig:04-PDF}b and \ref{fig:04-cCDF}b above, power-law PDFs and cCDFs hold the special property of appearing linear when plotted with logarithmic x and y axes (or equivalently when x and y values are log-transformed). This can be shown by log-transforming the simple functional form above, so that \(log(p(x))=(-\alpha)log(x)+log(C)\), which is a linear model with y-intercept \(log(C)\) and slope \(-\alpha\). Power functions are in this way similar to exponential functions, with the difference that the variable \(x\) is here in the base rather than the exponent, causing the graph to be linear only when \emph{both} axes are logarithmic (as opposed to one axis for exponential functions). Because of this property, the most common method for estimating \(\alpha\) since the first formulation of the model and until recently (Clauset et al. 2009) was to plot the data on logarithmic axes, perform a least squares linear regression and estimate the slope (see Chapter \ref{methods-distfit}).
+As shown in Figures \ref{fig:04-PDF}b and \ref{fig:04-cCDF}b above, power-law PDFs and cCDFs hold the special property of appearing linear when plotted with logarithmic x and y axes (or equivalently when x and y values are log-transformed). This can be shown by log-transforming the simple functional form above, so that \(log(p(x))=(-\alpha)log(x)+log(C)\), which is a linear model with y-intercept \(log(C)\) and slope \(-\alpha\). Power functions are in this way similar to exponential functions, with the difference that the variable \(x\) is here in the base rather than in the exponent, causing the graph to be linear only when \emph{both} axes are logarithmic (as opposed to one axis for exponential functions). Because of this property, the most common method for estimating \(\alpha\) since the first formulation of the model and until recently (Clauset et al. 2009; Stumpf and Porter 2012) was to plot the data on logarithmic axes, perform a least squares linear regression and estimate the slope (see Chapter \ref{methods-distfit}).
 
-The main reason for the great attention that has been given to power-law distributions over the years (see below), is its property of \emph{scale invariance}, meaning that the distribution will appear the same no matter the scale in which it is being observed (see chapters 1 and 2 of West 2017:1--78 for a general non-technical introduction to scaling in science). Figure \ref{fig:04-pl} shows the relation between change in the variable being modelled (\(x\)) and its function value (here the PDF function) as a constant proportion of exponents (i.e.~a linear relation between two vectors of logarithms). This means that for a power-law distributed variable, a change of scale (zooming in or out on the x-axis, changing order of magnitude no matter the base number) will always result in a proportional change of order of magnitude of the probability or frequency modelled on the y-axis. Hierarchy.
+The main reason for the great attention that has been given to power-law distributions over the years (see below), is its property of \emph{scale invariance}, meaning that the distribution will appear the same no matter the scale in which it is being observed (see chapters 1 and 2 of West 2017:1--78 for a general non-technical introduction to scaling in science). Figure \ref{fig:04-pl} shows the relation between change in the variable being modelled (\(x\)) and its function value (here the PDF function) as a constant proportion of exponents (i.e.~a linear relation between two vectors of logarithms). This means that for a power-law distributed variable, a change of scale (zooming in or out on the x-axis, changing order of magnitude no matter the base number) will always result in a proportional change of order of magnitude of the probability or frequency modelled on the y-axis. If \(x\) represents a size related variable, and \(y\) a frequency (probability in the PDF, rank in the CDF, or absolute frequency), this proportional relation in logarithms generates a self-similar hierarchy, where the same structure of sizes and frequencies is repeated across different scales (Figure \ref{fig:04-hierarchy}). Thus, even though fractal structures are most often associated with geometric shapes in physical space -- like the shapes of plants, rivers or clouds -- they can be equally present in non-geometric variables, like income or wealth, magnitude of events, sizes of cities or nodes in networks. Such structures are, as with physical fractals, recognised by their abrupt skewness or high level of inequality, by their hierarchically distributive mode of functioning, and their statistical signature which is the power law. This connection between power-law distributions in general and fractals was first recognised and expanded upon by Mandelbrot (e.g. 1997; short summary in 1982:341--48).
 
 
 
@@ -861,34 +910,55 @@ The main reason for the great attention that has been given to power-law distrib
 
 }
 
-\caption{a: Examples of power-law distributions with different scaling exponent (\(\alpha\)) values on logarithmic axes, showing how this parameter reflect change over orders of magnitude. For a model with \(\alpha = 3\) (blue), a decrease in probability p(x) of 3 orders of magnitude (powers of 10), e.g.~from 0.1 to 0.0001 corresponds to an increase in the size of x of 1 order. For a model with \(\alpha = 1.5\), the same decrease in probability corresponds to an increase in x of 2 orders of magnitude. The models appear linear in logarithmic space, but are in reality highly non-linear, as illustrated by the grid. b: A power-law distribution of sizes, arranged in discrete levels, illustrating its characteristic scale-independence. From the largest}\label{fig:04-pl}
+\caption{Examples of power-law distributions with different scaling exponent (\(\alpha\)) values on logarithmic axes, showing how this parameter reflects change over orders of magnitude. For a model with \(\alpha = 3\) (blue), a decrease in probability p(x) of 3 orders of magnitude (powers of 10), e.g.~from 0.1 to 0.0001 corresponds to an increase in the size of x of 1 order. For a model with \(\alpha = 1.5\), the same decrease in probability corresponds to an increase in x of 2 orders of magnitude. The models appear linear in logarithmic space, but are in reality highly non-linear, as illustrated by the grid}\label{fig:04-pl}
 \end{figure}
 
-As already mentioned, the power-law distribution was first formulated by Italian economist Vilfredo Pareto as a model of wealth inequality (1896). Over the 20\textsuperscript{th} century it saw an increasing number of applications in a wide variety of fields in natural and social sciences, modelling phenomena from magnitudes of earthquakes and sizes of moon craters to the intensity of wars, frequency of family names and citations of scientific papers Newman (2005). The idea that the power law could be a suitable model for city sizes was seemingly first proposed in a short paper by Auerbach (1913), though it is often attributed to Zipf (1949), through which it has become known to and sometimes applied by archaeologists (see below). The first influential attempt at an explanatory model of power-law distributions -- which at first were primarily descriptive, one of the main critiques against Pareto -- was made by Yule (1925), who seaked to explain the size distribution of genera by number of species.
+
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.7\linewidth]{bookdown-demo_files/figure-latex/04-hierarchy-1} 
+
+}
+
+\caption{A power-law distribution of sizes arranged in discrete levels, illustrating its characteristic scale invariance. From the largest element on top and downwards, sizes decrease while numbers (frequencies) increase, both exponentially but in opposite direction, generating a hierarchical fractal structure where the same shapes are recognised at different scales}\label{fig:04-hierarchy}
+\end{figure}
+
+As already mentioned, the power-law distribution was first formulated by Italian economist Vilfredo Pareto as a model of wealth inequality (1896). Over the 20\textsuperscript{th} century it saw an increasing number of applications in a wide variety of fields in natural and social sciences, modelling phenomena from magnitudes of earthquakes and sizes of moon craters to the intensity of wars, frequency of family names and citations of scientific papers (see Mitzenmacher 2004; Newman 2005 for detailed overviews). The idea that the power law could be a suitable model for city sizes was seemingly first proposed in a short paper by Auerbach (1913), though it is often attributed to Zipf (1949), through which it has become known to and sometimes applied by archaeologists (see Section \ref{distfit-archaeo}). The first influential attempt at an explanatory model of power-law distributions -- which at first were primarily descriptive, one of the main critiques against Pareto -- was made by Udny Yule (1925), who seeked to explain the observed size distribution of genera by number of species. Yule's model (here following the notation in Newman 2005:340--42) involves a set of \(n\) genera consisting of a variable \(k\) number of species each. During a discrete time step interval, a constant \(m < n\) number of new species are added to the existing genera by speciation, so that some but not all genera will grow to \(k+1\) in each time step. The probability for each genus of receiving a new species in a given time step is proportional to \(k\) or the number of species it already includes, since a speciation is more likely to happen in an already large group of species than in a small group. Finally, for each time step one new species is sufficiently different to be considered a new genus on its own, so that \(n\) increases linearly by 1 for each step. Under these conditions, over time \(k\) will follow a power-law distribution -- or strictly speaking a discrete version of it known as the Yule distribution (see Simon 1955).
+
+The precise mathematics involved in this model are quite complex for non-specialists, especially in the version presented by Yule before modern stochastic theory was developed, but even more recent and concise formulations will involve some level of calculus (Mitzenmacher 2004:230--33; Newman 2005). The essential is however to note that the mechanism it describes -- now known as \emph{the Yule process} -- is relatively simple and transferable to many natural as well as social settings. The heavy-tailed distribution of species will emerge even in the simplest scenario starting with one genus \(n_1\) consisting of a single species (\(k = 1\)), and one added species to existing genera per time step (\(m = 1\)). Then the single genus will have probability \(p(n_1) = 1\) of receiving the new species \(m\) so that it gets \(k = 2\), while the new genus \(n_2\) starts at \(k = 1\). In the next time step a new species will be given to one of these two genera, but \(n_1\) has twice as high probability of receiving it as \(n_2\) -- that is, probabilities are \(2/3\) and \(1/3\) respectively. In other words, the probability for any genus \(n_{i}\) with \(k_i\) species of winning the round (so to speak) and being attributed with the extra species, is given by \(k_i/\sum{k}\), or the fraction of the total amount of species (in the given time step) that the genus already has. The main difference here with the above described Gibrat's law -- which also involves proportional growth -- is that in the Yule process the growth is not distributed evenly across the system. There is an additional selecting process that over time gives more to those that already have, thus according a disproportionate advantage to anyone who gets even the slightest advantage by chance from the offset -- which is why this is often referred to as a \emph{rich-get-richer} process when applied to economics.
+
+In fact, the Yule process having been recognised more or less independently within a number of disciplines over the years, it has come to be known by a plethora of different appellations, sometimes hiding the fact that they describe similar underlying mechanisms. The term \emph{feedback loop} is derived from acoustics, describing the bothering situation when the sound from an on-stage monitor feeds into the microphones and back to the monitors, and so on, thus very quickly generating a sound so strong and high that it overturns the system. The sound going into the microphones is proportionally amplified to the volume of the sound coming out of the monitor, so that the stronger the input, the stronger the output and by consequence the next input, and so on. Another term, derived from attempts in sociology to explain the power-law distribution of citation frequencies of academic papers, and more generally the rewarding systems in academia, is the \emph{Matthew effect}, alluding to a passage in the Gospel of Matthew (25:29): ``\emph{For unto every one that hath shall be given, and he shall have abundance; but from him that hath not shall be taken away even that which he hath}'' (Merton 1968). A typical manifestation of such a process is when a prestigious research grant is attributed to a researcher based on academic merit, whereupon this in turn opens up numerous doors allowing for even higher career achievements, while the second best candidate, altough having arbitrarily close merits to the first before the grant, afterwards will have disproportional difficulties of following their pace in career development. For paper citations, one analogous explanation is that a paper that already has many citations, is more likely to be found in literature searches and be cited again than a similar paper with less citations (Newman 2005:341). In other words, the probability of a new citation is proportional to the citations the paper (or its author) already has, but disproportional to the quality of the paper when compared to other papers of similar quality. The equivalent of the Yule process that has possibly received the most attention within social sciences since the turn of the millennium, is that of \emph{preferential attachment}, first defined in a widely discussed study in network analysis by Barabási and Albert (1999). They were the first to identify scale-free networks of links between websites in the then young World Wide Web, where a few sites were reported to have very high numbers of links to them, while the vast majority of sites only have very few. Their explanation of how such networks emerge -- strikingly similar to Yule's explanation of speciation in biological genera -- was that as new websites are made and the internet grows, these will tend to link (or preferentially attach) to existing websites that already have many links to them.
+
+Other processes: phase transitions/critical phenomena - self-organised criticality, punctuated equilibrium. Random walks. Optimisation. Chaos.
+
+There are of course many ways in which the phenomena described here can be transposed to prehistoric social settings (see Section \ref{distfit-archaeo} below for examples of how this has been done). One important aspect of social processes that are known to generate power-law distributions, is that they often involve some sort of repeated competition, where actors who win once are more likely to win again later, thus cumulating their advantage. When the variable being modelled is house size, with the underlying assumption that this is a material reflection of wealth and/or power, and the distribution is recognised as a power law, the perhaps most straightforward interpretation is that of the emergence of a social hierarchy. The temporal process of this emergence could look something like the following. Let there be an initial population of households living within a social system that for this purpose can be described as egalitarian (that is, ignoring factors like gender inequality, random differences between households, heterarchical differentiations between kin groups etc.). If, for any reason, a competitive dominance process is triggered, a household that initially holds a random slight advance over others may gain a dominant position over them, as clan leader or chief household. The leader or leading house may then gain certain privileges and duties related to tribute and redistribution of goods, thus strengthening the ties of dominance between them and the group of dominated households. There is however an upper limit to how many households that can be effectively dominated by a single household, so this relation would be unlikely to define the entire population of households. On the other hand, the same process could play out throughout the population, generating a set of leaders or leading houses each dominating a similar group of households -- a situation that could be compared to the \emph{house societies} described by Lévi-Strauss (\textbf{levi-ststrauss1982?}, Section \ref{social-hierarchy}). If the social, and by extension political, competition continues, it will play out between these house or clan leaders, so that the one that by chance has an arbitrarily small advantage over the others may gain dominance over all of them and thus also their dominated households, and so on up to state societies. As with the examples of the Yule process and preferential attachment discussed above, at any level of competition -- e.g.~between chiefs to become king -- actors who find themselves further down the hierarchy, like clan leaders, have disproportionally lower chances of reaching that level, though in theory it is not impossible. Furthermore, the power-law relationship between leaders at different levels is recognised in that from any level to the next the number of leaders decreases exponentially while their dominance (the sum of households they each dominate) increases exponentially. The fact that most households remain at a bottom level with more random (\emph{sensu} normal or log-normal) differences between them, does not change the fact that the leadership structure is hierarchical and power-law distributed -- meaning that the entire distribution of dominance in the population has a power-law \emph{tail}, as expected in most empirical settings.
+
+There are some critical issues with such a model of the emergence of social hierarchy.
 
 \begin{itemize}
-\tightlist
 \item
-  scale-independent -\textgreater{} fractal
+  If house sizes are only symbolic materialisations of dominance (i.e.~not in practice, they don't need to actually be able to house all the people they dominate) the power law may take a scaling exponent that often would be seen as too high, giving a too light heavy tail (rewrite). Material constraints to house construction++
+\item
+  The hierarchy may be highly organic and volatile, and there doesn't need to be any discernible discrete levels but rather continuous.
+\item
+  How large (how many levels) does the hierarchy need to be before it can be recognised empirically? When does it deviate clearly from log-normal? +++
+\item
+  Many other social situations exist that don't involve competition (e.g. (\textbf{wagner?})). What other situations could generate power-law distributed house sizes? Clan structures and assemblies. Large democracies with delegated organisational tasks.
 \end{itemize}
 
-Preferential attachment: (Mitzenmacher 2004), Yule (1925), Zipf (1949), Simon (1955), Mandelbrot (1997), short summary and connection to fractal geometry in Mandelbrot (1982), pp.~341-8, Barabási and Albert (1999),
+Multiplicative processes: power laws vs.~log-normal, long debates Sheridan and Onodera (2018).
 
-Yule process, Matthew effect, rich-gets-richer.
-
-Combination log-normal + exponential (i.e.~normal + exponential + exponential) (Reed 2001; Reed and Hughes 2002)
+Power laws are not consciously made, they emerge spontaneously: is power-law word frequency a good proxy for language (possibly off topic)
 
 \begin{itemize}
 \item
-  Notes on terminology: Power law, Pareto and Zipf, Newman (2005), pp.~327 and 350. Lack of consensus on notation, also for scaling parameter. Difference between PDF and CDF, continuous and discrete.
+  Notes on terminology: Power law, Pareto (``80-20 rule'') and Zipf (rank-size rule), Newman (2005), pp.~327 and 350. Lack of consensus on notation, also for scaling parameter. Difference between PDF and CDF, continuous and discrete.
+\item
+  Upper and lower bounds. Other more complex models: stretched exponential, power law with exponential cutoff, parabolic fractal. Combination log-normal + exponential (i.e.~normal + exponential + exponential) (Reed 2001; Reed and Hughes 2002)
 \item
   A law (distribution) is not a law (of nature), see Grove (2011) for review of the long-lasting confusion in archaeology (e.g. Hodder (1979)), also ``rank-size rule''
 \end{itemize}
-
-fsdasdf
-
-\hypertarget{combinations-log-normal-stretched-exponential-parabolic-fractal}{%
-\subsection{Combinations: Log-normal, stretched exponential, parabolic fractal}\label{combinations-log-normal-stretched-exponential-parabolic-fractal}}
 
 \hypertarget{distfit-archaeo}{%
 \section{Fitting heavy-tailed distributions in archaeology}\label{distfit-archaeo}}
@@ -1582,6 +1652,9 @@ Maschner, Herbert, and Alexander Bentley. 2003. {``The Power Law of Rank and Hou
 \leavevmode\vadjust pre{\hypertarget{ref-mech1999}{}}%
 Mech, L. David. 1999. {``Alpha Status, Dominance, and Division of Labor in Wolf Packs.''} \emph{Canadian Journal of Zoology} 77(8):1196--1203. doi: \href{https://doi.org/10.1139/z99-099}{10.1139/z99-099}.
 
+\leavevmode\vadjust pre{\hypertarget{ref-merton1968}{}}%
+Merton, Robert K. 1968. {``\href{https://www.jstor.org/stable/1723414}{The Matthew Effect in Science}.''} \emph{Science} 159(3810):56--63.
+
 \leavevmode\vadjust pre{\hypertarget{ref-midlarsky1999}{}}%
 Midlarsky, Manus I. 1999. \emph{The Evolution of Inequality: War, State Survival, and Democracy in Comparative Perspective}. Stanford: Stanford University Press.
 
@@ -1695,6 +1768,9 @@ Shatilo, Liudmyla. 2021. \emph{\href{https://library.oapen.org/handle/20.500.126
 
 \leavevmode\vadjust pre{\hypertarget{ref-shennan2018}{}}%
 Shennan, Stephen. 2018. \emph{The first farmers of Europe: an evolutionary perspective}. Cambridge: University Press.
+
+\leavevmode\vadjust pre{\hypertarget{ref-sheridan2018}{}}%
+Sheridan, Paul, and Taku Onodera. 2018. {``A Preferential Attachment Paradox: How Preferential Attachment Combines with Growth to Produce Networks with Log-Normal In-Degree Distributions.''} \emph{Scientific Reports} 8(1):2811. doi: \href{https://doi.org/10.1038/s41598-018-21133-2}{10.1038/s41598-018-21133-2}.
 
 \leavevmode\vadjust pre{\hypertarget{ref-sherratt2004}{}}%
 Sherratt, Andrew. 2004. {``Fractal Farmers: Patterns of Neolithic Origin and Dispersal.''} Pp. 53--63 in, edited by J. Cherry, C. Scarre, and S. Shennan. Cambridge: McDonald Institute for Archaeological Research.

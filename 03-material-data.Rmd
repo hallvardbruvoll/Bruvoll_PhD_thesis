@@ -2,19 +2,21 @@
 
 ## Studying social hierarchy in archaeology and prehistory. {#complexity-archaeo}
 
--   Grave goods
+Grave goods
 
--   Burial monuments
+Burial monuments
 
--   The denominator problem
+Architecture
 
--   The use of ethnography
+The denominator problem
 
--   Other approaches (osteological, isotopes, craft specialisation **refs**)
+The use of ethnography
 
--   This project: house-size distributions and settlement layouts (details in subsequent chapters), just very short argumentation.
+Other approaches (osteological, isotopes, craft specialisation **refs**)
 
--   Comparative approach: Neolithic technology (not bronze axes), wood and wattle-and-daub architecture, (near) complete settlement plans/extensive documentation
+This project: house-size distributions and settlement layouts (details in subsequent chapters), just very short argumentation.
+
+Comparative approach: Neolithic technology (not bronze axes), wood and wattle-and-daub architecture, (near) complete settlement plans/extensive documentation
 
 For this project I opted for the use of houses and built environments as proxy for social hierarchy. In this way I hope to largely avoid the denominator problem associated with burials. While it is true that for many archaeological culture groups in late prehistory habitats are poorly preserved and hard to discover, leaving us still with a limited understanding of them (the case in many Michelsberg, Corded Ware and Bell Beaker groups, only to mention a few **check**), in groups where habitats are well preserved, there is little reason to suspect that the available record would not cover the whole range of social statuses if these societies were hierarchical. Unlike burials, every individual in a sedentary society -- with few exceptions like homeless persons in more recent urban contexts -- will normally have at least one fixed place to stay overnight, and these homes will in most cases be constructed within the same fundamental framework of techniques and building materials, depending more on culture specific traditions and environmental factors than on social status (**citation?**). As an example, in a society where mudbrick is the main building material, like in the Neolithic Near East and Anatolia, nearly all constructions are made in mudbrick, regardless of the social status of the inhabitants. In Europe north of the Alps, wattle-and-daub construction was the almost exclusive building technique for any architectural feature from the early Neolithic until the Roman conquest, and well into the Middle Ages north of the *limes*. One can of course enumerate exceptions, but more importantly houses are in any stratified society also a marker of social status, which can be exhibited in a range of ways, from decorations, use of more precious raw materials as well as size. That is precisely the reason for using houses as a proxy for social status and hierarchy in archaeological settings. But the point here is that there should be little taphonomic differentiation between groups of high and low status within a given archaeological context, at least in prehistory, and at least not as much as can be expected for burials, meaning that we can expect to find samples of houses that are representative of the social structure of the archaeological culture in question. On sites where there is taphonomical loss of architectural structures, as long as the overall building tradition is homogeneous, there is no reason this loss should affect one segment of the society more or less than others.
 
@@ -28,7 +30,7 @@ Meaning of "house"
 
 ## The Linear Pottery culture complex {#lbk}
 
--   General intro to the culture
+General intro to the culture
 
 Formation, characteristics -- striking difference from earlier Mesolithic cultures, hence the term "Neolithic Revolution" pinned by Vere Gordon Childe for the seemingly abrupt transition to agriculture in continental Europe with what he called the Danubian Ia **ref**. @whittle2022, check with Trigger!
 
@@ -38,9 +40,9 @@ Questions of contact and even creolisation with local hunter-gatherer groups in 
 
 End of LBK as collapse? The whole culture as an adaptive cycle: @gronenborn2014.
 
--   Organisation of Linear Pottery society: egalitarian or hierarchic?
-    -   Cemeteries: @jeunesse2022, check @gaydarska2023 and @augereau2021.
--   Linear Pottery architecture and house construction
+Organisation of Linear Pottery society: egalitarian or hierarchic?
+Cemeteries: @jeunesse2022, check @gaydarska2023 and @augereau2021.
+Linear Pottery architecture and house construction
 
 origin of the longhouse: @bánffy2020, @coudart2015, @last2015
 
@@ -63,33 +65,33 @@ ggplot(data = data)+
   scale_y_log10()
 ```
 
--   The Žitava valley and research project
+The Žitava valley and research project
 
 ## The Cucuteni-Trypillia culture complex {#trypillia}
 
--   General intro to the culture
+General intro to the culture
 
 Recent dating, see @harper2023, @shatilo2021.
 
--   Trypillia architecture and house construction
+Trypillia architecture and house construction
 
-    -   @pickartz2019, pp. 1649-50: "unburnt" and "eroded" are misleading labels, since highly burnt and even vitrified material regularly found during excavation of these. Probably reflecting houses that are constructed with less daub, without an oven installation, and/or without raised clay platform, thus causing significantly weaker magnetic signals. These houses may in fact represent entirely different social functions from regular houses, but there is as for now no consensus as to what this may be (e.g. artisanal, storage etc.)
+@pickartz2019, pp. 1649-50: "unburnt" and "eroded" are misleading labels, since highly burnt and even vitrified material regularly found during excavation of these. Probably reflecting houses that are constructed with less daub, without an oven installation, and/or without raised clay platform, thus causing significantly weaker magnetic signals. These houses may in fact represent entirely different social functions from regular houses, but there is as for now no consensus as to what this may be (e.g. artisanal, storage etc.)
 
--   Trypillia social organisation: current debate
+Trypillia social organisation: current debate
 
 Side note on Varna: Lichardus (1991; also Gimbutas), as discussed in @kadrow2013, proposed that the social inequality observed at Varna in the mid-5th millennium, was already then adopted from pastoral North Pontic steppe cultures (*check this and delete if unsure*); cf. @chapman2006 -- three social levels interpreted from grave goods, but not clear if these are really discrete or constructed on a continuum. The term *fractal* is here used purely as a metaphor for complex personhood structures, rather in opposition to the described social hierarchy.
 
--   The B2/C1 and the mega-sites of the Southern Bug -- Dnieper interfluve
--   The urbanism debate: Comparison with Uruk in Müller and CHECK; low-density urbanism for Nebelivka: check for refs. in @ohlrau2022,p .91 cc. Mega-sites as *anomalocivitates*: @ohlrau2022 and @sindbæk2022.
+The B2/C1 and the mega-sites of the Southern Bug -- Dnieper interfluve
+The urbanism debate: Comparison with Uruk in Müller and CHECK; low-density urbanism for Nebelivka: check for refs. in @ohlrau2022,p .91 cc. Mega-sites as *anomalocivitates*: @ohlrau2022 and @sindbæk2022.
 
 ## Reading site plans from geomagnetic imagery
 
--   Caveats: fill in here.
+Caveats: fill in here.
 
 @pickartz2021.
 
 ## Synthetic data
 
--   And why I'm not (this time) relying on ethnographic data.
+And why I'm not (this time) relying on ethnographic data.
 
--   Don't go into technicalities here, just the reasoning.
+Don't go into technicalities here, just the reasoning.
