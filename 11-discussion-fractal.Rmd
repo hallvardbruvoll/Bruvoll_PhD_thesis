@@ -4,6 +4,18 @@ fdsasdf
 
 Also mention here fractals or related concepts used as a metaphor, with no mathematics involved [e.g. @chapman2006; @sherratt2004; @sindbæk2022; @whitridge2016].
 
+## Distribution fitting
+
+-   Multiplicative processes: power laws vs. log-normal, long debates [e.g. @harrison1981, @sheridan2018]. Does it really matter in the end?
+
+-   
+
+## Image analysis
+
+fdsa
+
+## Concluding remarks?
+
 Check for "fractal + archaeology" in WorldCat.
 
 END Chapter

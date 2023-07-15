@@ -1,11 +1,11 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.6.15)  14 JUL 2023 19:41
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.7.15)  15 JUL 2023 19:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **bookdown-demo.tex
 (./bookdown-demo.tex
-LaTeX2e <2023-06-01>
-L3 programming layer <2023-06-05>
+LaTeX2e <2023-06-01> patch level 1
+L3 programming layer <2023-06-30>
 (c:/Users/hallvbru/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/book.cls
 Document Class: book 2023/05/17 v1.4n Standard LaTeX document class
 (c:/Users/hallvbru/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/bk12.clo
@@ -100,7 +100,7 @@ Package: setspace 2022/12/04 v6.7b set line spacing
 ) (c:/Users/hallvbru/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/iftex/iftex.sty
 Package: iftex 2022/02/03 v1.0f TeX engine tests
 ) (c:/Users/hallvbru/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/unicode-math/unicode-math.sty (c:/Users/hallvbru/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3.sty
-Package: expl3 2023-06-05 L3 programming layer (loader) 
+Package: expl3 2023-06-30 L3 programming layer (loader) 
 (c:/Users/hallvbru/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3backend/l3backend-xetex.def
 File: l3backend-xetex.def 2023-04-19 L3 backend support: XeTeX
 \g__graphics_track_int=\count268
@@ -466,7 +466,7 @@ Package: titling 2009/09/04 v2.1d maketitle typesetting
 \thanksmargin=\skip69
 \droptitle=\skip70
 ) (c:/Users/hallvbru/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty
-Package: hyperref 2023-05-16 v7.00y Hypertext links for LaTeX
+Package: hyperref 2023-07-08 v7.01b Hypertext links for LaTeX
 (c:/Users/hallvbru/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 Package: ltxcmds 2020-05-10 v1.25 LaTeX kernel commands for general use (HO)
 ) (c:/Users/hallvbru/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
@@ -490,7 +490,7 @@ Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 ) (c:/Users/hallvbru/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/auxhook/auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 ) (c:/Users/hallvbru/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/nameref.sty
-Package: nameref 2023-05-16 v2.51 Cross-referencing by name of section
+Package: nameref 2023-08-07 v2.53 Cross-referencing by name of section
 (c:/Users/hallvbru/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/refcount/refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (c:/Users/hallvbru/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
@@ -504,13 +504,13 @@ Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 \Hy@linkcounter=\count305
 \Hy@pagecounter=\count306
 (c:/Users/hallvbru/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def
-File: pd1enc.def 2023-05-16 v7.00y Hyperref: PDFDocEncoding definition (HO)
+File: pd1enc.def 2023-07-08 v7.01b Hyperref: PDFDocEncoding definition (HO)
 ) (c:/Users/hallvbru/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
 \Hy@SavedSpaceFactor=\count307
 (c:/Users/hallvbru/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def
-File: puenc.def 2023-05-16 v7.00y Hyperref: PDF Unicode definition (HO)
+File: puenc.def 2023-07-08 v7.01b Hyperref: PDF Unicode definition (HO)
 )
 Package hyperref Info: Option `unicode' set `true' on input line 4050.
 Package hyperref Info: Hyper figures OFF on input line 4167.
@@ -552,7 +552,7 @@ package with kernel methods
 )
 Package hyperref Info: Driver (autodetected): hxetex.
 (c:/Users/hallvbru/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hxetex.def
-File: hxetex.def 2023-05-16 v7.00y Hyperref driver for XeTeX
+File: hxetex.def 2023-07-08 v7.01b Hyperref driver for XeTeX
 (c:/Users/hallvbru/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/stringenc/stringenc.sty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
 )
@@ -1096,22 +1096,22 @@ File: bookdown-demo_files/figure-latex/04-hierarchy-1.pdf Graphic file (type pdf
 [60] [61] [62] [63] [64] [65] [66]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[67] [68] [69] [70
+[67] [68] [69] [70] [71] [72
 
 ]
 Chapter 5.
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/it' will be
-(Font)              scaled to size 8.4pt on input line 908.
-[71]
+(Font)              scaled to size 8.4pt on input line 923.
+[73]
 File: bookdown-demo_files/figure-latex/05-distfit-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/05-distfit-1.pdf>
 File: bookdown-demo_files/figure-latex/05-tails-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/05-tails-1.pdf>
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/it' will be
-(Font)              scaled to size 8.0pt on input line 933.
+(Font)              scaled to size 8.0pt on input line 948.
 File: bookdown-demo_files/figure-latex/05-pltails-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/05-pltails-1.pdf>
-[72] [73] [74]
+[74] [75] [76]
 File: bookdown-demo_files/figure-latex/05-synth-ln-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/05-synth-ln-1.pdf>
 Missing character: There is no 𝜎 (U+1D70E) in font Times New Roman/OT:script=latn;language=dflt;mapping=tex-text;!
@@ -1121,91 +1121,85 @@ Missing character: There is no 𝜎 (U+1D70E) in font Times New Roman/OT:script=
 Missing character: There is no 𝜎 (U+1D70E) in font Times New Roman/OT:script=latn;language=dflt;mapping=tex-text;!
 Missing character: There is no 𝜎 (U+1D70E) in font Times New Roman/OT:script=latn;language=dflt;mapping=tex-text;!
 Missing character: There is no 𝜇 (U+1D707) in font Times New Roman/OT:script=latn;language=dflt;mapping=tex-text;!
-[75
+[77
 
 ]
 File: bookdown-demo_files/figure-latex/05-ln-tail-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/05-ln-tail-1.pdf>
 File: bookdown-demo_files/figure-latex/05-ln-pl-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/05-ln-pl-1.pdf>
-[76]
+[78]
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/n' will be
-(Font)              scaled to size 15.60004pt on input line 1024.
-[77] [78]
+(Font)              scaled to size 15.60004pt on input line 1039.
+[79] [80]
 Chapter 6.
-[79
+[81
 
 ]
 Missing character: There is no 𝜆 (U+1D706) in font Times New Roman/OT:script=latn;language=dflt;mapping=tex-text;!
-[80] [81] [82
+[82] [83] [84
 
-] [83] [84]
+] [85] [86]
 Chapter 7.
-[85
-
-] [86]
-Chapter 8.
 [87
 
 ] [88]
+Chapter 8.
+[89
+
+] [90]
 Chapter 9.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[89
+[91
 
-] [90] [91
+] [92] [93
 
-] [92]
+] [94]
 Chapter 10.
-[93
+[95
 
 ]
 Overfull \hbox (90.28287pt too wide) has occurred while \output is active
-\TU/TimesNewRoman(0)/m/n/12 94 \TU/TimesNewRoman(0)/m/it/12 CHAPTER 10.  DISCUSSION: SOCIAL COMPLEXITY IN LINEAR POTTERY AND TRYPILLIA SETTLEMENTS
+\TU/TimesNewRoman(0)/m/n/12 96 \TU/TimesNewRoman(0)/m/it/12 CHAPTER 10.  DISCUSSION: SOCIAL COMPLEXITY IN LINEAR POTTERY AND TRYPILLIA SETTLEMENTS
  []
 
-[94
+[96
 
 ]
 Chapter 11.
-[95] [96
-
-]
+[97] [98]
 Chapter 12.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[97] [98]
-Underfull \hbox (badness 1259) in paragraph at lines 1246--1248
+[99
+
+] [100]
+Underfull \hbox (badness 1259) in paragraph at lines 1278--1280
 \TU/TimesNewRoman(0)/m/n/12 from an Archaeological Perspective.” \TU/TimesNewRoman(0)/m/it/12 PLOS ONE \TU/TimesNewRoman(0)/m/n/12 9(3):e91510. doi: []10.1371/jour-
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[99
+[101
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[100]
-Underfull \hbox (badness 1264) in paragraph at lines 1330--1332
+[102]
+Underfull \hbox (badness 1264) in paragraph at lines 1365--1367
 \TU/TimesNewRoman(0)/m/n/12 2006. “The social context of the emergence, development and abandonment of the
  []
 
 
-Underfull \hbox (badness 2103) in paragraph at lines 1330--1332
+Underfull \hbox (badness 2103) in paragraph at lines 1365--1367
 \TU/TimesNewRoman(0)/m/n/12 Varna cemetery, Bulgaria.” \TU/TimesNewRoman(0)/m/it/12 European journal of archaeology \TU/TimesNewRoman(0)/m/n/12 9(2-3):159183. doi:
  []
 
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[101]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[102]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [103]
@@ -1215,97 +1209,103 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [105]
-Overfull \hbox (51.26196pt too wide) in paragraph at lines 1531--1533
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[106]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[107]
+Overfull \hbox (51.26196pt too wide) in paragraph at lines 1566--1568
 \TU/TimesNewRoman(0)/m/n/12 höyük, Turkey.” \TU/TimesNewRoman(0)/m/it/12 Cambridge Archaeological Journal \TU/TimesNewRoman(0)/m/n/12 28(4):565–90. doi: []10.1017/S0959774318000240[]. 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[106]
-Underfull \hbox (badness 1430) in paragraph at lines 1546--1548
+[108]
+Underfull \hbox (badness 1430) in paragraph at lines 1581--1583
 []\TU/TimesNewRoman(0)/m/n/12 Li, Jian, Qian Du, and Caixin Sun. 2009. “An Improved Box-Counting Method for
  []
 
 
-Underfull \hbox (badness 2922) in paragraph at lines 1546--1548
+Underfull \hbox (badness 2922) in paragraph at lines 1581--1583
 \TU/TimesNewRoman(0)/m/n/12 Image Fractal Dimension Estimation.” \TU/TimesNewRoman(0)/m/it/12 Pattern Recognition \TU/TimesNewRoman(0)/m/n/12 42(11):2460–69. doi:
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[107]
-Overfull \hbox (31.4721pt too wide) in paragraph at lines 1588--1590
+[109]
+Overfull \hbox (31.4721pt too wide) in paragraph at lines 1623--1625
 \TU/TimesNewRoman(0)/m/n/12 normal Distributions.” \TU/TimesNewRoman(0)/m/it/12 Internet Mathematics \TU/TimesNewRoman(0)/m/n/12 1(2):226–51. doi: []10.1080/15427951.2004.10129088[]. 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[108]
-Underfull \hbox (badness 2142) in paragraph at lines 1633--1635
+[110]
+Underfull \hbox (badness 2142) in paragraph at lines 1668--1670
 []\TU/TimesNewRoman(0)/m/n/12 Porcic, Marko. 2010. “House Floor Area as a Correlate of Marital Residence Pat-
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[109]
-Underfull \hbox (badness 1297) in paragraph at lines 1660--1662
+[111]
+Underfull \hbox (badness 1297) in paragraph at lines 1695--1697
 \TU/TimesNewRoman(0)/m/n/12 in the Grey Wolf Optimizer Algorithm.” \TU/TimesNewRoman(0)/m/it/12 Applied Soft Computing \TU/TimesNewRoman(0)/m/n/12 57:315–28. doi:
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[110]
-Underfull \hbox (badness 3302) in paragraph at lines 1711--1713
+[112]
+Underfull \hbox (badness 3302) in paragraph at lines 1746--1748
 []\TU/TimesNewRoman(0)/m/n/12 Sindbæk, Søren M. 2022. “Weak Ties and Strange Attractors: Anomalocivitas and
  []
 
 
-Underfull \hbox (badness 1331) in paragraph at lines 1711--1713
+Underfull \hbox (badness 1331) in paragraph at lines 1746--1748
 \TU/TimesNewRoman(0)/m/n/12 the Archaeology of Urban Origins.” \TU/TimesNewRoman(0)/m/it/12 Journal of Urban Archaeology \TU/TimesNewRoman(0)/m/n/12 5:19–32. doi:
  []
 
 
-Underfull \hbox (badness 2261) in paragraph at lines 1717--1719
+Underfull \hbox (badness 2261) in paragraph at lines 1752--1754
 []\TU/TimesNewRoman(0)/m/n/12 Souvatzi, Stella. 2017. “Kinship and Social Archaeology.” \TU/TimesNewRoman(0)/m/it/12 Cross-cultural research
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[111]
+[113]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[112] [113] [114
+[114] [115] [116
 
 ]
 Appendix A.
-[115] [116
+[117] [118
 
 ]
 Appendix B.
-[117] (./bookdown-demo.aux)
+[119] (./bookdown-demo.aux)
  ***********
-LaTeX2e <2023-06-01>
-L3 programming layer <2023-06-05>
+LaTeX2e <2023-06-01> patch level 1
+L3 programming layer <2023-06-30>
  ***********
 
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `bookdown-demo.out' has not changed.
-(rerunfilecheck)             Checksum: 6E7C01C270404906BD60D3838EC2F7E4;12607.
+(rerunfilecheck)             Checksum: 59B8C450C1A24D28D699658B45DC5FD4;13052.
  ) 
 Here is how much of TeX's memory you used:
- 18889 strings out of 478386
- 357078 string characters out of 5839274
- 1864384 words of memory out of 5000000
- 39002 multiletter control sequences out of 15000+600000
- 522913 words of font info for 129 fonts, out of 8000000 for 9000
+ 18914 strings out of 477888
+ 358004 string characters out of 5821579
+ 1928869 words of memory out of 5000000
+ 39525 multiletter control sequences out of 15000+600000
+ 567595 words of font info for 131 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  90i,8n,122p,3671b,474s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on bookdown-demo.pdf (117 pages).
+Output written on bookdown-demo.pdf (119 pages).
