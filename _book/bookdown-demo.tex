@@ -135,7 +135,7 @@
 \makeatother
 \subtitle{with case studies from the Linear Pottery and Trypillia cultures (5.500 - 3.500 cal. BCE)}
 \author{Hallvard Bruvoll \and Department of Archaeology, Conservation and History \and University of Oslo}
-\date{2023-07-15}
+\date{2023-07-16}
 
 \begin{document}
 \maketitle
@@ -532,13 +532,13 @@ house orientation: ``origin'' hypothesis: Bradley (2001)
 Patrilocality in LBK based on Sr isotopes: Hrnčíř, Vondrovský, and Květina (2020) (read this more carefully), and other data (check) Schiesberg (2016).
 
 \begin{verbatim}
-## -- Attaching core tidyverse packages -----------
+## -- Attaching core tidyverse packages ------------------- tidyverse 2.0.0 --
 ## v dplyr     1.1.1     v readr     2.1.4
 ## v forcats   1.0.0     v stringr   1.5.0
 ## v ggplot2   3.4.2     v tibble    3.2.1
 ## v lubridate 1.9.2     v tidyr     1.3.0
 ## v purrr     1.0.1     
-## -- Conflicts ---------- tidyverse_conflicts() --
+## -- Conflicts ------------------------------------- tidyverse_conflicts() --
 ## x dplyr::filter() masks stats::filter()
 ## x dplyr::lag()    masks stats::lag()
 ## i Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
@@ -856,14 +856,14 @@ It should also be noted that there are social situations that do not involve com
 
 In sum, the important characteristics of power-law generating systems, are that they are \emph{complex}, meaning that they function or operate over several \emph{scales} or orders of magnitude, which again implies that they exhibit \emph{self-similarity} and can be described as \emph{fractals} or \emph{hierarchies}. Furthermore, they are rarely consciously planned, but rather tend to \emph{emerge} spontaneously with growth, as a result of self-regulation and iterated responses to growth, like splitting or feedback that are proportional to size. Finally, even though such systems can be described as fully deterministic, they are also highly sensitive to initial conditions, i.e.~they exhibit \emph{chaos}, so that the magnitudes of single outcomes or trajectories can in practice be impossible to predict or forecast into the future, while the system as a whole can be well described, as well as explained backwards in time. Evidence of power-law distributed house sizes should be considered as a clear sign of a hierarchical social structure, though the exact nature of the structure -- and specifically whether it is autocratic or democratic, or something in-between -- needs to be argued from complementary evidence.
 
-\hypertarget{variants-of-power-law-distributions}{%
-\subsection{Variants of power-law distributions}\label{variants-of-power-law-distributions}}
+\hypertarget{some-variants-of-power-law-distributions}{%
+\subsection{Some variants of power-law distributions}\label{some-variants-of-power-law-distributions}}
 
-A note must be made regarding terminology on power laws and some closely related distributions. Contrarily to normal, log-normal and exponential distributions, power-law distributions are not defined in a uniform way across all the disciplines where they are applied. Despite all claims of ubiquity, they remain special cases in many contexts, are not systematically taught in basic introductions to mathematics or statistics, and their broadened understanding seems to have suffered from long-standing discipline-specific traditions of defining them. Archaeologists who borrow theory and method from different fields therefore run the risk of talking past each other and not seeing the bigger picture of common phenomena described in different ways. Two alternative and more or less parallel ways of describing power-law distributions run under the names Pareto and Zipf distributions, after the first researchers who became known to define them under their specific parametrisations.
+A note must be made regarding terminology on power laws and some closely related distributions. Contrarily to normal, log-normal and exponential distributions, power-law distributions are not defined in a uniform way across all the disciplines where they are applied. Despite all claims of ubiquity, they remain special cases in many contexts, are not systematically taught in basic introductions to mathematics or statistics, and their broadened understanding seems to have suffered from long-standing discipline-specific traditions of defining them. Archaeologists who borrow theory and method from different fields therefore run the risk of talking past each other and not seeing the bigger picture of common phenomena described in different ways. Two alternative and more or less parallel ways of describing power-law distributions run under the names \emph{Pareto} and \emph{Zipf distributions}, after the first researchers who became known to define them under their specific parametrisations.
 
 The so-called Pareto distributions form a group of distribution types with varying numbers of parameters, and are most often associated with applications in economics and finance (Pareto was an economist and his major works were on wealth and income distributions, see Chapter 20 in Johnson 1994; Pareto 1896). Comparing with the power-law definitions given above (Equations (\textbf{ref?})(eq:power-law) and (\textbf{ref?})(eq:pareto)), it is important to note that Pareto distributions are defined as survival functions, i.e.~cCDFs (complementary cumulative distribution functions) or the proportion of the distribution that is \emph{higher} than a sample \(X\). The scaling exponent for a Pareto distribution (Johnson 1994 confusingly note this as \(a\), p.~573, but here I prefer to use \(\beta\) for clarity) thus has the value of the power-law exponent \(\alpha-1\), or in negative values \(-\beta = -\alpha +1\), meaning that Pareto plots have a less steep slope than their power-law counterparts. Accompanying their use in applied economics is the appellation of the ``80-20 rule'', a rule of thumb stating e.g.~that in a company 80\% of sales will typically go to 20\% of clients as a result of the very skewed distribution. This specific rule corresponds to a power-law distribution where \(\alpha \approx 2.1\) or \(\beta \approx 1.1\) (Newman 2005:334).
 
-Zipf law distributions, often referred to as ``rank-frequency'' or ``rank-size'' plots or rules, are most associated with linguistics, due to Zipf's work showing that word counts (as well as city sizes) tend to follow power laws (Arshad, Hu, and Ashraf 2018; Zipf 1949). Only some minor plotting conventions differ Zipf plots from Pareto plots, but again this influences systematically the value of the calculated scaling exponent. While Zipf distributions are also cumulative, they are not normalised to 1, meaning that absolute size ranks are plotted instead of probability. Furthermore, these are plotted on the x axis rather than the y axis, with the implication that the distribution is \emph{discrete} rather than continuous. The y-axis (the actual variable being measured) can in principle be discrete or continuous, but the most commonly cited cases are discrete, i.e.~count data, like the number of inhabitants in a city or the number of times (frequency) a word appears in a text. The scaling exponent of a Zipf law (or a Zipf exponent, denoted \(q\) e.g.~in Arshad et al. 2018:78) can thus be expressed as
+Zipf law distributions, often referred to as ``rank-frequency'' or ``rank-size'' plots or rules, are most associated with linguistics, due to Zipf's work showing that word counts (as well as city sizes) tend to follow power laws (Arshad, Hu, and Ashraf 2018; Zipf 1949). Only some minor plotting conventions differ Zipf plots from Pareto plots, but again this influences systematically the value of the calculated scaling exponent. While Zipf distributions are also cumulative, they are not normalised to 1, meaning that absolute size ranks are plotted instead of probabilities. Furthermore, these are plotted on the x axis rather than the y axis, with the implication that the distribution is \emph{discrete} rather than continuous. The y axis (the actual variable being measured) can in principle be discrete or continuous, but the most commonly cited cases are discrete, i.e.~count data, like the number of inhabitants in a city or the number of times (frequency) a word appears in a text. The scaling exponent of a Zipf law (or a Zipf exponent, denoted \(q\) e.g.~in Arshad et al. 2018:78) can thus be expressed as
 
 \begin{equation}
 q = 1/\beta = 1/(\alpha-1).
@@ -872,13 +872,9 @@ q = 1/\beta = 1/(\alpha-1).
 
 The fact that there does not seem to be any consensus on which character to use for the different parameters is an additional difficulty to handle when comparing studies that apply these different approaches. In his extensive review of these three separate research traditions, Mark Newman (a physicist; the power law is the most common variant within the natural sciences) admits that this inconsistent nomenclature ``causes much confusion in the literature'' (2005:327), which I will claim is a polite understatement. For clarity, throughout this thesis I only refer to the scaling parameter of the power law as defined in Equation (\textbf{ref?})(eq:power-law), which I denote \(\alpha\), no matter the graphical representation of the distribution (most of the plots here are cCDF plots, and could thus be qualified as Pareto plots). The value of \(\alpha\) is furthermore only calculated directly on the data using the maximum likelihood method described in Chapter \ref{methods-distfit}, and is thus not dependent on the type of plot chosen for graphical illustration.
 
-As already mentioned, regular power laws are asymptotic so that as \(x\) approaches infinity, \(y\) goes arbitrarily close to \(0\) without ever reaching it. This in itself acts as a limit to its usefulness for modelling most real-world phenomena which are of finite size, even though the power law may be a good approximation over some range of the system. In other words, in a power-law model of house sizes, no matter the value of \(\alpha\), the probability of a house measuring a trillion square metres is certainly negligible, but still above \(0\). Several solutions have been proposed to this problem, allowing the model to end somewhere at \(x < \infty\). Two main candidates are the \emph{power law with exponential cutoff} and the \emph{stretched exponential} (see Clauset et al. 2009:664 for precise definitions). The former is -- as the name indicates -- a power law with an additional exponential factor, which turns the function increasingly (exponentially) downwards as \(x\) gets higher. The latter is the survival function of a Weibull distribution
+As already mentioned, regular power laws are asymptotic so that as \(x\) approaches infinity, \(y\) goes arbitrarily close to \(0\) without ever reaching it. This in itself acts as a limit to its usefulness for modelling most real-world phenomena which are of finite size, even though the power law may be a good approximation over some range of the system. In other words, in a power-law model of house sizes, no matter the value of \(\alpha\), the probability of a house measuring a trillion square metres is certainly negligible, but still tecnhically above \(0\). Several solutions have been proposed to this problem, allowing the model to end somewhere at \(x < \infty\). Among the main candidates are the \emph{power law with exponential cutoff}, the \emph{stretched exponential} and the \emph{parabolic fractal} distributions. The first one is -- as the name indicates -- a power law with an additional exponential factor, which turns the function increasingly (exponentially) downwards as \(x\) gets higher (see Clauset et al. 2009:664 for precise definition). The second is a type of exponential distribution, similar to the one described above (Equation (\textbf{ref?})(eq:exponential)), but where the \(x\) exponent is raised to a power constant \(0 < c <1\), giving a survival function \(P(x) = e^{-(x/x_{min})^c}\), resulting in a tail which is heavier than that of a regular exponential distribution but thinner than that of a regular power law (Clauset et al. 2009:664; Laherrère and Sornette 1998). This survival function or cCDF of a stretched expoential is furthermore equivalent to that of the \emph{Weibull distribution}, a well studied model type that is widely implemented in statistical software, making it easier to include in analyses compared to the more piecewise power law with exponential cutoff (comp. Johnson 1994:629 ff.).
 
-\begin{itemize}
-\tightlist
-\item
-  Upper and lower bounds. Other more complex models: stretched exponential, power law with exponential cutoff, parabolic fractal. Combination log-normal + exponential (i.e.~normal + exponential + exponential) (Reed 2001; Reed and Hughes 2002)
-\end{itemize}
+Finally, the so-called parabolic fractal distribution has been proposed as a quadratic function model on log-transformed values of size to rank (Zipf plot), to account for cases where the distribution follows a parabola of constant curvature on a log-log plot (Laherrère 2000). Jean Laherrère -- working for a large oil company modelling the size distribution of oil reserves -- noted how studies that claim to show power-law distributions in empirical data often tend to explain away the curvature of the distribution in log-log plots, e.g.~by focussing on shorter ranges of the tail, or by constructing composite distribution models. While the log-normal model forms a parabola on log-log plots of its PDF (Figure \ref{fig:04-PDF}), none of the above discussed models have this characteristic for their survival functions. A quadratic function is a simple polynomial including a squared term of the variable, of the type \(f(x) = ax^2 + bx + c\). The use of the term \emph{fractal} here relates to the shape of the distribution being evaluated with log-log transformations, so that the function is interpreted as a power law with an additional squared factor, \(a\) and \(b\) both representing scaling exponents. With quadratic functions, the coefficient to the squared term (here \(a\)) determines the curvature of the model, while \(c\) still has the role of y-intercept. The model can furthermore be interpreted as a power law where the scaling exponent \(\alpha\) is continuously increased with higher \(x\), in other words where \(\alpha\) corresponds to the derivative of the parabola at any given \(x\), forming a continuous spectrum characteristic of multifractals (see e.g. Harte 2001). Though this model seems to have much potential both for modelling and explaining self-affine phenomena within finite systems, it is relatively recent and not easily applicable without specialist knowledge in statistics and programming, and is not further included in this thesis. Future studies would be warranted, e.g.~applying the analyses proposed in Laherrère (2000) and (1998) for modelling sizes and frequencies of undiscovered and/or lost archaeological sites within given regions.
 
 \hypertarget{distfit-archaeo}{%
 \section{Fitting heavy-tailed distributions in archaeology}\label{distfit-archaeo}}
@@ -1506,6 +1502,9 @@ Harper, Thomas K., Aleksandr Diachenko, Sergei N. Ryzhov, Yuri Y. Rassamakin, La
 \leavevmode\vadjust pre{\hypertarget{ref-harrison1981}{}}%
 Harrison, Alan. 1981. {``A Tale of Two Distributions.''} \emph{The Review of Economic Studies} 48(4):621--31.
 
+\leavevmode\vadjust pre{\hypertarget{ref-harte2001}{}}%
+Harte, David. 2001. \emph{\href{https://doi.org/10.1201/9781420036008}{Multifractals: Theory and Applications}}. New York: Chapman; Hall/CRC.
+
 \leavevmode\vadjust pre{\hypertarget{ref-haude2019}{}}%
 Haude, Rüdiger, and Thomas Wagner. 2019. \emph{\href{http://www.deutsche-digitale-bibliothek.de/item/7WYRGHTXGAOZOF5JUQ5JQCONFJKLTBIE}{Herrschaftsfreie Institutionen : Texte zur Stabilisierung staatsloser, egalitärer Gesellschaften}}. Heidelberg: Verlag Graswurzelrevolution.
 
@@ -1571,6 +1570,12 @@ Květina, Petr, and Jaroslav Řídký. 2019. {``Traditional and Archaic Societie
 
 \leavevmode\vadjust pre{\hypertarget{ref-lagarias2021}{}}%
 Lagarias, Apostolos, and Poulicos Prastacos. 2021. {``Fractal Dimension of European Cities: A Comparison of the Patterns of Built-up Areas in the Urban Core and the Peri-Urban Ring.''} \emph{Cybergeo: European Journal of Geography}. doi: \href{https://doi.org/10.4000/cybergeo.37243}{10.4000/cybergeo.37243}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-laherrere2000}{}}%
+Laherrère, Jean. 2000. {``Distribution of Field Sizes in a Petroleum System: Parabolic Fractal, Lognormal or Stretched Exponential?''} \emph{Marine and Petroleum Geology} 17:539--46.
+
+\leavevmode\vadjust pre{\hypertarget{ref-laherrere1998}{}}%
+Laherrère, J., and D. Sornette. 1998. {``Stretched Exponential Distributions in Nature and Economy: {``}Fat Tails{''} with Characteristic Scales.''} \emph{The European Physical Journal B - Condensed Matter and Complex Systems} 2(4):525--39. doi: \href{https://doi.org/10.1007/s100510050276}{10.1007/s100510050276}.
 
 \leavevmode\vadjust pre{\hypertarget{ref-last2015}{}}%
 Last, Jonathan. 2015. {``\href{https://doi.org/10.1093/oxfordhb/9780199545841.013.009}{Longhouse Lifestyles in the Central European Neolithic}.''} P. 0 in, edited by C. Fowler, J. Harding, and D. Hofmann. Oxford University Press.
@@ -1685,12 +1690,6 @@ R Core Team. 2023. \emph{\href{https://www.R-project.org/}{R: A Language and Env
 
 \leavevmode\vadjust pre{\hypertarget{ref-redhead2022}{}}%
 Redhead, Daniel, and Eleanor A. Power. 2022. {``Social Hierarchies and Social Networks in Humans.''} \emph{Philosophical Transactions of the Royal Society B: Biological Sciences} 377(1845):20200440. doi: \href{https://doi.org/10.1098/rstb.2020.0440}{10.1098/rstb.2020.0440}.
-
-\leavevmode\vadjust pre{\hypertarget{ref-reed2001}{}}%
-Reed, William J. 2001. {``The Pareto, Zipf and Other Power Laws.''} \emph{Economics Letters} 74(1):15--19. doi: \href{https://doi.org/10.1016/S0165-1765(01)00524-9}{10.1016/S0165-1765(01)00524-9}.
-
-\leavevmode\vadjust pre{\hypertarget{ref-reed2002}{}}%
-Reed, William J., and Barry D. Hughes. 2002. {``From Gene Families and Genera to Incomes and Internet File Sizes: Why Power Laws Are so Common in Nature.''} \emph{Physical Review E} 66(6):067103. doi: \href{https://doi.org/10.1103/PhysRevE.66.067103}{10.1103/PhysRevE.66.067103}.
 
 \leavevmode\vadjust pre{\hypertarget{ref-rodruxedguez2017}{}}%
 Rodríguez, Luis, Oscar Castillo, José Soria, Patricia Melin, Fevrier Valdez, Claudia I. Gonzalez, Gabriela E. Martinez, and Jesus Soto. 2017. {``A Fuzzy Hierarchical Operator in the Grey Wolf Optimizer Algorithm.''} \emph{Applied Soft Computing} 57:315--28. doi: \href{https://doi.org/10.1016/j.asoc.2017.03.048}{10.1016/j.asoc.2017.03.048}.
