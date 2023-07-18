@@ -6,7 +6,7 @@ Grave goods
 
 Burial monuments
 
-Architecture
+Architecture @rathje1982 -- social stratification (qualitatively) through architecture and burials (and life expectancy). Short but to-the-point article.
 
 The denominator problem
 
@@ -40,9 +40,7 @@ Questions of contact and even creolisation with local hunter-gatherer groups in 
 
 End of LBK as collapse? The whole culture as an adaptive cycle: @gronenborn2014.
 
-Organisation of Linear Pottery society: egalitarian or hierarchic?
-Cemeteries: @jeunesse2022, check @gaydarska2023 and @augereau2021.
-Linear Pottery architecture and house construction
+Organisation of Linear Pottery society: egalitarian or hierarchic? Cemeteries: @jeunesse2022, check @gaydarska2023 and @augereau2021. Linear Pottery architecture and house construction
 
 origin of the longhouse: @bánffy2020, @coudart2015, @last2015
 
@@ -50,20 +48,9 @@ house typology, construction, and use: @modderman1970, @coudart1998
 
 house orientation: "origin" hypothesis: @bradley2001
 
-Patrilocality in LBK based on Sr isotopes: @hrncir2020a (read this more carefully), and other data (check) @schiesberg2016.
+Number of coeval houses in LBK villages, evaluated to a mean of 5, sd. 3 [@coudart1998, p. 91]. Furthermore, based on ethnographic analogies she estimated a typical Linear Pottery village of 3 to 8 houses (of which 1 or 2 longer than 22 m), to include on average approximately 150-260 inhabitants, though fewer (up to around 80 people) for the smallest hamlets of 3 houses.
 
-```{r}
-#example of how a pl distribution can be constructed
-library(tidyverse)
-freq <- 4^(0:7)
-size <- 1.5^(7:0)*50 #the normalizing constant is the y-intercept when in log axes!
-data <- tibble(size, freq)
-ggplot(data = data)+
-  aes(x = size, y = freq)+
-  geom_point()+
-  scale_x_log10()+
-  scale_y_log10()
-```
+Patrilocality in LBK based on Sr isotopes: @hrncir2020a (read this more carefully), and other data (check) @schiesberg2016.
 
 The Žitava valley and research project
 
@@ -81,14 +68,13 @@ Trypillia social organisation: current debate
 
 Side note on Varna: Lichardus (1991; also Gimbutas), as discussed in @kadrow2013, proposed that the social inequality observed at Varna in the mid-5th millennium, was already then adopted from pastoral North Pontic steppe cultures (*check this and delete if unsure*); cf. @chapman2006 -- three social levels interpreted from grave goods, but not clear if these are really discrete or constructed on a continuum. The term *fractal* is here used purely as a metaphor for complex personhood structures, rather in opposition to the described social hierarchy.
 
-The B2/C1 and the mega-sites of the Southern Bug -- Dnieper interfluve
-The urbanism debate: Comparison with Uruk in Müller and CHECK; low-density urbanism for Nebelivka: check for refs. in @ohlrau2022,p .91 cc. Mega-sites as *anomalocivitates*: @ohlrau2022 and @sindbæk2022.
+The B2/C1 and the mega-sites of the Southern Bug -- Dnieper interfluve The urbanism debate: Comparison with Uruk in Müller and CHECK; low-density urbanism for Nebelivka: check for refs. in @ohlrau2022,p .91 cc. Mega-sites as *anomalocivitates*: @ohlrau2022 and @sindbæk2022.
 
 ## Reading site plans from geomagnetic imagery
 
 Caveats: fill in here.
 
-@pickartz2021.
+@pickartz2021 fds
 
 ## Synthetic data
 

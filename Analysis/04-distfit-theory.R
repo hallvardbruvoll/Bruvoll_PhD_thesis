@@ -4,6 +4,27 @@ library(poweRlaw) # for power-law random number generation
 library(cowplot) # for combining multiple plots per figure
 library(latex2exp) # for tex expressions inside ggplot code
 
+
+# Intro: wealth and household to house size -------------------------------
+
+data <- tibble(x1 = c(1,2),
+       y1 = c(2,1),
+       x2 = c(-1,4),
+       y2 = c(4,-1))
+fig04_intro <- ggplot(data)+
+  aes(x = x1, y = y1,
+      xend = x2, yend = y2)+
+  geom_segment(arrow = arrow())+
+  labs(x = "Household wealth", y = "Household size")+
+  theme_classic()+
+  geom_text(aes(x = 0, y = 3.5), label = "?", size = 5)+
+  geom_text(aes(x = 3, y = -0.5), label = "?", size = 5)+
+  geom_text(aes(x = 1.5, y = 1.5), label = TeX("$100 m^2$"), size = 6)+
+  scale_x_continuous(labels = NULL)+
+  scale_y_continuous(labels = NULL)
+
+save(fig04_intro, file = "Results/fig04_intro.RData")
+
 # Intro: Examples of heavy-tailed distributions ---------------------------
 
 # Generate examples of normal, exponential, log-normal and power-law

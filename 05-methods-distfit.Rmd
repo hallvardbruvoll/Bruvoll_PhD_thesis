@@ -2,6 +2,10 @@
 
 ## Heavy-tailed distributions, testing for power laws
 
+```{r 05-libraries, echo=FALSE}
+library(tidyverse)
+```
+
 -   Technical characteristics of power laws, @newman2005, do I need more?
 
 -   Old style distribution fitting (which is used in @brown2010 and @brown2005 and check. @mitzenmacher2004, @harrison1981
