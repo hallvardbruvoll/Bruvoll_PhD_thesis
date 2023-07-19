@@ -4,7 +4,6 @@ library(poweRlaw) # for power-law random number generation
 library(cowplot) # for combining multiple plots per figure
 library(latex2exp) # for tex expressions inside ggplot code
 
-
 # Intro: wealth and household to house size -------------------------------
 
 data <- tibble(x1 = c(1,2),
