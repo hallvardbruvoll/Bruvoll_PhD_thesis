@@ -5,6 +5,7 @@ library(AICcmodavg)
 library(ineq)
 library(roxygen2)
 library(scales)
+library(latex2exp) # for tex expressions inside ggplot code
 
 # Wrapper and loop functions ----------------------------------------------
 
@@ -119,20 +120,6 @@ add.results <- function(data, tail_models, AIC.results) {
   return(data)
 }
 
-# Loop for multiple data sets
-#' Distribution fitting loop
-#'
-#' Fit four heavy-tailed distribution models (log-normal, exponential, stretched exponential and power law) to multiple data series, and select best model for each series based on AICc. Xmin for all models is the one that gives the best power-law fit (KS-test). Dependencies: poweRlaw, tidyverse, AICcmodavg.
-#'
-#' @param data A data.table or tibble, with a numeric vector named "x" and a factor or character vector named "set".
-#'
-#' @return The input table with additional columns reporting the best fit with parameter values.
-#' @export
-#'
-#' @examples
-#' data <- bind_rows(tibble(x = rlnorm(1000, 0.3, 2), set = "ln"),
-#' tibble(x = rexp(1000, 0.125), set = "exp"))
-#' dist.fit.all(data = data)
 dist.fit.all <- function(x, set){
   # "x" and "set" must be in the same order, preferably as columns in a table
   data <- tibble(x, set = as.factor(set)) %>%
@@ -168,9 +155,11 @@ mu <- 0.3
 sigma <- 2
 lambda <- 0.125
 alpha <- 2.5
+scale <- 3
+shape <- 0.5
 xmin <- 15
 n <- c(10, 100, 1000, 10000)
-dists <- c("ln", "exp", "pl")
+dists <- c("ln", "exp", "pl", "str exp")
 
 # Generate data sets
 pretest_data <- tibble()
@@ -180,7 +169,7 @@ for (j in 1:length(dists)) { # Loop for distribution types
   for (i in 1:length(n)) { # Loop for n (distribution sizes)
     if (j == 1) { # Log-normal distributions, generate a large enough dist.
                     # to filter out only values above xmin, and sample to
-                      # needed size (same for exponential)
+                      # needed size (same for exponential and stretched exp.)
       single <- tibble(x = rlnorm(n = 100000, mu, sigma)) %>%
         filter(x >= xmin) %>%
         slice_sample(n = n[i])
@@ -193,13 +182,18 @@ for (j in 1:length(dists)) { # Loop for distribution types
     if (j == 3) { # Power-law distributions
       single <- tibble(x = rplcon(n = n[i], xmin = 15, alpha = alpha))
     }
+    if (j == 4) { # Stretched exponential
+      single <- tibble(x = rweibull(n = 100000, shape, scale)) %>%
+        filter(x >= xmin) %>%
+        slice_sample(n = n[i])
+      }
     single <- single %>%
       mutate(set = paste0(dists[j], n[i]),
              set_type = dists[j],
              n = n[i])
     pretest_data <- bind_rows(pretest_data, single)
   }
-} # pretest_data should end with 33330 obs.
+} # pretest_data should end with 44440 obs.
 rm(single)
 
 # Fit tail models to all distributions (this takes a while!)
@@ -210,7 +204,7 @@ pretest_results <- pretest_results %>% # set type and n fell out, add again
   mutate(set_type = str_remove_all(set, "[10]"),
          n = parse_number(set))
 
-# Summarise results for all (12) distributions
+# Summarise results for all (16) distributions
 pretest_summary <- pretest_results %>%
   group_by(set, set_type, tail, n, ntail) %>%
   summarise()
@@ -221,16 +215,10 @@ fig05_synthdist <- ggplot(filter(pretest_results, n == 100))+
   geom_point()+
   scale_x_log10(labels = label_log(), breaks = c(10, 100, 1000))+
   scale_y_log10(labels = label_log())+
+  scale_shape_manual(values = c(16, 17, 15, 18))+
   geom_vline(xintercept = 15, linetype = 2)+
   theme_bw()+
   labs(x = "x", y = "P(x)", colour = "", shape = "")
-
-# Plot pl tails depending on meanlog and sdlog
-# Extract default colours and add manually for consistency
-hex <- hue_pal()(3)
-hex2 <- hue_pal()(5)
-my_colours <- c(hex[1], hex[2], hex[3], hex2[5])
-show_col(my_colours)
 
 # Plot distribution type and best fit tail
 fig05_type_tail <- ggplot(pretest_summary)+
@@ -242,9 +230,8 @@ fig05_type_tail <- ggplot(pretest_summary)+
   geom_point()+
   scale_y_log10()+
   scale_shape_manual(values = c(16, 17, 15, 18))+
-  scale_colour_manual(values = c(my_colours))+
   theme_bw()+
-  labs(x = "Distribution type")
+  labs(x = "Distribution type", shape = "Tail model", colour = "Tail model")
 
 # Plot range of power-law fits over synthetic distributions
 fig05_synth_pl <- ggplot(pretest_results)+
@@ -270,7 +257,7 @@ pretest2_results <- tibble()
 
 # Set parameter values (natural logarithms)
 # 6^2 parameter combinations gives 36 different distributions
-logmean_range <- seq(1.5, 4, by = 0.5)
+logmean_range <- 1:6
 exp(logmean_range)
 logsd_range <- seq(0.5, 3, by = 0.5)
 exp(logsd_range)
@@ -292,9 +279,9 @@ rm(one_dist)
 # Analyse the data (take a coffee break)
 pretest2_results <- dist.fit.all(x = pretest2_results$x,
                                  set = pretest2_results$dist)
-# Add back values for mean and sd
+# Add back values for mean and sd from character string
 pretest2_results <- pretest2_results %>%
-  mutate(logmean = as.numeric(str_sub(set, -3, -1)),
+  mutate(logmean = as.numeric(str_sub(set, -1)),
          logsd = as.numeric(str_sub(set, 1, 3)))
 
 pretest2_summary <- pretest2_results %>%
@@ -305,20 +292,18 @@ pretest2_summary <- pretest2_results %>%
 fig05_synth_ln <- ggplot(pretest2_results)+
   aes(x = value, y = ccdf, colour = logsd, group = set)+
   geom_line()+
-  scale_x_log10(
-  labels = scales::comma
-  )+
+  scale_x_log10(labels = scales::comma)+
   scale_y_log10()+
-  labs(x = "x", y = "P(x)", colour = "log(sd)")+
+  labs(x = "x", y = "P(x)", colour = TeX("$\\sigma$"))+
   theme_bw()
 
 fig05_ln_tail <- ggplot(pretest2_summary)+
   aes(x = logmean, y = logsd,
       colour = tail, size = ntail/n, shape = tail)+
   geom_point()+
-  scale_colour_manual(values = c(hex[1], hex[2], hex[3], hex2[5]))+
   scale_shape_manual(values = c(16, 17, 15, 18))+
-  labs(x = "log(mean)", y = "log(sd)")+
+  labs(x = TeX("$\\mu$"), y = TeX("$\\sigma$"),
+       colour = "Tail model", shape = "Tail model")+
   theme_bw()
 
 # Plot distributions and overlay with pl tails
@@ -328,7 +313,7 @@ fig05_ln_pl <- ggplot(pretest2_results)+
   geom_point(data = filter(pretest2_results, tail == "pl" & value >= xmin),
              colour = "red")+
   scale_x_log10(labels = scales::comma)+
-  labs(x = "x", y = "log(sd)_log(mean)")+
+  labs(x = "x", y = TeX("$\\sigma\\_\\mu$"))+
   theme_bw()
 
 # Store output

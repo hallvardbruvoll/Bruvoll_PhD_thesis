@@ -32,7 +32,7 @@ mainfont: Times New Roman
 fontsize: 12pt
 linestretch: 1.5
 toc: yes
-toc-depth: 1
+toc-depth: 2
 #lof: yes
 #lot: yes
 ---
@@ -41,7 +41,7 @@ toc-depth: 1
 
 ```{r setup, include=FALSE}
 # Set defaults for code chunks: code is not printed, figure size and alignment
-knitr::opts_chunk$set(echo = FALSE, out.width='70%', fig.asp=.75, fig.align='center')
+knitr::opts_chunk$set(echo = FALSE, out.width='80%', fig.asp=.75, fig.align='center', dev = "cairo_pdf")
 ```
 
 Thanks to everyone.
