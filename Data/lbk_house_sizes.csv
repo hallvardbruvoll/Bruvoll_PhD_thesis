@@ -1,0 +1,992 @@
+﻿id_bruvoll_2023;id_source;house_size;site_name;region;arch_culture;data_source;site_name_ill;neighbourhood_logic;mean_orien;site_name_ill_short;Settlement
+625;5;59,9;aldenhoven_3;rheinland;lbk;schiesberg_2007;Aldenhoven 3;FALSE;;Aldenhoven 3;Aldenhoven 3
+38;38;79,49416769;cierne_klacany_mlynske_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Čierne Kľačany 'Mlynské diely';FALSE;24,84810213;Čierne;Cierne
+39;39;122,9632864;cierne_klacany_mlynske_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Čierne Kľačany 'Mlynské diely';FALSE;28,67092322;Čierne;Cierne
+40;40;215,5396822;cierne_klacany_mlynske_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Čierne Kľačany 'Mlynské diely';FALSE;29,36206807;Čierne;Cierne
+41;41;103,8648514;cierne_klacany_mlynske_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Čierne Kľačany 'Mlynské diely';FALSE;25,88334927;Čierne;Cierne
+42;42;108,2348744;cierne_klacany_mlynske_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Čierne Kľačany 'Mlynské diely';FALSE;20,58050638;Čierne;Cierne
+43;43;128,9230278;cierne_klacany_mlynske_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Čierne Kľačany 'Mlynské diely';FALSE;25,60036161;Čierne;Cierne
+44;44;72,8989666;cierne_klacany_mlynske_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Čierne Kľačany 'Mlynské diely';FALSE;17,24977937;Čierne;Cierne
+45;45;83,16908062;cierne_klacany_mlynske_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Čierne Kľačany 'Mlynské diely';FALSE;14,64882886;Čierne;Cierne
+46;46;111,4725922;cierne_klacany_mlynske_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Čierne Kľačany 'Mlynské diely';FALSE;28,82654696;Čierne;Cierne
+47;47;192,0998751;cierne_klacany_mlynske_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Čierne Kľačany 'Mlynské diely';FALSE;16,65797042;Čierne;Cierne
+48;48;111,1940547;cierne_klacany_mlynske_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Čierne Kľačany 'Mlynské diely';FALSE;23,5652539;Čierne;Cierne
+49;49;253,9333424;cierne_klacany_mlynske_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Čierne Kľačany 'Mlynské diely';FALSE;30,79662285;Čierne;Cierne
+50;50;167,6302929;cierne_klacany_mlynske_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Čierne Kľačany 'Mlynské diely';FALSE;14,70759408;Čierne;Cierne
+51;51;169,6471356;cierne_klacany_mlynske_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Čierne Kľačany 'Mlynské diely';FALSE;19,20886842;Čierne;Cierne
+52;52;127,2232814;cierne_klacany_mlynske_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Čierne Kľačany 'Mlynské diely';FALSE;25,53900112;Čierne;Cierne
+53;53;102,1867851;cierne_klacany_mlynske_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Čierne Kľačany 'Mlynské diely';FALSE;24,1561722;Čierne;Cierne
+54;54;79,46428347;cierne_klacany_mlynske_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Čierne Kľačany 'Mlynské diely';FALSE;19,11684854;Čierne;Cierne
+55;55;161,7585875;cierne_klacany_mlynske_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Čierne Kľačany 'Mlynské diely';FALSE;19,38146844;Čierne;Cierne
+56;56;179,3997084;cierne_klacany_mlynske_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Čierne Kľačany 'Mlynské diely';FALSE;22,83623449;Čierne;Cierne
+57;57;50,24939985;cierne_klacany_mlynske_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Čierne Kľačany 'Mlynské diely';FALSE;20,64935736;Čierne;Cierne
+58;58;151,9899548;cierne_klacany_mlynske_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Čierne Kľačany 'Mlynské diely';FALSE;26,77480427;Čierne;Cierne
+59;59;64,1472461;cierne_klacany_mlynske_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Čierne Kľačany 'Mlynské diely';FALSE;19,25506603;Čierne;Cierne
+60;60;70,22076422;cierne_klacany_mlynske_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Čierne Kľačany 'Mlynské diely';FALSE;33,13423279;Čierne;Cierne
+61;61;83,80567678;cierne_klacany_mlynske_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Čierne Kľačany 'Mlynské diely';FALSE;34,08249736;Čierne;Cierne
+62;62;96,54993419;cierne_klacany_mlynske_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Čierne Kľačany 'Mlynské diely';FALSE;22,13801492;Čierne;Cierne
+63;63;74,16036846;cierne_klacany_mlynske_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Čierne Kľačany 'Mlynské diely';FALSE;20,84783073;Čierne;Cierne
+64;64;56,44893161;cierne_klacany_mlynske_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Čierne Kľačany 'Mlynské diely';FALSE;30,4080635;Čierne;Cierne
+65;65;92,04023077;cierne_klacany_mlynske_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Čierne Kľačany 'Mlynské diely';FALSE;23,65872682;Čierne;Cierne
+66;66;50,92269748;cierne_klacany_mlynske_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Čierne Kľačany 'Mlynské diely';FALSE;29,09444626;Čierne;Cierne
+67;67;168,2536742;cierne_klacany_mlynske_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Čierne Kľačany 'Mlynské diely';FALSE;18,29944964;Čierne;Cierne
+68;68;137,9317248;cierne_klacany_mlynske_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Čierne Kľačany 'Mlynské diely';FALSE;22,56289029;Čierne;Cierne
+69;69;113,9878388;cierne_klacany_mlynske_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Čierne Kľačany 'Mlynské diely';FALSE;23,2838611;Čierne;Cierne
+70;70;106,0897655;cierne_klacany_mlynske_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Čierne Kľačany 'Mlynské diely';FALSE;16,3196656;Čierne;Cierne
+71;71;137,9440255;cierne_klacany_mlynske_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Čierne Kľačany 'Mlynské diely';FALSE;18,47414019;Čierne;Cierne
+72;72;89,17256043;cierne_klacany_mlynske_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Čierne Kľačany 'Mlynské diely';FALSE;20,23789656;Čierne;Cierne
+73;73;151,2131887;cierne_klacany_mlynske_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Čierne Kľačany 'Mlynské diely';FALSE;31,97246318;Čierne;Cierne
+74;74;110,9819666;cierne_klacany_mlynske_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Čierne Kľačany 'Mlynské diely';FALSE;27,00660763;Čierne;Cierne
+75;75;172,2231542;cierne_klacany_mlynske_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Čierne Kľačany 'Mlynské diely';FALSE;26,23991954;Čierne;Cierne
+76;76;221,7345897;cierne_klacany_mlynske_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Čierne Kľačany 'Mlynské diely';FALSE;29,39788525;Čierne;Cierne
+77;77;91,50548724;cierne_klacany_mlynske_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Čierne Kľačany 'Mlynské diely';FALSE;25,00959206;Čierne;Cierne
+78;78;109,1974687;cierne_klacany_mlynske_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Čierne Kľačany 'Mlynské diely';FALSE;15,88975362;Čierne;Cierne
+79;79;74,99651337;cierne_klacany_mlynske_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Čierne Kľačany 'Mlynské diely';FALSE;25,51528833;Čierne;Cierne
+80;80;76,60251568;cierne_klacany_mlynske_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Čierne Kľačany 'Mlynské diely';FALSE;19,28766852;Čierne;Cierne
+81;81;95,19521437;cierne_klacany_mlynske_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Čierne Kľačany 'Mlynské diely';FALSE;15,10966866;Čierne;Cierne
+535;543;131,4727345;cierne_klacany_mlynske_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Čierne Kľačany 'Mlynské diely';FALSE;33,57773205;Čierne;Cierne
+536;544;103,9116906;cierne_klacany_mlynske_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Čierne Kľačany 'Mlynské diely';FALSE;25,34127087;Čierne;Cierne
+537;545;91,15163097;cierne_klacany_mlynske_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Čierne Kľačany 'Mlynské diely';FALSE;24,2523659;Čierne;Cierne
+538;546;99,25193709;cierne_klacany_mlynske_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Čierne Kľačany 'Mlynské diely';FALSE;21,74729883;Čierne;Cierne
+539;547;153,2635812;cierne_klacany_mlynske_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Čierne Kľačany 'Mlynské diely';FALSE;17,64881755;Čierne;Cierne
+122;122;43,67136296;cifare_kapustniska;zitava_valley;lbk;muller_scheessel_et_al_2020;Čifare 'Kapustniská';FALSE;17,28064484;Čifare;Cifare
+123;123;117,5602532;cifare_kapustniska;zitava_valley;lbk;muller_scheessel_et_al_2020;Čifare 'Kapustniská';FALSE;22,92016917;Čifare;Cifare
+124;124;128,3903312;cifare_kapustniska;zitava_valley;lbk;muller_scheessel_et_al_2020;Čifare 'Kapustniská';FALSE;23,20524193;Čifare;Cifare
+125;125;87,26994662;cifare_kapustniska;zitava_valley;lbk;muller_scheessel_et_al_2020;Čifare 'Kapustniská';FALSE;16,99170748;Čifare;Cifare
+126;126;87,7490657;cifare_kapustniska;zitava_valley;lbk;muller_scheessel_et_al_2020;Čifare 'Kapustniská';FALSE;13,60107924;Čifare;Cifare
+127;127;78,62420312;cifare_kapustniska;zitava_valley;lbk;muller_scheessel_et_al_2020;Čifare 'Kapustniská';FALSE;14,43388356;Čifare;Cifare
+128;128;74,71091315;cifare_kapustniska;zitava_valley;lbk;muller_scheessel_et_al_2020;Čifare 'Kapustniská';FALSE;17,87564613;Čifare;Cifare
+129;129;85,32012999;cifare_kapustniska;zitava_valley;lbk;muller_scheessel_et_al_2020;Čifare 'Kapustniská';FALSE;26,07410726;Čifare;Cifare
+130;130;50,76435987;cifare_kapustniska;zitava_valley;lbk;muller_scheessel_et_al_2020;Čifare 'Kapustniská';FALSE;18,80465962;Čifare;Cifare
+131;131;155,9954968;cifare_kapustniska;zitava_valley;lbk;muller_scheessel_et_al_2020;Čifare 'Kapustniská';FALSE;15,65879993;Čifare;Cifare
+132;132;116,3487651;cifare_kapustniska;zitava_valley;lbk;muller_scheessel_et_al_2020;Čifare 'Kapustniská';FALSE;18,34467815;Čifare;Cifare
+133;133;97,50492533;cifare_kapustniska;zitava_valley;lbk;muller_scheessel_et_al_2020;Čifare 'Kapustniská';FALSE;11,17867629;Čifare;Cifare
+134;134;119,5724294;cifare_kapustniska;zitava_valley;lbk;muller_scheessel_et_al_2020;Čifare 'Kapustniská';FALSE;23,62763455;Čifare;Cifare
+135;135;85,61469389;cifare_kapustniska;zitava_valley;lbk;muller_scheessel_et_al_2020;Čifare 'Kapustniská';FALSE;14,39075482;Čifare;Cifare
+136;136;129,5296328;cifare_kapustniska;zitava_valley;lbk;muller_scheessel_et_al_2020;Čifare 'Kapustniská';FALSE;10,66259326;Čifare;Cifare
+137;137;157,5841154;cifare_kapustniska;zitava_valley;lbk;muller_scheessel_et_al_2020;Čifare 'Kapustniská';FALSE;12,45824188;Čifare;Cifare
+138;138;164,5462111;cifare_kapustniska;zitava_valley;lbk;muller_scheessel_et_al_2020;Čifare 'Kapustniská';FALSE;7,766954202;Čifare;Cifare
+139;139;241,9072766;cifare_kapustniska;zitava_valley;lbk;muller_scheessel_et_al_2020;Čifare 'Kapustniská';FALSE;11,92372335;Čifare;Cifare
+140;140;104,0977252;cifare_kapustniska;zitava_valley;lbk;muller_scheessel_et_al_2020;Čifare 'Kapustniská';FALSE;17,63531876;Čifare;Cifare
+141;141;78,25865295;cifare_kapustniska;zitava_valley;lbk;muller_scheessel_et_al_2020;Čifare 'Kapustniská';FALSE;26,84363535;Čifare;Cifare
+142;142;117,6155261;cifare_kapustniska;zitava_valley;lbk;muller_scheessel_et_al_2020;Čifare 'Kapustniská';FALSE;18,50216476;Čifare;Cifare
+143;143;97,92997492;cifare_kapustniska;zitava_valley;lbk;muller_scheessel_et_al_2020;Čifare 'Kapustniská';FALSE;20,1634829;Čifare;Cifare
+144;144;55,08031422;cifare_kapustniska;zitava_valley;lbk;muller_scheessel_et_al_2020;Čifare 'Kapustniská';FALSE;12,77958286;Čifare;Cifare
+145;145;70,6547407;cifare_kapustniska;zitava_valley;lbk;muller_scheessel_et_al_2020;Čifare 'Kapustniská';FALSE;13,05221901;Čifare;Cifare
+146;146;144,8773848;cifare_kapustniska;zitava_valley;lbk;muller_scheessel_et_al_2020;Čifare 'Kapustniská';FALSE;12,49229094;Čifare;Cifare
+147;147;84,86765993;cifare_kapustniska;zitava_valley;lbk;muller_scheessel_et_al_2020;Čifare 'Kapustniská';FALSE;15,24613164;Čifare;Cifare
+148;148;90,29018624;cifare_kapustniska;zitava_valley;lbk;muller_scheessel_et_al_2020;Čifare 'Kapustniská';FALSE;26,24654471;Čifare;Cifare
+149;149;58,8738045;cifare_kapustniska;zitava_valley;lbk;muller_scheessel_et_al_2020;Čifare 'Kapustniská';FALSE;10,66048351;Čifare;Cifare
+150;150;76,42821038;cifare_kapustniska;zitava_valley;lbk;muller_scheessel_et_al_2020;Čifare 'Kapustniská';FALSE;11,89471698;Čifare;Cifare
+151;151;158,4736974;cifare_kapustniska;zitava_valley;lbk;muller_scheessel_et_al_2020;Čifare 'Kapustniská';FALSE;3,513322972;Čifare;Cifare
+152;152;79,64137749;cifare_kapustniska;zitava_valley;lbk;muller_scheessel_et_al_2020;Čifare 'Kapustniská';FALSE;8,873253455;Čifare;Cifare
+153;153;46,1998496;cifare_kapustniska;zitava_valley;lbk;muller_scheessel_et_al_2020;Čifare 'Kapustniská';FALSE;23,06065319;Čifare;Cifare
+154;154;70,16937953;cifare_kapustniska;zitava_valley;lbk;muller_scheessel_et_al_2020;Čifare 'Kapustniská';FALSE;23,0355957;Čifare;Cifare
+155;155;37,10718853;cifare_kapustniska;zitava_valley;lbk;muller_scheessel_et_al_2020;Čifare 'Kapustniská';FALSE;23,12513032;Čifare;Cifare
+156;156;88,5752569;cifare_kapustniska;zitava_valley;lbk;muller_scheessel_et_al_2020;Čifare 'Kapustniská';FALSE;7,545966224;Čifare;Cifare
+157;157;130,0768254;cifare_kapustniska;zitava_valley;lbk;muller_scheessel_et_al_2020;Čifare 'Kapustniská';FALSE;19,89787176;Čifare;Cifare
+158;158;112,9046954;cifare_kapustniska;zitava_valley;lbk;muller_scheessel_et_al_2020;Čifare 'Kapustniská';FALSE;14,64888172;Čifare;Cifare
+159;159;59,39478733;cifare_kapustniska;zitava_valley;lbk;muller_scheessel_et_al_2020;Čifare 'Kapustniská';FALSE;9,321915219;Čifare;Cifare
+549;557;83,21035567;cifare_kapustniska;zitava_valley;lbk;muller_scheessel_et_al_2020;Čifare 'Kapustniská';FALSE;12,2521606;Čifare;Cifare
+550;558;159,5368984;cifare_kapustniska;zitava_valley;lbk;muller_scheessel_et_al_2020;Čifare 'Kapustniská';FALSE;11,38471388;Čifare;Cifare
+551;559;104,6289834;cifare_kapustniska;zitava_valley;lbk;muller_scheessel_et_al_2020;Čifare 'Kapustniská';FALSE;19,78144908;Čifare;Cifare
+646;1;121;hambach_21;rheinland;lbk;schiesberg_2007;Hambach 21;FALSE;;Hambach 21;Hambach 21
+647;3;194;hambach_21;rheinland;lbk;schiesberg_2007;Hambach 21;FALSE;;Hambach 22;Hambach 22
+648;4;60,2;hambach_21;rheinland;lbk;schiesberg_2007;Hambach 21;FALSE;;Hambach 23;Hambach 23
+649;8;46,4;hambach_21;rheinland;lbk;schiesberg_2007;Hambach 21;FALSE;;Hambach 24;Hambach 24
+650;11;109;hambach_21;rheinland;lbk;schiesberg_2007;Hambach 21;FALSE;;Hambach 25;Hambach 25
+638;1;117;hambach_8;rheinland;lbk;schiesberg_2007;Hambach 8;FALSE;;Hambach 8;Hambach 8
+82;82;108,2016845;horny_ohaj_dolne_siatie;zitava_valley;lbk;muller_scheessel_et_al_2020;Horný Ohaj 'Dolne siatie';FALSE;19,91753476;Horný;Horny
+83;83;105,4722462;horny_ohaj_dolne_siatie;zitava_valley;lbk;muller_scheessel_et_al_2020;Horný Ohaj 'Dolne siatie';FALSE;17,27741961;Horný;Horny
+84;84;51,84579058;horny_ohaj_dolne_siatie;zitava_valley;lbk;muller_scheessel_et_al_2020;Horný Ohaj 'Dolne siatie';FALSE;11,68167146;Horný;Horny
+85;85;48,07134926;horny_ohaj_dolne_siatie;zitava_valley;lbk;muller_scheessel_et_al_2020;Horný Ohaj 'Dolne siatie';FALSE;8,665763245;Horný;Horny
+86;86;48,80453484;horny_ohaj_dolne_siatie;zitava_valley;lbk;muller_scheessel_et_al_2020;Horný Ohaj 'Dolne siatie';FALSE;4,03432545;Horný;Horny
+87;87;188,0921992;horny_ohaj_dolne_siatie;zitava_valley;lbk;muller_scheessel_et_al_2020;Horný Ohaj 'Dolne siatie';FALSE;11,41659465;Horný;Horny
+88;88;153,9104377;horny_ohaj_dolne_siatie;zitava_valley;lbk;muller_scheessel_et_al_2020;Horný Ohaj 'Dolne siatie';FALSE;8,264347111;Horný;Horny
+89;89;59,65084802;horny_ohaj_dolne_siatie;zitava_valley;lbk;muller_scheessel_et_al_2020;Horný Ohaj 'Dolne siatie';FALSE;8,801111355;Horný;Horny
+552;560;64,84917745;horny_ohaj_dolne_siatie;zitava_valley;lbk;muller_scheessel_et_al_2020;Horný Ohaj 'Dolne siatie';FALSE;14,00187124;Horný;Horny
+553;561;93,69203159;horny_ohaj_dolne_siatie;zitava_valley;lbk;muller_scheessel_et_al_2020;Horný Ohaj 'Dolne siatie';FALSE;19,2120105;Horný;Horny
+554;562;92,2703442;horny_ohaj_dolne_siatie;zitava_valley;lbk;muller_scheessel_et_al_2020;Horný Ohaj 'Dolne siatie';FALSE;11,30323943;Horný;Horny
+676;1;128;koenigshoven_12;rheinland;lbk;schiesberg_2007;Königshoven 12;FALSE;;Königshoven 12;Königshoven 12
+677;1;110;koenigshoven_13;rheinland;lbk;schiesberg_2007;Königshoven 13;FALSE;;Königshoven 13;Königshoven 13
+678;1;136;koenigshoven_14;rheinland;lbk;schiesberg_2007;Königshoven 14;FALSE;;Königshoven 14;Königshoven 14
+651;4;70;kuckhoven;rheinland;lbk;schiesberg_2007;Kückhoven;FALSE;;Kückhoven;Kückhoven
+652;5;136;kuckhoven;rheinland;lbk;schiesberg_2007;Kückhoven;FALSE;;Kückhoven;Kückhoven
+653;8;43,9;kuckhoven;rheinland;lbk;schiesberg_2007;Kückhoven;FALSE;;Kückhoven;Kückhoven
+654;9;70,6;kuckhoven;rheinland;lbk;schiesberg_2007;Kückhoven;FALSE;;Kückhoven;Kückhoven
+655;14;68,9;kuckhoven;rheinland;lbk;schiesberg_2007;Kückhoven;FALSE;;Kückhoven;Kückhoven
+656;16;40,4;kuckhoven;rheinland;lbk;schiesberg_2007;Kückhoven;FALSE;;Kückhoven;Kückhoven
+657;26;128;kuckhoven;rheinland;lbk;schiesberg_2007;Kückhoven;FALSE;;Kückhoven;Kückhoven
+658;33;96,5;kuckhoven;rheinland;lbk;schiesberg_2007;Kückhoven;FALSE;;Kückhoven;Kückhoven
+659;35;89,5;kuckhoven;rheinland;lbk;schiesberg_2007;Kückhoven;FALSE;;Kückhoven;Kückhoven
+660;38;118;kuckhoven;rheinland;lbk;schiesberg_2007;Kückhoven;FALSE;;Kückhoven;Kückhoven
+661;39;94,3;kuckhoven;rheinland;lbk;schiesberg_2007;Kückhoven;FALSE;;Kückhoven;Kückhoven
+662;40;93,1;kuckhoven;rheinland;lbk;schiesberg_2007;Kückhoven;FALSE;;Kückhoven;Kückhoven
+663;41;90,5;kuckhoven;rheinland;lbk;schiesberg_2007;Kückhoven;FALSE;;Kückhoven;Kückhoven
+664;44;133;kuckhoven;rheinland;lbk;schiesberg_2007;Kückhoven;FALSE;;Kückhoven;Kückhoven
+665;45;154;kuckhoven;rheinland;lbk;schiesberg_2007;Kückhoven;FALSE;;Kückhoven;Kückhoven
+666;53;77,5;kuckhoven;rheinland;lbk;schiesberg_2007;Kückhoven;FALSE;;Kückhoven;Kückhoven
+667;56;159;kuckhoven;rheinland;lbk;schiesberg_2007;Kückhoven;FALSE;;Kückhoven;Kückhoven
+668;68;54;kuckhoven;rheinland;lbk;schiesberg_2007;Kückhoven;FALSE;;Kückhoven;Kückhoven
+669;71;173;kuckhoven;rheinland;lbk;schiesberg_2007;Kückhoven;FALSE;;Kückhoven;Kückhoven
+670;73;72,5;kuckhoven;rheinland;lbk;schiesberg_2007;Kückhoven;FALSE;;Kückhoven;Kückhoven
+671;74;128;kuckhoven;rheinland;lbk;schiesberg_2007;Kückhoven;FALSE;;Kückhoven;Kückhoven
+672;75;51,2;kuckhoven;rheinland;lbk;schiesberg_2007;Kückhoven;FALSE;;Kückhoven;Kückhoven
+673;77;202;kuckhoven;rheinland;lbk;schiesberg_2007;Kückhoven;FALSE;;Kückhoven;Kückhoven
+674;79;142;kuckhoven;rheinland;lbk;schiesberg_2007;Kückhoven;FALSE;;Kückhoven;Kückhoven
+675;80;163;kuckhoven;rheinland;lbk;schiesberg_2007;Kückhoven;FALSE;;Kückhoven;Kückhoven
+631;17;113;lamersdorf_2;rheinland;lbk;schiesberg_2007;Lamersdorf 2;FALSE;;Lamersdorf 2;Lamersdorf 2
+632;1;184;lamersdorf_2;rheinland;lbk;schiesberg_2007;Lamersdorf 2;FALSE;;Lamersdorf 2;Lamersdorf 2
+633;7;70,4;lamersdorf_2;rheinland;lbk;schiesberg_2007;Lamersdorf 2;FALSE;;Lamersdorf 2;Lamersdorf 2
+634;8;84,2;lamersdorf_2;rheinland;lbk;schiesberg_2007;Lamersdorf 2;FALSE;;Lamersdorf 2;Lamersdorf 2
+635;11;70,2;lamersdorf_2;rheinland;lbk;schiesberg_2007;Lamersdorf 2;FALSE;;Lamersdorf 2;Lamersdorf 2
+636;14;65,9;lamersdorf_2;rheinland;lbk;schiesberg_2007;Lamersdorf 2;FALSE;;Lamersdorf 2;Lamersdorf 2
+637;15;130;lamersdorf_2;rheinland;lbk;schiesberg_2007;Lamersdorf 2;FALSE;;Lamersdorf 2;Lamersdorf 2
+595;3;177;langweiler_16;rheinland;lbk;schiesberg_2007;Langweiler 16;FALSE;;Langweiler 16;Langweiler 16
+582;2;99,1;langweiler_2;rheinland;lbk;schiesberg_2007;Langweiler 2;FALSE;;Langweiler 2;Langweiler 2
+583;3;125;langweiler_2;rheinland;lbk;schiesberg_2007;Langweiler 2;FALSE;;Langweiler 2;Langweiler 2
+584;10;56,3;langweiler_2;rheinland;lbk;schiesberg_2007;Langweiler 2;FALSE;;Langweiler 2;Langweiler 2
+585;11;192;langweiler_2;rheinland;lbk;schiesberg_2007;Langweiler 2;FALSE;;Langweiler 2;Langweiler 2
+586;17;178;langweiler_2;rheinland;lbk;schiesberg_2007;Langweiler 2;FALSE;;Langweiler 2;Langweiler 2
+587;20;253;langweiler_2;rheinland;lbk;schiesberg_2007;Langweiler 2;FALSE;;Langweiler 2;Langweiler 2
+588;21;250;langweiler_2;rheinland;lbk;schiesberg_2007;Langweiler 2;FALSE;;Langweiler 2;Langweiler 2
+598;3;204;langweiler_8;rheinland;lbk;schiesberg_2007;Langweiler 8;FALSE;;Langweiler 8;Langweiler 8
+599;6;135;langweiler_8;rheinland;lbk;schiesberg_2007;Langweiler 8;FALSE;;Langweiler 8;Langweiler 8
+600;8;171;langweiler_8;rheinland;lbk;schiesberg_2007;Langweiler 8;FALSE;;Langweiler 8;Langweiler 8
+601;16;187;langweiler_8;rheinland;lbk;schiesberg_2007;Langweiler 8;FALSE;;Langweiler 8;Langweiler 8
+602;21;82,8;langweiler_8;rheinland;lbk;schiesberg_2007;Langweiler 8;FALSE;;Langweiler 8;Langweiler 8
+603;22;96,1;langweiler_8;rheinland;lbk;schiesberg_2007;Langweiler 8;FALSE;;Langweiler 8;Langweiler 8
+604;23;132;langweiler_8;rheinland;lbk;schiesberg_2007;Langweiler 8;FALSE;;Langweiler 8;Langweiler 8
+605;26;128;langweiler_8;rheinland;lbk;schiesberg_2007;Langweiler 8;FALSE;;Langweiler 8;Langweiler 8
+606;29;66,1;langweiler_8;rheinland;lbk;schiesberg_2007;Langweiler 8;FALSE;;Langweiler 8;Langweiler 8
+607;31;53,9;langweiler_8;rheinland;lbk;schiesberg_2007;Langweiler 8;FALSE;;Langweiler 8;Langweiler 8
+608;32;77;langweiler_8;rheinland;lbk;schiesberg_2007;Langweiler 8;FALSE;;Langweiler 8;Langweiler 8
+609;33;65,3;langweiler_8;rheinland;lbk;schiesberg_2007;Langweiler 8;FALSE;;Langweiler 8;Langweiler 8
+610;37;207;langweiler_8;rheinland;lbk;schiesberg_2007;Langweiler 8;FALSE;;Langweiler 8;Langweiler 8
+611;41;80,9;langweiler_8;rheinland;lbk;schiesberg_2007;Langweiler 8;FALSE;;Langweiler 8;Langweiler 8
+612;43;142;langweiler_8;rheinland;lbk;schiesberg_2007;Langweiler 8;FALSE;;Langweiler 8;Langweiler 8
+613;47;81,4;langweiler_8;rheinland;lbk;schiesberg_2007;Langweiler 8;FALSE;;Langweiler 8;Langweiler 8
+614;50;185;langweiler_8;rheinland;lbk;schiesberg_2007;Langweiler 8;FALSE;;Langweiler 8;Langweiler 8
+615;54;129;langweiler_8;rheinland;lbk;schiesberg_2007;Langweiler 8;FALSE;;Langweiler 8;Langweiler 8
+616;55;128;langweiler_8;rheinland;lbk;schiesberg_2007;Langweiler 8;FALSE;;Langweiler 8;Langweiler 8
+617;57;76,7;langweiler_8;rheinland;lbk;schiesberg_2007;Langweiler 8;FALSE;;Langweiler 8;Langweiler 8
+618;59;185;langweiler_8;rheinland;lbk;schiesberg_2007;Langweiler 8;FALSE;;Langweiler 8;Langweiler 8
+619;64;103;langweiler_8;rheinland;lbk;schiesberg_2007;Langweiler 8;FALSE;;Langweiler 8;Langweiler 8
+620;65;141;langweiler_8;rheinland;lbk;schiesberg_2007;Langweiler 8;FALSE;;Langweiler 8;Langweiler 8
+621;67;145;langweiler_8;rheinland;lbk;schiesberg_2007;Langweiler 8;FALSE;;Langweiler 8;Langweiler 8
+622;76;60,8;langweiler_8;rheinland;lbk;schiesberg_2007;Langweiler 8;FALSE;;Langweiler 8;Langweiler 8
+623;77;162;langweiler_8;rheinland;lbk;schiesberg_2007;Langweiler 8;FALSE;;Langweiler 8;Langweiler 8
+624;99;38,6;langweiler_8;rheinland;lbk;schiesberg_2007;Langweiler 8;FALSE;;Langweiler 8;Langweiler 8
+589;2;169;langweiler_9;rheinland;lbk;schiesberg_2007;Langweiler 9;FALSE;;Langweiler 9;Langweiler 9
+590;5;161;langweiler_9;rheinland;lbk;schiesberg_2007;Langweiler 9;FALSE;;Langweiler 9;Langweiler 9
+591;6;73,8;langweiler_9;rheinland;lbk;schiesberg_2007;Langweiler 9;FALSE;;Langweiler 9;Langweiler 9
+592;13;151;langweiler_9;rheinland;lbk;schiesberg_2007;Langweiler 9;FALSE;;Langweiler 9;Langweiler 9
+593;17;224;langweiler_9;rheinland;lbk;schiesberg_2007;Langweiler 9;FALSE;;Langweiler 9;Langweiler 9
+594;7;204;laurenzberg_7;rheinland;lbk;schiesberg_2007;Laurenzberg 7;FALSE;;Laurenzberg 7;Laurenzberg 7
+626;1;150;lohn_3;rheinland;lbk;schiesberg_2007;Lohn 3;FALSE;;Lohn 3;Lohn 3
+627;2;194;lohn_3;rheinland;lbk;schiesberg_2007;Lohn 3;FALSE;;Lohn 3;Lohn 3
+628;24;182;lohn_3;rheinland;lbk;schiesberg_2007;Lohn 3;FALSE;;Lohn 3;Lohn 3
+629;29;143;lohn_3;rheinland;lbk;schiesberg_2007;Lohn 3;FALSE;;Lohn 3;Lohn 3
+630;36;139;lohn_3;rheinland;lbk;schiesberg_2007;Lohn 3;FALSE;;Lohn 3;Lohn 3
+160;160;73,74944076;mana_za_hlbokou_cestou;zitava_valley;lbk;muller_scheessel_et_al_2020;Maňa 'Za hlbokou cestou';FALSE;31,41652525;Maňa;Mana
+161;161;126,6070531;mana_za_hlbokou_cestou;zitava_valley;lbk;muller_scheessel_et_al_2020;Maňa 'Za hlbokou cestou';FALSE;21,47462685;Maňa;Mana
+162;162;86,79224169;mana_za_hlbokou_cestou;zitava_valley;lbk;muller_scheessel_et_al_2020;Maňa 'Za hlbokou cestou';FALSE;11,04124855;Maňa;Mana
+163;163;55,43232998;mana_za_hlbokou_cestou;zitava_valley;lbk;muller_scheessel_et_al_2020;Maňa 'Za hlbokou cestou';FALSE;21,78488314;Maňa;Mana
+164;164;92,22117928;mana_za_hlbokou_cestou;zitava_valley;lbk;muller_scheessel_et_al_2020;Maňa 'Za hlbokou cestou';FALSE;21,50596108;Maňa;Mana
+165;165;76,14669258;mana_za_hlbokou_cestou;zitava_valley;lbk;muller_scheessel_et_al_2020;Maňa 'Za hlbokou cestou';FALSE;33,72434375;Maňa;Mana
+166;166;127,3623671;mana_za_hlbokou_cestou;zitava_valley;lbk;muller_scheessel_et_al_2020;Maňa 'Za hlbokou cestou';FALSE;23,56067262;Maňa;Mana
+167;167;84,63224626;mana_za_hlbokou_cestou;zitava_valley;lbk;muller_scheessel_et_al_2020;Maňa 'Za hlbokou cestou';FALSE;16,90231102;Maňa;Mana
+168;168;67,48940332;mana_za_hlbokou_cestou;zitava_valley;lbk;muller_scheessel_et_al_2020;Maňa 'Za hlbokou cestou';FALSE;14,63310907;Maňa;Mana
+169;169;130,6442872;mana_za_hlbokou_cestou;zitava_valley;lbk;muller_scheessel_et_al_2020;Maňa 'Za hlbokou cestou';FALSE;18,41358059;Maňa;Mana
+170;170;163,6544283;mana_za_hlbokou_cestou;zitava_valley;lbk;muller_scheessel_et_al_2020;Maňa 'Za hlbokou cestou';FALSE;29,66576271;Maňa;Mana
+171;171;129,7569343;mana_za_hlbokou_cestou;zitava_valley;lbk;muller_scheessel_et_al_2020;Maňa 'Za hlbokou cestou';FALSE;20,17426716;Maňa;Mana
+172;172;65,77211711;mana_za_hlbokou_cestou;zitava_valley;lbk;muller_scheessel_et_al_2020;Maňa 'Za hlbokou cestou';FALSE;22,46826137;Maňa;Mana
+173;173;114,927645;mana_za_hlbokou_cestou;zitava_valley;lbk;muller_scheessel_et_al_2020;Maňa 'Za hlbokou cestou';FALSE;30,60938791;Maňa;Mana
+174;174;124,4769531;mana_za_hlbokou_cestou;zitava_valley;lbk;muller_scheessel_et_al_2020;Maňa 'Za hlbokou cestou';FALSE;29,55810605;Maňa;Mana
+175;175;72,72527243;mana_za_hlbokou_cestou;zitava_valley;lbk;muller_scheessel_et_al_2020;Maňa 'Za hlbokou cestou';FALSE;22,78018187;Maňa;Mana
+176;176;78,35540344;mana_za_hlbokou_cestou;zitava_valley;lbk;muller_scheessel_et_al_2020;Maňa 'Za hlbokou cestou';FALSE;16,45008426;Maňa;Mana
+177;177;94,33253126;mana_za_hlbokou_cestou;zitava_valley;lbk;muller_scheessel_et_al_2020;Maňa 'Za hlbokou cestou';FALSE;15,31936875;Maňa;Mana
+178;178;59,45310992;mana_za_hlbokou_cestou;zitava_valley;lbk;muller_scheessel_et_al_2020;Maňa 'Za hlbokou cestou';FALSE;18,59452987;Maňa;Mana
+179;179;194,2807897;mana_za_hlbokou_cestou;zitava_valley;lbk;muller_scheessel_et_al_2020;Maňa 'Za hlbokou cestou';FALSE;25,97137347;Maňa;Mana
+180;180;236,0820022;mana_za_hlbokou_cestou;zitava_valley;lbk;muller_scheessel_et_al_2020;Maňa 'Za hlbokou cestou';FALSE;32,73974094;Maňa;Mana
+181;181;160,4959314;mana_za_hlbokou_cestou;zitava_valley;lbk;muller_scheessel_et_al_2020;Maňa 'Za hlbokou cestou';FALSE;24,7198126;Maňa;Mana
+182;182;212,9967718;mana_za_hlbokou_cestou;zitava_valley;lbk;muller_scheessel_et_al_2020;Maňa 'Za hlbokou cestou';FALSE;35,51426282;Maňa;Mana
+183;183;82,67980421;mana_za_hlbokou_cestou;zitava_valley;lbk;muller_scheessel_et_al_2020;Maňa 'Za hlbokou cestou';FALSE;22,58923507;Maňa;Mana
+184;184;87,42115821;mana_za_hlbokou_cestou;zitava_valley;lbk;muller_scheessel_et_al_2020;Maňa 'Za hlbokou cestou';FALSE;25,89020474;Maňa;Mana
+185;185;81,79802364;mana_za_hlbokou_cestou;zitava_valley;lbk;muller_scheessel_et_al_2020;Maňa 'Za hlbokou cestou';FALSE;29,29076467;Maňa;Mana
+186;186;83,72571919;mana_za_hlbokou_cestou;zitava_valley;lbk;muller_scheessel_et_al_2020;Maňa 'Za hlbokou cestou';FALSE;15,95106199;Maňa;Mana
+187;187;70,82781171;mana_za_hlbokou_cestou;zitava_valley;lbk;muller_scheessel_et_al_2020;Maňa 'Za hlbokou cestou';FALSE;36,59967877;Maňa;Mana
+188;188;74,38492699;mana_za_hlbokou_cestou;zitava_valley;lbk;muller_scheessel_et_al_2020;Maňa 'Za hlbokou cestou';FALSE;41,40049873;Maňa;Mana
+102;102;85,95599404;nevidzany_konopiska;zitava_valley;lbk;muller_scheessel_et_al_2020;Nevidzany 'Konopiská';FALSE;10,95471722;Nevidzany;Nevidzany
+103;103;100,9516893;nevidzany_konopiska;zitava_valley;lbk;muller_scheessel_et_al_2020;Nevidzany 'Konopiská';FALSE;12,46217794;Nevidzany;Nevidzany
+104;104;158,1318238;nevidzany_konopiska;zitava_valley;lbk;muller_scheessel_et_al_2020;Nevidzany 'Konopiská';FALSE;17,21960646;Nevidzany;Nevidzany
+105;105;238,3069878;nevidzany_konopiska;zitava_valley;lbk;muller_scheessel_et_al_2020;Nevidzany 'Konopiská';FALSE;17,77244438;Nevidzany;Nevidzany
+106;106;170,3659872;nevidzany_konopiska;zitava_valley;lbk;muller_scheessel_et_al_2020;Nevidzany 'Konopiská';FALSE;39,74689675;Nevidzany;Nevidzany
+107;107;109,4677239;nevidzany_konopiska;zitava_valley;lbk;muller_scheessel_et_al_2020;Nevidzany 'Konopiská';FALSE;27,47978111;Nevidzany;Nevidzany
+108;108;89,92337823;nevidzany_konopiska;zitava_valley;lbk;muller_scheessel_et_al_2020;Nevidzany 'Konopiská';FALSE;21,6831239;Nevidzany;Nevidzany
+109;109;64,11412472;nevidzany_konopiska;zitava_valley;lbk;muller_scheessel_et_al_2020;Nevidzany 'Konopiská';FALSE;24,49963522;Nevidzany;Nevidzany
+110;110;90,8828148;nevidzany_konopiska;zitava_valley;lbk;muller_scheessel_et_al_2020;Nevidzany 'Konopiská';FALSE;30,46602764;Nevidzany;Nevidzany
+111;111;97,5378324;nevidzany_konopiska;zitava_valley;lbk;muller_scheessel_et_al_2020;Nevidzany 'Konopiská';FALSE;24,45898115;Nevidzany;Nevidzany
+112;112;43,73714039;nevidzany_konopiska;zitava_valley;lbk;muller_scheessel_et_al_2020;Nevidzany 'Konopiská';FALSE;8,920912304;Nevidzany;Nevidzany
+113;113;98,66814878;nevidzany_konopiska;zitava_valley;lbk;muller_scheessel_et_al_2020;Nevidzany 'Konopiská';FALSE;17,54610543;Nevidzany;Nevidzany
+114;114;76,49722558;nevidzany_konopiska;zitava_valley;lbk;muller_scheessel_et_al_2020;Nevidzany 'Konopiská';FALSE;15,48537375;Nevidzany;Nevidzany
+115;115;51,52745773;nevidzany_konopiska;zitava_valley;lbk;muller_scheessel_et_al_2020;Nevidzany 'Konopiská';FALSE;20,40317489;Nevidzany;Nevidzany
+116;116;204,6447898;nevidzany_konopiska;zitava_valley;lbk;muller_scheessel_et_al_2020;Nevidzany 'Konopiská';FALSE;21,92926421;Nevidzany;Nevidzany
+117;117;68,30639521;nevidzany_konopiska;zitava_valley;lbk;muller_scheessel_et_al_2020;Nevidzany 'Konopiská';FALSE;15,19794641;Nevidzany;Nevidzany
+118;118;193,7629418;nevidzany_konopiska;zitava_valley;lbk;muller_scheessel_et_al_2020;Nevidzany 'Konopiská';FALSE;23,282257;Nevidzany;Nevidzany
+119;119;100,1645681;nevidzany_konopiska;zitava_valley;lbk;muller_scheessel_et_al_2020;Nevidzany 'Konopiská';FALSE;21,23836164;Nevidzany;Nevidzany
+120;120;176,9942286;nevidzany_konopiska;zitava_valley;lbk;muller_scheessel_et_al_2020;Nevidzany 'Konopiská';FALSE;21,6330566;Nevidzany;Nevidzany
+121;121;120,3118499;nevidzany_konopiska;zitava_valley;lbk;muller_scheessel_et_al_2020;Nevidzany 'Konopiská';FALSE;9,749702078;Nevidzany;Nevidzany
+545;553;122,8664892;nevidzany_konopiska;zitava_valley;lbk;muller_scheessel_et_al_2020;Nevidzany 'Konopiská';FALSE;18,03666797;Nevidzany;Nevidzany
+546;554;86,79919355;nevidzany_konopiska;zitava_valley;lbk;muller_scheessel_et_al_2020;Nevidzany 'Konopiská';FALSE;15,88853283;Nevidzany;Nevidzany
+596;3;185;niedermerz_4;rheinland;lbk;schiesberg_2007;Niedermerz 4;FALSE;;Niedermerz 4;Niedermerz 4
+597;6;182;niedermerz_4;rheinland;lbk;schiesberg_2007;Niedermerz 4;FALSE;;Niedermerz 4;Niedermerz 4
+33;33;60,79148015;slazany_na_domovine;zitava_valley;lbk;muller_scheessel_et_al_2020;Sľažany 'Na Domovine';FALSE;15,45918061;Sľažany;Slazany
+34;34;76,36568004;slazany_na_domovine;zitava_valley;lbk;muller_scheessel_et_al_2020;Sľažany 'Na Domovine';FALSE;13,19259826;Sľažany;Slazany
+35;35;35,55468118;slazany_na_domovine;zitava_valley;lbk;muller_scheessel_et_al_2020;Sľažany 'Na Domovine';FALSE;28,92542345;Sľažany;Slazany
+36;36;40,60569679;slazany_na_domovine;zitava_valley;lbk;muller_scheessel_et_al_2020;Sľažany 'Na Domovine';FALSE;21,73609256;Sľažany;Slazany
+37;37;68,71140378;slazany_na_domovine;zitava_valley;lbk;muller_scheessel_et_al_2020;Sľažany 'Na Domovine';FALSE;24,77468283;Sľažany;Slazany
+534;542;59,45715908;slazany_na_domovine;zitava_valley;lbk;muller_scheessel_et_al_2020;Sľažany 'Na Domovine';FALSE;9,125671588;Sľažany;Slazany
+90;90;81,17420528;telince_horne_luky;zitava_valley;lbk;muller_scheessel_et_al_2020;Telince 'Horné lúky';FALSE;1,635812924;Telince;Telince
+91;91;70,12370153;telince_horne_luky;zitava_valley;lbk;muller_scheessel_et_al_2020;Telince 'Horné lúky';FALSE;3,33367251;Telince;Telince
+92;92;77,09948717;telince_horne_luky;zitava_valley;lbk;muller_scheessel_et_al_2020;Telince 'Horné lúky';FALSE;21,54948433;Telince;Telince
+93;93;181,4114608;telince_horne_luky;zitava_valley;lbk;muller_scheessel_et_al_2020;Telince 'Horné lúky';FALSE;14,66335495;Telince;Telince
+94;94;35,96702769;telince_horne_luky;zitava_valley;lbk;muller_scheessel_et_al_2020;Telince 'Horné lúky';FALSE;12,78469624;Telince;Telince
+95;95;59,34742486;telince_horne_luky;zitava_valley;lbk;muller_scheessel_et_al_2020;Telince 'Horné lúky';FALSE;18,72202303;Telince;Telince
+96;96;102,9584461;telince_horne_luky;zitava_valley;lbk;muller_scheessel_et_al_2020;Telince 'Horné lúky';FALSE;11,70772802;Telince;Telince
+97;97;86,25304715;telince_horne_luky;zitava_valley;lbk;muller_scheessel_et_al_2020;Telince 'Horné lúky';FALSE;10,87064937;Telince;Telince
+98;98;112,4899686;telince_horne_luky;zitava_valley;lbk;muller_scheessel_et_al_2020;Telince 'Horné lúky';FALSE;359,9313854;Telince;Telince
+99;99;60,19824558;telince_horne_luky;zitava_valley;lbk;muller_scheessel_et_al_2020;Telince 'Horné lúky';FALSE;358,9015175;Telince;Telince
+100;100;163,9448682;telince_horne_luky;zitava_valley;lbk;muller_scheessel_et_al_2020;Telince 'Horné lúky';FALSE;355,6103857;Telince;Telince
+101;101;112,4696733;telince_horne_luky;zitava_valley;lbk;muller_scheessel_et_al_2020;Telince 'Horné lúky';FALSE;2,572217009;Telince;Telince
+547;555;72,74236906;telince_horne_luky;zitava_valley;lbk;muller_scheessel_et_al_2020;Telince 'Horné lúky';FALSE;13,96192156;Telince;Telince
+1;1;58,48786374;ulany_nad_zitavou_dolne_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Úľany nad Žitavou 'Dolné diely';FALSE;7,120386279;Úľany;Ulany
+2;2;65,64437765;ulany_nad_zitavou_dolne_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Úľany nad Žitavou 'Dolné diely';FALSE;358,520472;Úľany;Ulany
+3;3;56,99330094;ulany_nad_zitavou_dolne_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Úľany nad Žitavou 'Dolné diely';FALSE;4,86102392;Úľany;Ulany
+4;4;67,6938679;ulany_nad_zitavou_dolne_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Úľany nad Žitavou 'Dolné diely';FALSE;15,93217939;Úľany;Ulany
+5;5;72,4793664;ulany_nad_zitavou_dolne_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Úľany nad Žitavou 'Dolné diely';FALSE;10,06348423;Úľany;Ulany
+6;6;61,91064371;ulany_nad_zitavou_dolne_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Úľany nad Žitavou 'Dolné diely';FALSE;3,19656594;Úľany;Ulany
+7;7;65,68651762;ulany_nad_zitavou_dolne_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Úľany nad Žitavou 'Dolné diely';FALSE;13,6178667;Úľany;Ulany
+8;8;60,55287159;ulany_nad_zitavou_dolne_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Úľany nad Žitavou 'Dolné diely';FALSE;9,050051213;Úľany;Ulany
+9;9;83,90120425;ulany_nad_zitavou_dolne_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Úľany nad Žitavou 'Dolné diely';FALSE;14,76201826;Úľany;Ulany
+10;10;68,64450932;ulany_nad_zitavou_dolne_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Úľany nad Žitavou 'Dolné diely';FALSE;10,06773168;Úľany;Ulany
+11;11;68,76941732;ulany_nad_zitavou_dolne_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Úľany nad Žitavou 'Dolné diely';FALSE;20,03117826;Úľany;Ulany
+12;12;80,23019503;ulany_nad_zitavou_dolne_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Úľany nad Žitavou 'Dolné diely';FALSE;12,52170526;Úľany;Ulany
+13;13;63,57793588;ulany_nad_zitavou_dolne_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Úľany nad Žitavou 'Dolné diely';FALSE;5,36813899;Úľany;Ulany
+14;14;67,37902313;ulany_nad_zitavou_dolne_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Úľany nad Žitavou 'Dolné diely';FALSE;24,90782633;Úľany;Ulany
+15;15;31,01134309;ulany_nad_zitavou_dolne_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Úľany nad Žitavou 'Dolné diely';FALSE;37,55815139;Úľany;Ulany
+16;16;61,78695097;ulany_nad_zitavou_dolne_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Úľany nad Žitavou 'Dolné diely';FALSE;15,82583695;Úľany;Ulany
+17;17;46,37319135;ulany_nad_zitavou_dolne_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Úľany nad Žitavou 'Dolné diely';FALSE;30,01844698;Úľany;Ulany
+18;18;55,61236893;ulany_nad_zitavou_dolne_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Úľany nad Žitavou 'Dolné diely';FALSE;28,10098361;Úľany;Ulany
+19;19;71,3569768;ulany_nad_zitavou_dolne_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Úľany nad Žitavou 'Dolné diely';FALSE;9,216840488;Úľany;Ulany
+20;20;80,37632457;ulany_nad_zitavou_dolne_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Úľany nad Žitavou 'Dolné diely';FALSE;15,77963753;Úľany;Ulany
+21;21;62,02440385;ulany_nad_zitavou_dolne_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Úľany nad Žitavou 'Dolné diely';FALSE;8,853864962;Úľany;Ulany
+22;22;53,34047518;ulany_nad_zitavou_dolne_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Úľany nad Žitavou 'Dolné diely';FALSE;26,45087556;Úľany;Ulany
+23;23;51,58431934;ulany_nad_zitavou_dolne_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Úľany nad Žitavou 'Dolné diely';FALSE;12,47836155;Úľany;Ulany
+24;24;67,20297535;ulany_nad_zitavou_dolne_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Úľany nad Žitavou 'Dolné diely';FALSE;0,603600979;Úľany;Ulany
+25;25;56,1923399;ulany_nad_zitavou_dolne_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Úľany nad Žitavou 'Dolné diely';FALSE;2,417499464;Úľany;Ulany
+26;26;47,66675216;ulany_nad_zitavou_dolne_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Úľany nad Žitavou 'Dolné diely';FALSE;357,2103351;Úľany;Ulany
+27;27;86,26201248;ulany_nad_zitavou_dolne_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Úľany nad Žitavou 'Dolné diely';FALSE;23,17274497;Úľany;Ulany
+28;28;54,43830892;ulany_nad_zitavou_dolne_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Úľany nad Žitavou 'Dolné diely';FALSE;24,66337207;Úľany;Ulany
+29;29;44,50230898;ulany_nad_zitavou_dolne_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Úľany nad Žitavou 'Dolné diely';FALSE;36,02579931;Úľany;Ulany
+30;30;66,54883536;ulany_nad_zitavou_dolne_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Úľany nad Žitavou 'Dolné diely';FALSE;26,4292543;Úľany;Ulany
+31;31;47,76224993;ulany_nad_zitavou_dolne_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Úľany nad Žitavou 'Dolné diely';FALSE;358,3171656;Úľany;Ulany
+531;539;83,50891935;ulany_nad_zitavou_dolne_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Úľany nad Žitavou 'Dolné diely';FALSE;359,0069445;Úľany;Ulany
+532;540;68,58731593;ulany_nad_zitavou_dolne_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Úľany nad Žitavou 'Dolné diely';FALSE;30,9372712;Úľany;Ulany
+533;541;41,78969145;ulany_nad_zitavou_dolne_diely;zitava_valley;lbk;muller_scheessel_et_al_2020;Úľany nad Žitavou 'Dolné diely';FALSE;28,78329733;Úľany;Ulany
+189;189;124,1568685;vlkas_do_hulskeho_chotara;zitava_valley;lbk;muller_scheessel_et_al_2020;Vlkas 'Do hulského chotára';FALSE;30,76352189;Vlkas;Vlkas
+190;190;81,17652119;vlkas_do_hulskeho_chotara;zitava_valley;lbk;muller_scheessel_et_al_2020;Vlkas 'Do hulského chotára';FALSE;29,22830611;Vlkas;Vlkas
+191;191;216,4504193;vlkas_do_hulskeho_chotara;zitava_valley;lbk;muller_scheessel_et_al_2020;Vlkas 'Do hulského chotára';FALSE;25,16860501;Vlkas;Vlkas
+192;192;42,91986821;vlkas_do_hulskeho_chotara;zitava_valley;lbk;muller_scheessel_et_al_2020;Vlkas 'Do hulského chotára';FALSE;21,41407085;Vlkas;Vlkas
+193;193;150,1773566;vlkas_do_hulskeho_chotara;zitava_valley;lbk;muller_scheessel_et_al_2020;Vlkas 'Do hulského chotára';FALSE;29,52030856;Vlkas;Vlkas
+194;194;114,4308392;vlkas_do_hulskeho_chotara;zitava_valley;lbk;muller_scheessel_et_al_2020;Vlkas 'Do hulského chotára';FALSE;25,60217629;Vlkas;Vlkas
+195;195;60,38141604;vlkas_do_hulskeho_chotara;zitava_valley;lbk;muller_scheessel_et_al_2020;Vlkas 'Do hulského chotára';FALSE;19,81402861;Vlkas;Vlkas
+196;196;79,54559825;vlkas_do_hulskeho_chotara;zitava_valley;lbk;muller_scheessel_et_al_2020;Vlkas 'Do hulského chotára';FALSE;21,60530724;Vlkas;Vlkas
+197;197;138,0270472;vlkas_do_hulskeho_chotara;zitava_valley;lbk;muller_scheessel_et_al_2020;Vlkas 'Do hulského chotára';FALSE;27,41901922;Vlkas;Vlkas
+198;198;87,6945186;vlkas_do_hulskeho_chotara;zitava_valley;lbk;muller_scheessel_et_al_2020;Vlkas 'Do hulského chotára';FALSE;22,67227863;Vlkas;Vlkas
+199;199;89,07964579;vlkas_do_hulskeho_chotara;zitava_valley;lbk;muller_scheessel_et_al_2020;Vlkas 'Do hulského chotára';FALSE;27,22541063;Vlkas;Vlkas
+200;200;187,8613587;vlkas_do_hulskeho_chotara;zitava_valley;lbk;muller_scheessel_et_al_2020;Vlkas 'Do hulského chotára';FALSE;16,38899764;Vlkas;Vlkas
+201;201;75,75655539;vlkas_do_hulskeho_chotara;zitava_valley;lbk;muller_scheessel_et_al_2020;Vlkas 'Do hulského chotára';FALSE;19,11495683;Vlkas;Vlkas
+202;202;85,92971546;vlkas_do_hulskeho_chotara;zitava_valley;lbk;muller_scheessel_et_al_2020;Vlkas 'Do hulského chotára';FALSE;25,13051404;Vlkas;Vlkas
+203;203;97,16985547;vlkas_do_hulskeho_chotara;zitava_valley;lbk;muller_scheessel_et_al_2020;Vlkas 'Do hulského chotára';FALSE;29,74162237;Vlkas;Vlkas
+204;204;57,49253033;vlkas_do_hulskeho_chotara;zitava_valley;lbk;muller_scheessel_et_al_2020;Vlkas 'Do hulského chotára';FALSE;30,29681367;Vlkas;Vlkas
+205;205;77,33408114;vlkas_do_hulskeho_chotara;zitava_valley;lbk;muller_scheessel_et_al_2020;Vlkas 'Do hulského chotára';FALSE;25,60606321;Vlkas;Vlkas
+206;206;66,81949291;vlkas_do_hulskeho_chotara;zitava_valley;lbk;muller_scheessel_et_al_2020;Vlkas 'Do hulského chotára';FALSE;33,12783919;Vlkas;Vlkas
+207;207;46,73138489;vlkas_do_hulskeho_chotara;zitava_valley;lbk;muller_scheessel_et_al_2020;Vlkas 'Do hulského chotára';FALSE;30,25755016;Vlkas;Vlkas
+208;208;69,69978266;vlkas_do_hulskeho_chotara;zitava_valley;lbk;muller_scheessel_et_al_2020;Vlkas 'Do hulského chotára';FALSE;29,32149014;Vlkas;Vlkas
+209;209;133,4814677;vlkas_do_hulskeho_chotara;zitava_valley;lbk;muller_scheessel_et_al_2020;Vlkas 'Do hulského chotára';FALSE;21,77198225;Vlkas;Vlkas
+210;210;53,41307434;vlkas_do_hulskeho_chotara;zitava_valley;lbk;muller_scheessel_et_al_2020;Vlkas 'Do hulského chotára';FALSE;21,8452992;Vlkas;Vlkas
+211;211;71,95704994;vlkas_do_hulskeho_chotara;zitava_valley;lbk;muller_scheessel_et_al_2020;Vlkas 'Do hulského chotára';FALSE;26,70773138;Vlkas;Vlkas
+212;212;147,592669;vlkas_do_hulskeho_chotara;zitava_valley;lbk;muller_scheessel_et_al_2020;Vlkas 'Do hulského chotára';FALSE;26,37076135;Vlkas;Vlkas
+213;213;90,34814303;vlkas_do_hulskeho_chotara;zitava_valley;lbk;muller_scheessel_et_al_2020;Vlkas 'Do hulského chotára';FALSE;26,44660711;Vlkas;Vlkas
+214;214;178,5668394;vlkas_do_hulskeho_chotara;zitava_valley;lbk;muller_scheessel_et_al_2020;Vlkas 'Do hulského chotára';FALSE;22,6905004;Vlkas;Vlkas
+215;215;87,3791028;vlkas_do_hulskeho_chotara;zitava_valley;lbk;muller_scheessel_et_al_2020;Vlkas 'Do hulského chotára';FALSE;16,47390883;Vlkas;Vlkas
+216;216;78,75268309;vlkas_do_hulskeho_chotara;zitava_valley;lbk;muller_scheessel_et_al_2020;Vlkas 'Do hulského chotára';FALSE;26,57392472;Vlkas;Vlkas
+217;217;77,0599152;vlkas_do_hulskeho_chotara;zitava_valley;lbk;muller_scheessel_et_al_2020;Vlkas 'Do hulského chotára';FALSE;24,364564;Vlkas;Vlkas
+218;218;111,2517903;vlkas_do_hulskeho_chotara;zitava_valley;lbk;muller_scheessel_et_al_2020;Vlkas 'Do hulského chotára';FALSE;25,6873762;Vlkas;Vlkas
+219;219;104,1357481;vlkas_do_hulskeho_chotara;zitava_valley;lbk;muller_scheessel_et_al_2020;Vlkas 'Do hulského chotára';FALSE;31,80429412;Vlkas;Vlkas
+220;220;112,3321911;vlkas_do_hulskeho_chotara;zitava_valley;lbk;muller_scheessel_et_al_2020;Vlkas 'Do hulského chotára';FALSE;27,80931523;Vlkas;Vlkas
+221;221;103,7000378;vlkas_do_hulskeho_chotara;zitava_valley;lbk;muller_scheessel_et_al_2020;Vlkas 'Do hulského chotára';FALSE;20,35180959;Vlkas;Vlkas
+222;222;88,03612132;vlkas_do_hulskeho_chotara;zitava_valley;lbk;muller_scheessel_et_al_2020;Vlkas 'Do hulského chotára';FALSE;19,53907724;Vlkas;Vlkas
+223;223;206,9907994;vlkas_do_hulskeho_chotara;zitava_valley;lbk;muller_scheessel_et_al_2020;Vlkas 'Do hulského chotára';FALSE;23,20140374;Vlkas;Vlkas
+224;224;92,7727514;vlkas_do_hulskeho_chotara;zitava_valley;lbk;muller_scheessel_et_al_2020;Vlkas 'Do hulského chotára';FALSE;25,20018977;Vlkas;Vlkas
+225;225;166,4166362;vlkas_do_hulskeho_chotara;zitava_valley;lbk;muller_scheessel_et_al_2020;Vlkas 'Do hulského chotára';FALSE;19,46919742;Vlkas;Vlkas
+226;226;102,3127245;vlkas_do_hulskeho_chotara;zitava_valley;lbk;muller_scheessel_et_al_2020;Vlkas 'Do hulského chotára';FALSE;23,80742887;Vlkas;Vlkas
+227;227;73,65284308;vlkas_do_hulskeho_chotara;zitava_valley;lbk;muller_scheessel_et_al_2020;Vlkas 'Do hulského chotára';FALSE;33,53674635;Vlkas;Vlkas
+228;228;139,1130963;vlkas_do_hulskeho_chotara;zitava_valley;lbk;muller_scheessel_et_al_2020;Vlkas 'Do hulského chotára';FALSE;19,45094408;Vlkas;Vlkas
+229;229;109,1001575;vlkas_do_hulskeho_chotara;zitava_valley;lbk;muller_scheessel_et_al_2020;Vlkas 'Do hulského chotára';FALSE;30,26119716;Vlkas;Vlkas
+230;230;58,97653899;vlkas_do_hulskeho_chotara;zitava_valley;lbk;muller_scheessel_et_al_2020;Vlkas 'Do hulského chotára';FALSE;24,24204137;Vlkas;Vlkas
+231;231;50,2836168;vlkas_do_hulskeho_chotara;zitava_valley;lbk;muller_scheessel_et_al_2020;Vlkas 'Do hulského chotára';FALSE;29,30605254;Vlkas;Vlkas
+232;232;51,36291745;vlkas_do_hulskeho_chotara;zitava_valley;lbk;muller_scheessel_et_al_2020;Vlkas 'Do hulského chotára';FALSE;18,35093259;Vlkas;Vlkas
+233;233;88,51790279;vlkas_do_hulskeho_chotara;zitava_valley;lbk;muller_scheessel_et_al_2020;Vlkas 'Do hulského chotára';FALSE;12,14423077;Vlkas;Vlkas
+234;234;88,40969001;vlkas_do_hulskeho_chotara;zitava_valley;lbk;muller_scheessel_et_al_2020;Vlkas 'Do hulského chotára';FALSE;27,39288703;Vlkas;Vlkas
+235;235;48,64301407;vlkas_do_hulskeho_chotara;zitava_valley;lbk;muller_scheessel_et_al_2020;Vlkas 'Do hulského chotára';FALSE;23,18269235;Vlkas;Vlkas
+236;236;88,84602017;vlkas_do_hulskeho_chotara;zitava_valley;lbk;muller_scheessel_et_al_2020;Vlkas 'Do hulského chotára';FALSE;24,26477274;Vlkas;Vlkas
+237;237;86,42613286;vlkas_do_hulskeho_chotara;zitava_valley;lbk;muller_scheessel_et_al_2020;Vlkas 'Do hulského chotára';FALSE;16,06114544;Vlkas;Vlkas
+238;238;116,271083;vlkas_do_hulskeho_chotara;zitava_valley;lbk;muller_scheessel_et_al_2020;Vlkas 'Do hulského chotára';FALSE;17,02049525;Vlkas;Vlkas
+239;239;82,16902195;vlkas_do_hulskeho_chotara;zitava_valley;lbk;muller_scheessel_et_al_2020;Vlkas 'Do hulského chotára';FALSE;17,11266888;Vlkas;Vlkas
+240;240;125,1967558;vlkas_do_hulskeho_chotara;zitava_valley;lbk;muller_scheessel_et_al_2020;Vlkas 'Do hulského chotára';FALSE;13,04027624;Vlkas;Vlkas
+241;241;57,15155096;vlkas_do_hulskeho_chotara;zitava_valley;lbk;muller_scheessel_et_al_2020;Vlkas 'Do hulského chotára';FALSE;33,05676255;Vlkas;Vlkas
+242;242;129,9717883;vlkas_do_hulskeho_chotara;zitava_valley;lbk;muller_scheessel_et_al_2020;Vlkas 'Do hulského chotára';FALSE;30,07656197;Vlkas;Vlkas
+243;243;96,04200087;vlkas_do_hulskeho_chotara;zitava_valley;lbk;muller_scheessel_et_al_2020;Vlkas 'Do hulského chotára';FALSE;24,26725641;Vlkas;Vlkas
+244;244;243,2404666;vlkas_do_hulskeho_chotara;zitava_valley;lbk;muller_scheessel_et_al_2020;Vlkas 'Do hulského chotára';FALSE;21,4185107;Vlkas;Vlkas
+540;548;92,82422985;vlkas_do_hulskeho_chotara;zitava_valley;lbk;muller_scheessel_et_al_2020;Vlkas 'Do hulského chotára';FALSE;28,32717803;Vlkas;Vlkas
+541;549;85,07800112;vlkas_do_hulskeho_chotara;zitava_valley;lbk;muller_scheessel_et_al_2020;Vlkas 'Do hulského chotára';FALSE;20,0684047;Vlkas;Vlkas
+542;550;72,24760176;vlkas_do_hulskeho_chotara;zitava_valley;lbk;muller_scheessel_et_al_2020;Vlkas 'Do hulského chotára';FALSE;18,8100559;Vlkas;Vlkas
+543;551;70,12424121;vlkas_do_hulskeho_chotara;zitava_valley;lbk;muller_scheessel_et_al_2020;Vlkas 'Do hulského chotára';FALSE;36,49964169;Vlkas;Vlkas
+544;552;128,7057833;vlkas_do_hulskeho_chotara;zitava_valley;lbk;muller_scheessel_et_al_2020;Vlkas 'Do hulského chotára';FALSE;22,59621169;Vlkas;Vlkas
+32;32;91,83789175;vrable_drakovo;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Drakovo';FALSE;17,96713198;Vráble 'Drakovo';Vrable Drakovo
+548;556;67,96361776;vrable_drakovo;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Drakovo';FALSE;33,67694011;Vráble 'Drakovo';Vrable Drakovo
+418;426;83,60972933;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;25,82395032;Vráble N;Vrable N
+419;427;81,41939238;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;13,48979258;Vráble N;Vrable N
+420;428;56,29762471;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;22,887072;Vráble N;Vrable N
+421;429;42,82419328;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;18,09650101;Vráble N;Vrable N
+422;430;101,212319;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;13,5084778;Vráble N;Vrable N
+423;431;103,8463391;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;8,925991202;Vráble N;Vrable N
+424;432;69,5843614;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;21,68063013;Vráble N;Vrable N
+425;433;175,8763693;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;17,24677843;Vráble N;Vrable N
+426;434;56,74894011;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;15,43238906;Vráble N;Vrable N
+427;435;62,48697904;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;18,29455573;Vráble N;Vrable N
+428;436;38,29630954;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;4,175124338;Vráble N;Vrable N
+429;437;120,6353362;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;19,65383713;Vráble N;Vrable N
+430;438;85,69273;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;17,86494031;Vráble N;Vrable N
+431;439;84,98216026;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;15,90234712;Vráble N;Vrable N
+432;440;53,4451872;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;11,65008297;Vráble N;Vrable N
+433;441;44,36349204;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;12,37680633;Vráble N;Vrable N
+434;442;70,13219195;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;23,45630223;Vráble N;Vrable N
+435;443;70,10031458;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;18,33413511;Vráble N;Vrable N
+436;444;44,02242069;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;8,032467763;Vráble N;Vrable N
+437;445;61,90281787;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;19,8306549;Vráble N;Vrable N
+438;446;50,07922256;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;12,26167224;Vráble N;Vrable N
+439;447;71,25910322;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;9,381632002;Vráble N;Vrable N
+440;448;83,60476744;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;3,544701134;Vráble N;Vrable N
+441;449;79,21637739;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;359,5552481;Vráble N;Vrable N
+442;450;90,23799253;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;9,7859091;Vráble N;Vrable N
+443;451;186,2044232;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;13,57884651;Vráble N;Vrable N
+444;452;148,2202279;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;9,350541886;Vráble N;Vrable N
+445;453;36,35941517;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;15,78766536;Vráble N;Vrable N
+446;454;39,81346054;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;10,37248785;Vráble N;Vrable N
+447;455;70,03960752;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;7,181052779;Vráble N;Vrable N
+448;456;56,83739252;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;356,7583888;Vráble N;Vrable N
+449;457;53,97619494;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;3,177358974;Vráble N;Vrable N
+450;458;70,05318052;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;25,52301222;Vráble N;Vrable N
+451;459;72,6022565;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;10,78723469;Vráble N;Vrable N
+452;460;63,10931554;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;13,96890291;Vráble N;Vrable N
+453;461;42,08799752;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;16,55794072;Vráble N;Vrable N
+454;462;88,78155157;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;16,1054388;Vráble N;Vrable N
+455;463;110,379587;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;21,70579202;Vráble N;Vrable N
+456;464;43,23744597;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;22,44948525;Vráble N;Vrable N
+457;465;68,30815214;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;17,22199342;Vráble N;Vrable N
+458;466;63,52955925;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;27,46414058;Vráble N;Vrable N
+459;467;48,87745786;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;19,65467169;Vráble N;Vrable N
+460;468;112,0336451;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;19,03010823;Vráble N;Vrable N
+461;469;59,12163303;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;10,38549183;Vráble N;Vrable N
+462;470;68,94818592;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;19,70465471;Vráble N;Vrable N
+463;471;78,85139462;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;16,46694265;Vráble N;Vrable N
+464;472;93,98781838;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;13,35275298;Vráble N;Vrable N
+465;473;99,61909098;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;13,89965275;Vráble N;Vrable N
+466;474;102,2456361;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;21,08063388;Vráble N;Vrable N
+467;475;46,36325406;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;20,95393032;Vráble N;Vrable N
+468;476;66,93057278;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;12,49961184;Vráble N;Vrable N
+469;477;89,25196815;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;13,98735776;Vráble N;Vrable N
+470;478;118,5586471;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;13,51943513;Vráble N;Vrable N
+471;479;62,02634611;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;22,7976894;Vráble N;Vrable N
+472;480;48,41788921;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;22,05469239;Vráble N;Vrable N
+473;481;67,8924303;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;12,18512954;Vráble N;Vrable N
+474;482;68,36147676;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;17,38448609;Vráble N;Vrable N
+475;483;120,0890564;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;6,541361352;Vráble N;Vrable N
+476;484;207,1712168;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;4,803223553;Vráble N;Vrable N
+477;485;67,86315548;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;4,937890102;Vráble N;Vrable N
+478;486;65,7417367;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;20,22301554;Vráble N;Vrable N
+479;487;82,02730968;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;13,71097317;Vráble N;Vrable N
+480;488;41,61867157;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;25,12094417;Vráble N;Vrable N
+481;489;87,32039131;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;15,25426468;Vráble N;Vrable N
+482;490;48,81060274;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;19,94808453;Vráble N;Vrable N
+483;491;68,18115219;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;21,27229618;Vráble N;Vrable N
+484;492;51,83131303;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;20,68179378;Vráble N;Vrable N
+485;493;55,6489687;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;15,11582652;Vráble N;Vrable N
+486;494;37,00298434;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;8,479383243;Vráble N;Vrable N
+487;495;44,94834139;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;13,19897885;Vráble N;Vrable N
+488;496;80,57782839;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;9,116387545;Vráble N;Vrable N
+489;497;92,63189911;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;12,61375906;Vráble N;Vrable N
+490;498;52,02451724;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;29,07172886;Vráble N;Vrable N
+491;499;42,74081333;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;12,14810679;Vráble N;Vrable N
+492;500;60,76579146;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;15,70301532;Vráble N;Vrable N
+493;501;91,93674382;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;20,34735396;Vráble N;Vrable N
+494;502;60,73992249;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;14,54147597;Vráble N;Vrable N
+495;503;75,5797818;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;8,431798559;Vráble N;Vrable N
+496;504;42,07827886;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;9,827161142;Vráble N;Vrable N
+497;505;40,24473144;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;3,661816154;Vráble N;Vrable N
+498;506;50,99674786;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;15,43177781;Vráble N;Vrable N
+499;507;79,24772266;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;9,510153192;Vráble N;Vrable N
+500;508;60,38680264;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;10,33168105;Vráble N;Vrable N
+501;509;44,38113583;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;22,24398143;Vráble N;Vrable N
+502;510;88,09298633;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;19,44465317;Vráble N;Vrable N
+503;511;91,02732971;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;17,93134615;Vráble N;Vrable N
+504;512;55,74969406;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;14,3575157;Vráble N;Vrable N
+505;513;44,14235009;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;14,16462791;Vráble N;Vrable N
+506;514;48,62723196;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;21,0007261;Vráble N;Vrable N
+507;515;76,32026026;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;16,17982588;Vráble N;Vrable N
+508;516;114,4506961;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;17,89922592;Vráble N;Vrable N
+509;517;61,67422027;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;15,37227364;Vráble N;Vrable N
+510;518;50,81277839;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;16,59465737;Vráble N;Vrable N
+511;519;51,42303138;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;21,0502596;Vráble N;Vrable N
+512;520;51,37397563;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;22,24385299;Vráble N;Vrable N
+513;521;64,60131079;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;21,08236037;Vráble N;Vrable N
+514;522;60,70043615;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;17,0593201;Vráble N;Vrable N
+515;523;44,90682614;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;30,94541648;Vráble N;Vrable N
+516;524;39,91958313;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;15,58557618;Vráble N;Vrable N
+517;525;41,41914293;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;20,40886304;Vráble N;Vrable N
+518;526;81,1112619;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;5,589065716;Vráble N;Vrable N
+519;527;34,51515492;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;9,537333563;Vráble N;Vrable N
+520;528;64,68435882;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;7,334565281;Vráble N;Vrable N
+521;529;66,47672664;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;20,70547254;Vráble N;Vrable N
+522;530;93,7349645;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;1,286528355;Vráble N;Vrable N
+523;531;102,3032009;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;11,91523182;Vráble N;Vrable N
+524;532;51,60412689;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;12,43438093;Vráble N;Vrable N
+525;533;67,28869817;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;16,18011121;Vráble N;Vrable N
+526;534;113,4597111;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;20,72484148;Vráble N;Vrable N
+527;535;152,1240242;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;12,93818007;Vráble N;Vrable N
+528;536;87,49552552;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;20,9366301;Vráble N;Vrable N
+529;537;50,11279867;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;14,73253895;Vráble N;Vrable N
+530;538;48,72276688;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;19,73659464;Vráble N;Vrable N
+571;579;81,5303647;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;15,61490284;Vráble N;Vrable N
+572;580;96,03445238;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;20,78079611;Vráble N;Vrable N
+573;581;57,47894107;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;13,70788305;Vráble N;Vrable N
+574;582;64,74090981;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;12,95900978;Vráble N;Vrable N
+575;583;51,18656993;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;15,94857258;Vráble N;Vrable N
+576;584;81,34979349;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;12,30424453;Vráble N;Vrable N
+577;585;64,26350727;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;23,85352871;Vráble N;Vrable N
+578;586;73,48507907;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;8,580848261;Vráble N;Vrable N
+579;587;63,16778311;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;15,39638523;Vráble N;Vrable N
+580;588;90,09001538;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;14,59902729;Vráble N;Vrable N
+581;589;91,50675331;vrable_velke_lehemby_n;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' North;TRUE;18,50696713;Vráble N;Vrable N
+245;253;122,2877884;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;20,89060746;Vráble SE;Vrable SE
+246;254;156,1970545;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;9,758993068;Vráble SE;Vrable SE
+338;346;56,90759897;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;1,810250807;Vráble SE;Vrable SE
+339;347;32,28741808;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;23,78457789;Vráble SE;Vrable SE
+340;348;89,67605165;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;18,12788308;Vráble SE;Vrable SE
+341;349;36,80970654;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;22,70892544;Vráble SE;Vrable SE
+342;350;146,563068;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;21,31913252;Vráble SE;Vrable SE
+343;351;156,8152433;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;16,76324382;Vráble SE;Vrable SE
+344;352;78,42971929;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;5,441176148;Vráble SE;Vrable SE
+345;353;112,4490134;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;2,042997889;Vráble SE;Vrable SE
+346;354;104,8914741;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;12,68226915;Vráble SE;Vrable SE
+347;355;55,3556066;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;15,71088491;Vráble SE;Vrable SE
+348;356;75,33427583;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;19,77433399;Vráble SE;Vrable SE
+349;357;74,86001516;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;26,05905411;Vráble SE;Vrable SE
+350;358;45,70760986;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;21,21285002;Vráble SE;Vrable SE
+351;359;59,35819637;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;21,20323546;Vráble SE;Vrable SE
+352;360;57,85174522;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;9,680600483;Vráble SE;Vrable SE
+353;361;87,72578763;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;11,04258176;Vráble SE;Vrable SE
+354;362;47,54154185;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;24,54127779;Vráble SE;Vrable SE
+355;363;45,35974279;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;16,19229166;Vráble SE;Vrable SE
+356;364;104,171671;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;13,10808225;Vráble SE;Vrable SE
+357;365;86,50272062;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;14,91812536;Vráble SE;Vrable SE
+358;366;54,82900961;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;18,34677757;Vráble SE;Vrable SE
+359;367;36,43301355;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;16,57478121;Vráble SE;Vrable SE
+360;368;41,808588;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;24,62101579;Vráble SE;Vrable SE
+361;369;64,75788714;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;18,54339382;Vráble SE;Vrable SE
+362;370;54,98955527;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;11,48877989;Vráble SE;Vrable SE
+363;371;59,81381605;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;24,94797534;Vráble SE;Vrable SE
+364;372;43,80085065;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;32,17476414;Vráble SE;Vrable SE
+365;373;42,82413533;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;20,80171018;Vráble SE;Vrable SE
+366;374;143,363205;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;22,22461113;Vráble SE;Vrable SE
+367;375;65,41872973;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;20,59746829;Vráble SE;Vrable SE
+368;376;128,3977791;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;17,19772439;Vráble SE;Vrable SE
+369;377;85,88317169;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;30,92026352;Vráble SE;Vrable SE
+370;378;72,62169613;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;5,126956928;Vráble SE;Vrable SE
+371;379;92,77735097;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;14,15835142;Vráble SE;Vrable SE
+372;380;54,13544189;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;4,788918798;Vráble SE;Vrable SE
+373;381;30,06169109;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;26,43443282;Vráble SE;Vrable SE
+374;382;42,97279824;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;7,421148952;Vráble SE;Vrable SE
+375;383;80,88899207;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;21,02728955;Vráble SE;Vrable SE
+376;384;71,62117006;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;24,12785985;Vráble SE;Vrable SE
+377;385;129,7234357;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;4,533417438;Vráble SE;Vrable SE
+378;386;74,97366347;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;0,159990911;Vráble SE;Vrable SE
+379;387;56,74892779;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;22,55920778;Vráble SE;Vrable SE
+380;388;103,1805458;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;8,89963701;Vráble SE;Vrable SE
+381;389;93,92075355;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;5,643488927;Vráble SE;Vrable SE
+382;390;106,7963465;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;8,729270082;Vráble SE;Vrable SE
+383;391;91,85795333;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;6,31135984;Vráble SE;Vrable SE
+384;392;59,20628867;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;16,47554022;Vráble SE;Vrable SE
+385;393;76,38171063;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;10,70302397;Vráble SE;Vrable SE
+386;394;70,31413195;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;30,86226122;Vráble SE;Vrable SE
+387;395;43,51852521;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;16,97978076;Vráble SE;Vrable SE
+388;396;39,55029124;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;16,82495749;Vráble SE;Vrable SE
+389;397;58,01875822;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;14,60721067;Vráble SE;Vrable SE
+390;398;45,73463561;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;17,62804808;Vráble SE;Vrable SE
+391;399;69,79219863;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;16,87289213;Vráble SE;Vrable SE
+392;400;52,58103881;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;33,48634437;Vráble SE;Vrable SE
+393;401;91,62947365;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;15,88189312;Vráble SE;Vrable SE
+394;402;88,19725445;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;21,96907761;Vráble SE;Vrable SE
+395;403;181,0312284;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;26,13163895;Vráble SE;Vrable SE
+396;404;160,1567981;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;26,39821284;Vráble SE;Vrable SE
+397;405;99,37268265;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;24,87973925;Vráble SE;Vrable SE
+398;406;77,07640128;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;23,41412515;Vráble SE;Vrable SE
+399;407;56,06752998;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;21,02924173;Vráble SE;Vrable SE
+400;408;119,022694;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;7,658525388;Vráble SE;Vrable SE
+401;409;94,8735315;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;30,42541179;Vráble SE;Vrable SE
+402;410;47,88758348;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;29,59089372;Vráble SE;Vrable SE
+403;411;36,87440547;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;28,03870547;Vráble SE;Vrable SE
+404;412;98,07668857;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;29,13231598;Vráble SE;Vrable SE
+405;413;66,19122611;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;34,92012728;Vráble SE;Vrable SE
+406;414;183,0173164;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;13,30678385;Vráble SE;Vrable SE
+407;415;97,57643886;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;44,23850071;Vráble SE;Vrable SE
+408;416;87,64405051;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;17,95085155;Vráble SE;Vrable SE
+409;417;27,46319142;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;43,99363721;Vráble SE;Vrable SE
+410;418;104,2426794;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;19,46119398;Vráble SE;Vrable SE
+411;419;129,2371918;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;17,98921954;Vráble SE;Vrable SE
+412;420;59,04097036;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;10,31129211;Vráble SE;Vrable SE
+413;421;84,35203654;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;9,349033931;Vráble SE;Vrable SE
+414;422;46,30709595;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;11,426579;Vráble SE;Vrable SE
+415;423;73,58404732;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;18,84352056;Vráble SE;Vrable SE
+416;424;77,5980516;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;10,88448583;Vráble SE;Vrable SE
+417;425;49,51844094;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;4,195970158;Vráble SE;Vrable SE
+556;564;87,11564613;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;13,84593084;Vráble SE;Vrable SE
+557;565;70,41464367;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;17,62113775;Vráble SE;Vrable SE
+566;574;87,5848754;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;5,455587779;Vráble SE;Vrable SE
+567;575;76,10912319;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;5,228560079;Vráble SE;Vrable SE
+568;576;136,0786207;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;19,33931812;Vráble SE;Vrable SE
+569;577;72,62200169;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;39,22711897;Vráble SE;Vrable SE
+570;578;99,93780989;vrable_velke_lehemby_se;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-East;TRUE;17,33909115;Vráble SE;Vrable SE
+247;255;72,28364137;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;18,49054194;Vráble SW;Vrable SW
+248;256;54,89098853;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;22,02382998;Vráble SW;Vrable SW
+249;257;71,53343066;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;19,96805655;Vráble SW;Vrable SW
+250;258;46,25193321;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;21,2605136;Vráble SW;Vrable SW
+251;259;63,44946826;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;33,40393859;Vráble SW;Vrable SW
+252;260;54,25411681;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;31,46380425;Vráble SW;Vrable SW
+253;261;43,09202299;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;27,53539303;Vráble SW;Vrable SW
+254;262;92,76183075;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;25,91799775;Vráble SW;Vrable SW
+255;263;77,09723264;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;33,0981201;Vráble SW;Vrable SW
+256;264;94,73077003;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;5,001274299;Vráble SW;Vrable SW
+257;265;47,60796531;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;20,35128125;Vráble SW;Vrable SW
+258;266;42,42275688;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;33,48228702;Vráble SW;Vrable SW
+259;267;63,94375456;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;26,77305643;Vráble SW;Vrable SW
+260;268;62,16443722;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;18,28202312;Vráble SW;Vrable SW
+261;269;36,80041211;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;20,1530669;Vráble SW;Vrable SW
+262;270;50,12680546;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;12,7516125;Vráble SW;Vrable SW
+263;271;36,71694939;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;24,98942481;Vráble SW;Vrable SW
+264;272;81,35659316;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;25,99522318;Vráble SW;Vrable SW
+265;273;31,43548448;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;6,917415295;Vráble SW;Vrable SW
+266;274;46,21605684;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;9,899286467;Vráble SW;Vrable SW
+267;275;98,18898582;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;17,82905617;Vráble SW;Vrable SW
+268;276;37,87120003;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;12,76276305;Vráble SW;Vrable SW
+269;277;74,409119;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;11,45720019;Vráble SW;Vrable SW
+270;278;94,0505446;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;15,82634333;Vráble SW;Vrable SW
+271;279;87,14859503;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;16,22828038;Vráble SW;Vrable SW
+272;280;48,2424262;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;6,678224967;Vráble SW;Vrable SW
+273;281;46,42641925;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;15,20575955;Vráble SW;Vrable SW
+274;282;111,7580706;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;25,98460712;Vráble SW;Vrable SW
+275;283;52,92090104;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;19,95991027;Vráble SW;Vrable SW
+276;284;54,28370704;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;23,02009358;Vráble SW;Vrable SW
+277;285;91,23664779;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;18,27549666;Vráble SW;Vrable SW
+278;286;47,98003396;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;16,47019914;Vráble SW;Vrable SW
+279;287;52,94841822;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;21,10639309;Vráble SW;Vrable SW
+280;288;24,39273345;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;15,6071742;Vráble SW;Vrable SW
+281;289;69,79863781;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;23,90056581;Vráble SW;Vrable SW
+282;290;74,60915924;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;9,494244827;Vráble SW;Vrable SW
+283;291;71,87010135;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;15,2077315;Vráble SW;Vrable SW
+284;292;123,6016841;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;12,63896088;Vráble SW;Vrable SW
+285;293;75,35122907;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;13,36163428;Vráble SW;Vrable SW
+286;294;57,18630852;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;9,43641833;Vráble SW;Vrable SW
+287;295;45,42064235;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;20,80946988;Vráble SW;Vrable SW
+288;296;111,7753437;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;21,80197192;Vráble SW;Vrable SW
+289;297;43,42633042;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;359,665695;Vráble SW;Vrable SW
+290;298;61,89063379;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;13,28049648;Vráble SW;Vrable SW
+291;299;52,80007683;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;19,41940835;Vráble SW;Vrable SW
+292;300;66,07164355;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;20,21518593;Vráble SW;Vrable SW
+293;301;96,28099997;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;5,158186237;Vráble SW;Vrable SW
+294;302;48,5911983;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;31,317701;Vráble SW;Vrable SW
+295;303;46,59425614;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;16,17246284;Vráble SW;Vrable SW
+296;304;26,10359536;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;25,20527465;Vráble SW;Vrable SW
+297;305;35,76248973;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;20,42246474;Vráble SW;Vrable SW
+298;306;77,36081888;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;19,46948562;Vráble SW;Vrable SW
+299;307;72,5506943;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;6,063859142;Vráble SW;Vrable SW
+300;308;28,41943919;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;27,62892004;Vráble SW;Vrable SW
+301;309;29,44103339;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;10,52913902;Vráble SW;Vrable SW
+302;310;31,28550696;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;23,54164976;Vráble SW;Vrable SW
+303;311;60,85920164;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;20,54151015;Vráble SW;Vrable SW
+304;312;89,65456435;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;9,564917182;Vráble SW;Vrable SW
+305;313;97,8704361;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;16,917412;Vráble SW;Vrable SW
+306;314;45,12526173;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;8,978949527;Vráble SW;Vrable SW
+307;315;158,9306336;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;16,77249126;Vráble SW;Vrable SW
+308;316;70,51357538;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;3,726389355;Vráble SW;Vrable SW
+309;317;77,01517169;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;26,32241284;Vráble SW;Vrable SW
+310;318;75,45844372;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;12,77696007;Vráble SW;Vrable SW
+311;319;57,4177596;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;11,45319319;Vráble SW;Vrable SW
+312;320;66,27220591;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;14,22010781;Vráble SW;Vrable SW
+313;321;85,6513667;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;26,92521699;Vráble SW;Vrable SW
+314;322;50,26286123;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;11,98950298;Vráble SW;Vrable SW
+315;323;48,23128159;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;12,55268936;Vráble SW;Vrable SW
+316;324;27,78289369;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;21,34621198;Vráble SW;Vrable SW
+317;325;63,51793293;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;14,81289186;Vráble SW;Vrable SW
+318;326;43,89582012;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;14,80631589;Vráble SW;Vrable SW
+319;327;56,03459833;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;4,034853049;Vráble SW;Vrable SW
+320;328;59,23727602;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;12,8515113;Vráble SW;Vrable SW
+321;329;39,16834533;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;357,7905579;Vráble SW;Vrable SW
+322;330;53,33739251;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;13,38595252;Vráble SW;Vrable SW
+323;331;41,41864198;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;16,91887773;Vráble SW;Vrable SW
+324;332;44,33995343;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;18,83314193;Vráble SW;Vrable SW
+325;333;72,37665897;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;22,07813205;Vráble SW;Vrable SW
+326;334;56,16015205;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;21,72198561;Vráble SW;Vrable SW
+327;335;43,39331037;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;16,32435881;Vráble SW;Vrable SW
+328;336;73,07254957;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;4,762712225;Vráble SW;Vrable SW
+329;337;44,74862578;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;15,47343468;Vráble SW;Vrable SW
+330;338;62,68215398;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;14,09134909;Vráble SW;Vrable SW
+331;339;52,71089224;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;17,93255722;Vráble SW;Vrable SW
+332;340;84,25125821;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;9,94326027;Vráble SW;Vrable SW
+333;341;51,51224012;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;3,953689442;Vráble SW;Vrable SW
+334;342;72,7444956;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;14,36797518;Vráble SW;Vrable SW
+335;343;60,31884385;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;6,542180994;Vráble SW;Vrable SW
+336;344;40,81689934;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;357,7002093;Vráble SW;Vrable SW
+337;345;69,00080325;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;5,315383428;Vráble SW;Vrable SW
+555;563;68,63319428;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;20,8464813;Vráble SW;Vrable SW
+558;566;83,78093998;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;7,525190364;Vráble SW;Vrable SW
+559;567;82,83560306;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;7,173266374;Vráble SW;Vrable SW
+560;568;83,89645193;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;14,59852928;Vráble SW;Vrable SW
+561;569;102,5774366;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;9,381662111;Vráble SW;Vrable SW
+562;570;133,7754486;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;16,72264595;Vráble SW;Vrable SW
+563;571;59,35572936;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;12,74238984;Vráble SW;Vrable SW
+564;572;67,63646643;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;25,32157281;Vráble SW;Vrable SW
+565;573;71,77428751;vrable_velke_lehemby_sw;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' South-West;TRUE;21,03000851;Vráble SW;Vrable SW
+679;253;122,2877884;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;20,89060746;Vráble 'VL';Vrable
+680;254;156,1970545;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;9,758993068;Vráble 'VL';Vrable
+681;255;72,28364137;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;18,49054194;Vráble 'VL';Vrable
+682;256;54,89098853;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;22,02382998;Vráble 'VL';Vrable
+683;257;71,53343066;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;19,96805655;Vráble 'VL';Vrable
+684;258;46,25193321;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;21,2605136;Vráble 'VL';Vrable
+685;259;63,44946826;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;33,40393859;Vráble 'VL';Vrable
+686;260;54,25411681;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;31,46380425;Vráble 'VL';Vrable
+687;261;43,09202299;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;27,53539303;Vráble 'VL';Vrable
+688;262;92,76183075;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;25,91799775;Vráble 'VL';Vrable
+689;263;77,09723264;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;33,0981201;Vráble 'VL';Vrable
+690;264;94,73077003;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;5,001274299;Vráble 'VL';Vrable
+691;265;47,60796531;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;20,35128125;Vráble 'VL';Vrable
+692;266;42,42275688;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;33,48228702;Vráble 'VL';Vrable
+693;267;63,94375456;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;26,77305643;Vráble 'VL';Vrable
+694;268;62,16443722;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;18,28202312;Vráble 'VL';Vrable
+695;269;36,80041211;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;20,1530669;Vráble 'VL';Vrable
+696;270;50,12680546;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;12,7516125;Vráble 'VL';Vrable
+697;271;36,71694939;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;24,98942481;Vráble 'VL';Vrable
+698;272;81,35659316;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;25,99522318;Vráble 'VL';Vrable
+699;273;31,43548448;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;6,917415295;Vráble 'VL';Vrable
+700;274;46,21605684;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;9,899286467;Vráble 'VL';Vrable
+701;275;98,18898582;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;17,82905617;Vráble 'VL';Vrable
+702;276;37,87120003;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;12,76276305;Vráble 'VL';Vrable
+703;277;74,409119;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;11,45720019;Vráble 'VL';Vrable
+704;278;94,0505446;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;15,82634333;Vráble 'VL';Vrable
+705;279;87,14859503;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;16,22828038;Vráble 'VL';Vrable
+706;280;48,2424262;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;6,678224967;Vráble 'VL';Vrable
+707;281;46,42641925;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;15,20575955;Vráble 'VL';Vrable
+708;282;111,7580706;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;25,98460712;Vráble 'VL';Vrable
+709;283;52,92090104;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;19,95991027;Vráble 'VL';Vrable
+710;284;54,28370704;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;23,02009358;Vráble 'VL';Vrable
+711;285;91,23664779;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;18,27549666;Vráble 'VL';Vrable
+712;286;47,98003396;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;16,47019914;Vráble 'VL';Vrable
+713;287;52,94841822;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;21,10639309;Vráble 'VL';Vrable
+714;288;24,39273345;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;15,6071742;Vráble 'VL';Vrable
+715;289;69,79863781;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;23,90056581;Vráble 'VL';Vrable
+716;290;74,60915924;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;9,494244827;Vráble 'VL';Vrable
+717;291;71,87010135;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;15,2077315;Vráble 'VL';Vrable
+718;292;123,6016841;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;12,63896088;Vráble 'VL';Vrable
+719;293;75,35122907;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;13,36163428;Vráble 'VL';Vrable
+720;294;57,18630852;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;9,43641833;Vráble 'VL';Vrable
+721;295;45,42064235;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;20,80946988;Vráble 'VL';Vrable
+722;296;111,7753437;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;21,80197192;Vráble 'VL';Vrable
+723;297;43,42633042;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;359,665695;Vráble 'VL';Vrable
+724;298;61,89063379;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;13,28049648;Vráble 'VL';Vrable
+725;299;52,80007683;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;19,41940835;Vráble 'VL';Vrable
+726;300;66,07164355;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;20,21518593;Vráble 'VL';Vrable
+727;301;96,28099997;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;5,158186237;Vráble 'VL';Vrable
+728;302;48,5911983;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;31,317701;Vráble 'VL';Vrable
+729;303;46,59425614;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;16,17246284;Vráble 'VL';Vrable
+730;304;26,10359536;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;25,20527465;Vráble 'VL';Vrable
+731;305;35,76248973;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;20,42246474;Vráble 'VL';Vrable
+732;306;77,36081888;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;19,46948562;Vráble 'VL';Vrable
+733;307;72,5506943;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;6,063859142;Vráble 'VL';Vrable
+734;308;28,41943919;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;27,62892004;Vráble 'VL';Vrable
+735;309;29,44103339;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;10,52913902;Vráble 'VL';Vrable
+736;310;31,28550696;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;23,54164976;Vráble 'VL';Vrable
+737;311;60,85920164;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;20,54151015;Vráble 'VL';Vrable
+738;312;89,65456435;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;9,564917182;Vráble 'VL';Vrable
+739;313;97,8704361;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;16,917412;Vráble 'VL';Vrable
+740;314;45,12526173;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;8,978949527;Vráble 'VL';Vrable
+741;315;158,9306336;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;16,77249126;Vráble 'VL';Vrable
+742;316;70,51357538;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;3,726389355;Vráble 'VL';Vrable
+743;317;77,01517169;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;26,32241284;Vráble 'VL';Vrable
+744;318;75,45844372;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;12,77696007;Vráble 'VL';Vrable
+745;319;57,4177596;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;11,45319319;Vráble 'VL';Vrable
+746;320;66,27220591;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;14,22010781;Vráble 'VL';Vrable
+747;321;85,6513667;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;26,92521699;Vráble 'VL';Vrable
+748;322;50,26286123;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;11,98950298;Vráble 'VL';Vrable
+749;323;48,23128159;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;12,55268936;Vráble 'VL';Vrable
+750;324;27,78289369;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;21,34621198;Vráble 'VL';Vrable
+751;325;63,51793293;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;14,81289186;Vráble 'VL';Vrable
+752;326;43,89582012;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;14,80631589;Vráble 'VL';Vrable
+753;327;56,03459833;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;4,034853049;Vráble 'VL';Vrable
+754;328;59,23727602;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;12,8515113;Vráble 'VL';Vrable
+755;329;39,16834533;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;357,7905579;Vráble 'VL';Vrable
+756;330;53,33739251;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;13,38595252;Vráble 'VL';Vrable
+757;331;41,41864198;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;16,91887773;Vráble 'VL';Vrable
+758;332;44,33995343;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;18,83314193;Vráble 'VL';Vrable
+759;333;72,37665897;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;22,07813205;Vráble 'VL';Vrable
+760;334;56,16015205;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;21,72198561;Vráble 'VL';Vrable
+761;335;43,39331037;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;16,32435881;Vráble 'VL';Vrable
+762;336;73,07254957;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;4,762712225;Vráble 'VL';Vrable
+763;337;44,74862578;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;15,47343468;Vráble 'VL';Vrable
+764;338;62,68215398;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;14,09134909;Vráble 'VL';Vrable
+765;339;52,71089224;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;17,93255722;Vráble 'VL';Vrable
+766;340;84,25125821;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;9,94326027;Vráble 'VL';Vrable
+767;341;51,51224012;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;3,953689442;Vráble 'VL';Vrable
+768;342;72,7444956;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;14,36797518;Vráble 'VL';Vrable
+769;343;60,31884385;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;6,542180994;Vráble 'VL';Vrable
+770;344;40,81689934;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;357,7002093;Vráble 'VL';Vrable
+771;345;69,00080325;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;5,315383428;Vráble 'VL';Vrable
+772;346;56,90759897;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;1,810250807;Vráble 'VL';Vrable
+773;347;32,28741808;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;23,78457789;Vráble 'VL';Vrable
+774;348;89,67605165;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;18,12788308;Vráble 'VL';Vrable
+775;349;36,80970654;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;22,70892544;Vráble 'VL';Vrable
+776;350;146,563068;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;21,31913252;Vráble 'VL';Vrable
+777;351;156,8152433;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;16,76324382;Vráble 'VL';Vrable
+778;352;78,42971929;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;5,441176148;Vráble 'VL';Vrable
+779;353;112,4490134;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;2,042997889;Vráble 'VL';Vrable
+780;354;104,8914741;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;12,68226915;Vráble 'VL';Vrable
+781;355;55,3556066;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;15,71088491;Vráble 'VL';Vrable
+782;356;75,33427583;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;19,77433399;Vráble 'VL';Vrable
+783;357;74,86001516;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;26,05905411;Vráble 'VL';Vrable
+784;358;45,70760986;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;21,21285002;Vráble 'VL';Vrable
+785;359;59,35819637;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;21,20323546;Vráble 'VL';Vrable
+786;360;57,85174522;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;9,680600483;Vráble 'VL';Vrable
+787;361;87,72578763;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;11,04258176;Vráble 'VL';Vrable
+788;362;47,54154185;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;24,54127779;Vráble 'VL';Vrable
+789;363;45,35974279;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;16,19229166;Vráble 'VL';Vrable
+790;364;104,171671;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;13,10808225;Vráble 'VL';Vrable
+791;365;86,50272062;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;14,91812536;Vráble 'VL';Vrable
+792;366;54,82900961;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;18,34677757;Vráble 'VL';Vrable
+793;367;36,43301355;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;16,57478121;Vráble 'VL';Vrable
+794;368;41,808588;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;24,62101579;Vráble 'VL';Vrable
+795;369;64,75788714;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;18,54339382;Vráble 'VL';Vrable
+796;370;54,98955527;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;11,48877989;Vráble 'VL';Vrable
+797;371;59,81381605;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;24,94797534;Vráble 'VL';Vrable
+798;372;43,80085065;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;32,17476414;Vráble 'VL';Vrable
+799;373;42,82413533;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;20,80171018;Vráble 'VL';Vrable
+800;374;143,363205;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;22,22461113;Vráble 'VL';Vrable
+801;375;65,41872973;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;20,59746829;Vráble 'VL';Vrable
+802;376;128,3977791;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;17,19772439;Vráble 'VL';Vrable
+803;377;85,88317169;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;30,92026352;Vráble 'VL';Vrable
+804;378;72,62169613;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;5,126956928;Vráble 'VL';Vrable
+805;379;92,77735097;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;14,15835142;Vráble 'VL';Vrable
+806;380;54,13544189;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;4,788918798;Vráble 'VL';Vrable
+807;381;30,06169109;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;26,43443282;Vráble 'VL';Vrable
+808;382;42,97279824;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;7,421148952;Vráble 'VL';Vrable
+809;383;80,88899207;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;21,02728955;Vráble 'VL';Vrable
+810;384;71,62117006;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;24,12785985;Vráble 'VL';Vrable
+811;385;129,7234357;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;4,533417438;Vráble 'VL';Vrable
+812;386;74,97366347;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;0,159990911;Vráble 'VL';Vrable
+813;387;56,74892779;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;22,55920778;Vráble 'VL';Vrable
+814;388;103,1805458;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;8,89963701;Vráble 'VL';Vrable
+815;389;93,92075355;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;5,643488927;Vráble 'VL';Vrable
+816;390;106,7963465;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;8,729270082;Vráble 'VL';Vrable
+817;391;91,85795333;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;6,31135984;Vráble 'VL';Vrable
+818;392;59,20628867;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;16,47554022;Vráble 'VL';Vrable
+819;393;76,38171063;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;10,70302397;Vráble 'VL';Vrable
+820;394;70,31413195;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;30,86226122;Vráble 'VL';Vrable
+821;395;43,51852521;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;16,97978076;Vráble 'VL';Vrable
+822;396;39,55029124;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;16,82495749;Vráble 'VL';Vrable
+823;397;58,01875822;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;14,60721067;Vráble 'VL';Vrable
+824;398;45,73463561;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;17,62804808;Vráble 'VL';Vrable
+825;399;69,79219863;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;16,87289213;Vráble 'VL';Vrable
+826;400;52,58103881;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;33,48634437;Vráble 'VL';Vrable
+827;401;91,62947365;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;15,88189312;Vráble 'VL';Vrable
+828;402;88,19725445;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;21,96907761;Vráble 'VL';Vrable
+829;403;181,0312284;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;26,13163895;Vráble 'VL';Vrable
+830;404;160,1567981;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;26,39821284;Vráble 'VL';Vrable
+831;405;99,37268265;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;24,87973925;Vráble 'VL';Vrable
+832;406;77,07640128;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;23,41412515;Vráble 'VL';Vrable
+833;407;56,06752998;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;21,02924173;Vráble 'VL';Vrable
+834;408;119,022694;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;7,658525388;Vráble 'VL';Vrable
+835;409;94,8735315;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;30,42541179;Vráble 'VL';Vrable
+836;410;47,88758348;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;29,59089372;Vráble 'VL';Vrable
+837;411;36,87440547;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;28,03870547;Vráble 'VL';Vrable
+838;412;98,07668857;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;29,13231598;Vráble 'VL';Vrable
+839;413;66,19122611;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;34,92012728;Vráble 'VL';Vrable
+840;414;183,0173164;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;13,30678385;Vráble 'VL';Vrable
+841;415;97,57643886;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;44,23850071;Vráble 'VL';Vrable
+842;416;87,64405051;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;17,95085155;Vráble 'VL';Vrable
+843;417;27,46319142;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;43,99363721;Vráble 'VL';Vrable
+844;418;104,2426794;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;19,46119398;Vráble 'VL';Vrable
+845;419;129,2371918;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;17,98921954;Vráble 'VL';Vrable
+846;420;59,04097036;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;10,31129211;Vráble 'VL';Vrable
+847;421;84,35203654;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;9,349033931;Vráble 'VL';Vrable
+848;422;46,30709595;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;11,426579;Vráble 'VL';Vrable
+849;423;73,58404732;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;18,84352056;Vráble 'VL';Vrable
+850;424;77,5980516;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;10,88448583;Vráble 'VL';Vrable
+851;425;49,51844094;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;4,195970158;Vráble 'VL';Vrable
+852;426;83,60972933;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;25,82395032;Vráble 'VL';Vrable
+853;427;81,41939238;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;13,48979258;Vráble 'VL';Vrable
+854;428;56,29762471;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;22,887072;Vráble 'VL';Vrable
+855;429;42,82419328;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;18,09650101;Vráble 'VL';Vrable
+856;430;101,212319;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;13,5084778;Vráble 'VL';Vrable
+857;431;103,8463391;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;8,925991202;Vráble 'VL';Vrable
+858;432;69,5843614;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;21,68063013;Vráble 'VL';Vrable
+859;433;175,8763693;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;17,24677843;Vráble 'VL';Vrable
+860;434;56,74894011;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;15,43238906;Vráble 'VL';Vrable
+861;435;62,48697904;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;18,29455573;Vráble 'VL';Vrable
+862;436;38,29630954;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;4,175124338;Vráble 'VL';Vrable
+863;437;120,6353362;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;19,65383713;Vráble 'VL';Vrable
+864;438;85,69273;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;17,86494031;Vráble 'VL';Vrable
+865;439;84,98216026;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;15,90234712;Vráble 'VL';Vrable
+866;440;53,4451872;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;11,65008297;Vráble 'VL';Vrable
+867;441;44,36349204;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;12,37680633;Vráble 'VL';Vrable
+868;442;70,13219195;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;23,45630223;Vráble 'VL';Vrable
+869;443;70,10031458;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;18,33413511;Vráble 'VL';Vrable
+870;444;44,02242069;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;8,032467763;Vráble 'VL';Vrable
+871;445;61,90281787;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;19,8306549;Vráble 'VL';Vrable
+872;446;50,07922256;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;12,26167224;Vráble 'VL';Vrable
+873;447;71,25910322;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;9,381632002;Vráble 'VL';Vrable
+874;448;83,60476744;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;3,544701134;Vráble 'VL';Vrable
+875;449;79,21637739;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;359,5552481;Vráble 'VL';Vrable
+876;450;90,23799253;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;9,7859091;Vráble 'VL';Vrable
+877;451;186,2044232;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;13,57884651;Vráble 'VL';Vrable
+878;452;148,2202279;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;9,350541886;Vráble 'VL';Vrable
+879;453;36,35941517;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;15,78766536;Vráble 'VL';Vrable
+880;454;39,81346054;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;10,37248785;Vráble 'VL';Vrable
+881;455;70,03960752;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;7,181052779;Vráble 'VL';Vrable
+882;456;56,83739252;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;356,7583888;Vráble 'VL';Vrable
+883;457;53,97619494;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;3,177358974;Vráble 'VL';Vrable
+884;458;70,05318052;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;25,52301222;Vráble 'VL';Vrable
+885;459;72,6022565;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;10,78723469;Vráble 'VL';Vrable
+886;460;63,10931554;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;13,96890291;Vráble 'VL';Vrable
+887;461;42,08799752;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;16,55794072;Vráble 'VL';Vrable
+888;462;88,78155157;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;16,1054388;Vráble 'VL';Vrable
+889;463;110,379587;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;21,70579202;Vráble 'VL';Vrable
+890;464;43,23744597;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;22,44948525;Vráble 'VL';Vrable
+891;465;68,30815214;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;17,22199342;Vráble 'VL';Vrable
+892;466;63,52955925;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;27,46414058;Vráble 'VL';Vrable
+893;467;48,87745786;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;19,65467169;Vráble 'VL';Vrable
+894;468;112,0336451;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;19,03010823;Vráble 'VL';Vrable
+895;469;59,12163303;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;10,38549183;Vráble 'VL';Vrable
+896;470;68,94818592;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;19,70465471;Vráble 'VL';Vrable
+897;471;78,85139462;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;16,46694265;Vráble 'VL';Vrable
+898;472;93,98781838;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;13,35275298;Vráble 'VL';Vrable
+899;473;99,61909098;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;13,89965275;Vráble 'VL';Vrable
+900;474;102,2456361;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;21,08063388;Vráble 'VL';Vrable
+901;475;46,36325406;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;20,95393032;Vráble 'VL';Vrable
+902;476;66,93057278;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;12,49961184;Vráble 'VL';Vrable
+903;477;89,25196815;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;13,98735776;Vráble 'VL';Vrable
+904;478;118,5586471;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;13,51943513;Vráble 'VL';Vrable
+905;479;62,02634611;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;22,7976894;Vráble 'VL';Vrable
+906;480;48,41788921;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;22,05469239;Vráble 'VL';Vrable
+907;481;67,8924303;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;12,18512954;Vráble 'VL';Vrable
+908;482;68,36147676;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;17,38448609;Vráble 'VL';Vrable
+909;483;120,0890564;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;6,541361352;Vráble 'VL';Vrable
+910;484;207,1712168;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;4,803223553;Vráble 'VL';Vrable
+911;485;67,86315548;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;4,937890102;Vráble 'VL';Vrable
+912;486;65,7417367;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;20,22301554;Vráble 'VL';Vrable
+913;487;82,02730968;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;13,71097317;Vráble 'VL';Vrable
+914;488;41,61867157;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;25,12094417;Vráble 'VL';Vrable
+915;489;87,32039131;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;15,25426468;Vráble 'VL';Vrable
+916;490;48,81060274;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;19,94808453;Vráble 'VL';Vrable
+917;491;68,18115219;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;21,27229618;Vráble 'VL';Vrable
+918;492;51,83131303;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;20,68179378;Vráble 'VL';Vrable
+919;493;55,6489687;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;15,11582652;Vráble 'VL';Vrable
+920;494;37,00298434;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;8,479383243;Vráble 'VL';Vrable
+921;495;44,94834139;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;13,19897885;Vráble 'VL';Vrable
+922;496;80,57782839;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;9,116387545;Vráble 'VL';Vrable
+923;497;92,63189911;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;12,61375906;Vráble 'VL';Vrable
+924;498;52,02451724;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;29,07172886;Vráble 'VL';Vrable
+925;499;42,74081333;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;12,14810679;Vráble 'VL';Vrable
+926;500;60,76579146;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;15,70301532;Vráble 'VL';Vrable
+927;501;91,93674382;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;20,34735396;Vráble 'VL';Vrable
+928;502;60,73992249;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;14,54147597;Vráble 'VL';Vrable
+929;503;75,5797818;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;8,431798559;Vráble 'VL';Vrable
+930;504;42,07827886;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;9,827161142;Vráble 'VL';Vrable
+931;505;40,24473144;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;3,661816154;Vráble 'VL';Vrable
+932;506;50,99674786;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;15,43177781;Vráble 'VL';Vrable
+933;507;79,24772266;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;9,510153192;Vráble 'VL';Vrable
+934;508;60,38680264;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;10,33168105;Vráble 'VL';Vrable
+935;509;44,38113583;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;22,24398143;Vráble 'VL';Vrable
+936;510;88,09298633;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;19,44465317;Vráble 'VL';Vrable
+937;511;91,02732971;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;17,93134615;Vráble 'VL';Vrable
+938;512;55,74969406;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;14,3575157;Vráble 'VL';Vrable
+939;513;44,14235009;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;14,16462791;Vráble 'VL';Vrable
+940;514;48,62723196;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;21,0007261;Vráble 'VL';Vrable
+941;515;76,32026026;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;16,17982588;Vráble 'VL';Vrable
+942;516;114,4506961;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;17,89922592;Vráble 'VL';Vrable
+943;517;61,67422027;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;15,37227364;Vráble 'VL';Vrable
+944;518;50,81277839;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;16,59465737;Vráble 'VL';Vrable
+945;519;51,42303138;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;21,0502596;Vráble 'VL';Vrable
+946;520;51,37397563;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;22,24385299;Vráble 'VL';Vrable
+947;521;64,60131079;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;21,08236037;Vráble 'VL';Vrable
+948;522;60,70043615;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;17,0593201;Vráble 'VL';Vrable
+949;523;44,90682614;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;30,94541648;Vráble 'VL';Vrable
+950;524;39,91958313;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;15,58557618;Vráble 'VL';Vrable
+951;525;41,41914293;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;20,40886304;Vráble 'VL';Vrable
+952;526;81,1112619;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;5,589065716;Vráble 'VL';Vrable
+953;527;34,51515492;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;9,537333563;Vráble 'VL';Vrable
+954;528;64,68435882;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;7,334565281;Vráble 'VL';Vrable
+955;529;66,47672664;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;20,70547254;Vráble 'VL';Vrable
+956;530;93,7349645;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;1,286528355;Vráble 'VL';Vrable
+957;531;102,3032009;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;11,91523182;Vráble 'VL';Vrable
+958;532;51,60412689;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;12,43438093;Vráble 'VL';Vrable
+959;533;67,28869817;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;16,18011121;Vráble 'VL';Vrable
+960;534;113,4597111;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;20,72484148;Vráble 'VL';Vrable
+961;535;152,1240242;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;12,93818007;Vráble 'VL';Vrable
+962;536;87,49552552;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;20,9366301;Vráble 'VL';Vrable
+963;537;50,11279867;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;14,73253895;Vráble 'VL';Vrable
+964;538;48,72276688;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;19,73659464;Vráble 'VL';Vrable
+965;563;68,63319428;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;20,8464813;Vráble 'VL';Vrable
+966;564;87,11564613;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;13,84593084;Vráble 'VL';Vrable
+967;565;70,41464367;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;17,62113775;Vráble 'VL';Vrable
+968;566;83,78093998;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;7,525190364;Vráble 'VL';Vrable
+969;567;82,83560306;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;7,173266374;Vráble 'VL';Vrable
+970;568;83,89645193;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;14,59852928;Vráble 'VL';Vrable
+971;569;102,5774366;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;9,381662111;Vráble 'VL';Vrable
+972;570;133,7754486;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;16,72264595;Vráble 'VL';Vrable
+973;571;59,35572936;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;12,74238984;Vráble 'VL';Vrable
+974;572;67,63646643;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;25,32157281;Vráble 'VL';Vrable
+975;573;71,77428751;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;21,03000851;Vráble 'VL';Vrable
+976;574;87,5848754;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;5,455587779;Vráble 'VL';Vrable
+977;575;76,10912319;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;5,228560079;Vráble 'VL';Vrable
+978;576;136,0786207;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;19,33931812;Vráble 'VL';Vrable
+979;577;72,62200169;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;39,22711897;Vráble 'VL';Vrable
+980;578;99,93780989;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;17,33909115;Vráble 'VL';Vrable
+981;579;81,5303647;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;15,61490284;Vráble 'VL';Vrable
+982;580;96,03445238;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;20,78079611;Vráble 'VL';Vrable
+983;581;57,47894107;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;13,70788305;Vráble 'VL';Vrable
+984;582;64,74090981;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;12,95900978;Vráble 'VL';Vrable
+985;583;51,18656993;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;15,94857258;Vráble 'VL';Vrable
+986;584;81,34979349;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;12,30424453;Vráble 'VL';Vrable
+987;585;64,26350727;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;23,85352871;Vráble 'VL';Vrable
+988;586;73,48507907;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;8,580848261;Vráble 'VL';Vrable
+989;587;63,16778311;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;15,39638523;Vráble 'VL';Vrable
+990;588;90,09001538;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;14,59902729;Vráble 'VL';Vrable
+991;589;91,50675331;vrable_velke_lehemby_total;zitava_valley;lbk;muller_scheessel_et_al_2020;Vráble 'Véľke Lehemby' Total;FALSE;18,50696713;Vráble 'VL';Vrable
+639;1;206;weisweiler_17;rheinland;lbk;schiesberg_2007;Weisweiler 17;FALSE;;Weisweiler 17;Weisweiler 17
+640;2;84,6;weisweiler_17;rheinland;lbk;schiesberg_2007;Weisweiler 17;FALSE;;Weisweiler 17;Weisweiler 17
+641;3;158;weisweiler_17;rheinland;lbk;schiesberg_2007;Weisweiler 17;FALSE;;Weisweiler 17;Weisweiler 17
+642;4;187;weisweiler_17;rheinland;lbk;schiesberg_2007;Weisweiler 17;FALSE;;Weisweiler 17;Weisweiler 17
+643;5;190;weisweiler_17;rheinland;lbk;schiesberg_2007;Weisweiler 17;FALSE;;Weisweiler 17;Weisweiler 17
+644;26;156;weisweiler_17;rheinland;lbk;schiesberg_2007;Weisweiler 17;FALSE;;Weisweiler 17;Weisweiler 17
+645;28;174;weisweiler_17;rheinland;lbk;schiesberg_2007;Weisweiler 17;FALSE;;Weisweiler 17;Weisweiler 17

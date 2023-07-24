@@ -18,15 +18,25 @@ When it comes to temporal lumping, given that a settlement does not undergo subs
 
 ## Settlements
 
-House-size distributions of whole settlements (both Linear Pottery and Trypillia)
+-   House-size distributions of whole settlements (both Linear Pottery and Trypillia, Pareto plots)
+
+-   Box-plots, same
+
+-   Plan of some of the settlements, with coloured pl-distributed houses (at least Vráble and Nebelivka, make in QGIS)
 
 ## Quarters/neighbourhoods
 
 House-size distributions of separate quarters (Nebelivka) and neighbourhoods (Vráble). Can I include separate Nebelivka neighbourhoods as well? (prob. too small, but check)
 
+-   Vráble, Pareto + site map
+
+-   Nebelivka, Pareto + site map
+
 ## Temporal samples (Vráble)
 
 If time, I can add more Žitava sites here, but not necessary. I can also analyse temporal samples of Vráble neighbourhoods separately.
+
+-   Vráble, Pareto + site map (exerpts)
 
 ## Summary of findings
 
