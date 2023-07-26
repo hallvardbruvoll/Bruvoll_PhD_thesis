@@ -1,10 +1,13 @@
 # Functions and libraries needed for Part II - Distribution fitting
-library(tidyverse)
 library(poweRlaw)
+library(MASS)
 library(AICcmodavg)
 library(ineq)
 library(scales)
 library(latex2exp) # for tex expressions inside ggplot code
+library(cowplot) # for combining multiplre plots
+library(kableExtra)
+library(tidyverse)
 
 # Wrapper and loop functions ----------------------------------------------
 
@@ -164,3 +167,53 @@ dist.fit.all <- function(x, set){
 #             aes(group = set), size = 2)+
 #   scale_y_log10()+
 #   scale_x_log10()
+
+
+# Now test the entire distributions (not just the tails)
+
+# Fit models to house-size data
+# Weibull is excluded here since it is more general
+dist.models <- function(data) { # again, data is a cont. num. vector
+  norm.model <- fitdistr(data, "normal")
+  lnorm.model <- fitdistr(data, "lognormal")
+  exp.model <- fitdistr(data, "exponential")
+  #weib.model <- fitdistr(data, "weibull")
+  return(list("norm" = norm.model, # again, mind the model order here
+              "ln" = lnorm.model,  # for AIC below
+              "exp" = exp.model
+              #"weib" = weib.model
+              ))
+}
+
+# Loop for grouped data and select models with AICc
+whole.dist <- function(x, set, culture) {
+  data <- tibble(x, set = as.factor(set), culture) %>%
+    group_by(set)
+  sets <- levels(data$set)
+  output <- tibble()
+  for (i in 1:length(sets)) {
+    one_set <- filter(data, set == sets[i])
+    one_set_models <- dist.models(one_set$x)
+    one_set_aic <- aictab(one_set_models, second.ord = TRUE)
+    one_out <- tibble(Settlement = sets[i],
+                      Model = one_set_aic[1,1],
+                      Par1 = round(eval(parse(text = paste0("one_set_models$",
+                                                      one_set_aic[1,1],
+                                                      "$estimate[1]"))), 3),
+                      Par2 = round(eval(parse(text = paste0("one_set_models$",
+                                                      one_set_aic[1,1],
+                                                      "$estimate[2]"))), 3),
+                      Gini = round(Gini(one_set$x), 3), N = nrow(one_set),
+                      Culture = one_set$culture[1])
+    output <- bind_rows(output, one_out)
+  }
+  return(output)
+}
+
+#test data if necessary
+# data <- bind_rows(tibble(x = rlnorm(1000, 0.3, 2), set = "ln"),
+#                   tibble(x = rexp(1000, 0.125), set = "exp"),
+#                   tibble(x = rnorm(1000, 50, 5), set = "norm"))
+# test <- whole.dist(x = data$x, set = data$set, culture = "Norwegian")
+
+# END of dist-fit script

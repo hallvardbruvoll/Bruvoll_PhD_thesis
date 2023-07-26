@@ -114,6 +114,20 @@
 \usepackage{titling}
 \pretitle{\begin{center} \includegraphics[width=2cm, height=2cm]{UiO_logo.png}\LARGE\\}
 \posttitle{\end{center}}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{wrapfig}
+\usepackage{float}
+\usepackage{colortbl}
+\usepackage{pdflscape}
+\usepackage{tabu}
+\usepackage{threeparttable}
+\usepackage{threeparttablex}
+\usepackage[normalem]{ulem}
+\usepackage{makecell}
+\usepackage{xcolor}
 \ifLuaTeX
   \usepackage{selnolig}  % disable illegal ligatures
 \fi
@@ -135,7 +149,7 @@
 \makeatother
 \subtitle{with case studies from the Linear Pottery and Trypillia cultures (5.500 - 3.500 cal. BCE)}
 \author{Hallvard Bruvoll \and Department of Archaeology, Conservation and History \and University of Oslo}
-\date{2023-07-21}
+\date{2023-07-26}
 
 \begin{document}
 \maketitle
@@ -579,7 +593,7 @@ In archaeology there are two recurrent and seemingly contradicting assumptions u
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.8\linewidth]{bookdown-demo_files/figure-latex/04-intro-1} 
+{\centering \includegraphics[width=0.85\linewidth]{bookdown-demo_files/figure-latex/04-intro-1} 
 
 }
 
@@ -668,7 +682,7 @@ Distributions can be represented graphically in a number of ways, most commonly 
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.8\linewidth]{bookdown-demo_files/figure-latex/04-PDF-1} 
+{\centering \includegraphics[width=0.85\linewidth]{bookdown-demo_files/figure-latex/04-PDF-1} 
 
 }
 
@@ -679,7 +693,7 @@ Distributions can be represented graphically in a number of ways, most commonly 
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.8\linewidth]{bookdown-demo_files/figure-latex/04-cCDF-1} 
+{\centering \includegraphics[width=0.85\linewidth]{bookdown-demo_files/figure-latex/04-cCDF-1} 
 
 }
 
@@ -780,7 +794,7 @@ The product of many random numbers is typically the result of a growth or decay 
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.8\linewidth]{bookdown-demo_files/figure-latex/04-multi-exp-1} 
+{\centering \includegraphics[width=0.85\linewidth]{bookdown-demo_files/figure-latex/04-multi-exp-1} 
 
 }
 
@@ -791,7 +805,7 @@ The product of many random numbers is typically the result of a growth or decay 
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.8\linewidth]{bookdown-demo_files/figure-latex/04-lnorm-exp-1} 
+{\centering \includegraphics[width=0.85\linewidth]{bookdown-demo_files/figure-latex/04-lnorm-exp-1} 
 
 }
 
@@ -804,7 +818,7 @@ This process is known as \emph{Gibrat's law}, after the French engineer Robert G
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.8\linewidth]{bookdown-demo_files/figure-latex/04-still-normal-1} 
+{\centering \includegraphics[width=0.85\linewidth]{bookdown-demo_files/figure-latex/04-still-normal-1} 
 
 }
 
@@ -848,7 +862,7 @@ The main reason for the great attention that has been given to power-law distrib
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.8\linewidth]{bookdown-demo_files/figure-latex/04-pl-1} 
+{\centering \includegraphics[width=0.85\linewidth]{bookdown-demo_files/figure-latex/04-pl-1} 
 
 }
 
@@ -859,7 +873,7 @@ The main reason for the great attention that has been given to power-law distrib
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.8\linewidth]{bookdown-demo_files/figure-latex/04-hierarchy-1} 
+{\centering \includegraphics[width=0.85\linewidth]{bookdown-demo_files/figure-latex/04-hierarchy-1} 
 
 }
 
@@ -932,19 +946,6 @@ END chapter
 \hypertarget{modelling-heavy-tailed-distributions}{%
 \section{Modelling heavy-tailed distributions}\label{modelling-heavy-tailed-distributions}}
 
-\begin{verbatim}
-## -- Attaching core tidyverse packages ------ tidyverse 2.0.0 --
-## v dplyr     1.1.1     v readr     2.1.4
-## v forcats   1.0.0     v stringr   1.5.0
-## v ggplot2   3.4.2     v tibble    3.2.1
-## v lubridate 1.9.2     v tidyr     1.3.0
-## v purrr     1.0.1     
-## -- Conflicts ------------------------ tidyverse_conflicts() --
-## x dplyr::filter() masks stats::filter()
-## x dplyr::lag()    masks stats::lag()
-## i Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors
-\end{verbatim}
-
 In this chapter I go into some more detail around the methods used in Chapter \ref{results-distfit}, and the reasoning underlying my choices of methods. As mentioned earlier (Sections \ref{research-question-and-objectives} and \ref{power-law}), I consider power-law distributions as a statistical signature of hierarchical structures, and wish to test whether such structures may be reasonably shown to exist among houses in European Neolithic villages, or if house sizes in these contexts are better explained by other non-hierarchical models. Results from these analyses add to current debates surrounding the development of social and political organisation in the Neolithic, and to the question of the emergence of stratified societies more broadly. Furthermore, and as also mentioned in Section \ref{power-law}, the methodological procedure leading to claims of power-law distributed data is not entirely straightforward, and is an issue that has undergone important developments in recent years, often leading to refutations of earlier claims. It is therefore critical to be explicit as to the methods being applied in studies like this one, and not simply report results obtained in some unspecified way through obscurely documented software. In the following I will present \#FILL IN AFTERWARDS\#. Due to limited space and for simplicity, I will concentrate on the choices of methods and procedure, and not on the under-the-hood functioning of different statistical tools like maximum likelihood estimation and calculation of the Akaike information criterion. For more details on these there is a number of good introductory volumes, some of which -- like Shennan (2008) and Baxter (2003) -- are also specifically aimed at archaeologists.
 
 The standard method for fitting power-law models to empirical data throughout the 20\textsuperscript{th} century was through least squares linear regression on log-transformed x and y values (e.g. Harrison 1981; Mitzenmacher 2004), the same way exponential and log-normal models could be fit more easily to data by log-transforming x values. Conscious about the still frequent lack of statistical training among archaeologists, Brown et al. (2005) and Brown and Liebovitch (2010) presented the log-linear regression method as sufficient because of its simplicity of application compared to more sophisticated methods. Brown and Liebovitch (2010) furthermore provided a detailed discussion around how to plot the data in order to obtain the most accurate parameter estimates. The central problem with fitting power-law models to data, is that power-law distributions characteristically have an overwhelmingly large proportion of the data at lower values, while the scarce high values are typically several orders of magnitude higher. Density plots of empirical data (with the PDF on the y axis) require binning, so that the plotted data points in reality correspond to bar heights in a histogram. The applied bin width will furthermore have a heavy influence on the appearance of the plot, where small bin widths are best to represent the many low values and large bin widths are best for the few high values. Brown and Liebovitch proposed multi-scale PDFs, combining histograms of different bin widths before performing regression, which they showed give better results on synthetic data (2010:2). Logarithmic binning -- increasing bin width exponentially so that points appear to be spaced as constant increments on a log-transformed x axis is also a possibility that has been proposed (Newman 2005:325--26). Plotting the cCDF instead of the PDF has the advantage of avoiding the bin-width issue altogether, since y values then are a function of the rank of each data point. This also allows for using all the data and not reducing it into bins, and is shown on synthetic data to give more accurate \(\alpha\) estimates (i.e.~absolute slope of cCDF \(+ 1\), see Eq. \eqref{eq:zipf-exponent}). However, the inconvenience with fitting the power-law model to the cCDF, as pointed out by Brown and Liebovitch (2010), is that it does not necessarily form a straight line, but will in particular be curved when \(\alpha \leq 1\), making it more difficult to distinguish visually from other heavy-tailed distributions.
@@ -966,7 +967,7 @@ However, it must be noted that in order to generate the non-power-law distributi
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.8\linewidth]{bookdown-demo_files/figure-latex/05-distfit-1} 
+{\centering \includegraphics[width=0.85\linewidth]{bookdown-demo_files/figure-latex/05-distfit-1} 
 
 }
 
@@ -977,7 +978,7 @@ However, it must be noted that in order to generate the non-power-law distributi
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.8\linewidth]{bookdown-demo_files/figure-latex/05-tails-1} 
+{\centering \includegraphics[width=0.85\linewidth]{bookdown-demo_files/figure-latex/05-tails-1} 
 
 }
 
@@ -988,7 +989,7 @@ However, it must be noted that in order to generate the non-power-law distributi
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.8\linewidth]{bookdown-demo_files/figure-latex/05-pltails-1} 
+{\centering \includegraphics[width=0.85\linewidth]{bookdown-demo_files/figure-latex/05-pltails-1} 
 
 }
 
@@ -1003,7 +1004,7 @@ A second question more specifically related to the selection between log-normal 
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.8\linewidth]{bookdown-demo_files/figure-latex/05-synth-ln-1} 
+{\centering \includegraphics[width=0.85\linewidth]{bookdown-demo_files/figure-latex/05-synth-ln-1} 
 
 }
 
@@ -1016,7 +1017,7 @@ Running these distributions through the distribution-fitting and model-selecting
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.8\linewidth]{bookdown-demo_files/figure-latex/05-ln-tail-1} 
+{\centering \includegraphics[width=0.85\linewidth]{bookdown-demo_files/figure-latex/05-ln-tail-1} 
 
 }
 
@@ -1027,7 +1028,7 @@ Running these distributions through the distribution-fitting and model-selecting
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.8\linewidth]{bookdown-demo_files/figure-latex/05-ln-pl-1} 
+{\centering \includegraphics[width=0.85\linewidth]{bookdown-demo_files/figure-latex/05-ln-pl-1} 
 
 }
 
@@ -1100,17 +1101,93 @@ When it comes to temporal lumping, given that a settlement does not undergo subs
 \hypertarget{settlements}{%
 \section{Settlements}\label{settlements}}
 
-House-size distributions of whole settlements (both Linear Pottery and Trypillia)
+Running the distribution-fitting algorithm presented in Chapter \ref{methods-distfit} on the house-size distributions of the 13 settlements in the current sample (settlements with 10 or less houses were excluded), resulted in five settlements being interpreted as having power-law tails. These were the Trypillia sites at Maidanetske, Nebelivka and Moshuriv, as well as the Linear Pottery sites at Vráble and Horný (Figure \ref{fig:06-settle-box} and Table \ref{tab:06-settle-tab}). The remaining eight settlements were interpreted as having exponential tails. It is important to note however, that this simply means that the exponential model was the best out of the tested models, on the tail length that gave the best possible power-law fit. In other words, for these settlements, the power-law model is effectively excluded, since other models better explain whatever tail could be interpreted as a power law. The box-plot on Figure \ref{fig:06-settle-box} indicates that many of the analysed distributions should be well approximated as log-normals, since they show near-symmetric boxes and whiskers on a logarithmic scale. A closer look at the non-power-law distributions reveals that two settlements deviate clearly from the others, namely the Trypillia site at Talne 3 and the Linear Pottery site at Úľany, both of which are the smallest settlements in their respective culture groups (Figure \ref{fig:06-settle-tails}).
+
+
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.85\linewidth]{bookdown-demo_files/figure-latex/06-settle-box-1} 
+
+}
+
+\caption{House sizes of the 13 analysed settlements, arranged according to median house size. Red dots represent houses with size \(\geq x_{min}\) within distribution tails interpreted as power laws. X axis is logarithmic}\label{fig:06-settle-box}
+\end{figure}
+
+fdsasdfasf
+
+
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.85\linewidth]{bookdown-demo_files/figure-latex/06-settle-tails-1} 
+
+}
+
+\caption{Analysed house-size distributions for whole settlements. a) Distributions with identified power-law tails. For clarity, only the tails (house sizes \(\geq x_{min}\)) are coloured and connecting lines are added within each settlement. The grey frame represents the extent of panel b. b) House-size distributions without power-law tails. Two settlements are atypical with their absence of large houses. Scales are logarithmic}\label{fig:06-settle-tails}
+\end{figure}
+
+fdsasdf
+
+
+
+\begin{landscape}\begin{table}
+
+\caption{\label{tab:06-settle-tab}Main results of distribution fitting analysis on settlements, ordered according to retained tail model (Tail) and parameter values (T\_Par1), from steepest to shallowest (see Figure \ref{fig:06-settle-tails}). Model and Gini are evaluated on the entire distribution for each settlement. Par1 and Par2 represent \(\mu\) (mean) and \(\sigma\) (standard deviation) for normal and log-normal distributions, and T\_Par1 represents \(\lambda\) (rate) for exponential and \(\alpha\) (scaling exponent) for power-law distributions. \(x_{min}\) is the house size from which the tail parameters are estimated. N is the number of houses per settlement, N\_tail is the number of houses in the distribution tail, and Tail\_Pr is the proportion of N being part of the tail, or N\_tail/N}
+\centering
+\begin{tabular}[t]{llrrlrrrrrrl}
+\toprule
+Settlement & Model & Par1 & Par2 & Tail & T\_Par1 & xmin & N & N\_tail & Tail\_P & Gini & Culture\\
+\midrule
+\cellcolor{gray!6}{Úľany} & \cellcolor{gray!6}{norm} & \cellcolor{gray!6}{62.349} & \cellcolor{gray!6}{12.542} & \cellcolor{gray!6}{exp} & \cellcolor{gray!6}{0.109} & \cellcolor{gray!6}{63.6} & \cellcolor{gray!6}{34} & \cellcolor{gray!6}{17} & \cellcolor{gray!6}{0.50} & \cellcolor{gray!6}{0.113} & \cellcolor{gray!6}{Linear Pottery}\\
+Talne 3 & ln & 3.941 & 0.226 & exp & 0.077 & 45.7 & 19 & 14 & 0.74 & 0.126 & Trypillia\\
+\cellcolor{gray!6}{Vlkas} & \cellcolor{gray!6}{ln} & \cellcolor{gray!6}{4.534} & \cellcolor{gray!6}{0.387} & \cellcolor{gray!6}{exp} & \cellcolor{gray!6}{0.025} & \cellcolor{gray!6}{81.2} & \cellcolor{gray!6}{61} & \cellcolor{gray!6}{40} & \cellcolor{gray!6}{0.66} & \cellcolor{gray!6}{0.221} & \cellcolor{gray!6}{Linear Pottery}\\
+Čifare & ln & 4.535 & 0.398 & exp & 0.024 & 70.2 & 41 & 34 & 0.83 & 0.217 & Linear Pottery\\
+\cellcolor{gray!6}{Telince} & \cellcolor{gray!6}{ln} & \cellcolor{gray!6}{4.452} & \cellcolor{gray!6}{0.417} & \cellcolor{gray!6}{exp} & \cellcolor{gray!6}{0.024} & \cellcolor{gray!6}{59.3} & \cellcolor{gray!6}{13} & \cellcolor{gray!6}{12} & \cellcolor{gray!6}{0.92} & \cellcolor{gray!6}{0.228} & \cellcolor{gray!6}{Linear Pottery}\\
+\addlinespace
+Maňa & ln & 4.597 & 0.381 & exp & 0.021 & 65.8 & 29 & 27 & 0.93 & 0.224 & Linear Pottery\\
+\cellcolor{gray!6}{Čierne} & \cellcolor{gray!6}{ln} & \cellcolor{gray!6}{4.703} & \cellcolor{gray!6}{0.376} & \cellcolor{gray!6}{exp} & \cellcolor{gray!6}{0.021} & \cellcolor{gray!6}{89.2} & \cellcolor{gray!6}{49} & \cellcolor{gray!6}{36} & \cellcolor{gray!6}{0.73} & \cellcolor{gray!6}{0.211} & \cellcolor{gray!6}{Linear Pottery}\\
+Nevidzany & ln & 4.659 & 0.434 & exp & 0.020 & 86.0 & 22 & 17 & 0.77 & 0.240 & Linear Pottery\\
+\cellcolor{gray!6}{Moshuriv} & \cellcolor{gray!6}{ln} & \cellcolor{gray!6}{4.211} & \cellcolor{gray!6}{0.395} & \cellcolor{gray!6}{pl} & \cellcolor{gray!6}{6.306} & \cellcolor{gray!6}{85.3} & \cellcolor{gray!6}{84} & \cellcolor{gray!6}{29} & \cellcolor{gray!6}{0.35} & \cellcolor{gray!6}{0.219} & \cellcolor{gray!6}{Trypillia}\\
+Maidanetske & ln & 4.112 & 0.443 & pl & 5.508 & 100.0 & 2243 & 301 & 0.13 & 0.249 & Trypillia\\
+\addlinespace
+\cellcolor{gray!6}{Vráble 'VL'} & \cellcolor{gray!6}{ln} & \cellcolor{gray!6}{4.198} & \cellcolor{gray!6}{0.389} & \cellcolor{gray!6}{pl} & \cellcolor{gray!6}{5.235} & \cellcolor{gray!6}{83.6} & \cellcolor{gray!6}{313} & \cellcolor{gray!6}{91} & \cellcolor{gray!6}{0.29} & \cellcolor{gray!6}{0.221} & \cellcolor{gray!6}{Linear Pottery}\\
+Horný & ln & 4.423 & 0.445 & pl & 4.916 & 92.3 & 11 & 6 & 0.55 & 0.253 & Linear Pottery\\
+\cellcolor{gray!6}{Nebelivka} & \cellcolor{gray!6}{ln} & \cellcolor{gray!6}{4.045} & \cellcolor{gray!6}{0.432} & \cellcolor{gray!6}{pl} & \cellcolor{gray!6}{4.764} & \cellcolor{gray!6}{62.6} & \cellcolor{gray!6}{1435} & \cellcolor{gray!6}{629} & \cellcolor{gray!6}{0.44} & \cellcolor{gray!6}{0.239} & \cellcolor{gray!6}{Trypillia}\\
+\bottomrule
+\end{tabular}
+\end{table}
+\end{landscape}
+
+\begin{itemize}
+\tightlist
+\item
+  Plan of some of the settlements, with coloured pl-distributed houses (at least Vráble and Nebelivka, make in QGIS)
+\end{itemize}
 
 \hypertarget{quartersneighbourhoods}{%
 \section{Quarters/neighbourhoods}\label{quartersneighbourhoods}}
 
 House-size distributions of separate quarters (Nebelivka) and neighbourhoods (Vráble). Can I include separate Nebelivka neighbourhoods as well? (prob. too small, but check)
 
+\begin{itemize}
+\item
+  Vráble, Pareto + site map
+\item
+  Nebelivka, Pareto + site map
+\end{itemize}
+
 \hypertarget{temporal-samples-vruxe1ble}{%
 \section{Temporal samples (Vráble)}\label{temporal-samples-vruxe1ble}}
 
 If time, I can add more Žitava sites here, but not necessary. I can also analyse temporal samples of Vráble neighbourhoods separately.
+
+\begin{itemize}
+\item
+  Vráble, Pareto + site map (exerpts)
+\item
+  One neighbourhood, same.
+\end{itemize}
 
 \hypertarget{summary-of-findings}{%
 \section{Summary of findings}\label{summary-of-findings}}

@@ -11,6 +11,6 @@ shape = k
 Power-law:
 scaling parameter/alpha = \u03b1
 
-Slovak:
+#Slovak:
 slovak_characters <- read.csv2("Data/site_names_unicode.csv",
                                encoding = "UTF-8")

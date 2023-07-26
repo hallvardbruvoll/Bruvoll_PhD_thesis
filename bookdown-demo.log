@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.7.15)  21 JUL 2023 20:47
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.7.26)  26 JUL 2023 19:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -465,6 +465,97 @@ Package: titling 2009/09/04 v2.1d maketitle typesetting
 \thanksmarkwidth=\skip68
 \thanksmargin=\skip69
 \droptitle=\skip70
+) (c:/Users/hallvbru/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2021/03/15 v2.8 Span multiple rows of a table
+\multirow@colwidth=\skip71
+\multirow@cntb=\count304
+\multirow@dima=\skip72
+\bigstrutjot=\dimen190
+) (c:/Users/hallvbru/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen191
+\WF@size=\dimen192
+\c@WF@wrappedlines=\count305
+\WF@box=\box62
+\WF@everypar=\toks32
+Package: wrapfig 2003/01/31  v 3.6
+) (c:/Users/hallvbru/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count306
+\float@exts=\toks33
+\float@box=\box63
+\@float@everytoks=\toks34
+\@floatcapt=\box64
+) (c:/Users/hallvbru/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2022/06/20 v1.0f Color table columns (DPC)
+\everycr=\toks35
+\minrowclearance=\skip73
+\rownum=\count307
+) (c:/Users/hallvbru/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pdflscape/pdflscape.sty
+Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
+(c:/Users/hallvbru/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/pdflscape/pdflscape-nometadata.sty
+Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PDF (HO)
+(c:/Users/hallvbru/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: dvipdfm (xetex) on input line 98.
+)) (c:/Users/hallvbru/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/tabu/tabu.sty
+Package: tabu 2019/01/11 v2.9 - flexible LaTeX tabulars (FC+tabu-fixed)
+(c:/Users/hallvbru/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box65
+\sift@deathcycles=\count308
+\@vwid@loff=\dimen193
+\@vwid@roff=\dimen194
+)
+\c@taburow=\count309
+\tabu@nbcols=\count310
+\tabu@cnt=\count311
+\tabu@Xcol=\count312
+\tabu@alloc=\count313
+\tabu@nested=\count314
+\tabu@target=\dimen195
+\tabu@spreadtarget=\dimen196
+\tabu@naturalX=\dimen197
+\tabucolX=\dimen198
+\tabu@Xsum=\dimen199
+\extrarowdepth=\dimen256
+\abovetabulinesep=\dimen257
+\belowtabulinesep=\dimen258
+\tabustrutrule=\dimen259
+\tabu@thebody=\toks36
+\tabu@footnotes=\toks37
+\tabu@box=\box66
+\tabu@arstrutbox=\box67
+\tabu@hleads=\box68
+\tabu@vleads=\box69
+\tabu@cellskip=\skip74
+) (c:/Users/hallvbru/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/threeparttable/threeparttable.sty
+Package: threeparttable 2003/06/13  v 3.0
+\@tempboxb=\box70
+) (c:/Users/hallvbru/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/threeparttablex/threeparttablex.sty
+Package: threeparttablex 2013/07/23 v0.3 by daleif
+(c:/Users/hallvbru/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/environ/environ.sty
+Package: environ 2014/05/04 v0.3 A new way to define environments
+(c:/Users/hallvbru/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+Package: trimspaces 2009/09/17 v1.1 Trim spaces around a token list
+))
+\TPTL@width=\skip75
+) (c:/Users/hallvbru/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/ulem/ulem.sty
+\UL@box=\box71
+\UL@hyphenbox=\box72
+\UL@skip=\skip76
+\UL@hook=\toks38
+\UL@height=\dimen260
+\UL@pe=\count315
+\UL@pixel=\dimen261
+\ULC@box=\box73
+Package: ulem 2019/11/18
+\ULdepth=\dimen262
+) (c:/Users/hallvbru/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/makecell/makecell.sty
+Package: makecell 2009/08/03 V0.1e Managing of Tab Column Heads and Cells
+\rotheadsize=\dimen263
+\c@nlinenum=\count316
+\TeXr@lab=\toks39
 ) (c:/Users/hallvbru/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2023-07-08 v7.01b Hypertext links for LaTeX
 (c:/Users/hallvbru/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
@@ -498,17 +589,17 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 (c:/Users/hallvbru/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
-\c@section@level=\count304
+\c@section@level=\count317
 )
-\@linkdim=\dimen190
-\Hy@linkcounter=\count305
-\Hy@pagecounter=\count306
+\@linkdim=\dimen264
+\Hy@linkcounter=\count318
+\Hy@pagecounter=\count319
 (c:/Users/hallvbru/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2023-07-08 v7.01b Hyperref: PDFDocEncoding definition (HO)
 ) (c:/Users/hallvbru/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/intcalc/intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count307
+\Hy@SavedSpaceFactor=\count320
 (c:/Users/hallvbru/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/puenc.def
 File: puenc.def 2023-07-08 v7.01b Hyperref: PDF Unicode definition (HO)
 )
@@ -520,21 +611,21 @@ Package hyperref Info: Plain pages OFF on input line 4182.
 Package hyperref Info: Backreferencing OFF on input line 4187.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4434.
-\c@Hy@tempcnt=\count308
+\c@Hy@tempcnt=\count321
 (c:/Users/hallvbru/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip18
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4772.
-\XeTeXLinkMargin=\dimen191
+\XeTeXLinkMargin=\dimen265
 (c:/Users/hallvbru/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/bitset/bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 (c:/Users/hallvbru/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO)
 ))
-\Fld@menulength=\count309
-\Field@Width=\dimen192
-\Fld@charsize=\dimen193
+\Fld@menulength=\count322
+\Field@Width=\dimen266
+\Fld@charsize=\dimen267
 Package hyperref Info: Hyper figures OFF on input line 6051.
 Package hyperref Info: Link nesting OFF on input line 6056.
 Package hyperref Info: Hyper index ON on input line 6059.
@@ -546,9 +637,9 @@ Package hyperref Info: PDF/A mode OFF on input line 6081.
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count310
-\c@Item=\count311
-\c@Hfootnote=\count312
+\Hy@abspage=\count323
+\c@Item=\count324
+\c@Hfootnote=\count325
 )
 Package hyperref Info: Driver (autodetected): hxetex.
 (c:/Users/hallvbru/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/hxetex.def
@@ -556,11 +647,11 @@ File: hxetex.def 2023-07-08 v7.01b Hyperref driver for XeTeX
 (c:/Users/hallvbru/AppData/Roaming/TinyTeX/texmf-dist/tex/generic/stringenc/stringenc.sty
 Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO)
 )
-\pdfm@box=\box62
-\c@Hy@AnnotLevel=\count313
-\HyField@AnnotCount=\count314
-\Fld@listcount=\count315
-\c@bookmark@seq@number=\count316
+\pdfm@box=\box74
+\c@Hy@AnnotLevel=\count326
+\HyField@AnnotCount=\count327
+\Fld@listcount=\count328
+\c@bookmark@seq@number=\count329
 (c:/Users/hallvbru/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
 (c:/Users/hallvbru/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/base/atveryend-ltx.sty
@@ -571,38 +662,38 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
 )
-\Hy@SectionHShift=\skip71
+\Hy@SectionHShift=\skip77
 ) (./bookdown-demo.aux)
 \openout1 = `bookdown-demo.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 140.
-LaTeX Font Info:    ... okay on input line 140.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 140.
-LaTeX Font Info:    ... okay on input line 140.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 140.
-LaTeX Font Info:    ... okay on input line 140.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 140.
-LaTeX Font Info:    ... okay on input line 140.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 140.
-LaTeX Font Info:    ... okay on input line 140.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 140.
-LaTeX Font Info:    ... okay on input line 140.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 140.
-LaTeX Font Info:    ... okay on input line 140.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 140.
-LaTeX Font Info:    ... okay on input line 140.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 140.
-LaTeX Font Info:    ... okay on input line 140.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 140.
-LaTeX Font Info:    ... okay on input line 140.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 154.
+LaTeX Font Info:    ... okay on input line 154.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/lmss/m/n --> TU/lmss/m/n on input line 140.
+(Font)                  OT1/lmss/m/n --> TU/lmss/m/n on input line 154.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/lmss/bx/n --> TU/lmss/b/n on input line 140.
+(Font)                  OT1/lmss/bx/n --> TU/lmss/b/n on input line 154.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/lmtt/m/n --> TU/lmtt/m/n on input line 140.
+(Font)                  OT1/lmtt/m/n --> TU/lmtt/m/n on input line 154.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/lmtt/m/n --> TU/lmtt/b/n on input line 140.
+(Font)                  OT1/lmtt/m/n --> TU/lmtt/b/n on input line 154.
 
 Package fontspec Info: latinmodern-math scale = 1.037736795366909.
 
@@ -628,7 +719,7 @@ Package fontspec Info: Font family 'latinmodern-math.otf(0)' created for font
 (fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
 
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(0)/m/n' will be
-(Font)              scaled to size 12.45282pt on input line 140.
+(Font)              scaled to size 12.45282pt on input line 154.
 
 Package fontspec Info: latinmodern-math scale = 1.037736795366909.
 
@@ -660,15 +751,15 @@ Package fontspec Info: Font family 'latinmodern-math.otf(1)' created for font
 (fontspec)             - 'bold small caps'  (b/sc) with NFSS spec.: 
 
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 12.45282pt on input line 140.
+(Font)              scaled to size 12.45282pt on input line 154.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `normal' on input line 140.
+(Font)              `operators' in the math version `normal' on input line 154.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
-(Font)                  OT1/lmr/m/n --> TU/latinmodern-math.otf(1)/m/n on input line 140.
+(Font)                  OT1/lmr/m/n --> TU/latinmodern-math.otf(1)/m/n on input line 154.
 LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
-(Font)              `operators' in the math version `bold' on input line 140.
+(Font)              `operators' in the math version `bold' on input line 154.
 LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
-(Font)                  OT1/lmr/bx/n --> TU/latinmodern-math.otf(1)/b/n on input line 140.
+(Font)                  OT1/lmr/bx/n --> TU/latinmodern-math.otf(1)/b/n on input line 154.
 
 Package fontspec Info: latinmodern-math scale = 1.037736795366909.
 
@@ -747,13 +838,13 @@ Package fontspec Info: Font family 'latinmodern-math.otf(2)' created for font
 (fontspec)             =0pt\relax \fontdimen 21\font =0pt\relax 
 
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `normal' on input line 140.
+(Font)              `symbols' in the math version `normal' on input line 154.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
-(Font)                  OMS/lmsy/m/n --> TU/latinmodern-math.otf(2)/m/n on input line 140.
+(Font)                  OMS/lmsy/m/n --> TU/latinmodern-math.otf(2)/m/n on input line 154.
 LaTeX Font Info:    Encoding `OMS' has changed to `TU' for symbol font
-(Font)              `symbols' in the math version `bold' on input line 140.
+(Font)              `symbols' in the math version `bold' on input line 154.
 LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
-(Font)                  OMS/lmsy/b/n --> TU/latinmodern-math.otf(2)/b/n on input line 140.
+(Font)                  OMS/lmsy/b/n --> TU/latinmodern-math.otf(2)/b/n on input line 154.
 
 Package fontspec Info: latinmodern-math scale = 1.037736795366909.
 
@@ -814,13 +905,13 @@ Package fontspec Info: Font family 'latinmodern-math.otf(3)' created for font
 (fontspec)             =7.4717pt\relax \fontdimen 13\font =0pt\relax 
 
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `normal' on input line 140.
+(Font)              `largesymbols' in the math version `normal' on input line 154.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
-(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/m/n on input line 140.
+(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/m/n on input line 154.
 LaTeX Font Info:    Encoding `OMX' has changed to `TU' for symbol font
-(Font)              `largesymbols' in the math version `bold' on input line 140.
+(Font)              `largesymbols' in the math version `bold' on input line 154.
 LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
-(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/b/n on input line 140.
+(Font)                  OMX/lmex/m/n --> TU/latinmodern-math.otf(3)/b/n on input line 154.
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
 *geometry* verbose mode - [ preamble ] result:
@@ -856,9 +947,12 @@ LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
+Package caption Info: threeparttable package is loaded.
+Package caption Info: wrapfig package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 140.
+Package hyperref Info: Link coloring OFF on input line 154.
 (./bookdown-demo.out) (./bookdown-demo.out)
 \@outlinefile=\write3
 \openout3 = `bookdown-demo.out'.
@@ -866,36 +960,36 @@ Package hyperref Info: Link coloring OFF on input line 140.
 File: UiO_logo.png Graphic file (type bmp)
 <UiO_logo.png>
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/n' will be
-(Font)              scaled to size 20.74pt on input line 142.
+(Font)              scaled to size 20.74pt on input line 156.
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/n' will be
-(Font)              scaled to size 14.4pt on input line 142.
+(Font)              scaled to size 14.4pt on input line 156.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 14.94337pt on input line 142.
+(Font)              scaled to size 14.94337pt on input line 156.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 10.37735pt on input line 142.
+(Font)              scaled to size 10.37735pt on input line 156.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 7.26414pt on input line 142.
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 142.
+(Font)              scaled to size 7.26414pt on input line 156.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 156.
 (c:/Users/hallvbru/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 14.9449pt on input line 142.
+(Font)              scaled to size 14.9449pt on input line 156.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 10.37842pt on input line 142.
+(Font)              scaled to size 10.37842pt on input line 156.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 7.2649pt on input line 142.
+(Font)              scaled to size 7.2649pt on input line 156.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 14.94183pt on input line 142.
+(Font)              scaled to size 14.94183pt on input line 156.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 10.37628pt on input line 142.
+(Font)              scaled to size 10.37628pt on input line 156.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 7.2634pt on input line 142.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 142.
+(Font)              scaled to size 7.2634pt on input line 156.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 156.
 (c:/Users/hallvbru/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 142.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 156.
 (c:/Users/hallvbru/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
@@ -903,16 +997,16 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 
 ]
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/sl' in size <12> not available
-(Font)              Font shape `TU/TimesNewRoman(0)/m/it' tried instead on input line 145.
+(Font)              Font shape `TU/TimesNewRoman(0)/m/it' tried instead on input line 159.
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/it' will be
-(Font)              scaled to size 12.0pt on input line 145.
+(Font)              scaled to size 12.0pt on input line 159.
 [2
 
 ]
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/n' will be
-(Font)              scaled to size 24.88pt on input line 145.
+(Font)              scaled to size 24.88pt on input line 159.
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/b/n' will be
-(Font)              scaled to size 24.88pt on input line 145.
+(Font)              scaled to size 24.88pt on input line 159.
 (./bookdown-demo.toc
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/b/n' will be
 (Font)              scaled to size 12.0pt on input line 1.
@@ -945,11 +1039,11 @@ LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
 ] [9] [10]
 Chapter 1.
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/n' will be
-(Font)              scaled to size 17.28pt on input line 165.
+(Font)              scaled to size 17.28pt on input line 179.
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/b/n' will be
-(Font)              scaled to size 17.28pt on input line 165.
+(Font)              scaled to size 17.28pt on input line 179.
 
-LaTeX Warning: Reference `soc-typ' on page 11 undefined on input line 177.
+LaTeX Warning: Reference `soc-typ' on page 11 undefined on input line 191.
 
 [11
 
@@ -966,33 +1060,33 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: bookdown-demo_files/figure-latex/nice-fig-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/nice-fig-1.pdf>
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/n' will be
-(Font)              scaled to size 10.95pt on input line 308.
+(Font)              scaled to size 10.95pt on input line 322.
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/b/n' will be
-(Font)              scaled to size 10.95pt on input line 308.
+(Font)              scaled to size 10.95pt on input line 322.
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/it' will be
-(Font)              scaled to size 10.95pt on input line 308.
+(Font)              scaled to size 10.95pt on input line 322.
 [21] [22]
 Chapter 2.
 [23
 
 ] [24]
-Overfull \hbox (46.61923pt too wide) in paragraph at lines 402--403
+Overfull \hbox (46.61923pt too wide) in paragraph at lines 416--417
 []\TU/TimesNewRoman(0)/m/n/12 Cascading bifurcations and confluences (splitting or merging - tree structure/arborescence/branching,
  []
 
 [25] [26]
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/n' will be
-(Font)              scaled to size 8.4pt on input line 469.
+(Font)              scaled to size 8.4pt on input line 483.
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/n' will be
-(Font)              scaled to size 10.0pt on input line 469.
+(Font)              scaled to size 10.0pt on input line 483.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 5.18867pt on input line 469.
+(Font)              scaled to size 5.18867pt on input line 483.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 5.18921pt on input line 469.
+(Font)              scaled to size 5.18921pt on input line 483.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 5.18814pt on input line 469.
+(Font)              scaled to size 5.18814pt on input line 483.
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/n' will be
-(Font)              scaled to size 7.0pt on input line 469.
+(Font)              scaled to size 7.0pt on input line 483.
 
 Overfull \hbox (15.68422pt too wide) has occurred while \output is active
 \TU/TimesNewRoman(0)/m/it/12 2.3.  VERY SHORT INTRODUCTION TO MICRO-MACRO APPROACHES IN SOCIAL THEORY \TU/TimesNewRoman(0)/m/n/12 27
@@ -1027,106 +1121,115 @@ Chapter 4.
 File: bookdown-demo_files/figure-latex/04-intro-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/04-intro-1.pdf>
 [38]
-Underfull \vbox (badness 1874) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [39] [40] [41] [42] [43] [44] [45]
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(1)/m/n' will be
-(Font)              scaled to size 12.0pt on input line 665.
+(Font)              scaled to size 12.0pt on input line 679.
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(1)/m/n' will be
-(Font)              scaled to size 8.4pt on input line 665.
+(Font)              scaled to size 8.4pt on input line 679.
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(1)/m/n' will be
-(Font)              scaled to size 6.0pt on input line 665.
+(Font)              scaled to size 6.0pt on input line 679.
 [46]
 File: bookdown-demo_files/figure-latex/04-PDF-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/04-PDF-1.pdf>
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 11.36319pt on input line 675.
+(Font)              scaled to size 11.36319pt on input line 689.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 8.30188pt on input line 675.
+(Font)              scaled to size 8.30188pt on input line 689.
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(1)/m/n' will be
-(Font)              scaled to size 10.95pt on input line 675.
+(Font)              scaled to size 10.95pt on input line 689.
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(1)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 675.
+(Font)              scaled to size 8.0pt on input line 689.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 11.36435pt on input line 675.
+(Font)              scaled to size 11.36435pt on input line 689.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 8.30273pt on input line 675.
+(Font)              scaled to size 8.30273pt on input line 689.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 11.36201pt on input line 675.
+(Font)              scaled to size 11.36201pt on input line 689.
 LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 8.30103pt on input line 675.
+(Font)              scaled to size 8.30103pt on input line 689.
 File: bookdown-demo_files/figure-latex/04-cCDF-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/04-cCDF-1.pdf>
-[47]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+[47] [48] [49] [50
 
-[48] [49]
+]
 Underfull \vbox (badness 5681) has occurred while \output is active []
 
-[50]
+[51]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[51] [52] [53] [54] [55]
+[52] [53] [54] [55] [56]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[56] [57]
+[57] [58]
 File: bookdown-demo_files/figure-latex/04-multi-exp-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/04-multi-exp-1.pdf>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[58]
+[59]
 File: bookdown-demo_files/figure-latex/04-lnorm-exp-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/04-lnorm-exp-1.pdf>
-[59]
+[60]
 File: bookdown-demo_files/figure-latex/04-still-normal-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/04-still-normal-1.pdf>
+[61]
+Underfull \vbox (badness 1231) has occurred while \output is active []
 
+[62]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[60] [61] [62] [63] [64]
+[63]
+Underfull \vbox (badness 3000) has occurred while \output is active []
+
+[64] [65]
 File: bookdown-demo_files/figure-latex/04-pl-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/04-pl-1.pdf>
 File: bookdown-demo_files/figure-latex/04-hierarchy-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/04-hierarchy-1.pdf>
-[65]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
 [66]
+Underfull \vbox (badness 2653) has occurred while \output is active []
+
+[67]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[67] [68] [69] [70] [71] [72] [73]
+[68]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[74]
-Underfull \vbox (badness 1540) has occurred while \output is active []
-
-[75]
+[69]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[76] [77] [78] [79] [80
+[70]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[71]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[72] [73]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[74] [75] [76] [77] [78] [79] [80]
+Chapter 5.
+[81
 
 ]
-Chapter 5.
-
-Overfull \hbox (182.06961pt too wide) in paragraph at lines 946--946
-[]\TU/lmtt/m/n/12 ## i Use the conflicted package (<http://conflicted.r-lib.org/>) to force all conflicts to become errors[] 
- []
-
-[81] [82] [83]
-LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/it' will be
-(Font)              scaled to size 8.4pt on input line 959.
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[84] [85] [86]
+[82]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[83]
+LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/it' will be
+(Font)              scaled to size 8.4pt on input line 960.
+[84] [85]
 File: bookdown-demo_files/figure-latex/05-distfit-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/05-distfit-1.pdf>
 File: bookdown-demo_files/figure-latex/05-tails-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/05-tails-1.pdf>
 File: bookdown-demo_files/figure-latex/05-pltails-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/05-pltails-1.pdf>
-[87] [88] [89]
+[86] [87] [88] [89]
 File: bookdown-demo_files/figure-latex/05-synth-ln-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/05-synth-ln-1.pdf>
 File: bookdown-demo_files/figure-latex/05-ln-tail-1.pdf Graphic file (type pdf)
@@ -1140,7 +1243,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 ] [91] [92] [93]
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/n' will be
-(Font)              scaled to size 15.60004pt on input line 1067.
+(Font)              scaled to size 15.60004pt on input line 1068.
 [94
 
 ]
@@ -1149,166 +1252,174 @@ Chapter 6.
 
 ]
 Missing character: There is no 𝜆 (U+1D706) in font Times New Roman/OT:script=latn;language=dflt;mapping=tex-text;!
-[96] [97] [98
+[96]
+File: bookdown-demo_files/figure-latex/06-settle-box-1.pdf Graphic file (type pdf)
+<use bookdown-demo_files/figure-latex/06-settle-box-1.pdf>
+File: bookdown-demo_files/figure-latex/06-settle-tails-1.pdf Graphic file (type pdf)
+<use bookdown-demo_files/figure-latex/06-settle-tails-1.pdf>
+[97] [98] [99] [100] [101
 
-] [99] [100]
+
+] [102
+
+] [103] [104]
 Chapter 7.
-[101
+[105
 
-] [102]
+] [106]
 Chapter 8.
-[103
+[107
 
-] [104]
+] [108]
 Chapter 9.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[105
-
-] [106] [107
-
-] [108]
-Chapter 10.
 [109
+
+] [110] [111
+
+] [112]
+Chapter 10.
+[113
 
 ]
 Overfull \hbox (95.83755pt too wide) has occurred while \output is active
-\TU/TimesNewRoman(0)/m/n/12 110 \TU/TimesNewRoman(0)/m/it/12 CHAPTER 10.  DISCUSSION: SOCIAL COMPLEXITY IN LINEAR POTTERY AND TRYPILLIA SETTLEMENTS
+\TU/TimesNewRoman(0)/m/n/12 114 \TU/TimesNewRoman(0)/m/it/12 CHAPTER 10.  DISCUSSION: SOCIAL COMPLEXITY IN LINEAR POTTERY AND TRYPILLIA SETTLEMENTS
  []
 
-[110
+[114
 
 ]
 Chapter 11.
-[111] [112]
+[115] [116]
 Chapter 12.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[113
+[117
 
-] [114]
-Underfull \hbox (badness 1259) in paragraph at lines 1306--1308
+] [118]
+Underfull \hbox (badness 1259) in paragraph at lines 1383--1385
 \TU/TimesNewRoman(0)/m/n/12 from an Archaeological Perspective.” \TU/TimesNewRoman(0)/m/it/12 PLOS ONE \TU/TimesNewRoman(0)/m/n/12 9(3):e91510. doi: []10.1371/jour-
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[115
+[119
 
 ]
-Underfull \hbox (badness 1147) in paragraph at lines 1354--1356
+Underfull \hbox (badness 1147) in paragraph at lines 1431--1433
 \TU/TimesNewRoman(0)/m/n/12 A Maximum Entropy Test.” \TU/TimesNewRoman(0)/m/it/12 Physical Review E \TU/TimesNewRoman(0)/m/n/12 84(2):026104. doi: []10.1103/Phys-
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[116]
-Underfull \hbox (badness 1264) in paragraph at lines 1399--1401
+[120]
+Underfull \hbox (badness 1264) in paragraph at lines 1476--1478
 \TU/TimesNewRoman(0)/m/n/12 2006. “The social context of the emergence, development and abandonment of the
  []
 
 
-Underfull \hbox (badness 2103) in paragraph at lines 1399--1401
+Underfull \hbox (badness 2103) in paragraph at lines 1476--1478
 \TU/TimesNewRoman(0)/m/n/12 Varna cemetery, Bulgaria.” \TU/TimesNewRoman(0)/m/it/12 European journal of archaeology \TU/TimesNewRoman(0)/m/n/12 9(2-3):159183. doi:
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[117]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[118]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[119]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[120]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
 [121]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [122]
-Overfull \hbox (51.26196pt too wide) in paragraph at lines 1612--1614
-\TU/TimesNewRoman(0)/m/n/12 höyük, Turkey.” \TU/TimesNewRoman(0)/m/it/12 Cambridge Archaeological Journal \TU/TimesNewRoman(0)/m/n/12 28(4):565–90. doi: []10.1017/S0959774318000240[]. 
- []
-
-
-Underfull \hbox (badness 1430) in paragraph at lines 1633--1635
-[]\TU/TimesNewRoman(0)/m/n/12 Li, Jian, Qian Du, and Caixin Sun. 2009. “An Improved Box-Counting Method for
- []
-
-
-Underfull \hbox (badness 2922) in paragraph at lines 1633--1635
-\TU/TimesNewRoman(0)/m/n/12 Image Fractal Dimension Estimation.” \TU/TimesNewRoman(0)/m/it/12 Pattern Recognition \TU/TimesNewRoman(0)/m/n/12 42(11):2460–69. doi:
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [123]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [124]
-Overfull \hbox (31.4721pt too wide) in paragraph at lines 1678--1680
-\TU/TimesNewRoman(0)/m/n/12 normal Distributions.” \TU/TimesNewRoman(0)/m/it/12 Internet Mathematics \TU/TimesNewRoman(0)/m/n/12 1(2):226–51. doi: []10.1080/15427951.2004.10129088[]. 
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [125]
-Underfull \hbox (badness 2142) in paragraph at lines 1732--1734
-[]\TU/TimesNewRoman(0)/m/n/12 Porcic, Marko. 2010. “House Floor Area as a Correlate of Marital Residence Pat-
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [126]
-Underfull \hbox (badness 1297) in paragraph at lines 1756--1758
-\TU/TimesNewRoman(0)/m/n/12 in the Grey Wolf Optimizer Algorithm.” \TU/TimesNewRoman(0)/m/it/12 Applied Soft Computing \TU/TimesNewRoman(0)/m/n/12 57:315–28. doi:
+Overfull \hbox (51.26196pt too wide) in paragraph at lines 1689--1691
+\TU/TimesNewRoman(0)/m/n/12 höyük, Turkey.” \TU/TimesNewRoman(0)/m/it/12 Cambridge Archaeological Journal \TU/TimesNewRoman(0)/m/n/12 28(4):565–90. doi: []10.1017/S0959774318000240[]. 
+ []
+
+
+Underfull \hbox (badness 1430) in paragraph at lines 1710--1712
+[]\TU/TimesNewRoman(0)/m/n/12 Li, Jian, Qian Du, and Caixin Sun. 2009. “An Improved Box-Counting Method for
+ []
+
+
+Underfull \hbox (badness 2922) in paragraph at lines 1710--1712
+\TU/TimesNewRoman(0)/m/n/12 Image Fractal Dimension Estimation.” \TU/TimesNewRoman(0)/m/it/12 Pattern Recognition \TU/TimesNewRoman(0)/m/n/12 42(11):2460–69. doi:
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [127]
-Underfull \hbox (badness 3302) in paragraph at lines 1810--1812
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[128]
+Overfull \hbox (31.4721pt too wide) in paragraph at lines 1755--1757
+\TU/TimesNewRoman(0)/m/n/12 normal Distributions.” \TU/TimesNewRoman(0)/m/it/12 Internet Mathematics \TU/TimesNewRoman(0)/m/n/12 1(2):226–51. doi: []10.1080/15427951.2004.10129088[]. 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[129]
+Underfull \hbox (badness 2142) in paragraph at lines 1809--1811
+[]\TU/TimesNewRoman(0)/m/n/12 Porcic, Marko. 2010. “House Floor Area as a Correlate of Marital Residence Pat-
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[130]
+Underfull \hbox (badness 1297) in paragraph at lines 1833--1835
+\TU/TimesNewRoman(0)/m/n/12 in the Grey Wolf Optimizer Algorithm.” \TU/TimesNewRoman(0)/m/it/12 Applied Soft Computing \TU/TimesNewRoman(0)/m/n/12 57:315–28. doi:
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[131]
+Underfull \hbox (badness 3302) in paragraph at lines 1887--1889
 []\TU/TimesNewRoman(0)/m/n/12 Sindbæk, Søren M. 2022. “Weak Ties and Strange Attractors: Anomalocivitas and
  []
 
 
-Underfull \hbox (badness 1331) in paragraph at lines 1810--1812
+Underfull \hbox (badness 1331) in paragraph at lines 1887--1889
 \TU/TimesNewRoman(0)/m/n/12 the Archaeology of Urban Origins.” \TU/TimesNewRoman(0)/m/it/12 Journal of Urban Archaeology \TU/TimesNewRoman(0)/m/n/12 5:19–32. doi:
  []
 
 
-Underfull \hbox (badness 2261) in paragraph at lines 1819--1821
+Underfull \hbox (badness 2261) in paragraph at lines 1896--1898
 []\TU/TimesNewRoman(0)/m/n/12 Souvatzi, Stella. 2017. “Kinship and Social Archaeology.” \TU/TimesNewRoman(0)/m/it/12 Cross-cultural research
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[128]
+[132]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[129] [130]
+[133] [134]
 Appendix A.
-[131
+[135
 
-] [132
+] [136
 
 ]
 Appendix B.
-[133] (./bookdown-demo.aux)
+[137] (./bookdown-demo.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-06-30>
@@ -1317,15 +1428,15 @@ L3 programming layer <2023-06-30>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `bookdown-demo.out' has not changed.
-(rerunfilecheck)             Checksum: E374023D3A944D2194B0410B9232C088;15643.
+(rerunfilecheck)             Checksum: 617F52974202D4B3C3B20AACDAC0A1FF;15643.
  ) 
 Here is how much of TeX's memory you used:
- 18919 strings out of 477888
- 357867 string characters out of 5821579
- 1929869 words of memory out of 5000000
- 39531 multiletter control sequences out of 15000+600000
- 567587 words of font info for 130 fonts, out of 8000000 for 9000
+ 20390 strings out of 477888
+ 383616 string characters out of 5821579
+ 1932869 words of memory out of 5000000
+ 40942 multiletter control sequences out of 15000+600000
+ 567693 words of font info for 131 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 90i,8n,122p,4246b,444s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,9n,122p,4246b,444s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on bookdown-demo.pdf (133 pages).
+Output written on bookdown-demo.pdf (137 pages).

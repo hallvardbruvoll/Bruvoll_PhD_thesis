@@ -1,7 +1,7 @@
 # Analyse house-size data, and export results
 
 # Load custom functions from 05-distfit-methods.R
-source("Analysis/05-distfit-methods.R")
+source("Analysis/Distfit-functions.R")
 
 # CHECK SECTIONS 1 AND 2 HERE
 # 1 Synthetic distributions -----------------------------------------------
@@ -166,56 +166,139 @@ vrable_samples_count <- vrable_samples %>%
 
 # Make object with settlements and house sizes
 my_settlements <- bind_rows(filter(zitava_sites_only, region == "zitava_valley") %>%
-  select(house_size, Settlement, site_name_ill_short) %>%
-  mutate(culture = "Linear Pottery") %>%
+  dplyr::select(house_size, Settlement, site_name_ill_short) %>%
+  mutate(Culture = "Linear Pottery") %>%
   rename(site_name_ill = site_name_ill_short),
   tryp_house_sizes %>%
-  select(house_size, Settlement, site_name_ill, culture))
+  dplyr::select(house_size, Settlement, site_name_ill, culture) %>%
+    rename(Culture = culture))
 
-# Filter out settlements with n < 10 (too small for dist.fit)
+# Filter out settlements with n < 10 (too small for dist.fit); add Gini index
 my_settlements <- my_settlements %>%
   group_by(Settlement) %>%
-  filter(n() > 10)
+  filter(n() > 10) %>%
+  mutate(Gini = round(Gini(house_size), 3))
 
 # Remove unused factor levels (should be 13 settlements left)
 my_settlements <- droplevels.data.frame(my_settlements)
 levels(my_settlements$Settlement)
 
-# Analyse
+# Analyse (takes a few moments)
 settlements_results <- dist.fit.all(x = my_settlements$house_size,
                                     set = my_settlements$site_name_ill)
-settlements_results <- settlements_results %>%
-  mutate(culture = if_else(set %in% tryp_house_sizes$site_name_ill,
-                           "Trypillia", "Linear Pottery"))
+# Add back culture and gini
+culture_gini <- my_settlements %>%
+  group_by(site_name_ill, Culture, Gini) %>%
+  summarise()
+settlements_results <- left_join(settlements_results, culture_gini,
+          by = c("set" = "site_name_ill"))
+
 # Filter out houses and model values following power law
 settlements_pl <- settlements_results %>%
   group_by(set) %>%
   filter(tail == "pl" & value >= xmin)
 # Make label vector
 settlement_labs <- filter(settlements_pl, model == FALSE) %>%
-  group_by(set, culture) %>%
+  group_by(set, Culture) %>%
   summarise(x = max(value), y = min(ccdf))
 settlement_labs <- settlement_labs %>%
   ungroup() %>% # Setting label coordinates manually
-  mutate(x = c(210, 480, 230, 280, 170),
+  mutate(x = c(250, 270, 300, 800, 120),
          y = c(0.15, 0.0004, 0.02, 0.0007, 0.0025))
 
-# And plot tails
-ggplot(filter(settlements_pl, model == FALSE))+
-  aes(x = value, y = ccdf, colour = culture, shape = culture, group = set)+
-  geom_point(data = filter(settlements_results, model == FALSE),
+# Plot results (start with plot b)
+# Pick out labels for the steepest distributions (check in list below)
+steep_set_labs <- filter(settlements_results, tail == "exp" & par1 > 0.03) %>%
+  group_by(set, Culture) %>%
+  summarise(x = max(value), y = min(ccdf))
+steep_set_labs <- steep_set_labs %>%
+  ungroup() %>%
+  mutate(x = c(65, 75), y = c(0.06, 0.035))
+
+fig06_settle_other <- ggplot(filter(settlements_results, tail != "pl" & model == FALSE))+
+  aes(x = value, y = ccdf, colour = Culture, shape = Culture, group = set)+
+  geom_point(show.legend = FALSE)+
+  scale_shape_manual(values = c(1,2))+
+  geom_line(show.legend = FALSE)+
+  geom_text(data = steep_set_labs, aes(x, y,
+                                       colour = Culture, label = set),
+            show.legend = FALSE)+
+  scale_x_log10()+
+  scale_y_log10()+
+  theme_bw()+
+  labs(x = "House size", y = "cCDF")
+
+# Extract extent of plot b for frame within plot a
+plot_build <- ggplot_build(fig06_settle_other)
+small_frame <- tibble(x = c(10^(plot_build$layout$panel_params[[1]]$x.range)),
+                      y = c(10^(plot_build$layout$panel_params[[1]]$y.range)))
+
+# And power-law tails (plot a)
+fig06_settle_pl <- ggplot(filter(settlements_pl, model == FALSE))+
+  aes(x = value, y = ccdf, colour = Culture, shape = Culture, group = set)+
+  geom_point(data = filter(settlements_results, model == FALSE & tail == "pl"),
              colour = "grey")+
   geom_point()+
   geom_line()+
+  geom_rect(data = small_frame, aes(xmin = x[1], ymin = y[1],
+                                    xmax = x[2], ymax = y[2],
+                                    group = NULL, x = NULL, y = NULL,
+                                    shape = NULL),
+            fill = alpha("grey", 0), colour = "grey",
+            show.legend = FALSE)+
   scale_shape_manual(values = c(1,2))+
-  geom_line(data = filter(settlements_pl, model == TRUE), aes(group = set),
-             size = 1, colour = "grey", linetype = 2)+
+  #geom_line(data = filter(settlements_pl, model == TRUE), aes(group = set),
+  #           size = 1, colour = "darkgrey", linetype = 2)+
   geom_text(data = settlement_labs, aes(x = x, y = y,
-                                        colour = culture, label = set),
+                                        colour = Culture, label = set),
             show.legend = FALSE)+
   scale_y_log10(labels = scales::comma)+
   scale_x_log10()+
   theme_bw()+
-  labs(x = "House size", y = "cCDF",
-       colour = "Culture", shape = "Culture")
+  theme(legend.position = "bottom")+
+  labs(x = "House size", y = "cCDF")
 
+# Collect plots a and b
+tail_legend <- get_legend(fig06_settle_pl)
+fig06_settle_tails <- plot_grid(plot_grid(fig06_settle_pl+
+                                            theme(legend.position = "none"),
+                                          fig06_settle_other,
+                                          labels = "auto", nrow = 1),
+                                tail_legend, ncol = 1, rel_heights = c(2, 0.1))
+
+fig06_settle_box <- ggplot(filter(settlements_results, model == FALSE))+
+  aes(x = value, y = reorder(set, -value, FUN = median))+
+  geom_boxplot(aes(fill = culture), alpha = 0.5)+
+  geom_point(data = filter(settlements_pl, model == FALSE), colour = "red")+
+  scale_x_log10()+
+  theme_bw()+
+  labs(x ="House size", y = "", fill = "Culture")
+
+save(fig06_settle_box, file = "Results/fig06_settle_box.RData")
+save(fig06_settle_tails, file = "Results/fig06_settle_tails.RData")
+
+# Test the entire distributions and make table of results
+tab06_wh_settle <- whole.dist(x = my_settlements$house_size,
+                            set = my_settlements$site_name_ill,
+                            culture = my_settlements$Culture)
+
+tab06_settle <- filter(settlements_results, model == FALSE) %>%
+  group_by(set, tail, par1, xmin, ntail, Gini, Culture) %>%
+  summarise(N = n()) %>%
+  arrange(tail, desc(par1), Gini) %>%
+  ungroup() %>%
+  mutate(Settlement = set,
+         Tail = tail, T_Par1 = round(par1, 3), xmin = round(xmin, 1),
+         Gini = Gini, N = N, N_tail = ntail,
+         Tail_P = round(ntail/N, 2),
+         Culture = Culture, .keep = "none")
+
+tab06_settle <- left_join(tab06_settle, tab06_wh_settle,
+          by = c("Settlement", "Gini", "N", "Culture")) %>%
+  relocate(c(Model, Par1, Par2), .after = Settlement) %>%
+  relocate(xmin, .after = T_Par1) %>%
+  relocate(N, .after = xmin) %>%
+  relocate(c(Gini, Culture), .after = Tail_P)
+
+save(tab06_settle, file = "Results/tab06_settle.RData")
+#NEXT

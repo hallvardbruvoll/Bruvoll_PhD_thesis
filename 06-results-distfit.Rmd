@@ -18,9 +18,36 @@ When it comes to temporal lumping, given that a settlement does not undergo subs
 
 ## Settlements
 
--   House-size distributions of whole settlements (both Linear Pottery and Trypillia, Pareto plots)
+Running the distribution-fitting algorithm presented in Chapter \@ref(methods-distfit) on the house-size distributions of the 13 settlements in the current sample (settlements with 10 or less houses were excluded), resulted in five settlements being interpreted as having power-law tails. These were the Trypillia sites at Maidanetske, Nebelivka and Moshuriv, as well as the Linear Pottery sites at Vráble and Horný (Figure \@ref(fig:06-settle-box) and Table \@ref(tab:06-settle-tab)). The remaining eight settlements were interpreted as having exponential tails. It is important to note however, that this simply means that the exponential model was the best out of the tested models, on the tail length that gave the best possible power-law fit. In other words, for these settlements, the power-law model is effectively excluded, since other models better explain whatever tail could be interpreted as a power law. The box-plot on Figure \@ref(fig:06-settle-box) indicates that many of the analysed distributions should be well approximated as log-normals, since they show near-symmetric boxes and whiskers on a logarithmic scale. A closer look at the non-power-law distributions reveals that two settlements deviate clearly from the others, namely the Trypillia site at Talne 3 and the Linear Pottery site at Úľany, both of which are the smallest settlements in their respective culture groups (Figure \@ref(fig:06-settle-tails)).
 
--   Box-plots, same
+(ref:06-settle-box) House sizes of the 13 analysed settlements, arranged according to median house size. Red dots represent houses with size $\geq x_{min}$ within distribution tails interpreted as power laws. X axis is logarithmic
+
+```{r 06-settle-box, fig.cap="(ref:06-settle-box)"}
+load("Results/fig06_settle_box.RData") 
+fig06_settle_box
+```
+
+fdsasdfasf
+
+(ref:06-settle-tails) Analysed house-size distributions for whole settlements. a) Distributions with identified power-law tails. For clarity, only the tails (house sizes $\geq x_{min}$) are coloured and connecting lines are added within each settlement. The grey frame represents the extent of panel b. b) House-size distributions without power-law tails. Two settlements are atypical with their absence of large houses. Scales are logarithmic
+
+```{r 06-settle-tails, fig.cap="(ref:06-settle-tails)"}
+load("Results/fig06_settle_tails.RData")
+fig06_settle_tails
+```
+
+fdsasdf
+
+(ref:06-settle-tab) Main results of distribution fitting analysis on settlements, ordered according to retained tail model (Tail) and parameter values (T_Par1), from steepest to shallowest (see Figure \@ref(fig:06-settle-tails)). Model and Gini are evaluated on the entire distribution for each settlement. Par1 and Par2 represent $\mu$ (mean) and $\sigma$ (standard deviation) for normal and log-normal distributions, and T_Par1 represents $\lambda$ (rate) for exponential and $\alpha$ (scaling exponent) for power-law distributions. $x_{min}$ is the house size from which the tail parameters are estimated. N is the number of houses per settlement, N_tail is the number of houses in the distribution tail, and Tail_Pr is the proportion of N being part of the tail, or N_tail/N
+
+```{r 06-settle-tab}
+load("Results/tab06_settle.RData")
+kable(tab06_settle, booktabs = TRUE, caption = "(ref:06-settle-tab)") %>% 
+#      linesep = c(rep("", 7), "\\addlinespace")) %>%
+  kable_styling(latex_options = c("striped", "scale down")) %>% 
+  landscape()
+
+```
 
 -   Plan of some of the settlements, with coloured pl-distributed houses (at least Vráble and Nebelivka, make in QGIS)
 
@@ -37,6 +64,8 @@ House-size distributions of separate quarters (Nebelivka) and neighbourhoods (Vr
 If time, I can add more Žitava sites here, but not necessary. I can also analyse temporal samples of Vráble neighbourhoods separately.
 
 -   Vráble, Pareto + site map (exerpts)
+
+-   One neighbourhood, same.
 
 ## Summary of findings
 
