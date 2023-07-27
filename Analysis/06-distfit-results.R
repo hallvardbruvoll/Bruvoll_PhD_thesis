@@ -83,7 +83,9 @@ ggplot(filter(test_long, !is.na(iteration)))+
 # Make plots/illustrations
 
 
-# Data import and preparation -----------------------------------------------
+# 2 Settlements -----------------------------------------------
+
+# 2.1 Data import and preparation ----------------------------------
 
 lbk_house_sizes <- read.csv2("Data/lbk_house_sizes.csv",
                              encoding = "UTF-8") %>%
@@ -162,7 +164,7 @@ vrable_samples_count <- vrable_samples %>%
 # in QGIS, and extract images for analysis of temporally coeval settlement
 # plans of Vráble (see "Time samples" section below).
 
-# 2 Settlements -----------------------------------------------------------
+# 2.2 Analysis --------------------------------------------------
 
 # Make object with settlements and house sizes
 my_settlements <- bind_rows(filter(zitava_sites_only, region == "zitava_valley") %>%
@@ -301,4 +303,241 @@ tab06_settle <- left_join(tab06_settle, tab06_wh_settle,
   relocate(c(Gini, Culture), .after = Tail_P)
 
 save(tab06_settle, file = "Results/tab06_settle.RData")
-#NEXT
+
+# Check normality specifically for Talne 3, see text
+filter(my_settlements, Settlement == "Talne 3") %>%
+  pull(house_size) %>%
+  shapiro.test()
+
+# 3 Quarters/Neighbourhoods -----------------------------------------------
+
+# Prepare data object
+my_quarters <- bind_rows(vrable_neighbourhoods %>%
+                           dplyr::select(house_size, site_name_ill_short) %>%
+                           mutate(house_size = house_size,
+                                  Culture = "Linear Pottery",
+                                  Quarter = site_name_ill_short,
+                                  site_name_ill = "Vr\u00e1ble",
+                                  .keep = "none") %>%
+                           group_by(Quarter) %>%
+                           mutate(Gini = round(Gini(house_size), 3), N = n()),
+                         filter(tryp_house_sizes,
+                                Settlement == "Nebelivka" &
+                                  !quarter %in% c("", NA)) %>%
+                           dplyr::select(house_size, site_name_ill,
+                                         culture, quarter) %>%
+                           rename(Culture = culture,
+                                  Quarter = quarter) %>%
+                           group_by(Quarter) %>%
+                           mutate(Gini = round(Gini(house_size), 3),
+                                  N = n()))
+
+# Remove unused factor levels (should be 17 quarters)
+my_quarters <- droplevels.data.frame(my_quarters)
+levels(my_quarters$Quarter)
+
+# Analyse (takes a few moments)
+quarters_results <- dist.fit.all(x = my_quarters$house_size,
+                                    set = my_quarters$Quarter)
+# Add back Culture, Gini, N and Settlement
+quarter_columns <- my_quarters %>%
+  group_by(site_name_ill, Culture, Gini, N, Quarter) %>%
+  summarise()
+quarters_results <- left_join(quarters_results, quarter_columns,
+                                 by = c("set" = "Quarter"))
+
+# Filter out houses and model values following power law
+quarters_pl <- quarters_results %>%
+  group_by(set) %>%
+  filter(tail == "pl" & value >= xmin)
+# Make label vector (this time for non-pl for clarity)
+quarter_labs <- filter(quarters_results, model == FALSE & tail != "pl") %>%
+  group_by(set, site_name_ill, Culture) %>%
+  summarise(x = max(value), y = min(ccdf)) %>%
+  mutate(label = if_else(site_name_ill == "Nebelivka", paste0("Neb. ", set),
+                         set))
+quarter_labs <- quarter_labs %>%
+  ungroup() %>% # Setting label coordinates manually
+  mutate(x = c(123, 65, 183),
+         y = c(0.013, 0.075, 0.1))
+
+# Plot tails
+fig06_quart_tails <- ggplot(filter(quarters_pl, model == FALSE))+
+  aes(x = value, y = ccdf, colour = Culture, shape = Culture, group = set)+
+  geom_point(data = filter(quarters_results, model == FALSE), colour = "grey")+
+  geom_line(data = filter(quarters_results, model == FALSE), colour = "grey")+
+  geom_point()+
+  scale_shape_manual(values = c(1,2))+
+  geom_line()+
+  geom_text(data = quarter_labs, aes(x = x, y = y, label = label),
+            colour = "darkgrey", show.legend = FALSE)+
+  scale_x_log10()+
+  scale_y_log10()+
+  theme_bw()+
+  labs(x = "House size", y = "cCDF")+
+  theme(legend.position = "bottom")
+
+fig06_quart_box <- ggplot(filter(quarters_results, model == FALSE))+
+  aes(x = value, y = reorder(set, -value, FUN = median))+
+  geom_boxplot(aes(fill = Culture), alpha = 0.5)+
+  geom_point(data = filter(quarters_pl, model == FALSE), colour = "red")+
+  scale_x_log10()+
+  theme_bw()+
+  labs(x ="House size", y = "")
+
+save(fig06_quart_box, file = "Results/fig06_quart_box.RData")
+save(fig06_quart_tails, file = "Results/fig06_quart_tails.RData")
+
+
+# Test the entire distributions and make table of results
+tab06_wh_quart <- whole.dist(x = my_quarters$house_size,
+                             set = my_quarters$Quarter,
+                             culture = my_quarters$Culture)
+tab06_quart <- filter(quarters_results, model == FALSE) %>%
+  group_by(set, tail, par1, xmin, ntail, Culture) %>%
+  summarise() %>%
+  ungroup() %>%
+  mutate(Tail = tail, T_Par1 = round(par1, 3),
+         xmin = round(xmin, 1),
+         N_tail = ntail, Settlement = set, .keep = "none")
+
+tab06_quart <- left_join(tab06_quart, tab06_wh_quart, by = "Settlement") %>%
+  rename(Quarter = Settlement) %>%
+  mutate(Tail_P = N_tail/N,
+         Quarter = if_else(Culture == "Trypillia",
+                           paste0("Neb. ", Quarter), Quarter)) %>%
+  relocate(Tail_P, .before = Gini) %>%
+  relocate(xmin, .after = T_Par1) %>%
+  relocate(N, .after = xmin) %>%
+  relocate(c(Tail, T_Par1, xmin, N, N_tail), .after = Par2) %>%
+  arrange(Tail, desc(T_Par1), Gini)
+
+save(tab06_quart, file = "Results/tab06_quart.RData")
+
+
+# 4 Time samples --------------------------------------------------------
+
+# Prepare data objects (Vráble total and SW only)
+vrable_samples <- vrable_samples %>%
+  group_by(sample) %>%
+  filter(n() > 10)
+vrable_SW_samples <- filter(vrable_samples, Settlement == "Vrable SW") %>%
+  group_by(sample) %>%
+  filter(n() > 10) %>%
+  filter(house_size < max(house_size))
+
+# Analyse
+time_results <- dist.fit.all(x = vrable_samples$house_size,
+                             set = vrable_samples$sample)
+vrable_SW_results <- dist.fit.all(x = vrable_SW_samples$house_size,
+                                  set = vrable_SW_samples$sample)
+#time_results <- bind_rows("Vr\u00e1ble" = time_results,
+#                          "Vr\u00e1ble_SW" = vrable_SW_results,
+#                          .id = "Settlement")
+
+# Add date estimates
+sample_dates <- time_samples %>% dplyr::select(dates, sample) %>%
+  mutate(sample = as.character(sample),
+         dates = as.factor(dates))
+# Set levels in descending order
+levels(sample_dates$dates)
+sample_dates$dates <- factor(sample_dates$dates,
+                             levels = rev(levels(sample_dates$dates)))
+levels(sample_dates$dates)
+
+
+time_results <- left_join(time_results, sample_dates,
+                          by = c("set" = "sample"))
+vrable_SW_results <- left_join(vrable_SW_results, sample_dates,
+                               by = c("set" = "sample"))
+
+time_pl <- time_results %>%
+  group_by(set) %>%
+  filter(tail == "pl" & value >= xmin)
+time_SW_pl <- vrable_SW_results %>%
+  group_by(set) %>%
+  filter(tail == "pl" & value >= xmin)
+
+fig06_time_tails <- ggplot(filter(time_pl, model == FALSE))+
+  aes(x = value, y = ccdf, group = set)+
+  geom_point(data = filter(time_results, model == FALSE),
+             colour = "grey", shape = 1)+
+  geom_line(data = filter(time_results, model == FALSE),
+            colour = "grey")+
+  geom_point(colour = "red", shape = 1)+
+  geom_line(colour = "red")+
+  scale_x_log10()+
+  scale_y_log10()+
+  theme_bw()+
+  labs(x = "House size", y = "cCDF")
+
+fig06_time_tails_b <- ggplot(filter(time_SW_pl, model == FALSE))+
+  aes(x = value, y = ccdf, group = set)+
+  geom_point(data = filter(vrable_SW_results, model == FALSE),
+             colour = "grey", shape = 1)+
+  geom_line(data = filter(vrable_SW_results, model == FALSE),
+            colour = "grey")+
+  geom_point(colour = "red", shape = 1)+
+  geom_line(colour = "red")+
+  scale_x_log10()+
+  scale_y_log10()+
+  theme_bw()+
+  labs(x = "House size", y = "")
+
+fig06_time_tails <- plot_grid(fig06_time_tails, fig06_time_tails_b,
+          labels = "auto", nrow = 1)
+
+fig06_time_box <- ggplot(filter(time_results, model == FALSE))+
+  aes(x = value,
+      y = dates)+
+  geom_boxplot()+
+  geom_point(data = filter(time_pl, model == FALSE), colour = "red")+
+  scale_x_log10()+
+  theme_bw()+
+  labs(x = "House size", y = "Time sample (cal. BCE)")
+
+fig06_time_box_b <- ggplot(filter(vrable_SW_results, model == FALSE))+
+  aes(x = value,
+      y = dates)+
+  geom_boxplot()+
+  geom_point(data = filter(time_SW_pl, model == FALSE), colour = "red")+
+  scale_x_log10()+
+  scale_y_discrete(limits = factor(rev(seq(5050, 5230, by = 20))),
+                   labels = NULL)+
+  theme_bw()+
+  labs(x = "House size", y = "")
+
+fig06_time_box <- plot_grid(fig06_time_box, fig06_time_box_b,
+                            labels = "auto", nrow = 1)
+
+save(fig06_time_box, file = "Results/fig06_time_box.RData")
+save(fig06_time_tails, file = "Results/fig06_time_tails.RData")
+
+# FROM HERE!
+#tab06_time <- whole.dist()
+# DELETE BELOW
+
+# Test the entire distributions and make table of results
+tab06_wh_quart <- whole.dist(x = my_quarters$house_size,
+                             set = my_quarters$Quarter,
+                             culture = my_quarters$Culture)
+tab06_quart <- filter(quarters_results, model == FALSE) %>%
+  group_by(set, tail, par1, xmin, ntail, Culture) %>%
+  summarise() %>%
+  ungroup() %>%
+  mutate(Tail = tail, T_Par1 = round(par1, 3),
+         xmin = round(xmin, 1),
+         N_tail = ntail, Settlement = set, .keep = "none")
+
+tab06_quart <- left_join(tab06_quart, tab06_wh_quart, by = "Settlement") %>%
+  rename(Quarter = Settlement) %>%
+  mutate(Tail_P = N_tail/N,
+         Quarter = if_else(Culture == "Trypillia",
+                           paste0("Neb. ", Quarter), Quarter)) %>%
+  relocate(Tail_P, .before = Gini) %>%
+  relocate(xmin, .after = T_Par1) %>%
+  relocate(N, .after = xmin) %>%
+  relocate(c(Tail, T_Par1, xmin, N, N_tail), .after = Par2) %>%
+  arrange(Tail, desc(T_Par1), Gini)
+
+save(tab06_quart, file = "Results/tab06_quart.RData")
