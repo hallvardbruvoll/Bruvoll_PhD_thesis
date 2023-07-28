@@ -403,7 +403,7 @@ tab06_quart <- filter(quarters_results, model == FALSE) %>%
 
 tab06_quart <- left_join(tab06_quart, tab06_wh_quart, by = "Settlement") %>%
   rename(Quarter = Settlement) %>%
-  mutate(Tail_P = N_tail/N,
+  mutate(Tail_P = round(N_tail/N, 2),
          Quarter = if_else(Culture == "Trypillia",
                            paste0("Neb. ", Quarter), Quarter)) %>%
   relocate(Tail_P, .before = Gini) %>%
