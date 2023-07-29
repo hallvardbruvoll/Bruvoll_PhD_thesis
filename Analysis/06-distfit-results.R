@@ -431,9 +431,6 @@ time_results <- dist.fit.all(x = vrable_samples$house_size,
                              set = vrable_samples$sample)
 vrable_SW_results <- dist.fit.all(x = vrable_SW_samples$house_size,
                                   set = vrable_SW_samples$sample)
-#time_results <- bind_rows("Vr\u00e1ble" = time_results,
-#                          "Vr\u00e1ble_SW" = vrable_SW_results,
-#                          .id = "Settlement")
 
 # Add date estimates
 sample_dates <- time_samples %>% dplyr::select(dates, sample) %>%
@@ -450,7 +447,7 @@ time_results <- left_join(time_results, sample_dates,
                           by = c("set" = "sample"))
 vrable_SW_results <- left_join(vrable_SW_results, sample_dates,
                                by = c("set" = "sample"))
-
+# Single out power-law houses
 time_pl <- time_results %>%
   group_by(set) %>%
   filter(tail == "pl" & value >= xmin)
@@ -458,6 +455,7 @@ time_SW_pl <- vrable_SW_results %>%
   group_by(set) %>%
   filter(tail == "pl" & value >= xmin)
 
+# Plot cCDF
 fig06_time_tails <- ggplot(filter(time_pl, model == FALSE))+
   aes(x = value, y = ccdf, group = set)+
   geom_point(data = filter(time_results, model == FALSE),
@@ -487,6 +485,7 @@ fig06_time_tails_b <- ggplot(filter(time_SW_pl, model == FALSE))+
 fig06_time_tails <- plot_grid(fig06_time_tails, fig06_time_tails_b,
           labels = "auto", nrow = 1)
 
+# Make boxplots
 fig06_time_box <- ggplot(filter(time_results, model == FALSE))+
   aes(x = value,
       y = dates)+
@@ -513,31 +512,51 @@ fig06_time_box <- plot_grid(fig06_time_box, fig06_time_box_b,
 save(fig06_time_box, file = "Results/fig06_time_box.RData")
 save(fig06_time_tails, file = "Results/fig06_time_tails.RData")
 
-# FROM HERE!
-#tab06_time <- whole.dist()
-# DELETE BELOW
+# Analyse whole distribution and make table(s)
+tab06_time <- whole.dist(x = vrable_samples$house_size,
+                         set = vrable_samples$sample,
+                         culture = "Vr\u00e1ble")
+tab06_time_SW <- whole.dist(x = vrable_SW_samples$house_size,
+                            set = vrable_SW_samples$sample,
+                            culture = "Vr\u00e1ble SW*")
 
-# Test the entire distributions and make table of results
-tab06_wh_quart <- whole.dist(x = my_quarters$house_size,
-                             set = my_quarters$Quarter,
-                             culture = my_quarters$Culture)
-tab06_quart <- filter(quarters_results, model == FALSE) %>%
-  group_by(set, tail, par1, xmin, ntail, Culture) %>%
+tab06_time_tails <- filter(time_results, model == FALSE) %>%
+  group_by(set, dates, tail, par1, xmin, ntail) %>%
   summarise() %>%
   ungroup() %>%
   mutate(Tail = tail, T_Par1 = round(par1, 3),
-         xmin = round(xmin, 1),
-         N_tail = ntail, Settlement = set, .keep = "none")
+         xmin = round(xmin, 1), BCE = dates,
+         N_tail = ntail, Sample = as.factor(set), .keep = "none")
+tab06_time_SW_tails <- filter(vrable_SW_results, model == FALSE) %>%
+  group_by(set, dates, tail, par1, xmin, ntail) %>%
+  summarise() %>%
+  ungroup() %>%
+  mutate(Tail = tail, T_Par1 = round(par1, 3),
+         xmin = round(xmin, 1), BCE = dates,
+         N_tail = ntail, Sample = as.factor(set), .keep = "none")
+tab06_time <- left_join(tab06_time, tab06_time_tails, by = c("Settlement" = "Sample")) %>%
+  select(2:12) %>%
+  mutate(Tail_P = round(N_tail/N, 2)) %>%
+  relocate(BCE, .before = Model) %>%
+  relocate(c(Tail, T_Par1), .after = Par2) %>%
+  relocate(c(Gini, Culture), .after = Tail_P) %>%
+  relocate(xmin, .before = N) %>%
+  rename(Set = Culture) %>%
+  arrange(BCE)
 
-tab06_quart <- left_join(tab06_quart, tab06_wh_quart, by = "Settlement") %>%
-  rename(Quarter = Settlement) %>%
-  mutate(Tail_P = N_tail/N,
-         Quarter = if_else(Culture == "Trypillia",
-                           paste0("Neb. ", Quarter), Quarter)) %>%
-  relocate(Tail_P, .before = Gini) %>%
-  relocate(xmin, .after = T_Par1) %>%
-  relocate(N, .after = xmin) %>%
-  relocate(c(Tail, T_Par1, xmin, N, N_tail), .after = Par2) %>%
-  arrange(Tail, desc(T_Par1), Gini)
+tab06_time_SW <- left_join(tab06_time_SW, tab06_time_SW_tails,
+                           by = c("Settlement" = "Sample")) %>%
+  select(2:12) %>%
+  mutate(Tail_P = round(N_tail/N, 2)) %>%
+  relocate(BCE, .before = Model) %>%
+  relocate(c(Tail, T_Par1), .after = Par2) %>%
+  relocate(c(Gini, Culture), .after = Tail_P) %>%
+  relocate(xmin, .before = N) %>%
+  rename(Set = Culture) %>%
+  arrange(BCE)
 
-save(tab06_quart, file = "Results/tab06_quart.RData")
+tab06_time <- bind_rows(tab06_time, tab06_time_SW)
+
+save(tab06_time, file = "Results/tab06_time.RData")
+
+# END chapter
