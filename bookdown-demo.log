@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.7.26)  29 JUL 2023 21:11
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.7.26)  31 JUL 2023 17:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1261,196 +1261,225 @@ Underfull \vbox (badness 1231) has occurred while \output is active []
 [98]
 File: bookdown-demo_files/figure-latex/06-settle-tails-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/06-settle-tails-1.pdf>
-[99] [100] [101] [102
+[99] [100] [101]
+File: Results/fig06_vrable_pl.pdf Graphic file (type pdf)
+<use Results/fig06_vrable_pl.pdf>
+
+Underfull \vbox (badness 7814) has occurred while \output is active []
+
+[102
 
 
 ]
+File: Results/fig06_maidanetske_pl.pdf Graphic file (type pdf)
+<use Results/fig06_maidanetske_pl.pdf>
+File: Results/fig06_nebelivka_pl.pdf Graphic file (type pdf)
+<use Results/fig06_nebelivka_pl.pdf>
+[103]
+File: Results/fig06_moshuriv_pl.pdf Graphic file (type pdf)
+<use Results/fig06_moshuriv_pl.pdf>
+
+Underfull \vbox (badness 2762) has occurred while \output is active []
+
+[104] [105]
+Underfull \vbox (badness 2846) has occurred while \output is active []
+
+[106]
 File: bookdown-demo_files/figure-latex/06-quart-box-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/06-quart-box-1.pdf>
-[103]
+[107]
 File: bookdown-demo_files/figure-latex/06-quart-tails-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/06-quart-tails-1.pdf>
-[104] [105] [106] [107
+[108] [109]
+File: Results/fig06_quart_map.pdf Graphic file (type pdf)
+<use Results/fig06_quart_map.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[110
 
 
-] [108]
+] [111] [112] [113]
 File: bookdown-demo_files/figure-latex/06-time-box-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/06-time-box-1.pdf>
 
 Underfull \vbox (badness 1189) has occurred while \output is active []
 
-[109]
+[114]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[110]
+[115]
 File: bookdown-demo_files/figure-latex/06-time-tails-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/06-time-tails-1.pdf>
-[111] [112] [113] [114
-
-
-] [115
-
-] [116]
-Chapter 7.
-[117
-
-] [118]
-Chapter 8.
+[116] [117] [118]
+File: Results/fig06_vrable_time.pdf Graphic file (type pdf)
+<use Results/fig06_vrable_time.pdf>
 [119
 
-] [120]
+
+] [120] [121
+
+] [122]
+Chapter 7.
+[123
+
+] [124]
+Chapter 8.
+[125
+
+] [126]
 Chapter 9.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[121
+[127
 
-] [122] [123
+] [128] [129
 
-] [124]
+] [130]
 Chapter 10.
-[125
+[131
 
 ]
 Overfull \hbox (96.28287pt too wide) has occurred while \output is active
-\TU/TimesNewRoman(0)/m/n/12 126 \TU/TimesNewRoman(0)/m/it/12 CHAPTER 10.  DISCUSSION: SOCIAL COMPLEXITY IN LINEAR POTTERY AND TRYPILLIA SETTLEMENTS
+\TU/TimesNewRoman(0)/m/n/12 132 \TU/TimesNewRoman(0)/m/it/12 CHAPTER 10.  DISCUSSION: SOCIAL COMPLEXITY IN LINEAR POTTERY AND TRYPILLIA SETTLEMENTS
  []
 
-[126
+[132
 
 ]
 Chapter 11.
-[127] [128]
+[133] [134]
 Chapter 12.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[129
+[135
 
-] [130]
-Underfull \hbox (badness 1259) in paragraph at lines 1521--1523
+] [136]
+Underfull \hbox (badness 1259) in paragraph at lines 1560--1562
 \TU/TimesNewRoman(0)/m/n/12 from an Archaeological Perspective.” \TU/TimesNewRoman(0)/m/it/12 PLOS ONE \TU/TimesNewRoman(0)/m/n/12 9(3):e91510. doi: []10.1371/jour-
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[131
+[137
 
 ]
-Underfull \hbox (badness 1147) in paragraph at lines 1569--1571
+Underfull \hbox (badness 1147) in paragraph at lines 1608--1610
 \TU/TimesNewRoman(0)/m/n/12 A Maximum Entropy Test.” \TU/TimesNewRoman(0)/m/it/12 Physical Review E \TU/TimesNewRoman(0)/m/n/12 84(2):026104. doi: []10.1103/Phys-
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[132]
-Underfull \hbox (badness 1264) in paragraph at lines 1617--1619
+[138]
+Underfull \hbox (badness 1264) in paragraph at lines 1656--1658
 \TU/TimesNewRoman(0)/m/n/12 2006. “The social context of the emergence, development and abandonment of the
  []
 
 
-Underfull \hbox (badness 2103) in paragraph at lines 1617--1619
+Underfull \hbox (badness 2103) in paragraph at lines 1656--1658
 \TU/TimesNewRoman(0)/m/n/12 Varna cemetery, Bulgaria.” \TU/TimesNewRoman(0)/m/it/12 European journal of archaeology \TU/TimesNewRoman(0)/m/n/12 9(2-3):159183. doi:
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[133]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[134]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[135]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[136]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[137]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[138]
-Overfull \hbox (51.26196pt too wide) in paragraph at lines 1833--1835
-\TU/TimesNewRoman(0)/m/n/12 höyük, Turkey.” \TU/TimesNewRoman(0)/m/it/12 Cambridge Archaeological Journal \TU/TimesNewRoman(0)/m/n/12 28(4):565–90. doi: []10.1017/S0959774318000240[]. 
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
 [139]
-Underfull \hbox (badness 1430) in paragraph at lines 1854--1856
-[]\TU/TimesNewRoman(0)/m/n/12 Li, Jian, Qian Du, and Caixin Sun. 2009. “An Improved Box-Counting Method for
- []
-
-
-Underfull \hbox (badness 2922) in paragraph at lines 1854--1856
-\TU/TimesNewRoman(0)/m/n/12 Image Fractal Dimension Estimation.” \TU/TimesNewRoman(0)/m/it/12 Pattern Recognition \TU/TimesNewRoman(0)/m/n/12 42(11):2460–69. doi:
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [140]
-Overfull \hbox (31.4721pt too wide) in paragraph at lines 1905--1907
-\TU/TimesNewRoman(0)/m/n/12 normal Distributions.” \TU/TimesNewRoman(0)/m/it/12 Internet Mathematics \TU/TimesNewRoman(0)/m/n/12 1(2):226–51. doi: []10.1080/15427951.2004.10129088[]. 
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [141]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [142]
-Underfull \hbox (badness 2142) in paragraph at lines 1971--1973
-[]\TU/TimesNewRoman(0)/m/n/12 Porcic, Marko. 2010. “House Floor Area as a Correlate of Marital Residence Pat-
- []
-
-
-Underfull \hbox (badness 1297) in paragraph at lines 1995--1997
-\TU/TimesNewRoman(0)/m/n/12 in the Grey Wolf Optimizer Algorithm.” \TU/TimesNewRoman(0)/m/it/12 Applied Soft Computing \TU/TimesNewRoman(0)/m/n/12 57:315–28. doi:
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [143]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [144]
-Underfull \hbox (badness 3302) in paragraph at lines 2049--2051
-[]\TU/TimesNewRoman(0)/m/n/12 Sindbæk, Søren M. 2022. “Weak Ties and Strange Attractors: Anomalocivitas and
- []
-
-
-Underfull \hbox (badness 1331) in paragraph at lines 2049--2051
-\TU/TimesNewRoman(0)/m/n/12 the Archaeology of Urban Origins.” \TU/TimesNewRoman(0)/m/it/12 Journal of Urban Archaeology \TU/TimesNewRoman(0)/m/n/12 5:19–32. doi:
- []
-
-
-Underfull \hbox (badness 2261) in paragraph at lines 2058--2060
-[]\TU/TimesNewRoman(0)/m/n/12 Souvatzi, Stella. 2017. “Kinship and Social Archaeology.” \TU/TimesNewRoman(0)/m/it/12 Cross-cultural research
+Overfull \hbox (51.26196pt too wide) in paragraph at lines 1878--1880
+\TU/TimesNewRoman(0)/m/n/12 höyük, Turkey.” \TU/TimesNewRoman(0)/m/it/12 Cambridge Archaeological Journal \TU/TimesNewRoman(0)/m/n/12 28(4):565–90. doi: []10.1017/S0959774318000240[]. 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [145]
+Underfull \hbox (badness 1430) in paragraph at lines 1899--1901
+[]\TU/TimesNewRoman(0)/m/n/12 Li, Jian, Qian Du, and Caixin Sun. 2009. “An Improved Box-Counting Method for
+ []
+
+
+Underfull \hbox (badness 2922) in paragraph at lines 1899--1901
+\TU/TimesNewRoman(0)/m/n/12 Image Fractal Dimension Estimation.” \TU/TimesNewRoman(0)/m/it/12 Pattern Recognition \TU/TimesNewRoman(0)/m/n/12 42(11):2460–69. doi:
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[146] [147] [148
+[146]
+Overfull \hbox (31.4721pt too wide) in paragraph at lines 1950--1952
+\TU/TimesNewRoman(0)/m/n/12 normal Distributions.” \TU/TimesNewRoman(0)/m/it/12 Internet Mathematics \TU/TimesNewRoman(0)/m/n/12 1(2):226–51. doi: []10.1080/15427951.2004.10129088[]. 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[147]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[148]
+Underfull \hbox (badness 2142) in paragraph at lines 2016--2018
+[]\TU/TimesNewRoman(0)/m/n/12 Porcic, Marko. 2010. “House Floor Area as a Correlate of Marital Residence Pat-
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[149]
+Underfull \hbox (badness 1297) in paragraph at lines 2040--2042
+\TU/TimesNewRoman(0)/m/n/12 in the Grey Wolf Optimizer Algorithm.” \TU/TimesNewRoman(0)/m/it/12 Applied Soft Computing \TU/TimesNewRoman(0)/m/n/12 57:315–28. doi:
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[150]
+Underfull \hbox (badness 3302) in paragraph at lines 2094--2096
+[]\TU/TimesNewRoman(0)/m/n/12 Sindbæk, Søren M. 2022. “Weak Ties and Strange Attractors: Anomalocivitas and
+ []
+
+
+Underfull \hbox (badness 1331) in paragraph at lines 2094--2096
+\TU/TimesNewRoman(0)/m/n/12 the Archaeology of Urban Origins.” \TU/TimesNewRoman(0)/m/it/12 Journal of Urban Archaeology \TU/TimesNewRoman(0)/m/n/12 5:19–32. doi:
+ []
+
+
+Underfull \hbox (badness 2261) in paragraph at lines 2103--2105
+[]\TU/TimesNewRoman(0)/m/n/12 Souvatzi, Stella. 2017. “Kinship and Social Archaeology.” \TU/TimesNewRoman(0)/m/it/12 Cross-cultural research
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[151]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[152] [153] [154
 
 ]
 Appendix A.
-[149] [150
+[155] [156
 
 ]
 Appendix B.
-[151] (./bookdown-demo.aux)
+[157] (./bookdown-demo.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-06-30>
@@ -1459,15 +1488,15 @@ L3 programming layer <2023-06-30>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `bookdown-demo.out' has not changed.
-(rerunfilecheck)             Checksum: EB4C805F0721E7D999B0F70C8AFD2E89;15643.
+(rerunfilecheck)             Checksum: B6E9FC0B79C2098D5019002ABDE31FED;15643.
  ) 
 Here is how much of TeX's memory you used:
- 20440 strings out of 477888
- 386131 string characters out of 5821579
- 1935869 words of memory out of 5000000
- 40988 multiletter control sequences out of 15000+600000
+ 20501 strings out of 477888
+ 388169 string characters out of 5821579
+ 1936869 words of memory out of 5000000
+ 41042 multiletter control sequences out of 15000+600000
  567693 words of font info for 131 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  90i,9n,122p,4246b,444s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on bookdown-demo.pdf (151 pages).
+Output written on bookdown-demo.pdf (157 pages).
