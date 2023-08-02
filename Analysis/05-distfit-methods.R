@@ -336,4 +336,15 @@ fig05_multi_ln_box <- plot_grid(fig05_multi_ln_box,
 save(fig05_multi_ln, file = "Results/fig05_multi_ln.RData")
 save(fig05_multi_ln_box, file = "Results/fig05_multi_ln_box.RData")
 
+# Whole samples to check for changes in the original parameters
+
+tab05_multi_ln <- whole.dist(x = pretest3_results$value,
+                             set = pretest3_results$set,
+                             culture = "irrelevant")
+
+tab05_multi_mix <- whole.dist(x = pretest4_results$value,
+                             set = pretest4_results$set,
+                             culture = "irrelevant")
+# Mixing of differently distributed samples gives higher standard deviations
+
 # END CHAPTER
