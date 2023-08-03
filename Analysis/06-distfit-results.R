@@ -1,6 +1,6 @@
 # Analyse house-size data, and export results
 
-# Load custom functions from 05-distfit-methods.R
+# Load custom functions
 source("Analysis/Distfit-functions.R")
 
 # 1 Settlements -----------------------------------------------

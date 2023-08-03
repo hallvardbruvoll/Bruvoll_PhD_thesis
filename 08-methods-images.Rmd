@@ -2,11 +2,11 @@
 
 fdasdf
 
-## Fractal dimension and lacunarity
+## Calculating fractal dimension and lacunarity
 
 -   Box-counting, lit. @mancuso2021, @li2009, @klinkenberg1994
 
--   Gliding-box algorithmsc, @allain1991, @hingee2019, @cheng1997, @plotnick1996
+-   Gliding-box algorithms, @allain1991, @hingee2019, @cheng1997, @plotnick1996
 
 -   Caveats:
 
@@ -14,7 +14,15 @@ fdasdf
 
     -   My summary *L* is not equal to the one used in *FracLac* and thus by @farías-pelayo2017
 
-## Image preparation
+-   Image preparation procedure
+
+## Testing on Euclidean and self-similar layouts
+
+fds
+
+## Testing on density, element count and size distribution
+
+## Summary of procedure and tests
 
 -   Procedure for archaeological samples, same as in article
 

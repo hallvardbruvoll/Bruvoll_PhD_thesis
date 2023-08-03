@@ -1,6 +1,6 @@
 # (PART) Settlement Plans {.unnumbered}
 
-# Village planning in Prehistory {#images-theory}
+# Village planning in prehistory {#images-theory}
 
 ## Settlement layout and social structure
 
@@ -10,9 +10,21 @@ Lit. use @furholt2016, @fraser1968, @ensor2017a, @ensor2013, also check @souvatz
 
 For cities, see @kostof1991
 
+Space syntax, @hillier1984
+
+Visibility Graph Analysis/connectivity: Turner 2001, applied in Buchanan 2020
+
+Viewshed Analysis: applied in Ohlrau 2015?
+
+Materiality of built space??
+
 @artursson2010 (Bronze Age, descriptive/interpretive approach). @cleuziou1999 (book in MAE)
 
 Use the Trypillia volumes. Also @müller-scheeßel2019, @trebsche2010
+
+Access analysis: @fisher2009
+
+Viewshed analysis:
 
 Transition from village to urban (again): @birch2014.
 
