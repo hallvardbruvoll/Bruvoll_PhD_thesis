@@ -1,47 +1,47 @@
-id;Category;Series;filename
-Nebelivka A;Nebelivka;Quarters;Nebelivka A.tif
-Nebelivka B;Nebelivka;Quarters;Nebelivka B.tif
-Nebelivka C;Nebelivka;Quarters;Nebelivka C.tif
-Nebelivka D;Nebelivka;Quarters;Nebelivka D.tif
-Nebelivka E;Nebelivka;Quarters;Nebelivka E.tif
-Nebelivka F;Nebelivka;Quarters;Nebelivka F.tif
-Nebelivka G;Nebelivka;Quarters;Nebelivka G.tif
-Nebelivka H;Nebelivka;Quarters;Nebelivka H.tif
-Nebelivka I;Nebelivka;Quarters;Nebelivka I.tif
-Nebelivka J;Nebelivka;Quarters;Nebelivka J.tif
-Nebelivka K;Nebelivka;Quarters;Nebelivka K.tif
-Nebelivka L;Nebelivka;Quarters;Nebelivka L.tif
-Nebelivka M;Nebelivka;Quarters;Nebelivka M.tif
-Nebelivka N;Nebelivka;Quarters;Nebelivka N.tif
-Vrable N;Vrable;Quarters;Vrable N.tif
-Vrable SE;Vrable;Quarters;Vrable SE.tif
-Vrable SW;Vrable;Quarters;Vrable SW.tif
-Cierne;Linear Pottery;Settlements;Cierne.tif
-Cifare;Linear Pottery;Settlements;Cifare.tif
-Ulany;Linear Pottery;Settlements;Ulany.tif
-Vlkas;Linear Pottery;Settlements;Vlkas.tif
-Vrable;Linear Pottery;Settlements;Vrable.tif
-Maidanetske;Trypillia;Settlements;Maidanetske.tif
-Moshuriv;Trypillia;Settlements;Moshuriv.tif
-Nebelivka;Trypillia;Settlements;Nebelivka.tif
-Talne 3;Trypillia;Settlements;Talne 3.tif
-Vrable_01;Vrable;Time;Vrable_01.tif
-Vrable_02;Vrable;Time;Vrable_02.tif
-Vrable_03;Vrable;Time;Vrable_03.tif
-Vrable_04;Vrable;Time;Vrable_04.tif
-Vrable_05;Vrable;Time;Vrable_05.tif
-Vrable_06;Vrable;Time;Vrable_06.tif
-Vrable_07;Vrable;Time;Vrable_07.tif
-Vrable_08;Vrable;Time;Vrable_08.tif
-Vrable_09;Vrable;Time;Vrable_09.tif
-Vrable_10;Vrable;Time;Vrable_10.tif
-Vrable_11;Vrable;Time;Vrable_11.tif
-Vrable_12;Vrable;Time;Vrable_12.tif
-Vrable_13;Vrable;Time;Vrable_13.tif
-Vrable_14;Vrable;Time;Vrable_14.tif
-Vrable_15;Vrable;Time;Vrable_15.tif
-Vrable_16;Vrable;Time;Vrable_16.tif
-Telince;Linear Pottery;Settlements;Telince.tif
-Horny;Linear Pottery;Settlements;Horny.tif
-Mana;Linear Pottery;Settlements;Mana.tif
-Nevidzany;Linear Pottery;Settlements;Nevidzany.tif
+"id";"Category";"Series";"filename";"Set";"Gini";"N"
+"Nebelivka A";"Nebelivka";"Quarters";"Nebelivka A.tif";"Nebelivka A";0,24;51
+"Nebelivka B";"Nebelivka";"Quarters";"Nebelivka B.tif";"Nebelivka B";0,241;149
+"Nebelivka C";"Nebelivka";"Quarters";"Nebelivka C.tif";"Nebelivka C";0,191;101
+"Nebelivka D";"Nebelivka";"Quarters";"Nebelivka D.tif";"Nebelivka D";0,196;104
+"Nebelivka E";"Nebelivka";"Quarters";"Nebelivka E.tif";"Nebelivka E";0,179;50
+"Nebelivka F";"Nebelivka";"Quarters";"Nebelivka F.tif";"Nebelivka F";0,217;151
+"Nebelivka G";"Nebelivka";"Quarters";"Nebelivka G.tif";"Nebelivka G";0,16;141
+"Nebelivka H";"Nebelivka";"Quarters";"Nebelivka H.tif";"Nebelivka H";0,221;106
+"Nebelivka I";"Nebelivka";"Quarters";"Nebelivka I.tif";"Nebelivka I";0,218;104
+"Nebelivka J";"Nebelivka";"Quarters";"Nebelivka J.tif";"Nebelivka J";0,244;57
+"Nebelivka K";"Nebelivka";"Quarters";"Nebelivka K.tif";"Nebelivka K";0,3;120
+"Nebelivka L";"Nebelivka";"Quarters";"Nebelivka L.tif";"Nebelivka L";0,255;126
+"Nebelivka M";"Nebelivka";"Quarters";"Nebelivka M.tif";"Nebelivka M";0,271;60
+"Nebelivka N";"Nebelivka";"Quarters";"Nebelivka N.tif";"Nebelivka N";0,224;111
+"Vrable N";"Vrable";"Quarters";"Vrable N.tif";"Vráble N";0,208;124
+"Vrable SE";"Vrable";"Quarters";"Vrable SE.tif";"Vráble SE";0,236;89
+"Vrable SW";"Vrable";"Quarters";"Vrable SW.tif";"Vráble SW";0,202;100
+"Cierne";"Linear Pottery";"Settlements";"Cierne.tif";"Čierne";0,211;49
+"Cifare";"Linear Pottery";"Settlements";"Cifare.tif";"Čifare";0,217;41
+"Ulany";"Linear Pottery";"Settlements";"Ulany.tif";"Úľany";0,113;34
+"Vlkas";"Linear Pottery";"Settlements";"Vlkas.tif";"Vlkas";0,221;61
+"Vrable";"Linear Pottery";"Settlements";"Vrable.tif";"Vráble 'VL'";0,221;313
+"Maidanetske";"Trypillia";"Settlements";"Maidanetske.tif";"Maidanetske";0,249;2243
+"Moshuriv";"Trypillia";"Settlements";"Moshuriv.tif";"Moshuriv";0,219;84
+"Nebelivka";"Trypillia";"Settlements";"Nebelivka.tif";"Nebelivka";0,239;1435
+"Talne 3";"Trypillia";"Settlements";"Talne 3.tif";"Talne 3";0,126;19
+"Vrable_01";"Vrable";"Time";"Vrable_01.tif";"Vráble_01";0;1
+"Vrable_02";"Vrable";"Time";"Vrable_02.tif";"Vráble_02";0,114;7
+"Vrable_03";"Vrable";"Time";"Vrable_03.tif";"Vráble_03";0,171;10
+"Vrable_04";"Vrable";"Time";"Vrable_04.tif";"Vráble_04";0,279;12
+"Vrable_05";"Vrable";"Time";"Vrable_05.tif";"Vráble_05";0,258;24
+"Vrable_06";"Vrable";"Time";"Vrable_06.tif";"Vráble_06";0,21;38
+"Vrable_07";"Vrable";"Time";"Vrable_07.tif";"Vráble_07";0,204;58
+"Vrable_08";"Vrable";"Time";"Vrable_08.tif";"Vráble_08";0,228;53
+"Vrable_09";"Vrable";"Time";"Vrable_09.tif";"Vráble_09";0,225;64
+"Vrable_10";"Vrable";"Time";"Vrable_10.tif";"Vráble_10";0,215;49
+"Vrable_11";"Vrable";"Time";"Vrable_11.tif";"Vráble_11";0,206;36
+"Vrable_12";"Vrable";"Time";"Vrable_12.tif";"Vráble_12";0,197;22
+"Vrable_13";"Vrable";"Time";"Vrable_13.tif";"Vráble_13";0,201;24
+"Vrable_14";"Vrable";"Time";"Vrable_14.tif";"Vráble_14";0,18;7
+"Vrable_15";"Vrable";"Time";"Vrable_15.tif";"Vráble_15";0,16;4
+"Vrable_16";"Vrable";"Time";"Vrable_16.tif";"Vráble_16";0,086;3
+"Telince";"Linear Pottery";"Settlements";"Telince.tif";"Telince";0,228;13
+"Horny";"Linear Pottery";"Settlements";"Horny.tif";"Horný";0,253;11
+"Mana";"Linear Pottery";"Settlements";"Mana.tif";"Maňa";0,224;29
+"Nevidzany";"Linear Pottery";"Settlements";"Nevidzany.tif";"Nevidzany";0,24;22

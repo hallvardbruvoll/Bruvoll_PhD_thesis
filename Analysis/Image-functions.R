@@ -6,6 +6,10 @@ library(fractD)
 library(terra)
 library(envi)
 library(lacunaritycovariance)
+library(scales)
+library(latex2exp) # for tex expressions inside ggplot code
+library(cowplot) # for combining multiplre plots
+library(kableExtra)
 library(tidyverse)
 
 # Loop function for lacunarity of images
