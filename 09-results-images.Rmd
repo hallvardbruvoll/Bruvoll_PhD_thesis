@@ -1,15 +1,67 @@
 # Results: Image analysis {#images-results}
 
-## Synthetic settlement plans
-
-Relationship between image density (built-up area) and fractal dimension, evaluated in @thomas2007, where they show that these two parameters, under certain conditions (constant observation window, prefactor values close to 1), are exponentially correlated, which is also what I found in my article. They show that observation window size and shape, as well as centroid placement, have little influence on *D*, while they have more influence on density when the pattern is not homogeneous. They do show, however, that images with the same density may have quite much variation in *D*, which is reflected in the layouts. Judging from their examples, more clustered layouts give higher *D* values, while more dispersed or dusty layouts give lower *D*, when density is constant. I ignore the use of prefactor values. According to @thomas2007, density is a crude measure of the overall intensity of the pattern, while fractal dimension is characterises the morphological structure, though it is not directly descriptive.
-
 ## Settlements
+
+fasdfadfs
+
+(ref:09-all) Maybe I'll move this one to the previous chapter?
+
+```{r 09-all, fig.cap="(ref:09-all)"}
+load("Results/fig09_all.RData")
+fig09_all
+```
+
+fdsasdf
+
+(ref:09-settle-points) fdsasfasd
+
+```{r 09-settle-points, fig.cap="(ref:09-settle-points)"}
+load("Results/fig09_settle_points.RData")
+fig09_settle_points
+```
+
+fdsasdfasdf
+
+![caption here](Results/fig09_settlements.pdf){#fig09-settlements}
+
+jklølkjølkjgkh
 
 ## Quarters/neighbourhoods
 
+fdasdfasdf
+
+(ref:09-quart-points) fdsasdfad
+
+```{r 09-quart-points, fig.cap="(ref:09-quart-points)"}
+load("Results/fig09_quart_points.RData")
+fig09_quart_points
+```
+
+fdasdfasd
+
+![caption yuhuuu](Results/fig09_quarters.pdf){#fig09-quarters}
+
+fdsasdfasdfghfghdfghf
+
 ## Temporal samples (Vráble)
 
+fadsfasdf
+
+(ref:09-time-points) fdsasdfasdfsdf
+
+```{r 09-time-points, fig.cap="(ref:09-time-points)"}
+load("Results/fig09_time_points.RData")
+fig09_time_points
+```
+
+fdsasdsfdghs
+
+![fdghfghrt](Results/fig09_time.pdf){#09-time}
+
+fsfghertyrty
+
 ## Summary of findings
+
+adfadfasdfa
 
 END Chapter

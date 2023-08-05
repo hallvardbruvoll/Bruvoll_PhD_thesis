@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.7.26)  2 AUG 2023 16:49
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.7.26)  5 AUG 2023 16:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1345,157 +1345,172 @@ Chapter 8.
 
 ] [134]
 Chapter 9.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
+File: bookdown-demo_files/figure-latex/09-all-1.pdf Graphic file (type pdf)
+<use bookdown-demo_files/figure-latex/09-all-1.pdf>
+File: bookdown-demo_files/figure-latex/09-settle-points-1.pdf Graphic file (type pdf)
+<use bookdown-demo_files/figure-latex/09-settle-points-1.pdf>
 [135
 
-] [136] [137
+]
+File: Results/fig09_settlements.pdf Graphic file (type pdf)
+<use Results/fig09_settlements.pdf>
+File: bookdown-demo_files/figure-latex/09-quart-points-1.pdf Graphic file (type pdf)
+<use bookdown-demo_files/figure-latex/09-quart-points-1.pdf>
+File: Results/fig09_quarters.pdf Graphic file (type pdf)
+<use Results/fig09_quarters.pdf>
+File: bookdown-demo_files/figure-latex/09-time-points-1.pdf Graphic file (type pdf)
+<use bookdown-demo_files/figure-latex/09-time-points-1.pdf>
+File: Results/fig09_time.pdf Graphic file (type pdf)
+<use Results/fig09_time.pdf>
+[136] [137] [138] [139] [140] [141] [142
 
-] [138]
+] [143] [144]
 Chapter 10.
-[139
+[145
 
 ]
 Overfull \hbox (96.28287pt too wide) has occurred while \output is active
-\TU/TimesNewRoman(0)/m/n/12 140 \TU/TimesNewRoman(0)/m/it/12 CHAPTER 10.  DISCUSSION: SOCIAL COMPLEXITY IN LINEAR POTTERY AND TRYPILLIA SETTLEMENTS
+\TU/TimesNewRoman(0)/m/n/12 146 \TU/TimesNewRoman(0)/m/it/12 CHAPTER 10.  DISCUSSION: SOCIAL COMPLEXITY IN LINEAR POTTERY AND TRYPILLIA SETTLEMENTS
  []
 
-[140
+[146
 
 ]
 Chapter 11.
-[141] [142]
+[147] [148]
 Chapter 12.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[143
+[149
 
-] [144]
-Underfull \hbox (badness 1259) in paragraph at lines 1573--1575
+] [150]
+Underfull \hbox (badness 1259) in paragraph at lines 1685--1687
 \TU/TimesNewRoman(0)/m/n/12 from an Archaeological Perspective.” \TU/TimesNewRoman(0)/m/it/12 PLOS ONE \TU/TimesNewRoman(0)/m/n/12 9(3):e91510. doi: []10.1371/jour-
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[145
+[151
 
 ]
-Underfull \hbox (badness 1147) in paragraph at lines 1621--1623
+Underfull \hbox (badness 1147) in paragraph at lines 1733--1735
 \TU/TimesNewRoman(0)/m/n/12 A Maximum Entropy Test.” \TU/TimesNewRoman(0)/m/it/12 Physical Review E \TU/TimesNewRoman(0)/m/n/12 84(2):026104. doi: []10.1103/Phys-
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[146]
-Underfull \hbox (badness 1264) in paragraph at lines 1669--1671
+[152]
+Underfull \hbox (badness 1264) in paragraph at lines 1781--1783
 \TU/TimesNewRoman(0)/m/n/12 2006. “The social context of the emergence, development and abandonment of the
  []
 
 
-Underfull \hbox (badness 2103) in paragraph at lines 1669--1671
+Underfull \hbox (badness 2103) in paragraph at lines 1781--1783
 \TU/TimesNewRoman(0)/m/n/12 Varna cemetery, Bulgaria.” \TU/TimesNewRoman(0)/m/it/12 European journal of archaeology \TU/TimesNewRoman(0)/m/n/12 9(2-3):159183. doi:
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[147]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[148]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[149]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[150]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[151]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[152]
-Overfull \hbox (51.26196pt too wide) in paragraph at lines 1891--1893
-\TU/TimesNewRoman(0)/m/n/12 höyük, Turkey.” \TU/TimesNewRoman(0)/m/it/12 Cambridge Archaeological Journal \TU/TimesNewRoman(0)/m/n/12 28(4):565–90. doi: []10.1017/S0959774318000240[]. 
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
 [153]
-Underfull \hbox (badness 1430) in paragraph at lines 1912--1914
-[]\TU/TimesNewRoman(0)/m/n/12 Li, Jian, Qian Du, and Caixin Sun. 2009. “An Improved Box-Counting Method for
- []
-
-
-Underfull \hbox (badness 2922) in paragraph at lines 1912--1914
-\TU/TimesNewRoman(0)/m/n/12 Image Fractal Dimension Estimation.” \TU/TimesNewRoman(0)/m/it/12 Pattern Recognition \TU/TimesNewRoman(0)/m/n/12 42(11):2460–69. doi:
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [154]
-Overfull \hbox (31.4721pt too wide) in paragraph at lines 1963--1965
-\TU/TimesNewRoman(0)/m/n/12 normal Distributions.” \TU/TimesNewRoman(0)/m/it/12 Internet Mathematics \TU/TimesNewRoman(0)/m/n/12 1(2):226–51. doi: []10.1080/15427951.2004.10129088[]. 
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [155]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [156]
-Underfull \hbox (badness 2142) in paragraph at lines 2029--2031
-[]\TU/TimesNewRoman(0)/m/n/12 Porcic, Marko. 2010. “House Floor Area as a Correlate of Marital Residence Pat-
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [157]
-Underfull \hbox (badness 1297) in paragraph at lines 2053--2055
-\TU/TimesNewRoman(0)/m/n/12 in the Grey Wolf Optimizer Algorithm.” \TU/TimesNewRoman(0)/m/it/12 Applied Soft Computing \TU/TimesNewRoman(0)/m/n/12 57:315–28. doi:
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [158]
-Underfull \hbox (badness 3302) in paragraph at lines 2107--2109
-[]\TU/TimesNewRoman(0)/m/n/12 Sindbæk, Søren M. 2022. “Weak Ties and Strange Attractors: Anomalocivitas and
- []
-
-
-Underfull \hbox (badness 1331) in paragraph at lines 2107--2109
-\TU/TimesNewRoman(0)/m/n/12 the Archaeology of Urban Origins.” \TU/TimesNewRoman(0)/m/it/12 Journal of Urban Archaeology \TU/TimesNewRoman(0)/m/n/12 5:19–32. doi:
- []
-
-
-Underfull \hbox (badness 2261) in paragraph at lines 2116--2118
-[]\TU/TimesNewRoman(0)/m/n/12 Souvatzi, Stella. 2017. “Kinship and Social Archaeology.” \TU/TimesNewRoman(0)/m/it/12 Cross-cultural research
+Overfull \hbox (51.26196pt too wide) in paragraph at lines 2009--2011
+\TU/TimesNewRoman(0)/m/n/12 höyük, Turkey.” \TU/TimesNewRoman(0)/m/it/12 Cambridge Archaeological Journal \TU/TimesNewRoman(0)/m/n/12 28(4):565–90. doi: []10.1017/S0959774318000240[]. 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [159]
+Underfull \hbox (badness 1430) in paragraph at lines 2030--2032
+[]\TU/TimesNewRoman(0)/m/n/12 Li, Jian, Qian Du, and Caixin Sun. 2009. “An Improved Box-Counting Method for
+ []
+
+
+Underfull \hbox (badness 2922) in paragraph at lines 2030--2032
+\TU/TimesNewRoman(0)/m/n/12 Image Fractal Dimension Estimation.” \TU/TimesNewRoman(0)/m/it/12 Pattern Recognition \TU/TimesNewRoman(0)/m/n/12 42(11):2460–69. doi:
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[160] [161] [162
+[160]
+Overfull \hbox (31.4721pt too wide) in paragraph at lines 2081--2083
+\TU/TimesNewRoman(0)/m/n/12 normal Distributions.” \TU/TimesNewRoman(0)/m/it/12 Internet Mathematics \TU/TimesNewRoman(0)/m/n/12 1(2):226–51. doi: []10.1080/15427951.2004.10129088[]. 
+ []
 
-]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[161]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[162]
+Underfull \hbox (badness 2142) in paragraph at lines 2147--2149
+[]\TU/TimesNewRoman(0)/m/n/12 Porcic, Marko. 2010. “House Floor Area as a Correlate of Marital Residence Pat-
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[163]
+Underfull \hbox (badness 1297) in paragraph at lines 2171--2173
+\TU/TimesNewRoman(0)/m/n/12 in the Grey Wolf Optimizer Algorithm.” \TU/TimesNewRoman(0)/m/it/12 Applied Soft Computing \TU/TimesNewRoman(0)/m/n/12 57:315–28. doi:
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[164]
+Underfull \hbox (badness 3302) in paragraph at lines 2225--2227
+[]\TU/TimesNewRoman(0)/m/n/12 Sindbæk, Søren M. 2022. “Weak Ties and Strange Attractors: Anomalocivitas and
+ []
+
+
+Underfull \hbox (badness 1331) in paragraph at lines 2225--2227
+\TU/TimesNewRoman(0)/m/n/12 the Archaeology of Urban Origins.” \TU/TimesNewRoman(0)/m/it/12 Journal of Urban Archaeology \TU/TimesNewRoman(0)/m/n/12 5:19–32. doi:
+ []
+
+
+Underfull \hbox (badness 2261) in paragraph at lines 2234--2236
+[]\TU/TimesNewRoman(0)/m/n/12 Souvatzi, Stella. 2017. “Kinship and Social Archaeology.” \TU/TimesNewRoman(0)/m/it/12 Cross-cultural research
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[165]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[166]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[167] [168]
 Appendix A.
-[163] [164
+[169
+
+] [170
 
 ]
 Appendix B.
-[165] (./bookdown-demo.aux)
+[171] (./bookdown-demo.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-06-30>
@@ -1504,15 +1519,15 @@ L3 programming layer <2023-06-30>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `bookdown-demo.out' has not changed.
-(rerunfilecheck)             Checksum: 54A58E8970002747F67FB2D25D95F1D2;15519.
+(rerunfilecheck)             Checksum: D8F0613CC5344C437C2347A1F91569DC;16158.
  ) 
 Here is how much of TeX's memory you used:
- 20519 strings out of 477888
- 389235 string characters out of 5821579
+ 20599 strings out of 477888
+ 392741 string characters out of 5821579
  1936869 words of memory out of 5000000
- 41060 multiletter control sequences out of 15000+600000
+ 41133 multiletter control sequences out of 15000+600000
  567677 words of font info for 129 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
  90i,9n,122p,4246b,444s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on bookdown-demo.pdf (165 pages).
+Output written on bookdown-demo.pdf (171 pages).

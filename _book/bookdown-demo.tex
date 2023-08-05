@@ -149,7 +149,7 @@
 \makeatother
 \subtitle{with case studies from the Linear Pottery and Trypillia cultures (5.500 - 3.500 cal. BCE)}
 \author{Hallvard Bruvoll \and Department of Archaeology, Conservation and History \and University of Oslo}
-\date{2023-08-02}
+\date{2023-08-05}
 
 \begin{document}
 \maketitle
@@ -1388,7 +1388,7 @@ The houses of the Vráble settlement were furthermore attributed to one or more 
 \part{Settlement Plans}\label{part-settlement-plans}}
 
 \hypertarget{images-theory}{%
-\chapter{Village planning in Prehistory}\label{images-theory}}
+\chapter{Village planning in prehistory}\label{images-theory}}
 
 \hypertarget{settlement-layout-and-social-structure}{%
 \section{Settlement layout and social structure}\label{settlement-layout-and-social-structure}}
@@ -1399,9 +1399,21 @@ Lit. use Furholt (2016), Fraser (1968), Ensor (2017), Ensor (2013), also check S
 
 For cities, see Kostof (1991)
 
+Space syntax, Hillier (1984)
+
+Visibility Graph Analysis/connectivity: Turner 2001, applied in Buchanan 2020
+
+Viewshed Analysis: applied in Ohlrau 2015?
+
+Materiality of built space??
+
 Artursson et al. (2010) (Bronze Age, descriptive/interpretive approach). Cleuziou, Braemer, and Coudart (1999) (book in MAE)
 
 Use the Trypillia volumes. Also Müller-Scheeßel (2019), Trebsche, Müller-Scheeβel, and Reinhold (2010)
+
+Access analysis: Fisher (2009)
+
+Viewshed analysis:
 
 Transition from village to urban (again): Birch (2014).
 
@@ -1444,14 +1456,14 @@ END Chapter
 
 fdasdf
 
-\hypertarget{fractal-dimension-and-lacunarity}{%
-\section{Fractal dimension and lacunarity}\label{fractal-dimension-and-lacunarity}}
+\hypertarget{calculating-fractal-dimension-and-lacunarity}{%
+\section{Calculating fractal dimension and lacunarity}\label{calculating-fractal-dimension-and-lacunarity}}
 
 \begin{itemize}
 \item
   Box-counting, lit. Mancuso (2021), Li, Du, and Sun (2009), Klinkenberg (1994)
 \item
-  Gliding-box algorithmsc, Allain and Cloitre (1991), Hingee et al. (2019), Cheng (1997), Plotnick et al. (1996)
+  Gliding-box algorithms, Allain and Cloitre (1991), Hingee et al. (2019), Cheng (1997), Plotnick et al. (1996)
 \item
   Caveats:
 
@@ -1461,10 +1473,25 @@ fdasdf
   \item
     My summary \emph{L} is not equal to the one used in \emph{FracLac} and thus by Farías-Pelayo (2017)
   \end{itemize}
+\item
+  Image preparation procedure
 \end{itemize}
 
-\hypertarget{image-preparation}{%
-\section{Image preparation}\label{image-preparation}}
+\hypertarget{testing-on-euclidean-and-self-similar-layouts}{%
+\section{Testing on Euclidean and self-similar layouts}\label{testing-on-euclidean-and-self-similar-layouts}}
+
+fds
+
+\hypertarget{testing-on-density-element-count-and-size-distribution}{%
+\section{Testing on density, element count and size distribution}\label{testing-on-density-element-count-and-size-distribution}}
+
+Relationship between image density (built-up area) and fractal dimension, evaluated in Thomas, Frankhauser, and De Keersmaecker (2007), where they show that these two parameters, under certain conditions (constant observation window, prefactor values close to 1), are exponentially correlated, which is also what I found in my article. They show that observation window size and shape, as well as centroid placement, have little influence on \emph{D}, while they have more influence on density when the pattern is not homogeneous. They do show, however, that images with the same density may have quite much variation in \emph{D}, which is reflected in the layouts. Judging from their examples, more clustered layouts give higher \emph{D} values, while more dispersed or dusty layouts give lower \emph{D}, when density is constant. I ignore the use of prefactor values. According to Thomas et al. (2007), density is a crude measure of the overall intensity of the pattern, while fractal dimension is characterises the morphological structure, though it is not directly descriptive.
+
+\hypertarget{section}{%
+\section{}\label{section}}
+
+\hypertarget{summary-of-procedure-and-tests}{%
+\section{Summary of procedure and tests}\label{summary-of-procedure-and-tests}}
 
 \begin{itemize}
 \item
@@ -1478,22 +1505,107 @@ END Chapter
 \hypertarget{images-results}{%
 \chapter{Results: Image analysis}\label{images-results}}
 
-\hypertarget{synthetic-settlement-plans}{%
-\section{Synthetic settlement plans}\label{synthetic-settlement-plans}}
-
-Relationship between image density (built-up area) and fractal dimension, evaluated in Thomas, Frankhauser, and De Keersmaecker (2007), where they show that these two parameters, under certain conditions (constant observation window, prefactor values close to 1), are exponentially correlated, which is also what I found in my article. They show that observation window size and shape, as well as centroid placement, have little influence on \emph{D}, while they have more influence on density when the pattern is not homogeneous. They do show, however, that images with the same density may have quite much variation in \emph{D}, which is reflected in the layouts. Judging from their examples, more clustered layouts give higher \emph{D} values, while more dispersed or dusty layouts give lower \emph{D}, when density is constant. I ignore the use of prefactor values. According to Thomas et al. (2007), density is a crude measure of the overall intensity of the pattern, while fractal dimension is characterises the morphological structure, though it is not directly descriptive.
-
 \hypertarget{settlements-1}{%
 \section{Settlements}\label{settlements-1}}
+
+fasdfadfs
+
+
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.85\linewidth]{bookdown-demo_files/figure-latex/09-all-1} 
+
+}
+
+\caption{Maybe I'll move this one to the previous chapter?}\label{fig:09-all}
+\end{figure}
+
+fdsasdf
+
+
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.85\linewidth]{bookdown-demo_files/figure-latex/09-settle-points-1} 
+
+}
+
+\caption{fdsasfasd}\label{fig:09-settle-points}
+\end{figure}
+
+fdsasdfasdf
+
+\begin{figure}
+\hypertarget{fig09-settlements}{%
+\centering
+\includegraphics{Results/fig09_settlements.pdf}
+\caption{caption here}\label{fig09-settlements}
+}
+\end{figure}
+
+jklølkjølkjgkh
 
 \hypertarget{quartersneighbourhoods-1}{%
 \section{Quarters/neighbourhoods}\label{quartersneighbourhoods-1}}
 
+fdasdfasdf
+
+
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.85\linewidth]{bookdown-demo_files/figure-latex/09-quart-points-1} 
+
+}
+
+\caption{fdsasdfad}\label{fig:09-quart-points}
+\end{figure}
+
+fdasdfasd
+
+\begin{figure}
+\hypertarget{fig09-quarters}{%
+\centering
+\includegraphics{Results/fig09_quarters.pdf}
+\caption{caption yuhuuu}\label{fig09-quarters}
+}
+\end{figure}
+
+fdsasdfasdfghfghdfghf
+
 \hypertarget{temporal-samples-vruxe1ble-1}{%
 \section{Temporal samples (Vráble)}\label{temporal-samples-vruxe1ble-1}}
 
+fadsfasdf
+
+
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.85\linewidth]{bookdown-demo_files/figure-latex/09-time-points-1} 
+
+}
+
+\caption{fdsasdfasdfsdf}\label{fig:09-time-points}
+\end{figure}
+
+fdsasdsfdghs
+
+\begin{figure}
+\hypertarget{09-time}{%
+\centering
+\includegraphics{Results/fig09_time.pdf}
+\caption{fdghfghrt}\label{09-time}
+}
+\end{figure}
+
+fsfghertyrty
+
 \hypertarget{summary-of-findings-1}{%
 \section{Summary of findings}\label{summary-of-findings-1}}
+
+adfadfasdfa
 
 END Chapter
 
@@ -1753,6 +1865,9 @@ Falconer, Kenneth, and Kenneth Falconer. 2013. \emph{Fractals: A Very Short Intr
 \leavevmode\vadjust pre{\hypertarget{ref-faruxedas-pelayo2017}{}}%
 Farías-Pelayo, Sabrina. 2017. {``\href{https://DOI:\%2010.5772/67893}{Characterization of Cultural Traits by Means of Fractal Analysis}.''} edited by F. Brambila. IntechOpen.
 
+\leavevmode\vadjust pre{\hypertarget{ref-fisher2009}{}}%
+Fisher, Kevin D. 2009. {``Placing Social Interaction: An Integrative Approach to Analyzing Past Built Environments.''} \emph{Journal of Anthropological Archaeology} 28(4):439--57. doi: \href{https://doi.org/10.1016/j.jaa.2009.09.001}{10.1016/j.jaa.2009.09.001}.
+
 \leavevmode\vadjust pre{\hypertarget{ref-fontijn2013}{}}%
 Fontijn, David, and Joanna Brück. 2013. {``\href{https://doi.org/10.1093/oxfordhb/9780199572861.013.0011}{The {Myth} of the {Chief}: {Prestige Goods}, {Power}, and {Personhood} in the {European Bronze Age}}.''} in \emph{The {Oxford Handbook} of the {European Bronze Age}}, \emph{Oxford {Handbooks} in {Archaeology}}. {Oxford University Press}.
 
@@ -1827,6 +1942,9 @@ Harte, David. 2001. \emph{\href{https://doi.org/10.1201/9781420036008}{Multifrac
 
 \leavevmode\vadjust pre{\hypertarget{ref-haude2019}{}}%
 Haude, Rüdiger, and Thomas Wagner. 2019. \emph{\href{http://www.deutsche-digitale-bibliothek.de/item/7WYRGHTXGAOZOF5JUQ5JQCONFJKLTBIE}{Herrschaftsfreie Institutionen : Texte zur Stabilisierung staatsloser, egalitärer Gesellschaften}}. Heidelberg: Verlag Graswurzelrevolution.
+
+\leavevmode\vadjust pre{\hypertarget{ref-hillier1984}{}}%
+Hillier, Bill. 1984. \emph{The social logic of space}. Cambridge: University Press.
 
 \leavevmode\vadjust pre{\hypertarget{ref-hingee2019}{}}%
 Hingee, Kassel, Adrian Baddeley, Peter Caccetta, and Gopalan Nair. 2019. {``Computation of Lacunarity from Covariance of Spatial Binary Maps.''} \emph{Journal of Agricultural, Biological and Environmental Statistics} 24(2):264--88. doi: \href{https://doi.org/10.1007/s13253-019-00351-9}{10.1007/s13253-019-00351-9}.

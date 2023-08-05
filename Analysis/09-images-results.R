@@ -79,7 +79,8 @@ fig09_settlements <- ggplot(filter(D_L_plot, Series == "Settlements"))+
   scale_y_continuous(expand = c(0.2, 0.1))+
   #guides(size = "none")+
   theme_bw()+
-  theme(legend.position = "bottom")
+  theme(panel.background = element_rect(fill = "lightgrey"),
+        panel.grid = element_blank(), legend.position = "bottom")
 
 settle1 <- ggplot(filter(D_L_plot, Series == "Settlements"))+
   aes(x = D, y = L_mean, colour = Category, label = Set)+
@@ -113,35 +114,25 @@ D_L_plot %>%
         gsub("Nebelivka", "Neb.", Set), Set)) %>%
   select(label)
 
-# Quarters/neighbourhoods, same
-# Make label placement a bit nicer here:
-fig09_settlements <- ggplot(filter(D_L_plot, Series == "Quarters") %>%
-         mutate(label = if_else(Category == "Nebelivka",
-                                gsub("Nebelivka", "Neb.", Set), Set)))+
-  aes(x = D, y = L_mean, label = label, colour = Category, )+
+# Quarters/neighbourhoods, same, with images first
+quarters_data <- filter(D_L_plot, Series == "Quarters") %>%
+  mutate(label = if_else(Category == "Nebelivka",
+                         gsub("Nebelivka", "Neb.", Set), Set))
+fig09_quarters <- ggplot(quarters_data)+
+  aes(x = D, y = L_mean, label = label, colour = Category)+
   geom_point()+
   geom_image(aes(image = plan_image, size = I(img_size), colour = NULL))+
-  geom_text(nudge_x = 0.01, nudge_y = 0.4)+
-  # geom_text(data = filter(D_L_plot, id %in% c("Nebelivka", "Maidanetske")),
-  #           nudge_x = 0.07, nudge_y = 3, show.legend = FALSE)+
-  # geom_text(data = filter(D_L_plot, id %in% c("Cifare", "Vlkas",
-  #                                             "Moshuriv", "Horny")),
-  #           nudge_x = 0.02, nudge_y = -1, show.legend = FALSE)+
-  # geom_text(data = filter(D_L_plot, id %in% c("Nevidzany", "Cierne")),
-  #           nudge_x = 0.03, nudge_y = 1, show.legend = FALSE)+
-  # geom_text(data = filter(D_L_plot, id == "Talne 3"),
-  #           nudge_x = 0.04, show.legend = FALSE)+
-  # geom_text(data = filter(D_L_plot, id %in% c("Mana", "Ulany", "Vrable")),
-  #           nudge_x = -0.02, nudge_y = 1, show.legend = FALSE)+
-  # geom_text(data = filter(D_L_plot, id == "Telince"),
-  #           nudge_x = -0.03, show.legend = FALSE)+
-  #ggrepel::geom_text_repel(aes(colour = Category), show.legend = FALSE)+
+  geom_text(data = filter(quarters_data, str_starts(label, "N")),
+           nudge_x = 0.014, nudge_y = 0, show.legend = FALSE)+
+  geom_text(data = filter(quarters_data, str_starts(label, "V")),
+            nudge_x = 0, nudge_y = -0.4, show.legend = FALSE)+
   scale_x_continuous(expand = c(0.01, 0.02))+
   scale_y_continuous(expand = c(0.1, 0.1))+
   theme_bw()+
-  theme(legend.position = "none")
+  theme(panel.background = element_rect(fill = "lightgrey"),
+        panel.grid = element_blank(), legend.position = "none")
 
-
+  # And with points
 quart1 <- ggplot(filter(D_L_plot, Series == "Quarters"))+
   aes(x = D, y = L_mean, colour = Category,
       label = gsub("Nebelivka", "Neb.", Set))+
@@ -161,6 +152,7 @@ quart2 <- ggplot(filter(D_L_plot, Series == "Quarters"))+
   theme_bw()+
   scale_x_log10()+
   scale_y_continuous(trans = c("log10", "reverse"))+
+  labs(y = "Density")+
   theme(legend.position = "none")
 
 quart_legend <- get_legend(quart1)
@@ -171,3 +163,64 @@ fig09_quart_points <- plot_grid(
   quart_legend, ncol = 1, rel_heights = c(2, 0.1))
 
 # Vráble time samples
+load("Data/time_samples.RData")
+time_data <- filter(D_L_plot, Series == "Time") %>%
+  mutate(sample = as.numeric(gsub("Vrable_", "", id)),
+         img_size = img_size*3.5) %>%
+  left_join(., time_samples, by = "sample")
+time_selection <- time_data %>%
+  slice(c(3,5,9,14))
+
+fig09_time <- ggplot(time_selection)+
+  aes(x = D, y = L_mean, label = dates)+
+  geom_image(aes(image = plan_image, size = I(img_size)))+
+  geom_text(data = slice(time_selection, 1),
+            nudge_x = 0.04, show.legend = FALSE)+
+  geom_text(data = slice(time_selection, 2),
+            nudge_x = 0.02, nudge_y = 50, show.legend = FALSE)+
+  geom_text(data = slice(time_selection, 3),
+            nudge_x = 0.02, nudge_y = 70, show.legend = FALSE)+
+  geom_text(data = slice(time_selection, 4),
+            nudge_x = -0.03, show.legend = FALSE)+
+  scale_x_continuous(expand = c(0.15, 0))+
+  scale_y_continuous(expand = c(0.4, 0.3))+
+  theme_bw()+
+  theme(panel.background = element_rect(fill = "lightgrey"),
+        panel.grid = element_blank())
+
+time1 <- ggplot(filter(time_data, id != "Vrable_01"))+
+  aes(x = D, y = L_mean, label = dates)+
+  geom_point(aes(size = N))+
+  geom_path()+
+  ggrepel::geom_text_repel(show.legend = FALSE)+
+  scale_size_area(max_size = 4)+
+  theme_bw()+
+  theme(legend.position = "bottom")
+
+time2 <- ggplot(filter(time_data, id != "Vrable_01"))+
+  aes(x = N, y = density, label = dates)+
+  geom_point(aes(size = N))+
+  geom_path()+
+  ggrepel::geom_text_repel(show.legend = FALSE)+
+  scale_size_area(max_size = 4)+
+  theme_bw()+
+  scale_x_log10()+
+  scale_y_continuous(trans = c("log10", "reverse"))+
+  labs(y = "Density")+
+  theme(legend.position = "none")
+
+time_legend <- get_legend(time1)
+
+fig09_time_points <- plot_grid(
+  plot_grid(time1+theme(legend.position = "none"),
+            time2, nrow = 1, labels = "auto"),
+  time_legend, ncol = 1, rel_heights = c(2, 0.1))
+
+# Save plots
+save(fig09_all, file = "Results/fig09_all.RData")
+ggsave("Results/fig09_settlements.pdf", plot = fig09_settlements) #pdf
+save(fig09_settle_points, file = "Results/fig09_settle_points.RData")
+ggsave("Results/fig09_quarters.pdf", plot = fig09_quarters) #pdf
+save(fig09_quart_points, file = "Results/fig09_quart_points.RData")
+ggsave("Results/fig09_time.pdf", plot = fig09_time) #pdf
+save(fig09_time_points, file = "Results/fig09_time_points.RData")

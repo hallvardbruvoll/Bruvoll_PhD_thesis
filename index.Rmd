@@ -23,8 +23,8 @@ output:
 # pandoc_args: "--csl" this doesn't change anything
 documentclass: book
 bibliography: [book.bib]
-#biblio-style: apalike
-csl: asa.csl
+biblio-style: apalike
+csl: apa.csl
 github-repo: hallvardbruvoll/Hallvard_Thesis_2
 description: "This is from 'description' in the YAML"
 geometry: "left=2.9cm, right=2.5cm, top=2.5cm, bottom=2.5cm"
@@ -41,7 +41,7 @@ toc-depth: 2
 
 ```{r setup, include=FALSE}
 # Set defaults for code chunks: code is not printed, figure size and alignment
-knitr::opts_chunk$set(echo = FALSE, out.width='85%', fig.asp=.75, fig.align='center', dev = "cairo_pdf")
+knitr::opts_chunk$set(echo = FALSE, out.width='90%', fig.asp=.75, fig.align='center', dev = "cairo_pdf")
 ```
 
 Thanks to everyone.
