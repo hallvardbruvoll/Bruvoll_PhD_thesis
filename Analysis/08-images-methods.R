@@ -31,7 +31,8 @@ for (i in 2:(iterations+1)) {
 for (i in 2:(iterations+1)) {
   unit_length <- (10/i)/2
   one_plot <- tibble(x = rep(seq(0, 9.99999, by = 10/i)+(unit_length/2), i),
-                     y = rep(seq(0, 9.99999, by = 10/i)+(unit_length/2), each = i),
+                     y = rep(seq(0, 9.99999, by = 10/i)+(unit_length/2),
+                             each = i),
                      height = unit_length, width = unit_length)
   plot_name <- paste0("N_fix_plot_", i-1)
   limits <- c(0,10)
@@ -47,8 +48,9 @@ for (i in 2:(iterations+1)) {
 }
 
 # Variable density, constant N, size distribution and layout
-  # Keep sequence to steps of 0.05 (pixel size or 0.5m)
-unit_length <- seq(0.05, 1, length.out = iterations)
+  # Images were not rendered entirely binary here no matter what
+  # Also, smallest length (0.05) gave no output
+unit_length <- seq(0.1, 1, length.out = iterations)
 limits <- c(0.5,9.5)
 for (i in 1:iterations) {
   one_plot <- tibble(x = rep(1:9, 9),
@@ -58,13 +60,13 @@ for (i in 1:iterations) {
   plot_name <- paste0("dens_plot_", i)
 
   N_plots[[plot_name]] <- ggplot(one_plot)+
-    aes(x, y, width = width, height = height)+
-    geom_tile(fill = "black", colour = NA)+
-    theme_void()+
-    scale_x_continuous(limits = limits, expand = c(0,0))+
-    scale_y_continuous(limits = limits, expand = c(0,0))+
-    theme(plot.background = element_rect(fill = "white", colour = NA))+
-    coord_fixed()
+  aes(x, y, width = width, height = height)+
+  geom_tile(fill = "black", colour = NA)+
+  theme_void()+
+  scale_x_continuous(limits = limits, expand = c(0,0))+
+  scale_y_continuous(limits = limits, expand = c(0,0))+
+  theme(plot.background = element_rect(fill = "white", colour = NA))+
+  coord_fixed()
 }
 
 # Variable size distribution, constant N, density and layout
@@ -197,12 +199,13 @@ D_L_tests <- frac.lac(frac_path = "Data/Frac_test",
                                lac_path = "Data/Lac_test")
 
 save(D_L_tests, file = "Results/D_L_tests.RData")
+save(N_plots, file = "Data/N_plots.RData")
 
-# test <- test$D_L_plot %>%
+# test <- D_L_tests$D_L_plot
 #   mutate(label = gsub("N_plot_", "", id))
 # ggplot(test)+
-#   aes(D, L, label = label)+
-#   geom_point()+
+#   aes(D, L_mean)+
+#   geom_point()
 #   ggrepel::geom_text_repel()
 #
 # test

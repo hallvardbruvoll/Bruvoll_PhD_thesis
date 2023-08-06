@@ -39,7 +39,10 @@ frac.lac <- function(frac_path, lac_path,
     #Convert to binary if needed (concerns the synthetic plans only)
     if (max(lac_raster[]) > 1) {
       lac_raster[] <- if_else(lac_raster[] > max(lac_raster[])/2, 0, 1)
-      }
+    }
+    if (max(lac_raster[]) == 0) { #For the special case of the entirely
+      lac_raster[] <- 1           # black image
+    }
     lac_im <- envi:::as.im.SpatRaster(lac_raster)
     #Analyse
     lac_gbl <- gbl(lac_im, boxwidths = boxwidths, estimators = "GBLcc.pickaH")
