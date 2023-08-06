@@ -2,25 +2,6 @@
 
 # Load functions and libraries
 source("Analysis/Image-functions.R")
-library(imager)
-
-# Function for retrieving plot width and height for saving
-# Output is in px (pixels) of 0.5m size
-# (hence the *20 - sizes and distances in the plot are in 10 meter units,
-# so a "house" of size 0.5^2 is 25m^2)
-# This is to ensure that these images are comparable to the empirical ones
-# in the next chapter, in terms of image resolution
-extract.plot.size <- function(plot.input) {
-  plot_build <- ggplot_build(plot.input)
-  min.x <- plot_build$layout$panel_params[[1]]$x.range[1]
-  max.x <- plot_build$layout$panel_params[[1]]$x.range[2]
-  w <- round((max.x-min.x)*20, 0)
-  min.y <- plot_build$layout$panel_params[[1]]$y.range[1]
-  max.y <- plot_build$layout$panel_params[[1]]$y.range[2]
-  h <- round((max.y-min.y)*20, 0)
-  output <- tibble(width = w, height = h)
-  return(output)
-}
 
 # Test plots --------------------------------------------------------------
 
@@ -46,7 +27,7 @@ for (i in 2:(iterations+1)) {
     coord_fixed()
 }
 
-  # Second by varying the size of houses (single image size)
+# Second by varying the size of houses (single image size)
 for (i in 2:(iterations+1)) {
   unit_length <- (10/i)/2
   one_plot <- tibble(x = rep(seq(0, 9.99999, by = 10/i)+(unit_length/2), i),
@@ -115,57 +96,76 @@ for (i in 1:iterations) {
 }
 
 # Variable layout, constant N, density and size distribution
-limits <- c(0.5, 8.5)
-one_plot <- tibble(x = rep(1:8, 8),
-                   y = rep(1:8, each = 8),
-                   height = 0.5, width = 0.5)
-ggplot(one_plot)+
-  aes(x, y, width = width, height = height)+
-  geom_tile(fill = "black", colour = NA)+
-  scale_x_continuous(limits = limits, expand = c(0,0))+
-  scale_y_continuous(limits = limits, expand = c(0,0))+
-  theme_bw()+
-  coord_fixed()
+  # this one is very home made..
+n <- 8
+space_fac <- seq(0.01,0.25, length.out = 20)
+limits <- c(-0.5, 8.5)
+#loop for each plot
+for (i in 1:length(space_fac)) {
+  plot_name <- paste0("clust_", i)
+  space1 <- n*space_fac[i]
+  rest1 <- (n-space1)/2
+  space2 <- rest1*space_fac[i]
+  rest2 <- (rest1-space2)/2
+  point <- rest2/4
 
-N_plots$distr_plot_20+theme_bw()
-# DELETE
+  one_pair <- c(point, point*3)
+  two_pairs <- c(one_pair, (rest1-one_pair))
+  one_row <- c(two_pairs, n-two_pairs)
+  one_plot <- tibble(x = rep(one_row, n),
+                 y = rep(one_row, each = n)) %>%
+    mutate(x = round(x*2, 1)/2,
+           y = round(y*2, 1)/2)
 
-# Sierpinski carpet -------------------------------------------------------
-
-init1 <- 1/2
-init2 <- 1/3
-number_of_iterations <- 2
-iter <- tibble(n = 1:number_of_iterations,
-               gen = 3^n)
-
-
-Sierp <- tibble(x = init1, y = x, w = init2, h = w)
-
-for (j in 1:nrow(iter)) {
-  new_x <- seq(init1/iter$gen[j], 1, by = init1/iter$gen[j]*2)
-  for (i in 1:length(new_x)) {
-    one_row <- tibble(x = new_x, y = new_x[i], w = init2/iter$gen[j], h = w)
-    Sierp <- bind_rows(Sierp, one_row)
-  }
+  N_plots[[plot_name]] <- ggplot(one_plot)+
+    aes(x, y, height = 0.5, width = 0.5)+
+    geom_tile(fill = "black", colour = NA)+
+    theme_void()+
+    scale_x_continuous(limits = limits, expand = c(0,0))+
+    scale_y_continuous(limits = limits, expand = c(0,0))+
+    theme(plot.background = element_rect(fill = "white", colour = NA))+
+    coord_fixed()
 }
 
+N_plots$clust_20+theme_bw()
 
-ggplot(Sierp)+
-  aes(x = x, y = y, width = w, height = h)+
-  geom_tile(aes(width = 1), fill = "white")+
-  geom_tile(aes(height = 1), fill = "white")+
-  scale_x_continuous(limits = c(0,1), expand=c(0,0)) +
-  scale_y_continuous(limits = c(0,1), expand=c(0,0)) +
-  theme_void()+
-  coord_fixed()+
-  theme(plot.background = element_rect(fill = "black", color = NA))
+# Grid with random noise
+grid <- tibble(x = rep(1:9, 9)*2,
+               y = rep(1:9, each = 9)*2,
+               plot = 1)
+previous <- grid
+step_length <- 0.13
+for (i in 2:iterations) {
+  one_step <- tibble()
+  for (j in 1:nrow(previous)) {
+    rw_dir <- randomDir(center = c(previous$x[j], previous$y[j]),
+                        step.length = step_length)
+    one_step <- bind_rows(one_step, rw_dir)
+  }
+  one_step <- one_step %>%
+    mutate(plot = i)
+  grid <- bind_rows(grid, one_step)
+  previous <- one_step
+}
+  # Again round to nearest 0.05 to keep the images binary when saving
+grid$x <- round(grid$x*2, 1)/2
+grid$y <- round(grid$y*2, 1)/2
 
+  # Store each one
+limits <- c(0,20)
+for (i in 1:iterations) {
+  plot_name <- paste0("noise_", i)
+  N_plots[[plot_name]] <- ggplot(filter(grid, plot == i))+
+    aes(x, y, width = 0.5, height = 0.5)+
+    geom_tile(fill = "black", colour = NA)+
+    theme_void()+
+    scale_x_continuous(limits = limits, expand = c(0,0))+
+    scale_y_continuous(limits = limits, expand = c(0,0))+
+    theme(plot.background = element_rect(fill = "white", colour = NA))+
+    coord_fixed()
+}
 
-
-
-# STOP DELETE
-
-  #save plots
+#save plots
 for (i in 1:length(N_plots)) {
   # Tiff format for lacunarity
   plot <- N_plots[[i]]
@@ -183,17 +183,6 @@ for (i in 1:length(N_plots)) {
          units = "px")
 }
 
-
-test <- frac.lac(frac_path = "Data/Frac_test", lac_path = "Data/Lac_test")
-test <- test$D_L_plot %>%
-  mutate(label = gsub("N_plot_", "", id))
-ggplot(test)+
-  aes(D, L, label = label)+
-  geom_point()+
-  ggrepel::geom_text_repel()
-
-test
-
 #convert jpeg to greyscale when all images are made
 filenames <- list.files(path = "Data/Frac_test/")
 length(filenames)
@@ -203,3 +192,17 @@ for (i in 1:length(filenames)) {
   one_image <- grayscale(one_image, method = "Luma")
   save.image(one_image, file = path, quality = 1)
 }
+
+D_L_tests <- frac.lac(frac_path = "Data/Frac_test",
+                               lac_path = "Data/Lac_test")
+
+save(D_L_tests, file = "Results/D_L_tests.RData")
+
+# test <- test$D_L_plot %>%
+#   mutate(label = gsub("N_plot_", "", id))
+# ggplot(test)+
+#   aes(D, L, label = label)+
+#   geom_point()+
+#   ggrepel::geom_text_repel()
+#
+# test

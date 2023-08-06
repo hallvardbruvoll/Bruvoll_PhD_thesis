@@ -9,7 +9,8 @@ library(lacunaritycovariance)
 library(scales)
 library(latex2exp) # for tex expressions inside ggplot code
 library(cowplot) # for combining multiplre plots
-library(kableExtra)
+library(kableExtra) # for tables
+library(imager) # for converting jpeg images to greyscale
 library(tidyverse)
 
 # Loop function for lacunarity of images
@@ -74,6 +75,46 @@ frac.lac <- function(frac_path, lac_path,
               "box_graph" = boxcounting$raw.dat,
               "D_L_plot" = D_L_plot))
 }
-
 #For calculation of summary stats in FracLac,
 #see https://imagej.nih.gov/ij/plugins/fraclac/FLHelp/lactutorial.htm#barlambda
+
+
+# Function for retrieving plot width and height for saving
+# Output is in px (pixels) of 0.5m size
+# (hence the *20 - sizes and distances in the plot are in 10 meter units,
+# so a "house" of size 0.5^2 is 25m^2)
+# This is to ensure that these images are comparable to the empirical ones
+# in the next chapter, in terms of image resolution
+extract.plot.size <- function(plot.input) {
+  plot_build <- ggplot_build(plot.input)
+  min.x <- plot_build$layout$panel_params[[1]]$x.range[1]
+  max.x <- plot_build$layout$panel_params[[1]]$x.range[2]
+  w <- round((max.x-min.x)*20, 0)
+  min.y <- plot_build$layout$panel_params[[1]]$y.range[1]
+  max.y <- plot_build$layout$panel_params[[1]]$y.range[2]
+  h <- round((max.y-min.y)*20, 0)
+  output <- tibble(width = w, height = h)
+  return(output)
+}
+
+#Circle function modified from https://stackoverflow.com/questions/6862742/
+#draw-a-circle-with-ggplot2
+#For movement direction in random walk
+circleFun <- function(center = c(0,0), radius = 1, npoints = 12){
+  tt <- seq(0,2*pi,length.out = npoints)
+  xx <- center[1] + radius * cos(tt)
+  yy <- center[2] + radius * sin(tt)
+  return(tibble(x = xx, y = yy))
+}
+
+#Function for selecting a random direction (isotropic)
+#By default draws a random point from a circle of 12 points
+# (arbitrary but intuitive)
+randomDir <- function(center = c(0,0), step.length = 1,
+                      npoints = 12){
+  dirs <- circleFun(center = center, radius = step.length,
+                    npoints = npoints)
+  one_dir <- slice_sample(.data = dirs, n = 1)
+  return(one_dir)
+}
+
