@@ -16,17 +16,110 @@ fdasdf
 
 -   Image preparation procedure
 
-## Testing on Euclidean and self-similar layouts
+## Effects from image size and element count
 
-fds
+Refer to Figure \@ref(fig:08-im-size) below.
 
-## Testing on density, element count and size distribution
+(ref:08-im-size) Different image sizes
+
+```{r 08-im-size, fig.cap="(ref:08-im-size)"}
+load("Results/fig08_im_size.RData")
+fig08_im_size
+```
 
 Relationship between image density (built-up area) and fractal dimension, evaluated in @thomas2007, where they show that these two parameters, under certain conditions (constant observation window, prefactor values close to 1), are exponentially correlated, which is also what I found in my article. They show that observation window size and shape, as well as centroid placement, have little influence on *D*, while they have more influence on density when the pattern is not homogeneous. They do show, however, that images with the same density may have quite much variation in *D*, which is reflected in the layouts. Judging from their examples, more clustered layouts give higher *D* values, while more dispersed or dusty layouts give lower *D*, when density is constant. I ignore the use of prefactor values. According to @thomas2007, density is a crude measure of the overall intensity of the pattern, while fractal dimension is characterises the morphological structure, though it is not directly descriptive.
 
-## 
+![Selection of the different tested image sizes](Results/fig08_size_im.pdf){#fig:08-size-im}
+
+Then on element count, Figure \@ref(fig:08-N).
+
+(ref:08-N) Element count (N).
+
+```{r 08-N, fig.cap="(ref:08-N)"}
+load("Results/fig08_N.RData")
+fig08_N
+```
+
+Then to the illustration on Figure \@ref(fig:08-N-im).
+
+(ref:08-N-im)
+
+![Caption](Results/fig08_N_im.pdf){#fig:08-N-im}
+
+Hope this works.
+
+## Effects from density and size distribution
+
+rasdf. Refer to Figure \@ref(fig:08-dens).
+
+(ref:08-dens) Different image densities
+
+```{r 08-dens, fig.cap="(ref:08-dens)"}
+load("Results/fig08_dens.RData")
+fig08_dens
+```
+
+Then to illustrate, Figure \@ref(fig:08-dens-im).
+
+![Different image densities](Results/fig08_dens_im.pdf){#fig:08-dens-im}
+
+Then to size distributions. See Figure \@ref(fig:08-distr).
+
+(ref:08-distr) Different size distributions of the elements contained in the images
+
+```{r 08-distr, fig.cap="(ref:08-distr)"}
+load("Results/fig08_distr.RData")
+fig08_distr
+```
+
+Then refer to Figure \@ref(fig:08-distr-im).
+
+![Different size distributions](Results/fig08_distr_im.pdf){#fig:08-distr-im}
+
+And go on.
+
+## Quantification of self-similarity and random noise
+
+Now, what's really interesting. Self-similarity as clustering in Figure \@ref(fig:08-clustering).
+
+(ref:08-clustering) Different degrees of spatial clustering and self-similarity
+
+```{r 08-clustering, fig.cap="(ref:08-clustering)"}
+load("Results/fig08_clustering.RData")
+fig08_clustering
+```
+
+See the illustration on Figure \@ref(fig:08-clustering-im).
+
+![Different degrees of clustering and self-similarity](Results/fig08_clustering_im.pdf){#fig:08-clustering-im}
+
+And also random noise, see
+
+(ref:08-noise) Different degrees of random spatial noise
+
+```{r 08-noise, fig.cap="(ref:08-noise)"}
+load("Results/fig08_noise.RData")
+fig08_noise
+```
+
+Then see illustration on Figure \@ref(fig:08-noise).
+
+![Different degrees of random spatial noise](Results/fig08_noise_im.pdf){#fig:08-noise-im}
+
+That's it for the tests. Summarise below.
 
 ## Summary of procedure and tests
+
+Just to sum up the different tests:
+
+(ref:08-all) Results from all test series
+
+```{r 08-all, fig.cap="(ref:08-all)"}
+load("Results/fig08_all.RData")
+fig08_all
+```
+
+Though the value ranges of the different tested factors are difficult to compare,... etc.
 
 -   Procedure for archaeological samples, same as in article
 
