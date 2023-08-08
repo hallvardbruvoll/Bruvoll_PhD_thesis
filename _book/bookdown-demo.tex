@@ -149,7 +149,7 @@
 \makeatother
 \subtitle{with case studies from the Linear Pottery and Trypillia cultures (5.500 - 3.500 cal. BCE)}
 \author{Hallvard Bruvoll \and Department of Archaeology, Conservation and History \and University of Oslo}
-\date{2023-08-07}
+\date{2023-08-08}
 
 \begin{document}
 \maketitle
@@ -1477,10 +1477,31 @@ fdasdf
   Image preparation procedure
 \end{itemize}
 
-\hypertarget{effects-from-image-size-and-element-count}{%
-\section{Effects from image size and element count}\label{effects-from-image-size-and-element-count}}
+In the following, I attempt to address the difficulty of interpreting fractal dimension and lacunarity measures on images by testing the methods on synthetically produced images, designed to isolate relevant variables one by one. The chosen variables are perceived to be of importance specifically in the present context where the images of interest represent architectural features on archaeological settlement plans. While this is not a sufficient analysis for effectively modelling the relative effects that any of these parameters may have on D and L measurements in any image, it allows for an intuitive illustration of the complexity involved in analysing spatial textures. The chosen image variables which are selected here for empirical testing are image size, element count (N), image density, element size distribution, self-similarity/clustering and random noise. The two latter variables are the ones that are of direct interest for the hypothesis which is proposed in this part of the thesis, namely that fractal image analysis may allow for quantification of the degrees of hierarchy and conscious planning in a society evident through the layout of its settlement plans. As is shown below and further discussed in Chapter \ref{disc-methods}, while spatial clustering and noise do have an effect on both fractal dimension and lacunarity measurements \#RECHECK THIS\#, for most practical purposes these effects tend to be drowned by those induced by other variables like image size and density. The possibility remains that these methods may prove useful for comparisons of settlements of similar size and density only, or by defining a more formal model by which undesired effects of other variables may be factored out \#CHECK WORDING HERE AS WELL\#.
 
-Refer to Figure \ref{fig:08-im-size} below.
+For the following tests, all images were constructed in R as data tables with x and y coordinates for each element (``house''), rendered with the \emph{ggplot2} package (Wickham, 2016). More specifically, houses were represented as a geom\_tile() layer with black fill and given height and width, and the background was set to white, while the theme\_void() function allowed for removing the axes and grids altogether. With this procedure it was possible to generate incremental change in a single variable on otherwise identical images. However, as some of the variables are inherently connected, full separation was not always possible. All the generated and analysed images are included in \#Make Appendix, and the original files, as well as the code for generating them, are available in the \#online repository.
+
+\hypertarget{effects-from-image-size-and-element-size-and-element-count}{%
+\section{Effects from image size and element size and element count}\label{effects-from-image-size-and-element-size-and-element-count}}
+
+To test the effect from im
+
+Refer to Figure \ref{fig:08-IS-HS} below.
+
+
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.9\linewidth]{bookdown-demo_files/figure-latex/08-IS-HS-1} 
+
+}
+
+\caption{Different image sizes and house sizes}\label{fig:08-IS-HS}
+\end{figure}
+
+fdsasdf
+
+Then on element count, Figure \ref{fig:08-N-IS}.
 
 
 
@@ -1491,52 +1512,42 @@ Refer to Figure \ref{fig:08-im-size} below.
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.9\linewidth]{bookdown-demo_files/figure-latex/08-im-size-1} 
+{\centering \includegraphics[width=0.9\linewidth]{bookdown-demo_files/figure-latex/08-N-IS-1} 
 
 }
 
-\caption{Different image sizes}\label{fig:08-im-size}
+\caption{Element count (N) and image size.}\label{fig:08-N-IS}
 \end{figure}
 
-Relationship between image density (built-up area) and fractal dimension, evaluated in Thomas et al. (2007), where they show that these two parameters, under certain conditions (constant observation window, prefactor values close to 1), are exponentially correlated, which is also what I found in my article. They show that observation window size and shape, as well as centroid placement, have little influence on \emph{D}, while they have more influence on density when the pattern is not homogeneous. They do show, however, that images with the same density may have quite much variation in \emph{D}, which is reflected in the layouts. Judging from their examples, more clustered layouts give higher \emph{D} values, while more dispersed or dusty layouts give lower \emph{D}, when density is constant. I ignore the use of prefactor values. According to Thomas et al. (2007), density is a crude measure of the overall intensity of the pattern, while fractal dimension is characterises the morphological structure, though it is not directly descriptive.
-
-\begin{figure}
-\hypertarget{fig:08-size-im}{%
-\centering
-\includegraphics{Results/fig08_size_im.pdf}
-\caption{Selection of the different tested image sizes}\label{fig:08-size-im}
-}
-\end{figure}
-
-Then on element count, Figure \ref{fig:08-N}.
+Then to Figure \ref{fig:08-N-HS}.
 
 
 
 \begin{figure}
 
-{\centering \includegraphics[width=0.9\linewidth]{bookdown-demo_files/figure-latex/08-N-1} 
+{\centering \includegraphics[width=0.9\linewidth]{bookdown-demo_files/figure-latex/08-N-HS-1} 
 
 }
 
-\caption{Element count (N).}\label{fig:08-N}
+\caption{Variable house count (N) and house size, fixed image size and density}\label{fig:08-N-HS}
 \end{figure}
 
-Then to the illustration on Figure \ref{fig:08-N-im}.
-
-(ref:08-N-im)
+Now refer to the beautiful illustration on Figure \ref{fig:08-N-im}.
 
 \begin{figure}
 \hypertarget{fig:08-N-im}{%
 \centering
 \includegraphics{Results/fig08_N_im.pdf}
-\caption{Caption}\label{fig:08-N-im}
+\caption{Effects from image size, element count and element size on fractal dimension and lacunarity. Density is fixed at xxx for all images}\label{fig:08-N-im}
 }
 \end{figure}
 
-Hope this works.
+Hope this works. Go on.
 
 \hypertarget{effects-from-density-and-size-distribution}{%
 \section{Effects from density and size distribution}\label{effects-from-density-and-size-distribution}}
+
+Relationship between image density (built-up area) and fractal dimension, evaluated in Thomas et al. (2007), where they show that these two parameters, under certain conditions (constant observation window, prefactor values close to 1), are exponentially correlated, which is also what I found in my article. They show that observation window size and shape, as well as centroid placement, have little influence on \emph{D}, while they have more influence on density when the pattern is not homogeneous. They do show, however, that images with the same density may have quite much variation in \emph{D}, which is reflected in the layouts. Judging from their examples, more clustered layouts give higher \emph{D} values, while more dispersed or dusty layouts give lower \emph{D}, when density is constant. I ignore the use of prefactor values. According to Thomas et al. (2007), density is a crude measure of the overall intensity of the pattern, while fractal dimension is characterises the morphological structure, though it is not directly descriptive.
 
 rasdf. Refer to Figure \ref{fig:08-dens}.
 
@@ -2436,6 +2447,9 @@ Whitridge, P. (2016). Fractal Worlds: An Archaeology of Nested Spatial Scales. \
 
 \leavevmode\vadjust pre{\hypertarget{ref-whittle2022}{}}%
 Whittle, A. (2022). The Danube in Prehistory. \emph{European Journal of Archaeology}, \emph{25}(1), 133137. \url{https://doi.org/10.1017/eaa.2021.59}
+
+\leavevmode\vadjust pre{\hypertarget{ref-wickham2016}{}}%
+Wickham, H. (2016). \emph{ggplot2: Elegant graphics for data analysis} (2nd ed. 2016). Springer International Publishing : Imprint: Springer. \url{https://doi.org/10.1007/978-3-319-24277-4}
 
 \leavevmode\vadjust pre{\hypertarget{ref-wilk1983}{}}%
 Wilk, R. R. (1983). Little house in the jungle: The causes of variation in house size among modern Kekchi Maya. \emph{Journal of anthropological archaeology}, \emph{2}(2), 99116. \url{https://doi.org/10.1016/0278-4165(83)90009-0}
