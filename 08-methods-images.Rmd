@@ -16,39 +16,52 @@ fdasdf
 
 -   Image preparation procedure
 
-## Effects from image size and element count
+In the following, I attempt to address the difficulty of interpreting fractal dimension and lacunarity measures on images by testing the methods on synthetically produced images, designed to isolate relevant variables one by one. The chosen variables are perceived to be of importance specifically in the present context where the images of interest represent architectural features on archaeological settlement plans. While this is not a sufficient analysis for effectively modelling the relative effects that any of these parameters may have on D and L measurements in any image, it allows for an intuitive illustration of the complexity involved in analysing spatial textures. The chosen image variables which are selected here for empirical testing are image size, element count (N), image density, element size distribution, self-similarity/clustering and random noise. The two latter variables are the ones that are of direct interest for the hypothesis which is proposed in this part of the thesis, namely that fractal image analysis may allow for quantification of the degrees of hierarchy and conscious planning in a society evident through the layout of its settlement plans. As is shown below and further discussed in Chapter \@ref(disc-methods), while spatial clustering and noise do have an effect on both fractal dimension and lacunarity measurements #RECHECK THIS#, for most practical purposes these effects tend to be drowned by those induced by other variables like image size and density. The possibility remains that these methods may prove useful for comparisons of settlements of similar size and density only, or by defining a more formal model by which undesired effects of other variables may be factored out #CHECK WORDING HERE AS WELL#.
 
-Refer to Figure \@ref(fig:08-im-size) below.
+For the following tests, all images were constructed in R as data tables with x and y coordinates for each element ("house"), rendered with the *ggplot2* package [@wickham2016]. More specifically, houses were represented as a geom_tile() layer with black fill and given height and width, and the background was set to white, while the theme_void() function allowed for removing the axes and grids altogether. With this procedure it was possible to generate incremental change in a single variable on otherwise identical images. However, as some of the variables are inherently connected, full separation was not always possible. All the generated and analysed images are included in #Make Appendix, and the original files, as well as the code for generating them, are available in the #online repository.
 
-(ref:08-im-size) Different image sizes
+## Effects from image size and element size and element count
 
-```{r 08-im-size, fig.cap="(ref:08-im-size)"}
-load("Results/fig08_im_size.RData")
-fig08_im_size
+To test the effect from im
+
+Refer to Figure \@ref(fig:08-IS-HS) below.
+
+(ref:08-IS-HS) Different image sizes and house sizes
+
+```{r 08-IS-HS, fig.cap="(ref:08-IS-HS)"}
+load("Results/fig08_IS_HS.RData")
+fig08_IS_HS
 ```
 
-Relationship between image density (built-up area) and fractal dimension, evaluated in @thomas2007, where they show that these two parameters, under certain conditions (constant observation window, prefactor values close to 1), are exponentially correlated, which is also what I found in my article. They show that observation window size and shape, as well as centroid placement, have little influence on *D*, while they have more influence on density when the pattern is not homogeneous. They do show, however, that images with the same density may have quite much variation in *D*, which is reflected in the layouts. Judging from their examples, more clustered layouts give higher *D* values, while more dispersed or dusty layouts give lower *D*, when density is constant. I ignore the use of prefactor values. According to @thomas2007, density is a crude measure of the overall intensity of the pattern, while fractal dimension is characterises the morphological structure, though it is not directly descriptive.
+fdsasdf
 
-![Selection of the different tested image sizes](Results/fig08_size_im.pdf){#fig:08-size-im}
+Then on element count, Figure \@ref(fig:08-N-IS).
 
-Then on element count, Figure \@ref(fig:08-N).
+(ref:08-N-IS) Element count (N) and image size.
 
-(ref:08-N) Element count (N).
-
-```{r 08-N, fig.cap="(ref:08-N)"}
-load("Results/fig08_N.RData")
-fig08_N
+```{r 08-N-IS, fig.cap="(ref:08-N-IS)"}
+load("Results/fig08_N_IS.RData")
+fig08_N_IS
 ```
 
-Then to the illustration on Figure \@ref(fig:08-N-im).
+Then to Figure \@ref(fig:08-N-HS).
 
-(ref:08-N-im)
+(ref:08-N-HS) Variable house count (N) and house size, fixed image size and density
 
-![Caption](Results/fig08_N_im.pdf){#fig:08-N-im}
+```{r 08-N-HS, fig.cap="(ref:08-N-HS)"}
+load("Results/fig08_N_HS.RData")
+fig08_N_HS
+```
 
-Hope this works.
+Now refer to the beautiful illustration on Figure \@ref(fig:08-N-im).
+
+![Effects from image size, element count and element size on fractal dimension and lacunarity. Density is fixed at xxx for all images](Results/fig08_N_im.pdf){#fig:08-N-im}
+
+Hope this works. Go on.
 
 ## Effects from density and size distribution
+
+Relationship between image density (built-up area) and fractal dimension, evaluated in @thomas2007, where they show that these two parameters, under certain conditions (constant observation window, prefactor values close to 1), are exponentially correlated, which is also what I found in my article. They show that observation window size and shape, as well as centroid placement, have little influence on *D*, while they have more influence on density when the pattern is not homogeneous. They do show, however, that images with the same density may have quite much variation in *D*, which is reflected in the layouts. Judging from their examples, more clustered layouts give higher *D* values, while more dispersed or dusty layouts give lower *D*, when density is constant. I ignore the use of prefactor values. According to @thomas2007, density is a crude measure of the overall intensity of the pattern, while fractal dimension is characterises the morphological structure, though it is not directly descriptive.
 
 rasdf. Refer to Figure \@ref(fig:08-dens).
 
