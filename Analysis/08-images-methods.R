@@ -76,10 +76,10 @@ for (i in 2:(iterations+1)) {
   # Images were not rendered entirely binary here no matter what
   # Also, smallest length (0.05) gave no output
 unit_length <- seq(0.1, 1, length.out = iterations)
-limits <- c(0.5,9.5)
+limits <- c(0.5,27.5)
 for (i in 1:iterations) {
-  one_plot <- tibble(x = rep(1:9, 9),
-                     y = rep(1:9, each = 9),
+  one_plot <- tibble(x = rep(1:27, 27),
+                     y = rep(1:27, each = 27),
                      height = unit_length[i],
                      width = unit_length[i])
   plot_name <- paste0("Density_", i)
@@ -97,17 +97,16 @@ for (i in 1:iterations) {
 # Variable size distribution, constant N, density and layout
   # Keep in mind to round to nearest 0.05 for image resolution
 set.seed(100)
-sigma <- seq(0.1, 1.1, length.out = 20)
-limits <- c(0.5,9.5)
+sigma <- seq(0.05, 0.9, length.out = 20)
+limits <- c(0.5,27.5)
 for (i in 1:iterations) {
-  sizes <- rlnorm(n = 81, meanlog = 3.5, sdlog = sigma[i])
+  sizes <- rlnorm(n = 729, meanlog = 3.5, sdlog = sigma[i])
   # normalise sum of sizes to 1
   sizes <- sizes/sum(sizes)
   # multiply to wanted total area
-    # and keep to nearest 0.05 for image resolution
-  sizes <- round(sqrt(sizes*(9.5^2/6))*2, 1)/2
-  one_plot <- tibble(x = rep(1:9, 9),
-                     y = rep(1:9, each = 9),
+  sizes <- sqrt(sizes*900/5)
+  one_plot <- tibble(x = rep(1:27, 27),
+                     y = rep(1:27, each = 27),
                      height = sizes,
                      width = sizes)
   plot_name  <- paste0("Distr_", i)
@@ -124,25 +123,22 @@ for (i in 1:iterations) {
 
 # Variable layout, constant N, density and size distribution
   # this one is very home made..
-n <- 8
-space_fac <- seq(0.01,0.25, length.out = 20)
-limits <- c(-0.5, 8.5)
+n <- 27
+space_fac <- seq(0.005,0.08, length.out = 20)
+limits <- c(0, 27)
 #loop for each plot
 for (i in 1:length(space_fac)) {
   plot_name <- paste0("Clustering_", i)
   space1 <- n*space_fac[i]
-  rest1 <- (n-space1)/2
+  rest1 <- (n-(space1*2))/3
   space2 <- rest1*space_fac[i]
-  rest2 <- (rest1-space2)/2
-  point <- rest2/4
+  rest2 <- (rest1-(space2*2))/3
 
-  one_pair <- c(point, point*3)
-  two_pairs <- c(one_pair, (rest1-one_pair))
-  one_row <- c(two_pairs, n-two_pairs)
+  one_triplet <- c(0.5, rest2/2, rest2-0.5)
+  trip_trip <- c(one_triplet, rest2+space2+one_triplet, rest1-one_triplet)
+  one_row <- c(trip_trip, (rest1+space1+trip_trip), n-trip_trip)
   one_plot <- tibble(x = rep(one_row, n),
-                 y = rep(one_row, each = n)) %>%
-    mutate(x = round(x*2, 1)/2,
-           y = round(y*2, 1)/2)
+                 y = rep(one_row, each = n))
 
   N_plots[[plot_name]] <- ggplot(one_plot)+
     aes(x, y, height = 0.5, width = 0.5)+
@@ -154,19 +150,38 @@ for (i in 1:length(space_fac)) {
     coord_fixed()
 }
 
-N_plots$clust_20+theme_bw()
+# N_plots$Clustering_1+theme_bw()
+# N_plots$Distr_1+theme_bw()
+# N_plots$Density_10+theme_bw()
+# not exactly the same, but close enough
 
 # Grid with random noise
-grid <- tibble(x = rep(1:9, 9)*2,
-               y = rep(1:9, each = 9)*2,
+set.seed(100)
+grid <- tibble(x = rep(1:27, 27),
+               y = rep(1:27, each = 27),
                plot = 1)
 previous <- grid
-step_length <- 0.2
+step_length <- 0.12
+  # Loop each grid (this takes a few minutes)
 for (i in 2:iterations) {
   one_step <- tibble()
+    # Loop each house, random walk
   for (j in 1:nrow(previous)) {
-    rw_dir <- randomDir(center = c(previous$x[j], previous$y[j]),
-                        step.length = step_length)
+      rw_dir <- randomDir(center = c(previous$x[j], previous$y[j]),
+                          step.length = step_length)
+      # Prevent walking outside limits
+      if (rw_dir$x<1) {
+        rw_dir$x <- rw_dir$x+26
+      }
+      if (rw_dir$x>27) {
+        rw_dir$x <- rw_dir$x-26
+      }
+      if (rw_dir$y<1) {
+        rw_dir$y <- rw_dir$y+26
+      }
+      if (rw_dir$y>27) {
+        rw_dir$y <- rw_dir$y-26
+      }
     one_step <- bind_rows(one_step, rw_dir)
   }
   one_step <- one_step %>%
@@ -174,12 +189,9 @@ for (i in 2:iterations) {
   grid <- bind_rows(grid, one_step)
   previous <- one_step
 }
-  # Again round to nearest 0.05 to keep the images binary when saving
-grid$x <- round(grid$x*2, 1)/2
-grid$y <- round(grid$y*2, 1)/2
 
   # Store each one
-limits <- c(0,20)
+limits <- c(0.5,27.5)
 for (i in 1:iterations) {
   plot_name <- paste0("Noise_", i)
   N_plots[[plot_name]] <- ggplot(filter(grid, plot == i))+
@@ -191,6 +203,9 @@ for (i in 1:iterations) {
     theme(plot.background = element_rect(fill = "white", colour = NA))+
     coord_fixed()
 }
+#  N_plots$Noise_20+theme_bw()
+ #  scale_x_continuous(limits = c(-5,30))+
+ #  scale_y_continuous(limits = c(-5,30))
 
 #save plots
 for (i in 1:length(N_plots)) {
@@ -220,6 +235,8 @@ for (i in 1:length(filenames)) {
   save.image(one_image, file = path, quality = 1)
 }
 
+# Calculate fractal dimension and lacunarity for all plots
+  # Takes some minutes
 D_L_tests <- frac.lac(frac_path = "Data/Frac_test",
                                lac_path = "Data/Lac_test")
 
@@ -337,7 +354,7 @@ fig08_dens <- plot_grid(dens1, dens2, nrow = 1, labels = "auto")
 fig08_dens_im <- ggplot(filter(D_L_test_plots, Series == "Density"
                                 & Iter %in% c(1,5,10,15,20)))+
   aes(D, L_mean, label = Iter, image = path)+
-  geom_image(size = 0.2)+
+  geom_image(size = 0.25)+
   geom_text(nudge_y = 4.5)+
   scale_x_continuous(expand = c(0.1, 0.1))+
   scale_y_continuous(expand = c(0.2, 0))+
@@ -367,7 +384,7 @@ distr_data <- filter(D_L_test_plots, Series == "Distr"
                      & Iter %in% c(1,5,10,15,20))
 fig08_distr_im <- ggplot(distr_data)+
   aes(D, L_mean, label = Iter, image = path)+
-  geom_image(size = 0.15)+
+  geom_image(size = 0.25)+
   geom_text(data = slice(distr_data, c(1,3:5)), nudge_y = 0.06)+
   geom_text(data = slice(distr_data, 2), nudge_y = -0.06)+
   scale_x_continuous(expand = c(0.002, 0.002))+
@@ -394,17 +411,18 @@ cluster2 <- ggplot(filter(D_L_test_plots, Series == "Clustering"))+
 fig08_clustering <- plot_grid(cluster1, cluster2, nrow = 1, labels = "auto")
 
   # Clustering images
-fig08_clustering_im <- ggplot(filter(D_L_test_plots, Series == "Clustering"
-                                & Iter %in% c(1,10,15,20)))+
+cluster_data <- filter(D_L_test_plots, Series == "Clustering"
+                       & Iter %in% c(1,10,15,20))
+fig08_clustering_im <- ggplot(cluster_data)+
   aes(D, L_mean, label = Iter, image = path)+
-  geom_image(size = 0.15)+
-  geom_text(nudge_y = 0.06)+
+  geom_image(size = 0.25)+
+  geom_text(data = slice(cluster_data, 1:3), nudge_x = -0.003, nudge_y = 0.01)+
+  geom_text(data = slice(cluster_data, 4), nudge_x = 0.003)+
   scale_x_continuous(expand = c(0.005, 0.005))+
   scale_y_continuous(expand = c(0.05, 0.05))+
   theme_bw()+
   theme(panel.background = element_rect(fill = "lightgrey"),
         panel.grid = element_blank())
-
 
 # Variable noise
 noise1 <- ggplot(filter(D_L_test_plots, Series == "Noise"))+
@@ -428,25 +446,26 @@ noise_im_data <- filter(D_L_test_plots, Series == "Noise" &
                           Iter %in% c(1,5,10,15,20))
 fig08_noise_im <- ggplot(noise_im_data)+
   aes(D, L_mean, label = Iter, image = path)+
-  geom_image(size = 0.2)+
-  geom_text(nudge_y = 0.04)+
-  scale_x_continuous(expand = c(0.002, 0.002))+
-  scale_y_continuous(expand = c(0.03, 0.03))+
+  geom_image(size = 0.25)+
+  geom_text(data = slice(noise_im_data, 2:5), nudge_x = 0.01)+
+  geom_text(data = slice(noise_im_data, 1), nudge_x = -0.01)+
+  scale_x_continuous(expand = c(0.01, 0.01))+
+  scale_y_continuous(expand = c(0.15, 0.01))+
   theme_bw()+
   theme(panel.background = element_rect(fill = "lightgrey"),
         panel.grid = element_blank())
 
-# Maybe not use figure of all images? Or add it in the end of the chapter?
+# All images, add it in the end of the chapter
 all1 <- ggplot(D_L_test_plots)+
   aes(D, L_mean, size = Iter, colour = Series)+
-  geom_point(alpha = 0.6)+
+  geom_point(alpha = 0.5)+
   scale_size_area(max_size = 4)+
   theme_bw()+
   theme(legend.position = "bottom")
 
 all2 <- ggplot(D_L_test_plots)+
   aes(D, L, size = Iter, colour = Series)+
-  geom_point(alpha = 0.6)+
+  geom_point(alpha = 0.5)+
   scale_size_area(max_size = 4)+
   theme_bw()+
   theme(legend.position = "none")
