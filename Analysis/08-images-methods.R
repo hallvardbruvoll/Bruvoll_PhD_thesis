@@ -104,7 +104,7 @@ for (i in 1:iterations) {
   # normalise sum of sizes to 1
   sizes <- sizes/sum(sizes)
   # multiply to wanted total area
-  sizes <- sqrt(sizes*900/5)
+  sizes <- sqrt(sizes*729/5)
   one_plot <- tibble(x = rep(1:27, 27),
                      y = rep(1:27, each = 27),
                      height = sizes,
@@ -385,8 +385,8 @@ distr_data <- filter(D_L_test_plots, Series == "Distr"
 fig08_distr_im <- ggplot(distr_data)+
   aes(D, L_mean, label = Iter, image = path)+
   geom_image(size = 0.25)+
-  geom_text(data = slice(distr_data, c(1,3:5)), nudge_y = 0.06)+
-  geom_text(data = slice(distr_data, 2), nudge_y = -0.06)+
+  geom_text(data = slice(distr_data, c(1,2,4,5)), nudge_y = 0.06)+
+  geom_text(data = slice(distr_data, 3), nudge_y = -0.06)+
   scale_x_continuous(expand = c(0.002, 0.002))+
   scale_y_continuous(expand = c(0.15, 0))+
   theme_bw()+
@@ -500,3 +500,9 @@ ggsave("Results/fig08_dens_im.pdf", plot = fig08_dens_im)
 ggsave("Results/fig08_N_im.pdf", plot = fig08_N_im)
 
 # END CHAPTER
+
+ggplot(filter(D_L_test_plots, Series == "Density"))+
+  aes(L_mean, D)+
+  geom_point()
+  scale_x_log10()+
+  scale_y_log10()
