@@ -97,14 +97,14 @@ for (i in 1:iterations) {
 # Variable size distribution, constant N, density and layout
   # Keep in mind to round to nearest 0.05 for image resolution
 set.seed(100)
-sigma <- seq(0.05, 0.9, length.out = 20)
+sigma <- seq(0, 0.9, length.out = 20)
 limits <- c(0.5,27.5)
 for (i in 1:iterations) {
   sizes <- rlnorm(n = 729, meanlog = 3.5, sdlog = sigma[i])
   # normalise sum of sizes to 1
   sizes <- sizes/sum(sizes)
   # multiply to wanted total area
-  sizes <- sqrt(sizes*729/5)
+  sizes <- sqrt(sizes*729/4)
   one_plot <- tibble(x = rep(1:27, 27),
                      y = rep(1:27, each = 27),
                      height = sizes,
@@ -124,7 +124,7 @@ for (i in 1:iterations) {
 # Variable layout, constant N, density and size distribution
   # this one is very home made..
 n <- 27
-space_fac <- seq(0.005,0.08, length.out = 20)
+space_fac <- seq(0,0.08, length.out = 20)
 limits <- c(0, 27)
 #loop for each plot
 for (i in 1:length(space_fac)) {
