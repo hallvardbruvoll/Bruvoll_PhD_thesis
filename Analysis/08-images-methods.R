@@ -474,6 +474,31 @@ all_legend <- get_legend(all1)
 fig08_all <- plot_grid(plot_grid(all1+theme(legend.position = "none"),
                                  all2, nrow = 1, labels = "auto"),
                        all_legend, ncol = 1, rel_heights = c(1, 0.1))
+
+# Zoom in on the all plot
+all_zoom_data <- bind_rows(filter(D_L_test_plots, Series %in%
+                                    c("Distr", "Clustering", "Noise")),
+                           filter(D_L_test_plots, Series == "Density" &
+                                    Iter > 7 & Iter < 13))
+all_zoom_data <- all_zoom_data %>%
+  arrange(Series, Iter)
+all_zoom_images <- filter(all_zoom_data, Iter %in% c(1, 20) |
+                        id %in% c("Density_8", "Density_12"))
+
+fig08_all_im <- ggplot(all_zoom_data)+
+  aes(D, L_mean, colour = Series)+
+  scale_size_area(max_size = 4)+
+  geom_image(data = all_zoom_images, aes(image = path,
+                                         colour = NULL), size = 0.2)+
+  geom_point(alpha = 0.5)+
+  geom_path()+
+  theme_bw()+
+  scale_x_continuous(expand = c(0.02, 0.02))+
+  scale_y_continuous(expand = c(0.2, 0.2))+
+  theme_bw()+
+  theme(panel.background = element_rect(fill = "lightgrey"),
+        panel.grid = element_blank(), legend.position = "bottom")
+
 # Note to self: From this it seems density is the only factor that
 # has significant impact on both D and L
 # Image size (N_plot) has important impact on D
@@ -498,11 +523,6 @@ ggsave("Results/fig08_clustering_im.pdf", plot = fig08_clustering_im)
 ggsave("Results/fig08_distr_im.pdf", plot = fig08_distr_im)
 ggsave("Results/fig08_dens_im.pdf", plot = fig08_dens_im)
 ggsave("Results/fig08_N_im.pdf", plot = fig08_N_im)
+ggsave("Results/fig08_all_im.pdf", plot = fig08_all_im)
 
 # END CHAPTER
-
-ggplot(filter(D_L_test_plots, Series == "Density"))+
-  aes(L_mean, D)+
-  geom_point()
-  scale_x_log10()+
-  scale_y_log10()
