@@ -149,7 +149,7 @@
 \makeatother
 \subtitle{with case studies from the Linear Pottery and Trypillia cultures (5.500 - 3.500 cal. BCE)}
 \author{Hallvard Bruvoll \and Department of Archaeology, Conservation and History \and University of Oslo}
-\date{2023-08-09}
+\date{2023-08-11}
 
 \begin{document}
 \maketitle
@@ -1479,24 +1479,24 @@ fdasdf
   State range of box sizes used here! (The default of fractD: 1, 2, 4, 8, 16, 32, 64, 128, 256, 512 pixels)
 \end{itemize}
 
-In the following, I attempt to address the difficulty of interpreting fractal dimension and lacunarity measures of spatial patterns by testing the methods on synthetically produced images, designed to isolate relevant variables one by one. The chosen variables are perceived to be of importance specifically in the present context where the images of interest represent architectural features on archaeological settlement plans. While this is not a sufficient analysis for effectively modelling the relative effects that any of these parameters may have on D and L measurements in any image, it allows for an intuitive illustration of the complexity involved in analysing spatial textures. The chosen image variables which are selected here for empirical testing are image size, element count, element size, image density, element size distribution, self-similarity/clustering and random noise. The two latter variables are the ones that are of direct interest for the hypothesis which is proposed in this part of the thesis, namely that fractal image analysis may allow for quantification of the degrees of hierarchy and conscious planning in a society evident through the layout of its settlement plans. As is shown below and further discussed in Chapter \ref{disc-methods}, while spatial clustering and noise do have an effect on both fractal dimension and lacunarity measurements \#RECHECK THIS\#, for most practical purposes these effects tend to be drowned by those induced by other variables like image size and density. The possibility remains that these methods may prove useful for comparisons of settlements of similar size and density only, or by defining a more formal model by which undesired effects of other variables may be factored out \#CHECK WORDING HERE AS WELL\#. Such modelling however goes beyond the scope of the present study.
+In the following, I attempt to address the difficulty of interpreting fractal dimension and lacunarity measures of spatial patterns by testing the methods on synthetically produced images, designed to isolate relevant variables one by one. The chosen variables are perceived to be of importance specifically in the present context where the images of interest represent architectural features on archaeological settlement plans. While this is not a sufficient analysis for effectively modelling the relative effects that any of these parameters may have on \emph{D} and \emph{L} measurements in any image, it allows for an intuitive illustration of the complexity involved in analysing spatial textures. The chosen image variables which are selected here for empirical testing are image size, element count, element size, image density, element size distribution, self-similarity/clustering and random noise. While the first three are important for assessing the requirements of the analysed images for the methods to function properly, the latter two are are of more direct interest for the hypothesis which is proposed in this part of the thesis, namely that fractal image analysis may allow for quantification of the degrees of hierarchy and conscious planning in a society evident through the layout of its settlement plans. The variables density and size distribution are important aspects of any settlement plan, but say little by themselves about the extent to which the layout is planned or not, and their influence on fractal dimension and lacunarity measurements can thus in this context be regarded more as side effects. As is shown below and further discussed in Chapter \ref{disc-methods}, while spatial clustering and noise do have effects on both fractal dimension and lacunarity measurements \#RECHECK THIS\#, for most practical purposes these effects tend to be drowned by those induced by other variables like image size and density. The possibility remains that these methods may prove useful for comparisons of settlements of similar size and density only, or by defining a more formal model by which undesired effects of other variables may be factored out \#CHECK WORDING HERE AS WELL\#. Such modelling however goes beyond the scope of the present study.
 
-For the following tests, all images were constructed in R as data tables with x and y coordinates for each element (``house''), rendered with the \emph{ggplot2} package (Wickham, 2016). More specifically, houses were represented as a geom\_tile() layer with black fill and given height and width, and the background was set to white, while the theme\_void() function allowed for removing the axes and grids altogether. With this procedure it was possible to generate incremental changes in a single variable on otherwise identical images. However, as some of the variables are inherently connected, full separation was not always possible. All the generated and analysed images are included in \#Make Appendix, and the original files, as well as the code for generating them, are available in the \#online repository.
+For the following tests, all images were constructed in R as data tables with x and y coordinates for each element (``house''), rendered with the \emph{ggplot2} package (Wickham, 2016). More specifically, in each image houses were represented as a geom\_tile() layer with black fill and given height and width, and the background was set to white, while the theme\_void() function allowed for removing the axes and grids altogether. With this procedure it was possible to generate incremental changes in a single variable on otherwise identical images. However, as some of the variables are inherently connected, full separation was not always possible. All the generated and analysed images are included in \#Make Appendix, and the original files, as well as the code for generating them, are available in the \#online repository.
 
 \hypertarget{effects-from-image-size-element-size-and-element-count}{%
 \section{Effects from image size, element size and element count}\label{effects-from-image-size-element-size-and-element-count}}
 
-To test the effect from image size on fractal dimension and lacunarity measures, it was necessary to proceed in three steps (Figure \ref{fig:08-N-im}). A first series was created in which a single image was simply scaled up from 40\textsuperscript{2} to 420\textsuperscript{2} pixels in 20 steps. The smallest image thus represented four square houses of size 10*10 pixels, which with 0.5 m per pixel length (the resolution used with the actual settlement plans in the next chapter) gives houses of 25 m\textsuperscript{2}. Each house filled one corner of a 4 times larger square, so that image density was kept at 0.25. Density is defined here as fraction of pattern pixels to the whole number of pixels. For the largest version of this pattern, each house thus had a side length of 52,5 m, giving a total surface of ca. 2.756 m\textsuperscript{2} per house, which is far above comparable values for houses in prehistoric settlement plans. Since in reality house sizes do not increase linearly with settlement size, but are more constant, a second series was created where the image size was incremented the same way, but with a constant house size of 25 m\textsuperscript{2}, so that in order to also keep image density constant, house count (N) was increased proportionally with image size. For this series, the largest image then had \(N = 21^2 = 441\) houses, thus emulating settlements of different sizes but with similarly sized houses and densities between houses. In other words, different image sizes could not be made keeping both density, house count and house size constant. A third series of 20 images was made where image size was kept constant at 420\textsuperscript{2} pixels, but with the same range of house count from 4 to 441 as well as house sizes from 105\textsuperscript{2} to 10\textsuperscript{2} pixels, or 11.025 to 25 m\textsuperscript{2}.
+To test the effect from image size on fractal dimension and lacunarity measures, it was necessary to proceed in three steps (Figure \ref{fig:08-N-im}). A first series was created in which a single image was simply scaled up from 40\textsuperscript{2} to 420\textsuperscript{2} pixels in 20 steps. The smallest image thus represented four square houses of size 10*10 pixels, which with 0.5 m per pixel length (the resolution used with the actual settlement plans in the next chapter) gives houses of 25 m\textsuperscript{2}. Each house filled the lower left quarter of a 4 times larger square, so that image density was kept at 0.25. Density is defined here as fraction of pattern pixels to the whole number of pixels. For the largest version of this pattern, each house thus had a side length of 52,5 m, giving a total surface of ca. 2.756 m\textsuperscript{2} per house, which is far above comparable values for houses in prehistoric settlement plans. Since in reality house sizes do not increase linearly with settlement size, but are more constant, a second series was created where the image size was incremented the same way, but with a constant house size of 25 m\textsuperscript{2}, so that in order to also keep image density constant, house count (\emph{N}) was increased proportionally with image size. For this series, the largest image then had \(N = 21^2 = 441\) houses, thus emulating settlements of different sizes but with similarly sized houses and densities between houses. In other words, different image sizes could not be made keeping both density, house count and house size constant. A third series of 20 images was made where image size was kept constant at 420\textsuperscript{2} pixels, but with the same range of house count from 4 to 441 as well as house sizes from 105\textsuperscript{2} to 10\textsuperscript{2} pixels, or 2.756 to 25 m\textsuperscript{2}.
 
 \begin{figure}
 \hypertarget{fig:08-N-im}{%
 \centering
 \includegraphics{Results/fig08_N_im.pdf}
-\caption{Effects from image size, element count and element size on fractal dimension and lacunarity. Density is fixed at xxx for all images}\label{fig:08-N-im}
+\caption{Effects from image size, element count and element size on fractal dimension and lacunarity. Density is fixed at 0.25 for all images. Number labels represent iteration within each series. Image size is variable in the upper and lower series, house size in the upper and the vertical series, and house count in the vertical and the lower series. The three corner images are identical for two series each. Images are selected here to prevent overlaps}\label{fig:08-N-im}
 }
 \end{figure}
 
-The resulting fractal dimension and lacunarity measures for all images in these three series are shown in Figures \ref{fig:08-IS-HS} to \ref{fig:08-N-HS}. In all three cases -- increased image size and house size, increased image size and house count, and increased house count and decreased house size -- there are clear tendencies. In the two first series (upper and lower images in Figure \ref{fig:08-N-im}), fractal dimension increases with image size, seemingly independently from the evolution in the pattern given that density remains constant. In the third case, when image size is kept constant (right side images in Figure \ref{fig:08-N-im}), changes in fractal dimension are much smaller and less systematic, however lacunarity changes though with some fluctuation. Regarding the two different summary measures of lacunarity -- mean \emph{L} and exponent \emph{L}, see above -- though not identical, they respond in very similar ways to changes in all three image series. However, it is important to notice that the direction of change in lacunarity is opposite depending of the summary measure in the first and second series, while identical in the second. This difference is not easy to explain, and underlines the importance of reporting explicitly which lacunarity measure is being used. As seen on these plots, the exponent lacunarity typically has values below or around 1, while the mean lacunarity may have much higher values and cannot be below 1 -- an observation that can serve as a rule of thumb for decrypting results where the exact type of measurement used is not explicitly reported.
+The resulting fractal dimension and lacunarity measures for all images in these three series are shown in Figures \ref{fig:08-IS-HS} to \ref{fig:08-N-HS}. In all three cases -- increased image size and house size, increased image size and house count, and increased house count and decreased house size -- there are clear tendencies. In the two first series (upper and lower images in Figure \ref{fig:08-N-im}), fractal dimension increases with image size, seemingly independently from the evolution in the pattern given that density remains constant. In the third case, when image size is kept constant (right side images in Figure \ref{fig:08-N-im}), changes in fractal dimension are much smaller and less systematic, however lacunarity changes with some fluctuation. Regarding the two different summary measures of lacunarity -- mean \emph{L} and exponent \emph{L} (see above) -- though not identical, they respond in very similar ways to changes in all three image series. However, it is important to notice that the direction of change in lacunarity is opposite depending of the summary measure in the first and third series, while identical in the second. This difference is not easy to explain, and underlines the importance of reporting explicitly which lacunarity measure is being used. As seen on these plots, the exponent lacunarity typically has values below or around 1, while the mean lacunarity may have much higher values and cannot be below 1 -- an observation that can serve as a rule of thumb for decrypting results where the exact type of measurement used is not explicitly reported.
 
 
 
@@ -1527,7 +1527,7 @@ In the first two series, where image size is variable, it should furthermore be 
 \caption{Variable element count (\emph{N}) and image size, with constant house length of 10 pixels and density at 0.25. Resulting fractal dimension (\emph{D}) and mean lacunarity (\emph{L\_mean}, plot a) and exponent lacunarity (L, plot b). Images are numbered by iteration}\label{fig:08-N-IS}
 \end{figure}
 
-The series with fixed image size and changes in house count and house size also show some convergence in results at higher iterations, though with seemingly more random volatility (Figure \ref{fig:08-N-HS}). This indicates that with a given image size, zooming in and out on the pattern has very little influence on the measured fractal dimension (as would be expected from the theory), as long as the pattern is spatially homogeneous. Lacunarity estimates on the other hand, become influenced when zooming in too much, though it quickly stabilises when more of the pattern is included or zooming out. Judging from the results of all three size related image series, there might be some lower threshold of image size and resolution beyond which the box-counting and gliding-box methods become inaccurate, and that the ``real'' values for this regular square grid pattern of 0.25 density are close to those in the lower right end of Figure \ref{fig:08-N-im}, namely \(D \approx 1.64\) and \(L\_mean\approx 2.0\). For image size, the results start to converge at iteration 12 or around 260*260 pixels (Figure \ref{fig:08-N-IS}), given the box size range and fitting method used here. Furthermore, the choice of a 0.5 m per pixel resolution used in this thesis was arbitrary but came from the acknowledgement that higher resolution would only induce a false sense of accuracy, while lower resolution could potentially lump together archaeological data. In Figure \ref{fig:08-N-HS}, estimates begin to stabilise at iteration 7 for mean lacunarity and 5 for exponent lacunarity. Using the more conservative option of 7 (discarding the most inaccurate data), the length of a house is here covered by \(420/8/2 \approx 26\) pixels, which, if this represents 5 metres gives a resolution of \(\approx 0.19\) metres per pixel, which again is about 0.04 or 4\% of the house length. In other words, the results presented here indicate that when single pixels represent 4\% or less of the smallest features that are being analysed, lacunarity estimates become inaccurate, while fractal dimension estimates remain more unaffected, again given the box widths and fitting method applied here. This sets a tentative upper threshold to image resolution, while the lower threshold should be determined by what gives an acceptable spatial representation of the data. The 0.5 metres per pixel resolution applied in Chapter \ref{images-results} lets one pixel represent 10\% of a 5 metres long wall, thus being within the threshold. Furthermore, 0.5 metres is 4\% of 12.5 metres, which would be the maximum size of the smallest mapped feature before the resolution would be too high for the lacunarity estimates to be accurate. This threshold value should however at this point only be understood as a rule-of-thumb, as its precision is difficult to quantify any further here. The effect of image resolution on \emph{D} and \emph{L} estimates of images with other pattern layouts and densities also remains unknown. And again, in these analyses image resolution is only an issue since the analysed pattern is not actually scale-invariant. Rather it has a clear lower bound, leaving large open spaces in the image when zooming in too much. This is also the case with settlement plans, which, no matter the degree of clustering and self-similarity, will always have a lower bound set by the human scale, since houses can only be so small.
+The series with fixed image size and changes in house count and house size also show some convergence in results at higher iterations, though with seemingly more random volatility (Figure \ref{fig:08-N-HS}). This indicates that with a given image size, zooming in and out on the pattern has very little influence on the measured fractal dimension (as would be expected from the theory), as long as the pattern is spatially homogeneous. Lacunarity estimates on the other hand, become influenced when zooming in too much, though it quickly stabilises when more of the pattern is included by zooming out. Judging from the results of all three size related image series, there might be some lower threshold of image size and resolution beyond which the box-counting and gliding-box methods become inaccurate, and that the ``real'' values for this regular square grid pattern of 0.25 density are close to those in the lower right end of Figure \ref{fig:08-N-im}, namely \(D \approx 1.64\) and \(L\_mean\approx 2.0\). For image size, the results start to converge at iteration 12 or around 260*260 pixels (Figure \ref{fig:08-N-IS}), given the box size range and fitting method used here. Furthermore, the choice of a 0.5 m per pixel resolution used in this thesis was arbitrary but came from the acknowledgement that higher resolution would only induce a false sense of accuracy, while lower resolution could potentially lump together archaeological spatial data. In Figure \ref{fig:08-N-HS}, estimates begin to stabilise at iteration 7 for mean lacunarity and 5 for exponent lacunarity. Using the more conservative option of 7 (discarding the most inaccurate data), the length of a house is here covered by \(420/8/2 \approx 26\) pixels, which, if this represents 5 metres gives a resolution of \(\approx 0.19\) metres per pixel, which again is about 0.04 or 4\% of the house length. In other words, the results presented here indicate that when single pixels represent 4\% or less of the smallest features that are being analysed, lacunarity estimates become inaccurate, while fractal dimension estimates remain more unaffected, again given the box widths and fitting method applied here. This sets a tentative upper threshold to image resolution, while the lower threshold should be determined by what gives an acceptable spatial representation of the data. The 0.5 metres per pixel resolution applied in Chapter \ref{images-results} lets one pixel represent 10\% of a 5 metres long wall, thus being within the threshold. The other way around, 0.5 metres is 4\% of 12.5 metres, which would be the maximum size of the smallest mapped feature before the resolution would be too high for the lacunarity estimates to be accurate. This threshold value should however at this point only be understood as a rule-of-thumb, as its precision is difficult to quantify any further here. The effect of image resolution on \emph{D} and \emph{L} estimates of images with other pattern layouts and densities also remains unknown. And again, in these analyses image resolution is only an issue since the analysed pattern is not strictly speaking scale-invariant. Rather it has a clear lower bound, leaving large open spaces in the image when zooming in too much. This is also the case with settlement plans, which, no matter the degree of clustering and self-similarity, will always have a lower bound set by the human scale, since houses can only be so small.
 
 
 
@@ -1545,14 +1545,24 @@ The series with fixed image size and changes in house count and house size also 
 \hypertarget{effects-from-density-and-size-distribution}{%
 \section{Effects from density and size distribution}\label{effects-from-density-and-size-distribution}}
 
-Start here
+While density and size distribution of elements are not directly connected to layout type and regularity, as different layouts may have varying degrees of both, they are nonetheless important aspects of settlement plans. Different chrono-cultural contexts give settlement plans of different densities, and this aspect was one of the main differences between the ``Anatolian village'' and ``Balkan village'' types of the early Neolithic as shown by Furholt (2016). The density between houses may be highly reflective of the organisation of village life as a whole, as well as of differences between areas of larger settlements. The importance of size distribution of houses for understanding the underlying social system and potential hierarchy between houses was shown in the previous chapters of this thesis.
 
-rasdf. Refer to Figure \ref{fig:08-dens}.
+For both of these variables, a series of 20 images was constructed with internal incremental change between images, keeping other variables constant. In order to avoid the issues related to image size and resolution presented above, image size was set here to 540*540 pixels, with a regular grid of \(N = 27^2 = 729\) houses (i.e.~corresponding to rather large settlements from an archaeological point of view). Over the 20 images, density was set to vary incrementally from 0.05 (one pixel per house) to the upper limit where all houses percolate into a single filled square (density = 1, Figure \ref{fig:08-dens-im}). Fractal dimension and lacunarity estimates of the images with variable density followed clear and regular trends, with \emph{D} and \emph{L} being seemingly exponentially correlated to density, as seen in how the step lengths between iteration points in Figure \ref{fig:08-dens}b decrease at a constant rate. \emph{L\_mean} being already exponentially correlated to \emph{D} (see further discussion below), it seems to follow a power-law relationship to density, meaning that low densities get very high values of \emph{L\_mean} and inversely. As should be expected the range in \emph{D} values in this series is very wide, from approximately 1.0 (the dimension of a straight line segment with no surface) to above 1.8. In theory the single black box of which the last iteration image consists should have a dimension of 2, illustrating the limits of the box-counting method. This wide range also shows clearly that a fractional dimension value obtained from an image through box counting does not in itself mean that the analysed pattern is actually fractal (i.e.~exhibiting self-similarity at a range of different scales). The observed lacunarity values of the last image of this series (no space between points) were, however, arbitrarily close to the theoretical values of 0 for \emph{L} and 1 for \emph{L\_mean}.
+
+\begin{figure}
+\hypertarget{fig:08-dens-im}{%
+\centering
+\includegraphics{Results/fig08_dens_im.pdf}
+\caption{Fractal dimension and mean lacunarity of images with identical size and layout, but with densities varying with linear increments from 0.05 to 1. Number labels represent iteration, and images are selected to prevent overlaps}\label{fig:08-dens-im}
+}
+\end{figure}
+
+The exponential relationship between fractal dimension and density of spatial patterns was noted by Thomas et al. (2007), who -- based on the layouts of different suburbs of modern Brussels -- argued that \emph{D} gave additional information on texture and clustering that density could not give. The constant relationship between \emph{D} and density here shows that the two measures are largely equivalent, \emph{given a constant layout}. To further investigate whether \emph{D} and \emph{L} measurements actually capture anything more than density, in the remaining image series density was kept constant at 0.25.
 
 
 
 \begin{verbatim}
-## Warning: ggrepel: 2 unlabeled data points (too many overlaps). Consider
+## Warning: ggrepel: 6 unlabeled data points (too many overlaps). Consider
 ## increasing max.overlaps
 \end{verbatim}
 
@@ -1562,20 +1572,20 @@ rasdf. Refer to Figure \ref{fig:08-dens}.
 
 }
 
-\caption{Different image densities}\label{fig:08-dens}
+\caption{Fractal dimension and lacunarity measures on the same 20 images with varying density. Because of pixelation the first image was rounded up to be identical to the second, with density = 0.01. Number labels represent iterations}\label{fig:08-dens}
 \end{figure}
 
-Then to illustrate, Figure \ref{fig:08-dens-im}.
+A natural follow-up from the preceding chapters is to test to which extent different size distributions of houses are reflected in fractal dimension and lacunarity of settlement plans, all other things being equal. A series of 20 images were generated with gradually increased inequality between house sizes, with image size kept at 540\textsuperscript{2} pixels and N = 729 (27 rows and columns in a square grid). The size distribution was defined as a log-normal with an arbitrary mean at \(\mu = 3.5\) and standard deviations varying in linear increments between \(0 < \sigma < 0.9\). The first image was thus uniform with identical house sizes, while the last image had some sizes that were much larger than most of the others. For each image, the size distribution was normalised to 1 and multiplied with the desired fraction of the total image area so that density was kept at 0.25 (with small deviations due to occasional overlaps between neighbouring houses). This series thus illustrates settlements of identical size and layout, but where the size distribution of houses range from (nearly) identical to very unequal (Figure \ref{fig:08-distr-im}).
 
 \begin{figure}
-\hypertarget{fig:08-dens-im}{%
+\hypertarget{fig:08-distr-im}{%
 \centering
-\includegraphics{Results/fig08_dens_im.pdf}
-\caption{Different image densities}\label{fig:08-dens-im}
+\includegraphics{Results/fig08_distr_im.pdf}
+\caption{Fractal dimension and mean lacunarity of images with identical size, layout and density but with varying size distributions of single elements, from uniform (image 1) to log-normal with \(\sigma = 0.9\) (image 20), in linear increments of \(\sigma\) from 0. Number labels represent iteration, and images are selected here to prevent overlaps}\label{fig:08-distr-im}
 }
 \end{figure}
 
-Then to size distributions. See Figure \ref{fig:08-distr}.
+The fractal dimension of the images with variable house-size distributions dropped from the value of the first iteration (\(D \approx 1.56\)) to around 1.52 where it fluctuated with no clear pattern for the remaining iterations (Figure \ref{fig:08-distr}). Lacunarity -- both the mean and exponent summary measures -- increased gradually for almost every iteration, showing how this measure quantifies the increasing irregularity of the gaps between elements, and not only the sum of the gap sizes (i.e.~density). Though this trend seems clear enough, the range of lacunarity values on this series remains moderate compared to those obtained from the series with variable density.
 
 
 
@@ -1585,25 +1595,25 @@ Then to size distributions. See Figure \ref{fig:08-distr}.
 
 }
 
-\caption{Different size distributions of the elements contained in the images}\label{fig:08-distr}
+\caption{Fractal dimension and lacunarity estimates of the whole image series, with 729 square points varying in size distribution from uniform (log-normal with \(\sigma = 0\)) to log-normal with \(\sigma = 0.9\). For each image, sizes were normalised so that they together covered 25\% of the total image area, notwithstanding some overlaps causing image density to descend to a minimum of 0.242. Label numbers indicate iteration}\label{fig:08-distr}
 \end{figure}
 
-Then refer to Figure \ref{fig:08-distr-im}.
-
-\begin{figure}
-\hypertarget{fig:08-distr-im}{%
-\centering
-\includegraphics{Results/fig08_distr_im.pdf}
-\caption{Different size distributions}\label{fig:08-distr-im}
-}
-\end{figure}
-
-And go on.
+\FloatBarrier
 
 \hypertarget{quantification-of-self-similarity-and-random-noise}{%
 \section{Quantification of self-similarity and random noise}\label{quantification-of-self-similarity-and-random-noise}}
 
-Now, what's really interesting. Self-similarity as clustering in Figure \ref{fig:08-clustering}.
+To assess the effect of spatial self-similarity or hierarchical clustering, an image series was generated where, as before, image size, N and density were kept constant, and the size distribution was kept uniform, but where the spaces between houses were gradually increased or reduced so that houses increasingly would form hierarchical clusters. This can be done in a number of ways -- in this case two levels of clusters were generated (a third being the settlement as a whole), the lower consisting of 3*3 houses and the upper of 3*3 lower clusters (Figure \ref{fig:08-clustering-im}). This configuration was the reason for choosing 27 rows and columns in the first place for all these image series, since it can conveniently allow for such hierarchical clustering without having non-integer numbers of houses (or houses of different sizes). The first image in this series was thus an entirely regular grid identical to the first image in the size distribution series described above, but the last image here represents a rather different layout, illustrating settlements where hierarchical organisational levels result in self-similar clustering of the overall plan, as described by Brown and Witschey for classical and post-classical Maya urban settlements (2003, pp. 1625--1628). As they argue, the underlying hierarchical levels of social organisation (e.g.~family, lineage, clan, state) have been widely observed and described by ethnographers and historians, while the materialisation of such hierarchies in settlement plans is far more rarely recognised, and even less so in terms of fractal geometry.
+
+\begin{figure}
+\hypertarget{fig:08-clustering-im}{%
+\centering
+\includegraphics{Results/fig08_clustering_im.pdf}
+\caption{Fractal dimension and mean lacunarity of images of identical size, layout and density, but with degrees of hierarchical clustering, from no clustering (image 1) to high clustering in two levels, where the space between clusters represent 8\% of the superior level's total length and the points start to percolate (image 20). Number labels represent iteration, and images are selected to prevent overlaps}\label{fig:08-clustering-im}
+}
+\end{figure}
+
+The resulting fractal dimension and lacunarity estimates on these images show a very similar trend as the one observed on the size distributions image series (Figure \ref{fig:08-clustering}). However, in this case \emph{D} continues to drop from the first until the last iteration, albeit with some seemingly random fluctuations. Furthermore, after the first five iterations (which are in reality quite close to the entirely regular grid, see Figure \ref{fig:08-clustering-im}), both lacunarity measures given here start to increase and do so regularly until the end of the series. Though again the ranges in both dimension and lacunarity are rather moderate here compared to those seen for density and image size above, the trend seen here is clear enough to conclude that hierarchical clustering is reflected in both these measures, in good accordance with the theory.
 
 
 
@@ -1613,20 +1623,20 @@ Now, what's really interesting. Self-similarity as clustering in Figure \ref{fig
 
 }
 
-\caption{Different degrees of spatial clustering and self-similarity}\label{fig:08-clustering}
+\caption{Fractal dimension and lacunarity measures on the same images with varying degrees of spatial clustering, and fixed image size, density, element count and size distributions. Number labels represent iteration}\label{fig:08-clustering}
 \end{figure}
 
-See the illustration on Figure \ref{fig:08-clustering-im}.
+As a last test series of images to facilitate interpretation of fractal dimension and lacunarity estimates of settlement plans, 20 images were generated from the same point of departure as before -- i.e.~image size of 540*540 pixels, 27*27 houses each of 10*10 pixel size, giving 0.25 image density -- but where an increasing amount of spatial noise was added for each iteration. Again, this could be done in a number of ways. In this case, each house was allowed to do an independent random walk with a step length of 2.4 pixel equivalents in one out of 12 circular directions (this caused some greyscaling in the resulting images, but the applied box-counting and gliding-box functions round such values to 0 and 1). Each random-walk step represented one iteration in the series (see Bruvoll, n.d. for a similar approach). An advantage of using square synthetic images for this test rather than simulations of actual settlement plans, is that the effect from such spatial noise can be more easily isolated from density. When elements walk in random directions, some will inevitably walk out and away from the initial pattern, thus decreasing image density no wether the image is extended to include them or not. To solve this issue and making sure that density remained as constant as possible given how it was shown above to influence the resulting estimates, the image size was here kept constant and houses that walked beyond the boundaries were moved across the image to the opposite side. Some decrease in image density was however difficult to avoid given the frequent overlaps of the areas of houses that walked very close to each other. As a result, the lowest density in this series extended to 0.232, which is still fairly close to the goal of 0.25. The resulting more or less noisy images in this series thus illustrate the range of possible settlement layouts from one where every house is strictly allotted to a predefined place following a simple geometric grid, to one where houses are constructed completely without any regard to the placement of surrounding houses (Figure \ref{fig:08-noise-im}). Neither of these extremes are of course very likely for any real archaeological setting, but it seems obvious that the former case will be more characteristic of societies with strong overarching institutions that regulate everyday life while the latter case is more representative of very loose social ties between independent households and an absence of any overarching decision-making authority. \#Ref?
 
 \begin{figure}
-\hypertarget{fig:08-clustering-im}{%
+\hypertarget{fig:08-noise-im}{%
 \centering
-\includegraphics{Results/fig08_clustering_im.pdf}
-\caption{Different degrees of clustering and self-similarity}\label{fig:08-clustering-im}
+\includegraphics{Results/fig08_noise_im.pdf}
+\caption{Fractal dimension and mean lacunarity of the same image with variable degrees of added random spatial noise. See text for details. Number labels represent iteration, in this case steps of random walk performed independently for each point, and images are selected to prevent overlaps}\label{fig:08-noise-im}
 }
 \end{figure}
 
-And also random noise, see
+The resulting \emph{D} and \emph{L} measures from these images follow the same general trajectory as the images with variable clustering and size distribution, with lower fractal dimension and higher lacunarity for each step of added noise (Figure \ref{fig:08-noise}). The fractal dimension estimates oscillate in a few cases, possibly because of sudden random correspondence between the initial pattern grid and the box sizes used in the calculations. The lacunarity estimates -- both the mean and the exponent lacunarity -- followed very regular increase after the second iteration. Here again, the trend seems sufficiently regular to conclude that random noise is effectively quantified by both fractal dimension and lacunarity, in a similar way to the other changes in pattern presented above.
 
 
 
@@ -1636,25 +1646,29 @@ And also random noise, see
 
 }
 
-\caption{Different degrees of random spatial noise}\label{fig:08-noise}
+\caption{Estimates of fractal dimension (\emph{D}) and mean lacunarity (plot a) and exponent lacunarity (plot b), of 20 images with increasing degrees of added random spatial noise. Number labels represent iteration}\label{fig:08-noise}
 \end{figure}
 
-Then see illustration on Figure \ref{fig:08-noise}.
-
-\begin{figure}
-\hypertarget{fig:08-noise-im}{%
-\centering
-\includegraphics{Results/fig08_noise_im.pdf}
-\caption{Different degrees of random spatial noise}\label{fig:08-noise-im}
-}
-\end{figure}
-
-That's it for the tests. Summarise below.
+\FloatBarrier
 
 \hypertarget{summary-of-procedure-and-tests}{%
 \section{Summary of procedure and tests}\label{summary-of-procedure-and-tests}}
 
+Calculations of fractal dimension and lacunarity on synthetically generated test images provide useful clarifications on how these measures respond to changes in some crucial variables. Firstly
+
+CONTINUE HERE
+
 Just to sum up the different tests:
+
+\begin{figure}
+\hypertarget{fig08-all-im}{%
+\centering
+\includegraphics{Results/fig08_all_im.pdf}
+\caption{Clustering, size distribution and noise, compared to density}\label{fig08-all-im}
+}
+\end{figure}
+
+And then all and whole range.
 
 
 
@@ -1943,6 +1957,9 @@ Brown, C., \& Liebovitch, L. (2010). \emph{Fractal analysis}. SAGE Publications,
 
 \leavevmode\vadjust pre{\hypertarget{ref-brown2012}{}}%
 Brown, C., Watson, A., Gravlin-Beman, A., \& Liebovitch, L. (2012). \emph{Poor mayapán} (pp. 306--324). Equinox Publishing.
+
+\leavevmode\vadjust pre{\hypertarget{ref-brown2003}{}}%
+Brown, C., \& Witschey, W. (2003). The fractal geometry of ancient Maya settlement. \emph{Journal of Archaeological Science}, \emph{30}(12), 1619--1632. \url{https://doi.org/10.1016/S0305-4403(03)00063-3}
 
 \leavevmode\vadjust pre{\hypertarget{ref-bruvollforthcoming}{}}%
 Bruvoll, H. (n.d.). Quantifying spatial complexity of settlement plans through fractal analysis. \emph{Journal of Archaeological Method and Theory}.
@@ -2428,7 +2445,7 @@ Tannier, C., \& Pumain, D. (2005). Fractals in urban geography: A theoretical ou
 Testart, A. (2005). \emph{Eléments de classification des sociétés}. Éditions Errance : ill. en noir, tabl., cartes, schémas, couv. ill. en coul.
 
 \leavevmode\vadjust pre{\hypertarget{ref-thomas2007}{}}%
-Thomas, I., Frankhauser, P., \& De Keersmaecker, M.-L. (2007). Fractal dimension versus density of built-up surfaces in the periphery of Brussels*. \emph{Papers in Regional Science}, \emph{86}(2), 287--308. \url{https://doi.org/10.1111/j.1435-5957.2007.00122.x}
+Thomas, I., Frankhauser, P., \& De Keersmaecker, M.-L. (2007). Fractal dimension versus density of built-up surfaces in the periphery of Brussels. \emph{Papers in Regional Science}, \emph{86}(2), 287--308. \url{https://doi.org/10.1111/j.1435-5957.2007.00122.x}
 
 \leavevmode\vadjust pre{\hypertarget{ref-trebsche2010}{}}%
 Trebsche, P., Müller-Scheeβel, N., \& Reinhold, S. (2010). \emph{Der gebaute Raum: Bausteine einer Architektursoziologie vormoderner Gesellschaften}. Waxmann.

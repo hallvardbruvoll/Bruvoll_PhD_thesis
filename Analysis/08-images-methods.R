@@ -74,8 +74,10 @@ for (i in 2:(iterations+1)) {
 
 # Variable density, constant N, size distribution and layout
   # Images were not rendered entirely binary here no matter what
-  # Also, smallest length (0.05) gave no output
-unit_length <- seq(0.1, 1, length.out = iterations)
+  # Smallest length (0.05) gave no output after pixelation,
+    # so the two first iterations are identical
+unit_length <- seq(0.05, 1, length.out = iterations)
+unit_length[1] <- 0.1
 limits <- c(0.5,27.5)
 for (i in 1:iterations) {
   one_plot <- tibble(x = rep(1:27, 27),
@@ -385,10 +387,10 @@ distr_data <- filter(D_L_test_plots, Series == "Distr"
 fig08_distr_im <- ggplot(distr_data)+
   aes(D, L_mean, label = Iter, image = path)+
   geom_image(size = 0.25)+
-  geom_text(data = slice(distr_data, c(1,2,4,5)), nudge_y = 0.06)+
-  geom_text(data = slice(distr_data, 3), nudge_y = -0.06)+
-  scale_x_continuous(expand = c(0.002, 0.002))+
-  scale_y_continuous(expand = c(0.15, 0))+
+  geom_text(data = slice(distr_data, c(1,2,5)), nudge_y = 0.055)+
+  geom_text(data = slice(distr_data, c(3, 4)), nudge_x = 0.008)+
+  scale_x_continuous(expand = c(0.008, 0.008))+
+  scale_y_continuous(expand = c(0.2, 0))+
   theme_bw()+
   theme(panel.background = element_rect(fill = "lightgrey"),
         panel.grid = element_blank())
@@ -412,13 +414,14 @@ fig08_clustering <- plot_grid(cluster1, cluster2, nrow = 1, labels = "auto")
 
   # Clustering images
 cluster_data <- filter(D_L_test_plots, Series == "Clustering"
-                       & Iter %in% c(1,10,15,20))
+                       & Iter %in% c(1,5,10,15,20))
 fig08_clustering_im <- ggplot(cluster_data)+
   aes(D, L_mean, label = Iter, image = path)+
   geom_image(size = 0.25)+
-  geom_text(data = slice(cluster_data, 1:3), nudge_x = -0.003, nudge_y = 0.01)+
-  geom_text(data = slice(cluster_data, 4), nudge_x = 0.003)+
-  scale_x_continuous(expand = c(0.005, 0.005))+
+  geom_text(data = slice(cluster_data, c(1,4)), nudge_y = 0.07)+
+  geom_text(data = slice(cluster_data, c(2,5)), nudge_x = 0.009)+
+  geom_text(data = slice(cluster_data, 3), nudge_x = -0.009)+
+  scale_x_continuous(expand = c(0.01, 0.01))+
   scale_y_continuous(expand = c(0.05, 0.05))+
   theme_bw()+
   theme(panel.background = element_rect(fill = "lightgrey"),
@@ -447,7 +450,8 @@ noise_im_data <- filter(D_L_test_plots, Series == "Noise" &
 fig08_noise_im <- ggplot(noise_im_data)+
   aes(D, L_mean, label = Iter, image = path)+
   geom_image(size = 0.25)+
-  geom_text(data = slice(noise_im_data, 2:5), nudge_x = 0.01)+
+  geom_text(data = slice(noise_im_data, 2:5), nudge_x = 0.01,
+            nudge_y = 0.01)+
   geom_text(data = slice(noise_im_data, 1), nudge_x = -0.01)+
   scale_x_continuous(expand = c(0.01, 0.01))+
   scale_y_continuous(expand = c(0.15, 0.01))+
@@ -456,10 +460,49 @@ fig08_noise_im <- ggplot(noise_im_data)+
         panel.grid = element_blank())
 
 # All images, add it in the end of the chapter
-all1 <- ggplot(D_L_test_plots)+
-  aes(D, L_mean, size = Iter, colour = Series)+
-  geom_point(alpha = 0.5)+
+# First zoom in on the all plot, to extract zoom limits
+all_zoom_data <- bind_rows(filter(D_L_test_plots, Series %in%
+                                    c("Distr", "Clustering", "Noise")),
+                           filter(D_L_test_plots, Series == "Density" &
+                                    Iter > 7 & Iter < 13))
+all_zoom_data <- all_zoom_data %>%
+  arrange(Series, Iter)
+all_zoom_images <- filter(all_zoom_data, Iter %in% c(1, 20) |
+                            id %in% c("Density_8",
+                                      "Density_10",
+                                      "Density_12"))
+
+fig08_all_im <- ggplot(all_zoom_data)+
+  aes(D, L_mean, colour = Series)+
   scale_size_area(max_size = 4)+
+  geom_image(data = all_zoom_images, aes(image = path,
+                                         colour = NULL), size = 0.18)+
+  geom_point(alpha = 0.5)+
+  ggrepel::geom_text_repel(data = all_zoom_images, aes(label = Iter),
+                           nudge_y = 0.3, show.legend = FALSE,
+                           segment.colour = NA)+
+  geom_path(alpha = 0.5)+
+  theme_bw()+
+  scale_x_continuous(expand = c(0.015, 0.015))+
+  scale_y_continuous(expand = c(0.1, 0.1))+
+  theme_bw()+
+  theme(panel.background = element_rect(fill = "lightgrey"),
+        panel.grid = element_blank(), legend.position = "bottom")
+
+plot_build <- ggplot_build(fig08_all_im)
+small_frame <- tibble(x = plot_build$layout$panel_params[[1]]$x.range,
+                      y = plot_build$layout$panel_params[[1]]$y.range)
+
+  # Here the whole range for all series
+all1 <- ggplot(D_L_test_plots)+
+  aes(D, L_mean, colour = Series)+
+  geom_point(aes(size = Iter), alpha = 0.5)+
+  scale_size_area(max_size = 4)+
+  geom_rect(data = small_frame, aes(xmin = x[1], ymin = y[1],
+                                    xmax = x[2], ymax = y[2],
+                                    x = NULL, y = NULL),
+            fill = alpha("grey", 0), colour = "grey",
+            show.legend = FALSE)+
   theme_bw()+
   theme(legend.position = "bottom")
 
@@ -474,30 +517,6 @@ all_legend <- get_legend(all1)
 fig08_all <- plot_grid(plot_grid(all1+theme(legend.position = "none"),
                                  all2, nrow = 1, labels = "auto"),
                        all_legend, ncol = 1, rel_heights = c(1, 0.1))
-
-# Zoom in on the all plot
-all_zoom_data <- bind_rows(filter(D_L_test_plots, Series %in%
-                                    c("Distr", "Clustering", "Noise")),
-                           filter(D_L_test_plots, Series == "Density" &
-                                    Iter > 7 & Iter < 13))
-all_zoom_data <- all_zoom_data %>%
-  arrange(Series, Iter)
-all_zoom_images <- filter(all_zoom_data, Iter %in% c(1, 20) |
-                        id %in% c("Density_8", "Density_12"))
-
-fig08_all_im <- ggplot(all_zoom_data)+
-  aes(D, L_mean, colour = Series)+
-  scale_size_area(max_size = 4)+
-  geom_image(data = all_zoom_images, aes(image = path,
-                                         colour = NULL), size = 0.2)+
-  geom_point(alpha = 0.5)+
-  geom_path()+
-  theme_bw()+
-  scale_x_continuous(expand = c(0.02, 0.02))+
-  scale_y_continuous(expand = c(0.2, 0.2))+
-  theme_bw()+
-  theme(panel.background = element_rect(fill = "lightgrey"),
-        panel.grid = element_blank(), legend.position = "bottom")
 
 # Note to self: From this it seems density is the only factor that
 # has significant impact on both D and L
@@ -518,6 +537,7 @@ save(fig08_IS_HS, file = "Results/fig08_IS_HS.RData")
 save(fig08_N_HS, file = "Results/fig08_N_HS.RData")
 save(fig08_N_IS, file = "Results/fig08_N_IS.RData")
 
+  # Image sizes are not set explicitly here, they follow my screen size
 ggsave("Results/fig08_noise_im.pdf", plot = fig08_noise_im)
 ggsave("Results/fig08_clustering_im.pdf", plot = fig08_clustering_im)
 ggsave("Results/fig08_distr_im.pdf", plot = fig08_distr_im)
