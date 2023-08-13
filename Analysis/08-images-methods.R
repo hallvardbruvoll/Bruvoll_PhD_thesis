@@ -545,4 +545,45 @@ ggsave("Results/fig08_dens_im.pdf", plot = fig08_dens_im)
 ggsave("Results/fig08_N_im.pdf", plot = fig08_N_im)
 ggsave("Results/fig08_all_im.pdf", plot = fig08_all_im)
 
-# END CHAPTER
+# Correlations to density (all other things being equal)
+
+#D_density <- lm(formula = D ~ density,
+    #data = filter(D_L_test_plots, Series == "Density"))
+#log_D_density <- lm(formula = log(D) ~ density,
+    #data = filter(D_L_test_plots, Series == "Density"))
+D_log_density <- lm(formula = D ~ log(density),
+                    data = filter(D_L_test_plots, Series == "Density"))
+
+#summary(D_density)
+#summary(log_D_density)
+summary(D_log_density)
+
+#L_density <- lm(formula = L ~ density,
+    #data = filter(D_L_test_plots, Series == "Density"))
+#log_L_density <- lm(formula = log(L) ~ density,
+    #data = filter(D_L_test_plots, Series == "Density"))
+L_log_density <- lm(formula = L ~ log(density),
+                    data = filter(D_L_test_plots, Series == "Density"))
+
+#summary(L_density)
+#summary(log_L_density)
+summary(L_log_density)
+
+#L_mean_density <- lm(formula = L_mean ~ density,
+    #data = filter(D_L_test_plots, Series == "Density"))
+#log_L_mean_density <- lm(formula = log(L_mean) ~ density,
+    #data = filter(D_L_test_plots, Series == "Density"))
+#L_mean_log_density <- lm(formula = L_mean ~ log(density),
+    #data = filter(D_L_test_plots, Series == "Density"))
+log_L_mean_log_density <- lm(formula = log(L_mean) ~ log(density),
+                             data = filter(D_L_test_plots,
+                                           Series == "Density"))
+
+#summary(L_mean_density)
+#summary(log_L_mean_density)
+#summary(L_mean_log_density)
+summary(log_L_mean_log_density)
+
+density_effects <- list(D_log_density, L_log_density,
+                        log_L_mean_log_density)
+save(density_effects, file = "Results/density_effects.RData")
