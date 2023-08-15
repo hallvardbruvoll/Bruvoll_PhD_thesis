@@ -1,7 +1,33 @@
-# (PART) Synthesis {-}
+# (PART) Synthesis {.unnumbered}
 
 # Discussion: Social complexity in Linear Pottery and Trypillia settlements {#disc-results}
 
-fdsasdf
+(Results from size distributions and settlement plans, for Trypillia and Linear Pottery settlements.)
+
+-   Restate the research questions: Social hierarchy. Was there any, how important was it, and at which scale did it operate?
+
+    -   Restate the status quo of research:
+
+        -   Oscillations in general opinion over time for Linear Pottery
+
+        -   Geographical/national research traditions for Trypillia
+
+-   The question of urbanity for Trypillia. @sindbæk2022: Anomalocivitas or low-density urbanism, also @ohlrau2022 for neither.
+
+    -   No visible spatial differentiation between quarters in Nebelivka -- not filling the classic requirement for urbanism
+
+    -   But clear hierarchisation between households -- beyond the house typology. Evidence of social hierarchy, though the specific social content of it is hard to say from house sizes alone. This analysis cannot decide between the two main competing hypotheses of democratic assemblies or more clan-based autocracy #check again#
+
+    -   Draw in previous house-size analyses of Nebelivka and Maidanetske
+
+-   For Linear Pottery, evidence of hierarchical scaling between households, corroborating current argumentations based on grave goods and skeletal remains.
+
+    -   Linear Pottery society was not simply egalitarian, as that could hardly account for the large inequalities in house sizes.
+
+    -   Inequality does not seem to have increased markedly over time at Vráble. Rather there seems to have been a (at least moderately) hierarchical social system in place from early expansion phases of the settlement, possibly with clan leaders present in each of the three neighbourhoods, as well as competitive behaviours among lower levels households as well. While tensions may well have increased over time, the social hierarchy seems to have been in place long before the massacres of the late phases.
+
+-   For both: Results from both approaches cross-cut the distinction between Trypillia and Linear Pottery cultural belonging. There are homogeneously compact vs. heterogeneously clustered settlements from either group, as well as power-law vs. non-power-law house size distributions. These two differentiations do not overlap either, leaving a complex overall impression.
+
+    -   Despite methodological challenges (effectively distinguishing between log-normal and power-law distributions) ower-law distributed house sizes seem inherently
 
 END Chapter

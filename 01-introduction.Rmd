@@ -44,11 +44,13 @@ A possible confusion with a somewhat different meaning of the term hierarchy sho
 
 A classic example -- perhaps most of all in popular culture -- is dominance hierarchy among wolves, led by an alpha male [e.g. @cafazzo2016; @packard2003]. Though it has been much discussed whether or not this trope model actually fits wolves [see @mech1999; @muro2011], any reported dominance hierarchies among larger groups of wolves and stray dogs are linear rather than pyramidal, even when they are illustrated as pyramidal [e.g. Fig.1 in @rodríguez2017]. Similar social organisation systems are found among a wide variety of species -- mammals, birds, fish, particularly but not only among group-hunting carnivores -- and are generally interpreted as an evolutionary mechanism [@strauss2022, with references]. Cases of branching, multi-level social hierarchies among animals are on the other hand extremely rare, but have been reported to operate among hamadryas baboons in Ethiopia, with "clan leaders" forming relays of information flow and decision making between the "one-male units" within a total population ("band") of about 200 individuals [@schreier2009]. Eusocial insects like ants and wasps provide a more well-known example of hierarchical organisation among animals [@shimoji2022], also indicating -- if it should be necessary -- that it is not a matter of cognitive abilities or brain size, but rather of social function (e.g. building a hive or a village together) and population size above a certain threshold.
 
-The reason to dwell upon this qualitative distinction between linear and pyramidal hierarchies, is that the prevalence of the former in nature is sometimes put forward as an argument for social hierarchies among hunter-gatherer groups in the Palaeo- and Mesolithic [find precise reference here --\> Graeber, if else strawman, Hayden 2007, pp. 231-6] **fill in this one**. While it is a good point that there is no reason there couldn't be linear dominance hierarchies among small forager groups, and that such systems hardly can be described as egalitarian by those who live them, we cannot assume that pyramidal social hierarchies have always been part of human culture, but rather that they -- much like agriculture -- at some point came to be as historical phenomena.
+The reason to dwell upon this qualitative distinction between linear and pyramidal hierarchies, is that the prevalence of the former in nature is sometimes put forward as an argument for social hierarchies among hunter-gatherer groups in the Palaeo- and Mesolithic [find precise reference here --\> Graeber, if else strawman, Hayden 2007, pp. 231-6]. In their large-scope volume of the emergence of social inequality around the world over the Holocene, Flannery and Marcus [-@flannery2012, pp. 37-9, 58-60] apparently saw the need to explain away the dominance hierarchy seen among other great apes as something that among human foragers was relegated to spirits and ancestors (FINISH THIS SENTENCE)
+
+**fill in this one**. While it is a good point that there is no reason there couldn't be linear dominance hierarchies among small forager groups, and that such systems hardly can be described as egalitarian by those who live them, we cannot assume that pyramidal social hierarchies have always been part of human culture, but rather that they -- much like agriculture -- at some point came to be as historical phenomena.
 
 Bottom line hierarchy: pecking order/linear dominance hierarchy may be prevalent in any part of human prehistory, but could also be very hard to study from material remains. Branching (i.e. fractal) hierarchies as well as social stratification should leave material traces, and are most probably related to population size (see below), and thus less likely to be found within pre-Neolithic societies. They should be regarded as historically situated phenomenons -- much like agriculture, pottery, writing or the steam engine -- justifying the search for and explanation of their possible origins [*contra* e.g. @graeber2021]. The issue of the universality or particularity of social inequality and hierarchy is discussed in more detail **in the final chapters of this thesis (specify).**
 
--   Inequality @kohler2018, @midlarsky1999, @price2010, @price1995. The difference between the concepts of social hierarchy and social inequality lies in the former relating to social and/or political organisation and the distribution of power, while the latter to economy and the distribution of wealth or income. Societies where these two are completely unrelated may be theoretically conceivable -- that is, where wealth does not entail power and *vice versa* -- but historically they have tended to go hand in hand, albeit not necessarily in a straightforward way. HERE discuss a bit on delegated power, democracy, taking turns etc., and such systems being impeded by wealth (lobbying, corruption++). Keep it simple, point is to prepare for the interpretation of Trypillia mega-sites as *both* egalitarian and hierarchical (and maybe LBK as *both* unequal and unstratified..).
+-   Inequality @kohler2018, @midlarsky1999, @price2010, @price1995, @flannery2012. The difference between the concepts of social hierarchy and social inequality lies in the former relating to social and/or political organisation and the distribution of power, while the latter to economy and the distribution of wealth or income. Societies where these two are completely unrelated may be theoretically conceivable -- that is, where wealth does not entail power and *vice versa* -- but historically they have tended to go hand in hand, albeit not necessarily in a straightforward way. HERE discuss a bit on delegated power, democracy, taking turns etc., and such systems being impeded by wealth (lobbying, corruption++). Keep it simple, point is to prepare for the interpretation of Trypillia mega-sites as *both* egalitarian and hierarchical (and maybe LBK as *both* unequal and unstratified..).
 
 ## What is social hierarchy? {#social-hierarchy}
 
@@ -56,9 +58,9 @@ Bottom line hierarchy: pecking order/linear dominance hierarchy may be prevalent
 
 -   Nested and non-nested social hierarchies, hierarchical hunter-gatherers? @hamilton2007, @whitridge2016 (or use in Chapter \@ref(disc-methods)?)
 
--   Biologically defined thresholds to group size? Dunbar's number and controversies, @dunbar2022, @west2023 (add published papers). Scalar stress @johnson1982, @alberti2014, @zhou2005. Also @carneiro1986, @dubreuil2010
+-   Biologically defined thresholds to group size? Dunbar's number and controversies, @dunbar2023, @west2023 (add published papers). Scalar stress @johnson1982, @alberti2014, @zhou2005. Also @carneiro1986, @dubreuil2010
 
--   Temporal dynamics of social hierarchies: cyclicity [@peters2017], sawtooth waves [@scheidel2017], punctuated equilibrium [@gould2007; zimmermann?]. Archaeo. example South Sweden Neo/BA: @nordquist2001. Transitions villages to urban: @birch2014
+-   Temporal dynamics of social hierarchies: cyclicity [@peters2017], sawtooth waves [@scheidel2017], punctuated equilibrium [@gould2007]. Archaeo. example South Sweden Neo/BA: @nordquist2001. Transitions villages to urban: @birch2014
 
 <!-- -->
 
@@ -74,7 +76,7 @@ Refs. house societies [@joyce2000, Bnf; @beck2007; @kuijt2018; @lévi-strauss198
 
 <!-- -->
 
--   Anti-evolution critique in @yoffee1993, @yoffee2005, @fontijn2013, @kienlin2012, @lund2022, @furholt2020. Review in @dubreuil2010. Anarchistic critique/heterarchy: @crumley1995, @haude2019, @graeber2021. Paleaeolithic social inequality: @honoré2022 ++.
+-   Anti-evolution critique in @yoffee1993, @yoffee2005, @fontijn2013, @kienlin2012, @lund2022, @furholt2020. Review in @dubreuil2010. Anarchistic critique/heterarchy: @crumley1995, @haude2019, @graeber2021. Paleaeolithic social inequality: @honoré2022, also @testart2012, @testart1982
 -   I need to address gender inequality somewhere, mainly to say that this thesis is not about gender inequality. Start from @gaydarska2023, and cite A. Augereau for the LBK.
 
 ## Main findings here?
@@ -100,28 +102,3 @@ Some readers might react to an apparent deviation from the academic tradition of
 An additional note should be made here regarding the writing style of the different parts and chapters. It is my belief that a major obstacle for fractal analysis methods to become more integrated into the standard tool kits of archaeological research, is the excessively technical nature of much of the associated literature. archaeology as a discipline remains profoundly rooted in the Humanities, as seen in the inbuilt structure of teaching, research and funding institutions in most (at least European) countries. Fractal analysis is derived from pure mathematics, and most applications so far have been developed within the natural sciences (**ref necessary?**). Archaeologists who are trained within a humanistic scholarly tradition cannot be expected to hold a skill level of mathematics more advanced than what is achieved in high school, and code programming is hardly taught at all within the walls of Humanities faculties. Technical details regarding the methods and analyses applied in this thesis are therefore -- as much as possible -- limited to the devoted Chapters \@ref(methods-distfit) and \@ref(images-methods), and readers who are interested in these may also refer to the online code repository for more details and reproducibility **cite repository**. In the rest of the thesis I have opted for a more narrative approach, in an attempt to invite a somewhat larger audience of archaeologists into the fascinating complexities of fractals.
 
 END Chapter
-
-Here I skipped a line.\
-Here I added a backslash.
-
-Figures and tables with captions will be placed in `figure` and `table` environments, respectively.
-
-```{r nice-fig, fig.cap='Here is a nice figure!', out.width='80%', fig.asp=.75, fig.align='center'}
-par(mar = c(4, 4, .1, .1))
-plot(pressure, type = 'b', pch = 19)
-```
-
-Reference a figure by its code chunk label with the `fig:` prefix, e.g., see Figure \@ref(fig:nice-fig). Similarly, you can reference tables generated from `knitr::kable()`, e.g., see Table \@ref(tab:nice-tab).
-
-```{r nice-tab, tidy=FALSE}
-knitr::kable(
-  head(iris, 20), caption = 'Here is a nice table!',
-  booktabs = TRUE
-)
-```
-
-You can write citations, too. For example, we are using the **bookdown** package [@R-bookdown] in this sample book, which was built on top of R Markdown and **knitr** [@xie2015].
-
-Test: @morgan1965.
-
-Test: @mandelbrot2021. jløkj fdsasdfadfasdfadf new text

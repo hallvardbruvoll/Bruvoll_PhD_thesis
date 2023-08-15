@@ -1,6 +1,6 @@
 # Discussion: Fractal Analysis and Archaeological data {#disc-methods}
 
-fdsasdf
+Draw conclusions based on comparison of results from the synthetic data series and the empirical ones, both for distribution and for image analysis.
 
 Also mention here fractals or related concepts used as a metaphor, with no mathematics involved [e.g. @chapman2006; @sherratt2004; @sindbæk2022; @whitridge2016].
 
@@ -8,7 +8,41 @@ Also mention here fractals or related concepts used as a metaphor, with no mathe
 
 -   Multiplicative processes: power laws vs. log-normal, long debates [e.g. @harrison1981, @sheridan2018]. Does it really matter in the end?
 
--   
+-   The most characteristic difference between power-law and non-power-law tails (log-normal distributions) for settlements, was the proportion of the distribution included in the tail (Table \@ref(tab:06-settle-tab)). Tails that were interpreted as power laws consisted of a maximum of 44% of the data (at Nebelivka, and excluding Horný which was too small for confident results). Log-normal distributions without power-law tails on the other hand (interpreted as exponentials) had a minimum of 66% and up to 93% of the data in them. All tail $x_{min}$ values were set where they gave the best possible power-law fit. This may indicate that the distinction *is* meaningful after all.
+
+    -   The power laws identified for whole settlements were largely persistent when the distributions were subdivided into separate quarters, neighbourhoods and time samples -- sub-samples that often had lower house counts than settlements that did not have power law tails.
+
+    -   Tests on synthetic data series indicated that aggregated data series (settlement data with low temporal resolution) would not generate false positive power-law distributions, as long as the data aggregation did not involve stacking of essentially differently distributed sub-sets (i.e. different settlements or phases with marked shifts in material culture).
+
+    -   Small sample sizes were shown to increase the risk of false positive power laws, while large sample sizes reduced the risk. Only the small settlement of Horný seems to have given a false positive power-law tail, the other ones being the largest settlements in the sample.
+
+    -   Together, these arguments further indicate that the settlements with identified power-law tails were indeed different from the rest, and that this difference was linked to settlement size.
+
+-   Power-law distribution in house sizes were identified for the largest settlements only,
+
+    -   Also the whole settlements without power-law tails would have even smaller coeval plans than Vráble, further strengthening the argument of a correlation between settlement size and hierarchy.
+
+-   Conclusion of these observations: Social hierarchy emerges as a result of social groups growing beyond a critical threshold, while cultural specifics are of less importance.
+
+    -   This is completely uncontroversial from a dynamical systems point of view, and there are several social [@alberti2014; @johnson1982; @delanda2006] and psychological [@dunbar2023; @zhou2005] explanations for how such emergence takes place.
+
+    -   In archaeology, such explanations are often unpopular, since we like to believe that social organisation is culture-specific and largely determined by human agency. However, this view can paradoxically lead to seeing archaeological cultures as monolithic in how their society is organised, while there might well be more intra-culture variation than what is often recognised.
+
+    -   From this I argue that we must be open to the possibility that social life could have been as different between small and large settlements within single archaeological cultures as it would be between settlements of different cultures within the same period.
+
+    -   Lots of caveats:
+
+        -   The possibility of seasonality of Trypillia mega-sites -- which is not necessarily contradictory to the above conclusion. Discussion in @graeber2021 on seasonality also in social organisation.
+
+        -   These emerging hierarchies would not explain the subsequent disintegration of neither Linear Pottery nor Trypillia culture groups, since the largest settlements are rather atypical for each of them (#recheck this after chap 3).
+
+-   Settlement size hierarchies are seemingly much more difficult to observe for prehistoric contexts, since the contemporaneity of settlements and their coeval sizes must first be established. Much of earlier attempts of doing this have been flawed both by their use of theory and method [see review in @grove2011], but current developments -- framed as Settlement Scaling Theory [@bettencourt2021; @lobo2020; @smith2021] -- show promising results, albeit for more recent periods than what is considered in this study.
+
+    -   In addition to the problem of contemporaneity of settlements, their total size often remains unknown since in the majority of cases, neolithic settlements are known through surface finds and partial excavations.
+
+    -   The ongoing revolution in the use of remote sensing imagery (quality of documentation and price/availability) may change this situation soon.
+
+    -   More theoretical and methodological studies are needed to determine the necessary requirements, specifically of spatial and temporal resolution, for settlement scaling to give accurate results.
 
 ## Image analysis
 
