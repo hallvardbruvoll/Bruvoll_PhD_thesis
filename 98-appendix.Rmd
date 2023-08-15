@@ -2,8 +2,10 @@
 
 # This is my first appendix
 
-Jada jada jada
+Something from the distfit analyses??
+Are there enough results in the tables in chapters?
 
 # This is my second one
-
-Bla bla bla
+Things to include here:
+D_L results table
+Images used in analysis, both synthetic and empirical

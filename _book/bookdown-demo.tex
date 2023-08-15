@@ -149,7 +149,7 @@
 \makeatother
 \subtitle{with case studies from the Linear Pottery and Trypillia cultures (5.500 - 3.500 cal. BCE)}
 \author{Hallvard Bruvoll \and Department of Archaeology, Conservation and History \and University of Oslo}
-\date{2023-08-11}
+\date{2023-08-14}
 
 \begin{document}
 \maketitle
@@ -523,7 +523,7 @@ Meaning of ``house''
 \hypertarget{lbk}{%
 \section{The Linear Pottery culture complex}\label{lbk}}
 
-General intro to the culture
+General intro to the culture: Bickle \& Whittle (2013); Whittle \& Bickle (2014).
 
 Formation, characteristics -- striking difference from earlier Mesolithic cultures, hence the term ``Neolithic Revolution'' pinned by Vere Gordon Childe for the seemingly abrupt transition to agriculture in continental Europe with what he called the Danubian Ia \textbf{ref}. Whittle (2022), check with Trigger!
 
@@ -1456,8 +1456,8 @@ END Chapter
 
 fdasdf
 
-\hypertarget{calculating-fractal-dimension-and-lacunarity}{%
-\section{Calculating fractal dimension and lacunarity}\label{calculating-fractal-dimension-and-lacunarity}}
+\hypertarget{images-procedure}{%
+\section{Calculating fractal dimension and lacunarity}\label{images-procedure}}
 
 \begin{itemize}
 \item
@@ -1471,7 +1471,7 @@ fdasdf
   \item
     Fractional box-counting dimension does not equal self-similarity in a simple way
   \item
-    My summary \emph{L} is not equal to the one used in \emph{FracLac} and thus by Farías-Pelayo (2017)
+    My summary \emph{L} is not equal to the one used in \emph{FracLac} and thus by Farías-Pelayo (2017a)
   \end{itemize}
 \item
   Image preparation procedure
@@ -1512,11 +1512,6 @@ The resulting fractal dimension and lacunarity measures for all images in these 
 In the first two series, where image size is variable, it should furthermore be noted that the changes in \emph{D} and \emph{L} measures between iterations roughly slow down as image size increases, potentially indicating that they approach the ``true'' values of the given pattern, and that the measurements of the smallest images are only statistical artefacts. Another parameter which is related to image size is the range of box widths used when analysing the images, and further study could allow for more elaboration on the possible influence this could have on the resulting estimates. In any case, the range of dimension values from 0.96 to 1.66 is considerable given that these images are practically the same besides image size. The range of lacunarity in these series is more moderate compared to the results from other variables presented below. The step-wise decrease in lacunarity seen especially in the image series of increasing \emph{N} with image size (Figure \ref{fig:08-N-IS}), is a further indication that the choice of box widths relative to the resolution of the image has a marked influence on the results.
 
 
-
-\begin{verbatim}
-## Warning: ggrepel: 5 unlabeled data points (too many overlaps). Consider increasing max.overlaps
-## ggrepel: 5 unlabeled data points (too many overlaps). Consider increasing max.overlaps
-\end{verbatim}
 
 \begin{figure}
 
@@ -1560,11 +1555,6 @@ For both of these variables, a series of 20 images was constructed with internal
 The exponential relationship between fractal dimension and density of spatial patterns was noted by Thomas et al. (2007), who -- based on the layouts of different suburbs of modern Brussels -- argued that \emph{D} gave additional information on texture and clustering that density could not give. The constant relationship between \emph{D} and density here shows that the two measures are largely equivalent, \emph{given a constant layout}. To further investigate whether \emph{D} and \emph{L} measurements actually capture anything more than density, in the remaining image series density was kept constant at 0.25.
 
 
-
-\begin{verbatim}
-## Warning: ggrepel: 6 unlabeled data points (too many overlaps). Consider
-## increasing max.overlaps
-\end{verbatim}
 
 \begin{figure}
 
@@ -1632,7 +1622,7 @@ As a last test series of images to facilitate interpretation of fractal dimensio
 \hypertarget{fig:08-noise-im}{%
 \centering
 \includegraphics{Results/fig08_noise_im.pdf}
-\caption{Fractal dimension and mean lacunarity of the same image with variable degrees of added random spatial noise. See text for details. Number labels represent iteration, in this case steps of random walk performed independently for each point, and images are selected to prevent overlaps}\label{fig:08-noise-im}
+\caption{Different degrees of random spatial noise}\label{fig:08-noise-im}
 }
 \end{figure}
 
@@ -1654,21 +1644,21 @@ The resulting \emph{D} and \emph{L} measures from these images follow the same g
 \hypertarget{summary-of-procedure-and-tests}{%
 \section{Summary of procedure and tests}\label{summary-of-procedure-and-tests}}
 
-Calculations of fractal dimension and lacunarity on synthetically generated test images provide useful clarifications on how these measures respond to changes in some crucial variables. Firstly
+Calculations of fractal dimension and lacunarity on synthetically generated test images provide useful clarifications on how these measures respond to changes in some crucial variables. The tests on image series with varying image sizes and zooms on a regular square grid pattern indicate that both \emph{D} and \emph{L} measures become increasingly inaccurate when estimated on images smaller than about 260*260 pixels, given the box sizes used here in the analyses. The values were calculated from bi-logarithmic linear fits to results for box sizes ranging from 1 to 512 pixel lengths, where null values were excluded from the fit whenever the analysed images were smaller than the box size. Reducing the maximum box sizes remains a possibility that could allow for more accurate estimates from small images, which again could prove useful whenever run time becomes an issue, since larger images are computationally much heavier to analyse. With the test images analysed here, too small images gave too low fractal dimension estimates, while lacunarity was seemingly less affected (Figure \ref{fig:08-N-im}).
 
-CONTINUE HERE
+Another requirement for reaching acceptable accuracy in fractal dimension and lacunarity results, is that the image resolution should seemingly not exceed pixel sizes smaller than about 4\% of the side length of the smallest mapped features. Letting pixels be smaller than this (i.e.~\emph{higher} image resolution) only adds a false sense of accuracy given that the analysed patterns are not strictly speaking scale independent but rather bound to the scales that are relevant for human agency. A too high resolution thus generates too large void spaces between elements, leading to too high lacunarity values, while fractal dimension in this case remains less affected.
 
-Just to sum up the different tests:
+Other variables, which were more related to the visual appearance of the pattern, also gave characteristic results. Size distribution of pattern elements, level of hierarchical clustering and random spatial noise all affected \emph{D} and \emph{L} measures in a similar way, in that larger deviations from homogeneity drew the former values down and the latter up in a consistent way. Density on the other hand, had a different effect on \emph{D} and \emph{L} estimates in two ways. Firstly, increased image density gave consistently \emph{higher} fractal dimension and \emph{lower} lacunarity values, and secondly -- though the intensity of the different variables are difficult to compare -- the effect from density appeared here as much stronger than that of the others. Figures \ref{fig:08-all-im} and \ref{fig:08-all} illustrate how a minor adjustment in image density made more difference in both fractal dimension and lacunarity than the whole range of variation in noise, clustering and size distribution. One caveat here though, is that these variables are often in practice combined in empirical settlement plans -- there is usually both some level of clustering, noise and inequality in sizes -- and it remains unknown whether these factors combined give stronger signals compared to that of density. In any case, it seems clear that image density must be taken into consideration when interpreting the layout of settlement plans from their fractal dimension and/or lacunarity.
 
 \begin{figure}
-\hypertarget{fig08-all-im}{%
+\hypertarget{fig:08-all-im}{%
 \centering
 \includegraphics{Results/fig08_all_im.pdf}
-\caption{Clustering, size distribution and noise, compared to density}\label{fig08-all-im}
+\caption{The first and last images of the clustering, size distribution and noise series, as well as images 8, 10 and 12 of the density series, showing how only small increments in density -- here from 0.16 (im. 8) to 0.36 (im. 12) -- generate changes in fractal dimension and lacunarity that are larger than those induced by the whole range of the other variables. Density image 10 is identical to image 1 of the three other series, and has density value 0.25}\label{fig:08-all-im}
 }
 \end{figure}
 
-And then all and whole range.
+From the results presented above, another trait seemed characteristic of the link between density, fractal dimension and lacunarity. All other things being equal, density was exponentially correlated to both \emph{D} and \emph{L}, and power-law correlated to \emph{L\_mean} (Figure \ref{fig:08-dens}). In fact, for a regular square grid pattern with given density, these fractal analysis measures can seemingly be very well predicted with simple linear models on log-transformed density (\#ADD MODEL TABLE). These models can be used tentatively to compare \emph{D} and \emph{L} values of images with varying density, by first subtracting the values expected from density alone. However, it must again be stressed such an analysis probably is premature at this stage, since several factors remain unaccounted for. For example, regarding the Neolithic settlement plans compared in the next chapter, the effects on \emph{D} and \emph{L} from different settlement layouts remain untested. Also, effects from size distribution, clustering and noise have only been evaluated here at a single given density value, and these may behave very differently at other density levels. As mentioned, they may also have for now unstudied cocktail effects, and in empirical settings grid orientation and edge effects quickly become issues of their own that are not further investigated here.
 
 
 
@@ -1678,27 +1668,19 @@ And then all and whole range.
 
 }
 
-\caption{Results from all test series}\label{fig:08-all}
+\caption{Fractal dimension and lacunarity estimates of all synthetic images analysed in this chapter. \emph{L\_mean} and \emph{L} show largely similar distributions but with some marked differences. See text for details. The grey frame in plot a shows the extent of Figure \ref{fig:08-all-im}}\label{fig:08-all}
 \end{figure}
 
-Though the value ranges of the different tested factors are difficult to compare,\ldots{} etc.
+Lastly, in this and the following chapter I have largely opted for presenting results for both exponent lacunarity (here denoted simply \emph{L}) and mean lacunarity (\emph{L\_mean}), since both are found in the literature as summary measures of lacunarity, but not always with explicit mention of what they represent mathematically (Farías-Pelayo, 2015; as in Farías-Pelayo, 2017b). The results here show that they are largely equivalent, a part from the differing value ranges. For two image series -- varying image size and house size (Figure \ref{fig:08-IS-HS}), and varying house size and house count (Figure \ref{fig:08-N-HS}) -- the results followed similar but reverse trajectories, without any obvious reason. And for density, as mentioned, \emph{L\_mean} was power-law correlated while \emph{L} was only exponentially correlated (Figure \ref{fig:08-dens}). While studies in various fields refrain from using summary measures of lacunarity at all, preferring to rather show the full distribution of lacunarity to box sizes (e.g.~in ecology, Hingee et al., 2019), my impression here is that any of these summary measures may be used, as long as it remains clear which one it is.
 
-\begin{itemize}
-\item
-  Procedure for archaeological samples, same as in article
-\item
-  Procedure for synthetic sample
-\end{itemize}
+Procedure for archaeological samples, same as in article. \#Add two sentences here introducing the next chapter.
 
 END Chapter
 
 \hypertarget{images-results}{%
 \chapter{Results: Image analysis}\label{images-results}}
 
-\hypertarget{settlements-1}{%
-\section{Settlements}\label{settlements-1}}
-
-fasdfadfs
+The same Neolithic settlements that were analysed in Chapter \ref{results-distfit} were here analysed with image renderings of their plans following the procedure presented in Section \ref{images-procedure}. Resulting estimates of fractal dimension and lacunarity (summarised by power-law exponent and mean) are shown for all images in Figure \ref{fig:09-all}. The spread of results in the scatter plot is very similar to that of the synthetic images analysed in the previous chapter (Figure \ref{fig:08-all}), with a strong linear correlation between \emph{D} and \emph{L}, and exponential correlation between \emph{D} and \emph{L\_mean}. Fractal dimension estimates are however much lower and lacunarity estimates are higher for the empirical settlement plans than for the synthetic ones, possibly resulting from the generally lower image densities (see Appendix ref(add ref) for the complete results). Settlements with higher house counts are also consistently situated towards the lower right of the plot, while the temporal samples of Vráble, with fewer houses and large voids between them, fall towards the upper left. The image of Vráble 1, showing only a single house, is a clear outlier. It also violates the minimal image size prerequisite suggested previously, and will be excluded from the further analysis. The clear separation between the temporally coeval and the cumulative settlement plans illustrates how these are not easily comparable, which is a very common problem in archaeology. It shows how crucial it is to take into consideration the temporal resolution of the data both when formulating research questions and when interpreting results {[}\#ref with pages, perrault{]}. In the following, the results are further discussed by image series, starting with whole settlements, followed by quarters and neighbourhoods for Nebelivka and Vráble, and lastly by temporal samples for Vráble. The results presented in this chapter are also partially presented in Bruvoll (n.d.).
 
 
 
@@ -1708,10 +1690,13 @@ fasdfadfs
 
 }
 
-\caption{Maybe I'll move this one to the previous chapter?}\label{fig:09-all}
+\caption{Fractal dimension and mean lacunarity (plot a) and exponent lacunarity (plot b) for all 46 images analysed in this chapter. Values are presented as a data table in Appendix \#add ref}\label{fig:09-all}
 \end{figure}
 
-fdsasdf
+\hypertarget{settlements-1}{%
+\section{Settlements}\label{settlements-1}}
+
+Fractal dimension and mean lacunarity of the plans of whole settlements are shown in Figure \ref{fig:09-settle-points}a. Lacunarity values divide the images into two distinct groups, cross-cutting cultural adherence, while dimension values seem closely correlated to settlement size (proxied through house count \emph{N}). The plot can to some extent be reproduced directly by replacing \emph{D} with \emph{N} and \emph{L\_mean} with density, also setting both axes in logarithmic scales and reversing the y axis (Figure \ref{fig:09-settle-points}b). In this image series, the small Linear Pottery settlement of Horný and the Trypillia settlement of Talne 3 had image sizes that were below the threshold proposed in the previous chapter, meaning that their fractal dimensions are possibly underestimated. When comparing these values to the visual appearance of the settlement plans, at least for the Linear Pottery settlements it seems clear that the upper group of settlements (those with high lacunarity values) are subdivided into more or less separate neighbourhoods with open spaces between them, i.e.~more clustered, while the lower group -- specifically Nevidzany and Čierne -- only consist of one more dense and regular grid-like layout (Figure \ref{fig:09-settlements}). For the two Trypillia mega-sites, Nebelivka and Maidanetske, this separation is somewhat less obvious, since they both follow the characteristic radial layout. Nebelivka does arguably have more open space between quarters than Maidanetske, which in turn is more homogeneously ``filled'', and the higher overall density of the latter (0.084 to 0.031 of Nebelivka) may contribute to its higher fractal dimension. The smaller circular settlement of Moshuriv is also highly regular in its distribution of open spaces, leading to lower lacunarity.
 
 
 
@@ -1721,25 +1706,36 @@ fdsasdf
 
 }
 
-\caption{fdsasfasd}\label{fig:09-settle-points}
+\caption{Settlements plans quantified through their fractal dimension (\emph{D}) and mean lacunarity (\emph{L\_mean}, plot a) and house count (\emph{N}) and density (plot b). In plot b, scales are logarithmic, and the y axis is reversed, in order to obtain as similar results as possible to those shown in plot a. The settlements of Talne 3 and Horný had images that were smaller than the lower threshold proposed in the previous chapter}\label{fig:09-settle-points}
 \end{figure}
 
-fdsasdfasdf
-
 \begin{figure}
-\hypertarget{fig09-settlements}{%
+\hypertarget{fig:09-settlements}{%
 \centering
 \includegraphics{Results/fig09_settlements.pdf}
-\caption{caption here}\label{fig09-settlements}
+\caption{Plans of the same settlements, plotted by \emph{D} and \emph{L\_mean}. Image sizes are not internally to scale -- size differences are reduced to facilitate readability, as the mega-sites are in reality orders of magnitude larger than the smallest ones}\label{fig:09-settlements}
 }
 \end{figure}
 
-jklølkjølkjgkh
+The models formulated in the preceding chapter for \emph{D}, \emph{L} and \emph{L\_mean} as functions of density on regular grids (Table \#add ref) were tentatively applied to these results, and the residuals -- i.e.~the differences between the modelled and the empirical values for each image -- are shown on Figure \ref{fig:09-settle-resid}. The residual values do not show actual values of \emph{D} and \emph{L}, (\emph{D} values are below 1 and close to 0) but value points of how much the empirical values differ from the modelled ones. The plot thus gives an idea of fractal dimension and lacunarity estimates that could be obtained for these settlement plans if they all had the same density. However, as already mentioned, these results are only illustrative, since the analysis does not take into account a number of relevant factors, like the different layout concepts differentiating Trypillia and Linear Pottery settlement plans. The resulting scatter plot shows similarities to both plots in Figure \ref{fig:09-settle-points}. The differentiation by lacunarity between clustered and less clustered settlements is maintained, while fractal dimension separates the three largest settlements -- the two Trypillia mega-sites as well as Vráble -- more clearly from the remainder. These were also the ones showing the clearest power-law distributions of house sizes in Chapter \ref{distfit-results}. In the synthetic images analysed earlier, clustering, noise and unequal size distributions resulted in lower fractal dimension for images with the same density, while here almost all settlements have \emph{higher} dimension than what would be expected from a regular grid with the same density. Comparing the values in relative rather than absolute terms, and following the conclusions from the analysis on synthetic images, the three largest settlements here could be interpreted as being overall more regular, less clustered and noisy (though with more unequal size distributions) than the other settlements. Since fractal dimension here is seemingly correlated to settlement size, it could also be that the effects from noise, clustering and size distribution be weaker relative to the overall plan, though this effect does not appear on the results for lacunarity.
+
+Any attempt of interpreting these results in terms of social organisation is not self-evident. However, some points can be made. Firstly, it is clear that fractal dimension and lacunarity are not sufficient for distinguishing Trypillia and Linear Pottery settlement plans quantitatively. Neolithic specialists may find this result disappointing, pointing to the visually very obvious difference between grid and radial layouts. On the other hand, it could be objected that these cultures do share concepts in spatial organisation that are quite close -- houses are largely free-standing, often organised in rows, and overall densities are similar -- and it remains quite possible that these methods could distinguish more easily between more differentiated plans like early Neolithic Anatolian villages, Alpine wetland sites or Bronze or Iron Age semi-urban or urban settlements. Secondly, the results do seem to differentiate effectively between clustered and non- (or at least less) clustered settlements, which again points to the social coherence within the settlement. Villages that are clearly clustered into separate neighbourhoods may show signs of higher levels of inter-group competition and potentially violent tensions, as seen in the skeletal material at Vráble. Contrarily to the results obtained from synthetic images, household inequality proxied through house sizes seems not to be effectively reflected in fractal dimension nor lacunarity, since the settlements that previously have been shown to exhibit the highest levels of inequality also have the highest fractal dimension values, especially when controlled for effects from density. Expected effects from size distribution as well as spatial noise probably drowned from the size of the largest settlements. More sophisticated modelling could possibly also control for a larger range of disturbing factors such as image size, house count, grid orientations etc. Lastly, even though the quantitative distinction between clustered and non-clustered settlements is interesting, the results obtained here (Figures \ref{fig:09-settle-points}a and \ref{fig:09-settle-resid}) are not substantially better than those that could be obtained more directly through house count and density (Figure \ref{fig:09-settle-points}b), which are far easier to calculate.
+
+
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.9\linewidth]{bookdown-demo_files/figure-latex/09-settle-resid-1} 
+
+}
+
+\caption{\emph{D} and \emph{L\_mean} residuals for the same settlements after subtracting expected values due to image density alone, modelled on the synthetic images with variable density presented in Chapter \ref{images-methods}. See \#table for details}\label{fig:09-settle-resid}
+\end{figure}
 
 \hypertarget{quartersneighbourhoods-1}{%
 \section{Quarters/neighbourhoods}\label{quartersneighbourhoods-1}}
 
-fdasdfasdf
+The quarters of Nebelivka and the neighbourhoods of Vráble were analysed in the same way, and their fractal dimension and lacunarity estimates are shown in Figure \ref{fig:09-quart-points}a, while for comparison, house count and image density are shown on Figure \ref{fig:09-quart-points}b. For this image series, the spread of estimates was rather moderate, and again no clear distinction was observed between Linear Pottery and Trypillia layouts, even though they are visually organised in strikingly different ways (Figure \ref{fig:09-quarters}). For both settlements, there was no clear partition of sections into separate groups -- rather, the whole series formed a continuous spread across the plot. It is clear that density was correlated to lacunarity for these images, since the relative order of images on the y-axis is nearly the same in plots a and b of Figure \ref{fig:09-quart-points}. However, fractal dimension was in this case less obviously correlated to house count than for the total settlement plans -- or, this correlation had a lesser effect since the various quarters and neighbourhoods were of more uniform sizes (both by image size and house count).
 
 
 
@@ -1749,20 +1745,33 @@ fdasdfasdf
 
 }
 
-\caption{fdsasdfad}\label{fig:09-quart-points}
+\caption{Fractal dimension (\emph{D}) and mean lacunarity (\emph{L\_mean}, plot a) and house count (\emph{N}) and density (plot b) of the plans of separate Nebelivka quarters and Vráble neighbourhoods. The image size of Nebelivka E was below the lower threshold of 260*260 pixels. Axes in plot b are logarithmic, with the y-axis reversed, in order to reproduce the spread in plot a}\label{fig:09-quart-points}
 \end{figure}
 
-fdasdfasd
+If some distinction is still to be made between images on opposite ends of the scatter plot, for both settlements the most compact sections were plotted towards the lower right end of the plot, while the most patchy or stretched-out images were towards the upper left. For example, quarters L, F, D and G at Nebelivka are all dominated by inner more or less parallel streets, and have relatively high \emph{D} and low \emph{L\_mean} values, while quarters N, A and K are more patchy or dusty -- one could even say lacunar -- and are evaluated to correspondingly low \emph{D} and high \emph{L\_mean} values. Interestingly, the results here do seem to reflect those obtained from the distribution fitting analysis in Chapter \ref{results-distfit}, where quarters N and A were judged as suffering from missing data (notably lacking Assembly Houses). Quarters K and J, which here have the lowest fractal dimension values, were there interpreted as having quarter borders erroneously drawn by the researchers -- in any case their outlines are irregular compared to the other quarters. Quarter E was also speculated to be wrongly interpreted as a separate quarter, causing it to ``lack'' the power-law distribution of house sizes which characterised the other quarters. Here, quarter E is an outlier regarding both fractal dimension and lacunarity, but the analysed image is also the only one falling below the size threshold of 260*260 pixels previously proposed. Taking these methodological caveats into account, it would seem the Nebelivka quarters had an even smaller spread in fractal dimension and lacunarity, since all the quarters with the most atypical values can seemingly be explained away as non-representative of their original layouts. Despite this, the observation still holds, that quarters dominated by dense inner street grids are placed to the lower right of the plot, while those dominated by the open main street are to the upper left.
 
 \begin{figure}
-\hypertarget{fig09-quarters}{%
+\hypertarget{fig:09-quarters}{%
 \centering
 \includegraphics{Results/fig09_quarters.pdf}
-\caption{caption yuhuuu}\label{fig09-quarters}
+\caption{Plans of Nebelivka quarters and Vráble neighbourhoods, placed according to fractal dimension (\emph{D}) and mean lacunarity (\emph{L\_mean}). Image sizes are transformed to allow for better visibility of smaller images. The two layout types representative of Trypillia (Nebelivka) and Linear Pottery (Vráble) settlements largely overlap}\label{fig:09-quarters}
 }
 \end{figure}
 
-fdsasdfasdfghfghdfghf
+For Vráble, the three neighbourhoods also show similar results, with differences being apparently gradual rather than categorical. Also here, the image with the most densely packed and grid-like layout -- the northern neighbourhood -- also had the highest \emph{D} and the lowest \emph{L\_mean}, and inversely for the most patchy image of Vráble South-East. This latter neighbourhood was also the one of the three that was shown to not have a power-law tail to its house-size distribution in Chapter \ref{results-distfit}, similarly to Nebelivka quarter N. However, the perhaps most surprising result from analysing this series, is that these rather subtle differences in plan regularity had a greater effect on the fractal dimension and lacunarity estimates than the more obvious differences in layout between Linear Pottery and Trypillia settlements. Again, it should be worthwhile to test these analyses on other and more different data sets, to see whether they capture other types of layout differences more accurately.
+
+Lastly, when \emph{D} and \emph{L\_mean} estimates are controlled for effects from density, as was done with whole settlements above, residual \emph{D} values become somewhat more randomly distributed, while lacunarity remains more unaffected (Figure \ref{fig:09-quart-resid}). Even though the caveats already mentioned for this modelling must be repeated here, it would thus seem that there is very little to no significant difference between quarters and neighbourhoods in these two large settlements, further suggesting that there is no noticeable intra-site socio-economic differentiation either, which is in agreement with current understanding of Linear Pottery and Trypillia social organisation (see Chapter \ref{material}). Further analysis on more recent settlements (e.g.~Bronze Age tell settlements or Iron Age \emph{oppida}) could potentially contribute to our understanding of when such intra-site differentiation first became important factors.
+
+
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.9\linewidth]{bookdown-demo_files/figure-latex/09-quart-resid-1} 
+
+}
+
+\caption{Fractal dimension and mean lacunarity estimate residuals after controlling for effects from density, on the same quarter and neighbourhood images. Values expected from density are modelled on the density series of synthetic images in the previous chapter, see \#table}\label{fig:09-quart-resid}
+\end{figure}
 
 \hypertarget{temporal-samples-vruxe1ble-1}{%
 \section{Temporal samples (Vráble)}\label{temporal-samples-vruxe1ble-1}}
@@ -1791,6 +1800,19 @@ fdsasdsfdghs
 \end{figure}
 
 fsfghertyrty
+
+
+
+\begin{figure}
+
+{\centering \includegraphics[width=0.9\linewidth]{bookdown-demo_files/figure-latex/09-time-resid-1} 
+
+}
+
+\caption{jioøjpoj}\label{fig:09-time-resid}
+\end{figure}
+
+fdsa
 
 \hypertarget{summary-of-findings-1}{%
 \section{Summary of findings}\label{summary-of-findings-1}}
@@ -1934,6 +1956,9 @@ Bentley, R. A., \& Maschner, H. D. G. (2008). \emph{Complexity Theory} (R. A. Be
 \leavevmode\vadjust pre{\hypertarget{ref-bettencourt2021}{}}%
 Bettencourt, L. M. A. (2021). \emph{Introduction to Urban Science: Evidence and Theory of Cities as Complex Systems}. MIT Press.
 
+\leavevmode\vadjust pre{\hypertarget{ref-bickle2013}{}}%
+Bickle, P., \& Whittle, A. (2013). \emph{The first farmers of central europe: Diversity in LBK lifeways}. Oxbow Books.
+
 \leavevmode\vadjust pre{\hypertarget{ref-birch2014}{}}%
 Birch, J. (2014). \emph{From prehistoric villages to cities: settlement aggregation and community} (Vol. 10). Routledge.
 
@@ -2057,8 +2082,14 @@ Ensor, B. E., Irish, J. D., \& Keegan, W. F. (2017). The bioarchaeology of kinsh
 \leavevmode\vadjust pre{\hypertarget{ref-falconer2013}{}}%
 Falconer, K., \& Falconer, K. (2013). \emph{Fractals: A very short introduction}. Oxford University Press.
 
+\leavevmode\vadjust pre{\hypertarget{ref-farias-pelayo2015}{}}%
+Farías-Pelayo, S. (2015). \emph{La Cultura Xajay. Los otomíes al sur de la frontera norte de Mesoamérica. Caracterización por medio de su firma fractal} {[}PhD thesis{]}. \url{https://www.academia.edu/43740443/La_Cultura_Xajay_Los_otom\%C3\%ADes_al_sur_de_la_frontera_norte_de_Mesoam\%C3\%A9rica}
+
 \leavevmode\vadjust pre{\hypertarget{ref-faruxedas-pelayo2017}{}}%
-Farías-Pelayo, S. (2017). \emph{Characterization of Cultural Traits by Means of Fractal Analysis} (F. Brambila, Ed.). IntechOpen. \href{https://DOI:\%2010.5772/67893}{DOI: 10.5772/67893}
+Farías-Pelayo, S. (2017a). \emph{Characterization of Cultural Traits by Means of Fractal Analysis} (F. Brambila, Ed.). IntechOpen. \href{https://DOI:\%2010.5772/67893}{DOI: 10.5772/67893}
+
+\leavevmode\vadjust pre{\hypertarget{ref-farias-pelayo2017}{}}%
+Farías-Pelayo, S. (2017b). \emph{Characterization of Cultural Traits by Means of Fractal Analysis} (F. Brambila, Ed.). IntechOpen. \href{https://DOI:\%2010.5772/67893}{DOI: 10.5772/67893}
 
 \leavevmode\vadjust pre{\hypertarget{ref-fisher2009}{}}%
 Fisher, K. D. (2009). Placing social interaction: An integrative approach to analyzing past built environments. \emph{Journal of Anthropological Archaeology}, \emph{28}(4), 439--457. \url{https://doi.org/10.1016/j.jaa.2009.09.001}
@@ -2465,6 +2496,9 @@ Whitridge, P. (2016). Fractal Worlds: An Archaeology of Nested Spatial Scales. \
 \leavevmode\vadjust pre{\hypertarget{ref-whittle2022}{}}%
 Whittle, A. (2022). The Danube in Prehistory. \emph{European Journal of Archaeology}, \emph{25}(1), 133137. \url{https://doi.org/10.1017/eaa.2021.59}
 
+\leavevmode\vadjust pre{\hypertarget{ref-whittle2014}{}}%
+Whittle, A., \& Bickle, P. (2014). \emph{Early farmers: the view from archaeology and science} (First edition., Vol. 198). Published for the British Academy by Oxford University Press.
+
 \leavevmode\vadjust pre{\hypertarget{ref-wickham2016}{}}%
 Wickham, H. (2016). \emph{ggplot2: Elegant graphics for data analysis} (2nd ed. 2016). Springer International Publishing : Imprint: Springer. \url{https://doi.org/10.1007/978-3-319-24277-4}
 
@@ -2513,11 +2547,14 @@ Zipf, G. K. (1949). \emph{Human behavior and the principle of least effort: an i
 \hypertarget{this-is-my-first-appendix}{%
 \chapter{This is my first appendix}\label{this-is-my-first-appendix}}
 
-Jada jada jada
+Something from the distfit analyses??
+Are there enough results in the tables in chapters?
 
 \hypertarget{this-is-my-second-one}{%
 \chapter{This is my second one}\label{this-is-my-second-one}}
 
-Bla bla bla
+Things to include here:
+D\_L results table
+Images used in analysis, both synthetic and empirical
 
 \end{document}

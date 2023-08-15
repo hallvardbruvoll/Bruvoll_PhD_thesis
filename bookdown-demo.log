@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.7.26)  11 AUG 2023 16:21
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.7.26)  14 AUG 2023 17:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1337,27 +1337,21 @@ File: bookdown-demo_files/figure-latex/08-IS-HS-1.pdf Graphic file (type pdf)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [136]
-Overfull \hbox (144.98962pt too wide) in paragraph at lines 1519--1519
-[]\TU/lmtt/m/n/12 ## Warning: ggrepel: 5 unlabeled data points (too many overlaps). Consider increasing max.overlaps[] 
- []
-
+File: bookdown-demo_files/figure-latex/08-N-IS-1.pdf Graphic file (type pdf)
+<use bookdown-demo_files/figure-latex/08-N-IS-1.pdf>
+LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/n' will be
+(Font)              scaled to size 6.0pt on input line 1525.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [137]
-Overfull \hbox (89.36963pt too wide) in paragraph at lines 1519--1519
-[]\TU/lmtt/m/n/12 ## ggrepel: 5 unlabeled data points (too many overlaps). Consider increasing max.overlaps[] 
- []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-File: bookdown-demo_files/figure-latex/08-N-IS-1.pdf Graphic file (type pdf)
-<use bookdown-demo_files/figure-latex/08-N-IS-1.pdf>
-LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/n' will be
-(Font)              scaled to size 6.0pt on input line 1530.
 [138]
 File: bookdown-demo_files/figure-latex/08-N-HS-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/08-N-HS-1.pdf>
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/it' will be
-(Font)              scaled to size 8.0pt on input line 1540.
+(Font)              scaled to size 8.0pt on input line 1535.
 [139]
 Underfull \vbox (badness 1412) has occurred while \output is active []
 
@@ -1366,6 +1360,9 @@ File: Results/fig08_dens_im.pdf Graphic file (type pdf)
 <use Results/fig08_dens_im.pdf>
 File: bookdown-demo_files/figure-latex/08-dens-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/08-dens-1.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
 [141]
 File: Results/fig08_distr_im.pdf Graphic file (type pdf)
 <use Results/fig08_distr_im.pdf>
@@ -1390,111 +1387,91 @@ File: Results/fig08_noise_im.pdf Graphic file (type pdf)
 <use Results/fig08_noise_im.pdf>
 File: bookdown-demo_files/figure-latex/08-noise-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/08-noise-1.pdf>
-[149]
+[149] [150]
 File: Results/fig08_all_im.pdf Graphic file (type pdf)
 <use Results/fig08_all_im.pdf>
+
+Underfull \vbox (badness 1189) has occurred while \output is active []
+
+[151]
 File: bookdown-demo_files/figure-latex/08-all-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/08-all-1.pdf>
-[150] [151] [152]
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[152]
+Underfull \vbox (badness 4024) has occurred while \output is active []
+
+[153] [154]
 Chapter 9.
 File: bookdown-demo_files/figure-latex/09-all-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/09-all-1.pdf>
+[155
+
+] [156]
 File: bookdown-demo_files/figure-latex/09-settle-points-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/09-settle-points-1.pdf>
-[153
-
-]
 File: Results/fig09_settlements.pdf Graphic file (type pdf)
 <use Results/fig09_settlements.pdf>
+
+LaTeX Warning: Reference `distfit-results' on page 157 undefined on input line 1720.
+
+[157]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[158] [159]
+File: bookdown-demo_files/figure-latex/09-settle-resid-1.pdf Graphic file (type pdf)
+<use bookdown-demo_files/figure-latex/09-settle-resid-1.pdf>
+[160]
 File: bookdown-demo_files/figure-latex/09-quart-points-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/09-quart-points-1.pdf>
+[161]
 File: Results/fig09_quarters.pdf Graphic file (type pdf)
 <use Results/fig09_quarters.pdf>
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[162]
+File: bookdown-demo_files/figure-latex/09-quart-resid-1.pdf Graphic file (type pdf)
+<use bookdown-demo_files/figure-latex/09-quart-resid-1.pdf>
 File: bookdown-demo_files/figure-latex/09-time-points-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/09-time-points-1.pdf>
 
-Underfull \vbox (badness 2913) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[154]
+[163]
 File: Results/fig09_time.pdf Graphic file (type pdf)
 <use Results/fig09_time.pdf>
-[155] [156] [157] [158] [159] [160
+File: bookdown-demo_files/figure-latex/09-time-resid-1.pdf Graphic file (type pdf)
+<use bookdown-demo_files/figure-latex/09-time-resid-1.pdf>
+[164] [165] [166] [167] [168
 
-] [161] [162]
+] [169] [170]
 Chapter 10.
-[163
+[171
 
 ]
 Overfull \hbox (96.28287pt too wide) has occurred while \output is active
-\TU/TimesNewRoman(0)/m/n/12 164 \TU/TimesNewRoman(0)/m/it/12 CHAPTER 10.  DISCUSSION: SOCIAL COMPLEXITY IN LINEAR POTTERY AND TRYPILLIA SETTLEMENTS
+\TU/TimesNewRoman(0)/m/n/12 172 \TU/TimesNewRoman(0)/m/it/12 CHAPTER 10.  DISCUSSION: SOCIAL COMPLEXITY IN LINEAR POTTERY AND TRYPILLIA SETTLEMENTS
  []
 
-[164
+[172
 
 ]
 Chapter 11.
-[165] [166]
+[173] [174]
 Chapter 12.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[167
+[175
 
-] [168]
+] [176]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[169
+[177
 
 ]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[170]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[171]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[172]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[173]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[174]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[175]
-Underfull \hbox (badness 1803) in paragraph at lines 2165--2167
-[]\TU/TimesNewRoman(0)/m/n/12 Jeunesse, C. (2022). \TU/TimesNewRoman(0)/m/it/12 Vertical social differentiation and social competition in the Lbk:
- []
-
-
-Underfull \hbox (badness 3668) in paragraph at lines 2165--2167
-\TU/TimesNewRoman(0)/m/it/12 “rich” and “poor” cemeteries \TU/TimesNewRoman(0)/m/n/12 (M. Dębiec, J. Górski, J. Müller, M. Nowak, A.
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 2165--2167
-\TU/TimesNewRoman(0)/m/n/12 GmbH. []$[][][][][] [] [] [] [][][] [] [][][][][][][][] [] [][][] [] [][][][][][][][] [] [][][][][][][][] [] [][][][][][] [] [][][][][][][][][][][][][][][] [] [][][] [] [][][][][][] []
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[176]
-Underfull \hbox (badness 3375) in paragraph at lines 2204--2206
-[]\TU/TimesNewRoman(0)/m/n/12 Kuijt, I. (2018). Material Geographies of House Societies: Reconsidering Neolithic
- []
-
-
-Underfull \hbox (badness 3260) in paragraph at lines 2204--2206
-\TU/TimesNewRoman(0)/m/n/12 Çatalhöyük, Turkey. \TU/TimesNewRoman(0)/m/it/12 Cambridge Archaeological Journal\TU/TimesNewRoman(0)/m/n/12 , \TU/TimesNewRoman(0)/m/it/12 28\TU/TimesNewRoman(0)/m/n/12 (4), 565–590. []$[][][][][] []
- []
-
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[177]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [178]
@@ -1504,6 +1481,21 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [180]
+Underfull \hbox (badness 1337) in paragraph at lines 2085--2087
+[]\TU/TimesNewRoman(0)/m/n/12 Farías-Pelayo, S. (2015). \TU/TimesNewRoman(0)/m/it/12 La Cultura Xajay. Los otomíes al sur de la frontera norte
+ []
+
+
+Underfull \hbox (badness 5417) in paragraph at lines 2085--2087
+\TU/TimesNewRoman(0)/m/it/12 de Mesoamérica. Caracterización por medio de su firma fractal \TU/TimesNewRoman(0)/m/n/12 [PhD thesis].
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2085--2087
+[]$[][][][][] [] [] [] [][][] [] [][][][][][][][] [] [][][] [] [][][][][][][][] [] [][] [] [][][][][][][] [] [][][][][] [] [][][] [] [][][][] [] [][] [] [][][][] [] [][] []
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [181]
@@ -1513,17 +1505,69 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [183]
+Underfull \hbox (badness 1803) in paragraph at lines 2196--2198
+[]\TU/TimesNewRoman(0)/m/n/12 Jeunesse, C. (2022). \TU/TimesNewRoman(0)/m/it/12 Vertical social differentiation and social competition in the Lbk:
+ []
+
+
+Underfull \hbox (badness 3668) in paragraph at lines 2196--2198
+\TU/TimesNewRoman(0)/m/it/12 “rich” and “poor” cemeteries \TU/TimesNewRoman(0)/m/n/12 (M. Dębiec, J. Górski, J. Müller, M. Nowak, A.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 2196--2198
+\TU/TimesNewRoman(0)/m/n/12 GmbH. []$[][][][][] [] [] [] [][][] [] [][][][][][][][] [] [][][] [] [][][][][][][][] [] [][][][][][][][] [] [][][][][][] [] [][][][][][][][][][][][][][][] [] [][][] [] [][][][][][] []
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[184] [185] [186
+[184]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-]
+[185]
+Underfull \hbox (badness 3375) in paragraph at lines 2235--2237
+[]\TU/TimesNewRoman(0)/m/n/12 Kuijt, I. (2018). Material Geographies of House Societies: Reconsidering Neolithic
+ []
+
+
+Underfull \hbox (badness 3260) in paragraph at lines 2235--2237
+\TU/TimesNewRoman(0)/m/n/12 Çatalhöyük, Turkey. \TU/TimesNewRoman(0)/m/it/12 Cambridge Archaeological Journal\TU/TimesNewRoman(0)/m/n/12 , \TU/TimesNewRoman(0)/m/it/12 28\TU/TimesNewRoman(0)/m/n/12 (4), 565–590. []$[][][][][] []
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[186]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[187]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[188]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[189]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[190]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[191]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[192]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[193] [194]
 Appendix A.
-[187] [188
+[195
+
+] [196
 
 ]
 Appendix B.
-[189] (./bookdown-demo.aux)
+[197] (./bookdown-demo.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-06-30>
@@ -1532,15 +1576,15 @@ L3 programming layer <2023-06-30>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `bookdown-demo.out' has not changed.
-(rerunfilecheck)             Checksum: EF163C450E2384BEE0DCBBA13453DE64;16419.
+(rerunfilecheck)             Checksum: D7A54E3A8CBD46778603A9F6D8C171A2;16419.
  ) 
 Here is how much of TeX's memory you used:
- 20761 strings out of 477888
- 399372 string characters out of 5821579
- 1936869 words of memory out of 5000000
- 41279 multiletter control sequences out of 15000+600000
+ 20796 strings out of 477888
+ 401218 string characters out of 5821579
+ 1937869 words of memory out of 5000000
+ 41311 multiletter control sequences out of 15000+600000
  567693 words of font info for 131 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 90i,9n,122p,4258b,478s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,9n,122p,4258b,444s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on bookdown-demo.pdf (189 pages).
+Output written on bookdown-demo.pdf (197 pages).

@@ -14,6 +14,7 @@ library(ggimage)
 
 # Load other variables and bind tables
 image_variables <- read.csv2("Data/image_variables.csv")
+load("Results/density_effects.RData")
 
 D_L_plot <- left_join(images_results$D_L_plot, image_variables,
                       by = c("id", "filename")) %>%
@@ -22,11 +23,19 @@ D_L_plot <- left_join(images_results$D_L_plot, image_variables,
   relocate(filename, .after = Series) %>%
   mutate(plan_image = paste0("Data/Fractal_dimension/", id, ".jpg"))
 
-save(D_L_plot, file = "Results/D_L_plot.RData")
-
 D_L_plot <- D_L_plot %>%
-  mutate(img_size = round((N^(1/1.65)/250)+0.05, 3))
+  mutate(img_size = round((N^(1/1.65)/250)+0.05, 3),
+         D_mod = density_effects[[1]]$coefficients[2]*log(density)+
+           density_effects[[1]]$coefficients[1],
+         L_mod = density_effects[[2]]$coefficients[2]*log(density)+
+           density_effects[[2]]$coefficients[1],
+         L_mean_mod = density^density_effects[[3]]$coefficients[2]*
+           exp(density_effects[[3]]$coefficients[1]),
+         D_resid = D-D_mod,
+         L_resid = L-L_mod,
+         L_mean_resid = L_mean-L_mean_mod)
 
+save(D_L_plot, file = "Results/D_L_plot.RData")
 
 # Now we're talking!
 load("Results/D_L_plot.RData")
@@ -108,11 +117,15 @@ fig09_settle_points <- plot_grid(
             settle2, nrow = 1, labels = "auto"),
   settle_legend, ncol = 1, rel_heights = c(2, 0.1))
 
-D_L_plot %>%
-  filter(Series == "Quarters") %>%
-  mutate(label = if_else(Category == "Nebelivka",
-        gsub("Nebelivka", "Neb.", Set), Set)) %>%
-  select(label)
+  # Residuals after removing expected effects from density
+fig09_settle_resid <- ggplot(filter(D_L_plot, Series == "Settlements"))+
+  aes(D_resid, L_mean_resid, colour = Category, label = Set)+
+  geom_point(aes(size = N))+
+  ggrepel::geom_text_repel(show.legend = FALSE)+
+  theme_bw()+
+  geom_vline(xintercept = 0, linetype = 2)+
+  scale_size_area()+
+  labs(x = "D residuals", y = "L_mean residuals")
 
 # Quarters/neighbourhoods, same, with images first
 quarters_data <- filter(D_L_plot, Series == "Quarters") %>%
@@ -161,6 +174,18 @@ fig09_quart_points <- plot_grid(
   plot_grid(quart1+theme(legend.position = "none"),
             quart2, nrow = 1, labels = "auto"),
   quart_legend, ncol = 1, rel_heights = c(2, 0.1))
+
+  # Residuals after removing effects from density
+fig09_quart_resid <- ggplot(filter(D_L_plot, Series == "Quarters"))+
+  aes(D_resid, L_mean_resid, colour = Category,
+      label = gsub("Nebelivka", "Neb.", Set))+
+  geom_point(aes(size = N))+
+  ggrepel::geom_text_repel(show.legend = FALSE)+
+  theme_bw()+
+  guides(colour = "none")+
+  geom_vline(xintercept = 0, linetype = 2)+
+  scale_size_area(max_size = 4)+
+  labs(x = "D residuals", y = "L_mean residuals")
 
 # Vráble time samples
 load("Data/time_samples.RData")
@@ -216,11 +241,23 @@ fig09_time_points <- plot_grid(
             time2, nrow = 1, labels = "auto"),
   time_legend, ncol = 1, rel_heights = c(2, 0.1))
 
+fig09_time_resid <- ggplot(filter(time_data, id != "Vrable_01"))+
+  aes(x = D_resid, y = L_mean_resid, label = dates)+
+  geom_point(aes(size = N))+
+  geom_path()+
+  ggrepel::geom_text_repel(show.legend = FALSE, segment.colour = NA)+
+  scale_size_area(max_size = 4)+
+  theme_bw()+
+  labs(x = "D residuals", y = "L_mean residuals")
+
 # Save plots
 save(fig09_all, file = "Results/fig09_all.RData")
 ggsave("Results/fig09_settlements.pdf", plot = fig09_settlements) #pdf
 save(fig09_settle_points, file = "Results/fig09_settle_points.RData")
+save(fig09_settle_resid, file = "Results/fig09_settle_resid.RData")
 ggsave("Results/fig09_quarters.pdf", plot = fig09_quarters) #pdf
 save(fig09_quart_points, file = "Results/fig09_quart_points.RData")
+save(fig09_quart_resid, file = "Results/fig09_quart_resid.RData")
 ggsave("Results/fig09_time.pdf", plot = fig09_time) #pdf
 save(fig09_time_points, file = "Results/fig09_time_points.RData")
+save(fig09_time_resid, file = "Results/fig09_time_resid.RData")
