@@ -56,6 +56,10 @@ No, not everything is fractal: e.g. Central Limit Theorem
 
 Fractal analysis for studying irregular phenomena (methods described in more detail Chapters xxx), and thus as a tool for quantitative empirical research.
 
+-   Fractal dimension (explain without math here, with math in chapter 7, box-counting in chapter 8)
+
+-   Lacunarity (same)
+
 ## Very short introduction to micro-macro approaches in social theory
 
 -   Lévi-Strauss and Structuralism
