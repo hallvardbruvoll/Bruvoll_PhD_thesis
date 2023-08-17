@@ -4,7 +4,7 @@
 source("Analysis/Image-functions.R")
 library(ggimage) #for geom_image
 
-# Test plots --------------------------------------------------------------
+# Generate test images -----------------------------------------------------
 
 
 iterations <- 20
@@ -245,7 +245,7 @@ D_L_tests <- frac.lac(frac_path = "Data/Frac_test",
 save(D_L_tests, file = "Results/D_L_tests.RData")
 save(N_plots, file = "Data/N_plots.RData")
 
-# Plots for each series ---------------------------------------------------
+# Make and store plots for each series --------------------------------------
 
   # Tidy and arrange by groups
 D_L_tests$D_L_plot
@@ -545,7 +545,7 @@ ggsave("Results/fig08_dens_im.pdf", plot = fig08_dens_im)
 ggsave("Results/fig08_N_im.pdf", plot = fig08_N_im)
 ggsave("Results/fig08_all_im.pdf", plot = fig08_all_im)
 
-# Correlations to density (all other things being equal)
+# Correlations to density (all other things being equal) ------------------
 
 #D_density <- lm(formula = D ~ density,
     #data = filter(D_L_test_plots, Series == "Density"))
@@ -587,3 +587,10 @@ summary(log_L_mean_log_density)
 density_effects <- list(D_log_density, L_log_density,
                         log_L_mean_log_density)
 save(density_effects, file = "Results/density_effects.RData")
+
+# I just do this manually, otherwise it's excessively complicated
+tab08_models <- tibble(Model = c("D = 0.188*log(density)+1.792",
+                 "L = -0.166*log(density)+0.008",
+                 "log(L_mean) = -0.610*log(density)-0.148"),
+                 coeff. = c(0.931,0.994,0.995))
+save(tab08_models, file = "Results/tab08_models.RData")
