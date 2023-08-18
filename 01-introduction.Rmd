@@ -1,3 +1,7 @@
+\mainmatter
+
+\pagestyle{fancy}
+
 # (PART) Frameworks {.unnumbered}
 
 # Introduction {#intro}

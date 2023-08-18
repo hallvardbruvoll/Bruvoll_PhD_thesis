@@ -1,14 +1,19 @@
+% preamble content:
+\usepackage[nottoc]{tocbibind}
 \usepackage{booktabs}
 \usepackage{amsthm}
 \usepackage{flafter}
 \usepackage{placeins}
 \usepackage[margin=10pt,font=small,labelfont=bf, textfont=it]{caption}
+\usepackage{pdfpages}
+
 \makeatletter
 \def\thm@space@setup{%
   \thm@preskip=8pt plus 2pt minus 4pt
   \thm@postskip=\thm@preskip
 }
 \makeatother
+
 \renewcommand{\topfraction}{.85}
  \renewcommand{\bottomfraction}{.7}
  \renewcommand{\textfraction}{.15}
@@ -19,3 +24,31 @@
  \setcounter{bottomnumber}{9}
  \setcounter{totalnumber}{20}
  \setcounter{dbltopnumber}{9}
+
+% For typesetting page numbers and page headers
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancypagestyle{fancy}{%
+  \fancyhead[LE]{\leftmark}%
+  \fancyhead[RO]{\rightmark}%
+  \fancyfoot[RO, LE]{\thepage}%
+  \renewcommand{\headrulewidth}{0.4pt}%
+  \setlength{\headheight}{14.5pt}
+}
+
+\fancypagestyle{plain}{%
+  \fancyhf{}%
+  \fancyfoot[RO,LE]{\thepage}%
+  \renewcommand{\headrulewidth}{0pt}%
+}
+
+% Change pagestyle for Part pages to empty
+\usepackage{etoolbox}
+\patchcmd{\part}{\thispagestyle{plain}}{\thispagestyle{empty}}
+  {}{\errmessage{Cannot patch \string\part}}
+
+% Start the frontmatter here, before index.Rmd,
+% so that the title page counts
+\frontmatter
+\pagestyle{plain}

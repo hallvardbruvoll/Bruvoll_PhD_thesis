@@ -4,7 +4,7 @@
 %
 \documentclass[
   12pt,
-]{book}
+  a4paper, twoside]{book}
 \usepackage{amsmath,amssymb}
 \usepackage{setspace}
 \usepackage{iftex}
@@ -90,17 +90,22 @@
 \newcommand{\CSLLeftMargin}[1]{\parbox[t]{\csllabelwidth}{#1}}
 \newcommand{\CSLRightInline}[1]{\parbox[t]{\linewidth - \csllabelwidth}{#1}\break}
 \newcommand{\CSLIndent}[1]{\hspace{\cslhangindent}#1}
+% preamble content:
+\usepackage[nottoc]{tocbibind}
 \usepackage{booktabs}
 \usepackage{amsthm}
 \usepackage{flafter}
 \usepackage{placeins}
 \usepackage[margin=10pt,font=small,labelfont=bf, textfont=it]{caption}
+\usepackage{pdfpages}
+
 \makeatletter
 \def\thm@space@setup{%
   \thm@preskip=8pt plus 2pt minus 4pt
   \thm@postskip=\thm@preskip
 }
 \makeatother
+
 \renewcommand{\topfraction}{.85}
  \renewcommand{\bottomfraction}{.7}
  \renewcommand{\textfraction}{.15}
@@ -111,9 +116,34 @@
  \setcounter{bottomnumber}{9}
  \setcounter{totalnumber}{20}
  \setcounter{dbltopnumber}{9}
-\usepackage{titling}
-\pretitle{\begin{center} \includegraphics[width=2cm, height=2cm]{UiO_logo.png}\LARGE\\}
-\posttitle{\end{center}}
+
+% For typesetting page numbers and page headers
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\fancypagestyle{fancy}{%
+  \fancyhead[LE]{\leftmark}%
+  \fancyhead[RO]{\rightmark}%
+  \fancyfoot[RO, LE]{\thepage}%
+  \renewcommand{\headrulewidth}{0.4pt}%
+  \setlength{\headheight}{14.5pt}
+}
+
+\fancypagestyle{plain}{%
+  \fancyhf{}%
+  \fancyfoot[RO,LE]{\thepage}%
+  \renewcommand{\headrulewidth}{0pt}%
+}
+
+% Change pagestyle for Part pages to empty
+\usepackage{etoolbox}
+\patchcmd{\part}{\thispagestyle{plain}}{\thispagestyle{empty}}
+  {}{\errmessage{Cannot patch \string\part}}
+
+% Start the frontmatter here, before index.Rmd,
+% so that the title page counts
+\frontmatter
+\pagestyle{plain}
 \usepackage{booktabs}
 \usepackage{longtable}
 \usepackage{array}
@@ -135,39 +165,55 @@
 \IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
 \urlstyle{same}
 \hypersetup{
-  pdftitle={Fractal Analysis as Method for studying Social Hierarchy in Prehistoric Settlement Plans},
-  pdfauthor={Hallvard Bruvoll; Department of Archaeology, Conservation and History; University of Oslo},
   hidelinks,
   pdfcreator={LaTeX via pandoc}}
 
-\title{Fractal Analysis as Method for studying Social Hierarchy in Prehistoric Settlement Plans}
-\usepackage{etoolbox}
-\makeatletter
-\providecommand{\subtitle}[1]{% add subtitle to \maketitle
-  \apptocmd{\@title}{\par {\large #1 \par}}{}{}
-}
-\makeatother
-\subtitle{with case studies from the Linear Pottery and Trypillia cultures (5.500 - 3.500 cal. BCE)}
-\author{Hallvard Bruvoll \and Department of Archaeology, Conservation and History \and University of Oslo}
-\date{2023-08-16}
+\author{}
+\date{\vspace{-2.5em}}
 
 \begin{document}
-\maketitle
 
-{
-\setcounter{tocdepth}{2}
-\tableofcontents
-}
+\begin{titlepage}
+\includepdf{title_page.pdf}
+\newpage
+\thispagestyle{empty}
+\end{titlepage}
+
+% option for multiple pages:
+%\includepdf[pages=-]{title_page.pdf}
+
 \setstretch{1.5}
-\hypertarget{preface}{%
-\chapter*{Preface}\label{preface}}
-\addcontentsline{toc}{chapter}{Preface}
+\hypertarget{abstract}{%
+\chapter*{Abstract}\label{abstract}}
+\addcontentsline{toc}{chapter}{Abstract}
 
-Thanks to everyone.
+English abstract here
 
 Remember to add abstracts
 
 Furholt, Grier, et al. (2020), Furholt, Müller, et al. (2020), Furholt, Müller-Scheeßel, et al. (2020) are three different publications. Furholt, Grier, et al. (2020), Furholt, Müller, et al. (2020), Furholt, Müller-Scheeßel, et al. (2020) are the same three publications in the same order. gfdsdfgs , Get on with it!
+
+\hypertarget{sammendrag}{%
+\chapter*{Sammendrag}\label{sammendrag}}
+\addcontentsline{toc}{chapter}{Sammendrag}
+
+Norsk oversettelse av Abstract over. Trenger ikke være på ny side
+
+\hypertarget{preface}{%
+\chapter*{Preface}\label{preface}}
+\addcontentsline{toc}{chapter}{Preface}
+
+Add acknowledgements here
+
+\tableofcontents
+
+\listoffigures
+
+\listoftables
+
+\mainmatter
+
+\pagestyle{fancy}
 
 \hypertarget{part-frameworks}{%
 \part{Frameworks}\label{part-frameworks}}
@@ -343,11 +389,11 @@ Mention the most common applications in archaeology, as discussed in Daems (2021
 \hypertarget{fractals}{%
 \section{Very short introduction to Fractals and Fractal Analysis}\label{fractals}}
 
-Lit. use B. B. Mandelbrot (2021), Falconer \& Falconer (2013) (general), also C. Brown \& Liebovitch (2010), C. T. Brown et al. (2005) and Diachenko (2018) (for archaeology)
+Lit. use B. B. Mandelbrot (2021), Falconer (2013) (general), also C. Brown \& Liebovitch (2010), C. T. Brown et al. (2005) and Diachenko (2018) (for archaeology)
 
-The term \emph{fractal} was pinned by the French-American mathematician Benoît Mandelbrot (1924-2010), from the latin word \emph{fractus} meaning broken or irregular, to describe patterns that because of their apparent limitless complexity defied concise description within the framework of Euclidean geometry (Falconer \& Falconer, 2013, pp. 116--120). Such patterns -- both theoretical and empirical -- had been described and analysed by mathematicians and researchers within other disciplines since the end of the 19th century, but were mostly regarded as curiosities and exceptions, and Mandelbrot was the first to link all these previous studies within a unified theoretical framework (B. B. Mandelbrot, 1975, 2021).
+The term \emph{fractal} was pinned by the French-American mathematician Benoît Mandelbrot (1924-2010), from the latin word \emph{fractus} meaning broken or irregular, to describe patterns that because of their apparent limitless complexity defied concise description within the framework of Euclidean geometry (Falconer, 2013, pp. 116--120). Such patterns -- both theoretical and empirical -- had been described and analysed by mathematicians and researchers within other disciplines since the end of the 19th century, but were mostly regarded as curiosities and exceptions, and Mandelbrot was the first to link all these previous studies within a unified theoretical framework (B. B. Mandelbrot, 1975, 2021).
 
-In one influential paper, drawing on previous work by mathematician Lewis Fry Richardson, B. Mandelbrot (1967) argued that a rugged linear feature like a coastline cannot be fully described through traditional geometry with a set of line segments, since this would result in a curve of infinite complexity. More importantly, he showed that the traditional measure of lines -- the length -- will inevitably depend on the scale of observation when applied to a coastline. If measured in kilometres, a coastline will always appear shorter in total length, than if it is measured in metres, since smaller bays and inlets can then also be accounted for. But this phenomenon continues seemingly without limit, since the same coastline measured in centimetres will appear much longer, and in millimetres far longer again, and so on. Length as a measure of rugged linear features thus seems inadequate, which may become a problem in practical settings when comparing coastlines between countries that operate with different measurement units and procedures. The same problem occurs when describing irregular patterns in the plane (like island or continent outlines) with area or in three-dimensional space (like clouds or galaxies) with volume. As a solution, Mandelbrot proposed the use of the \emph{fractal dimension} as a descriptive tool for characterising such patterns.
+In one influential paper, drawing on previous work by mathematician Lewis Fry Richardson, Mandelbrot (1967) argued that a rugged linear feature like a coastline cannot be fully described through traditional geometry with a set of line segments, since this would result in a curve of infinite complexity. More importantly, he showed that the traditional measure of lines -- the length -- will inevitably depend on the scale of observation when applied to a coastline. If measured in kilometres, a coastline will always appear shorter in total length, than if it is measured in metres, since smaller bays and inlets can then also be accounted for. But this phenomenon continues seemingly without limit, since the same coastline measured in centimetres will appear much longer, and in millimetres far longer again, and so on. Length as a measure of rugged linear features thus seems inadequate, which may become a problem in practical settings when comparing coastlines between countries that operate with different measurement units and procedures. The same problem occurs when describing irregular patterns in the plane (like island or continent outlines) with area or in three-dimensional space (like clouds or galaxies) with volume. As a solution, Mandelbrot proposed the use of the \emph{fractal dimension} as a descriptive tool for characterising such patterns.
 
 Fractals as hierarchy
 
@@ -535,7 +581,7 @@ In archaeology there are two recurrent and seemingly contradicting assumptions u
 
 }
 
-\caption{House size can be interpreted in terms of number of inhabitants (household size) or material wealth of the inhabitants, but the exact relationship between these two variables remains poorly understood and is probably both complex and culturally contingent. Any given house size within a distribution can thus result from a combination of effects from the two. In many cultural contexts household size and wealth may furthermore be directly correlated}\label{fig:04-intro}
+\caption[My short caption]{House size can be interpreted in terms of number of inhabitants (household size) or material wealth of the inhabitants, but the exact relationship between these two variables remains poorly understood and is probably both complex and culturally contingent. Any given house size within a distribution can thus result from a combination of effects from the two. In many cultural contexts household size and wealth may furthermore be directly correlated}\label{fig:04-intro}
 \end{figure}
 
 Even though the goal here is not to investigate household sizes but to focus on the material aspect of house-size distributions, some fundamental issues of terminology should be addressed. The use of the word \emph{house} (in the wider material sense rather than the Lévi-Straussian sense, see Section \ref{social-hierarchy}) is indicative of an underlying assumption that the building in question was in use primarily for domestic purposes -- essentially, a fixed architectural unit where someone would spend their nights at least most of their time, and in many cases also cook and eat their main meal during the day -- though proving this directly is not always straightforward in archaeology. For the cultural contexts discussed here -- the Linear Pottery and Trypillia groups in the Neolithic-Chalcolithic -- there is however little evidence for buildings with specific non-domestic (e.g.~economic, religious or administrative) purposes, with the probable exception of the so-called mega-structures or assembly houses in the Trypillia mega-sites, which are discussed more in detail below. This lack of evidence does not imply that there was no specialised economic, religious or administrative activity in these societies, as ethnography and history clearly shows that such activity must reach a certain degree of specialisation before it materialises in distinct buildings devoted exclusively for these functions. Artisans, shamans and chiefs could be specialised to some extent but still perform their activity at their domestic home or more diffusely outdoors or without any fixed location (e.g. Costin, 1991, p. 25; Kahn, 2021). It is in any case of common usage to speak of houses when discussing architectural units in Neolithic Europe and other prehistoric contexts, maybe because of a lack of a better generic word, but this usage should not prevent archaeologists from recognising other non-domestic functions of buildings whenever there is evidence for it. The \emph{household} is furthermore the designation of all the people, genealogically related or not, usually (though not necessarily) living under the same roof or within the same architectural unit, constituting a functional whole economically and socially, and potentially including more than a single family unit, as well as servants or slaves, depending on the context (Wilk \& Rathje, 1982, p. 620). The emphasis for defining a household is thus more on its economic and social function than on co-residence and kinship relations, which are somewhat more variable. In the following, I go into some more detail as to how household organisation as well as wealth are known to influence house size.
@@ -1084,7 +1130,7 @@ Figure \ref{fig:06-settle-tails}b shows that the house-size distributions of bot
 
 \begin{landscape}\begin{table}
 
-\caption{\label{tab:06-settle-tab}Main results of distribution fitting analysis on settlements, ordered according to retained tail model (Tail) and parameter values (T\_Par1), from steepest to shallowest (see Figure \ref{fig:06-settle-tails}). Model and Gini are evaluated on the entire distribution for each settlement. Par1 and Par2 represent \(\mu\) (mean) and \(\sigma\) (standard deviation) for normal and log-normal distributions, and T\_Par1 represents \(\lambda\) (rate) for exponential and \(\alpha\) (scaling exponent) for power-law distributions. \(x_{min}\) is the house size from which the tail parameters are estimated. N is the number of houses per settlement, N\_tail is the number of houses in the distribution tail, and Tail\_Pr is the proportion of N being part of the tail, or N\_tail/N}
+\caption[short caption]{\label{tab:06-settle-tab}Main results of distribution fitting analysis on settlements, ordered according to retained tail model (Tail) and parameter values (T\_Par1), from steepest to shallowest (see Figure \ref{fig:06-settle-tails}). Model and Gini are evaluated on the entire distribution for each settlement. Par1 and Par2 represent \(\mu\) (mean) and \(\sigma\) (standard deviation) for normal and log-normal distributions, and T\_Par1 represents \(\lambda\) (rate) for exponential and \(\alpha\) (scaling exponent) for power-law distributions. \(x_{min}\) is the house size from which the tail parameters are estimated. N is the number of houses per settlement, N\_tail is the number of houses in the distribution tail, and Tail\_Pr is the proportion of N being part of the tail, or N\_tail/N}
 \centering
 \begin{tabular}[t]{llrrlrrrrrrl}
 \toprule
@@ -1399,7 +1445,7 @@ In this chapter I present briefly the techniques for calculating fractal dimensi
 \hypertarget{images-procedure}{%
 \section{Calculating fractal dimension and lacunarity}\label{images-procedure}}
 
-As noted in the previous chapter, the fractal dimension of spatial patterns was originally estimated by Mandelbrot by deciphering visually the relations of size and frequency of elements between the \emph{initiator} and the \emph{generator} of theoretical (i.e.~fully regular) fractal sets like the Koch curve or the Sierpinski triangle (e.g. B. B. Mandelbrot, 1982, p. 39 ff.). Empirical fractals on the other hand usually also include some stochastic elements, rendering this technique much more difficult to use in practice, as the generator of the pattern is harder or even impossible to discern. A number of more systematic methods have therefore been developed since the 1980s for estimating the fractal dimension of empirical patterns, the by far most popular being the so-called box-counting method (Klinkenberg, 1994; Li et al., 2009). The principle of the method is quite simple:
+As noted in the previous chapter, the fractal dimension of spatial patterns was originally estimated by Mandelbrot by deciphering visually the relations of size and frequency of elements between the \emph{initiator} and the \emph{generator} of theoretical (i.e.~fully regular) fractal sets like the Koch curve or the Sierpinski triangle (e.g. Mandelbrot, 1982, p. 39 ff.). Empirical fractals on the other hand usually also include some stochastic elements, rendering this technique much more difficult to use in practice, as the generator of the pattern is harder or even impossible to discern. A number of more systematic methods have therefore been developed since the 1980s for estimating the fractal dimension of empirical patterns, the by far most popular being the so-called box-counting method (Klinkenberg, 1994; Li et al., 2009). The principle of the method is quite simple:
 
 \begin{itemize}
 \item
@@ -1414,7 +1460,7 @@ Readers of Section \ref{power-law} will recognise that the relationship between 
 
 There are some caveats regarding the interpretation of this estimate however. One is that there is nothing preventing a fractal shape of having an integer dimensional value. Its defining characteristic is that unlike Euclidean dimensions it can take on any value from 0 to 3 for spatial patterns and higher for more abstract patterns, and the numbers 0, 1, 2 and 3 are values just like any other in this continuous range. An integer dimension is thus in itself not enough to claim that a pattern is Euclidean and not fractal (though fractals with exactly integer dimensions are rare). But it is more important to consider what exactly is meant by Euclidean shapes in this context, namely a shape that entirely fills its embedding Euclidean dimension like a square or circle in two-dimensional space or a straight line segment in one dimension. An entirely regular grid pattern consisting only of identical squares or circles with some space between them does not fill its embedding space, and will have a fractional dimension when analysed through box counting, even though it can hardly be described as scale-invariant or fractal (examples are given below). For such cases, the total area of the pattern, approximated by the box count times box size, will be unstable down to the image resolution, as if the pattern were truly fractal. The dimension value obtained through box counting is thus in itself not a guarantee for the pattern being either Euclidean or fractal, which is why it is more accurate to refer to it as the \emph{box-counting dimension} or \emph{D\textsubscript{box}}. This has led to numerous confusions and erroneous interpretations in earlier studies involving box counting Oleschko et al. (2000), and it illustrates the difficulty involved in interpreting the obtained values. This is also largely why I have opted for a more prudent empirical approach using synthetically constructed images to guide interpretation, testing for the effects of different variables one-by-one as presented below.
 
-Some similar issues concern the estimation of lacunarity in empirical patterns. While Mandelbrot mainly relied on regular constructed fractals for estimating lacunarity, empirical patterns involving stochastic processes require more formal methods for analysis. The main method for estimating lacunarity is the so-called gliding-box method (Allain \& Cloitre, 1991; Cheng, 1997; Hingee et al., 2019; Plotnick et al., 1996). Similarly to box counting, it involves evaluating the pattern over a range of scales (box sizes), but in stead of a grid, a single box is glided incrementally across the image with overlaps (rendering the method computationally heavier). For each increment, the pixel mass (number of foreground or pattern pixels) within the window is recorded, and the average spread of this over all box displacements for a given box size is calculated, giving a lacunarity index (\#refer to the equation in chapter 7). This index -- i.e.~lacunarity for a given box size, is then plotted according to box size, and unlike the fractal (box-counting) dimension, the shape of the lacunarity curve can effectively give an indication of whether or not, or over which scales, the analysed pattern is fractal. For regularly self-similar mono-fractals, the curve of the lacunarity index forms a straight line in log-log scales, with the slope being equal to \emph{D--E}, i.e.~the fractal dimension of the pattern minus its Euclidean dimension (Allain \& Cloitre, 1991; B. B. Mandelbrot, 1982, pp. 315--317; Plotnick et al., 1996, p. 5463). Since real-world patterns are rarely self-similar over very large ranges, and even less so for image renderings of them which depend on pixel resolution, this lacunarity index curve tends to follow a power law less strictly than that of box counts, even when the pattern is fractal-like over some scales.
+Some similar issues concern the estimation of lacunarity in empirical patterns. While Mandelbrot mainly relied on regular constructed fractals for estimating lacunarity, empirical patterns involving stochastic processes require more formal methods for analysis. The main method for estimating lacunarity is the so-called gliding-box method (Allain \& Cloitre, 1991; Cheng, 1997; Hingee et al., 2019; Plotnick et al., 1996). Similarly to box counting, it involves evaluating the pattern over a range of scales (box sizes), but in stead of a grid, a single box is glided incrementally across the image with overlaps (rendering the method computationally heavier). For each increment, the pixel mass (number of foreground or pattern pixels) within the window is recorded, and the average spread of this over all box displacements for a given box size is calculated, giving a lacunarity index (\#refer to the equation in chapter 7). This index -- i.e.~lacunarity for a given box size, is then plotted according to box size, and unlike the fractal (box-counting) dimension, the shape of the lacunarity curve can effectively give an indication of whether or not, or over which scales, the analysed pattern is fractal. For regularly self-similar mono-fractals, the curve of the lacunarity index forms a straight line in log-log scales, with the slope being equal to \emph{D--E}, i.e.~the fractal dimension of the pattern minus its Euclidean dimension (Allain \& Cloitre, 1991; Mandelbrot, 1982, pp. 315--317; Plotnick et al., 1996, p. 5463). Since real-world patterns are rarely self-similar over very large ranges, and even less so for image renderings of them which depend on pixel resolution, this lacunarity index curve tends to follow a power law less strictly than that of box counts, even when the pattern is fractal-like over some scales.
 
 Mandelbrot never gave any single definition of a summary statistic for lacunarity across scales like the fractal dimension, and several such summary measures have subsequently been proposed. The software plugin \emph{FracLac} for \emph{ImageJ} offers principally three of these, namely the exponent and prefactor values of a power-law approximation of the lacunarity index, as well as its arithmetic mean (Karperien, 2013). There is little literature on the relationship between these, and it is not always clear which one of these is applied. Farías-Pelayo seems to be using exponent lacunarity in (Farías-Pelayo, 2017) and a mixture of this and mean lacunarity in (Farías-Pelayo, 2015). The value range of the power-law exponent should be expected to vary much less than that of the mean or prefactor, and these latter two cannot be below 1, while the exponent can in theory go down to 0 (a full pattern with no gaps and \emph{D} = 2 for spatial patterns, see also Bruvoll, n.d. for further discussion on this issue). As mentioned above, the power-law exponent is directly correlated to \emph{D} in the case of self-similar mono-fractal patterns.
 
@@ -1601,7 +1647,24 @@ Other variables, which were more related to the visual appearance of the pattern
 }
 \end{figure}
 
-From the results presented above, another trait seemed characteristic of the link between density, fractal dimension and lacunarity. All other things being equal, density was exponentially correlated to both \emph{D} and \emph{L}, and power-law correlated to \emph{L\_mean} (Figure \ref{fig:08-dens}). In fact, for a regular square grid pattern with given density, these fractal analysis measures can seemingly be very well predicted with simple linear models on log-transformed density (\#ADD MODEL TABLE). These models can be used tentatively to compare \emph{D} and \emph{L} values of images with varying density, by first subtracting the values expected from density alone. However, it must again be stressed such an analysis probably is premature at this stage, since several factors remain unaccounted for. For example, regarding the Neolithic settlement plans compared in the next chapter, the effects on \emph{D} and \emph{L} from different settlement layouts remain untested. Also, effects from size distribution, clustering and noise have only been evaluated here at a single given density value, and these may behave very differently at other density levels. As mentioned, they may also have for now unstudied cocktail effects, and in empirical settings grid orientation and edge effects quickly become issues of their own that are not further investigated here.
+From the results presented above, another trait seemed characteristic of the link between density, fractal dimension and lacunarity. All other things being equal, density was exponentially correlated to both \emph{D} and \emph{L}, and power-law correlated to \emph{L\_mean} (Figure \ref{fig:08-dens}). In fact, for a regular square grid pattern with given density, these fractal analysis measures can seemingly be very well predicted with simple linear models on log-transformed density (Table \ref{tab:08-models-tab}). These models can be used tentatively to compare \emph{D} and \emph{L} values of images with varying density, by first subtracting the values expected from density alone. However, it must again be stressed such an analysis probably is premature at this stage, since several factors remain unaccounted for. For example, regarding the Neolithic settlement plans compared in the next chapter, the effects on \emph{D} and \emph{L} from \emph{different} settlement layouts remain untested (the standard Trypillia layout is radial and not a grid). Also, effects from size distribution, clustering and noise have only been evaluated here at a single given density value, and these may behave very differently at other density levels. As mentioned, these factors are usually mixed to some extent and may have cocktail effects that for now remain unstudied. In empirical settings grid orientation and edge effects quickly become issues of their own that are also not further investigated here.
+
+
+
+\begin{table}
+
+\caption{\label{tab:08-models-tab}Linear models of fractal dimension (\emph{D}), exponent lacunarity (\emph{L}) and mean lacunarity (\emph{L\_mean}) with the log-transformations that give the best fit, evaluated by the coefficient of determination (\(R^2\)). The third model can be written in power-law form as \(L_{mean} = 0.862*density^{-0.61}\)}
+\centering
+\begin{tabular}[t]{lr}
+\toprule
+Model & coeff.\\
+\midrule
+\cellcolor{gray!6}{D = 0.188*log(density)+1.792} & \cellcolor{gray!6}{0.931}\\
+L = -0.166*log(density)+0.008 & 0.994\\
+\cellcolor{gray!6}{log(L\_mean) = -0.610*log(density)-0.148} & \cellcolor{gray!6}{0.995}\\
+\bottomrule
+\end{tabular}
+\end{table}
 
 
 
@@ -2125,7 +2188,7 @@ Ensor, B. E. (2021). Making aDNA useful for kinship analysis. \emph{Antiquity}, 
 Ensor, B. E., Irish, J. D., \& Keegan, W. F. (2017). The bioarchaeology of kinship: Proposed revisions to assumptions guiding interpretation. \emph{Current Anthropology}, \emph{58}(6), 739--761. \url{https://doi.org/10.1086/694584}
 
 \leavevmode\vadjust pre{\hypertarget{ref-falconer2013}{}}%
-Falconer, K., \& Falconer, K. (2013). \emph{Fractals: A very short introduction}. Oxford University Press.
+Falconer, K. (2013). \emph{Fractals: A very short introduction}. Oxford University Press.
 
 \leavevmode\vadjust pre{\hypertarget{ref-farias-pelayo2015}{}}%
 Farías-Pelayo, S. (2015). \emph{La Cultura Xajay. Los otomíes al sur de la frontera norte de Mesoamérica. Caracterización por medio de su firma fractal} {[}PhD thesis{]}. \url{https://www.academia.edu/43740443/La_Cultura_Xajay_Los_otom\%C3\%ADes_al_sur_de_la_frontera_norte_de_Mesoam\%C3\%A9rica}
@@ -2319,11 +2382,11 @@ Mancuso, F. P. (2021). \emph{fractD: Estimation of fractal dimension of a black 
 \leavevmode\vadjust pre{\hypertarget{ref-mandelbrot1967}{}}%
 Mandelbrot, B. (1967). How long is the coast of britain? Statistical self-similarity and fractional dimension. \emph{Science}, \emph{156}(3775), 636--638. \url{https://www.jstor.org/stable/1721427}
 
+\leavevmode\vadjust pre{\hypertarget{ref-mandelbrot1982}{}}%
+Mandelbrot, B. (1982). \emph{The fractal geometry of nature}. Freeman.
+
 \leavevmode\vadjust pre{\hypertarget{ref-mandelbrot1975}{}}%
 Mandelbrot, B. B. (1975). \emph{Les objets fractals: forme, hasard et dimension}. Flammarion.
-
-\leavevmode\vadjust pre{\hypertarget{ref-mandelbrot1982}{}}%
-Mandelbrot, B. B. (1982). \emph{The fractal geometry of nature}. Freeman.
 
 \leavevmode\vadjust pre{\hypertarget{ref-mandelbrot1997}{}}%
 Mandelbrot, B. B. (1997). \emph{Fractals and scaling in finance: discontinuity, concentration, risk : selecta volume E}. Springer.

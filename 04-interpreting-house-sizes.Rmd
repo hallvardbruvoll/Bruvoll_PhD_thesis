@@ -8,7 +8,7 @@ In archaeology there are two recurrent and seemingly contradicting assumptions u
 
 (ref:04-intro) House size can be interpreted in terms of number of inhabitants (household size) or material wealth of the inhabitants, but the exact relationship between these two variables remains poorly understood and is probably both complex and culturally contingent. Any given house size within a distribution can thus result from a combination of effects from the two. In many cultural contexts household size and wealth may furthermore be directly correlated
 
-```{r 04-intro, fig.cap="(ref:04-intro)", warning=FALSE}
+```{r 04-intro, fig.cap="(ref:04-intro)", fig.scap="My short caption", warning=FALSE}
 load("Results/fig04_intro.RData") 
 fig04_intro
 ```

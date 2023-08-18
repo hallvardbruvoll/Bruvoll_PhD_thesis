@@ -28,7 +28,8 @@ Figure \@ref(fig:06-settle-tails)b shows that the house-size distributions of bo
 
 ```{r 06-settle-tab}
 load("Results/tab06_settle.RData")
-kable(tab06_settle, booktabs = TRUE, caption = "(ref:06-settle-tab)") %>% 
+kable(tab06_settle, booktabs = TRUE, caption = "(ref:06-settle-tab)",
+      caption.short = "short caption") %>% 
 #      linesep = c(rep("", 7), "\\addlinespace")) %>%
   kable_styling(latex_options = c("striped", "scale down")) %>% 
   landscape()

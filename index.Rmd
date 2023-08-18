@@ -1,43 +1,31 @@
 ---
-title: "Fractal Analysis as Method for studying Social Hierarchy in Prehistoric Settlement Plans"
-subtitle: "with case studies from the Linear Pottery and Trypillia cultures (5.500 - 3.500 cal. BCE)"
-author: 
-  - "Hallvard Bruvoll"
-  - "Department of Archaeology, Conservation and History"
-  - "University of Oslo"
-header-includes:
-  - \usepackage{titling}
-  - \pretitle{\begin{center}
-    \includegraphics[width=2cm, height=2cm]{UiO_logo.png}\LARGE\\}
-  - \posttitle{\end{center}}
-date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 output: 
   bookdown::pdf_book:
     includes:
       in_header: preamble.tex
+      before_body: title_page.tex
     keep_tex: yes
     latex_engine: xelatex # for handling UTF-8 and font issues
     toc_appendix: yes
     #citation_package: biblatex (this creates a bug, prevents book compliation)
 # pandoc_args: "--csl" this doesn't change anything
 documentclass: book
+classoption: a4paper, twoside
 bibliography: [book.bib]
 biblio-style: apalike
 csl: apa.csl
 github-repo: hallvardbruvoll/Hallvard_Thesis_2
-description: "This is from 'description' in the YAML"
 geometry: "left=2.9cm, right=2.5cm, top=2.5cm, bottom=2.5cm"
 mainfont: Times New Roman
 fontsize: 12pt
 linestretch: 1.5
-toc: yes
+toc: FALSE # create the Contents and lists directly where I want them
 toc-depth: 2
-#lof: yes
-#lot: yes
+lof: FALSE
+lot: FALSE
 ---
-
-# Preface {.unnumbered}
+# Abstract {.unnumbered}
 
 ```{r setup, include=FALSE}
 # Set defaults for code chunks: code is not printed, figure size and alignment
@@ -48,8 +36,22 @@ knitr::opts_chunk$set(echo = FALSE,
                       dev = "cairo_pdf")
 ```
 
-Thanks to everyone.
+English abstract here
 
 Remember to add abstracts
 
 @furholt2020, @furholt2020a, @furholt2020b are three different publications. @furholt2020, @furholt2020a, @furholt2020b are the same three publications in the same order. gfdsdfgs , Get on with it!
+
+# Sammendrag {.unnumbered}
+
+Norsk oversettelse av Abstract over. Trenger ikke være på ny side
+
+# Preface {.unnumbered}
+
+Add acknowledgements here
+
+\tableofcontents
+
+\listoffigures
+
+\listoftables
