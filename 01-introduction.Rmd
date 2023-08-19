@@ -58,11 +58,13 @@ Bottom line hierarchy: pecking order/linear dominance hierarchy may be prevalent
 
 ## What is social hierarchy? {#social-hierarchy}
 
--   Political assumptions -- all hierarchical social structures are not despotic top-down rule. Democracies can also be very hierarchical. Matter of scale rather than political system @graeber2021, @zimmermann2012a, p. 255. But, tendencies? Use @pumain2006, also @furholt2020. Use @redhead2022: status and leadership, multiple overlapping networks. Emergence of hierarchies: "Positions in the dominance hierarchy is determined by a combination of attributes of individuals, stochastic processes, and social context" @strauss2022.
+-   Political assumptions -- all hierarchical social structures are not despotic top-down rule. Democracies can also be very hierarchical. Matter of scale rather than political system @graeber2021, @zimmermann2012a, p. 255, example by Mabry in Diehl 2000 on irrigation in early Mesopotamia. But, tendencies? Use @pumain2006, also @furholt2020. Use @redhead2022: status and leadership, multiple overlapping networks. Emergence of hierarchies: "Positions in the dominance hierarchy is determined by a combination of attributes of individuals, stochastic processes, and social context" @strauss2022.
 
 -   Nested and non-nested social hierarchies, hierarchical hunter-gatherers? @hamilton2007, @whitridge2016 (or use in Chapter \@ref(disc-methods)?)
 
 -   Biologically defined thresholds to group size? Dunbar's number and controversies, @dunbar2023, @west2023 (add published papers). Scalar stress @johnson1982, @alberti2014, @zhou2005. Also @carneiro1986, @dubreuil2010
+
+-   The function of hierarchies: functionalist general managerial model (GMM) of hierarchy, ref in Diehl 2000. Check? Main argument, it serves a function, it works (whether people like it or not), and that is why humanity tends towards hierarchy (evolutionist), at least small-scale egalitarian foragers hardly exist anymore (reformulate this).
 
 -   Temporal dynamics of social hierarchies: cyclicity [@peters2017], sawtooth waves [@scheidel2017], punctuated equilibrium [@gould2007]. Archaeo. example South Sweden Neo/BA: @nordquist2001. Transitions villages to urban: @birch2014
 
@@ -80,8 +82,9 @@ Refs. house societies [@joyce2000, Bnf; @beck2007; @kuijt2018; @lévi-strauss198
 
 <!-- -->
 
--   Anti-evolution critique in @yoffee1993, @yoffee2005, @fontijn2013, @kienlin2012, @lund2022, @furholt2020. Review in @dubreuil2010. Anarchistic critique/heterarchy: @crumley1995, @haude2019, @graeber2021. Paleaeolithic social inequality: @honoré2022, also @testart2012, @testart1982
+-   Anti-evolution critique in @yoffee1993, @yoffee2005, @fontijn2013, @kienlin2012, @lund2022, @furholt2020. Review in @dubreuil2010. Anarchistic critique/heterarchy: @crumley1995, @haude2019, @graeber2021, @angelbeck2022 Paleaeolithic social inequality: @honoré2022, also @testart2012, @testart1982
 -   I need to address gender inequality somewhere, mainly to say that this thesis is not about gender inequality. Start from @gaydarska2023, and cite A. Augereau for the LBK.
+-   Bottom line here: archaeologists should have much to gain in analytically separating social hierarchy and social inequality. While the two are often seen to go hand in hand, they do not necessarily do so. Hierarchical structure is a response, often unplanned or emergent, to scale-related stresses -- i.e. it fills a functional need in large societies. How a hierarchy is implemented socially however is a matter of considerable variation. At least one crucial variable is the spectrum between democratic and autocratic extremes. Archaeologists have apparently been speaking past each other for decades (formulate precise argument referring to @graeber2021 and @flannery2012). In this thesis I argue that hierarchical structure must be shown archaeologically through different traces in material culture than social inequality as well as type of hierarchical organisation.
 
 ## Main findings here?
 
