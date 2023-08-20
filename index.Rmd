@@ -13,8 +13,8 @@ output:
 documentclass: book
 classoption: a4paper, twoside
 bibliography: [book.bib]
-biblio-style: apalike
-csl: apa.csl
+#biblio-style: apalike
+csl: chicago-author-date.csl
 github-repo: hallvardbruvoll/Hallvard_Thesis_2
 geometry: "left=2.9cm, right=2.5cm, top=2.5cm, bottom=2.5cm"
 mainfont: Times New Roman

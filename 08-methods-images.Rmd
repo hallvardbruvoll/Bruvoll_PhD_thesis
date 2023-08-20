@@ -32,13 +32,17 @@ For the following tests, all images were constructed in R as data tables with x 
 
 To test the effect from image size on fractal dimension and lacunarity measures, it was necessary to proceed in three steps (Figure \@ref(fig:08-N-im)). A first series was created in which a single image was simply scaled up from 40^2^ to 420^2^ pixels in 20 steps. The smallest image thus represented four square houses of size 10\*10 pixels, which with 0.5 m per pixel length (the resolution used with the actual settlement plans in the next chapter) gives houses of 25 m^2^. Each house filled the lower left quarter of a 4 times larger square, so that image density was kept at 0.25. Density is defined here as fraction of pattern pixels to the whole number of pixels. For the largest version of this pattern, each house thus had a side length of 52,5 m, giving a total surface of ca. 2.756 m^2^ per house, which is far above comparable values for houses in prehistoric settlement plans. Since in reality house sizes do not increase linearly with settlement size, but are more constant, a second series was created where the image size was incremented the same way, but with a constant house size of 25 m^2^, so that in order to also keep image density constant, house count (*N*) was increased proportionally with image size. For this series, the largest image then had $N = 21^2 = 441$ houses, thus emulating settlements of different sizes but with similarly sized houses and densities between houses. In other words, different image sizes could not be made keeping both density, house count and house size constant. A third series of 20 images was made where image size was kept constant at 420^2^ pixels, but with the same range of house count from 4 to 441 as well as house sizes from 105^2^ to 10^2^ pixels, or 2.756 to 25 m^2^.
 
-![Effects from image size, element count and element size on fractal dimension and lacunarity. Density is fixed at 0.25 for all images. Number labels represent iteration within each series. Image size is variable in the upper and lower series, house size in the upper and the vertical series, and house count in the vertical and the lower series. The three corner images are identical for two series each. Images are selected here to prevent overlaps](Results/fig08_N_im.pdf){#fig:08-N-im}
+(ref:08-N-im) Effects from image size, element count and element size on fractal dimension and lacunarity. Density is fixed at 0.25 for all images. Number labels represent iteration within each series. Image size is variable in the upper and lower series, house size in the upper and the vertical series, and house count in the vertical and the lower series. The three corner images are identical for two series each. Images are selected here to prevent overlaps
+
+```{r 08-N-im, fig.cap="(ref:08-N-im)", fig.scap="Effects from image size, count and resolution on fractal dimension (D) and lacunarity (L)"}
+include_graphics("Results/fig08_N_im.pdf")
+```
 
 The resulting fractal dimension and lacunarity measures for all images in these three series are shown in Figures \@ref(fig:08-IS-HS) to \@ref(fig:08-N-HS). In all three cases -- increased image size and house size, increased image size and house count, and increased house count and decreased house size -- there are clear tendencies. In the two first series (upper and lower images in Figure \@ref(fig:08-N-im)), fractal dimension increases with image size, seemingly independently from the evolution in the pattern given that density remains constant. In the third case, when image size is kept constant (right side images in Figure \@ref(fig:08-N-im)), changes in fractal dimension are much smaller and less systematic, however lacunarity changes with some fluctuation. Regarding the two different summary measures of lacunarity -- mean *L* and exponent *L* (see above) -- though not identical, they respond in very similar ways to changes in all three image series. However, it is important to notice that the direction of change in lacunarity is opposite depending of the summary measure in the first and third series, while identical in the second. This difference is not easy to explain, and underlines the importance of reporting explicitly which lacunarity measure is being used. As seen on these plots, the exponent lacunarity typically has values below or around 1, while the mean lacunarity may have much higher values and cannot be below 1 -- an observation that can serve as a rule of thumb for decrypting results where the exact type of measurement used is not explicitly reported.
 
 (ref:08-IS-HS) Different image sizes and house sizes, with *N* = 4 and density = 0.25. Resulting fractal dimension (*D*) and mean lacunarity (*L_mean*, plot a) and exponent lacunarity (plot b). Images are numbered by iteration
 
-```{r 08-IS-HS, fig.cap="(ref:08-IS-HS)"}
+```{r 08-IS-HS, fig.cap="(ref:08-IS-HS)", fig.scap="D and L estimates, variable image size and house size (resolution)"}
 load("Results/fig08_IS_HS.RData")
 fig08_IS_HS
 ```
@@ -47,7 +51,7 @@ In the first two series, where image size is variable, it should furthermore be 
 
 (ref:08-N-IS) Variable element count (*N*) and image size, with constant house length of 10 pixels and density at 0.25. Resulting fractal dimension (*D*) and mean lacunarity (*L_mean*, plot a) and exponent lacunarity (L, plot b). Images are numbered by iteration
 
-```{r 08-N-IS, fig.cap="(ref:08-N-IS)"}
+```{r 08-N-IS, fig.cap="(ref:08-N-IS)", fig.scap="D and L estimates, variable image size and element count"}
 load("Results/fig08_N_IS.RData")
 fig08_N_IS
 ```
@@ -56,7 +60,7 @@ The series with fixed image size and changes in house count and house size also 
 
 (ref:08-N-HS) Variable house count (*N*) and house size, with fixed image size of 420^2^ pixels and density at 0.25. Resulting fractal dimension (*D*) and mean lacunarity (*L_mean*, plot a) and exponent lacunarity (*L*, plot b). Images are numbered by iteration
 
-```{r 08-N-HS, fig.cap="(ref:08-N-HS)"}
+```{r 08-N-HS, fig.cap="(ref:08-N-HS)", fig.scap="D and L estimates, variable element count and element size (resolution), fixed image size"}
 load("Results/fig08_N_HS.RData")
 fig08_N_HS
 ```
@@ -69,26 +73,34 @@ While density and size distribution of elements are not directly connected to la
 
 For both of these variables, a series of 20 images was constructed with internal incremental change between images, keeping other variables constant. In order to avoid the issues related to image size and resolution presented above, image size was set here to 540\*540 pixels, with a regular grid of $N = 27^2 = 729$ houses (i.e. corresponding to rather large settlements from an archaeological point of view). Over the 20 images, density was set to vary incrementally from 0.05 (one pixel per house) to the upper limit where all houses percolate into a single filled square (density = 1, Figure \@ref(fig:08-dens-im)). Fractal dimension and lacunarity estimates of the images with variable density followed clear and regular trends, with *D* and *L* being seemingly exponentially correlated to density, as seen in how the step lengths between iteration points in Figure \@ref(fig:08-dens)b decrease at a constant rate. *L_mean* being already exponentially correlated to *D* (see further discussion below), it seems to follow a power-law relationship to density, meaning that low densities get very high values of *L_mean* and inversely. As should be expected the range in *D* values in this series is very wide, from approximately 1.0 (the dimension of a straight line segment with no surface) to above 1.8. In theory the single black box of which the last iteration image consists should have a dimension of 2, illustrating the limits of the box-counting method. This wide range also shows clearly that a fractional dimension value obtained from an image through box counting does not in itself mean that the analysed pattern is actually fractal (i.e. exhibiting self-similarity at a range of different scales). The observed lacunarity values of the last image of this series (no space between points) were, however, arbitrarily close to the theoretical values of 0 for *L* and 1 for *L_mean*.
 
-![Fractal dimension and mean lacunarity of images with identical size and layout, but with densities varying with linear increments from 0.05 to 1. Number labels represent iteration, and images are selected to prevent overlaps](Results/fig08_dens_im.pdf){#fig:08-dens-im}
+(ref:08-dens-im) Fractal dimension and mean lacunarity of images with identical size and layout, but with densities varying with linear increments from 0.05 to 1. Number labels represent iteration, and images are selected to prevent overlaps
+
+```{r 08-dens-im, fig.cap="(ref:08-dens-im)", fig.scap="Effect of pixel density on D and L"}
+include_graphics("Results/fig08_dens_im.pdf")
+```
 
 The exponential relationship between fractal dimension and density of spatial patterns was noted by @thomas2007, who -- based on the layouts of different suburbs of modern Brussels -- argued that *D* gave additional information on texture and clustering that density could not give. The constant relationship between *D* and density here shows that the two measures are largely equivalent, *given a constant layout*. To further investigate whether *D* and *L* measurements actually capture anything more than density, in the remaining image series density was kept constant at 0.25.
 
 (ref:08-dens) Fractal dimension and lacunarity measures on the same 20 images with varying density. Because of pixelation the first image was rounded up to be identical to the second, with density = 0.01. Number labels represent iterations
 
-```{r 08-dens, fig.cap="(ref:08-dens)"}
+```{r 08-dens, fig.cap="(ref:08-dens)", fig.scap="D and L estimates, variable pixel density"}
 load("Results/fig08_dens.RData")
 fig08_dens
 ```
 
 A natural follow-up from the preceding chapters is to test to which extent different size distributions of houses are reflected in fractal dimension and lacunarity of settlement plans, all other things being equal. A series of 20 images were generated with gradually increased inequality between house sizes, with image size kept at 540^2^ pixels and N = 729 (27 rows and columns in a square grid). The size distribution was defined as a log-normal with an arbitrary mean at $\mu = 3.5$ and standard deviations varying in linear increments between $0 < \sigma < 0.9$. The first image was thus uniform with identical house sizes, while the last image had some sizes that were much larger than most of the others. For each image, the size distribution was normalised to 1 and multiplied with the desired fraction of the total image area so that density was kept at 0.25 (with small deviations due to occasional overlaps between neighbouring houses). This series thus illustrates settlements of identical size and layout, but where the size distribution of houses range from (nearly) identical to very unequal (Figure \@ref(fig:08-distr-im)).
 
-![Fractal dimension and mean lacunarity of images with identical size, layout and density but with varying size distributions of single elements, from uniform (image 1) to log-normal with $\sigma = 0.9$ (image 20), in linear increments of $\sigma$ from 0. Number labels represent iteration, and images are selected here to prevent overlaps](Results/fig08_distr_im.pdf){#fig:08-distr-im}
+(ref:08-distr-im) Fractal dimension and mean lacunarity of images with identical size, layout and density but with varying size distributions of single elements, from uniform (image 1) to log-normal with $\sigma = 0.9$ (image 20), in linear increments of $\sigma$ from 0. Number labels represent iteration, and images are selected here to prevent overlaps
+
+```{r 08-distr-im, fig.cap="(ref:08-distr-im)", fig.scap="Effect of size distribution of elements on D and L"}
+include_graphics("Results/fig08_distr_im.pdf")
+```
 
 The fractal dimension of the images with variable house-size distributions dropped from the value of the first iteration ($D \approx 1.56$) to around 1.52 where it fluctuated with no clear pattern for the remaining iterations (Figure \@ref(fig:08-distr)). Lacunarity -- both the mean and exponent summary measures -- increased gradually for almost every iteration, showing how this measure quantifies the increasing irregularity of the gaps between elements, and not only the sum of the gap sizes (i.e. density). Though this trend seems clear enough, the range of lacunarity values on this series remains moderate compared to those obtained from the series with variable density.
 
 (ref:08-distr) Fractal dimension and lacunarity estimates of the whole image series, with 729 square points varying in size distribution from uniform (log-normal with $\sigma = 0$) to log-normal with $\sigma = 0.9$. For each image, sizes were normalised so that they together covered 25% of the total image area, notwithstanding some overlaps causing image density to descend to a minimum of 0.242. Label numbers indicate iteration
 
-```{r 08-distr, fig.cap="(ref:08-distr)"}
+```{r 08-distr, fig.cap="(ref:08-distr)", fig.scap="D and L estimates, variable size distribution of elements"}
 load("Results/fig08_distr.RData")
 fig08_distr
 ```
@@ -99,26 +111,34 @@ fig08_distr
 
 To assess the effect of spatial self-similarity or hierarchical clustering, an image series was generated where, as before, image size, N and density were kept constant, and the size distribution was kept uniform, but where the spaces between houses were gradually increased or reduced so that houses increasingly would form hierarchical clusters. This can be done in a number of ways -- in this case two levels of clusters were generated (a third being the settlement as a whole), the lower consisting of 3\*3 houses and the upper of 3\*3 lower clusters (Figure \@ref(fig:08-clustering-im)). This configuration was the reason for choosing 27 rows and columns in the first place for all these image series, since it can conveniently allow for such hierarchical clustering without having non-integer numbers of houses (or houses of different sizes). The first image in this series was thus an entirely regular grid identical to the first image in the size distribution series described above, but the last image here represents a rather different layout, illustrating settlements where hierarchical organisational levels result in self-similar clustering of the overall plan, as described by Brown and Witschey for classical and post-classical Maya urban settlements [-@brown2003, pp. 1625-8]. As they argue, the underlying hierarchical levels of social organisation (e.g. family, lineage, clan, state) have been widely observed and described by ethnographers and historians, while the materialisation of such hierarchies in settlement plans is far more rarely recognised, and even less so in terms of fractal geometry.
 
-![Fractal dimension and mean lacunarity of images of identical size, layout and density, but with degrees of hierarchical clustering, from no clustering (image 1) to high clustering in two levels, where the space between clusters represent 8% of the superior level's total length and the points start to percolate (image 20). Number labels represent iteration, and images are selected to prevent overlaps](Results/fig08_clustering_im.pdf){#fig:08-clustering-im}
+(ref:08-clustering-im) Fractal dimension and mean lacunarity of images of identical size, layout and density, but with degrees of hierarchical clustering, from no clustering (image 1) to high clustering in two levels, where the space between clusters represent 8% of the superior level's total length and the points start to percolate (image 20). Number labels represent iteration, and images are selected to prevent overlaps
+
+```{r 08-clustering-im, fig.cap="(ref:08-clustering-im)", fig.scap="Effect of hierarchical clustering on D and L"}
+include_graphics("Results/fig08_clustering_im.pdf")
+```
 
 The resulting fractal dimension and lacunarity estimates on these images show a very similar trend as the one observed on the size distributions image series (Figure \@ref(fig:08-clustering)). However, in this case *D* continues to drop from the first until the last iteration, albeit with some seemingly random fluctuations. Furthermore, after the first five iterations (which are in reality quite close to the entirely regular grid, see Figure \@ref(fig:08-clustering-im)), both lacunarity measures given here start to increase and do so regularly until the end of the series. Though again the ranges in both dimension and lacunarity are rather moderate here compared to those seen for density and image size above, the trend seen here is clear enough to conclude that hierarchical clustering is reflected in both these measures, in good accordance with the theory.
 
 (ref:08-clustering) Fractal dimension and lacunarity measures on the same images with varying degrees of spatial clustering, and fixed image size, density, element count and size distributions. Number labels represent iteration
 
-```{r 08-clustering, fig.cap="(ref:08-clustering)"}
+```{r 08-clustering, fig.cap="(ref:08-clustering)", fig.scap="D and L estimates, variable degrees of clustering"}
 load("Results/fig08_clustering.RData")
 fig08_clustering
 ```
 
 As a last test series of images to facilitate interpretation of fractal dimension and lacunarity estimates of settlement plans, 20 images were generated from the same point of departure as before -- i.e. image size of 540\*540 pixels, 27\*27 houses each of 10\*10 pixel size, giving 0.25 image density -- but where an increasing amount of spatial noise was added for each iteration. Again, this could be done in a number of ways. In this case, each house was allowed to do an independent random walk with a step length of 2.4 pixel equivalents in one out of 12 circular directions (this caused some greyscaling in the resulting images, but the applied box-counting and gliding-box functions round such values to 0 and 1). Each random-walk step represented one iteration in the series [see @bruvollforthcoming for a similar approach]. An advantage of using square synthetic images for this test rather than simulations of actual settlement plans, is that the effect from such spatial noise can be more easily isolated from density. When elements walk in random directions, some will inevitably walk out and away from the initial pattern, thus decreasing image density no wether the image is extended to include them or not. To solve this issue and making sure that density remained as constant as possible given how it was shown above to influence the resulting estimates, the image size was here kept constant and houses that walked beyond the boundaries were moved across the image to the opposite side. Some decrease in image density was however difficult to avoid given the frequent overlaps of the areas of houses that walked very close to each other. As a result, the lowest density in this series extended to 0.232, which is still fairly close to the goal of 0.25. The resulting more or less noisy images in this series thus illustrate the range of possible settlement layouts from one where every house is strictly allotted to a predefined place following a simple geometric grid, to one where houses are constructed completely without any regard to the placement of surrounding houses (Figure \@ref(fig:08-noise-im)). Neither of these extremes are of course very likely for any real archaeological setting, but it seems obvious that the former case will be more characteristic of societies with strong overarching institutions that regulate everyday life while the latter case is more representative of very loose social ties between independent households and an absence of any overarching decision-making authority. #Ref?
 
-![Different degrees of random spatial noise](Results/fig08_noise_im.pdf){#fig:08-noise-im}
+(ref:08-noise-im) Fractal dimension and mean lacunarity of images of identical size, layout and density, with varying degrees of added spatial noise, generated by letting each house independently perform a random walk of constant step length in random directions, from no steps (image 1) to 19 steps (image 20). Number labels represent iteration, and images are selected to prevent overlaps
+
+```{r 08-noise-im, fig.cap="(ref:08-noise-im)", fig.scap="Effect of random noise on D and L"}
+include_graphics("Results/fig08_noise_im.pdf")
+```
 
 The resulting *D* and *L* measures from these images follow the same general trajectory as the images with variable clustering and size distribution, with lower fractal dimension and higher lacunarity for each step of added noise (Figure \@ref(fig:08-noise)). The fractal dimension estimates oscillate in a few cases, possibly because of sudden random correspondence between the initial pattern grid and the box sizes used in the calculations. The lacunarity estimates -- both the mean and the exponent lacunarity -- followed very regular increase after the second iteration. Here again, the trend seems sufficiently regular to conclude that random noise is effectively quantified by both fractal dimension and lacunarity, in a similar way to the other changes in pattern presented above.
 
 (ref:08-noise) Estimates of fractal dimension (*D*) and mean lacunarity (plot a) and exponent lacunarity (plot b), of 20 images with increasing degrees of added random spatial noise. Number labels represent iteration
 
-```{r 08-noise, fig.cap="(ref:08-noise)"}
+```{r 08-noise, fig.cap="(ref:08-noise)", fig.scap="D and L estimates with variable degrees of added random noise"}
 load("Results/fig08_noise.RData")
 fig08_noise
 ```
@@ -133,21 +153,25 @@ Another requirement for reaching acceptable accuracy in fractal dimension and la
 
 Other variables, which were more related to the visual appearance of the pattern, also gave characteristic results. Size distribution of pattern elements, level of hierarchical clustering and random spatial noise all affected *D* and *L* measures in a similar way, in that larger deviations from homogeneity drew the former values down and the latter up in a consistent way. Density on the other hand, had a different effect on *D* and *L* estimates in two ways. Firstly, increased image density gave consistently *higher* fractal dimension and *lower* lacunarity values, and secondly -- though the intensity of the different variables are difficult to compare -- the effect from density appeared here as much stronger than that of the others. Figures \@ref(fig:08-all-im) and \@ref(fig:08-all) illustrate how a minor adjustment in image density made more difference in both fractal dimension and lacunarity than the whole range of variation in noise, clustering and size distribution. One caveat here though, is that these variables are often in practice combined in empirical settlement plans -- there is usually both some level of clustering, noise and inequality in sizes -- and it remains unknown whether these factors combined give stronger signals compared to that of density. In any case, it seems clear that image density must be taken into consideration when interpreting the layout of settlement plans from their fractal dimension and/or lacunarity.
 
-![The first and last images of the clustering, size distribution and noise series, as well as images 8, 10 and 12 of the density series, showing how only small increments in density -- here from 0.16 (im. 8) to 0.36 (im. 12) -- generate changes in fractal dimension and lacunarity that are larger than those induced by the whole range of the other variables. Density image 10 is identical to image 1 of the three other series, and has density value 0.25](Results/fig08_all_im.pdf){#fig:08-all-im}
+(ref:08-all-im) The first and last images of the clustering, size distribution and noise series, as well as images 8, 10 and 12 of the density series, showing how only small increments in density -- here from 0.16 (im. 8) to 0.36 (im. 12) -- generate changes in fractal dimension and lacunarity that are larger than those induced by the whole range of the other variables. Density image 10 is identical to image 1 of the three other series, and has density value 0.25
 
-From the results presented above, another trait seemed characteristic of the link between density, fractal dimension and lacunarity. All other things being equal, density was exponentially correlated to both *D* and *L*, and power-law correlated to *L_mean* (Figure \@ref(fig:08-dens)). In fact, for a regular square grid pattern with given density, these fractal analysis measures can seemingly be very well predicted with simple linear models on log-transformed density (Table \@ref(tab:08-models-tab)). These models can be used tentatively to compare *D* and *L* values of images with varying density, by first subtracting the values expected from density alone. However, it must again be stressed such an analysis probably is premature at this stage, since several factors remain unaccounted for. For example, regarding the Neolithic settlement plans compared in the next chapter, the effects on *D* and *L* from *different* settlement layouts remain untested (the standard Trypillia layout is radial and not a grid). Also, effects from size distribution, clustering and noise have only been evaluated here at a single given density value, and these may behave very differently at other density levels. As mentioned, these factors are usually mixed to some extent and may have cocktail effects that for now remain unstudied. In empirical settings grid orientation and edge effects quickly become issues of their own that are also not further investigated here.
+```{r 08-all-im, fig.cap="(ref:08-all-im)", fig.scap="Effect on D and L from density, compared to effects from size distribution, clustering and noise"}
+include_graphics("Results/fig08_all_im.pdf")
+```
+
+From the results presented above, another trait seemed characteristic of the link between density, fractal dimension and lacunarity. All other things being equal, density was exponentially correlated to both *D* and *L*, and power-law correlated to *L_mean* (Figure \@ref(fig:08-dens)). In fact, for a regular square grid pattern with given density, these fractal analysis measures can seemingly be very well predicted with simple linear models on log-transformed density (Table \@ref(tab:08-models-tab)). These models can be used tentatively to compare *D* and *L* values of images with varying density, by first subtracting the values expected from density alone. However, it must again be stressed such an analysis probably is premature at this stage, since several factors remain unaccounted for. For example, regarding the Neolithic settlement plans compared in the next chapter, the effects on *D* and *L* from *different* settlement layouts remain untested (the standard Trypillia layout is radial and not a grid). Also, effects from size distribution, clustering and noise have only been evaluated here at a single given density value, and these may behave very differently at other density levels. As mentioned, these factors are usually mixed to some extent and may have non-linear effects that for now remain unknown. In empirical settings grid orientation and edge effects quickly become issues of their own that are also not further investigated here.
 
 (ref:08-models-tab) Linear models of fractal dimension (*D*), exponent lacunarity (*L*) and mean lacunarity (*L_mean*) with the log-transformations that give the best fit, evaluated by the coefficient of determination ($R^2$). The third model can be written in power-law form as $L_{mean} = 0.862*density^{-0.61}$
 
 ```{r 08-models-tab}
 load("Results/tab08_models.RData")
-kable(tab08_models, booktabs = TRUE, caption = "(ref:08-models-tab)") %>% 
+kable(tab08_models, booktabs = TRUE, caption = "(ref:08-models-tab)", caption.short = "Models of fractal dimension and lacunarity values expected from density") %>% 
   kable_styling(latex_options = c("striped", "scale down"))
 ```
 
 (ref:08-all) Fractal dimension and lacunarity estimates of all synthetic images analysed in this chapter. *L_mean* and *L* show largely similar distributions but with some marked differences. See text for details. The grey frame in plot a shows the extent of Figure \@ref(fig:08-all-im)
 
-```{r 08-all, fig.cap="(ref:08-all)"}
+```{r 08-all, fig.cap="(ref:08-all)", fig.scap="D and L estimates of all synthetic images"}
 load("Results/fig08_all.RData")
 fig08_all
 ```

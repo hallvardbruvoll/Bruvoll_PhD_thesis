@@ -8,7 +8,7 @@ In archaeology there are two recurrent and seemingly contradicting assumptions u
 
 (ref:04-intro) House size can be interpreted in terms of number of inhabitants (household size) or material wealth of the inhabitants, but the exact relationship between these two variables remains poorly understood and is probably both complex and culturally contingent. Any given house size within a distribution can thus result from a combination of effects from the two. In many cultural contexts household size and wealth may furthermore be directly correlated
 
-```{r 04-intro, fig.cap="(ref:04-intro)", fig.scap="My short caption", warning=FALSE}
+```{r 04-intro, fig.cap="(ref:04-intro)", fig.scap="House size, household size and wealth", warning=FALSE}
 load("Results/fig04_intro.RData") 
 fig04_intro
 ```
@@ -71,14 +71,14 @@ Distributions can be represented graphically in a number of ways, most commonly 
 
 (ref:04-PDF) Example curves of the probability density function (PDF) of four common distribution types: normal (blue, $\mu = 50$, $\sigma = 8$), exponential (red, $\lambda = 0.1$), log-normal (green, $\mu = 3$, $\sigma = 0.5$) and power-law (purple, $\alpha = 3$, $x_{min} = 1$), in linear (a) and logarithmic scales (b). Parameter values are arbitrary and x-axis is truncated at $2 < x < 100$ for readability. The power-law distribution is the only to form a straight line when both scales are logarithmic
 
-```{r 04-PDF, fig.cap="(ref:04-PDF)"}
+```{r 04-PDF, fig.cap="(ref:04-PDF)", fig.scap="PDF curves of various distribution types"}
 load("Results/fig04_PDF.RData")
 fig04_PDF
 ```
 
 (ref:04-cCDF) The same distributions as in Figure \@ref(fig:04-PDF), but with the complementary (right-tail) cumulative distribution function (cCDF), in linear (a) and logarithmic scales (b), with $0 < x < 80$ for readability
 
-```{r 04-cCDF, fig.cap="(ref:04-cCDF)"}
+```{r 04-cCDF, fig.cap="(ref:04-cCDF)", fig.scap="The same distributions with cCDF curves"}
 load("Results/fig04_cCDF.RData")
 fig04_cCDF
 ```
@@ -178,14 +178,14 @@ The product of many random numbers is typically the result of a growth or decay 
 
 (ref:04-multi-exp) Exponential distribution of $y = \lambda ^x$ with rate ($\lambda$) fluctuating randomly and uniformly between 0.75 and 1.4, i.e. with a mean rate of approx. 1.08, over 40 periods ($x$) from an initial value of 1. The plots figure 100 individual runs of the distribution, with linear (a) and logarithmic (b) y-axis. Over time, y-values at any given x are expected to be log-normally distributed by the Central Limit Theorem
 
-```{r 04-multi-exp, fig.cap="(ref:04-multi-exp)"}
+```{r 04-multi-exp, fig.cap="(ref:04-multi-exp)", fig.scap="Exponential distributions with randomly fluctuating rate"}
 load("Results/fig04_multi_exp.RData")
 fig04_multi_exp
 ```
 
 (ref:04-lnorm-exp) Density function of y-values from Figure \@ref(fig:04-multi-exp) at $x = 40$, with linear (a) and logarithmic (b) x-axis, following a typical log-normal distribution
 
-```{r 04-lnorm-exp, fig.cap="(ref:04-lnorm-exp)"}
+```{r 04-lnorm-exp, fig.cap="(ref:04-lnorm-exp)", fig.scap="Log-normal distribution resulting from many exponentials with randomly fluctuating rates"}
 load("Results/fig04_lnorm_exp.RData")
 fig04_lnorm_exp
 ```
@@ -194,7 +194,7 @@ This process is known as *Gibrat's law*, after the French engineer Robert Gibrat
 
 (ref:04-still-normal) a: Eponential growth of 100 samples drawn from a normally distributed initial population ($\mu = 10$, $\sigma = 2$), all following the same sequence of uniformly distributed rates ($0.75 < \lambda < 1.4$). b: Over time, $\mu$ and $\sigma$ values change, but the distribution remains normal. Scales are linear
 
-```{r 04-still-normal, fig.cap="(ref:04-still-normal)"}
+```{r 04-still-normal, fig.cap="(ref:04-still-normal)", fig.scap="Normal distribution from exponentials with identically fluctuating rates"}
 load("Results/fig04_still_normal.RData")
 fig04_still_normal
 ```
@@ -235,14 +235,14 @@ The main reason for the great attention that has been given to power-law distrib
 
 (ref:04-pl) Examples of power-law distributions with different scaling exponent ($\alpha$) values on logarithmic axes, showing how this parameter reflects change over orders of magnitude. For a model with $\alpha = 3$ (blue), a decrease in probability p(x) of 3 orders of magnitude (powers of 10), e.g. from 0.1 to 0.0001 corresponds to an increase in the size of x of 1 order. For a model with $\alpha = 1.5$, the same decrease in probability corresponds to an increase in x of 2 orders of magnitude. The models appear linear in logarithmic space, but are in reality highly non-linear, as illustrated by the grid
 
-```{r 04-pl, fig.cap="(ref:04-pl)"}
+```{r 04-pl, fig.cap="(ref:04-pl)", fig.scap="Power laws and scaling exponents"}
 load("Results/fig04_pl.RData")
 fig04_pl
 ```
 
 (ref:04-hierarchy) A power-law distribution of sizes arranged in discrete levels, illustrating its characteristic scale invariance. From the largest element on top and downwards, sizes decrease while numbers (frequencies) increase, both exponentially but in opposite direction, generating a hierarchical fractal structure where the same shapes are recognised at different scales
 
-```{r 04-hierarchy, fig.cap="(ref:04-hierarchy)"}
+```{r 04-hierarchy, fig.cap="(ref:04-hierarchy)", fig.scap="Power-law distributions and hierarchy"}
 load("Results/fig04_hierarchy.RData")
 fig04_hierarchy
 ```
