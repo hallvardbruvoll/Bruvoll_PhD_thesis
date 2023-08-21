@@ -40,7 +40,7 @@ Formation, characteristics -- striking difference from earlier Mesolithic cultur
 
 expansion trajectory: east: @saile2020,
 
-Questions of contact and even creolisation with local hunter-gatherer groups in the margins of the Linear Pottery settlement area -- Limbourg and La Hoguette pottery groups in northern France and Belgium, Swifterbandt in the Netherlands??, Ertebølle in northern Germany??, Bug-Dniestr in Ukraine and Moldova [@saile2020] -- as well as with other already established Neolithic groups in central France [@roussot-larroque2022] and the lower Danube [@saile2020], remain hotly debated
+Questions of contact and even creolisation with local hunter-gatherer groups in the margins of the Linear Pottery settlement area -- Limbourg and La Hoguette pottery groups in northern France and Belgium, Swifterbandt in the Netherlands??, Ertebølle in northern Germany??, Bug-Dniester in Ukraine and Moldova [@saile2020] -- as well as with other already established Neolithic groups in central France [@roussot-larroque2022] and the lower Danube [@saile2020], remain hotly debated
 
 End of LBK as collapse? The whole culture as an adaptive cycle: @gronenborn2014.
 
@@ -68,51 +68,61 @@ It must be noted that there are several caveats with this procedure of selecting
 
 ## The Cucuteni-Trypillia culture complex {#trypillia}
 
-The Cucuteni-Trypillia culture complex (CTCC) is also a large and relatively well-defined archaeological culture, geographically somewhat less extensive than the Linear Pottery, but defined over a longer chronological range of almost 2000 years from the early 5th millennium to around 3000 BCE [@harper2021; @harper2023]. Covering a large area within modern Ukraine, Moldova and Romania from the foothills of the Carpathians in the west to the middle Dnieper in the east -- though inland from the coast of the Black Sea -- it was independently identified in the late 19th centrury at the eponymous sites of Trypillia on the right bank of the Dieper (Kyiv Oblast in Ukraine, then within the Russian Empire) and in Romania at Cucuteni (Iaşi County near the border to Moldova). Over much of the 20th century it has been debated whether they should be considered as two separate cultures, and today they are generally treated as one, or at least as closely related as seen through their highly similar pottery traditions [@shatilo2021, p. 13]. One significant trait that does distinguish Cucuteni and Trypillia settlements, is a tendency of the former to form irregular grid layouts, while the latter form radial layouts of concentric circles. The Trypillia culture is furthermore conventionally differentiated between a Western and an Eastern sub-group, the former (abbreviated to WTC in specialised literature) being primarily characterised by the prevalence of polychrome painted pottery (similar to Cucuteni pottery) while the Eastern group (ETC) is characterised by pottery with primarily incised and fluted decorations. There is also a general long-term trend of migration and pioneer settlement from the south-west towards the north-east, and the ETC -- representing the earliest settled farmers in central Ukraine -- first appear after the initial stages of WTC and Cucuteni development [@harper2023, pp. 646-7]. It should also be noted that both of the eponymous sites are located in the extremities of the area defined by associated sites, and though there are certain geographical biases in the documented material, it seems clear that the core area of settlement and population density for much of the CTCC duration was in and near the river valleys of the Dniestr and Prut (mainly in present-day Moldova and central-western Ukraine). The Trypillia settlements included in this study are attributed to the WTC and are located within a small micro-region in the Southern Bug-Dnieper interfluve, around the limit between the Cherkassy and Kirovograd oblasts, some 30-40 km east of Uman (#overview map).
+The Cucuteni-Trypillia culture complex (CTCC) is also a large and well-defined archaeological culture, geographically somewhat less extensive than the Linear Pottery, but found over a longer chronological range of almost 2000 years from the early 5th millennium to around 3000 BCE, a period referred to as the Eneolithic or Chalcolithic/Copper Age within its regional context [@harper2021; @harper2023]. Covering a large area within modern Ukraine, Moldova and Romania from the foothills of the Carpathians in the west to the middle Dnieper in the east -- though inland from the coast of the Black Sea -- it was independently identified in the late 19th centrury at the eponymous sites of Trypillia on the right bank of the Dieper (Kyiv Oblast in Ukraine, then within the Russian Empire) and in Romania at Cucuteni (Iaşi County near the border to Moldova). Over much of the 20th century it has been debated whether they should be considered as two separate cultures, and today they are generally treated as one, or at least as closely related as seen through their highly similar pottery traditions [@shatilo2021, p. 13 ff.]. One significant trait that does distinguish Cucuteni and Trypillia settlements, is a tendency of the former to form irregular grid layouts, while the latter form radial layouts of concentric circles. The CTCC settlements analysed in this study belong to the Trypillia group, and all show this characteristic settlement layout (further descriptions below). Note that the spelling of Trypillia is transliterated to English from the Ukrainian toponyme, while it often -- especially in older literature -- is transliterated from the Russian equivalent Tripolje.
 
-The near absence of stratified settlements within the Trypillia and the low availability of radiocarbon dating for Soviet and post-Soviet archaeologists, has lead to the elaboration of a highly complex sequence of relative chronology based on pottery typology, with the definition of a number of geographically unstable local traditions, termed "local groups" for both the WTC and the ETC. These are generally thought to represent somewhat coherent population groups, changing the location of their settlements at a relatively rapid rate, often in small steps but from time to time in larger leaps, leading to considerable geographical overlaps and mixing between different traditions (e.g. the WTC settlements presented below are actually further *east* than most of the ETC settlements).
+The near absence of stratified settlements within the Trypillia culture and the low availability of radiocarbon dating for Soviet and post-Soviet archaeologists, has lead to the elaboration of a highly complex sequence of relative chronology based on pottery typology. The general periodisation of Trypillia pottery and material culture -- with periods A, B, C and sub-divisions -- was originally made by Tatyana Passek in the 1930s and 40s, and still forms the backbone of the culture's chronology [Passek published only in Russian, but detailed English summaries with references are now available, e.g. @shatilo2021, pp. 18-26]. Besides the temporal sequence, Trypillia material culture has subsequently been further divided into spatial sub-groups, notably to the main groups of the so-called Western and Eastern Trypillia cultures. The former (abbreviated to WTC in specialised literature) being primarily characterised by the prevalence of polychrome painted pottery (similar to Cucuteni pottery) while the Eastern group (ETC) is characterised by pottery with primarily incised and fluted decorations, building on traditions from the initial Precucuteni/Trypillia A phase. There is also a general long-term trend of migration and pioneer settlement from the south-west towards the north-east, and the ETC -- representing the earliest settled farmers in central Ukraine -- first appear after the initial stages of WTC and Cucuteni development [@harper2023, pp. 646-7]. Combining temporal and spatial dynamics of pottery styles, a number of geographically more-or-less stable local traditions have been proposed, termed "local groups" or "lines of development" for both the WTC and the ETC [@ryzhov2012]. These are generally thought to represent somewhat coherent population groups, changing the location of their settlements at a relatively rapid rate, often in small steps but from time to time in larger leaps, leading to considerable geographical overlaps and mixing between different traditions (e.g. the WTC settlements presented below are actually further *east* than most of the ETC settlements).
 
--   Ceramics typology, Local groups and phases.
+It is clear that for much of its research history and until today, this richly detailed partitioning of the Trypillia into small local groups has gone hand-in-hand with a theoretical framework which has been rejected by anglophone archaeologists for a long time, namely the equation of pottery styles with ethnic or tribal groups [@shatilo2021, pp. 44-9]. While this academic tradition is still strong in Ukraine, as in much of South-East Europe more generally, it is increasingly being nuanced with more critical archaeological theory, e.g. taking into account the numerous transition zones between groups of pottery styles, and acknowledging that other sources of material culture do not follow the pottery periodisation in a systematic and homogeneous way. Also, the substantial efforts made over the past decade or so of combining the existing Trypillia typo-chronology with modern AMS radiocarbon dates is currently leading to a more precise mapping of the spatio-temporal dynamics of specific pottery traits [@harper2023; @harper2021; @rassamakin2012].
 
--   Economy:
+-   #Subsistence: agriculture, husbandry, hunting [@kirleis2016a, add pages]. Forest-steppe eco-zone [@kirleis2016, add pages].
 
-    -   Subsistence: agriculture, husbandry, hunting. Forest-steppe eco-zone.
+It should also be noted that both of the eponymous sites are located toward the extremities of the area defined by CTCC sites, and though there are certain geographical biases in the documented material, it seems clear that the core area of settlement and population density for much of the culture's duration was in and near the river valleys of the Dniester and Southern Bug (mainly in present-day Moldova and south-western Ukraine). The Trypillia settlements included in this study are attributed to the B-II and C-I phases of the WTC and are located within a small micro-region in the Southern Bug-Dnieper interfluve, around the limit between the Cherkassy and Kirovograd oblasts, some 30-40 km east of Uman (#overview map). Based mainly on pottery style, one settlement -- Nebelivka -- is associated with the eponymous Nebelivka local group (phase B-II), while the three other settlements are associated with the related but slightly later Tomashovka group [phase C-I, see @shatilo2021, pp. 41-4 for a condensed overview of WTC local groups; @ryzhov2012]. The further brief overview of house construction, architecture and social organisation is focussed mainly on the settlements within this area, though many of the traits are widely shared within larger parts of the Trypillia area.
 
-    -   Artisan specialisation in fine ceramics? Metal finds -- gold and copper.
+### Trypillia house construction, architecture and social organisation
 
--   House construction and architecture
+-   House typology @chernovol2012
 
-    -   House typology
+-   Clay models of houses
 
-    -   Clay models of houses
-
-    -   Burning
+    -   Burning, experimental [@korvin-piotrovskiy2012; chapman?]
 
 -   Social organisation
 
     -   Lacking burials (but further south?)
 
-    -   Mega-sites as exception
+    -   Mega-sites as exception,
 
-        -   Urban or not? Density and diversification. Comparative
+        -   Urban or not? Density and diversification. Comparative. @diachenko2017; @kruts2012; @gaydarska2019; @muller2016a . Mega-sites as *anomalocivitates*: @ohlrau2022 and @sindbæk2022. Comparison with Uruk: @muller2016b (add pages).
 
         -   The seasonality hypothesis -- relations to the hinterland
 
-        -   Government system -- assemblies or chiefs/kings?
+        -   Artisan specialisation in fine ceramics? Metal finds -- gold and copper. @korvin-piotrovskiy2016, add pages.
 
--   My sample
+        -   Government system -- assemblies or chiefs/kings? @hofmann2019; @chapman2016; @nebbia2018
 
-    -   The German-Ukrainian research team
+### Sampled Trypillia settlements
 
-    -   The British-Ukrainian team
+-   The German-Ukrainian research team [@hofmann2018]
+
+    -   Maidanetske
+
+    -   Moshuriv
+
+    -   Talne 3
+
+-   The British-Ukrainian team
+
+    -   Nebelivka. See note 8 p. 31 in @shatilo2021 for ref on earlier interpretations of the mega-structure as a "temple" with "seven altars" (Videiko2017, 120)
 
 @pickartz2019, pp. 1649-50: "unburnt" and "eroded" are misleading labels, since highly burnt and even vitrified material regularly found during excavation of these. Probably reflecting houses that are constructed with less daub, without an oven installation, and/or without raised clay platform, thus causing significantly weaker magnetic signals. These houses may in fact represent entirely different social functions from regular houses, but there is as for now no consensus as to what this may be (e.g. artisanal, storage etc.)
 
-The B2/C1 and the mega-sites of the Southern Bug -- Dnieper interfluve The urbanism debate: Comparison with Uruk in Müller and CHECK; low-density urbanism for Nebelivka: check for refs. in @ohlrau2022,p .91 cc. Mega-sites as *anomalocivitates*: @ohlrau2022 and @sindbæk2022.
+The B2/C1 and the mega-sites of the Southern Bug -- Dnieper interfluve The urbanism debate: Comparison with Uruk in Müller and CHECK; low-density urbanism for Nebelivka: check for refs. in @ohlrau2022,p .91 cc.
 
 ## Reading site plans from geomagnetic imagery
 
 Caveats: fill in here.
+
+@rassmann2016; @rassmann2014 (see my article for precise refs.)
 
 @pickartz2021 fds
 

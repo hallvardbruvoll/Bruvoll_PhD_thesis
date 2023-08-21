@@ -293,12 +293,12 @@ This approach was further explored by @brown2012 and expanded upon by @strawinsk
 
 The analysis of the size distribution of special communal structures across a region, as was done by @crabtree2017, is in some sense a bridge between analyses of house-size and settlement-size distributions. #GROVE2011 from here.
 
--   Zipf law in archaeology, then A law (distribution) is not a law (of nature), see @grove2011 for review of the long-lasting confusion in archaeology (e.g. @hodder1979), also "rank-size rule"
+-   Zipf law in archaeology, then A law (distribution) is not a law (of nature), see @grove2011 for review of the long-lasting confusion in archaeology (e.g. @hodder1979), also "rank-size rule". Application to Trypillia settlement patterns: @diachenko2012a
 
 -   Zipf law and Settlement Scaling theory, @bettencourt2021, @gomez-lievano2012, @lobo2020, @duffy2015 Connection with Central Place Theory, e.g. @müller-scheeßel2007, @chen2011. Why I'm not doing settlement scaling in this study.
 
--   SOC in archaeology, see [@bentley2001; @diachenko2022; @zhukov2016].
+-   SOC in archaeology, see [@bentley2001; @diachenko2022; @diachenko2015; @zhukov2016].
 
--   Not fitting distributions in archaeology, just assuming they are heavy-tailed, or avoiding the question: ex. @brink2013 (could include lots more!)
+-   Not fitting distributions in archaeology, just assuming they are heavy-tailed, or avoiding the question: ex. @brink2013; @wilk1983 (could include lots more!)
 
 END chapter
