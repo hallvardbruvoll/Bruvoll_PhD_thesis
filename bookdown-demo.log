@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.8.17)  20 AUG 2023 14:12
+This is XeTeX, Version 3.141592653-2.6-0.999995 (TeX Live 2023) (preloaded format=xelatex 2023.8.17)  22 AUG 2023 20:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1136,9 +1136,30 @@ Package fancyhdr Warning: \headheight is too small (14.5pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-12.47699pt}.
 
-[24] [25]
+[24]
+File: Results/fig03_zitava.pdf Graphic file (type pdf)
+<use Results/fig03_zitava.pdf>
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/n' will be
-(Font)              scaled to size 8.4pt on input line 545.
+(Font)              scaled to size 10.95pt on input line 549.
+LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/b/n' will be
+(Font)              scaled to size 10.95pt on input line 549.
+LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/it' will be
+(Font)              scaled to size 10.95pt on input line 549.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 11.36319pt on input line 549.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
+(Font)              scaled to size 8.30188pt on input line 549.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 11.36435pt on input line 549.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
+(Font)              scaled to size 8.30273pt on input line 549.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 11.36201pt on input line 549.
+LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
+(Font)              scaled to size 8.30103pt on input line 549.
+[25]
+LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/n' will be
+(Font)              scaled to size 8.4pt on input line 559.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1149,7 +1170,10 @@ Package fancyhdr Warning: \headheight is too small (14.5pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-12.47699pt}.
 
-[26] [27]
+[26]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[27]
 
 Package fancyhdr Warning: \headheight is too small (14.5pt): 
 (fancyhdr)                Make it at least 26.97699pt, for example:
@@ -1157,10 +1181,25 @@ Package fancyhdr Warning: \headheight is too small (14.5pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-12.47699pt}.
 
-[28]
+[28] [29]
+
+Package fancyhdr Warning: \headheight is too small (14.5pt): 
+(fancyhdr)                Make it at least 26.97699pt, for example:
+(fancyhdr)                \setlength{\headheight}{26.97699pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-12.47699pt}.
+
+[30]
+File: Results/fig03_trypillia.pdf Graphic file (type pdf)
+<use Results/fig03_trypillia.pdf>
+
+Underfull \hbox (badness 1648) in paragraph at lines 605--606
+[]\TU/TimesNewRoman(0)/m/n/12 Burning, experimental [A. G. Korvin-Piotrovskiy, Chabanyuk, and Shatilo
+ []
+
+[31]
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/n' will be
-(Font)              scaled to size 15.60004pt on input line 590.
-[29]
+(Font)              scaled to size 15.60004pt on input line 618.
 
 Package fancyhdr Warning: \headheight is too small (14.5pt): 
 (fancyhdr)                Make it at least 26.97699pt, for example:
@@ -1168,173 +1207,173 @@ Package fancyhdr Warning: \headheight is too small (14.5pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-12.47699pt}.
 
-[30] [31
+[32] [33]
 
-] [32]
+Package fancyhdr Warning: \headheight is too small (14.5pt): 
+(fancyhdr)                Make it at least 26.97699pt, for example:
+(fancyhdr)                \setlength{\headheight}{26.97699pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-12.47699pt}.
+
+[34
+
+] [35] [36]
 Chapter 4.
-[33
+[37
 
 ]
 File: bookdown-demo_files/figure-latex/04-intro-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/04-intro-1.pdf>
-LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/n' will be
-(Font)              scaled to size 10.95pt on input line 647.
-LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/b/n' will be
-(Font)              scaled to size 10.95pt on input line 647.
-LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/it' will be
-(Font)              scaled to size 10.95pt on input line 647.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[34]
+[38]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[35] [36] [37] [38] [39] [40] [41]
+[39] [40] [41] [42] [43] [44] [45]
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(1)/m/n' will be
-(Font)              scaled to size 12.0pt on input line 726.
+(Font)              scaled to size 12.0pt on input line 774.
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(1)/m/n' will be
-(Font)              scaled to size 8.4pt on input line 726.
+(Font)              scaled to size 8.4pt on input line 774.
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(1)/m/n' will be
-(Font)              scaled to size 6.0pt on input line 726.
+(Font)              scaled to size 6.0pt on input line 774.
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[42]
+[46]
 File: bookdown-demo_files/figure-latex/04-PDF-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/04-PDF-1.pdf>
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 11.36319pt on input line 736.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(1)/m/n' will be
-(Font)              scaled to size 8.30188pt on input line 736.
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(1)/m/n' will be
-(Font)              scaled to size 10.95pt on input line 736.
+(Font)              scaled to size 10.95pt on input line 784.
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(1)/m/n' will be
-(Font)              scaled to size 8.0pt on input line 736.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 11.36435pt on input line 736.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(2)/m/n' will be
-(Font)              scaled to size 8.30273pt on input line 736.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 11.36201pt on input line 736.
-LaTeX Font Info:    Font shape `TU/latinmodern-math.otf(3)/m/n' will be
-(Font)              scaled to size 8.30103pt on input line 736.
+(Font)              scaled to size 8.0pt on input line 784.
 File: bookdown-demo_files/figure-latex/04-cCDF-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/04-cCDF-1.pdf>
-[43]
+[47]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[44] [45] [46] [47] [48]
+[48] [49] [50] [51] [52]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[49]
+[53]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[50] [51]
+[54] [55]
 
-LaTeX Warning: Reference `distfit-synth' on page 52 undefined on input line 822.
+LaTeX Warning: Reference `distfit-synth' on page 56 undefined on input line 870.
 
 
 Underfull \vbox (badness 1867) has occurred while \output is active []
 
-[52] [53]
+[56] [57]
 File: bookdown-demo_files/figure-latex/04-multi-exp-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/04-multi-exp-1.pdf>
 File: bookdown-demo_files/figure-latex/04-lnorm-exp-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/04-lnorm-exp-1.pdf>
-[54]
+[58]
 File: bookdown-demo_files/figure-latex/04-still-normal-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/04-still-normal-1.pdf>
-[55]
+[59]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[56] [57]
+[60] [61]
 Underfull \vbox (badness 5217) has occurred while \output is active []
 
-[58] [59]
+[62] [63]
 File: bookdown-demo_files/figure-latex/04-pl-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/04-pl-1.pdf>
 File: bookdown-demo_files/figure-latex/04-hierarchy-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/04-hierarchy-1.pdf>
-[60] [61] [62]
+[64] [65] [66]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[63]
+[67]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[64]
+[68]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[65]
+[69]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[66]
+[70]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[67] [68] [69] [70] [71]
+[71] [72] [73] [74] [75]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[72] [73] [74
+[76]
+Underfull \hbox (badness 2608) in paragraph at lines 1031--1033
+[]\TU/TimesNewRoman(0)/m/n/12 SOC in archaeology, see (Bentley and Maschner 2001; Aleksandr Diachenko
+ []
+
+
+Underfull \hbox (badness 1577) in paragraph at lines 1031--1033
+\TU/TimesNewRoman(0)/m/n/12 and Sobkowiak-Tabaka 2022; Alexandr Diachenko and Zubrow 2015; Zhukov,
+ []
+
+[77] [78
 
 ]
 Chapter 5.
-[75]
+[79]
 Underfull \vbox (badness 2065) has occurred while \output is active []
 
-[76]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[77]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[78] [79]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
 [80]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[81]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[82] [83]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[84]
 File: bookdown-demo_files/figure-latex/05-distfit-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/05-distfit-1.pdf>
 File: bookdown-demo_files/figure-latex/05-tails-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/05-tails-1.pdf>
-[81]
+[85]
 File: bookdown-demo_files/figure-latex/05-pltails-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/05-pltails-1.pdf>
-[82]
+[86]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[83]
+[87]
 File: bookdown-demo_files/figure-latex/05-synth-ln-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/05-synth-ln-1.pdf>
 File: bookdown-demo_files/figure-latex/05-ln-tail-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/05-ln-tail-1.pdf>
 File: bookdown-demo_files/figure-latex/05-ln-pl-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/05-ln-pl-1.pdf>
-[84] [85]
+[88] [89]
 Underfull \vbox (badness 5475) has occurred while \output is active []
 
-[86] [87]
+[90] [91]
 File: bookdown-demo_files/figure-latex/05-multi-ln-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/05-multi-ln-1.pdf>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[88]
+[92]
 File: bookdown-demo_files/figure-latex/05-multi-ln-box-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/05-multi-ln-box-1.pdf>
-[89] [90] [91] [92]
+[93] [94] [95] [96]
 Chapter 6.
 File: bookdown-demo_files/figure-latex/06-settle-box-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/06-settle-box-1.pdf>
-[93
+[97
 
 ]
 Underfull \vbox (badness 1502) has occurred while \output is active []
 
-[94]
+[98]
 File: bookdown-demo_files/figure-latex/06-settle-tails-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/06-settle-tails-1.pdf>
-[95] [96] [97]
+[99] [100] [101]
 File: Results/fig06_vrable_pl.pdf Graphic file (type pdf)
 <use Results/fig06_vrable_pl.pdf>
-[98
+[102
 
 
 ]
@@ -1344,25 +1383,25 @@ File: Results/fig06_nebelivka_pl.pdf Graphic file (type pdf)
 <use Results/fig06_nebelivka_pl.pdf>
 File: Results/fig06_moshuriv_pl.pdf Graphic file (type pdf)
 <use Results/fig06_moshuriv_pl.pdf>
-[99] [100] [101]
+[103] [104] [105]
 File: bookdown-demo_files/figure-latex/06-quart-box-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/06-quart-box-1.pdf>
-[102]
+[106]
 File: bookdown-demo_files/figure-latex/06-quart-tails-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/06-quart-tails-1.pdf>
-[103] [104]
+[107] [108]
 File: Results/fig06_quart_map.pdf Graphic file (type pdf)
 <use Results/fig06_quart_map.pdf>
 
 Underfull \vbox (badness 6252) has occurred while \output is active []
 
-[105
+[109
 
 
 ]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[106]
+[110]
 File: bookdown-demo_files/figure-latex/06-time-box-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/06-time-box-1.pdf>
 
@@ -1372,13 +1411,13 @@ Package fancyhdr Warning: \headheight is too small (14.5pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-0.37933pt}.
 
-[107]
+[111]
 File: bookdown-demo_files/figure-latex/06-time-tails-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/06-time-tails-1.pdf>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[108]
+[112]
 
 Package fancyhdr Warning: \headheight is too small (14.5pt): 
 (fancyhdr)                Make it at least 14.87933pt, for example:
@@ -1386,7 +1425,7 @@ Package fancyhdr Warning: \headheight is too small (14.5pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-0.37933pt}.
 
-[109] [110]
+[113] [114]
 File: Results/fig06_vrable_time.pdf Graphic file (type pdf)
 <use Results/fig06_vrable_time.pdf>
 
@@ -1396,82 +1435,82 @@ Package fancyhdr Warning: \headheight is too small (14.5pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-0.37933pt}.
 
-[111
+[115
 
-
-] [112]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[113] [114] [115
 
 ] [116]
-Chapter 7.
-[117
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-] [118]
+[117] [118] [119
+
+] [120]
+Chapter 7.
+[121
+
+] [122]
 Chapter 8.
-[119
+[123
 
 ]
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/it' will be
-(Font)              scaled to size 8.4pt on input line 1536.
-[120] [121] [122]
+(Font)              scaled to size 8.4pt on input line 1584.
+[124] [125] [126]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[123]
+[127]
 File: Results/fig08_N_im.pdf Graphic file (type pdf)
 <use Results/fig08_N_im.pdf>
-[124] [125]
+[128] [129]
 File: bookdown-demo_files/figure-latex/08-IS-HS-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/08-IS-HS-1.pdf>
 File: bookdown-demo_files/figure-latex/08-N-IS-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/08-N-IS-1.pdf>
-[126]
+[130]
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/n' will be
-(Font)              scaled to size 6.0pt on input line 1592.
-[127]
+(Font)              scaled to size 6.0pt on input line 1640.
+[131]
 File: bookdown-demo_files/figure-latex/08-N-HS-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/08-N-HS-1.pdf>
 LaTeX Font Info:    Font shape `TU/TimesNewRoman(0)/m/it' will be
-(Font)              scaled to size 8.0pt on input line 1602.
-[128] [129]
+(Font)              scaled to size 8.0pt on input line 1650.
+[132] [133]
 File: Results/fig08_dens_im.pdf Graphic file (type pdf)
 <use Results/fig08_dens_im.pdf>
-[130]
+[134]
 File: bookdown-demo_files/figure-latex/08-dens-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/08-dens-1.pdf>
-[131]
+[135]
 File: Results/fig08_distr_im.pdf Graphic file (type pdf)
 <use Results/fig08_distr_im.pdf>
 File: bookdown-demo_files/figure-latex/08-distr-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/08-distr-1.pdf>
-[132]
+[136]
 Underfull \vbox (badness 2020) has occurred while \output is active []
 
-[133]
+[137]
 File: Results/fig08_clustering_im.pdf Graphic file (type pdf)
 <use Results/fig08_clustering_im.pdf>
 File: bookdown-demo_files/figure-latex/08-clustering-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/08-clustering-1.pdf>
-[134]
+[138]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[135]
+[139]
 File: Results/fig08_noise_im.pdf Graphic file (type pdf)
 <use Results/fig08_noise_im.pdf>
-[136]
+[140]
 File: bookdown-demo_files/figure-latex/08-noise-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/08-noise-1.pdf>
-[137]
+[141]
 File: Results/fig08_all_im.pdf Graphic file (type pdf)
 <use Results/fig08_all_im.pdf>
-[138]
+[142]
 File: bookdown-demo_files/figure-latex/08-all-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/08-all-1.pdf>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[139] [140] [141] [142
+[143] [144] [145] [146
 
 ]
 Chapter 9.
@@ -1480,33 +1519,33 @@ File: bookdown-demo_files/figure-latex/09-all-1.pdf Graphic file (type pdf)
 
 Underfull \vbox (badness 1902) has occurred while \output is active []
 
-[143]
+[147]
 Underfull \vbox (badness 1052) has occurred while \output is active []
 
-[144]
+[148]
 File: bookdown-demo_files/figure-latex/09-settle-points-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/09-settle-points-1.pdf>
 File: Results/fig09_settlements.pdf Graphic file (type pdf)
 <use Results/fig09_settlements.pdf>
-[145]
+[149]
 Underfull \vbox (badness 5563) has occurred while \output is active []
 
-[146]
+[150]
 File: bookdown-demo_files/figure-latex/09-settle-resid-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/09-settle-resid-1.pdf>
-[147]
+[151]
 File: bookdown-demo_files/figure-latex/09-quart-points-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/09-quart-points-1.pdf>
 
 Underfull \vbox (badness 1502) has occurred while \output is active []
 
-[148]
+[152]
 File: Results/fig09_quarters.pdf Graphic file (type pdf)
 <use Results/fig09_quarters.pdf>
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[149] [150]
+[153] [154]
 File: bookdown-demo_files/figure-latex/09-quart-resid-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/09-quart-resid-1.pdf>
 
@@ -1516,10 +1555,10 @@ Package fancyhdr Warning: \headheight is too small (14.5pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-0.37933pt}.
 
-[151]
+[155]
 File: bookdown-demo_files/figure-latex/09-time-points-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/09-time-points-1.pdf>
-[152]
+[156]
 File: Results/fig09_time.pdf Graphic file (type pdf)
 <use Results/fig09_time.pdf>
 
@@ -1529,17 +1568,17 @@ Package fancyhdr Warning: \headheight is too small (14.5pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-0.37933pt}.
 
-[153]
+[157]
 File: bookdown-demo_files/figure-latex/09-time-resid-1.pdf Graphic file (type pdf)
 <use bookdown-demo_files/figure-latex/09-time-resid-1.pdf>
-[154] [155] [156] [157
+[158] [159] [160] [161
 
-] [158]
+] [162]
 Chapter 10.
-[159
+[163
 
 ]
-Underfull \hbox (badness 2165) in paragraph at lines 1987--1988
+Underfull \hbox (badness 2165) in paragraph at lines 2035--2036
 []\TU/TimesNewRoman(0)/m/n/12 Despite methodological challenges (effectively distinguishing between log-
  []
 
@@ -1550,84 +1589,47 @@ Package fancyhdr Warning: \headheight is too small (14.5pt):
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 (fancyhdr)                \addtolength{\topmargin}{-12.47699pt}.
 
-[160]
-Chapter 11.
-[161
-
-]
-
-Package fancyhdr Warning: \headheight is too small (14.5pt): 
-(fancyhdr)                Make it at least 26.97699pt, for example:
-(fancyhdr)                \setlength{\headheight}{26.97699pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-12.47699pt}.
-
-[162] [163]
-
-Package fancyhdr Warning: \headheight is too small (14.5pt): 
-(fancyhdr)                Make it at least 26.97699pt, for example:
-(fancyhdr)                \setlength{\headheight}{26.97699pt}.
-(fancyhdr)                You might also make \topmargin smaller to compensate:
-(fancyhdr)                \addtolength{\topmargin}{-12.47699pt}.
-
 [164]
-Chapter 12.
+Chapter 11.
 [165
 
-] [166
-
 ]
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[167]
-Underfull \vbox (badness 10000) has occurred while \output is active []
+Package fancyhdr Warning: \headheight is too small (14.5pt): 
+(fancyhdr)                Make it at least 26.97699pt, for example:
+(fancyhdr)                \setlength{\headheight}{26.97699pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-12.47699pt}.
+
+[166] [167]
+
+Package fancyhdr Warning: \headheight is too small (14.5pt): 
+(fancyhdr)                Make it at least 26.97699pt, for example:
+(fancyhdr)                \setlength{\headheight}{26.97699pt}.
+(fancyhdr)                You might also make \topmargin smaller to compensate:
+(fancyhdr)                \addtolength{\topmargin}{-12.47699pt}.
 
 [168]
-Underfull \hbox (badness 1509) in paragraph at lines 2181--2183
-\TU/TimesNewRoman(0)/m/n/12 house in Neolithic Europe.” \TU/TimesNewRoman(0)/m/it/12 Antiquity \TU/TimesNewRoman(0)/m/n/12 75 (287): 5056. []$[][][][][] [] [] [] [][][] [] [][][] [] [][] [] [][][][] []
- []
+Chapter 12.
+[169
 
+] [170
 
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[169]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-[170]
+]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [171]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [172]
+Underfull \hbox (badness 1509) in paragraph at lines 2229--2231
+\TU/TimesNewRoman(0)/m/n/12 house in Neolithic Europe.” \TU/TimesNewRoman(0)/m/it/12 Antiquity \TU/TimesNewRoman(0)/m/n/12 75 (287): 5056. []$[][][][][] [] [] [] [][][] [] [][][] [] [][] [] [][][][] []
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [173]
-Underfull \hbox (badness 1077) in paragraph at lines 2361--2363
-\TU/TimesNewRoman(0)/m/n/12 “Settlement-Size Scaling among Prehistoric Hunter-Gatherer Settlement Systems in
- []
-
-
-Underfull \hbox (badness 1383) in paragraph at lines 2373--2375
-[]\TU/TimesNewRoman(0)/m/n/12 Harper, Thomas K., Aleksandr Diachenko, Yuri Y. Rassamakin, Dmitriy K. Cherno-
- []
-
-
-Underfull \hbox (badness 1490) in paragraph at lines 2373--2375
-\TU/TimesNewRoman(0)/m/n/12 Serial Migrations and Diachronic Expressions of Material Culture in the Western
- []
-
-
-Underfull \hbox (badness 1990) in paragraph at lines 2373--2375
-\TU/TimesNewRoman(0)/m/n/12 Tripolye Culture, Ukraine.” \TU/TimesNewRoman(0)/m/it/12 Documenta Praehistorica \TU/TimesNewRoman(0)/m/n/12 48 (November): 276–96.
- []
-
-
-Overfull \hbox (80.75272pt too wide) in paragraph at lines 2385--2387
-\TU/TimesNewRoman(0)/m/n/12 tion. []$[][][][] [] [] [] [][][] [] [][][][][][][][] [][] [][][][][][][][] [][] [][][][][][][][][][] [] [][] [] [][][][] [] [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]$[]. 
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [174]
@@ -1637,39 +1639,34 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [176]
-Underfull \hbox (badness 2142) in paragraph at lines 2460--2462
-[]\TU/TimesNewRoman(0)/m/n/12 Lagarias, Apostolos, and Poulicos Prastacos. 2021. “Fractal Dimension of Euro-
- []
-
-
-Underfull \hbox (badness 1043) in paragraph at lines 2460--2462
-\TU/TimesNewRoman(0)/m/n/12 pean Cities: A Comparison of the Patterns of Built-up Areas in the Urban Core
- []
-
-
-Underfull \hbox (badness 2970) in paragraph at lines 2460--2462
-\TU/TimesNewRoman(0)/m/n/12 and the Peri-Urban Ring.” \TU/TimesNewRoman(0)/m/it/12 Cybergeo: European Journal of Geography\TU/TimesNewRoman(0)/m/n/12 , July.
- []
-
-
-Underfull \hbox (badness 3439) in paragraph at lines 2466--2468
-\TU/TimesNewRoman(0)/m/n/12 and Economy: “Fat Tails” with Characteristic Scales.” \TU/TimesNewRoman(0)/m/it/12 The European Physi-
- []
-
-
-Underfull \hbox (badness 1158) in paragraph at lines 2466--2468
-\TU/TimesNewRoman(0)/m/it/12 cal Journal B - Condensed Matter and Complex Systems \TU/TimesNewRoman(0)/m/n/12 2 (4): 525–39. []$[][][][][] []
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [177]
+Underfull \hbox (badness 1077) in paragraph at lines 2430--2432
+\TU/TimesNewRoman(0)/m/n/12 “Settlement-Size Scaling among Prehistoric Hunter-Gatherer Settlement Systems in
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [178]
-Underfull \hbox (badness 10000) in paragraph at lines 2532--2534
-\TU/TimesNewRoman(0)/m/n/12 Habelt GmbH. []$[][][][][] [] [] [] [][][] [] [][][][][][][][] [] [][][] [] [][][][][][][][] [] [][][][][][][][] [] [][][][][][] [] [][][][][][][][][][][][][][][] []
+Underfull \hbox (badness 1383) in paragraph at lines 2442--2444
+[]\TU/TimesNewRoman(0)/m/n/12 Harper, Thomas K., Aleksandr Diachenko, Yuri Y. Rassamakin, Dmitriy K. Cherno-
+ []
+
+
+Underfull \hbox (badness 1490) in paragraph at lines 2442--2444
+\TU/TimesNewRoman(0)/m/n/12 Serial Migrations and Diachronic Expressions of Material Culture in the Western
+ []
+
+
+Underfull \hbox (badness 1990) in paragraph at lines 2442--2444
+\TU/TimesNewRoman(0)/m/n/12 Tripolye Culture, Ukraine.” \TU/TimesNewRoman(0)/m/it/12 Documenta Praehistorica \TU/TimesNewRoman(0)/m/n/12 48 (November): 276–96.
+ []
+
+
+Overfull \hbox (80.75272pt too wide) in paragraph at lines 2454--2456
+\TU/TimesNewRoman(0)/m/n/12 tion. []$[][][][] [] [] [] [][][] [] [][][][][][][][] [][] [][][][][][][][] [][] [][][][][][][][][][] [] [][] [] [][][][] [] [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]$[]. 
  []
 
 
@@ -1679,44 +1676,92 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [180]
-Underfull \hbox (badness 2368) in paragraph at lines 2595--2597
-[]\TU/TimesNewRoman(0)/m/n/12 Porčić, Marko. 2012. “Effects of Residential Mobility on the Ratio of Average
- []
-
-
-Underfull \hbox (badness 1742) in paragraph at lines 2595--2597
-\TU/TimesNewRoman(0)/m/n/12 constructions in Archaeology.” \TU/TimesNewRoman(0)/m/it/12 Cross-Cultural Research \TU/TimesNewRoman(0)/m/n/12 46 (1): 72–86. []$[][][][][] []
- []
-
-
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [181]
+Underfull \hbox (badness 2142) in paragraph at lines 2550--2552
+[]\TU/TimesNewRoman(0)/m/n/12 Lagarias, Apostolos, and Poulicos Prastacos. 2021. “Fractal Dimension of Euro-
+ []
+
+
+Underfull \hbox (badness 1043) in paragraph at lines 2550--2552
+\TU/TimesNewRoman(0)/m/n/12 pean Cities: A Comparison of the Patterns of Built-up Areas in the Urban Core
+ []
+
+
+Underfull \hbox (badness 2970) in paragraph at lines 2550--2552
+\TU/TimesNewRoman(0)/m/n/12 and the Peri-Urban Ring.” \TU/TimesNewRoman(0)/m/it/12 Cybergeo: European Journal of Geography\TU/TimesNewRoman(0)/m/n/12 , July.
+ []
+
+
+Underfull \hbox (badness 3439) in paragraph at lines 2556--2558
+\TU/TimesNewRoman(0)/m/n/12 and Economy: “Fat Tails” with Characteristic Scales.” \TU/TimesNewRoman(0)/m/it/12 The European Physi-
+ []
+
+
+Underfull \hbox (badness 1158) in paragraph at lines 2556--2558
+\TU/TimesNewRoman(0)/m/it/12 cal Journal B - Condensed Matter and Complex Systems \TU/TimesNewRoman(0)/m/n/12 2 (4): 525–39. []$[][][][][] []
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [182]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [183]
+Underfull \hbox (badness 10000) in paragraph at lines 2625--2627
+\TU/TimesNewRoman(0)/m/n/12 Habelt GmbH. []$[][][][][] [] [] [] [][][] [] [][][][][][][][] [] [][][] [] [][][][][][][][] [] [][][][][][][][] [] [][][][][][] [] [][][][][][][][][][][][][][][] []
+ []
+
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
 [184]
-Underfull \hbox (badness 1147) in paragraph at lines 2757--2759
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[185]
+Underfull \hbox (badness 2368) in paragraph at lines 2694--2696
+[]\TU/TimesNewRoman(0)/m/n/12 Porčić, Marko. 2012. “Effects of Residential Mobility on the Ratio of Average
+ []
+
+
+Underfull \hbox (badness 1742) in paragraph at lines 2694--2696
+\TU/TimesNewRoman(0)/m/n/12 constructions in Archaeology.” \TU/TimesNewRoman(0)/m/it/12 Cross-Cultural Research \TU/TimesNewRoman(0)/m/n/12 46 (1): 72–86. []$[][][][][] []
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[186]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[187]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[188]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[189]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+[190]
+Underfull \hbox (badness 1147) in paragraph at lines 2868--2870
 []\TU/TimesNewRoman(0)/m/n/12 Zimmermann, Andreas. 2012a. “Das Hofplatzmodell - Entwiklung, Probleme, Per-
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-[185] [186]
+[191] [192]
 Appendix A.
-[187
+[193
 
-] [188
+] [194
 
 ]
 Appendix B.
-[189] (./bookdown-demo.aux)
+[195] (./bookdown-demo.aux)
  ***********
 LaTeX2e <2023-06-01> patch level 1
 L3 programming layer <2023-08-11>
@@ -1725,15 +1770,15 @@ L3 programming layer <2023-08-11>
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `bookdown-demo.out' has not changed.
-(rerunfilecheck)             Checksum: 1B8020F4A2082CD8FF9AA67A6EE4FEC8;17374.
+(rerunfilecheck)             Checksum: 95A41908CD47EAE33AC5636EF689C38E;18454.
  ) 
 Here is how much of TeX's memory you used:
- 21687 strings out of 477844
- 415215 string characters out of 5820943
- 1939879 words of memory out of 5000000
- 42243 multiletter control sequences out of 15000+600000
+ 21715 strings out of 477844
+ 416117 string characters out of 5820943
+ 1938879 words of memory out of 5000000
+ 42269 multiletter control sequences out of 15000+600000
  563814 words of font info for 105 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 90i,17n,122p,4241b,511s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 90i,17n,122p,4248b,789s stack positions out of 10000i,1000n,20000p,200000b,200000s
 
-Output written on bookdown-demo.pdf (207 pages).
+Output written on bookdown-demo.pdf (213 pages).

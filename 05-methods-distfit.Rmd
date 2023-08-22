@@ -1,11 +1,5 @@
 # Methods: Distribution fitting {#methods-distfit}
 
-```{r 05-libraries, include=FALSE}
-library(tidyverse)
-library(knitr)
-library(kableExtra)
-```
-
 In this chapter I go into some more detail around the methods used in Chapter \@ref(results-distfit), and the reasoning underlying my choices of methods. As mentioned earlier (Sections \@ref(research-question-and-objectives) and \@ref(power-law)), I consider power-law distributions as a statistical signature of hierarchical structures, and wish to test whether such structures may be reasonably shown to exist among houses in European Neolithic villages, or if house sizes in these contexts are better explained by other non-hierarchical models. Results from these analyses add to current debates surrounding the development of social and political organisation in the Neolithic, and to the question of the emergence of stratified societies more broadly. Furthermore, and as also mentioned in Section \@ref(power-law), the methodological procedure leading to claims of power-law distributed data is not entirely straightforward, and is an issue that has undergone important developments in recent years, often leading to refutations of earlier claims. It is therefore critical to be explicit as to the methods being applied in studies like this one, and not simply report results obtained in some unspecified way through obscurely documented software.
 
 In the following I will present the methodological procedure applied in the distribution fitting on house sizes done in Chapter \@ref(results-distfit), followed by a series of tests of this procedure on synthetically generated data, with the goal of obtaining a more detailed view of the accuracy and limits of the method. Due to limited space and for simplicity, I will concentrate on the choices of methods and procedure, and not on the under-the-hood functioning of different statistical tools like maximum likelihood estimation and calculation of the Akaike information criterion. For more details on these there is a number of good introductory volumes, some of which -- like @shennan2008 and @baxter2003 -- are also specifically aimed at archaeologists.

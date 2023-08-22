@@ -28,12 +28,15 @@ lot: FALSE
 # Abstract {.unnumbered}
 
 ```{r setup, include=FALSE}
+library(tidyverse)
+library(knitr)
+library(kableExtra)
 # Set defaults for code chunks: code is not printed, figure size and alignment
-knitr::opts_chunk$set(echo = FALSE,
-                      warning = FALSE,
-                      out.width='90%', 
-                      fig.asp=.75, fig.align='center', 
-                      dev = "cairo_pdf")
+opts_chunk$set(echo = FALSE,
+               warning = FALSE,
+               out.width='90%',
+               fig.asp=.75, fig.align='center', 
+               dev = "cairo_pdf")
 ```
 
 English abstract here
