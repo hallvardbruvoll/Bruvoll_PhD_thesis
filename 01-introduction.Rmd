@@ -62,7 +62,7 @@ Bottom line hierarchy: pecking order/linear dominance hierarchy may be prevalent
 
 -   Nested and non-nested social hierarchies, hierarchical hunter-gatherers? @hamilton2007, @whitridge2016 (or use in Chapter \@ref(disc-methods)?)
 
--   Biologically defined thresholds to group size? Dunbar's number and controversies, @dunbar2023, @west2023 (add published papers). Scalar stress @johnson1982, @alberti2014, @zhou2005. Also @carneiro1986, @dubreuil2010
+-   Biologically defined thresholds to group size? Dunbar's number and controversies, @dunbar2023, @west2023 (add published papers). Scalar stress @johnson1982, @alberti2014, @zhou2005, @bandy2004. Also @carneiro1986, @dubreuil2010
 
 -   The function of hierarchies: functionalist general managerial model (GMM) of hierarchy, ref in Diehl 2000. Check? Main argument, it serves a function, it works (whether people like it or not), and that is why humanity tends towards hierarchy (evolutionist), at least small-scale egalitarian foragers hardly exist anymore (reformulate this).
 
@@ -73,6 +73,7 @@ Bottom line hierarchy: pecking order/linear dominance hierarchy may be prevalent
 -   Tools for classifying societies, or evolutionary model? Discussion of @johnson1987, @testart2005, @service1971, @earle1997.
 
     -   Lineage and Chiefdom societies @earle2002, @sahlins2020
+    -   Big Men, Roscoe in @kienlin2012 ?
 
 An additional category of social structure, which has had a certain success in archaeology, was described by Claude Lévi-Strauss as *house societies* [@lévi-strauss1982]. Here a house is a social unit, often centred around a material estate but also involving titles, heirlooms, land ownership, rights to hunting grounds etc. and where membership is not determined from genealogy in a systematic manner, as is the case with more regularly structured lineage or clan societies. House membership may be gained through more competitive social action, privileging those that possess the resources to engage in activities such as gift exchange and *potlatch*-style feasting. This opens up for more complex configurations, and house membership will often entail a certain level of prestige. Inheritance may furthermore follow (male) descent or (female) affinity -- that is from grand-father to grand-son via mother -- in a pragmatic way depending on which option is in the best interest of the house, as long as it can be justified in more or less precise kinship-related terms. A segment of society of varying size will not afford to partake in this competition, and as a result, house societies can be viewed as being in a somewhat unstable transition state between lineage and class societies. Lévi-Strauss originally pinned the term on Kwakiutl society in the American north-west coast (as described by Franz Boas), but argued for its generality by associating it with the feudal system of medieval Europe. The concept has since been applied to a wide range of cases from ethnography (especially in the South-East Asian and Pacific regions), as well as to prehistoric contexts **insert examples**, reflecting a relevance that extends far beyond European feudalism. Ian @kuijt2018 recently provided an interpretation of Neolithic Çatalöyük where he proposed that
 

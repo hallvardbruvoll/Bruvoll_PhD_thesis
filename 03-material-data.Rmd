@@ -58,7 +58,7 @@ Patrilocality in LBK based on Sr isotopes: @hrncir2020a (read this more carefull
 
 ### Sampled Linear Pottery settlements: the Žitava valley
 
-(ref:03-zitava) Location of the Linear Pottery settlements analysed in this thesis, located in the river valley of the Žitava, a small left tributary (via the Nitra and Váh rivers) of the Danube in south-west Slovakia. Terrain model data in public domain, courtesy of the U.S Geological Survey (https://earthexplorer.usgs.gov)
+(ref:03-zitava) Location of the Linear Pottery settlements analysed in this thesis, located in the river valley of the Žitava, a small left tributary (via the Nitra and Váh rivers) of the Danube in south-west Slovakia. Terrain model data in public domain, courtesy of the U.S Geological Survey (<https://earthexplorer.usgs.gov>)
 
 ```{r 03-zitava, fig.cap="(ref:03-zitava)", fig.scap="Map with location of analysed Linear Pottery sites"}
 include_graphics("Results/fig03_zitava.pdf")
@@ -88,7 +88,7 @@ Despite the very long period of development of the Trypillia culture, subsistenc
 
 It should also be noted that both of the eponymous sites are located toward the extremities of the area defined by CTCC sites, and though there are certain geographical biases in the documented material, it seems clear that the core area of settlement and population density for much of the culture's duration was in and near the river valleys of the Dniester and Southern Bug (mainly in present-day Moldova and south-western Ukraine). The Trypillia settlements included in this study are attributed to the B-II and C-I phases of the WTC and are located within a small micro-region in the Southern Bug-Dnieper interfluve, around the limit between the Cherkassy and Kirovograd oblasts, some 30-40 km east of Uman (Figure \@ref(fig:03-trypillia)). Based mainly on pottery style, one settlement -- Nebelivka -- is associated with the eponymous Nebelivka local group (phase B-II), while the three other settlements are associated with the related but slightly later Tomashovka group [phase C-I. See @shatilo2021, pp. 41-4 for a condensed overview of WTC local groups; @ryzhov2012]. The further brief overview of house construction, architecture and social organisation is focussed mainly on the settlements within this area, though many of the traits are widely shared within larger parts of the Trypillia area.
 
-(ref:03-trypillia) Location of the Trypillia settlements analysed in this thesis, within the drainage basin of the Syniukha river, a small left tributary of the Southern Bug in central Ukraine. Terrain model data in public domain, courtesy of the U.S Geological Survey (https://earthexplorer.usgs.gov)
+(ref:03-trypillia) Location of the Trypillia settlements analysed in this thesis, within the drainage basin of the Syniukha river, a small left tributary of the Southern Bug in central Ukraine. Terrain model data in public domain, courtesy of the U.S Geological Survey (<https://earthexplorer.usgs.gov>)
 
 ```{r 03-trypillia, fig.cap="(ref:03-trypillia)", fig.scap="Map with location of Trypillia sites"}
 include_graphics("Results/fig03_trypillia.pdf")
@@ -96,11 +96,33 @@ include_graphics("Results/fig03_trypillia.pdf")
 
 ### Trypillia house construction, architecture and social organisation
 
--   House typology @chernovol2012
+As with Linear Pottery houses, Trypillia domestic architecture has been amply documented through more than a century of numerous excavations. However, there are also three additional factors that have contributed to an even more detailed understanding of these latter houses:
 
--   Clay models of houses
+-   The very common practice in Trypillia settlements of burning houses entirely at the end of their use life
 
-    -   Burning, experimental [@korvin-piotrovskiy2012; chapman?]
+-   Better post-depositional preservation than most comparable West-European soils, due to less intensive use of modern agro-industrial machinery, leaving architectural remains including living floors most of the time *in situ*, and
+
+-   Numerous finds of detailed miniature clay models of Trypillia houses
+
+Combined, these favourable conditions allow for a relatively precise archaeological reconstruction of how people built their houses and lived in them within the Trypillia culture [see @chernovol2012 for a detailed overview in English]. The main feature of house remains -- which is usually very visible on geomagnetic images -- is a compact clay floor of about 5 to 12 cm thickness interpreted as the main living space of the inhabitants. Imprints of wooden beams are regularly found on the downward side of floor fragments, and it is widely accepted that these floors were constructed on a raised platform of some height, leaving an open space below possibly for storage or even housing for livestock. This configuration is also regularly seen on clay house models, which also hint at the use of rounded ceilings and gables. Walls were made mainly of wattle-and-daub, also seen in wattle imprints on fired daub fragments, but there is also occasional evidence of walls made from horizontal wooden beams -- possibly this technique was applied for wall foundations [@chernovol2012, p. 183]. The main living floor on the raised platform was presumably reached by a ladder from the outside, since openings are not found on the platform floors.
+
+The interior organisation of rooms and installations was very homogeneous across the Trypillia complex, to the degree that Chernovol speculates that there were taboos associated with deviating from the strict norm [-@chernovol2012, p. 200]. For settlements in the Tomashovka local group (see above), the vast majority of houses were rectangular, about 3 to 4 times longer than wide, with the upper level composed of an entrance porch on one end, leading through a doorway to the main room. There, a clay oven was located immediately to the right of the entrance, while a trough and long podium followed the left side wall. By the short end opposite the entrance, there was a special installation usually interpreted as a domestic altar -- a clay disc about 1.6--2m in diameter and 10--15cm thick, often decorated with red and yellow paint and linear incised patterns. Tableware is regularly found at different parts of the house during excavation, notably near the altar and entrance, and the question of whether items were placed there in a meaningful way prior to house burning has been a matter of much discussion [@chernovol2012, p. 198]. Some more rare variations on this rather strict norm of house organisation include secondary altars either in the main room or the porch, as well as an additional annex -- possibly for craft activities -- appended to the front porch.
+
+-   Artisan specialisation in fine ceramics? Metal finds -- gold and copper. @korvin-piotrovskiy2016, add pages.
+
+-   Loom weights are generally found within regular houses, most often on the raised platform near the altar, suggesting that weaving was a domestic activity. This is not the case for remains associated with pottery making and flint knapping, which must have taken place at least outside regular domestic areas, and possibly within specialised workshops, some cases of which have been suggested within CTCC settlements [@chernovol2012, pp. 198-200].
+
+    -   Burning, experimental [@korvin-piotrovskiy2012; @johnston2020]. Collapse and deposit formation.
+
+-   @pickartz2019, pp. 1649-50: "unburnt" and "eroded" are misleading labels, since highly burnt and even vitrified material regularly found during excavation of these. Probably reflecting houses that are constructed with less daub, without an oven installation, and/or without raised clay platform, thus causing significantly weaker magnetic signals. These houses may in fact represent entirely different social functions from regular houses, but there is as for now no consensus as to what this may be (e.g. artisanal, storage etc.)
+
+A special category of much larger houses, generally referred to as "mega-structures" and primarily known from the "mega-sites", was first discovered in 2009 through geomagnetic imagery, and has received much attention since [comparative overview in @hofmann2019; see also @nebbia2018; @chapman2016; @rassmann2016; @burdo2016; @muller2016a; @chapman2014; @rassmann2014]. These are recognised by a number of architectural features that clearly distinguish them from the regular domestic houses described above [@hofmann2019, p. 35 ff.]. Firstly, they usually have twice the floor area or more compared to regular houses -- from about 100m^2^ up to 1.200m^2^ for the largest known examples (in Dobrovody and Nebelivka) -- and are spatially distributed in characteristic ways within the settlements. They are not constructed on raised platforms, and in many cases they are only partially if at all roofed (i.e. with a large walled front yard or atrium). Only a few of these buildings have been excavated -- @hofmann2019 enlist four: one each in Maidanetske, Nebelivka and Dobrovody (all representing Trypillia B-II/C-I mega-sites in the Syniukha basin, central Ukraine) as well as one in Baia (Precucuteni, north-east Romania). The excavated mega-structures in Dobrovody and Nebelivka both represented the largest structures within their settlement, and while the former was interpreted as an entirely unroofed enclosure, several key aspects of the internal architecture of the latter -- the existence of an upper floor, supporting vertical posts and galleries, number of use phases, burning events -- have been subject to highly conflicting views [@gaydarska2020b; @chapman2016; @burdo2016; @chapman2014]. The excavated mega-structure at Maidanetske was not the largest at the site, but by its size and positioning clearly distinguished from domestic houses. It was interpreted by the excavators as being sectioned in two almost equally sized parts, one roofed and one walled yard.
+
+All of the three excavated mega-structures in the Syniukha basin yielded rather regular domestic purpose finds, but in much lower quantities than what would be expected from their sizes if they were permanently inhabited. This, along with the absence of installed ovens, has led the involved research teams to interpret them as being non-domestic in function, i.e. that they did not serve as the homes of ruling-class elites. However, what exactly *did* take place there remains a more open question. The Nebelivka mega-structure housed as much as seven cruciform clay platforms analogous to the "altars" of domestic houses, but some of which were much larger. The Ukrainian part of the excavation team at Nebelivka (see below) have advocated an interpretation of a two-storey building, with the inner room of the upper floor resembling a dramatically up-scaled version of a domestic house, suggesting that this part of the structure could be well suited for permanent occupation [@burdo2016, p. 111], while the mentioned altar platforms -- showing clear traces of fire-related use -- would be located on the lower floor. The authors do not hesitate to characterise the structure as a whole as a communal temple. The British part of the Nebelivka excavation team has favoured an interpretation where only the middle part of the structure would be roofed, and where no rooms would be suited for year-round occupation. While they are more prudent regarding the interpretation of the raised clay platforms as altars (they prefer the more neutral term "Raised Area"), they in turn do not hesitate to designate the complex as an "Assembly House", the term being borrowed by #Whom? US somewhere?
+
+Special finds in Nebelivka mega-structure: @gaydarska2019, pp. 107-9 (graphite, import from Gumeln..)
+
+Among these, a certain size hierarchy is observed in the largest settlements, where size categories are seen to correlate with the placement of the building within the settlement.
 
 -   Social organisation
 
@@ -110,11 +132,11 @@ include_graphics("Results/fig03_trypillia.pdf")
 
         -   Urban or not? Density and diversification. Comparative. @diachenko2017; @kruts2012; @gaydarska2019; @muller2016a . Mega-sites as *anomalocivitates*: @ohlrau2022 and @sindbæk2022. Comparison with Uruk: @muller2016b (add pages).
 
-        -   The seasonality hypothesis -- relations to the hinterland
-
-        -   Artisan specialisation in fine ceramics? Metal finds -- gold and copper. @korvin-piotrovskiy2016, add pages.
+        -   The seasonality hypothesis -- relations to the hinterland: @gaydarska2019, p. 110
 
         -   Government system -- assemblies or chiefs/kings? @hofmann2019; @chapman2016; @nebbia2018
+
+"*The lack of monumental architecture and the paucity of prestige goods, together with an undeveloped mortuary domain in which to display differences in social status, constitute the main arguments against a permanent, ranked socio-political organization for the Trypillia population. More likely, an inter-regional decision-making political body developed during collective gathering events for the seasonal megasite co-ordination of a generally egalitarian society*" [@nebbia2018, p. 51]. My counter-arguments. But don't insist.
 
 ### Sampled Trypillia settlements: The Syniukha basin
 
@@ -130,17 +152,13 @@ include_graphics("Results/fig03_trypillia.pdf")
 
     -   Nebelivka. The mega-structure as a "temple" with "seven altars" [@burdo2016].
 
-@pickartz2019, pp. 1649-50: "unburnt" and "eroded" are misleading labels, since highly burnt and even vitrified material regularly found during excavation of these. Probably reflecting houses that are constructed with less daub, without an oven installation, and/or without raised clay platform, thus causing significantly weaker magnetic signals. These houses may in fact represent entirely different social functions from regular houses, but there is as for now no consensus as to what this may be (e.g. artisanal, storage etc.)
-
-The B2/C1 and the mega-sites of the Southern Bug -- Dnieper interfluve The urbanism debate: Comparison with Uruk in Müller and CHECK; low-density urbanism for Nebelivka: check for refs. in @ohlrau2022,p .91 cc.
-
 ## Reading site plans from geomagnetic imagery
 
 Caveats: fill in here.
 
 @rassmann2016; @rassmann2014 (see my article for precise refs.)
 
-@pickartz2021 fds
+@pickartz2021 fds, @pickartz2019
 
 Say where the shapefiles come from here. @muller-scheessel2020; @hale2020; @ohlrau2020 (double-check in my article)
 
