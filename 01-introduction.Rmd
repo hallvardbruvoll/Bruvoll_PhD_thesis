@@ -55,37 +55,7 @@ The reason to dwell upon this qualitative distinction between linear and pyramid
 Bottom line hierarchy: pecking order/linear dominance hierarchy may be prevalent in any part of human prehistory, but could also be very hard to study from material remains. Branching (i.e. fractal) hierarchies as well as social stratification should leave material traces, and are most probably related to population size (see below), and thus less likely to be found within pre-Neolithic societies. They should be regarded as historically situated phenomenons -- much like agriculture, pottery, writing or the steam engine -- justifying the search for and explanation of their possible origins [*contra* e.g. @graeber2021]. The issue of the universality or particularity of social inequality and hierarchy is discussed in more detail **in the final chapters of this thesis (specify).**
 
 -   Inequality @kohler2018, @midlarsky1999, @price2010, @price1995, @flannery2012. The difference between the concepts of social hierarchy and social inequality lies in the former relating to social and/or political organisation and the distribution of power, while the latter to economy and the distribution of wealth or income. Societies where these two are completely unrelated may be theoretically conceivable -- that is, where wealth does not entail power and *vice versa* -- but historically they have tended to go hand in hand, albeit not necessarily in a straightforward way. HERE discuss a bit on delegated power, democracy, taking turns etc., and such systems being impeded by wealth (lobbying, corruption++). Keep it simple, point is to prepare for the interpretation of Trypillia mega-sites as *both* egalitarian and hierarchical (and maybe LBK as *both* unequal and unstratified..).
-
-## What is social hierarchy? {#social-hierarchy}
-
--   Political assumptions -- all hierarchical social structures are not despotic top-down rule. Democracies can also be very hierarchical. Matter of scale rather than political system @graeber2021, @zimmermann2012a, p. 255, example by Mabry in Diehl 2000 on irrigation in early Mesopotamia. But, tendencies? Use @pumain2006, also @furholt2020. Use @redhead2022: status and leadership, multiple overlapping networks. Emergence of hierarchies: "Positions in the dominance hierarchy is determined by a combination of attributes of individuals, stochastic processes, and social context" @strauss2022.
-
--   Nested and non-nested social hierarchies, hierarchical hunter-gatherers? @hamilton2007, @whitridge2016 (or use in Chapter \@ref(disc-methods)?)
-
--   Biologically defined thresholds to group size? Dunbar's number and controversies, @dunbar2023, @west2023 (add published papers). Scalar stress @johnson1982, @alberti2014, @zhou2005, @bandy2004. Also @carneiro1986, @dubreuil2010
-
--   The function of hierarchies: functionalist general managerial model (GMM) of hierarchy, ref in Diehl 2000. Check? Main argument, it serves a function, it works (whether people like it or not), and that is why humanity tends towards hierarchy (evolutionist), at least small-scale egalitarian foragers hardly exist anymore (reformulate this).
-
--   Temporal dynamics of social hierarchies: cyclicity [@peters2017], sawtooth waves [@scheidel2017], punctuated equilibrium [@gould2007]. Archaeo. example South Sweden Neo/BA: @nordquist2001. Transitions villages to urban: @birch2014
-
-<!-- -->
-
--   Tools for classifying societies, or evolutionary model? Discussion of @johnson1987, @testart2005, @service1971, @earle1997.
-
-    -   Lineage and Chiefdom societies @earle2002, @sahlins2020
-    -   Big Men, Roscoe in @kienlin2012 ?
-
-An additional category of social structure, which has had a certain success in archaeology, was described by Claude Lévi-Strauss as *house societies* [@lévi-strauss1982]. Here a house is a social unit, often centred around a material estate but also involving titles, heirlooms, land ownership, rights to hunting grounds etc. and where membership is not determined from genealogy in a systematic manner, as is the case with more regularly structured lineage or clan societies. House membership may be gained through more competitive social action, privileging those that possess the resources to engage in activities such as gift exchange and *potlatch*-style feasting. This opens up for more complex configurations, and house membership will often entail a certain level of prestige. Inheritance may furthermore follow (male) descent or (female) affinity -- that is from grand-father to grand-son via mother -- in a pragmatic way depending on which option is in the best interest of the house, as long as it can be justified in more or less precise kinship-related terms. A segment of society of varying size will not afford to partake in this competition, and as a result, house societies can be viewed as being in a somewhat unstable transition state between lineage and class societies. Lévi-Strauss originally pinned the term on Kwakiutl society in the American north-west coast (as described by Franz Boas), but argued for its generality by associating it with the feudal system of medieval Europe. The concept has since been applied to a wide range of cases from ethnography (especially in the South-East Asian and Pacific regions), as well as to prehistoric contexts **insert examples**, reflecting a relevance that extends far beyond European feudalism. Ian @kuijt2018 recently provided an interpretation of Neolithic Çatalöyük where he proposed that
-
-Refs. house societies [@joyce2000, Bnf; @beck2007; @kuijt2018; @lévi-strauss1982; Bickle et al 2016 (reload in Zotero)].
-
--   
-
-<!-- -->
-
--   Anti-evolution critique in @yoffee1993, @yoffee2005, @fontijn2013, @kienlin2012, @lund2022, @furholt2020. Review in @dubreuil2010. Anarchistic critique/heterarchy: @crumley1995, @haude2019, @graeber2021, @angelbeck2022 Paleaeolithic social inequality: @honoré2022, also @testart2012, @testart1982
--   I need to address gender inequality somewhere, mainly to say that this thesis is not about gender inequality. Start from @gaydarska2023, and cite A. Augereau for the LBK.
--   Bottom line here: archaeologists should have much to gain in analytically separating social hierarchy and social inequality. While the two are often seen to go hand in hand, they do not necessarily do so. Hierarchical structure is a response, often unplanned or emergent, to scale-related stresses -- i.e. it fills a functional need in large societies. How a hierarchy is implemented socially however is a matter of considerable variation. At least one crucial variable is the spectrum between democratic and autocratic extremes. Archaeologists have apparently been speaking past each other for decades (formulate precise argument referring to @graeber2021 and @flannery2012). In this thesis I argue that hierarchical structure must be shown archaeologically through different traces in material culture than social inequality as well as type of hierarchical organisation.
+-   Theory related more specifically to social hierarchy is further explored in Chapter \@ref(theory).
 
 ## Main findings here?
 
