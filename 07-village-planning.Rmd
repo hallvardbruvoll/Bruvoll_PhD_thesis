@@ -2,7 +2,7 @@
 
 # Village planning in prehistory {#images-theory}
 
-## Settlement layout and social structure
+## Settlement layout and social structure {#layout-ethno}
 
 Or the social organisation of village layout. Research background:
 
@@ -40,7 +40,7 @@ Factors affecting village layout:
 
 -   Local landscape setting (to be factored out)
 
-## The geometries of conscious planning vs. emergent behaviour
+## The geometries of conscious planning vs. emergent behaviour {#layouts}
 
 -   I need to find some references here! @eglash1999
 

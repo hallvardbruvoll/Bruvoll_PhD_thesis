@@ -8,7 +8,7 @@
 
 -   Nested and non-nested social hierarchies, hierarchical hunter-gatherers? @hamilton2007, @whitridge2016 (or use in Chapter \@ref(disc-methods)?)
 
--   Biologically defined thresholds to group size? Dunbar's number and controversies, @dunbar2023, @west2023 (add published papers). Scalar stress @johnson1982, @alberti2014, @zhou2005, @bandy2004. Also @carneiro1986, @dubreuil2010
+-   Biologically defined thresholds to group size? Dunbar's number and controversies, @dunbar2023, @west2023 (add published papers). Scalar stress @johnson1982, @alberti2014, @zhou2005, @bandy2004, @bandy2008. Also @carneiro1986, @dubreuil2010, @drennan2008 (link from sedentarisation, neolithic demographic transition, to centralised communities and social complexity)
 
 -   The function of hierarchies: functionalist general managerial model (GMM) of hierarchy, ref in Diehl 2000. Check? Main argument, it serves a function, it works (whether people like it or not), and that is why humanity tends towards hierarchy (evolutionist), at least small-scale egalitarian foragers hardly exist anymore (reformulate this).
 
