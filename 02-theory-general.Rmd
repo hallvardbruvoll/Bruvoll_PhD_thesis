@@ -1,8 +1,8 @@
 # Theoretical framework: Scale, Complexity and Fractals {#theory}
 
-## Micro-macro approaches in social theory
+## Micro-macro approaches in social theory {#social-hierarchy}
 
-### Social evolution and its critique {#social-hierarchy}
+### Social evolution and its critique
 
 -   Political assumptions -- all hierarchical social structures are not despotic top-down rule. Democracies can also be very hierarchical. Matter of scale rather than political system @graeber2021, @zimmermann2012a, p. 255, example by Mabry in Diehl 2000 on irrigation in early Mesopotamia. But, tendencies? Use @pumain2006, also @furholt2020. Use @redhead2022: status and leadership, multiple overlapping networks. Emergence of hierarchies: "Positions in the dominance hierarchy is determined by a combination of attributes of individuals, stochastic processes, and social context" @strauss2022.
 

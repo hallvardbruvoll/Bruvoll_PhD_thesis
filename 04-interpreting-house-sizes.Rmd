@@ -297,6 +297,9 @@ The analysis of the size distribution of special communal structures across a re
 
 -   Zipf law and Settlement Scaling theory, @bettencourt2021, @gomez-lievano2012, @lobo2020, @duffy2015 Connection with Central Place Theory, e.g. @müller-scheeßel2007, @chen2011. Why I'm not doing settlement scaling in this study.
 
+```{=html}
+<!-- -->
+```
 -   SOC in archaeology, see [@bentley2001; @diachenko2022; @diachenko2015; @zhukov2016].
 
 -   Not fitting distributions in archaeology, just assuming they are heavy-tailed, or avoiding the question: ex. @brink2013; @wilk1983 (could include lots more!)

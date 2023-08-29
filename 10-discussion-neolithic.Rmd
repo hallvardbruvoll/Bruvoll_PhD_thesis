@@ -30,4 +30,8 @@
 
     -   Despite methodological challenges (effectively distinguishing between log-normal and power-law distributions) ower-law distributed house sizes seem inherently
 
+Settlement scaling in the study areas.
+
+Traditional rank-size distributions for the Trypillia sites in the Sinyukha basin have recently been provided by Shatilo [-@shatilo2021, pp. 218-22], showing rather clearly that they do not follow power laws in any phases (though she words it differently). This indicates that there was no settlement hierarchy for which the mega-sites functioned as central places, but rather that they appeared through an agglomeration process, draining populations from the wider area of smaller communities as well as with influx from migrations from the south-west, as has also been suggested by others [@diachenko2012; @diachenko2015].
+
 END Chapter

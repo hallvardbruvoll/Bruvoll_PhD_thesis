@@ -13,7 +13,7 @@ output:
 documentclass: book
 classoption: a4paper, twoside
 bibliography: [book.bib]
-#biblio-style: apalike
+biblio-style: apalike
 csl: chicago-author-date.csl
 github-repo: hallvardbruvoll/Hallvard_Thesis_2
 geometry: "left=2.9cm, right=2.5cm, top=2.5cm, bottom=2.5cm"
@@ -25,7 +25,8 @@ toc-depth: 2
 lof: FALSE
 lot: FALSE
 ---
-# Abstract {.unnumbered}
+
+## Abstract {.unnumbered}
 
 ```{r setup, include=FALSE}
 library(tidyverse)
@@ -39,19 +40,49 @@ opts_chunk$set(echo = FALSE,
                dev = "cairo_pdf")
 ```
 
-English abstract here
+In this thesis I explore the possibilities and limitations of applying fractal analysis as a methodological tool for studying levels and dynamics of social hierarchy in prehistory, using archaeological settlement plans as data source. I test the precision and reliability of the methods empirically using synthetic data, and include two case studies of well-documented settlement samples from Neolithic/Chalcolithic contexts in continental Europe: Linear Pottery settlements in the Žitava valley in south-west Slovakia, and Trypillia B-II and C-I settlements in the Syniukha basin in central Ukraine. The two case studies include settlements of widely varying sizes, from small hamlets of only a few houses, to the so-called Trypillia mega-sites of more than 2000 houses, public architecture and complex layouts, thus illustrating the wide spectrum of settlement organisations which existed in Europe in late prehistory. The social organisation and levels of hierarchy seen through their material culture have been lively debated by specialists for decades.
 
-Remember to add abstracts
+The use of fractal analysis is argued to be well-suited for studying hierarchical structures, and brings with it the theoretical frameworks of dynamical systems and complexity, allowing to advance beyond the false binary debate of structure versus agency as explanations for change in human societies. I argue for analytical separation between the notions of hierarchy and social inequality, which often have been confused in recent archaeological research.
 
-@furholt2020, @furholt2020a, @furholt2020b are three different publications. @furholt2020, @furholt2020a, @furholt2020b are the same three publications in the same order. gfdsdfgs , Get on with it!
+Results from the case studies indicate that hierarchical structures emerge in large settlements irrespectively of cultural differences, as solutions to scalar stress and to optimise flows of information, while the ways in which these structures are played out in daily life vary widely and are historically contingent. In other words, while fractal analysis methods allow for evaluating the existence and scale of social hierarchies, the actual political systems at play, as well as levels of social inequality, are better investigated though other strands of evidence. Linear Pottery society is often considered to tend towards social inequality and lineage-based aristocracies, while Trypillia society shows more evidence of democratic institutions. Both show signs of increased hierarchy in larger settlements.
 
-# Sammendrag {.unnumbered}
+The two analytical approaches proposed in this thesis show different degrees of matureness. The distribution fitting approach and search for power laws is well documented and theoretically sound, and should be more widely applied in archaeology. The image analysis approach has been less extensively tested, and previous findings are shown here to be unreliable. However, it does show clear potential for quantifying aspects of spatial regularity and textures. In the application presented here it allows for distinguishing settlement plans with different levels of clustering, again cross-cutting cultural attribution.
 
-Norsk oversettelse av Abstract over. Trenger ikke være på ny side
+Overall, fractal analysis is a methodological framework which merits much more exploration in archaeology. The applications that are presented in this thesis only represent a small portion of what is possible.
+
+## Sammendrag {.unnumbered}
+
+I denne avhandlingen utforsker jeg muligheter og begrensninger knyttet til bruken av fraktalanalyse som metodisk verktøy for å studere sosiale hierarkier i forhistorien, med arkeologiske bosetningsplaner som datakilde. Jeg tester metodenes presisjon og pålitelighet empirisk ved bruk av sytetisk data, og gjennomfører to casestudier av godt dokumenterte bosetnings-datasett fra yngre steinalder- og kobberalderkontekster i Europa: båndkeramiske bosetninger i Žitava-dalen i sør-vestre Slovakia, og bosetninger tilhørende Trypillia B-I og B-II i Sinyukha-vassdraget i det sentrale Ukraina. De to kontekstene inneholder bosetninger av svært varierende størrelser, fra små grender med bare noen få hus, til de såkalte Trypillia mega-lokalitetene med mer enn 2000 hus, offentlig arkitektur og komplekse planmønster. Dermed illustrerer de den store bredden av bosetningsorganisering som fantes i Europa i sen forhistorisk tid. Den sosiale organiseringen og grad av hierarkisering gjenspeilet i deres materielle kultur har vært gjenstand for betydelig debatt blant spesialister i flere tiår.
+
+Anvendelse av fraktalanalyse er argumentert for å være godt egnet til å studere hierarkiske strukturer. Metoden fører også med seg det teoretiske rammeverket kjent som systemdynamikk eller kompleksitetsteori, som jeg hevder kan bidra til å gå videre fra den falsk binære debatten om struktur mot agens som forklaring på endring i menneskelige samfunn. Jeg argumenterer for å skille analytisk mellom hierarki og sosial ulikhet, to begreper som ofte blir blandet sammen i arkeologisk forskning.
+
+Resultatene fra casestudiene tyder på at hierarkiske strukturer oppstår i store bosetninger uavhengig av kulturforskjeller, som løsninger på skalært stress og for å optimisere informasjonsflyt, samtidig som måten disse strukturene utspiller seg i dagliglivet varierer veldig og er historisk betinget. Med andre ord, mens fraktalanalyse er velegnet til å undersøke hvorvidt sosial hierarkisering kan spores og over hvilke størrelsesordner det er gjeldende, vil andre aspekter som politisk system og grader av sosial ulikhet bedre la seg undersøke fra andre vinkler. Båndkeramiske samfunn er ofte hevdet å tendere i retning sosial ulikhet og slektskapsbaserte aristokratier, mens Trypillia-samfunn viser mer tegn til demokratiske institusjoner. Begge viser tegn til økt hierarkisering i større bosetninger.
+
+De to analytiske tilnærmingene som presenteres i denne avhandlingen viser ulike grader av modenhet. Fordelingsmodellmetoden med testing for potenslovfordelinger er godt dokumentert og teoretisk solid, og burde få en bredere anvendelse i arkeologi. Bildeanalysemetoden har vært gjenstand for færre studier, og tidligere funn blir her vist å være upålitelige. Samtidig viser den et klart potensial for kvantifisering av ulike aspekter ved romlig regelmessighet og teksturer. I anvendelsen som er presentert her skiller metoden ut bosetningsplaner med ulik grad av klyngegruppering, da også på tvers av kulturell tilhørighet.
+
+Alt i alt er fraktalanalyse et metodisk rammeverk som fortjener å bli mer grundig utforsket i arkeologi. Anvendelsene som er presentert i denne avhandlingen representerer kun en liten del av hva som er mulig.
 
 # Preface {.unnumbered}
 
-Add acknowledgements here
+The idea for this thesis first came to me during a statistics course at Paris 1, when lecturer François Giligny mentioned in passing and with a single slide that fractal analysis could possibly have lots of applications in archaeology, but that they had remained largely unexplored (this must have been in 2015). Chance would have it that I soon after stumbled upon a dusty copy of Mandelbrot's classic *Fractals: Form, chance, and dimension* in my mother-in-law's attic, and now, in 2023, I'm editing the preface of my PhD thesis on fractal analysis in archaeology. If I had just skipped that lecture, my whole life would now be very different. Clearly, history works in non-linear ways.
+
+Listing up those who would merit acknowledgement for supporting me in this project is one of the things I have dreaded the most. Such a list can't possibly be entirely fair, simply since I wouldn't always even be aware of the things that others have done in my favour. But here we are. I'll try to boil it down to what I perceive as the very most essential.
+
+The spatial data used throughout this thesis was kindly shared by the GIS specialists who generated them within their respective projects, namely Nils Müller-Scheeßel and René Ohlrau (both at Kiel University) and Duncan Hale (Durham University). I fully acknowledge the immensity of the work underlying these datasets and commend their openness to sharing them for further study. All three were also very helpful and I have much enjoyed discussing spatial analysis with them.
+
+A course in which I participated early on in my PhD period on R coding for archaeologists and the principles of Open Science, organised by the Nordic Research School in Archaeology -- Dialogues with the Past, and chaired by Ben Marwick, Felix Riede, Sophie Schmidt and David Matzig, had a profound influence on the subsequent development of my thesis. I can honestly say I was in the struggling end of the class, but I was encouraged to persevere and be patient with myself. Today I can hardly imagine what this thesis would have looked like if it didn't involve coding (which was initially not intended). On that note, if there's any single group of people who has allowed me to stay more or less sane throughout this project, it is the largely anonymous coding community on forums like StackExchange and StackOverflow. Endless amounts of bugs (some of which have undoubtedly persisted), as well as useful tips and tricks, have been discussed there. In many cases my ultimate saviour has been some random blogger from years ago, who will probably never know they contributed substantially to letting a desparing PhD candidate in Norway finish his thesis on time. It is not without a certain sense of nostalgia that I now see the contours of AI applications like ChatGPT quickly taking over the role that these communities have had in helping each other out with saving the world from IT bugs in a completely free and disinterested way.
+
+The Department of Archaeology, Conservation and History at the University of Oslo allowed me to pursue this project in the best possible working environment. Meeting other PhD candidates in Norway and abroad during conferences and courses over the course of these three years, made me realise just how lucky I was to have a fully supporting group of colleagues who always would do their very best to generate ideal conditions for me and my fellow PhD candidates. This realisation could of course also imply that I wouldn't have anyone else to blame if it didn't work out well, but that kind of thinking is exactly the opposite of the general mindset at the Department. Here, it was made clear from the start that there is no such thing as failure, neither is there perfection. Just do what you do and that's good enough! (and remember to submit)
+
+Showing confidence in others clearly empowers them to focus on what they are there to do, rather than creating barriers of pressure that so many PhDs face in universities worldwide. One thing that struck me from the onset was the open-mindedness the Department demonstrated simply by giving me a green light with this project. Fractals you say? Sure, sounds like fun. Go ahead! This of course also goes for my supervisors: Martin Furholt, who was in Oslo when I first started in 2020, now at Kiel University, Martin Hinz at Bern University, and not least, Ingrid Fuglestvedt here in Oslo. The confidence and full support they all have showed me along the way is something I do not take for granted, and for which I will truly be forever thankful.
+
+I also had the privilege of visiting other academic institutions during the work of this thesis, which proved extremely useful. Researching the Linear Pottery and Trypillia cultures from Oslo is admittedly tricky, as most fellow archaeologists, not to speak of librarians, have hardly if ever even heard of them (that said, the university library at the UiO has gone to great lengths to finding obscure continental conference proceedings from years back for me). I was warmly welcomed for a longer stay at Kiel University in the spring of 2022, by the ROOTS Cluster of Excellence and the CRC 1266 -- Scales of Transformation, with support from Erasmus+ funding. I also got the opportunity to participate in fieldwork at Vráble in Slovakia with the latter group during three weeks of the summer of 2021 (despite all odds given the sanitary restrictions in place at the time). For all this I am greatly thankful. By naming none, I name them all.
+
+Other shorter and more intensive stays included visits to the small but welcoming archaeology department of Bern University, as well as the UMR 8215 Trajectoires lab in Paris and the CLIOARCH research group at Aarhus University. I have also enjoyed countless fruitful encounters and discussions with colleagues from all over Europe and the world during various conferences. Silviane Scharl (Cologne University) and Christopher Prescott (University of Oslo) provided helpful guidance during my mid-way assessment. People I now consider as mentors (some of them would be surprised), include, in no particular order: Daniela Hofmann, Shumon Hussain, Jean Hubert, Isak Roalkvam, Maria Hesjedal, Tim Kerig, Mélodie Larue, Sabrina Farías-Pelayo, Caroline Hamon, Mike Ilett, Jana Anvari, Caroline Heiz and Jan-Eric Schlicht. Thanks to all of you for the inspiration and support! Even my non-academic friends, who mostly regard me as a "mad scientist", have shown me their whole-hearted support. You know who you are.
+
+And, thanks to you, my dear Gabriel, the biggest support of all. Without you I wouldn't even have applied for the job. Thanks for your patience, your understanding, and love.
+
+And now sissy that walk!
 
 \tableofcontents
 
