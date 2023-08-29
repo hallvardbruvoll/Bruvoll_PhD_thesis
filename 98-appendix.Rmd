@@ -1,11 +1,51 @@
-# (APPENDIX) Appendix {-}
+# (APPENDIX) Appendix {.unnumbered}
 
 # This is my first appendix
 
-Something from the distfit analyses??
-Are there enough results in the tables in chapters?
+Describe the content: synthetic images
+
+\newpage
+
+```{r out.width = "100%"}
+include_graphics("Appendix/size_res.pdf")
+```
+
+\newpage
+
+```{r out.width = "100%"}
+include_graphics("Appendix/size_obs.pdf")
+```
+
+\newpage
+
+```{r out.width = "100%"}
+include_graphics("Appendix/res_obs.pdf")
+```
+
+\newpage
+
+```{r out.width = "100%"}
+include_graphics("Appendix/density.pdf")
+```
+
+\newpage
+
+```{r out.width = "100%"}
+include_graphics("Appendix/distr.pdf")
+```
+
+\newpage
+
+```{r out.width = "100%"}
+include_graphics("Appendix/clustering.pdf")
+```
+
+\newpage
+
+```{r out.width = "100%"}
+include_graphics("Appendix/noise.pdf")
+```
 
 # This is my second one
-Things to include here:
-D_L results table
-Images used in analysis, both synthetic and empirical
+
+Include archaeological images
