@@ -1,4 +1,4 @@
-# Discussion: Fractal Analysis and Archaeological data {#disc-methods}
+# Fractal Analysis and Archaeological data {#disc-methods}
 
 Draw conclusions based on comparison of results from the synthetic data series and the empirical ones, both for distribution and for image analysis.
 

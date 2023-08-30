@@ -1,5 +1,74 @@
 # (APPENDIX) Appendix {.unnumbered}
 
+# Archaeological plan images {#append-archaeo}
+
+The following plates include image series of archaeological settlement plans analysed in Chapter \@ref(images-results). The different image series are not to scale between them.
+
+-   Settlements -- images are to scale within series
+
+-   Quarters -- each plate is to scale internally, but not between each other
+
+-   Time samples -- images are to scale within series
+
+    -   Table \@ref(tab:append-time-tab) -- time samples, modelled sample dates and house orientations
+
+See overview figures in Chapter \@ref(material) for absolute scales, and details on image preparation.
+
+Original image files can be downloaded from project repository.
+
+\newpage
+
+```{r out.width = "100%"}
+include_graphics("Appendix/settlements.pdf")
+```
+
+\newpage
+
+```{r out.width = "100%"}
+include_graphics("Appendix/maidanetske.pdf")
+```
+
+\newpage
+
+```{r out.width = "100%"}
+include_graphics("Appendix/nebelivka.pdf")
+```
+
+\newpage
+
+```{r out.width = "100%"}
+include_graphics("Appendix/quart_neb.pdf")
+```
+
+\newpage
+
+```{r out.width = "100%"}
+include_graphics("Appendix/quart_vra.pdf")
+```
+
+\newpage
+
+```{r out.width = "100%"}
+include_graphics("Appendix/time_1.pdf")
+```
+
+\newpage
+
+```{r out.width = "100%"}
+include_graphics("Appendix/time_2.pdf")
+```
+
+\newpage
+
+(ref:time-tab) Time samples, modelled sample dates, maximum and minimum house orientations of included houses. Details in Section \@ref(time-samples)
+
+```{r append-time-tab}
+load("Data/time_samples.RData") 
+kable(time_samples, booktabs = TRUE, caption = "(ref:time-tab)", 
+      caption.short = "Vráble time samples, modelled dates and house orientations") %>%  
+  kable_styling(latex_options = c("striped", "scale down"))
+```
+
 # Synthetic images {#append-synth}
 
 The following plates contain the synthetic image series used for analysis in Chapter \@ref(images-methods), in the following order (plates are read row-wise from top left):
@@ -62,70 +131,4 @@ include_graphics("Appendix/clustering.pdf")
 
 ```{r out.width = "100%"}
 include_graphics("Appendix/noise.pdf")
-```
-
-# Archaeological plan images {#append-archaeo}
-
-The following plates include image series of archaeological settlement plans analysed in Chapter \@ref(images-results). The different image series are not to scale between them.
-
--   Settlements -- images are to scale within series
-
--   Quarters -- each plate is to scale internally, but not between each other
-
--   Time samples -- images are to scale within series
-
-(ref:time-tab) Time samples, modelled sample dates, maximum and minimum house orientations of included houses. Details in Section \@ref(time-samples)
-
-```{r append-time-tab}
-load("Data/time_samples.RData")
-kable(time_samples, booktabs = TRUE, caption = "(ref:time-tab)",
-      caption.short = "Vráble time samples, modelled dates and house orientations") %>% 
-#      linesep = c(rep("", 7), "\\addlinespace")) %>%
-  kable_styling(latex_options = c("striped", "scale down"))
-```
-
-See overview figures in Chapter \@ref(material) for absolute scales, and details on image preparation.
-
-Original image files can be downloaded from project repository.
-
-\newpage
-
-```{r out.width = "100%"}
-include_graphics("Appendix/settlements.pdf")
-```
-
-\newpage
-
-```{r out.width = "100%"}
-include_graphics("Appendix/maidanetske.pdf")
-```
-
-\newpage
-
-```{r out.width = "100%"}
-include_graphics("Appendix/nebelivka.pdf")
-```
-
-\newpage
-
-```{r out.width = "100%"}
-include_graphics("Appendix/quart_neb.pdf")
-```
-
-\newpage
-
-```{r out.width = "100%"}
-include_graphics("Appendix/quart_vra.pdf")
-```
-
-\newpage
-
-```{r out.width = "100%"}
-include_graphics("Appendix/time_1.pdf")
-```
-
-\newpage
-
-```{r out.width = "100%"}
-include_graphics("Appendix/time_2.pdf")
 ```

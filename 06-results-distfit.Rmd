@@ -105,7 +105,7 @@ In addition to testing whether the power-law interpretations hold when the analy
 
 (ref:06-quart-map) Power-law distributed houses in quarters D to G in Nebelivka, fitted by quarter (top) and for the settlement as a whole (bottom). Quarter-wise distribution fitting does not identify hierarchical scaling in quarter E, though many of the houses there are included in the power-law model for the whole settlement. Size categories are arbitrary (three levels with Jenks optimisation) and values differ between quarters. Legend values correspond to quarter F. Figure by author after @hale2020
 
-```{r 06-quart-map, fig.cap="(06-quart-map)", fig.scap="Settlement plan of Nebelivka, power laws by quarter (details)"}
+```{r 06-quart-map, fig.cap="(ref:06-quart-map)", fig.scap="Settlement plan of Nebelivka, power laws by quarter (details)"}
 include_graphics("Results/fig06_quart_map.pdf")
 ```
 
