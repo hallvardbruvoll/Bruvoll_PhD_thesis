@@ -1,15 +1,21 @@
 # Conclusion and Outlook {#conclusion}
 
-## Things I would like to have done, but that didn't fit into this study
+This thesis was devoted to the study of social hierarchies in prehistory, and how they could be approached through the application of fractal analysis methods. While the subject might seem highly specialised, I have argued that this framework is underexploited in archaeology, and that the methods which are explored throughout these chapters could also be applied to a range of other contexts and research questions. Fractal analysis is inherently linked to dynamical systems and complexity -- concepts that archaeologists could benefit from to a much larger extent than we do today.
 
--   Ethnoarchaeology: Measure house sizes and settlement layouts in contemporary settings, and relate to social organisation (largely overlooked by ethnographers)
--   Test distributions and settlement layout analysis on other settings: Lake dwellings, later/historic periods, other materials (e.g. megaliths)... Add more complex distribution models, add observation windows on images. Try on remote sensing imagery.
--   Settlement Scaling on Neolithic settings
--   Time series: Hurst exponent and scale invariance in temporal development of e.g. regional settlement or population
--   Integrate -- bridge the gap -- between opposite theoretical (nat. and soc./hum.) approaches to the same phenomena
--   Chaos and strange attractors in Archaeology
--   More?
+One of the main conclusions from the analyses that have been presented here, is that the studied social groups seem to have started to organise hierarchically at some point as a response to population growth in larger settlements, irrespectively of cultural attribution and purported political system, indicating -- despite the small sample size, but in accordance with associated theory -- that hierarchical structuring emerges spontanously with growth under given conditions and from simple rules, not as a result of conscious planning.
 
-## Concluding remarks
+In archaeology, such explanations are often unpopular, since we like to believe that social organisation is culture-specific and largely determined by human agency. However, this view can paradoxically lead to seeing archaeological cultures as monolithic in how their societies are organised, while there might well be more intra-culture variation than what is often recognised. From this I argue that we must be open to the possibility that social life could have been as different between small and large settlements within single archaeological cultures as it would be between settlements of different cultures within the same period. While exceptionally large settlements in Neolithic and Chalcolithic Europe may lack certain traits that would qualify them as urban, there might well have been distinctions at play between their inhabitants and those of smaller surrounding hamlets, somewhat analogous of how city and countryside dwellers today perceive each other as different in so many ways.
 
-END Thesis
+With the preceding chapters I have attempted to bring the world of fractals and complexity closer to archaeology. Undoubtedly, this framework will seem remote to the preoccupations of many archaeologists. The mathematical nature of the methods is an obvious obstacle to their more widespread use. However, fractals and related concepts are already being used as metaphors, with little to no mathematics involved, illustrating how these fundamental types of structuring can be recognised also in qualitative ways [e.g. @chapman2006; @sherratt2004; @sindbæk2022; @whitridge2016].
+
+A plethora of possible directions for future research could be listed here. I will mention only a few, which I find particularly promising, given the current state of research:
+
+-   Ethnoarchaeology! Measuring house sizes and settlement layouts in live settings and relating them to social organisation, is a possibility largely overlooked by ethnographers. Research in urban science and human geography is little concerned with the questions asked in this study. Archaeologist, and prehistorians in particular, are concerned with small scale societies and how they relate to their material culture. Perhaps we should bring a total station and a drone next time we go for participant observation?
+-   The distribution fitting and image analysis approaches should be more widely tested in other archaeological settings: Alpine lake dwellings, Anatolian villages, later historic periods, other materials, burials, megaliths... The real question is where to start.
+-   The methods themselves can be further improved. The performance of more complex distribution models, like the power law with cut-off and the parabolic fractal need to be systematically tested on archaeological material. Image analysis can be improved by adding observation windows. Multifractal spectral analysis should be tested, and the direct use of remote sensing imagery for analysis should be explored.
+-   Settlement Scaling Theory, with its formal framework and methodological and theoretical advantages over its outdated rank-size predecessor, needs to be applied to prehistoric European settings, with the potential of improving our understanding of regional settlement systems.
+-   Time series: Hurst exponent and scale invariance in temporal development of e.g. regional settlement or population dynamics remain practically unexplored in archaeology.
+-   Integrate theory: Bridge the gap between distant theoretical traditions (natural sciences and humanities) and their respective approaches to the same phenomena
+-   Take the full step into the world of dynamical systems, and apply concepts like chaos, strange attractors and self-organised criticality to archaeological material.
+
+That is a rough sketch to a roadmap of infinite possibilities for archaeologists who wish to take a step or two off the beaten track. It is the list I wish I had read before starting to work on this thesis. As such, it is perhaps the best contribution I can bring to the archaeological table.

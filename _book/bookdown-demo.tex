@@ -177,6 +177,7 @@
 \includepdf{title_page.pdf}
 \newpage
 \thispagestyle{empty}
+\clearpage
 \newpage
 \end{titlepage}
 
@@ -222,7 +223,7 @@ Listing up those who would merit acknowledgement for supporting me in this proje
 
 The spatial data used throughout this thesis was kindly shared by the GIS specialists who generated them within their respective projects, namely Nils Müller-Scheeßel and René Ohlrau (both at Kiel University) and Duncan Hale (Durham University). I fully acknowledge the immensity of the work underlying these datasets and commend their openness to sharing them for further study. All three were also very helpful and I have much enjoyed discussing spatial analysis with them.
 
-A course in which I participated early on in my PhD period on R coding for archaeologists and the principles of Open Science, organised by the Nordic Research School in Archaeology -- Dialogues with the Past, and chaired by Ben Marwick, Felix Riede, Sophie Schmidt and David Matzig, had a profound influence on the subsequent development of my thesis. I can honestly say I was in the struggling end of the class, but I was encouraged to persevere and be patient with myself. Today I can hardly imagine what this thesis would have looked like if it didn't involve coding (which was initially not intended). On that note, if there's any single group of people who has allowed me to stay more or less sane throughout this project, it is the largely anonymous coding community on forums like StackExchange and StackOverflow. Endless amounts of bugs (some of which have undoubtedly persisted), as well as useful tips and tricks, have been discussed there. In many cases my ultimate saviour has been some random blogger from years ago, who will probably never know they contributed substantially to letting a desparing PhD candidate in Norway finish his thesis on time. It is not without a certain sense of nostalgia that I now see the contours of AI applications like ChatGPT quickly taking over the role that these communities have had in helping each other out with saving the world from IT bugs in a completely free and disinterested way.
+A course in which I participated early on in my PhD period on R coding for archaeologists and the principles of Open Science, organised by the Nordic Research School in Archaeology -- Dialogues with the Past, and chaired by Ben Marwick, Felix Riede, Sophie Schmidt and David Matzig, had a profound influence on the subsequent development of my thesis. I can honestly say I was in the struggling end of the class, but I was encouraged to persevere and be patient with myself. Today I can hardly imagine what this thesis would have looked like if it didn't involve coding (which was initially not intended). On that note, if there's any single group of people who has allowed me to stay more or less sane throughout this project, it is the largely anonymous coding community on forums like StackExchange and StackOverflow. Endless amounts of bugs (some of which have undoubtedly persisted), as well as useful tips and tricks, have been discussed there. In many cases my ultimate saviour has been some random blogger from years ago, who will probably never know they contributed substantially to letting a desparing PhD candidate in Norway finish his thesis on time.
 
 The Department of Archaeology, Conservation and History at the University of Oslo allowed me to pursue this project in the best possible working environment. Meeting other PhD candidates in Norway and abroad during conferences and courses over the course of these three years, made me realise just how lucky I was to have a fully supporting group of colleagues who always would do their very best to generate ideal conditions for me and my fellow PhD candidates. This realisation could of course also imply that I wouldn't have anyone else to blame if it didn't work out well, but that kind of thinking is exactly the opposite of the general mindset at the Department. Here, it was made clear from the start that there is no such thing as failure, neither is there perfection. Just do what you do and that's good enough! (and remember to submit)
 
@@ -232,7 +233,7 @@ I also had the privilege of visiting other academic institutions during the work
 
 Other shorter and more intensive stays included visits to the small but welcoming archaeology department of Bern University, as well as the UMR 8215 Trajectoires lab in Paris and the CLIOARCH research group at Aarhus University. I have also enjoyed countless fruitful encounters and discussions with colleagues from all over Europe and the world during various conferences. Silviane Scharl (Cologne University) and Christopher Prescott (University of Oslo) provided helpful guidance during my mid-way assessment. People I now consider as mentors (some of them would be surprised), include, in no particular order: Daniela Hofmann, Shumon Hussain, Jean Hubert, Isak Roalkvam, Maria Hesjedal, Tim Kerig, Mélodie Larue, Sabrina Farías-Pelayo, Caroline Hamon, Mike Ilett, Jana Anvari, Caroline Heiz and Jan-Eric Schlicht. Thanks to all of you for the inspiration and support! Even my non-academic friends, who mostly regard me as a ``mad scientist'', have shown me their whole-hearted support. You know who you are.
 
-And, thanks to you, my dear Gabriel, the biggest support of all. Without you I wouldn't even have applied for the job. Thanks for your patience, your understanding, and love.
+Lastly, thanks to you, my dear Gabriel, the biggest support of all. Without you I wouldn't even have applied for the job. Thanks for your patience, your understanding, and love.
 
 And now sissy that walk!
 
@@ -257,7 +258,7 @@ And now sissy that walk!
 
 In Europe, the Neolithic is -- broadly speaking -- the long and messy transition period between mobile hunter-gatherer groups in the Palaeo- and Mesolithic, and the first city states appearing in the Bronze (Aegean) and Iron Ages (Mediterranean and Central Europe, Shennan 2018). Within this timespan of several millennia, early farmer societies evolved at different paces and in different directions, developing unique features, but also receiving indirect economic and technological impulses from the faraway Near East. Large variety in scale and content characterises the archaeologically defined culture groups of this period. In many phases and regions, single farmsteads and small hamlets were the dominant settlement feature -- for some regions and phases, like groups within the Michelsberg, Funnel Beaker and Corded Ware horizons, there is hardly any documented settlements at all. Other phases include exceptionally large settlements, probably hosting populations of several thousand inhabitants, like at Maidanetske in central Ukraine around 3.800 BCE (see \ref{trypillia}). In some settings, like in Linear Pottery society in much of continental Europe north of the Alps towards 5.100 BCE (see \ref{lbk}), the dead were buried in simple pit graves, either alone or in cemeteries, with only subtle distinction in treatment between individuals, in other phases some individuals were buried with tremendous amounts of precious goods like in Varna, Romania, or under colossal burial mounds like in Carnac, France, both in the mid-5th millennium (Jeunesse 2017).
 
-Seen at a very large scale -- across the continent and through the Holocene -- the development of society from small scale and relatively egalitarian towards large scale and more hierarchical seems evident (\textbf{ref?}). When we look more closely however, this evolution is anything but linear, as both population sizes and levels of hierarchical organisation seem to fluctuate considerably, sometimes over short time spans as from the Trypillia C-I to C-II, when the so-called mega-sites are abandoned and their former inhabitants regroup into much smaller settlements during a transition of maybe only one generation (Harper et al. 2021 ; Shatilo 2021, 217--18; Ohlrau 2020, 32--33).
+Seen at a very large scale -- across the continent and through the Holocene -- the development of society from small scale and relatively egalitarian towards large scale and more hierarchical seems evident (\textbf{ref?}). When we look more closely however, this evolution is anything but linear, as both population sizes and levels of hierarchical organisation seem to fluctuate considerably, sometimes over short time spans as from the Trypillia C-I to C-II, when the so-called mega-sites are abandoned and their former inhabitants regroup into much smaller settlements during a transition of maybe only one generation (Harper et al. 2021 ; Shatilo 2021; Ohlrau 2020).
 
 In many cases, the level of social hierarchy and complexity in a given Prehistoric society is very hard for researchers to evaluate, since many indicators of such structures are either lost from the archaeological record, or were never included in the first place (Perreault 2019, see also Section \ref{complexity-archaeo}). Archaeological traces that are often interpreted as signs of social complexity and hierarchy may furthermore be deceiving. Seemingly monumental structures were in many cases built through smaller additions over longer periods of time, rather than in one colossal construction campaign (e.g. Laporte et al. 2017 for the Barnenez cairn in Brittany). Furthermore, in many megalithic burial contexts, it may be impossible to estimate the proportion of the society that had access to such burial treatments.
 
@@ -545,7 +546,7 @@ The Linear Pottery culture complex -- often referred to as the LBK from the Germ
 
 More subtle evidence from Linear Pottery finds tends to link them, to varying degrees depending on the regions, to local forager populations, and there has been considerable discussions over the years regarding the exact nature of such farmer-forager contacts. These traces include the persistence of some Mesolithic bead types and associated material use throughout central Europe (Rigaud, D'Errico, and Vanhaeren 2015), regular inclusions of the very contrasting Limbourg and La Hoguette potteries in the westernmost settlements, or similarities in lithic production and technology (see Bickle and Whittle 2013a, 5--6 for a more detailed overview). However all in all the Linear Pottery culture is today seen primarily as the archaeological remains of people who spread across the fertile loess soils along river valleys in central continental Europe, driven by demic diffusion -- i.e.~gradual rather than abrupt spread (though rapidly in archaeological time scales, and in leapfrog steps between favourable areas), with new homesteads established a few kilometres further up or down the valley for every generation, due to population pressure (Dubouloz 2008; Shennan 2018; Bocquet-Appel 2008; Ammerman and Cavalli-Sforza 1973), possibly also involving competition for the best cultivation spots (Shennan 2008a) and social prestige in establishing new settlements (Frirdich 2005). While slash-and-burn cultivation was earlier assumed to be an explanatory factor for the Linear Pottery expansion (e.g.~by Gordon Childe), more recent archaeobotanical studies have pointed to ``intensive garden cultivation'' as a main cultivation strategy, involving long-term field maintenance spanning several generations and considerable work investment, possibly motivating claims to land ownership and inheritance (Bogaard 2012).
 
-More cultural variability is seen towards the end of the Linear Pottery time period, for which a number of regional sub-groups have been defined, primarily though not exclusively based on diversified pottery styles (Želiezovce in the south-east, Šarka in the north-east, Blicquy/Villeneuve-Saint-Germain in the west), though often with strong continuity in settlement patterns with the more ``classic'' earlier phases. In most areas the end of the last phase, dated approximately to 5050-4950 depending on regional variations, is associated with a more abrupt rupture in material culture, followed after some time by new groups with more markedly different material culture and/or settlement systems (Lengyel, Hinkelstein, Großgartach, Cerny) in some cases after an apparent depopulation in the region (Peters and Zimmermann 2017; Gronenborn et al. 2014; Riedhammer 2018). Furthermore, over the last 30 years or so, there has been a steady increase in evidence of considerable social tensions leading up to this apparent disintegration of the Linear Pottery culture. Large enclosures, possibly for defensive purpose, were constructed around villages across the culture zone, and a number of mass graves within the enclosure ditches dating from this phase have been identified. At Herxheim (near Karlsruhe in Rheinland) Boulestin et al. (2009) have reported on the remains of up to 1000 individuals of various origins (judging from the accompanying ceramics), having been violently dismembered and in many cases showing clear traces of cannibalism. At Asparn/Schletz north of Vienna, a smaller massacre deposit containing 67 individuals is interpreted as the remains of a single-event slaughter of the entire village. The age-sex ratios of the deceased are representative of expected values for a Neolithic village community, apart from the absence of young adult females, leading Teschler-Nicola (2012) to the conclusion of mass abduction by the attackers. Other sites from this phase which include human remains disposed of \emph{en masse} are known from Germany, Hungary and France, but not all show clear signs of violence (e.g. Meyer et al. 2014). Yet an example is the large settlement of Vráble in Slovakia, presented below, of which the human remains are currently under study (Nils Müller-Scheeßel et al. 2021; Furholt, Müller-Scheeßel, et al. 2020). Preliminary results point to a diversity in treatment of the deceased, and again clear traces of direct peri-mortal violence are largely lacking, adding nuance to earlier claims of societal crisis and warfare leading to the end of the Linear Pottery culture (e.g. \textbf{faruggia2002?}). Nevertheless, the concentration of these events -- however diverse -- towards the end of the period, combined with their wide geographical distribution, has reanimated earlier debates regarding the internal dynamics of Linear Pottery society, and the possibility that increased social inequality lead to the observed social instability and its ultimate decline (Augereau 2021; Jeunesse 2022).
+More cultural variability is seen towards the end of the Linear Pottery time period, for which a number of regional sub-groups have been defined, primarily though not exclusively based on diversified pottery styles (Želiezovce in the south-east, Šarka in the north-east, Blicquy/Villeneuve-Saint-Germain in the west), though often with strong continuity in settlement patterns with the more ``classic'' earlier phases. In most areas the end of the last phase, dated approximately to 5050-4950 depending on regional variations, is associated with a more abrupt rupture in material culture, followed after some time by new groups with more markedly different material culture and/or settlement systems (Lengyel, Hinkelstein, Großgartach, Cerny) in some cases after an apparent depopulation in the region (Peters and Zimmermann 2017; Gronenborn et al. 2014; Riedhammer 2018). Furthermore, over the last 30 years or so, there has been a steady increase in evidence of considerable social tensions leading up to this apparent disintegration of the Linear Pottery culture. Large enclosures, possibly for defensive purpose, were constructed around villages across the culture zone, and a number of mass graves within the enclosure ditches dating from this phase have been identified. At Herxheim (near Karlsruhe in Rheinland) Boulestin et al. (2009) have reported on the remains of up to 1000 individuals of various origins (judging from the accompanying ceramics), having been violently dismembered and in many cases showing clear traces of cannibalism. At Asparn/Schletz north of Vienna, a smaller massacre deposit containing 67 individuals is interpreted as the remains of a single-event slaughter of the entire village. The age-sex ratios of the deceased are representative of expected values for a Neolithic village community, apart from the absence of young adult females, leading Teschler-Nicola (2012) to the conclusion of mass abduction by the attackers. Other sites from this phase which include human remains disposed of \emph{en masse} are known from Germany, Hungary and France, but not all show clear signs of violence (e.g. Meyer et al. 2014). Yet an example is the large settlement of Vráble in Slovakia, presented below, of which the human remains are currently under study (Nils Müller-Scheeßel et al. 2021; Furholt, Müller-Scheeßel, et al. 2020). Preliminary results point to a diversity in treatment of the deceased, and again clear traces of direct peri-mortal violence are largely lacking, adding nuance to earlier claims of societal crisis and warfare leading to the end of the Linear Pottery culture (e.g. Farruggia 2002). Nevertheless, the concentration of these events -- however diverse -- towards the end of the period, combined with their wide geographical distribution, has reanimated earlier debates regarding the internal dynamics of Linear Pottery society, and the possibility that increased social inequality lead to the observed social instability and its ultimate decline (Augereau 2021; Jeunesse 2022).
 
 \hypertarget{sampled-linear-pottery-settlements-the-ux17eitava-valley}{%
 \subsection{Sampled Linear Pottery settlements: the Žitava valley}\label{sampled-linear-pottery-settlements-the-ux17eitava-valley}}
@@ -584,7 +585,10 @@ Largely as a result of the difficulty of establishing exact construction dates a
 
 Regarding intra-regional settlement structure, it has been recognised for some time that there seems to be some sort of hierarchy within areas like small river valleys, again first argued from observations in the Aldenhoven/Merzbachtal excavations in the 1970s and 80s, where Langweiler 8 was argued to represent a Central Place (\emph{sensu} Christaller 1966) in a regional network of smaller hamlets, orienting exchange flows notably in flint material and tools {[}Claßen (2005); \#zimmermann?{]}. While the exact functional relations between small and larger sites within a region have proven hard to establish beyond doubt, similar settlement systems have since been reported in Lower Bavaria (Pechtl 2012), Lower Austria (Pieler 2012) and the Aisne valley in northern France (Dubouloz 2012). The above presented sample from the Žitava valley in Slovakia seems to be yet an example. The gradual emergence of such patterns seems to be well predicted and explained by the demic diffusion models described by Shennan (2008a) and Dubouloz (2008) -- the earliest settlements in such micro-regions do seem to be the ones that become the largest over time, and the lineage of the earliest settlers would possibly have certain advantages from retaining the best spots for cultivations (Hamon and Gomart 2021). However, while any interpretation of these systems in terms of regional polities or complex chiefdoms would seem unfounded, given the lack of any sign of administration, public buildings etc. for this period, other plausible interpretations -- including seasonal occupation and economic specialisation -- do not seem to have been fully explored as of yet. Also, to my knowledge no serious attempts of settlement scaling have been done on Linear Pottery settlement systems to quantify formally the relationships between smaller and larger sites {[}Lobo et al. (2020); Section \ref{distfit-archaeo}{]}.
 
-A last note on social organisation must be made concerning the rich material known from Linear Pottery cemeteries. In recent years much evidence has come from analyses of burials, based on isotope and aDNA as well as grave goods inventories, applied on large samples (Augereau 2021; Bickle and Whittle 2013b). Linear Pottery burials are typically individual, with the deceased lying on their side in a crouched position, and in about 60\% of cases accompanied with artefacts, primarily pottery, ochre, animal bones and beads, but occasionally also tools including flint blades, arrowheads, grindstones and polished adzes. In a large study on a sample of several hundred graves for which the biological sex of the deceased could be reliably determined, clear gender patterns emerged in the distribution of artefact types as well as work-related pathologies, e.g.~linking archery to male activities and cereal grinding to female activities (Augereau 2021). Analysis of aDNA (Szécsényi-Nagy et al. 2015; Rasteiro and Chikhi 2013; Rasteiro et al. 2012), as well as strontium isotope analyses (Bentley et al. 2012; Whittle and Bickle 2013), has shown regular gendered differences in mobility, with Linear Pottery women generally being more likely to move far from their birth places during their lifetimes, and the relatively few men buried with polished stone adzes usually being born in the same area where they were buried. These results have to some degree concluded the long-standing debates on residence patterns in favour of patrilocality (see however Ensor 2021a; Hrnčíř, Vondrovský, and Květina 2020; Ensor, Irish, and Keegan 2017). Any unique patrilinear decent rule has for now been more difficult to demonstrate. They have also generated a renewed interest in the socio-symbolic role of polished adzes in Linear Pottery society. For decades, the cemetery at Nitra (Slovakia) was considered the archetype of Linear Pottery burial grounds. The principal excavator, Pavúk (1972) argued that the nine graves including adzes (\emph{Schuhleistenkeile}), of a total of 74, did not represent persons with any particular status, but that the adzes were simply utilitarian woodworking tools and that the cemetery reflected an essentially egalitarian society. Jeunesse (1996) pointed out that almost all these graves contained older males, but also some infants, concluding that they represented clan leaders with inherited status. The comparatively local strontium isotope signatures of these men-with-adzes constitute an additional argument for them having inherited a high status from early settlers at the site, and it is generally believed that only a selected segment of Linear Pottery society received any (archaeologically visible) burial at all (e.g. Hamon and Gomart 2021; Whittle and Bickle 2013).
+\hypertarget{burial-practices-and-social-organisation}{%
+\subsection{Burial practices and social organisation}\label{burial-practices-and-social-organisation}}
+
+A last note on social organisation must be made concerning the rich material known from Linear Pottery cemeteries. In recent years much evidence has come from analyses of burials, based on isotope and aDNA as well as grave goods inventories, applied on large samples (Augereau 2021; Bickle and Whittle 2013b). Linear Pottery burials are typically individual, with the deceased lying on their side in a crouched position, and in about 60\% of cases accompanied with artefacts, primarily pottery, ochre, animal bones and beads, but occasionally also tools including flint blades, arrowheads, grindstones and polished adzes. In a large study on a sample of several hundred graves for which the biological sex of the deceased could be reliably determined, clear gender patterns emerged in the distribution of artefact types as well as work-related pathologies, e.g.~linking archery to male activities and cereal grinding to female activities (Augereau 2021). Analysis of aDNA (Szécsényi-Nagy et al. 2015; Rasteiro and Chikhi 2013; Rasteiro et al. 2012), as well as strontium isotope analyses (Bentley et al. 2012; Whittle and Bickle 2013), has shown regular gendered differences in mobility, with Linear Pottery women generally being more likely to move far from their birth places during their lifetimes, and the relatively few men buried with polished stone adzes usually being born in the same area where they were buried. These results have to some degree concluded the long-standing debates on residence patterns in favour of patrilocality (see however Brück 2021; Ensor 2021a; Hrnčíř, Vondrovský, and Květina 2020; Ensor, Irish, and Keegan 2017). Any unique patrilinear decent rule has for now been more difficult to demonstrate. They have also generated a renewed interest in the socio-symbolic role of polished adzes in Linear Pottery society. For decades, the cemetery at Nitra (Slovakia) was considered the archetype of Linear Pottery burial grounds. The principal excavator, Pavúk (1972) argued that the nine graves including adzes (\emph{Schuhleistenkeile}), of a total of 74, did not represent persons with any particular status, but that the adzes were simply utilitarian woodworking tools and that the cemetery reflected an essentially egalitarian society. Jeunesse (1996) pointed out that almost all these graves contained older males, but also some infants, concluding that they represented clan leaders with inherited status. The comparatively local strontium isotope signatures of these men-with-adzes constitute an additional argument for them having inherited a high status from early settlers at the site, and it is generally believed that only a selected segment of Linear Pottery society received any (archaeologically visible) burial at all (e.g. Hamon and Gomart 2021; Whittle and Bickle 2013).
 
 The picture which has been emerging in recent years, when considering together multiple subtle strands of evidence -- possible hierarchies in house types and sizes (Velde 1990; D. Hofmann and Lenneis 2017), inheritance of land ownership indicated by cultivation techniques (Bogaard 2012) and social status by rich child graves (Jeunesse 1996), economic dominance of the most long-lasting household lineages within villages (Hamon and Gomart 2021; Gomart et al. 2015; Shennan 2008a), as well as higher social status of older local men (Bentley et al. 2012; Jeunesse 2017), patrilocality (Whittle and Bickle 2013) and possible mass abductions of young women (Teschler-Nicola 2012) -- is one of a perhaps not so peaceful nor egalitarian society (e.g. Coudart 2015, 1998), and much less matriarchal (Gimbutas 1991). Augereau (2021, 221) sees the Nitra cemetery as an early sign of emerging patriarchy, and Jeunesse (2017) reads the late Linear Pottery as the beginnings of the European warrior aristocracies that are usually associated with much later periods. In any case, it is safe to say the question of social structure and hierarchy in Linear Pottery research is unstable, and interpretations have varied widely over the recent decades, which makes any impetus from new methods to the available data ever more welcome.
 
@@ -700,7 +704,7 @@ While these studies have tackled the uniqueness of the mega-site phenomenon diff
 \hypertarget{spatial-data}{%
 \section{Reading site plans from geomagnetic imagery}\label{spatial-data}}
 
-The unprecedented quality of the recently published geomagnetic plans of Linear Pottery and Trypillia settlements (Rassmann et al. 2016, 2014; J. Chapman, Gaydarska, et al. 2014; Nils Müller-Scheeßel et al. 2020), as well as the theoretical and culture-historical considerations presented at the beginning of this chapter, make these two study areas ideal as cases for testing the performance of the fractal analysis methodology for quantifying levels of social hierarchy. For this thesis, spatial data in the form of shape-files were generously shared by the GIS specialists of the different research projects: Niels Müller-Scheeßel (Kiel university, Nils Müller-Scheeßel et al. 2020) for the Linear Pottery sites in the Žitava valley, René Ohlrau (Kiel university, Ohlrau 2020) for Maidanetske, Moshuriv and Talne 3, and Duncan Hale (Durham university, Hale 2020) for Nebelivka. The house outlines were thus identical to those presented in the cited publications. However, this also means that they were drawn by (at least) three different people, which may have lead to certain biases between the data sets. Furthermore, Linear Pottery and Trypillia houses are not identified on geomagnetic images in the same way: the former are seen as ``empty'' spaces between the longitudinal pits which are generally well visible (Winkelmann et al. 2020), while the latter are seen more directly by the burnt clay platform forming the floor area (visible to varying degrees, as already discussed above, Pickartz et al. 2021; Pickartz et al. 2019). Both culture groups are known to allow for very little overlap between houses -- an issue which would be far more problematic e.g.~with Balkan or Anatolian Neolithic villages. The data to be extracted from these files were house sizes for Chapter \ref{results-distfit} and the house outlines themselves as images for Chapter \ref{images-results}. Both the extraction of house (polygon) sizes and settlement layout raster images were done using standard functions in QGIS 3.20.1 (see Section \ref{images-procedure} for more details on image preparation).
+The unprecedented quality of the recently published geomagnetic plans of Linear Pottery and Trypillia settlements (Rassmann et al. 2016, 2014; J. Chapman, Gaydarska, et al. 2014; Nils Müller-Scheeßel et al. 2020), as well as the theoretical and culture-historical considerations presented at the beginning of this chapter, make these two study areas ideal as cases for testing the performance of the fractal analysis methodology for quantifying levels of social hierarchy. For this thesis, spatial data in the form of shape-files were generously shared by the GIS specialists of the different research projects: Niels Müller-Scheeßel (Kiel university, Nils Müller-Scheeßel et al. 2020) for the Linear Pottery sites in the Žitava valley, René Ohlrau (Kiel university, Ohlrau 2020) for Maidanetske, Moshuriv and Talne 3, and Duncan Hale (Durham university, Hale 2020) for Nebelivka. The house outlines were thus identical to those presented in the cited publications. However, this also means that they were drawn by (at least) three different people, which may have lead to certain biases between the data sets. Furthermore, Linear Pottery and Trypillia houses are not identified on geomagnetic images in the same way: the former are seen as ``empty'' spaces between the longitudinal pits which are generally well visible (Winkelmann et al. 2020), while the latter are seen more directly by the burnt clay platform forming the floor area (visible to varying degrees, as already discussed above, Pickartz et al. 2021; Pickartz et al. 2019). Both culture groups are known to allow for very little overlap between houses -- an issue which would be far more problematic e.g.~with Balkan or Anatolian Neolithic villages. The data to be extracted from these files were house sizes for Chapter \ref{results-distfit} and the house outlines themselves as images for Chapter \ref{images-results}. Both the extraction of house (polygon) sizes and settlement layout raster images were done using standard functions in QGIS 3.20.1 (see Section \ref{images-procedure} for more details on image preparation). For the mega-site of Maidanetske, the south-eastern section of the settlement is now badly preserved, but house features are known from earlier surveys. These were drawn by Ohlrau (2015) based on older site plans, but the corresponding house outlines are therefore not as precise as the remainder of houses, which are drawn from the recent geomagnetic data. These less precise features were included in the image analysis, but excluded from the size-distribution analysis.
 
 \hypertarget{time-samples}{%
 \section{Time samples of the Vráble settlement}\label{time-samples}}
@@ -1445,7 +1449,7 @@ In addition to testing whether the power-law interpretations hold when the analy
 
 }
 
-\caption[Settlement plan of Nebelivka, power laws by quarter (details)]{(06-quart-map)}\label{fig:06-quart-map}
+\caption[Settlement plan of Nebelivka, power laws by quarter (details)]{Power-law distributed houses in quarters D to G in Nebelivka, fitted by quarter (top) and for the settlement as a whole (bottom). Quarter-wise distribution fitting does not identify hierarchical scaling in quarter E, though many of the houses there are included in the power-law model for the whole settlement. Size categories are arbitrary (three levels with Jenks optimisation) and values differ between quarters. Legend values correspond to quarter F. Figure by author after Hale (2020)}\label{fig:06-quart-map}
 \end{figure}
 
 Regarding Vráble SE, in addition to not having a power-law tail, the house-size distribution is also distinguished from the two others with a markedly higher median, i.e.~generally larger houses, as well as higher mean and standard deviation (Table \ref{tab:06-quart-tab}). On the survival function plot on Figure \ref{fig:06-quart-tails} this translates to a wider and more regular parabolic curve of house sizes, more typically log-normal, as opposed to the more abruptly descending straight lines of the two other neighbourhoods (in red on the plot). For the N and SW neighbourhoods, the combination of a less skewed log-normal for the main body of the distribution (i.e.~regular houses) and an actual power law for the largest 41 and 20 houses respectively (1/3 and 1/5 of the houses), could indicate a more marked difference between these, which could be interpreted either as an emerging social elite or the presence of some large houses with special social functions. However, any further interpretation in social terms depends on how many of these houses were actually coeval, i.e.~in use at the same time. If most of these large and hierarchically scaling houses were in reality spread out through time, so that only a very few existed at any single one moment, it would not make much sense to speak of a social hierarchy, and the distribution should not be interpreted as a power law. For interpreting social relationships between different households and how they function in daily life, it is essential that the studied households be contemporary -- a requirement that is often hard to meet in archaeology, but an attempt is done in the following for Vráble only.
@@ -1603,6 +1607,8 @@ Factors affecting village layout:
   Binary or continuum? Needs to be studied empirically.
 \end{itemize}
 
+The relationship between image density (built-up area) and fractal dimension was evaluated by Thomas, Frankhauser, and De Keersmaecker (2007), who showed that these two parameters, under certain conditions (constant observation window, prefactor values close to 1), are exponentially correlated. They furthermore showed that observation window size and shape, as well as centroid placement, have little influence on \emph{D}, while they have more influence on density when the pattern is not homogeneous. They do show, however, that images with the same density may have quite much variation in \emph{D}, which is reflected in the layouts. Judging from their examples, more clustered layouts give higher \emph{D} values, while more dispersed or dusty layouts give lower \emph{D}, when density is constant. According to Thomas, Frankhauser, and De Keersmaecker (2007), density is a crude measure of the overall intensity of the pattern, while fractal dimension is characterises the morphological structure, though it is not directly descriptive.
+
 \hypertarget{image-archaeo}{%
 \section{Fractal image analysis in archaeology}\label{image-archaeo}}
 
@@ -1629,7 +1635,7 @@ As noted in the previous chapter, the fractal dimension of spatial patterns was 
 
 Readers of Section \ref{power-law} will recognise that the relationship between box sizes and box count is a power law with fractal dimension being defined as its scaling exponent, and while one may wonder why the log-log fitting method is accepted here when it was banned in previous chapters, there are some differences between the two contexts. Firstly, we are not dealing here with univariate distributions and their underlying generative mechanisms, but rather the relation between two variables. Secondly, the fractal dimension (in the following denoted \emph{D}) is \emph{defined} as this scaling exponent, that is the logarithm of frequency (number of elements) divided by the logarithm of their sizes relative to the whole (\#did I remember to add an equation of D in chapter 7?). In theory, the graph of boxes to box sizes should always follow a power law -- i.e.~a straight line on a log-log plot -- but with a fractional slope value when the pattern is fractal and an integer slope value when the pattern is a fully Euclidean shape.
 
-There are some caveats regarding the interpretation of this estimate however. One is that there is nothing preventing a fractal shape of having an integer dimensional value. Its defining characteristic is that unlike Euclidean dimensions it can take on any value from 0 to 3 for spatial patterns and higher for more abstract patterns, and the numbers 0, 1, 2 and 3 are values just like any other in this continuous range. An integer dimension is thus in itself not enough to claim that a pattern is Euclidean and not fractal (though fractals with exactly integer dimensions are rare). But it is more important to consider what exactly is meant by Euclidean shapes in this context, namely a shape that entirely fills its embedding Euclidean dimension like a square or circle in two-dimensional space or a straight line segment in one dimension. An entirely regular grid pattern consisting only of identical squares or circles with some space between them does not fill its embedding space, and will have a fractional dimension when analysed through box counting, even though it can hardly be described as scale-invariant or fractal (examples are given below). For such cases, the total area of the pattern, approximated by the box count times box size, will be unstable down to the image resolution, as if the pattern were truly fractal. The dimension value obtained through box counting is thus in itself not a guarantee for the pattern being either Euclidean or fractal, which is why it is more accurate to refer to it as the \emph{box-counting dimension} or \emph{D\textsubscript{box}}. This has led to numerous confusions and erroneous interpretations in earlier studies involving box counting Oleschko et al. (2000), and it illustrates the difficulty involved in interpreting the obtained values. This is also largely why I have opted for a more prudent empirical approach using synthetically constructed images to guide interpretation, testing for the effects of different variables one-by-one as presented below.
+There are some caveats regarding the interpretation of this estimate however. One is that there is nothing preventing a fractal shape of having an integer dimensional value. Its defining characteristic is that unlike Euclidean dimensions it can take on any value from 0 to 3 for spatial patterns and higher for more abstract patterns, and the numbers 0, 1, 2 and 3 are values just like any other in this continuous range. An integer dimension is thus in itself not enough to claim that a pattern is Euclidean and not fractal (though fractals with exactly integer dimensions are rare). But it is more important to consider what exactly is meant by Euclidean shapes in this context, namely a shape that entirely fills its embedding Euclidean dimension like a square or circle in two-dimensional space or a straight line segment in one dimension. An entirely regular grid pattern consisting only of identical squares or circles with some space between them does not fill its embedding space, and will have a fractional dimension when analysed through box counting, even though it can hardly be described as scale-invariant or fractal (examples are given below). For such cases, the total area of the pattern, approximated by the box count times box size, will be unstable down to the image resolution, as if the pattern were truly fractal. The dimension value obtained through box counting is thus in itself not a guarantee for the pattern being either Euclidean or fractal, which is why it is more accurate to refer to it as the \emph{box-counting dimension} or \emph{D\textsubscript{box}}. This has led to numerous confusions and erroneous interpretations in earlier studies involving box counting (\textbf{oleschko?}), and it illustrates the difficulty involved in interpreting the obtained values. This is also largely why I have opted for a more prudent empirical approach using synthetically constructed images to guide interpretation, testing for the effects of different variables one-by-one as presented below.
 
 Some similar issues concern the estimation of lacunarity in empirical patterns. While Mandelbrot mainly relied on regular constructed fractals for estimating lacunarity, empirical patterns involving stochastic processes require more formal methods for analysis. The main method for estimating lacunarity is the so-called gliding-box method (Allain and Cloitre 1991; Hingee et al. 2019; Cheng 1997; Plotnick et al. 1996). Similarly to box counting, it involves evaluating the pattern over a range of scales (box sizes), but in stead of a grid, a single box is glided incrementally across the image with overlaps (rendering the method computationally heavier). For each increment, the pixel mass (number of foreground or pattern pixels) within the window is recorded, and the average spread of this over all box displacements for a given box size is calculated, giving a lacunarity index (\#refer to the equation in chapter 7). This index -- i.e.~lacunarity for a given box size, is then plotted according to box size, and unlike the fractal (box-counting) dimension, the shape of the lacunarity curve can effectively give an indication of whether or not, or over which scales, the analysed pattern is fractal. For regularly self-similar mono-fractals, the curve of the lacunarity index forms a straight line in log-log scales, with the slope being equal to \emph{D--E}, i.e.~the fractal dimension of the pattern minus its Euclidean dimension (Plotnick et al. 1996, 5463; Allain and Cloitre 1991; Mandelbrot 1982, 315--17). Since real-world patterns are rarely self-similar over very large ranges, and even less so for image renderings of them which depend on pixel resolution, this lacunarity index curve tends to follow a power law less strictly than that of box counts, even when the pattern is fractal-like over some scales.
 
@@ -2046,141 +2052,73 @@ END Chapter
 \part{Synthesis}\label{part-synthesis}}
 
 \hypertarget{disc-results}{%
-\chapter{Discussion: Social complexity in Linear Pottery and Trypillia settlements}\label{disc-results}}
+\chapter{Social complexity in Neolithic settlements}\label{disc-results}}
 
-(Results from size distributions and settlement plans, for Trypillia and Linear Pottery settlements.)
+While the primary goal of this thesis has been to study fractal analysis methods themselves and how they can become better integrated into archaeological research, this assessment could hardly be done without reference to how well they account for patterns in real-world data. For the case studies included here -- the sampled Linear Pottery settlements in the Žitava valley, Slovakia, and Trypillia settlements in the Sinyukha basin in Ukraine, which have largely been analysed together -- a number of observations of more culture-historical nature can be made, which can furthermore be interpreted in light of recent research on these culture groups and settlements.
 
-\begin{itemize}
-\item
-  Restate the research questions: Social hierarchy. Was there any, how important was it, and at which scale did it operate?
+As seen in Chapter \ref{material}, for both the Linear Pottery and Trypillia culture groups there has been much discussion among specialists regarding their social organisation and possible levels of hierarchy. Both archaeological cultures are well defined by a number of characteristics of material culture, and they have been extensively documented for decades. However, recognising specific traits of social organisation in archaeology is a complicated matter, and it is often difficult to evaluate different hypotheses against one another. Also, despite obvious similarities in material culture within large geographical zones -- as is seen in house architecture within the Linear Pottery area -- specific traits of social organisation that are seen in one study area are not necessarily valid for the whole archaeological culture. Broad generalisations may be useful for apprehending complex phenomena, but they also have a tendency to make us blind to evidence of variation. This is a frequently recurring discussion in archaeology, and indeed in most academic disciplines (Graeber and Wengrow 2021; Furholt 2021).
 
-  \begin{itemize}
-  \item
-    Restate the status quo of research:
+Expert opinions on the social organisation, and specifically the degree of hierarchy, have evolved with somewhat different dynamics in Linear Pottery and Trypillia research. For the former, there has been a pattern of oscillation over time between interpretations tending towards strong egalitarianism (e.g. Pavúk 1972; Gimbutas 1991; Coudart 2015) \emph{contra} lineage- or clan-based society dominated by elites with inherited status (Velde 1990; Jeunesse 1996; Bogaard 2012; Bentley et al. 2012; Augereau 2021), with perhaps the majority of researchers seeking some middle ground (e.g. Last 2015; Whittle and Bickle 2014; Hamon and Gomart 2021; D. Hofmann and Lenneis 2017). The most striking feature of this debate is how the different points of view are forwarded largely from the same material. There seems to be at least a week tendency of science-oriented research concluding with more hierarchy, and humanities-oriented research arguing for less hierarchy or at least more variation. Characteristically, the middle-ground advocates tend to be those who manage to incorporate both approaches in their analyses. In Trypillia research on the other hand, interpretations of social organisation have largely followed national schools of thought. Researchers in British-led projects have stressed the communal nature of large buildings and the lacking material evidence for social elites, arguing for a largely democratic-egalitarian society (Gaydarska 2020; J. Chapman, Gaydarska, and Hale 2016). In German-led projects, interpretations have focussed on temporal dynamics and indications of a gradual shift from communal to elite-led governance, which is claimed to have contributed to the ultimate decline of the mega-site phenomenon (R. Hofmann et al. 2019; Müller et al. 2016). It should be noted that these two interpretations are not mutually exclusive, as the British-led research has been focussed on Nebelivka, which is one of the earlier mega-sites (Müller et al. 2022). Ukrainian researchers have followed the more culture-historical tradition, constructing detailed typo-chronological sequences with the goal of tracing migratory movements of coherent social groups, largely avoiding hypothesising on their social organisation (Aleksandr Diachenko 2012; Kruts 2012; Ryzhov 2012).
 
-    \begin{itemize}
-    \item
-      Oscillations in general opinion over time for Linear Pottery
-    \item
-      Geographical/national research traditions for Trypillia
-    \end{itemize}
-  \end{itemize}
-\item
-  The question of urbanity for Trypillia. Sindbæk (2022): Anomalocivitas or low-density urbanism, also Ohlrau (2022) for neither.
+The distribution-fitting analysis presented in Chapter \ref{results-distfit} allowed for the identification of power-law distributions in both Trypillia and Linear Pottery house sizes. While house sizes are regularly reported in archaeological settlement studies, this approach has to the best of my knowledge not been applied to settlements in Neolithic Europe before. As seen in the theoretical overview in Section \ref{distributions}, power-law distributions are clear indications of hierarchically scaling structures. The power-law distributions observed in these house-size samples therefore constitute a strong argument for some sort of hierarchy in their interrelations. What exactly this hierarchy consisted of however, is a different matter.
 
-  \begin{itemize}
-  \item
-    No visible spatial differentiation between quarters in Nebelivka -- not filling the classic requirement for urbanism
-  \item
-    But clear hierarchisation between households -- beyond the house typology. Evidence of social hierarchy, though the specific social content of it is hard to say from house sizes alone. This analysis cannot decide between the two main competing hypotheses of democratic assemblies or more clan-based autocracy \#check again\#
-  \item
-    Draw in previous house-size analyses of Nebelivka and Maidanetske
-  \end{itemize}
-\item
-  For Linear Pottery, evidence of hierarchical scaling between households, corroborating current argumentations based on grave goods and skeletal remains.
+For the Linear Pottery settlements, and apart from the deviating results for Horný Ohaj which was probably due to the small sample size, only the largest settlement of Vráble was interpreted to have power-law distributed house sizes. While the distributions of the smaller settlements were almost always skewed (with the exception of normally distributed Úľany nad Žitavou), they were markedly less so than that of Vráble, and were interpreted as log-normals. The Vráble settlement, with its total of 313 houses is also markedly larger than the other settlements, of which Vlkas is the largest with 61 houses (Table \ref{tab:06-settle-tab}). It was hypothesised that the result for Vráble was a statistical artefact reflecting arbitrary data aggregation rather than an actual hierarchy. However, further analysis on separate neighbourhoods and time samples revealed hierarchical scaling also there, including for sub-samples with less than 20 houses, indicating that the observed difference in house-size distributions between Vráble and the other settlements was a robust result.
 
-  \begin{itemize}
-  \item
-    Linear Pottery society was not simply egalitarian, as that could hardly account for the large inequalities in house sizes.
-  \item
-    Inequality does not seem to have increased markedly over time at Vráble. Rather there seems to have been a (at least moderately) hierarchical social system in place from early expansion phases of the settlement, possibly with clan leaders present in each of the three neighbourhoods, as well as competitive behaviours among lower levels households as well. While tensions may well have increased over time, the social hierarchy seems to have been in place long before the massacres of the late phases.
-  \end{itemize}
-\item
-  For both: Results from both approaches cross-cut the distinction between Trypillia and Linear Pottery cultural belonging. There are homogeneously compact vs.~heterogeneously clustered settlements from either group, as well as power-law vs.~non-power-law house size distributions. These two differentiations do not overlap either, leaving a complex overall impression.
+Temporal modelling was not done here for the smaller sites, but following Nils Müller-Scheeßel et al. (2020; see also Furholt, Müller, et al. 2020) it can be assumed that not all houses were coeval there either, but rather that they also developed dynamically over time. If there was a threshold of village population size above which Linear Pottery households would begin to organise hierarchically (Chapter \ref{theory}), it is likely that it would be found already at a low number of coeval houses -- possibly around a dozen. There is currently not enough evidence here to estimate such a threshold with any precision, both because of the very limited geographical scope of this study, but also since this number is also where the distribution-fitting algorithm applied here becomes unreliable. It is also very difficult to attach such a threshold in number of coeval houses to any absolute population estimate, as these vary widely between authors for the Linear Pottery culture. As mentioned earlier, Coudart (1998) estimated the typical Liner Pottery hamlet to consist of about five coeval longhouses with a total population of 150-200 (amusingly close to Dunbar's infamous number). Coeval house numbers for the temporal samples of Vráble are much higher, roughly in the range of 20-60 houses, and even when considered separately, temporally coeval social groups within single neighbourhoods could in many phases reach twice or three times as high populations, i.e.~totals of 300-600 people, if we accept her estimation methods (Table \ref{tab:06-time-tab}). It could be argued that whenever Linear Pottery social groups grew beyond about 200 inhabitants -- which was evidently rare given that the vast majority of known settlements were indeed smaller -- a possibility emerged for clan leaders to take on a distributive role and actively seek to increase their political and economical dominance over other households. In a settlement like Vráble, where the whole was clearly sub-divided in three distinct neighbourhoods, competing interests between such clan leaders could over time lead to significant tensions. This can again be discerned in the construction of the enclosure and the associated human remains surrounding the south-west neighbourhood dated to its later stage of development (Furholt, Müller-Scheeßel, et al. 2020; Nils Müller-Scheeßel et al. 2021).
 
-  \begin{itemize}
-  \tightlist
-  \item
-    Despite methodological challenges (effectively distinguishing between log-normal and power-law distributions) ower-law distributed house sizes seem inherently
-  \end{itemize}
-\end{itemize}
+While admittedly speculative, this interpretation is corroborated by evidence from Linear Pottery cemeteries indicative of higher social status for local-men-with-adzes (Bentley et al. 2012; Whittle and Bickle 2013) and their probable link to the largest houses (Velde 1990). Furthermore, the argument presented by Jeunesse (2022) regarding differences between generally ``rich'' and ``poor'' cemeteries, could be seen as reflective of the difference between villages that have and have not passed the critical point of emerging social hierarchy. This point does not depend on the accuracy or even the relevance of Dunbar's number, which has been much criticised (Chapter \ref{theory}), but on the observation that larger settlements have power-law distributed house sizes while smaller settlements do not. Testing this hypothesis on wider samples should be a priority for future research.
 
-Settlement scaling in the study areas.
+The link between settlement size and hierarchically scaling house sizes was also seen in the analysed Trypillia settlements. The clearly hierarchical relationship between building sizes at the mega-sites is hard to miss, and has already been recognised by the researchers who have studied them in recent years (R. Hofmann et al. 2019; J. Chapman, Gaydarska, and Hale 2016). However, the distribution-fitting analysis allowed for a more detailed appreciation of just how far down the scale this hierarchy appears to have gone. While R. Hofmann et al. (2019) acknowledge that some large houses located at entrance points and street corners may have had special functions even though they have not been previously classified as typical ``mega-structures'', the results presented in Chapter \ref{results-distfit} indicate that as much as 44\% of houses at Nebelivka have sizes distributed in a way that is best described as a power law. Furthermore, mapping where these houses are located in the settlement reveals a strong tendency of concentrations of larger houses near mega-structures and in the main streets, while smaller houses are located more often in side streets and near the borders between quarters (Figure \ref{fig:06-nebelivka-map}). Though interpretations of the largest structure at Nebelivka have been somewhat inconsistent (Burdo and Videiko 2016; J. Chapman, Gaydarska, and Hale 2016), the public rather than domestic function of at least the medium-sized mega-structures/assembly houses seems well established (R. Hofmann et al. 2019). As it has been repeatedly stated throughout this thesis, there is no inherent contradiction between hierarchical structures and communal social organisation, and fully egalitarian democracies can very well solve a number of organisational issues through hierarchical scaling of institutions. In contemporary democratic states, this sort of hierarchy often translates to law-regulated bureaucracies (De Landa 2006), and can be recognised materially through a number of communally organised networks of public and institutional buildings, as well as infrastructure, which will -- at least in theory -- tend to follow power-law size distributions on various levels (Batty 2005; D'Acci 2019). There is thus no need to explain away this hierarchy simply because Trypillia settlements are thought to be egalitarian. However, these large houses which are centrally placed within the neighbourhoods at Nebelivka have received far less systematic attention in later years than the mega-structures, and there has been an overall consensus that Trypillia domestic houses were constructed with extreme conformity (e.g. Chernovol 2012). At the same time, as reviewed by R. Hofmann et al. (2019), in most cases the supposed public buildings could not possibly fit but a fraction of the use-groups they would represent, meaning that some sort of delegation of tasks must have taken place. It would seem Trypillia household research would draw benefit from the active search for variability that has characterised Linear Pottery research for a long time, as such an approach could potentially nuance the currently dominant view of Trypillia households as strictly egalitarian.
 
-Traditional rank-size distributions for the Trypillia sites in the Sinyukha basin have recently been provided by Shatilo (2021, 218--22), showing rather clearly that they do not follow power laws in any phases (though she words it differently). This indicates that there was no settlement hierarchy for which the mega-sites functioned as central places, but rather that they appeared through an agglomeration process, draining populations from the wider area of smaller communities as well as with influx from migrations from the south-west, as has also been suggested by others (Aleksandr Diachenko and Menotti 2012; Alexandr Diachenko and Zubrow 2015).
+The results for Maidanetske were somewhat less conclusive. The observed power-law distribution of house sizes covered ``only'' 13\% of the total house count (which still represents 300 houses). Several differences both in data quality and settlement characteristics could explain this: The largest building structure is missing from the documentation, but is thought to have been there originally judging from the overall layout. There is more missing data than in Nebelivka -- as the south-east part of the settlement was not included in the distribution analysis because of poorer data resolution. But probably most importantly, it is increasingly being recognised that Nebelivka had a much shorter occupation span than Maidanetske, both being situated in the extremes of the more standard duration of mega-sites (Müller et al. 2022). At the same time, it remains at this stage impossible to reconstruct coeval settlement plans of Maidanetske at single time samples, because of the enormous size of the settlement and the colossal effort that would be needed to date enough houses independently. Given the distortions that was shown to result from arbitrary data aggregation using the method applied here (Chapter \ref{methods-distfit}), it is likely that the results from Nebelivka are the most reliable in this context.
 
-END Chapter
+Interestingly, a power-law distribution of house sizes was also recognised at the much smaller settlement of Moshuriv (84 houses) but not at the smallest Talne 3 (19 houses). As with the results for the Linear Pottery settlements, this could again be an indication that hierarchical scaling between households somehow kicks off above a certain threshold. The fact that this was seen for both the Linear Pottery and the Trypillia settlements, and given the diverging views on their modes of social organisation, would lend support to the interpretation of a mechanism which is not primarily culturally contingent. What would need further cultural explanation, is how some settlements came to surpass the threshold to structural hierarchy while others did not. It should be kept in mind that the sizes of the mega-sites as well as Vráble are highly unusual within their cultural contexts.
+
+The results from the image analysis approach were overall less conclusive, and more work remains before it can be effectively implemented in archaeological research. However, also there the resulting fractal dimension and lacunarity values outlined a grouping of the settlements which cross-cut cultural attribution. The obtained values seemingly quantified the level of clustering, hierarchical or not, so that the settlements with high \emph{D} and low \emph{L} values were homogeneously compact in contrast to heterogeneously clustered settlements (Figure \ref{fig:09-settlements}). Interestingly, this partition also cross-cut size categories and distribution models, generating the impression of a highly complex relation to clustering which is seemingly unrelated to these other variables. The method did not deliver as expected regarding the quantification of the level of overall planning (spatial regularity vs.~noise). However, it is possible that the sampled settlements were in reality too similar for this effect to become discernible, and the procedure would merit to be tested on much larger and more varied samples. There are highly diverging opinions as to just how regular both Linear Pottery and Trypillia settlement plans really are, and a tool for quantifying this aspect reproducibly would be welcome. The approach with the best performance for this purpose is for now the multivariate correspondence analysis approach, as proposed by Furholt (2016).
+
+Though it was not part of this project, a settlement scaling approach seems to be both possible and warranted for Linear Pottery and Trypillia regional analyses. In the current framework as proposed by Lobo et al. (2020), Bettencourt (2021) and others, it does not appear to have been applied yet to prehistoric Europe (the closest to my knowledge being the analysis of Irish Bronze Age stone circles proposed by Grove 2011). Traditional rank-size distributions for the Trypillia sites in the Sinyukha basin have recently been provided by Shatilo (2021, 218--22), showing rather clearly that they do not follow power laws in any phases (though she words it differently). This indicates that there was no settlement hierarchy for which the mega-sites functioned as central places, but rather that they appeared through an agglomeration process, draining populations from the wider area of smaller communities as well as with influx from migrations from the south-west, as has also been suggested by others (Aleksandr Diachenko and Menotti 2012; Alexandr Diachenko and Zubrow 2015). While the rank-size analysis in this case seems to work well, a more formal and theoretically sound settlement scaling approach would provide more convincing results. Settlement hierarchies have for some time and increasingly been suggested for Linear Pottery micro-regions (see Section \ref{lbk}), but usually with qualitative assessment only. Applying settlement scaling analysis on Linear Pottery contexts at different geographical scales could shed more light on the processes involved in the initial spread of agriculture in these regions and the subsequent possible emergence of social elites.
 
 \hypertarget{disc-methods}{%
-\chapter{Discussion: Fractal Analysis and Archaeological data}\label{disc-methods}}
+\chapter{Fractal Analysis and Archaeological data}\label{disc-methods}}
 
-Draw conclusions based on comparison of results from the synthetic data series and the empirical ones, both for distribution and for image analysis.
+\hypertarget{the-distribution-fitting-approach}{%
+\section{The distribution fitting approach}\label{the-distribution-fitting-approach}}
 
-Also mention here fractals or related concepts used as a metaphor, with no mathematics involved (e.g. J. Chapman et al. 2006; Sherratt 2004; Sindbæk 2022; Whitridge 2016).
+A number of observations can be made regarding the results obtained from the analyses on synthetic data distributions presented in Chapter \ref{methods-distfit} and their implications to empirical analyses.
 
-\hypertarget{distribution-fitting}{%
-\section{Distribution fitting}\label{distribution-fitting}}
+It is widely recognised that confidently differentiating between log-normal and power-law distributions is a complicated matter (Clauset, Shalizi, and Newman 2009; Stumpf and Porter 2012), and confusions between the two have a deep history in statistical research (Sheridan and Onodera 2018; Mitzenmacher 2004; Harrison 1981; Gibrat 1930). The question raised by Stumpf and Porter (2012), of whether it really matters in the end, is intriguing. The generative mechanisms underlying these two heavy-tailed distributions are in many ways similar, but not identical. And only the power law is considered to quantify actual hierarchical/fractal structures, which is the focus of this thesis. However, it is also recognised that strict power laws are extremely rare in nature and society (if they even exist at all) since they involve infinite variance, while most of the phenomena that we are interested in are known to exist within clearly limited bounds. As presented in Chapter \ref{fig:04-hierarchy}, several statistical workarounds have been proposed as solutions to this problem, with composite distributions like the power law with exponential cut-off, or the parabolic fractal distribution. In that case -- and given that the log-normal and the power law are reportedly so difficult to distinguish -- why cannot the log-normal distribution also function as a step-in to account for finite effects?
+
+I believe it is a matter of convenience: the log-normal distribution is so malleable that it can effectively mimic any level of tailedness and asymmetry (kurtosis and skewness in statistical terms) from a perfectly symmetrical normal distribution to an extremely unequally distributed power law. This property makes the log-normal very useful for many purposes, but it also makes it more difficult to distinguish between qualitatively different underlying mechanisms. If the goal is -- like in this case -- to identify a critical point where a system changes its behaviour, like when an undifferentiated social group begins to organise hierarchically, it is not very helpful to model its expressions as a log-normal. Identifying or excluding a power law is more indicative, since it says more clearly if there is or is not a hierarchical structure at hand.
+
+In the results of the empirical analyses presented in Chapter \ref{results-distfit}, the seemingly most characteristic difference between power-law and non-power-law tails (log-normal distributions) for settlements, was the proportion of the distribution included in the tail (Table \ref{tab:06-settle-tab}). Tails that were interpreted as power laws consisted of a maximum of 44\% of the data (at Nebelivka, and excluding Horný which was too small for confident results). Log-normal distributions without power-law tails on the other hand (interpreted as exponentials) had a minimum of 66\% and up to 93\% of the data in them. All tail \(x_{min}\) values were set at the point where they gave the best possible power-law fit. This may indicate that the distinction \emph{is} meaningful after all.
+
+Furthermore, the power laws identified for whole settlements were largely persistent when the distributions were subdivided into separate quarters, neighbourhoods and time samples, as already discussed in the previous chapter. Tests on synthetic data series indicated that aggregated data series (settlement data with low temporal resolution) would not generate false positive power-law distributions, as long as the data aggregation did not involve stacking of essentially differently distributed sub-sets, i.e.~different settlements or phases with marked shifts in material culture. Also, small sample sizes were shown to increase the risk of false positive power laws, while large sample sizes reduced the risk. Only the small settlement of Horný Ohaj seems to have given a false positive power-law tail, the other ones being the largest settlements in the sample. Together, these arguments further indicate that the settlements with identified power-law tails were indeed different from the rest, and that this difference was linked to settlement size.
+
+The results from the distribution fitting approach were overall very convincing -- the underlying theory is relatively sound and has great explanatory power, and the methods seem to be reliable also when applied to archaeological data. Interesting culture-historical conclusions were presented in the previous chapter. Future research could focus on extending this application to data sets of poorer quality. In this study, the analysed settlements were sampled primarily based on their extensive documentation and completeness. In most archaeological settings, settlements are not documented in their entire extent, but are ``cropped'' by a limited observation window, or subject to erosion, or with more complex stratigraphy. Also, as briefly discussed already, the closely related approach labelled Settlement Scaling should be more broadly applied to prehistoric settlement systems.
+
+\hypertarget{the-image-analysis-approach}{%
+\section{The image analysis approach}\label{the-image-analysis-approach}}
+
+Fractal analysis of synthetically generated image series with incremental changes in single variables, presented in Chapter \ref{images-methods}, resulted in some critical observations. The three tested variables which were considered to capture essential features of settlement layouts, namely hierarchical clustering, size distribution of pattern elements and random noise, all showed clear correlations both with fractal dimension and lacunarity, even though these tests were not large enough for formal statistical modelling. The first image in each series (which was identical for all three), represented an entirely regular grid, emulating a highly rigid, strictly planned settlement layout. As clustering, noise or size variability were added, fractal dimension decreased while lacunarity increased, at more or less the same rate for all three series.
+
+I believe this to be the most important finding of this thesis: fractal image analysis does quantify deviations from geometrically regular spatial patterns, and can -- for now in theory only -- be used as a proxy for degree of settlement planning versus household autonomy.
+
+However, a number of caveats were also made apparent, which together impeded the production of useful empirical results in this occasion. Firstly, variations in image density was shown to have a much greater effect both on fractal dimension and lacunarity than any of the targeted variables (Figure \ref{fig:08-all-im}), meaning that a slight change in density could potentially preclude any meaningful insights related to the other variables, if results were to be taken at face value (Thomas, Frankhauser, and De Keersmaecker 2007). The settlement images analysed in Chapter \ref{images-results} admittedly all had densities within comparable ranges, but it should be expected that if this analysis also was to include settlement types of much higher densities -- like the early Neolithic ``Anatolian village'' type discussed by Furholt (2016) -- these would show markedly higher fractal dimension and lower lacunarity estimates. Any interpretation in terms of regularity of spatial layout of such results would be flawed, since they would rather simply reflect the differences in settlement density which would drown the signal from the targeted effects.
+
+The strong effect from image density was seen in the diverging results between the time sample images of the Vráble plan and the remainder of empirical settlement plans (Figure \ref{fig:09-all}). The temporal samples constituted the only one of the image series where density was markedly different from the other (much lower density values), and this was reflected in the results with a clear partition between this series and the others in the scatter plot of fractal dimension and lacunarity. A rudimentary attempt was made to model away the effects from density on \emph{D} and \emph{L} results from the empirical images, which left apparently random \emph{D} residuals, while \emph{L} (the mean lacunarity was used) residuals were largely unaffected. This was not a formal analysis for many reasons, but the results still point in some directions:
 
 \begin{itemize}
 \item
-  Multiplicative processes: power laws vs.~log-normal, long debates Sheridan and Onodera (2018). Does it really matter in the end?
+  For fractal dimension, no clear pattern could be discerned that could not be reduced to image density. This could be explained either as the analysed images being too similar for any meaningful patterns to be detected, or that other factors (image size, resolution, edge effects) could prevent these patterns from being detected.
 \item
-  The most characteristic difference between power-law and non-power-law tails (log-normal distributions) for settlements, was the proportion of the distribution included in the tail (Table \ref{tab:06-settle-tab}). Tails that were interpreted as power laws consisted of a maximum of 44\% of the data (at Nebelivka, and excluding Horný which was too small for confident results). Log-normal distributions without power-law tails on the other hand (interpreted as exponentials) had a minimum of 66\% and up to 93\% of the data in them. All tail \(x_{min}\) values were set where they gave the best possible power-law fit. This may indicate that the distinction \emph{is} meaningful after all.
-
-  \begin{itemize}
-  \item
-    The power laws identified for whole settlements were largely persistent when the distributions were subdivided into separate quarters, neighbourhoods and time samples -- sub-samples that often had lower house counts than settlements that did not have power law tails.
-  \item
-    Tests on synthetic data series indicated that aggregated data series (settlement data with low temporal resolution) would not generate false positive power-law distributions, as long as the data aggregation did not involve stacking of essentially differently distributed sub-sets (i.e.~different settlements or phases with marked shifts in material culture).
-  \item
-    Small sample sizes were shown to increase the risk of false positive power laws, while large sample sizes reduced the risk. Only the small settlement of Horný seems to have given a false positive power-law tail, the other ones being the largest settlements in the sample.
-  \item
-    Together, these arguments further indicate that the settlements with identified power-law tails were indeed different from the rest, and that this difference was linked to settlement size.
-  \end{itemize}
-\item
-  Power-law distribution in house sizes were identified for the largest settlements only,
-
-  \begin{itemize}
-  \tightlist
-  \item
-    Also the whole settlements without power-law tails would have even smaller coeval plans than Vráble, further strengthening the argument of a correlation between settlement size and hierarchy.
-  \end{itemize}
-\item
-  Conclusion of these observations: Social hierarchy emerges as a result of social groups growing beyond a critical threshold, while cultural specifics are of less importance.
-
-  \begin{itemize}
-  \item
-    This is completely uncontroversial from a dynamical systems point of view, and there are several social (Alberti 2014; G. A. Johnson 1982; De Landa 2006) and psychological (Dunbar 2023; Zhou et al. 2005) explanations for how such emergence takes place.
-  \item
-    In archaeology, such explanations are often unpopular, since we like to believe that social organisation is culture-specific and largely determined by human agency. However, this view can paradoxically lead to seeing archaeological cultures as monolithic in how their society is organised, while there might well be more intra-culture variation than what is often recognised.
-  \item
-    From this I argue that we must be open to the possibility that social life could have been as different between small and large settlements within single archaeological cultures as it would be between settlements of different cultures within the same period.
-  \item
-    Lots of caveats:
-
-    \begin{itemize}
-    \item
-      The possibility of seasonality of Trypillia mega-sites -- which is not necessarily contradictory to the above conclusion. Discussion in Graeber and Wengrow (2021) on seasonality also in social organisation.
-    \item
-      These emerging hierarchies would not explain the subsequent disintegration of neither Linear Pottery nor Trypillia culture groups, since the largest settlements are rather atypical for each of them (\#recheck this after chap 3).
-    \end{itemize}
-  \end{itemize}
-\item
-  Settlement size hierarchies are seemingly much more difficult to observe for prehistoric contexts, since the contemporaneity of settlements and their coeval sizes must first be established. Much of earlier attempts of doing this have been flawed both by their use of theory and method (see review in Grove 2011), but current developments -- framed as Settlement Scaling Theory (Bettencourt 2021; Lobo et al. 2020; Michael E. Smith et al. 2021) -- show promising results, albeit for more recent periods than what is considered in this study.
-
-  \begin{itemize}
-  \item
-    In addition to the problem of contemporaneity of settlements, their total size often remains unknown since in the majority of cases, neolithic settlements are known through surface finds and partial excavations.
-  \item
-    The ongoing revolution in the use of remote sensing imagery (quality of documentation and price/availability) may change this situation soon.
-  \item
-    More theoretical and methodological studies are needed to determine the necessary requirements, specifically of spatial and temporal resolution, for settlement scaling to give accurate results.
-  \end{itemize}
+  For lacunarity, the observed patterns were minimally affected by modelling out effects from density. Since it was shown that the two variables strongly correlated, the fact that lacunarity still could not be reduced to density indicates that the two are also inherently connected beyond a simple correlation. Lacunarity quantifies the regularity (the size distribution) of gaps in a pattern -- it depends on the presence and quantity of gaps and thus on density. On the other hand, lacunarity did prove to quantify textures independently of density. Only larger and more systematic studies could allow for further understanding of how these effects can be made more clear.
 \end{itemize}
 
-\hypertarget{image-analysis}{%
-\section{Image analysis}\label{image-analysis}}
+From this, it could be tentatively concluded that lacunarity would be more useful for the purpose intended here, than fractal dimension. Another result of this analysis was that the even though the absolute value ranges differ between the two summary statistics of lacunarity reported here -- exponent and mean lacunarity -- the distribution of results were to a great extent equivalent, and any one of them can be used, as long as it is clear which one it is. I have elsewhere shown that prefactor lacunarity also is very strongly correlated to mean lacunarity, to the extent that their measured effects are nearly indistinguishable (Bruvoll, n.d.). However, since the absolute value ranges between these summary statistics differ, it is important to report which one is being used to allow for comparisons between studies (Farías-Pelayo 2017, 2015).
 
-fdsa
+Another problematic side of using fractal dimension and/or lacunarity as proxies for village planning, is that the different texture-related variables which were shown to have similar effects do not translate into social processes in a uniform way. Random noise -- here obtained by letting houses perform random walks -- clearly illustrates non-adherence to overall rules and planning. A settlement plan where every household constructs wherever they like without any concern to the placement of other houses, would resemble white noise. Unequal size distributions on the other hand, are illustrative of hierarchy, as seen in the chapters devoted to distribution fitting. Higher levels of hierarchy would be expected to lead to more detailed settlement planning, maybe even more so in democratic political systems than in autocratic ones. Hierarchical clustering is also, clearly, hierarchical. However, its social implications are not necessarily straightforward.
 
-The relationship between image density (built-up area) and fractal dimension was evaluated by Thomas, Frankhauser, and De Keersmaecker (2007), where they showed that these two parameters, under certain conditions (constant observation window, prefactor values close to 1), are exponentially correlated. They furthermore showed that observation window size and shape, as well as centroid placement, have little influence on \emph{D}, while they have more influence on density when the pattern is not homogeneous. They do show, however, that images with the same density may have quite much variation in \emph{D}, which is reflected in the layouts. Judging from their examples, more clustered layouts give higher \emph{D} values, while more dispersed or dusty layouts give lower \emph{D}, when density is constant. I ignore the use of prefactor values. According to Thomas, Frankhauser, and De Keersmaecker (2007), density is a crude measure of the overall intensity of the pattern, while fractal dimension is characterises the morphological structure, though it is not directly descriptive.
-
-\hypertarget{concluding-remarks}{%
-\section{Concluding remarks?}\label{concluding-remarks}}
-
-Check for ``fractal + archaeology'' in WorldCat.
-
-END Chapter
+In their early paper pioneering the use of these methods in the study of archaeological settlements, Brown and Witschey (2003) made the case that hierarchical clustering -- ``clusters of clusters of clusters'' -- were indicative of nested levels of social cohesion in classical Maya society, from family units, lineages and clans, to larger sodalities and ultimately the city state at the highest level. However, they interpreted this simply from obtaining a fractional dimension value (rather than an integer) from box-counting of the settlement plan, which at this point should be easily recognised as a hasty conclusion. Similarly, Oleschko et al. (2000) compared the Ciudadela complex in Teotihuacán with the mathematical fractal known as the Sierpinski carpet, simply from the close fractal dimension result they obtained (at \(D \approx 1.89\)). The input images they used for the analysis were seemingly black-and-white aerial and satellite photographs, dominated by shadows, vegetation, tracks and other unrelated surface features. While using remote sensing imagery (including geomagnetic) directly in fractal analysis of archaeological features would be an intriguing and potentially rewarding exercise, it seems at the current stage that the method is far from ready to be used uncritically. One possible avenue that seems to become ever more realistic, is using machine learning and artificial intelligence techniques for automating the recognition of architectural features from remote sensing imagery, to then be subject to analysis (see e.g. Guyot et al. 2021; Olivier and Vaart 2021). Though we should not expect machines to do the critical thinking for us any time soon, they could probably take over the laborious task of finding and redrawing features of interest (which would of course need control checks), thus speeding up such studies considerably, and opening up the possibility of performing analyses on drastically larger data sets.
 
 \hypertarget{conclusion}{%
 \chapter{Conclusion and Outlook}\label{conclusion}}
@@ -2206,8 +2144,18 @@ END Chapter
   More?
 \end{itemize}
 
-\hypertarget{concluding-remarks-1}{%
-\section{Concluding remarks}\label{concluding-remarks-1}}
+\hypertarget{concluding-remarks}{%
+\section{Concluding remarks}\label{concluding-remarks}}
+
+Also mention here fractals or related concepts used as a metaphor, with no mathematics involved (e.g. J. Chapman et al. 2006; Sherratt 2004; Sindbæk 2022; Whitridge 2016).
+
+Check for ``fractal + archaeology'' in WorldCat.
+
+Delete if it doesn' fit:
+
+In archaeology, such explanations are often unpopular, since we like to believe that social organisation is culture-specific and largely determined by human agency. However, this view can paradoxically lead to seeing archaeological cultures as monolithic in how their society is organised, while there might well be more intra-culture variation than what is often recognised.
+
+From this I argue that we must be open to the possibility that social life could have been as different between small and large settlements within single archaeological cultures as it would be between settlements of different cultures within the same period.
 
 END Thesis
 
@@ -2335,6 +2283,9 @@ Brown, Clifford, and Walter Witschey. 2003. {``The Fractal Geometry of Ancient M
 
 \leavevmode\vadjust pre{\hypertarget{ref-brown2005}{}}%
 Brown, Clifford, Walter Witschey, and Larry Liebovitch. 2005. {``The Broken past: Fractals in Archaeology.''} \emph{Journal of archaeological method and theory} 12 (1): 3778. \url{https://doi.org/10.1007/s10816-005-2396-6}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-bruck2021}{}}%
+Brück, Joanna. 2021. {``Ancient DNA, Kinship and Relational Identities in Bronze Age Britain.''} \emph{Antiquity} 95 (379): 228--37. \url{https://doi.org/10.15184/aqy.2020.216}.
 
 \leavevmode\vadjust pre{\hypertarget{ref-bruvollforthcoming}{}}%
 Bruvoll, Hallvard. n.d. {``Quantifying Spatial Complexity of Settlement Plans Through Fractal Analysis.''} \emph{Journal of Archaeological Method and Theory}.
@@ -2492,6 +2443,9 @@ Farías-Pelayo, Sabrina. 2015. {``La Cultura Xajay. Los otomíes al sur de la fr
 \leavevmode\vadjust pre{\hypertarget{ref-farias-pelayo2017}{}}%
 ---------. 2017. {``Characterization of Cultural Traits by Means of Fractal Analysis.''} In, edited by Fernando Brambila. IntechOpen. \href{https://DOI:\%2010.5772/67893}{DOI: 10.5772/67893}.
 
+\leavevmode\vadjust pre{\hypertarget{ref-farruggia2002}{}}%
+Farruggia, Jean-Paul. 2002. {``Une Crise Majeure de La Civilisation Du Néolithique Danubien Des Années 5100 Avant Notre Ère.''} \emph{Archeologické Rozhledy} 54 (1): 44--98.
+
 \leavevmode\vadjust pre{\hypertarget{ref-fisher2009}{}}%
 Fisher, Kevin D. 2009. {``Placing Social Interaction: An Integrative Approach to Analyzing Past Built Environments.''} \emph{Journal of Anthropological Archaeology} 28 (4): 439--57. \url{https://doi.org/10.1016/j.jaa.2009.09.001}.
 
@@ -2513,6 +2467,9 @@ Frirdich, Christiane. 2005. {``Struktur und Dynamik der bandkeramischen Landnahm
 \leavevmode\vadjust pre{\hypertarget{ref-furholt2016}{}}%
 Furholt, Martin. 2016. {``Settlement Layout and Social Organisation in the Earliest European Neolithic.''} \emph{Antiquity} 90 (353): 1196--1212.
 
+\leavevmode\vadjust pre{\hypertarget{ref-furholt2021a}{}}%
+---------. 2021. {``Exploring Human Possibilities.''} \emph{Antiquity} 95 (379): 244--46. \url{https://doi.org/10.15184/aqy.2020.233}.
+
 \leavevmode\vadjust pre{\hypertarget{ref-furholt2020}{}}%
 Furholt, Martin, Colin Grier, Matthew Spriggs, and Timothy Earle. 2020. {``Political Economy in the Archaeology of Emergent Complexity: A Synthesis of Bottom-Up and Top-Down Approaches.''} \emph{Journal of Archaeological Method and Theory} 27 (2): 157--91. \url{https://doi.org/10.1007/s10816-019-09422-0}.
 
@@ -2521,6 +2478,9 @@ Furholt, Martin, Johannes Müller, Alena Bistáková, Maria Wunderlich, Ivan Che
 
 \leavevmode\vadjust pre{\hypertarget{ref-furholt2020b}{}}%
 Furholt, Martin, Nils Müller-Scheeßel, Maria Wunderlich, Ivan Cheben, and Johannes Müller. 2020. {``Communality and Discord in an Early Neolithic Settlement Agglomeration: The LBK Site of Vráble, Southwest Slovakia.''} \emph{Cambridge Archaeological Journal} 30 (3): 469--89.
+
+\leavevmode\vadjust pre{\hypertarget{ref-gaydarska2020}{}}%
+Gaydarska, Bisserka, ed. 2020. \emph{Early Urbanism in Europe - the Trypillia Megasites of the Ukrainian Forest-Steppe}. Warsaw: De Gruyter.
 
 \leavevmode\vadjust pre{\hypertarget{ref-gaydarska2020c}{}}%
 Gaydarska, Bisserka, and John Chapman. 2020a. {``Discussion.''} In, edited by Bisserka Gaydarska, 415--507. Warsaw: De Gruyter.
@@ -2575,6 +2535,9 @@ Gronenborn, Detlef, Hans-Christoph Strien, Stephan Dietrich, and Frank Sirocko. 
 
 \leavevmode\vadjust pre{\hypertarget{ref-grove2011}{}}%
 Grove, Matt. 2011. {``An Archaeological Signature of Multi-Level Social Systems: The Case of the Irish Bronze Age.''} \emph{Journal of Anthropological Archaeology} 30 (1): 44--61. \url{https://doi.org/10.1016/j.jaa.2010.12.002}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-guyot2021}{}}%
+Guyot, Alexandre, Marc Lennon, Thierry Lorho, and Laurence Hubert-Moy. 2021. {``Combined Detection and Segmentation of Archeological Structures from LiDAR Data Using a Deep Learning Approach.''} \emph{Journal of Computer Applications in Archaeology} 4 (1): 119. \url{https://doi.org/10.5334/jcaa.64}.
 
 \leavevmode\vadjust pre{\hypertarget{ref-haas2015}{}}%
 Haas, W. Randall, Cynthia J. Klink, Greg J. Maggard, and Mark S. Aldenderfer. 2015. {``Settlement-Size Scaling among Prehistoric Hunter-Gatherer Settlement Systems in the New World.''} \emph{PloS One} 10 (11): e0140127. \url{https://doi.org/10.1371/journal.pone.0140127}.
@@ -2849,14 +2812,20 @@ Newman, M. E. J. 2005. {``Power Laws, Pareto Distributions and Zipf's Law.''} \e
 \leavevmode\vadjust pre{\hypertarget{ref-nordquist2001}{}}%
 Nordquist, Pär. 2001. {``Hierarkiseringsprocesser: om konstruktion av social ojämlikhet i Skåne, 5500-1100 f.Kr.''} PhD thesis, Umeå.
 
+\leavevmode\vadjust pre{\hypertarget{ref-ohlrau2015}{}}%
+Ohlrau, René. 2015. {``Trypillia Großsiedlungen: Geomagnetische Prospektion Und Architektursoziologische Perspektiven (MSc Thesis Kiel University).''} \emph{Journal of Neolithic Archaeology} 17: 17--99. \href{https://doi.org/doi\%2010.12766/jna.2015.3}{https://doi.org/doi 10.12766/jna.2015.3}.
+
 \leavevmode\vadjust pre{\hypertarget{ref-ohlrau2020}{}}%
-Ohlrau, René. 2020. \emph{Maidanets'ke - Development and Decline of a Trypillia Mega-Site in Central Ukraine}. Scales of Transformation. Leiden: Sidestone Press.
+---------. 2020. \emph{Maidanets'ke - Development and Decline of a Trypillia Mega-Site in Central Ukraine}. Scales of Transformation. Leiden: Sidestone Press.
 
 \leavevmode\vadjust pre{\hypertarget{ref-ohlrau2022}{}}%
 ---------. 2022. {``Trypillia Mega-Sites: Neither Urban nor Low-Density?''} \emph{Journal of Urban Archaeology} 5 (January): 81--100. \url{https://doi.org/10.1484/J.JUA.5.129844}.
 
-\leavevmode\vadjust pre{\hypertarget{ref-oleschko}{}}%
+\leavevmode\vadjust pre{\hypertarget{ref-oleschko2000}{}}%
 Oleschko, Klaudia, Rosa Brambila, Fernando Brambila, Jean-Francois Parrot, and Pedro López. 2000. {``Fractal Analysis of Teotihuacan, Mexico.''} \emph{Journal of Archaeological Science} 27 (11): 1007--16. \url{https://doi.org/10.1006/jasc.1999.0509}.
+
+\leavevmode\vadjust pre{\hypertarget{ref-olivier2021}{}}%
+Olivier, Martin, and Wouter Verschoof-van der Vaart. 2021. {``Implementing State-of-the-Art Deep Learning Approaches for Archaeological Object Detection in Remotely-Sensed Data: The Results of Cross-Domain Collaboration.''} \emph{Journal of Computer Applications in Archaeology} 4 (1): 274289. \url{https://doi.org/10.5334/jcaa.78}.
 
 \leavevmode\vadjust pre{\hypertarget{ref-packard2003}{}}%
 Packard, Jane. 2003. {``Wolf Behavior: Reproductive, Social and Intelligent.''} In \emph{Wolves: Behavior, Ecology, and Conservation}, edited by L David Mech and Luigi Boitani, 35--65. {Chicago and London}: {The University of Chicago Press}.
@@ -3014,9 +2983,6 @@ Smith, Michael E. 1987. {``Household Possessions and Wealth in Agrarian States: 
 \leavevmode\vadjust pre{\hypertarget{ref-smith2011}{}}%
 Smith, Michael E., ed. 2011. \emph{The Comparative Archaeology of Complex Societies}. New York: Cambridge University Press. \url{https://doi.org/10.1017/CBO9781139022712}.
 
-\leavevmode\vadjust pre{\hypertarget{ref-smith2021}{}}%
-Smith, Michael E., Scott G. Ortman, José Lobo, Claire E. Ebert, Amy E. Thompson, Keith M. Prufer, Rodrigo Liendo Stuardo, and Robert M. Rosenswig. 2021. {``The Low-Density Urban Systems of the Classic Period Maya and Izapa: Insights from Settlement Scaling Theory.''} \emph{Latin American Antiquity} 32 (1): 120--37. \url{https://doi.org/10.1017/laq.2020.80}.
-
 \leavevmode\vadjust pre{\hypertarget{ref-souvatzi2017}{}}%
 Souvatzi, Stella. 2017. {``Kinship and Social Archaeology.''} \emph{Cross-cultural research} 51 (2): 172195. \url{https://doi.org/10.1177/1069397117691028}.
 
@@ -3074,6 +3040,9 @@ Whittle, Alasdair. 2022. {``The Danube in Prehistory.''} \emph{European Journal 
 \leavevmode\vadjust pre{\hypertarget{ref-whittle2013a}{}}%
 Whittle, Alasdair, and Penny Bickle. 2013. {``Performing LBK Lifeways.''} In, edited by Alasdair Whittle and Penny Bickle, 385--402. Oxbow Books. \url{https://www.jstor.org/stable/j.ctt14bs18v.21}.
 
+\leavevmode\vadjust pre{\hypertarget{ref-whittle2014}{}}%
+---------. 2014. \emph{Early farmers: the view from archaeology and science}. First edition. Vol. 198. Proceedings of the British Academy. Oxford: Published for the British Academy by Oxford University Press.
+
 \leavevmode\vadjust pre{\hypertarget{ref-wickham2016}{}}%
 Wickham, Hadley. 2016. \emph{Ggplot2: Elegant Graphics for Data Analysis}. 2nd ed. 2016. Use r! Cham: Springer International Publishing : Imprint: Springer. \url{https://doi.org/10.1007/978-3-319-24277-4}.
 
@@ -3124,6 +3093,93 @@ Zipf, George Kingsley. 1949. \emph{Human behavior and the principle of least eff
 \hypertarget{appendix-appendix}{%
 \appendix \addcontentsline{toc}{chapter}{\appendixname}}
 
+
+\hypertarget{append-archaeo}{%
+\chapter{Archaeological plan images}\label{append-archaeo}}
+
+The following plates include image series of archaeological settlement plans analysed in Chapter \ref{images-results}. The different image series are not to scale between them.
+
+\begin{itemize}
+\item
+  Settlements -- images are to scale within series
+\item
+  Quarters -- each plate is to scale internally, but not between each other
+\item
+  Time samples -- images are to scale within series
+
+  \begin{itemize}
+  \tightlist
+  \item
+    Table \ref{tab:append-time-tab} -- time samples, modelled sample dates and house orientations
+  \end{itemize}
+\end{itemize}
+
+See overview figures in Chapter \ref{material} for absolute scales, and details on image preparation.
+
+Original image files can be downloaded from project repository.
+
+\newpage
+
+\begin{center}\includegraphics[width=1\linewidth]{Appendix/settlements} \end{center}
+
+\newpage
+
+\begin{center}\includegraphics[width=1\linewidth]{Appendix/maidanetske} \end{center}
+
+\newpage
+
+\begin{center}\includegraphics[width=1\linewidth]{Appendix/nebelivka} \end{center}
+
+\newpage
+
+\begin{center}\includegraphics[width=1\linewidth]{Appendix/quart_neb} \end{center}
+
+\newpage
+
+\begin{center}\includegraphics[width=1\linewidth]{Appendix/quart_vra} \end{center}
+
+\newpage
+
+\begin{center}\includegraphics[width=1\linewidth]{Appendix/time_1} \end{center}
+
+\newpage
+
+\begin{center}\includegraphics[width=1\linewidth]{Appendix/time_2} \end{center}
+
+\newpage
+
+
+
+\begin{table}
+
+\caption[Vráble time samples, modelled dates and house orientations]{\label{tab:append-time-tab}Time samples, modelled sample dates, maximum and minimum house orientations of included houses. Details in Section \ref{time-samples}}
+\centering
+\begin{tabular}[t]{rrrrr}
+\toprule
+dates & sample & degrees & abs\_degrees & abs\_degrees\_max\\
+\midrule
+\cellcolor{gray!6}{5290} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{33.96494} & \cellcolor{gray!6}{33.96494} & \cellcolor{gray!6}{37.525805}\\
+5270 & 2 & 31.37522 & 31.37522 & 34.936085\\
+\cellcolor{gray!6}{5250} & \cellcolor{gray!6}{3} & \cellcolor{gray!6}{28.78550} & \cellcolor{gray!6}{28.78550} & \cellcolor{gray!6}{32.346365}\\
+5230 & 4 & 26.19578 & 26.19578 & 29.756645\\
+\cellcolor{gray!6}{5210} & \cellcolor{gray!6}{5} & \cellcolor{gray!6}{23.60606} & \cellcolor{gray!6}{23.60606} & \cellcolor{gray!6}{27.166925}\\
+\addlinespace
+5190 & 6 & 21.01634 & 21.01634 & 24.577205\\
+\cellcolor{gray!6}{5170} & \cellcolor{gray!6}{7} & \cellcolor{gray!6}{18.42662} & \cellcolor{gray!6}{18.42662} & \cellcolor{gray!6}{21.987485}\\
+5150 & 8 & 15.83690 & 15.83690 & 19.397765\\
+\cellcolor{gray!6}{5130} & \cellcolor{gray!6}{9} & \cellcolor{gray!6}{13.24718} & \cellcolor{gray!6}{13.24718} & \cellcolor{gray!6}{16.808045}\\
+5110 & 10 & 10.65746 & 10.65746 & 14.218325\\
+\addlinespace
+\cellcolor{gray!6}{5090} & \cellcolor{gray!6}{11} & \cellcolor{gray!6}{8.06774} & \cellcolor{gray!6}{8.06774} & \cellcolor{gray!6}{11.628605}\\
+5070 & 12 & 5.47802 & 5.47802 & 9.038885\\
+\cellcolor{gray!6}{5050} & \cellcolor{gray!6}{13} & \cellcolor{gray!6}{2.88830} & \cellcolor{gray!6}{2.88830} & \cellcolor{gray!6}{6.449165}\\
+5030 & 14 & 0.29858 & 0.29858 & 3.859445\\
+\cellcolor{gray!6}{5010} & \cellcolor{gray!6}{15} & \cellcolor{gray!6}{-2.29114} & \cellcolor{gray!6}{357.70886} & \cellcolor{gray!6}{361.269725}\\
+\addlinespace
+4990 & 16 & -4.88086 & 355.11914 & 358.680005\\
+\bottomrule
+\end{tabular}
+\end{table}
 
 \hypertarget{append-synth}{%
 \chapter{Synthetic images}\label{append-synth}}
@@ -3178,84 +3234,5 @@ Original image files and R code for generating them can be downloaded from proje
 \newpage
 
 \begin{center}\includegraphics[width=1\linewidth]{Appendix/noise} \end{center}
-
-\hypertarget{append-archaeo}{%
-\chapter{Archaeological plan images}\label{append-archaeo}}
-
-The following plates include image series of archaeological settlement plans analysed in Chapter \ref{images-results}. The different image series are not to scale between them.
-
-\begin{itemize}
-\item
-  Settlements -- images are to scale within series
-\item
-  Quarters -- each plate is to scale internally, but not between each other
-\item
-  Time samples -- images are to scale within series
-\end{itemize}
-
-
-
-\begin{table}
-
-\caption[Vráble time samples, modelled dates and house orientations]{\label{tab:append-time-tab}Time samples, modelled sample dates, maximum and minimum house orientations of included houses. Details in Section \ref{time-samples}}
-\centering
-\begin{tabular}[t]{rrrrr}
-\toprule
-dates & sample & degrees & abs\_degrees & abs\_degrees\_max\\
-\midrule
-\cellcolor{gray!6}{5290} & \cellcolor{gray!6}{1} & \cellcolor{gray!6}{33.96494} & \cellcolor{gray!6}{33.96494} & \cellcolor{gray!6}{37.525805}\\
-5270 & 2 & 31.37522 & 31.37522 & 34.936085\\
-\cellcolor{gray!6}{5250} & \cellcolor{gray!6}{3} & \cellcolor{gray!6}{28.78550} & \cellcolor{gray!6}{28.78550} & \cellcolor{gray!6}{32.346365}\\
-5230 & 4 & 26.19578 & 26.19578 & 29.756645\\
-\cellcolor{gray!6}{5210} & \cellcolor{gray!6}{5} & \cellcolor{gray!6}{23.60606} & \cellcolor{gray!6}{23.60606} & \cellcolor{gray!6}{27.166925}\\
-\addlinespace
-5190 & 6 & 21.01634 & 21.01634 & 24.577205\\
-\cellcolor{gray!6}{5170} & \cellcolor{gray!6}{7} & \cellcolor{gray!6}{18.42662} & \cellcolor{gray!6}{18.42662} & \cellcolor{gray!6}{21.987485}\\
-5150 & 8 & 15.83690 & 15.83690 & 19.397765\\
-\cellcolor{gray!6}{5130} & \cellcolor{gray!6}{9} & \cellcolor{gray!6}{13.24718} & \cellcolor{gray!6}{13.24718} & \cellcolor{gray!6}{16.808045}\\
-5110 & 10 & 10.65746 & 10.65746 & 14.218325\\
-\addlinespace
-\cellcolor{gray!6}{5090} & \cellcolor{gray!6}{11} & \cellcolor{gray!6}{8.06774} & \cellcolor{gray!6}{8.06774} & \cellcolor{gray!6}{11.628605}\\
-5070 & 12 & 5.47802 & 5.47802 & 9.038885\\
-\cellcolor{gray!6}{5050} & \cellcolor{gray!6}{13} & \cellcolor{gray!6}{2.88830} & \cellcolor{gray!6}{2.88830} & \cellcolor{gray!6}{6.449165}\\
-5030 & 14 & 0.29858 & 0.29858 & 3.859445\\
-\cellcolor{gray!6}{5010} & \cellcolor{gray!6}{15} & \cellcolor{gray!6}{-2.29114} & \cellcolor{gray!6}{357.70886} & \cellcolor{gray!6}{361.269725}\\
-\addlinespace
-4990 & 16 & -4.88086 & 355.11914 & 358.680005\\
-\bottomrule
-\end{tabular}
-\end{table}
-
-See overview figures in Chapter \ref{material} for absolute scales, and details on image preparation.
-
-Original image files can be downloaded from project repository.
-
-\newpage
-
-\begin{center}\includegraphics[width=1\linewidth]{Appendix/settlements} \end{center}
-
-\newpage
-
-\begin{center}\includegraphics[width=1\linewidth]{Appendix/maidanetske} \end{center}
-
-\newpage
-
-\begin{center}\includegraphics[width=1\linewidth]{Appendix/nebelivka} \end{center}
-
-\newpage
-
-\begin{center}\includegraphics[width=1\linewidth]{Appendix/quart_neb} \end{center}
-
-\newpage
-
-\begin{center}\includegraphics[width=1\linewidth]{Appendix/quart_vra} \end{center}
-
-\newpage
-
-\begin{center}\includegraphics[width=1\linewidth]{Appendix/time_1} \end{center}
-
-\newpage
-
-\begin{center}\includegraphics[width=1\linewidth]{Appendix/time_2} \end{center}
 
 \end{document}
