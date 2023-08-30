@@ -1,3 +1,4 @@
+\pagestyle{plain}
 ::: {#refs}
 # References {.unnumbered}
 :::

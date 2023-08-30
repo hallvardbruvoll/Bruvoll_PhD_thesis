@@ -1,8 +1,26 @@
 # (APPENDIX) Appendix {.unnumbered}
 
-# This is my first appendix
+# Synthetic images {#append-synth}
 
-Describe the content: synthetic images
+The following plates contain the synthetic image series used for analysis in Chapter \@ref(images-methods), in the following order (plates are read row-wise from top left):
+
+-   Variable image size and resolution -- pattern is zoomed in as the image gets larger
+
+-   Variable image size and observation window -- as image gets larger, a larger extent of the pattern becomes visible; resolution stays the same
+
+-   Variable resolution and observation window -- pattern is zoomed out as larger extent is included; image size is fixed
+
+-   Variable image density (from here, image size, resolution and observation window are constant)
+
+-   Variable size distribution of elements
+
+-   Variable level of hierarchical clustering
+
+-   Variable level of added random noise
+
+See chapter text for details.
+
+Original image files and R code for generating them can be downloaded from project repository.
 
 \newpage
 
@@ -46,6 +64,68 @@ include_graphics("Appendix/clustering.pdf")
 include_graphics("Appendix/noise.pdf")
 ```
 
-# This is my second one
+# Archaeological plan images {#append-archaeo}
 
-Include archaeological images
+The following plates include image series of archaeological settlement plans analysed in Chapter \@ref(images-results). The different image series are not to scale between them.
+
+-   Settlements -- images are to scale within series
+
+-   Quarters -- each plate is to scale internally, but not between each other
+
+-   Time samples -- images are to scale within series
+
+(ref:time-tab) Time samples, modelled sample dates, maximum and minimum house orientations of included houses. Details in Section \@ref(time-samples)
+
+```{r append-time-tab}
+load("Data/time_samples.RData")
+kable(time_samples, booktabs = TRUE, caption = "(ref:time-tab)",
+      caption.short = "Vráble time samples, modelled dates and house orientations") %>% 
+#      linesep = c(rep("", 7), "\\addlinespace")) %>%
+  kable_styling(latex_options = c("striped", "scale down"))
+```
+
+See overview figures in Chapter \@ref(material) for absolute scales, and details on image preparation.
+
+Original image files can be downloaded from project repository.
+
+\newpage
+
+```{r out.width = "100%"}
+include_graphics("Appendix/settlements.pdf")
+```
+
+\newpage
+
+```{r out.width = "100%"}
+include_graphics("Appendix/maidanetske.pdf")
+```
+
+\newpage
+
+```{r out.width = "100%"}
+include_graphics("Appendix/nebelivka.pdf")
+```
+
+\newpage
+
+```{r out.width = "100%"}
+include_graphics("Appendix/quart_neb.pdf")
+```
+
+\newpage
+
+```{r out.width = "100%"}
+include_graphics("Appendix/quart_vra.pdf")
+```
+
+\newpage
+
+```{r out.width = "100%"}
+include_graphics("Appendix/time_1.pdf")
+```
+
+\newpage
+
+```{r out.width = "100%"}
+include_graphics("Appendix/time_2.pdf")
+```
