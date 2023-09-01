@@ -42,30 +42,16 @@ $$
 
 or the variance to square mean ratio of foreground pixel mass [see @hingee2019 for an extensive review of the development of lacunarity measures since Mandelbrot]. It quantifies the distribution of voids or gaps in the pattern (*lacuna* being Latin for gap or lake), and has since been included in a variety of studies of texture, however mostly within the natural sciences.
 
-While these measures are held to quantify the regularity or irregularity of spatial patterns, applying them to archaeological settlement plans is not straight-forward.
+While these measures are held to quantify the regularity or irregularity of spatial patterns, applying them to archaeological settlement plans is not straight-forward. First of all, it is not entirely beyond doubt that fractal settlement plans are always unconsciously emergent [@eglash1999]. Also, it is not obvious how exactly fractal dimension and lacunarity estimates on empirical plans differentiate between Euclidean and fractal patterns. I recently showed that random noise in synthetically generated images was correlated to both *D* and *L*, but there are challenges involved in transferring this to archaeological settlement plans [@bruvollforthcoming]. The interaction between other texture-related variables and their relative influence on fractal dimension and lacunarity estimates are largely under-studies, seemingly in any discipline (in archaeology these discussions are largely absent, as reviewed below).
 
-However, there are num
-
--   I need to find some references here! @eglash1999
-
--   Euclid: grids, lines, circles -- how humans think in shapes. Social settings: architect/planner, strong common institutions/ideals (examples?)
-
--   Mandelbrot: irregular, self-similar, scale independent (i.e. fractal) shapes -- emergent, not consciously preconceived. Self-organisation. Does the "no pattern" case exist? Emergence from repetitive sequences of simple choices/mechanisms. Examples.
-
--   Binary or continuum? Needs to be studied empirically.
-
-The relationship between image density (built-up area) and fractal dimension was evaluated by @thomas2007, who showed that these two parameters, under certain conditions (constant observation window, prefactor values close to 1), are exponentially correlated. They furthermore showed that observation window size and shape, as well as centroid placement, have little influence on *D*, while they have more influence on density when the pattern is not homogeneous. They do show, however, that images with the same density may have quite much variation in *D*, which is reflected in the layouts. Judging from their examples, more clustered layouts give higher *D* values, while more dispersed or dusty layouts give lower *D*, when density is constant. According to @thomas2007, density is a crude measure of the overall intensity of the pattern, while fractal dimension is characterises the morphological structure, though it is not directly descriptive.
+The relationship between image density (built-up area) and fractal dimension was evaluated by @thomas2007, who showed that these two parameters, under certain conditions (constant observation window, prefactor values close to 1), are exponentially correlated. They furthermore showed that observation window size and shape, as well as centroid placement, have little influence on *D*, while they have more influence on density when the pattern is not homogeneous. They do show, however, that images with the same density may have quite much variation in *D*, which is reflected in the layouts. Judging from their examples, more clustered layouts give higher *D* values, while more dispersed or dusty layouts give lower *D*, when density is constant. According to @thomas2007, density is a crude measure of the overall intensity of the pattern, while fractal dimension is characterises the morphological structure, though it is not directly descriptive. Lacunarity measures were tested on urban patterns by @myint2005, but have not yet become a standard tool in quantitative urban studies.
 
 ## Fractal image analysis in archaeology {#image-archaeo}
 
-Visibility Graph Analysis/connectivity: Turner 2001, applied in Buchanan 2020
+Intra-site spatial analysis approaches have in general received much attention in archaeology, and analytical methods and techniques specifically related to architecture and spatial organisation are known as space syntax, point-pattern analysis, Ripley's K, visibility graph analysis, viewshed analysis and access analysis, to name a few [see @gillings2020 for a recent comprehensive review]. However, few of these, if any, use complexity theoretical frameworks [the percolation analysis proposed by @maddison2020 is seemingly an exception], and I believe fractal analysis can become a valuable supplement to the panoply of spatial analysis methods, in particular because of its explicit theoretical framework.
 
-Viewshed Analysis: applied in Ohlrau 2015?
+In archaeology, seemingly all previous applications of fractal image analysis has been done in Mesoamerican contexts. The earliest example of which I am aware, is a study by [@oleschko2000; commented on by @brown2005] on the Ciudadela complex in Teotihuacán, Mexico, where the measured fractal dimension was reported to be close to that of the mathematical fractal known as the Sierpinski carpet. From this the authors argued that the two may have similar underlying generative mechanisms. @brown2003 adapted the method further to archaeological settlement plan drawings, and compared measurements on different quarters and settlements from classic Maya Yucatán.
 
-Materiality of built space??
+The study which contributed the most with impetus for the analysis presented here, was done by [@farias-pelayo2017; more detailed in @farias-pelayo2015], who, apparently as the first in archaeology, added lacunarity measures to better apprehend the particular patterns of lithic artefacts, petroglyphs and site topography (not settlement layout) within the Xajay culture in central Mexico. By combining fractal measures of different material series into a single index, she claimed to better characterise this culture which has proven difficult to characterise through traditional typology.
 
-@artursson2010 (Bronze Age, descriptive/interpretive approach).
-
-Access analysis: @fisher2009
-
-Viewshed analysis:
+These limited developments are the reasons for the largely exploratory and experimental nature of this part of the thesis, where the methodological discussions provided are probably of as much, if not more interest than the results from the archaeological analysis.
