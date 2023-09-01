@@ -1,5 +1,6 @@
 # Chaos game scripts for plotting fractals
 library(tidyverse)
+library(cowplot) # for combining multiplre plots
 
 # Sierpinski triangle -----------------------------------------------------
 
@@ -143,6 +144,36 @@ von_koch_curve <- ggplot(von_koch)+
   theme_void()
 
 save(von_koch_curve, file = "Results/von_koch.RData")
+
+  # Make illustration
+koch_gener <- tibble(x = c(0,0,1,1),
+                     y = c(0,0,0,0),
+                     im = c(1,1,1,1))
+
+koch_gener_im <- ggplot(data = koch_gener)+
+  aes(x, y)+
+  geom_path(size = 0.75)+
+  theme_void()
+
+koch_iter <- tibble(x = c(0,1/3,1/2,2/3,1),
+                    y = c(0,0,sqrt(1/3^2-1/6^2),0,0),
+                    im = 2)
+
+koch_iter_im <- ggplot(data = koch_iter)+
+  aes(x,y)+
+  geom_path(size = 0.75)+
+  coord_fixed()+
+  theme_void()
+
+fig02_koch <- plot_grid(koch_gener_im, koch_iter_im, von_koch,
+                     nrow = 3, rel_heights = c(1,2,2))
+
+save(fig02_koch, file = "Results/fig02_koch_ill.RData")
+
+fig02_fractals <- plot_grid(sierpinski, wave, fuzzy_wave,
+                            nrow = 1)
+
+save(fig02_fractals, file = "Results/fig02_fractals.RData")
 
 # galaxy ------------------------------------------------------------------
 # this is so much fun

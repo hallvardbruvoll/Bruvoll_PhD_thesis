@@ -2,35 +2,9 @@
 
 # Village planning in prehistory {#images-theory}
 
-## Settlement layout and social structure {#layout-ethno}
+Systematic relationship between settlement layout and social structure in small-scale societies has been the topic of some ethnographic studies. In a comparative study of ethnographic examples from all over the world, @fraser1968 showed that some tendencies existed, but that there was also large variation. One trait was that the more mobile the society, the less strict where the overall planning principles, while planning tended to be more organised in more settled, as well as hierarchic societies. Religious, cosmologic and defensive concerns were shown to influence the relative placement of buildings, but not in any uniform way cross-culturally. More recent kinship studies have attempted to link different kinship structures with settlement layouts [@ensor2017a, @ensor2013 @souvatzi2017], but methods for effectively quantifying these layouts and thus allowing for cross-cultural regularities to be apprehended have been largely lacking. Factors that may be hypothesised to affect village layouts in systematic ways include:
 
-Or the social organisation of village layout. Research background:
-
-Lit. use @furholt2016, @fraser1968, @ensor2017a, @ensor2013, also check @souvatzi2017.
-
-For cities, see @kostof1991
-
-Space syntax, @hillier1984
-
-Visibility Graph Analysis/connectivity: Turner 2001, applied in Buchanan 2020
-
-Viewshed Analysis: applied in Ohlrau 2015?
-
-Materiality of built space??
-
-@artursson2010 (Bronze Age, descriptive/interpretive approach). @cleuziou1999 (book in MAE)
-
-Use the Trypillia volumes. Also @müller-scheeßel2019, @trebsche2010
-
-Access analysis: @fisher2009
-
-Viewshed analysis:
-
-Transition from village to urban (again): @birch2014.
-
-Factors affecting village layout:
-
--   Political structure (but, as with hierarchy, an organised layout does not necessarily equate top-down despotic decision making).
+-   Political structure (but, as with hierarchy, an organised layout does not necessarily equate top-down despotic decision making, as other strong social institutions may be anarchic or heterarchic)
 
 -   Kinship, matrimonial and locality structures
 
@@ -40,7 +14,37 @@ Factors affecting village layout:
 
 -   Local landscape setting (to be factored out)
 
+The maybe most promising results in this direction in prehistoric archaeology have been presented by @furholt2016, who identified two distinct village types in the early Neolithic of the Aegean region, based on layouts observed and coded into a range of quantitative and qualitative variables. Furholt applied correspondence analysis to reduce the dimensionality of his data set, resulting in a rather clear distinction between a compact bee-hive-like "Anatolian village" and a more dispersed "Balkan village", which would become representative of later developments in south-east Europe. He interpreted these layout differences in terms of social organisation, in that the Anatolian type would have tighter and stronger overarching community structures, while the Balkan village showed stronger independence between households.
+
+While intriguing, the assumptions underlying interpretation are difficult to test, from the lack of comparable material, in particular from ethnography. Furthermore, studies like that of @fraser1968 provide settlement plans which by quality and precision generally do not meet the standards and requirements of archaeology, and it is difficult to perform any meaningful quantitative analyses on them.
+
+In this part of the thesis, I wish to contribute to this topic, with the application of fractal image analysis. In particular, I believe that the theory underlying fractal geometry may well translate into social processes involved in the emergence of settlement layouts.
+
 ## The geometries of conscious planning vs. emergent behaviour {#layouts}
+
+The rationale of the following analysis is simple: Regular Euclidean patterns -- like rectangular grids, circles and straight lines -- result from conscious planning, while chaotic, irregular fractal patterns are indicative of independent households. This distinction should not be considered as binary, but along a continuum, and it is hypothesised that the degree of planning versus household autonomy can be effectively quantified through fractal analysis [see @bruvollforthcoming].
+
+As mentioned earlier, fractal geometry was first developed by @mandelbrot1982, who defined certain measures to describe patterns that were too irregular to be quantified through traditional geometry. The main measure he proposed was termed the *fractal dimension*. This was meant as an extension of the Euclidean dimensions (what we refer to when saying 2D or 3D), by taking on fractional values in addition to integer values. A pattern with a fractal dimension of 1.5 would be neither a curve (1D) nor a plane (2D), but something in-between, that is, a broken pattern which does not fill its embedding dimension -- in this case a two-dimensional plane. Such a pattern could be the Sierpinski triangle or the von Koch curves seen in Chapter \@ref(theory), or real world features like coastlines, river systems, Moon craters or national borders.
+
+The fractal dimension was defined by Mandelbrot as
+
+$$
+D = \frac{log N}{log 1/r}
+$$
+
+where N is element count and r is scale (as fraction of the whole). In @mandelbrot1982, he effectively applied this measures to a range of mathematically constructed fractals, showing its usefulness as quantification of highly irregular shapes.
+
+He furthermore noted that while this dimension was indicative of the degree of space-filling or completeness of patterns, in many cases patterns with very different image textures could be shown to have the same fractal dimension. As *D* is a summary measure (calculation methods are explained in the next chapter), it does not say everything about the data it describes, similarly to how a mean of a data distribution does not in itself say anything about the spread of the data. For describing the texture of fractal patterns, he tentatively defined *lacunarity*, mathematically expressed as
+
+$$
+L = 1 + (\frac{\sigma}{\mu})^2 
+$$
+
+or the variance to square mean ratio of foreground pixel mass [see @hingee2019 for an extensive review of the development of lacunarity measures since Mandelbrot]. It quantifies the distribution of voids or gaps in the pattern (*lacuna* being Latin for gap or lake), and has since been included in a variety of studies of texture, however mostly within the natural sciences.
+
+While these measures are held to quantify the regularity or irregularity of spatial patterns, applying them to archaeological settlement plans is not straight-forward.
+
+However, there are num
 
 -   I need to find some references here! @eglash1999
 
@@ -54,4 +58,14 @@ The relationship between image density (built-up area) and fractal dimension was
 
 ## Fractal image analysis in archaeology {#image-archaeo}
 
-END Chapter
+Visibility Graph Analysis/connectivity: Turner 2001, applied in Buchanan 2020
+
+Viewshed Analysis: applied in Ohlrau 2015?
+
+Materiality of built space??
+
+@artursson2010 (Bronze Age, descriptive/interpretive approach).
+
+Access analysis: @fisher2009
+
+Viewshed analysis:
